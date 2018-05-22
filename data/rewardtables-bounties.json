@@ -1,0 +1,1820 @@
+{
+    "CetusSyndicateBountyTierATableARewards": [
+        [
+            {
+                "name": "Redirection",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Oxium",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.2
+            },
+            {
+                "name": "Iradite",
+                "count": 15,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Redirection",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Oxium",
+                "count": 100,
+                "chance": 0.1549
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1549
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1549
+            },
+            {
+                "name": "Iradite",
+                "count": 15,
+                "chance": 0.1549
+            },
+            {
+                "name": "Gara Chassis Blueprint",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Point Blank",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Streamline",
+                "count": 1,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Gara Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Point Blank",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Streamline",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Morphics",
+                "count": 2,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierATableBRewards": [
+        [
+            {
+                "name": "Pressure Point",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Cryotic",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.2
+            },
+            {
+                "name": "Grokdrul",
+                "count": 15,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Pressure Point",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Cryotic",
+                "count": 100,
+                "chance": 0.1549
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1549
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1549
+            },
+            {
+                "name": "Grokdrul",
+                "count": 15,
+                "chance": 0.1549
+            },
+            {
+                "name": "Gara Chassis Blueprint",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Hornet Strike",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Stretch",
+                "count": 1,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Gara Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Hornet Strike",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Stretch",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Morphics",
+                "count": 2,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierATableCRewards": [
+        [
+            {
+                "name": "Vitality",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Plastids",
+                "count": 200,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.2
+            },
+            {
+                "name": "Nistlepod",
+                "count": 15,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Vitality",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Plastids",
+                "count": 200,
+                "chance": 0.1549
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1549
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1549
+            },
+            {
+                "name": "Nistlepod",
+                "count": 15,
+                "chance": 0.1549
+            },
+            {
+                "name": "Gara Chassis Blueprint",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Point Blank",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Intensify",
+                "count": 1,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Gara Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Point Blank",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Intensify",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Gallium",
+                "count": 2,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierBTableARewards": [
+        [
+            {
+                "name": "Steel Fiber",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Oxium",
+                "count": 200,
+                "chance": 0.25
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.25
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Steel Fiber",
+                "count": 1,
+                "chance": 0.1508
+            },
+            {
+                "name": "Oxium",
+                "count": 200,
+                "chance": 0.1508
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1508
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1508
+            },
+            {
+                "name": "Gara Systems Blueprint",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Charged Chamber",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Burning Wasp",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Lith Z1 Relic",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ],
+        [
+            {
+                "name": "Gara Systems Blueprint",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Charged Chamber",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Burning Wasp",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Lith Z1 Relic",
+                "count": 1,
+                "chance": 0.2545
+            },
+            {
+                "name": "Control Module",
+                "count": 2,
+                "chance": 0.0909
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierBTableBRewards": [
+        [
+            {
+                "name": "Energy Inversion",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Cryotic",
+                "count": 200,
+                "chance": 0.25
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.25
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Energy Inversion",
+                "count": 1,
+                "chance": 0.1508
+            },
+            {
+                "name": "Cryotic",
+                "count": 200,
+                "chance": 0.1508
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1508
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1508
+            },
+            {
+                "name": "Gara Systems Blueprint",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Speed Trigger",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Reaping Spiral",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Lith H2 Relic",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ],
+        [
+            {
+                "name": "Gara Systems Blueprint",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Speed Trigger",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Reaping Spiral",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Lith H2 Relic",
+                "count": 1,
+                "chance": 0.2545
+            },
+            {
+                "name": "Neural Sensors",
+                "count": 2,
+                "chance": 0.0909
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierBTableCRewards": [
+        [
+            {
+                "name": "Point Strike",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Circuits",
+                "count": 300,
+                "chance": 0.25
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.25
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Point Strike",
+                "count": 1,
+                "chance": 0.1508
+            },
+            {
+                "name": "Circuits",
+                "count": 300,
+                "chance": 0.1508
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1508
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1508
+            },
+            {
+                "name": "Gara Systems Blueprint",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Enhanced Durability",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Grim Fury",
+                "count": 1,
+                "chance": 0.09519999999999999
+            },
+            {
+                "name": "Lith Z1 Relic",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ],
+        [
+            {
+                "name": "Gara Systems Blueprint",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Enhanced Durability",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Grim Fury",
+                "count": 1,
+                "chance": 0.2182
+            },
+            {
+                "name": "Lith Z1 Relic",
+                "count": 1,
+                "chance": 0.2545
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 2,
+                "chance": 0.0909
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierCTableARewards": [
+        [
+            {
+                "name": "Gladiator Aegis",
+                "count": 1,
+                "chance": 0.2759
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.1379
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.29309999999999997
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.29309999999999997
+            }
+        ],
+        [
+            {
+                "name": "Gladiator Aegis",
+                "count": 1,
+                "chance": 0.1684
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.0842
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.1789
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.1789
+            },
+            {
+                "name": "Gara Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.0842
+            },
+            {
+                "name": "Augur Accord",
+                "count": 1,
+                "chance": 0.0842
+            },
+            {
+                "name": "Shimmering Blight",
+                "count": 1,
+                "chance": 0.0842
+            },
+            {
+                "name": "Meso O2 Relic",
+                "count": 1,
+                "chance": 0.1368
+            }
+        ],
+        [
+            {
+                "name": "Gara Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.2051
+            },
+            {
+                "name": "Augur Accord",
+                "count": 1,
+                "chance": 0.2051
+            },
+            {
+                "name": "Shimmering Blight",
+                "count": 1,
+                "chance": 0.2051
+            },
+            {
+                "name": "Meso O2 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Vigilante Supplies",
+                "count": 1,
+                "chance": 0.0513
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierCTableBRewards": [
+        [
+            {
+                "name": "Vigilante Armaments",
+                "count": 1,
+                "chance": 0.3519
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.3519
+            }
+        ],
+        [
+            {
+                "name": "Vigilante Armaments",
+                "count": 1,
+                "chance": 0.2043
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.086
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.086
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.2043
+            },
+            {
+                "name": "Gara Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.086
+            },
+            {
+                "name": "Gladiator Might",
+                "count": 1,
+                "chance": 0.086
+            },
+            {
+                "name": "Fracturing Wind",
+                "count": 1,
+                "chance": 0.0968
+            },
+            {
+                "name": "Meso T1 Relic",
+                "count": 1,
+                "chance": 0.1505
+            }
+        ],
+        [
+            {
+                "name": "Gara Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.19510000000000002
+            },
+            {
+                "name": "Gladiator Might",
+                "count": 1,
+                "chance": 0.19510000000000002
+            },
+            {
+                "name": "Fracturing Wind",
+                "count": 1,
+                "chance": 0.2195
+            },
+            {
+                "name": "Meso T1 Relic",
+                "count": 1,
+                "chance": 0.34149999999999997
+            },
+            {
+                "name": "Augur Seeker",
+                "count": 1,
+                "chance": 0.048799999999999996
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierCTableCRewards": [
+        [
+            {
+                "name": "Augur Pact",
+                "count": 1,
+                "chance": 0.3519
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.3519
+            }
+        ],
+        [
+            {
+                "name": "Augur Pact",
+                "count": 1,
+                "chance": 0.2021
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.2021
+            },
+            {
+                "name": "Gara Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.09570000000000001
+            },
+            {
+                "name": "Vigilante Fervor",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Swirling Tiger",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Meso T2 Relic",
+                "count": 1,
+                "chance": 0.15960000000000002
+            }
+        ],
+        [
+            {
+                "name": "Gara Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.2143
+            },
+            {
+                "name": "Vigilante Fervor",
+                "count": 1,
+                "chance": 0.1905
+            },
+            {
+                "name": "Swirling Tiger",
+                "count": 1,
+                "chance": 0.1905
+            },
+            {
+                "name": "Meso T2 Relic",
+                "count": 1,
+                "chance": 0.35710000000000003
+            },
+            {
+                "name": "Gladiator Vice",
+                "count": 1,
+                "chance": 0.047599999999999996
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierDTableARewards": [
+        [
+            {
+                "name": "Gladiator Rush",
+                "count": 1,
+                "chance": 0.3519
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.3519
+            }
+        ],
+        [
+            {
+                "name": "Gladiator Rush",
+                "count": 1,
+                "chance": 0.2021
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.2021
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.09570000000000001
+            },
+            {
+                "name": "Augur Reach",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Eleventh Storm",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Neo K1 Relic",
+                "count": 1,
+                "chance": 0.15960000000000002
+            }
+        ],
+        [
+            {
+                "name": "Gladiator Rush",
+                "count": 1,
+                "chance": 0.1979
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1979
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.09380000000000001
+            },
+            {
+                "name": "Augur Reach",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Eleventh Storm",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Neo K1 Relic",
+                "count": 1,
+                "chance": 0.1563
+            },
+            {
+                "name": "Vigilante Offense",
+                "count": 1,
+                "chance": 0.0208
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.2143
+            },
+            {
+                "name": "Augur Reach",
+                "count": 1,
+                "chance": 0.1905
+            },
+            {
+                "name": "Eleventh Storm",
+                "count": 1,
+                "chance": 0.1905
+            },
+            {
+                "name": "Neo K1 Relic",
+                "count": 1,
+                "chance": 0.35710000000000003
+            },
+            {
+                "name": "Vigilante Offense",
+                "count": 1,
+                "chance": 0.047599999999999996
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierDTableBRewards": [
+        [
+            {
+                "name": "Vigilante Vigor",
+                "count": 1,
+                "chance": 0.3519
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.3519
+            }
+        ],
+        [
+            {
+                "name": "Vigilante Vigor",
+                "count": 1,
+                "chance": 0.2021
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.2021
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.09570000000000001
+            },
+            {
+                "name": "Gladiator Resolve",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Gemini Cross",
+                "count": 1,
+                "chance": 0.0851
+            },
+            {
+                "name": "Neo B4 Relic",
+                "count": 1,
+                "chance": 0.15960000000000002
+            }
+        ],
+        [
+            {
+                "name": "Vigilante Vigor",
+                "count": 1,
+                "chance": 0.1979
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1979
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.09380000000000001
+            },
+            {
+                "name": "Gladiator Resolve",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Gemini Cross",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Neo B4 Relic",
+                "count": 1,
+                "chance": 0.1563
+            },
+            {
+                "name": "Augur Secrets",
+                "count": 1,
+                "chance": 0.0208
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.2143
+            },
+            {
+                "name": "Gladiator Resolve",
+                "count": 1,
+                "chance": 0.1905
+            },
+            {
+                "name": "Gemini Cross",
+                "count": 1,
+                "chance": 0.1905
+            },
+            {
+                "name": "Neo B4 Relic",
+                "count": 1,
+                "chance": 0.35710000000000003
+            },
+            {
+                "name": "Augur Secrets",
+                "count": 1,
+                "chance": 0.047599999999999996
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierDTableCRewards": [
+        [
+            {
+                "name": "Augur Message",
+                "count": 1,
+                "chance": 0.29309999999999997
+            },
+            {
+                "name": "Kuva",
+                "count": 100,
+                "chance": 0.2759
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.1379
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.29309999999999997
+            }
+        ],
+        [
+            {
+                "name": "Augur Message",
+                "count": 1,
+                "chance": 0.1771
+            },
+            {
+                "name": "Kuva",
+                "count": 100,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1771
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Vigilante Pursuit",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Sinking Talon",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Neo Z1 Relic",
+                "count": 1,
+                "chance": 0.1458
+            }
+        ],
+        [
+            {
+                "name": "Augur Message",
+                "count": 1,
+                "chance": 0.17350000000000002
+            },
+            {
+                "name": "Kuva",
+                "count": 100,
+                "chance": 0.16329999999999997
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.0816
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.17350000000000002
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.0816
+            },
+            {
+                "name": "Vigilante Pursuit",
+                "count": 1,
+                "chance": 0.0816
+            },
+            {
+                "name": "Sinking Talon",
+                "count": 1,
+                "chance": 0.0816
+            },
+            {
+                "name": "Neo Z1 Relic",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Gladiator Finesse",
+                "count": 1,
+                "chance": 0.0204
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Vigilante Pursuit",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Sinking Talon",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Neo Z1 Relic",
+                "count": 1,
+                "chance": 0.35
+            },
+            {
+                "name": "Gladiator Finesse",
+                "count": 1,
+                "chance": 0.05
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierETableARewards": [
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.5
+            }
+        ],
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.21739999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.21739999999999998
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.1739
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.060899999999999996
+            },
+            {
+                "name": "Axi K2 Relic",
+                "count": 1,
+                "chance": 0.33039999999999997
+            }
+        ],
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.1812
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.1812
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.1449
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.0507
+            },
+            {
+                "name": "Axi K2 Relic",
+                "count": 1,
+                "chance": 0.2754
+            },
+            {
+                "name": "Furax Wraith Left Gauntlet",
+                "count": 1,
+                "chance": 0.057999999999999996
+            },
+            {
+                "name": "Carving Mantis",
+                "count": 1,
+                "chance": 0.057999999999999996
+            },
+            {
+                "name": "Eidolon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0507
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.2273
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.0795
+            },
+            {
+                "name": "Axi K2 Relic",
+                "count": 1,
+                "chance": 0.4318
+            },
+            {
+                "name": "Furax Wraith Left Gauntlet",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Carving Mantis",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Eidolon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0795
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierETableBRewards": [
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.5
+            }
+        ],
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.21739999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.21739999999999998
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.1739
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.060899999999999996
+            },
+            {
+                "name": "Axi O2 Relic",
+                "count": 1,
+                "chance": 0.33039999999999997
+            }
+        ],
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.1812
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.1812
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.1449
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.0507
+            },
+            {
+                "name": "Axi O2 Relic",
+                "count": 1,
+                "chance": 0.2754
+            },
+            {
+                "name": "Furax Wraith Right Gauntlet",
+                "count": 1,
+                "chance": 0.057999999999999996
+            },
+            {
+                "name": "Swooping Falcon",
+                "count": 1,
+                "chance": 0.057999999999999996
+            },
+            {
+                "name": "Eidolon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0507
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.2273
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.0795
+            },
+            {
+                "name": "Axi O2 Relic",
+                "count": 1,
+                "chance": 0.4318
+            },
+            {
+                "name": "Furax Wraith Right Gauntlet",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Swooping Falcon",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Eidolon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0795
+            }
+        ]
+    ],
+    "CetusSyndicateBountyTierETableCRewards": [
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.5
+            }
+        ],
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.21739999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.21739999999999998
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.1739
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.060899999999999996
+            },
+            {
+                "name": "Axi H3 Relic",
+                "count": 1,
+                "chance": 0.33039999999999997
+            }
+        ],
+        [
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.1812
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.1812
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.1449
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.0507
+            },
+            {
+                "name": "Axi H3 Relic",
+                "count": 1,
+                "chance": 0.2754
+            },
+            {
+                "name": "Furax Wraith Blueprint",
+                "count": 1,
+                "chance": 0.057999999999999996
+            },
+            {
+                "name": "Twirling Spire",
+                "count": 1,
+                "chance": 0.057999999999999996
+            },
+            {
+                "name": "Eidolon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0507
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 2,
+                "chance": 0.2273
+            },
+            {
+                "name": "Kuva",
+                "count": 300,
+                "chance": 0.0795
+            },
+            {
+                "name": "Axi H3 Relic",
+                "count": 1,
+                "chance": 0.4318
+            },
+            {
+                "name": "Furax Wraith Blueprint",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Twirling Spire",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Eidolon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0795
+            }
+        ]
+    ],
+    "GhoulEmergenceBountyGhoulBountyTableARewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.3333
+            },
+            {
+                "name": "Lith H2 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Hunter Adrenaline",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1174
+            },
+            {
+                "name": "Lith H2 Relic",
+                "count": 1,
+                "chance": 0.1174
+            },
+            {
+                "name": "Hunter Adrenaline",
+                "count": 1,
+                "chance": 0.1174
+            },
+            {
+                "name": "Encrypted Journal Fragment",
+                "count": 1,
+                "chance": 0.18780000000000002
+            },
+            {
+                "name": "Hunter Munitions",
+                "count": 1,
+                "chance": 0.09390000000000001
+            },
+            {
+                "name": "Stubba Blueprint",
+                "count": 1,
+                "chance": 0.046900000000000004
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.09390000000000001
+            },
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.046900000000000004
+            },
+            {
+                "name": "Lith Z1 Relic",
+                "count": 1,
+                "chance": 0.1784
+            }
+        ],
+        [
+            {
+                "name": "Encrypted Journal Fragment",
+                "count": 1,
+                "chance": 0.23809999999999998
+            },
+            {
+                "name": "Hunter Munitions",
+                "count": 1,
+                "chance": 0.11900000000000001
+            },
+            {
+                "name": "Stubba Blueprint",
+                "count": 1,
+                "chance": 0.059500000000000004
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.11900000000000001
+            },
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.059500000000000004
+            },
+            {
+                "name": "Lith Z1 Relic",
+                "count": 1,
+                "chance": 0.2262
+            },
+            {
+                "name": "Hunter Track",
+                "count": 1,
+                "chance": 0.11900000000000001
+            },
+            {
+                "name": "Nitain Extract",
+                "count": 1,
+                "chance": 0.059500000000000004
+            }
+        ]
+    ],
+    "GhoulEmergenceBountyGhoulBountyTableBRewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.3333
+            },
+            {
+                "name": "Neo B4 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Hunter Recovery",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1174
+            },
+            {
+                "name": "Neo B4 Relic",
+                "count": 1,
+                "chance": 0.1174
+            },
+            {
+                "name": "Hunter Recovery",
+                "count": 1,
+                "chance": 0.1174
+            },
+            {
+                "name": "Encrypted Journal Fragment",
+                "count": 1,
+                "chance": 0.18780000000000002
+            },
+            {
+                "name": "Hunter Synergy",
+                "count": 1,
+                "chance": 0.09390000000000001
+            },
+            {
+                "name": "Quartakk Blueprint",
+                "count": 1,
+                "chance": 0.046900000000000004
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.09390000000000001
+            },
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.046900000000000004
+            },
+            {
+                "name": "Neo K1 Relic",
+                "count": 1,
+                "chance": 0.1784
+            }
+        ],
+        [
+            {
+                "name": "Encrypted Journal Fragment",
+                "count": 1,
+                "chance": 0.23809999999999998
+            },
+            {
+                "name": "Hunter Synergy",
+                "count": 1,
+                "chance": 0.11900000000000001
+            },
+            {
+                "name": "Quartakk Blueprint",
+                "count": 1,
+                "chance": 0.059500000000000004
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.11900000000000001
+            },
+            {
+                "name": "Breath Of The Eidolon",
+                "count": 5,
+                "chance": 0.059500000000000004
+            },
+            {
+                "name": "Neo K1 Relic",
+                "count": 1,
+                "chance": 0.2262
+            },
+            {
+                "name": "Hunter Command",
+                "count": 1,
+                "chance": 0.11900000000000001
+            },
+            {
+                "name": "Nitain Extract",
+                "count": 1,
+                "chance": 0.059500000000000004
+            }
+        ]
+    ]
+}

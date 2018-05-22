@@ -1,0 +1,81 @@
+{
+    "SortieRewards": [
+        [
+            {
+                "name": "Rifle Riven Mod",
+                "count": 1,
+                "chance": 0.0679
+            },
+            {
+                "name": "Ayatan Anasa Sculpture",
+                "count": 1,
+                "chance": 0.28
+            },
+            {
+                "name": "Endo",
+                "count": 4000,
+                "chance": 0.121
+            },
+            {
+                "name": "Forma",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Exilus Adapter",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Orokin Reactor Blueprint",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Orokin Catalyst Blueprint",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Legendary Core",
+                "count": 1,
+                "chance": 0.0018
+            },
+            {
+                "name": "Kuva",
+                "count": 6000,
+                "chance": 0.14
+            },
+            {
+                "name": "Credit Booster",
+                "count": 1,
+                "chance": 0.0327
+            },
+            {
+                "name": "Affinity Booster",
+                "count": 1,
+                "chance": 0.0327
+            },
+            {
+                "name": "Resource Drop Chance Booster",
+                "count": 1,
+                "chance": 0.0327
+            },
+            {
+                "name": "Pistol Riven Mod",
+                "count": 1,
+                "chance": 0.0761
+            },
+            {
+                "name": "Shotgun Riven Mod",
+                "count": 1,
+                "chance": 0.013600000000000001
+            },
+            {
+                "name": "Melee Riven Mod",
+                "count": 1,
+                "chance": 0.1014
+            }
+        ]
+    ]
+}

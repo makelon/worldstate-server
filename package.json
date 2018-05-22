@@ -1,0 +1,19 @@
+{
+	"name": "tennotools-worldstate-server",
+	"version": "1.0.0",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^9.3.0"
+	},
+	"private": true,
+	"scripts": {
+		"build": "node build bd",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "makelon",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/makelon/worldstate-server"
+	}
+}

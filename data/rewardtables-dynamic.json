@@ -1,0 +1,629 @@
+{
+    "fomorianRewardManifest": [
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.3872
+            },
+            {
+                "name": "Imperator Vandal Barrel",
+                "count": 1,
+                "chance": 0.1128
+            },
+            {
+                "name": "Imperator Vandal Receiver",
+                "count": 1,
+                "chance": 0.1128
+            },
+            {
+                "name": "Imperator Vandal Blueprint",
+                "count": 1,
+                "chance": 0.3872
+            }
+        ]
+    ],
+    "7ri": [
+        [
+            {
+                "name": "Nyx Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.3872
+            },
+            {
+                "name": "Nyx Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3872
+            },
+            {
+                "name": "Nyx Systems Blueprint",
+                "count": 1,
+                "chance": 0.2256
+            }
+        ]
+    ],
+    "emz": [
+        [
+            {
+                "name": "Ice Storm",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Stunning Speed",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Hammer Shot",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Wildfire",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Accelerated Blast",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Blaze",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Chilling Reload",
+                "count": 1,
+                "chance": 0.2211
+            }
+        ],
+        [
+            {
+                "name": "Drifting Contact",
+                "count": 1,
+                "chance": 0.2256
+            },
+            {
+                "name": "Seeking Fury",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Armored Agility",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Shred",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Rending Strike",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Fortitude",
+                "count": 1,
+                "chance": 0.1549
+            }
+        ],
+        [
+            {
+                "name": "Streamlined Form",
+                "count": 1,
+                "chance": 0.2256
+            },
+            {
+                "name": "Animal Instinct",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Vigor",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Lethal Torrent",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Focus Energy",
+                "count": 1,
+                "chance": 0.1549
+            },
+            {
+                "name": "Constitution",
+                "count": 1,
+                "chance": 0.1549
+            }
+        ]
+    ],
+    "razorbackRewardManifest": [
+        [
+            {
+                "name": "Gorgon Wraith Blueprint",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Gorgon Wraith Barrel",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Gorgon Wraith Receiver",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Gorgon Wraith Stock",
+                "count": 1,
+                "chance": 0.18969999999999998
+            },
+            {
+                "name": "Bore",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Piercing Caliber",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Breach Loader",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Auger Strike",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Magma Chamber",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Searing Steel",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ]
+    ],
+    "emA": [
+        [
+            {
+                "name": "Spoiled Strike",
+                "count": 1,
+                "chance": 0.0834
+            },
+            {
+                "name": "Corrupt Charge",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Hollow Point",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Magnum Force",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Tainted Clip",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Critical Delay",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Heavy Caliber",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Tainted Mag",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Vile Precision",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Narrow Minded",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Fleeting Expertise",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Blind Rage",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Overextended",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Tainted Shell",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Vicious Spread",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Burdened Magazine",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Anemic Agility",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Vile Acceleration",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Frail Momentum",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Critical Deceleration",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Creeping Bullseye",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Transient Fortitude",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Depleted Reload",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ]
+    ],
+    "eidolonIncursions": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 1000,
+                "chance": 0.1265
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1265
+            },
+            {
+                "name": "Iradite",
+                "count": 5,
+                "chance": 0.1265
+            },
+            {
+                "name": "Grokdrul",
+                "count": 5,
+                "chance": 0.1265
+            },
+            {
+                "name": "Nistlepod",
+                "count": 5,
+                "chance": 0.1265
+            },
+            {
+                "name": "Maprico",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Endo",
+                "count": 15,
+                "chance": 0.1265
+            },
+            {
+                "name": "Spinning Needle",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Eleventh Storm",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Tempo Royale",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Molten Impact",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "North Wind",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Shocking Touch",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Fever Strike",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Heated Charge",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Deep Freeze",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Convulsion",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Pathogen Rounds",
+                "count": 1,
+                "chance": 0.020099999999999996
+            },
+            {
+                "name": "Target Acquired",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 2000,
+                "chance": 0.1265
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1265
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1265
+            },
+            {
+                "name": "Nistlepod",
+                "count": 10,
+                "chance": 0.1265
+            },
+            {
+                "name": "Iradite",
+                "count": 10,
+                "chance": 0.1265
+            },
+            {
+                "name": "Grokdrul",
+                "count": 10,
+                "chance": 0.1265
+            },
+            {
+                "name": "Maprico",
+                "count": 2,
+                "chance": 0.0184
+            },
+            {
+                "name": "Homing Fang",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Sundering Weave",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Sovereign Outcast",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Bullet Dance",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Hellfire",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Cryo Rounds",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Stormbringer",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Infected Clip",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Incendiary Coat",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Chilling Grasp",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Charged Shell",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Contagious Spread",
+                "count": 1,
+                "chance": 0.0184
+            },
+            {
+                "name": "Spring-Loaded Blade",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.1265
+            },
+            {
+                "name": "Credits Cache",
+                "count": 4000,
+                "chance": 0.1265
+            },
+            {
+                "name": "Endo",
+                "count": 80,
+                "chance": 0.1265
+            },
+            {
+                "name": "Blind Justice",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Shattering Storm",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Atlantis Vulcan",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Vulpine Mask",
+                "count": 1,
+                "chance": 0.0029
+            },
+            {
+                "name": "Blazing Steel",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Glacial Edge",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Galvanized Blade",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Poisonous Sting",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Combustion Rounds",
+                "count": 1,
+                "chance": 0.0276
+            },
+            {
+                "name": "Polar Magazine",
+                "count": 1,
+                "chance": 0.1265
+            },
+            {
+                "name": "Electrified Barrel",
+                "count": 1,
+                "chance": 0.1265
+            },
+            {
+                "name": "Venomous Clip",
+                "count": 1,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kinetic Diversion",
+                "count": 1,
+                "chance": 0.0029
+            },
+            {
+                "name": "Eidolon Madurai Lens Blueprint",
+                "count": 1,
+                "chance": 0.0029
+            },
+            {
+                "name": "Eidolon Vazarin Lens Blueprint",
+                "count": 1,
+                "chance": 0.0029
+            },
+            {
+                "name": "Eidolon Zenurik Lens Blueprint",
+                "count": 1,
+                "chance": 0.0029
+            },
+            {
+                "name": "Eidolon Naramon Lens Blueprint",
+                "count": 1,
+                "chance": 0.0029
+            },
+            {
+                "name": "Eidolon Unairu Lens Blueprint",
+                "count": 1,
+                "chance": 0.0029
+            }
+        ]
+    ]
+}

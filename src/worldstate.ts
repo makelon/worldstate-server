@@ -1,7 +1,5 @@
 import http = require('http')
 import https = require('https')
-import path = require('path')
-import url = require('url')
 import zlib = require('zlib')
 import log = require('./log')
 import tags = require('./tags')
@@ -10,6 +8,7 @@ import items = require('./items')
 import promisify = require('./promisify')
 import Database from './db'
 import config from './config'
+import httpHelper = require('./httphelper');
 
 function looksLikeWorldstate(ws: any) {
 	return ws.hasOwnProperty('WorldSeed')
@@ -42,56 +41,32 @@ export default class Worldstate {
 			this.scheduleWorldstateRequest(config.instanceDelay * numInstances)
 			++numInstances
 		})
-		this.prepareRequest()
-	}
-
-	// Create a HTTP request options object to use when fetching the worldstate dump
-	private prepareRequest(): void {
-		const wsUrl = config.wsUrls[this.platform]
-		if (!wsUrl) {
-			return
-		}
-		let wsUrlParsed: url.Url
-		try {
-			wsUrlParsed = url.parse(wsUrl)
-		}
-		catch (err) {
-			log.error(err.message)
-			return
-		}
-		this.requestOptions = {
-			protocol: wsUrlParsed.protocol,
-			hostname: wsUrlParsed.hostname,
-			port: wsUrlParsed.port,
-			path: wsUrlParsed.path,
-			auth: wsUrlParsed.auth,
-			headers: {
-				'Accept-Encoding': 'gzip, deflate',
-				'User-Agent': config.userAgent
-			},
-			timeout: config.requestTimeout
-		}
-		if (wsUrlParsed.protocol == 'https:') {
-			if (!config.tlsVerify) {
-				this.requestOptions.rejectUnauthorized = false
-			}
-			else if (config.tlsCa) {
-				this.requestOptions.ca = config.tlsCa
-			}
-		}
+		this.setRequestOptions()
 	}
 
 	// Re-read the most recent worldstate dump and update all known records
 	// If worldstate hasn't been read yet, update any old records when the next worldstate request occurs
 	reload(): void {
 		this.reloading = true
-		this.prepareRequest()
+		this.setRequestOptions()
 		this.db.setupTables(() => {
 			if (this.ws) {
 				log.info('Reloading %s worldstate', this.platform)
 				this.readWorldstate()
 			}
 		})
+	}
+
+	private setRequestOptions(): void {
+		try {
+			const url = config.wsUrls[this.platform]
+			this.requestOptions = url
+				? httpHelper.prepareRequest(url)
+				: null
+		}
+		catch(err) {
+			log.error(err.message)
+		}
 	}
 
 	// Return requested content from this instance
@@ -150,14 +125,11 @@ export default class Worldstate {
 			return
 		}
 		log.notice('Requesting %s//%s%s', this.requestOptions.protocol, this.requestOptions.hostname, this.requestOptions.path)
-		const req = this.requestOptions.protocol == 'https:'
-			? https.request(this.requestOptions)
-			: http.request(this.requestOptions)
+
+		const req = httpHelper.sendRequest(this.requestOptions)
 		req.setTimeout(config.requestTimeout)
 			.once('response', res => { this.handleWorldstateResponse(res) })
 			.once('error', err => { this.retryRequestWorldstate(0, err.message) })
-			.once('timeout', () => { req.abort() })
-			.end()
 	}
 
 	private retryRequestWorldstate(code?: number, message?: string): void {

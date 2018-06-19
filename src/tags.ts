@@ -134,9 +134,9 @@ export const
 		'Baro\'Ki Teel': 'Baro Ki\'Teer'
 	}
 
-export function load(): void {
+export function load(_starchart: string): void {
 	try {
-		let tmp = JSON.parse(fs.readFileSync('./starchart.json', 'utf8'))
+		let tmp = JSON.parse(fs.readFileSync(_starchart, 'utf8'))
 		locations = tmp.locations
 		nodeMissionTypes = tmp.missionTypes
 		nodeFactions = tmp.factions

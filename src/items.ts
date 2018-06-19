@@ -1,17 +1,15 @@
 import fs = require('fs')
-import tags = require('./tags')
-import config from './config'
 
 let rewardTables: WfRewardTableMap,
 	itemNames: WfMap,
 	itemTypes: WfMap,
 	lcItemIds: boolean
 
-export function load(): void {
+export function load(_rewardTables: string, _itemNames: string, _itemTypes: string): void {
 	try {
-		rewardTables = JSON.parse(fs.readFileSync('./rewardtables.json', 'utf8'))
-		itemNames = JSON.parse(fs.readFileSync('./itemnames.json', 'utf8'))
-		itemTypes = JSON.parse(fs.readFileSync('./itemtypes.json', 'utf8'))
+		rewardTables = JSON.parse(fs.readFileSync(_rewardTables, 'utf8'))
+		itemNames = JSON.parse(fs.readFileSync(_itemNames, 'utf8'))
+		itemTypes = JSON.parse(fs.readFileSync(_itemTypes, 'utf8'))
 	}
 	catch (err) {
 		throw new Error(`Failed to load item info: '${err.message}'`)

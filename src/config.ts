@@ -60,10 +60,10 @@ class WfConfig {
 	tlsCa!: string
 	tlsVerify!: boolean
 
-	load(): void {
+	load(configPath: string): void {
 		let overrides: any = {}
 		try {
-			overrides = JSON.parse(fs.readFileSync('./config.json', 'utf8'))
+			overrides = JSON.parse(fs.readFileSync(configPath, 'utf8'))
 		}
 		catch (err) {
 			if (err.code == 'ENOENT') {

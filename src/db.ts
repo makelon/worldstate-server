@@ -25,14 +25,12 @@ type TableMap = { [tblName: string]: WfDbTableI<WfDbTableType> }
 export default class Database implements WfDb {
 	private dbName: string
 	private loading: number = 0
-	private ready: boolean = false
 	private tables: TableMap = {}
 	private ee: EventEmitter
 
-	constructor(dbName: string, onLoad: () => void) {
+	constructor(dbName: string) {
 		this.dbName = dbName
 		this.ee = new EventEmitter()
-		this.setupTables(onLoad)
 	}
 
 	setupTables(onLoad: () => void): void {
@@ -43,7 +41,6 @@ export default class Database implements WfDb {
 		for (const tblName of config.wsFields) {
 			if (!(tblName in this.tables)) {
 				++this.loading
-				this.ready = false
 				this.tables[tblName] = new Table(this.dbName, tblName, () => { this.setReady() })
 			}
 			else {
@@ -69,7 +66,6 @@ export default class Database implements WfDb {
 
 	private setReady(): void {
 		if (--this.loading == 0) {
-			this.ready = true
 			this.ee.emit('load')
 		}
 	}

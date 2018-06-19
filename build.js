@@ -244,7 +244,7 @@ function postBuild() {
 }
 
 function startServer(restart) {
-	server = cproc.spawn(process.argv0, ['main.js'], {
+	server = cproc.spawn(process.argv0, ['index.js'], {
 		cwd: path.join(process.cwd(), outDir)
 	})
 	server.stdout.setEncoding('utf8').on('data', printServer)

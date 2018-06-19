@@ -33,7 +33,11 @@ export default class Worldstate {
 	constructor(platform: string) {
 		log.notice('Creating instance %s', platform)
 		this.platform = platform
-		this.db = new Database(this.platform, () => {
+		this.db = new Database(this.platform)
+	}
+
+	start(): void {
+		this.db.setupTables(() => {
 			this.ready = true
 			this.scheduleWorldstateRequest(config.instanceDelay * numInstances)
 			++numInstances
@@ -220,7 +224,7 @@ export default class Worldstate {
 			this.readVoidFissures,
 			this.readSyndicateMissions,
 			this.readInvasions,
-			this.readGlobalUpgrades,
+			this.readUpgrades,
 			this.readFactionProjects,
 			this.readAcolytes,
 			this.readVoidTraders,
@@ -483,7 +487,7 @@ export default class Worldstate {
 							start: start,
 							end: end,
 							type: fomorianType,
-							health: health,
+							health: 1,
 							healthHistory: [[start, 1]],
 							endGoal: fomorian.Goal,
 							missionType: missionType,
@@ -865,7 +869,7 @@ export default class Worldstate {
 		}
 	}
 
-	private readGlobalUpgrades(): void {
+	private readUpgrades(): void {
 		const table = this.db.getTable('upgrades') as WfDbTable<WfUpgrade>
 		if (!table || !this.ws.GlobalUpgrades) {
 			return

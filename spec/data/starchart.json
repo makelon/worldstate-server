@@ -1,0 +1,14 @@
+{
+	"locations": {
+		"SolNode1": "Location1",
+		"SolNode2": "Location2"
+	},
+	"factions": {
+		"SolNode1": "FC_GRINEER",
+		"SolNode2": "FC_CORPUS"
+	},
+	"missionTypes": {
+		"SolNode1": "MT_CAPTURE",
+		"SolNode2": "MT_INTEL"
+	}
+}

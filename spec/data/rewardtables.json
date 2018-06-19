@@ -1,0 +1,34 @@
+{
+    "MockRewardTable": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 15,
+                "chance": 1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 1
+            }
+        ]
+    ],
+    "CetusSyndicateBountyMockRewardTable": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 15,
+                "chance": 1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 1
+            }
+        ]
+    ]
+}

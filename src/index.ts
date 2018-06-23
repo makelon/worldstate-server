@@ -7,10 +7,16 @@ import Worldstate from './worldstate'
 
 process.chdir(__dirname)
 
+/**
+ * Shut down server and exit
+ */
 function exit() {
 	server.shutdown(process.exit)
 }
 
+/**
+ * Load config and info tables
+ */
 function load() {
 	config.load('./config.json')
 	log.setLevel(config.logLevel)
@@ -26,12 +32,18 @@ function load() {
 	log.info('Loaded config and info tables')
 }
 
+/**
+ * Reload config and info tables, then propagate the reload instruction to submodules
+ */
 function reload() {
 	load()
 	server.reload()
 }
 
-function run() {
+/**
+ * Start the server
+ */
+function start() {
 	load()
 	server.start()
 }
@@ -46,4 +58,4 @@ process.on('SIGINT', exit)
 process.on('SIGTERM', exit)
 process.on('SIGUSR2', reload)
 
-run()
+start()

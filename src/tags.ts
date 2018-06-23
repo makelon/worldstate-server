@@ -1,5 +1,4 @@
 import fs = require('fs')
-import readline = require('readline')
 
 export let
 	locations: WfMap,
@@ -134,6 +133,11 @@ export const
 		'Baro\'Ki Teel': 'Baro Ki\'Teer'
 	}
 
+/**
+ * Load star chart node information
+ *
+ * @param _starchart Path to star chart JSON data
+ */
 export function load(_starchart: string): void {
 	try {
 		let tmp = JSON.parse(fs.readFileSync(_starchart, 'utf8'))

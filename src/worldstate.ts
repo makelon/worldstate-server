@@ -10,11 +10,18 @@ import Database from './db'
 import config from './config'
 import httpHelper = require('./httphelper');
 
+/**
+ * Check whether the given data is likely to be worldstate data
+ *
+ * @param ws
+ */
 function looksLikeWorldstate(ws: any) {
 	return ws.hasOwnProperty('WorldSeed')
 }
 
-// Counter used with <config.instanceDelay> to start each instance at the specified time
+/**
+ * Counter used with <config.instanceDelay> to start each instance at the specified time
+ */
 let numInstances = 0
 
 export default class Worldstate {
@@ -35,6 +42,9 @@ export default class Worldstate {
 		this.db = new Database(this.platform)
 	}
 
+	/**
+	 * Initialize database tables and schedule worldstate request when database is ready
+	 */
 	start(): void {
 		this.db.setupTables(() => {
 			this.ready = true
@@ -44,8 +54,10 @@ export default class Worldstate {
 		this.setRequestOptions()
 	}
 
-	// Re-read the most recent worldstate dump and update all known records
-	// If worldstate hasn't been read yet, update any old records when the next worldstate request occurs
+	/**
+	 * Re-read the most recent worldstate dump and update all known records.
+	 * If worldstate hasn't been read yet, update any old records when the next worldstate request occurs
+	 */
 	reload(): void {
 		this.reloading = true
 		this.setRequestOptions()
@@ -57,6 +69,9 @@ export default class Worldstate {
 		})
 	}
 
+	/**
+	 * Initialize request options object
+	 */
 	private setRequestOptions(): void {
 		try {
 			const url = config.wsUrls[this.platform]
@@ -69,7 +84,12 @@ export default class Worldstate {
 		}
 	}
 
-	// Return requested content from this instance
+	/**
+	 * Return requested content from this instance
+	 *
+	 * @param types Instances to fetch data from
+	 * @returns JSON encoded instance data
+	 */
 	get(types?: string[]): string {
 		if (!this.ready) {
 			return JSON.stringify('Inactive worldstate instance')
@@ -103,11 +123,18 @@ export default class Worldstate {
 		return JSON.stringify(ret)
 	}
 
-	// Milliseconds until next worldstate request
+	/**
+	 * @returns Milliseconds until next worldstate request
+	 */
 	getNextUpdate(): number {
 		return this.nextUpdate - Date.now()
 	}
 
+	/**
+	 * Update or set timer for a worldstate request
+	 *
+	 * @param delay Time to wait before sending the request
+	 */
 	private scheduleWorldstateRequest(delay: number): void {
 		if (this.requestTimerId) {
 			log.notice('Clearing request timer')
@@ -120,6 +147,9 @@ export default class Worldstate {
 		this.nextUpdate = Date.now() + delay
 	}
 
+	/**
+	 * Send a worldstate request
+	 */
 	private requestWorldstate(): void {
 		if (!this.requestOptions) {
 			return
@@ -132,6 +162,12 @@ export default class Worldstate {
 			.once('error', err => { this.retryRequestWorldstate(0, err.message) })
 	}
 
+	/**
+	 * Handle a failed worldstate request and schedule a new attempt
+	 *
+	 * @param code HTTP status code or empty if request failed before the HTTP layer
+	 * @param message Error message
+	 */
 	private retryRequestWorldstate(code?: number, message?: string): void {
 		if (code) {
 			message = `${code}: ${message}`
@@ -141,8 +177,10 @@ export default class Worldstate {
 		this.retryTimeout = Math.min(this.retryTimeout * 2, config.maxRetryTimeout)
 	}
 
-	// Read worldstate dump and schedule next request
-	// Start the parsing process if the dump passes validity tests
+	/**
+	 * Read worldstate dump and schedule next request
+	 * Start the parsing process if the dump passes validity tests
+	 */
 	private handleWorldstateResponse(res: http.IncomingMessage): void {
 		let decomp,
 			resData = ''
@@ -185,7 +223,9 @@ export default class Worldstate {
 			})
 	}
 
-	// Parse the worldstate dump using a chain of Promises to minimize blocking
+	/**
+	 * Parse the worldstate dump using a chain of Promises to minimize blocking
+	 */
 	private readWorldstate(): void {
 		promisify.queue(
 			this,
@@ -206,8 +246,10 @@ export default class Worldstate {
 		.then(() => { this.reloading = false })
 	}
 
-	// News field is called Events.
-	// Events and tactical alerts are found in the Goals section
+	/**
+	 * Read news articles
+	 * Events and tactical alerts are found in the Goals section
+	 */
 	private readNews(): void {
 		const table = this.db.getTable('news') as WfDbTable<WfNews>
 		if (!table || !this.ws.Events) {
@@ -258,6 +300,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read alerts
+	 */
 	private readAlerts(): void {
 		const table = this.db.getTable('alerts') as WfDbTable<WfAlert>
 		if (!table || !this.ws.Alerts) {
@@ -277,7 +322,6 @@ export default class Worldstate {
 			const end = h.getDate(alert.Expiry)
 			if (end >= this.now && (!table.get(id) || this.reloading)) {
 				const mi = alert.MissionInfo,
-					levelId = mi.levelOverride,
 					rewards = items.getRewards(mi.missionReward),
 					dbAlert: WfAlert = {
 						id: id,
@@ -302,7 +346,10 @@ export default class Worldstate {
 		}
 	}
 
-	// The goals category is a "misc bin". Determine type and hand off to relevant function
+	/**
+	 * Read goals
+	 * The goals category is a "misc bin". Determine type and hand off to relevant function
+	 */
 	private readGoals(): void {
 		if (!this.ws.Goals) {
 			return
@@ -329,6 +376,11 @@ export default class Worldstate {
 		this.readFomorians(fomorians)
 	}
 
+	/**
+	 * Read events
+	 *
+	 * @param events Event info from readGoals
+	 */
 	private readEvents(events: any[]): void {
 		const table = this.db.getTable('events') as WfDbTable<WfEvent>
 		if (!table) {
@@ -417,7 +469,12 @@ export default class Worldstate {
 		}
 	}
 
-	// Both the Razorback and Balor Fomorian are found in this section
+	/**
+	 * Read fomorians
+	 * Both the Razorback and Balor Fomorian are found in this section
+	 *
+	 * @param fomorians Fomorian info from readGoals
+	 */
 	private readFomorians(fomorians: any[]): void {
 		const table = this.db.getTable('fomorians') as WfDbTable<WfFomorian>
 		if (!table) {
@@ -519,6 +576,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read sorties
+	 */
 	private readSorties(): void {
 		const table = this.db.getTable('sorties') as WfDbTable<WfSortie>
 		if (!table || !this.ws.Sorties) {
@@ -566,6 +626,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read void fissures
+	 */
 	private readVoidFissures(): void {
 		const table = this.db.getTable('fissures') as WfDbTable<WfVoidFissure>
 		if (!table || !this.ws.ActiveMissions) {
@@ -603,6 +666,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read invasions
+	 */
 	private readInvasions(): void {
 		const table = this.db.getTable('invasions') as WfDbTable<WfInvasion>
 		if (!table || !this.ws.Invasions) {
@@ -739,7 +805,10 @@ export default class Worldstate {
 		}
 	}
 
-	// Syndicate missions and Bounties are found under the same key
+	/**
+	 * Read syndicate missions
+	 * Syndicate missions and Bounties are found under the same key
+	 */
 	private readSyndicateMissions(): void {
 		log.notice('Reading %s syndicate missions', this.platform)
 		const bounties = []
@@ -760,6 +829,11 @@ export default class Worldstate {
 		this.readBounties(bounties)
 	}
 
+	/**
+	 * Read bounties
+	 *
+	 * @param bounties Bounty info from readSyndicateMissions
+	 */
 	private readBounties(bounties: any[]): void {
 		const table = this.db.getTable('bounties') as WfDbTable<WfBounty>
 		if (!table) {
@@ -841,6 +915,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read global boosters
+	 */
 	private readUpgrades(): void {
 		const table = this.db.getTable('upgrades') as WfDbTable<WfUpgrade>
 		if (!table || !this.ws.GlobalUpgrades) {
@@ -877,6 +954,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read void traders
+	 */
 	private readVoidTraders(): void {
 		const table = this.db.getTable('voidtraders') as WfDbTable<WfVoidTrader>
 		if (!table || !this.ws.VoidTraders) {
@@ -944,6 +1024,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read faction projects
+	 */
 	private readFactionProjects(): void {
 		const table = this.db.getTable('factionprojects') as WfDbTable<WfFomorianProgress>
 		if (!table || !this.ws.ProjectPct) {
@@ -1012,6 +1095,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read acolytes
+	 */
 	private readAcolytes(): void {
 		const table = this.db.getTable('acolytes') as WfDbTable<WfAcolyte>
 		if (!table || !this.ws.PersistentEnemies) {
@@ -1096,6 +1182,9 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Read Darvo's daily deals
+	 */
 	private readDailyDeals(): void {
 		const table = this.db.getTable('dailydeals') as WfDbTable<WfDailyDeal>
 		if (!table || !this.ws.DailyDeals) {
@@ -1152,30 +1241,42 @@ export default class Worldstate {
 		}
 	}
 
+	/**
+	 * Write all database changes to disk
+	 */
 	private flushDb(): void {
 		this.db.flush()
 	}
 
+	/**
+	 * Add a temporary progress history record with a negative timestamp
+	 * if the most recent record is permanent
+	 *
+	 * @param progress Current progress
+	 * @param progressHistory Previous progress records
+	 */
 	private updateProgress(progress: number, progressHistory: WfProgressHistory): void {
 		const prev = progressHistory[progressHistory.length - 1]
 		if (prev[0] < 0) {
-			// The continuously updated entry in <progressHistory> has a negative timestamp
 			prev[0] = -this.now
 			prev[1] = progress
 		}
 		else {
-			// Last entry is a permanent record. Push new continuously updated one
 			progressHistory.push([-this.now, progress])
 		}
 	}
 
+	/**
+	 * Remove the last progress history record if it's temporary
+	 * and add a final record with the current timestamp
+	 *
+	 * @param progressHistory Previous progress records
+	 */
 	private endProgress(progressHistory: WfProgressHistory): void {
 		if (progressHistory[progressHistory.length - 1][0] < 0) {
-			// Remove last history entry if it's temporary
 			progressHistory.pop()
 		}
 		if (progressHistory[progressHistory.length - 1][1] > 0) {
-			// Add final entry if necessary
 			progressHistory.push([this.now, 0])
 		}
 	}

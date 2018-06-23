@@ -4,15 +4,18 @@ import net = require('net')
 import os = require('os')
 
 import config from './config'
-import items = require('./items')
 import log = require('./log')
-import tags = require('./tags')
 import Worldstate from './worldstate'
 
 export default class Server {
 	private httpServer: http.Server
 	private running = false
 
+	/**
+	 * Create a server and set up its HTTP event listeners
+	 *
+	 * @param instances Worldstate instances to keep track of and update
+	 */
 	constructor(private instances: {[platform: string]: Worldstate}) {
 		this.httpServer = http.createServer()
 			.on('request', (req, res) => { this.handleRequest(req, res) })
@@ -27,6 +30,9 @@ export default class Server {
 			})
 	}
 
+	/**
+	 * Start the server and initialize the Worldstate instances
+	 */
 	start(): void {
 		if (this.running) {
 			log.info('Server is already running')
@@ -39,6 +45,9 @@ export default class Server {
 		}
 	}
 
+	/**
+	 * Reload the server and Worldstate instances and restart the listener as required by config changes
+	 */
 	reload(): void {
 		const oldListen = config.listen
 		for (const platform in this.instances) {
@@ -49,6 +58,11 @@ export default class Server {
 		}
 	}
 
+	/**
+	 * Shut down the server and call the given callback when done
+	 *
+	 * @param callback Function to call after shutdown
+	 */
 	shutdown(callback: () => void) {
 		log.info('Cleaning up before exit')
 		if (this.httpServer.listening) {
@@ -59,6 +73,9 @@ export default class Server {
 		}
 	}
 
+	/**
+	 * (Re-)start the HTTP server if enabled in configuration
+	 */
 	private startServer() {
 		if (this.httpServer.listening) {
 			log.info('Restarting server')
@@ -138,6 +155,12 @@ export default class Server {
 		}
 	}
 
+	/**
+	 * Read and respond to an HTTP request
+	 *
+	 * @param req
+	 * @param res
+	 */
 	private handleRequest(req: http.IncomingMessage, res: http.ServerResponse) {
 		const reqUrl = req.url || '/'
 		log.notice('Got request: %s', reqUrl)

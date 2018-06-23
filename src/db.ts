@@ -6,15 +6,23 @@ import log = require('./log')
 import config from './config'
 import promisify = require('./promisify')
 
-// Number of table updates before temp file cleanup is initiated
+/**
+ * Number of table updates before temp file cleanup is initiated
+ */
 const cleanTmpThreshold = 50
 
-// Return record string to be written to file
-function serialize(id: string, data: any) {
+/**
+ * Return record string to be written to file
+ *
+ * @param id
+ * @param data
+ * @returns Serialized data
+ */
+function serialize(id: string, data: any): string {
 	return id + '\t' + JSON.stringify(data) + '\n'
 }
 
-function errorHandler(err: NodeJS.ErrnoException) {
+function errorHandler(err: NodeJS.ErrnoException): void {
 	if (err) {
 		log.error('File I/O error: "%s"', err.message)
 	}
@@ -33,22 +41,28 @@ export default class Database implements WfDb {
 		this.ee = new EventEmitter()
 	}
 
+	/**
+	* Create and remove tables as required by the config.
+	* If reloading existing tables, update their path info
+	*
+	* @param onLoad Function to call once all tables are loaded
+	*/
 	setupTables(onLoad: () => void): void {
-		const oldTbls: WfSet = {}
+		const oldTables: WfSet = {}
 		for (const t in this.tables) {
-			oldTbls[t] = true
+			oldTables[t] = true
 		}
-		for (const tblName of config.wsFields) {
-			if (!(tblName in this.tables)) {
+		for (const tableName of config.wsFields) {
+			if (!(tableName in this.tables)) {
 				++this.loading
-				this.tables[tblName] = new Table(this.dbName, tblName, () => { this.setReady() })
+				this.tables[tableName] = new Table(this.dbName, tableName, () => { this.setReady() })
 			}
 			else {
-				this.tables[tblName].setPath()
+				this.tables[tableName].setPath()
 			}
-			delete oldTbls[tblName]
+			delete oldTables[tableName]
 		}
-		for (const t in oldTbls) {
+		for (const t in oldTables) {
 			log.notice('Unloading %s/%s', this.dbName, t)
 			delete this.tables[t]
 		}
@@ -60,23 +74,37 @@ export default class Database implements WfDb {
 		}
 	}
 
-	getTable(tblName: string): WfDbTable<WfDbTableType> | null {
-		return this.tables[tblName] || null
+	/**
+	* Return table
+	*
+	* @param string tableName
+	* @returns WfDbTable
+	*/
+	getTable(tableName: string): WfDbTable<WfDbTableType> {
+		return this.tables[tableName] || null
 	}
 
+	/**
+	 * Trigger the 'load' event when all tables are loaded
+	 */
 	private setReady(): void {
 		if (--this.loading == 0) {
 			this.ee.emit('load')
 		}
 	}
 
-	// Flush all tables
+	/**
+	 * Flush all tables
+	 */
 	flush(): void {
 		for (const table in this.tables) {
 			this.tables[table].flush()
 		}
 	}
 
+	/**
+	 * Update paths for all tables
+	 */
 	setPaths(): void {
 		for (const table in this.tables) {
 			this.tables[table].setPath()
@@ -88,25 +116,32 @@ type RecordMap<T> = { [id: string]: T }
 
 class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 	private dbName: string
-	private tblName: string
-	private tblPath: string = ''
+	private tableName: string
+	private tablePath: string = ''
 	private ready: boolean = false
 	private records: RecordMap<T> = {}
 	private lastUpdate: number = 0
 	private updates: string = ''
 	private tmpUpdates: string = ''
 	private tmpUpdateCount: number = 0
-	private tblBusy: boolean = true
-	private tblTmpBusy: boolean = true
+	private tableBusy: boolean = true
+	private tableTmpBusy: boolean = true
 	private ee: EventEmitter = new EventEmitter()
 
-	constructor(dbName: string, tblName: string, onLoad: () => void) {
+	/**
+	 * Create a database table and load its data
+	 *
+	 * @param dbName Name of the database the table belongs to
+	 * @param tableName Table name
+	 * @param onLoad Function to call once the table is ready
+	 */
+	constructor(dbName: string, tableName: string, onLoad: () => void) {
 		this.dbName = dbName
-		this.tblName = tblName
+		this.tableName = tableName
 		this.ee.once('load', onLoad)
 		this.setPath()
-		if (this.tblPath != '') {
-			this.load(this.tblPath + '.tmp')
+		if (this.tablePath != '') {
+			this.load(this.tablePath + '.tmp')
 				.then(() => { this.setReady() })
 				.catch(err => { log.error(err.message) })
 		}
@@ -115,29 +150,37 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 		}
 	}
 
+	/**
+	 * Set the table's data file path
+	 */
 	setPath(): void {
 		if (config.dbRoot) {
-			this.tblPath = path.join(config.dbRoot, this.dbName, path.basename(this.tblName) + '.db')
+			this.tablePath = path.join(config.dbRoot, this.dbName, path.basename(this.tableName) + '.db')
 		}
 		else {
-			this.tblPath = ''
+			this.tablePath = ''
 		}
 	}
 
-	// Load records that were active on last shutdown
-	private load(tblPath: string): Promise<void> {
+	/**
+	 * Load records that were active on last shutdown
+	 *
+	 * @param tablePath Path to the table's file data
+	 * @returns Promise that resolves when the table is ready
+	 */
+	private load(tablePath: string): Promise<void> {
 		return new Promise<void>((resolve, reject) => {
-			log.notice('Loading %s/%s', this.dbName, this.tblName)
-			const readStream = fs.createReadStream(tblPath, {
+			log.notice('Loading %s/%s', this.dbName, this.tableName)
+			const readStream = fs.createReadStream(tablePath, {
 					encoding: 'utf8',
 					flags: 'r'
 				}),
 				tStart = process.hrtime()
 			readStream.on('error', err => {
 				if (err && err.code != 'ENOENT') {
-					throw new Error(`Error loading database ${this.dbName}/${this.tblName}: ${err.message}`)
+					throw new Error(`Error loading database ${this.dbName}/${this.tableName}: ${err.message}`)
 				}
-				log.notice('No database for %s/%s', this.dbName, this.tblName)
+				log.notice('No database for %s/%s', this.dbName, this.tableName)
 				resolve()
 			})
 			let recordCount = 0,
@@ -164,7 +207,7 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 						}
 						++updateCount
 						++this.tmpUpdateCount
-						log.debug('Updated record %s in %s/%s', id, this.dbName, this.tblName)
+						log.debug('Updated record %s in %s/%s', id, this.dbName, this.tableName)
 					}
 					else {
 						// Read new record
@@ -173,34 +216,47 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 							data.id = id
 						}
 						++recordCount
-						log.debug('Loaded record %s from %s/%s', id, this.dbName, this.tblName)
+						log.debug('Loaded record %s from %s/%s', id, this.dbName, this.tableName)
 					}
 				}).on('close', () => {
 					const tEnd = process.hrtime(),
 						loadTime = (tEnd[0] * 1e9 + tEnd[1]) - (tStart[0] * 1e9 + tStart[1])
-					log.notice('Loaded %d records and %d updates from %s/%s in %f ms', recordCount, updateCount, this.dbName, this.tblName, Math.floor(loadTime / 1e3) / 1e3)
+					log.notice('Loaded %d records and %d updates from %s/%s in %f ms', recordCount, updateCount, this.dbName, this.tableName, Math.floor(loadTime / 1e3) / 1e3)
 					resolve()
 				})
 		})
 	}
 
+	/**
+	 * Mark table ready and trigger the 'load' event
+	 */
 	private setReady(): void {
 		this.lastUpdate = Date.now()
 		this.ready = true
-		this.tblBusy = false
-		this.tblTmpBusy = false
-		log.notice('Database %s/%s is ready', this.dbName, this.tblName)
+		this.tableBusy = false
+		this.tableTmpBusy = false
+		log.notice('Database %s/%s is ready', this.dbName, this.tableName)
 		this.ee.emit('load')
 	}
 
+	/**
+	 * @returns true is table is ready
+	 */
 	isReady(): boolean {
 		return this.ready
 	}
 
+	/**
+	 * @param id Record id
+	 * @returns Table record or null if not found
+	 */
 	get(id: string): T | null {
 		return this.records[id] || null
 	}
 
+	/**
+	 * @returns All table records
+	 */
 	getAll(): T[] {
 		const ret: T[] = []
 		for (const id in this.records) {
@@ -209,6 +265,9 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 		return ret
 	}
 
+	/**
+	 * @returns Set of record ids
+	 */
 	getIdMap(): WfSet {
 		const ret: WfSet = {}
 		for (const id in this.records) {
@@ -217,11 +276,20 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 		return ret
 	}
 
+	/**
+	 * @returns Timestamp of last update truncated to seconds
+	 */
 	getLastUpdate(): number {
 		return Math.floor(this.lastUpdate / 1000)
 	}
 
-	// Add record to the table and optionally write it to the temp table file
+	/**
+	 * Add record to the table and optionally write it to the temp table file
+	 *
+	 * @param id Record id
+	 * @param data Record data
+	 * @param write Whether to write to file
+	 */
 	add(id: string, data: T, write: boolean): void {
 		this.records[id] = data
 		if (write) {
@@ -229,12 +297,22 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 		}
 	}
 
+	/**
+	 * Remove record
+	 *
+	 * @param id Id of record to remove
+	 */
 	remove(id: string): void {
 		delete this.records[id]
 	}
 
-	// Since only active records are kept in memory, add record to the archive table update buffer,
-	// then remove the record and force a cleanup on the next flush() call
+	/**
+	 * Move temporary record to permanent storage. Since only active records
+	 * are kept in memory, add record to the archive table update buffer,
+	 * then remove the record and force a cleanup on the next flush() call
+	 *
+	 * @param id Id of record to move
+	 */
 	moveTmp(id: string): void {
 		if (id in this.records) {
 			this.updates += serialize(id, this.records[id])
@@ -243,7 +321,12 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 		}
 	}
 
-	// Write updates to temp table file
+	/**
+	 * Write updates to temp table file
+	 *
+	 * @param id Id of record to update
+	 * @param updates Updated record data
+	 */
 	updateTmp(id: string, updates: any): void {
 		if (id in this.records) {
 			++this.tmpUpdateCount
@@ -251,33 +334,37 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 		}
 	}
 
-	// Clean up temp table file by writing all active records to a new file
-	// and overwriting the old one if the operation is successful
+	/**
+	 * Clean up temp table file by writing all active records to a new file
+	 * and overwriting the old one if the operation is successful
+	 */
 	private clean(): void {
-		if (this.tblTmpBusy) {
-			log.error('Temp database %s is busy', this.tblName)
+		if (this.tableTmpBusy) {
+			log.error('Temp database %s is busy', this.tableName)
 			return
 		}
 		this.tmpUpdateCount = 0
-		this.tblTmpBusy = true
+		this.tableTmpBusy = true
 		let records = ''
 		for (const id in this.records) {
 			records += serialize(id, this.records[id])
 		}
 		if (records === '') {
-			promisify.removeFile(this.tblPath + '.tmp')
+			promisify.removeFile(this.tablePath + '.tmp')
 				.catch(errorHandler)
-				.then(() => { this.tblTmpBusy = false })
+				.then(() => { this.tableTmpBusy = false })
 		}
 		else {
-			promisify.writeFile(this.tblPath + '.tmp1', records)
-				.then(() => promisify.renameFile(this.tblPath + '.tmp1', this.tblPath + '.tmp'))
+			promisify.writeFile(this.tablePath + '.tmp1', records)
+				.then(() => promisify.renameFile(this.tablePath + '.tmp1', this.tablePath + '.tmp'))
 				.catch(errorHandler)
-				.then(() => { this.tblTmpBusy = false })
+				.then(() => { this.tableTmpBusy = false })
 		}
 	}
 
-	// Write update buffers to file storage and clean up temp table file if necessary
+	/**
+	 * Write update buffers to file storage and clean up temp table file if necessary
+	 */
 	flush(): void {
 		if (this.updates || this.tmpUpdates) {
 			this.lastUpdate = Date.now()
@@ -287,35 +374,35 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 			this.tmpUpdateCount = 0
 			return
 		}
-		if (this.tblBusy) {
-			log.error('Database %s is busy', this.tblName)
+		if (this.tableBusy) {
+			log.error('Database %s is busy', this.tableName)
 		}
 		else if (this.updates) {
-			this.tblBusy = true
+			this.tableBusy = true
 			const updatesBuf = this.updates
 			this.updates = ''
-			promisify.appendFile(this.tblPath, updatesBuf)
+			promisify.appendFile(this.tablePath, updatesBuf)
 				.catch(err => {
 					this.updates = updatesBuf + this.updates
 					errorHandler(err)
-				}).then(() => { this.tblBusy = false })
+				}).then(() => { this.tableBusy = false })
 		}
-		if (this.tblTmpBusy) {
-			log.error('Temp database %s is busy', this.tblName)
+		if (this.tableTmpBusy) {
+			log.error('Temp database %s is busy', this.tableName)
 		}
 		else if (this.tmpUpdates) {
-			this.tblTmpBusy = true
+			this.tableTmpBusy = true
 			const tmpUpdatesBuf = this.tmpUpdates
 			this.tmpUpdates = ''
-			promisify.appendFile(this.tblPath + '.tmp', tmpUpdatesBuf)
+			promisify.appendFile(this.tablePath + '.tmp', tmpUpdatesBuf)
 				.then(() => {
-					this.tblTmpBusy = false
+					this.tableTmpBusy = false
 					if (this.tmpUpdateCount >= cleanTmpThreshold) {
 						this.clean()
 					}
 				}).catch(err => {
 					this.tmpUpdates = tmpUpdatesBuf + this.tmpUpdates
-					this.tblTmpBusy = false
+					this.tableTmpBusy = false
 					errorHandler(err)
 				})
 		}

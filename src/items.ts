@@ -5,6 +5,13 @@ let rewardTables: WfRewardTableMap,
 	itemTypes: WfMap,
 	lcItemIds: boolean
 
+/**
+ * Load item info and reward tables
+ *
+ * @param _rewardTables Path to reward table JSON data
+ * @param _itemNames Path to item name JSON data
+ * @param _itemTypes Path to item type JSON data
+ */
 export function load(_rewardTables: string, _itemNames: string, _itemTypes: string): void {
 	try {
 		rewardTables = JSON.parse(fs.readFileSync(_rewardTables, 'utf8'))
@@ -17,6 +24,10 @@ export function load(_rewardTables: string, _itemNames: string, _itemTypes: stri
 	lcItemIds = 'powersuits/mag/mag' in itemNames
 }
 
+/**
+ * @param itemName
+ * @returns Item type of a given item or 'Misc' if unknown
+ */
 function getItemType(itemName: string): string {
 	if (itemName.slice(-4) == 'Endo') {
 	  return 'Endo'
@@ -24,7 +35,10 @@ function getItemType(itemName: string): string {
 	return itemTypes[itemName] || 'Misc'
 }
 
-// Return name and type of the item matching the given item id
+/**
+ * @param itemId
+ * @returns Name and type of the item matching a given item ID
+ */
 export function getItem(itemId: string): WfItem {
 	// Id prefixes are stripped to reduce memory consumption of the <itemNames> map
 	itemId = itemId.replace(/^\/Lotus(?:(?:\/Types)?\/StoreItems)?\//, '')
@@ -35,6 +49,10 @@ export function getItem(itemId: string): WfItem {
 	}
 }
 
+/**
+ * @param itemIds
+ * @returns Names and types of the items matching given item IDs
+ */
 export function getItems(itemIds: string[]): WfItem[] {
 	const ret: WfItem[] = []
 	for (const itemId of itemIds) {
@@ -43,6 +61,13 @@ export function getItems(itemIds: string[]): WfItem[] {
 	return ret
 }
 
+/**
+ * Create a WfRewards object with credit and item rewards for the given input.
+ * Refer to types.ts for details.
+ *
+ * @param rewards
+ * @returns Reward info
+ */
 export function getRewards(rewards: any): WfRewards | null {
 	const ret: WfRewards = {},
 		items: WfReward[] = []
@@ -71,8 +96,12 @@ export function getRewards(rewards: any): WfRewards | null {
 	return ret.items || ret.credits ? ret : null
 }
 
-// Return reward table as an array of reward tiers, where each reward tier is an array of rewards.
-// Refer to types.ts for details
+/**
+ * Return reward table as an array of reward tiers, where each reward tier is an array of rewards.
+ * Refer to types.ts for details.
+ *
+ * @param tableId Reward table manifest ID
+ */
 export function getRandomRewards(tableId: string): WfRandomRewardTable {
 	tableId = tableId.substr(tableId.lastIndexOf('/') + 1)
 	const rewardTable = rewardTables[tableId] || [],
@@ -92,7 +121,12 @@ export function getRandomRewards(tableId: string): WfRandomRewardTable {
 	return ret
 }
 
-// Bounty reward table ids are prefixed with the syndicate tag
+/**
+ * Wrapper for getRandomRewards with the syndicate tag as reward table ID prefix
+ *
+ * @param syndicateTag
+ * @param tableId
+ */
 export function getBountyRewards(syndicateTag: string, tableId: string): WfRandomRewardTable {
 	tableId = syndicateTag + 'Bounty' + tableId.substr(tableId.lastIndexOf('/') + 1)
 	return getRandomRewards(tableId)

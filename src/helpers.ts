@@ -1,13 +1,20 @@
 import tags = require('./tags')
 
-// Convert number to a string with leading zeros. Helper function for date/time formatting
+/**
+ * Convert number to a string with leading zeros. Helper function for date/time formatting
+ */
 const padValues = ['', '0', '00']
 export function pad(n: number, len: number = 2): string {
 	const s = n.toString()
 	return padValues[len - s.length] + s
 }
 
-// Extract the id parameter from a worldstate entry
+/**
+ * Extract the id parameter from a worldstate entry
+ *
+ * @param struct Entry data
+ * @returns Entry ID or empty string if not found
+ */
 export function getId(struct: any): string {
 	if (!struct._id) {
 		return ''
@@ -15,8 +22,12 @@ export function getId(struct: any): string {
 	return struct._id.$oid || struct._id.$id || ''
 }
 
-// Extract the date or time parameter from a worldstate entry and return it as unix time
-// Return 0 on missing or invalid parameter
+/**
+ * Extract the date or time parameter from a worldstate entry
+ *
+ * @param struct Entry data
+ * @returns Timestamp in seconds or 0 if missing or invalid parameter
+ */
 export function getDate(struct: any): number {
 	if (struct) {
 		const timeShort = struct.sec || struct.Time
@@ -32,14 +43,26 @@ export function getDate(struct: any): number {
 	return 0
 }
 
+/**
+ * @param nodeId
+ * @returns Location of a node in the star chart
+ */
 export function getLocation(nodeId: string): string {
 	return tags.locations[nodeId] || nodeId
 }
 
+/**
+ * @param missionTypeId
+ * @returns Mission type
+ */
 export function getMissionType(missionTypeId: string): string {
 	return tags.missionTypes[missionTypeId] || missionTypeId
 }
 
+/**
+ * @param nodeId
+ * @returns Default mission type associated with a node
+ */
 export function getNodeMissionType(nodeId: string): string {
 	const missionTypeId = tags.nodeMissionTypes[nodeId]
 	if (!missionTypeId) {
@@ -48,6 +71,10 @@ export function getNodeMissionType(nodeId: string): string {
 	return getMissionType(missionTypeId)
 }
 
+/**
+ * @param nodeId
+ * @returns Default faction associated with a node
+ */
 export function getNodeFaction(nodeId: string): string {
 	const factionId = tags.nodeFactions[nodeId]
 	if (!factionId) {
@@ -56,30 +83,58 @@ export function getNodeFaction(nodeId: string): string {
 	return getFaction(factionId)
 }
 
+/**
+ * @param factionId
+ * @returns Faction name
+ */
 export function getFaction(factionId: string): string {
 	return tags.factions[factionId] || factionId
 }
 
+/**
+ * @param voidTierId
+ * @returns Void tier name
+ */
 export function getVoidTier(voidTierId: string): string {
 	return tags.voidTiers[voidTierId] || voidTierId
 }
 
+/**
+ * @param factionId
+ * @returns Name of the faction's fomorian type
+ */
 export function getFomorianType(factionId: string): string {
 	return tags.fomorianTypes[factionId] || 'Unknown fomorian faction ' + factionId
 }
 
+/**
+ * @param projectIdx
+ * @returns Faction ID of a construction project
+ */
 export function getFomorianFaction(projectIdx: string): string {
 	return tags.fomorianFactions[projectIdx]
 }
 
+/**
+ * @param syndicateId
+ * @returns Syndicate name
+ */
 export function getSyndicateName(syndicateId: string): string {
 	return tags.syndicateNames[syndicateId] || syndicateId
 }
 
+/**
+ * @param voidTraderId
+ * @returns Void trader name
+ */
 export function getVoidTraderName(voidTraderId: string): string {
 	return tags.voidTraderNames[voidTraderId] || voidTraderId
 }
 
+/**
+ * @param acolyteTag
+ * @returns Acolyte name
+ */
 export function getAcolyteName(acolyteTag: string): string {
 	const acolyteId = acolyteTag.substr(acolyteTag.lastIndexOf('/') + 1)
 	return tags.acolyteNames[acolyteId] || acolyteId

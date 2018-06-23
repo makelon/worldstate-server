@@ -2,7 +2,14 @@ import fs = require('fs')
 import path = require('path')
 import log = require('./log')
 
-// fs.write Promise wrapper. Creates directory tree if necessary
+/**
+ * fs.write Promise wrapper. Creates directory tree if necessary
+ *
+ * @param file Path to file to write to
+ * @param data Data to write
+ * @param flags File mode - 'a': append, 'w': write
+ * @param tryMkdir Whether to try to create missing folders. Used for preventing infinite recursion
+ */
 function fsWrite(file: string, data: string | Buffer, flags: string = 'w', tryMkdir: boolean = true): Promise<number> {
 	return new Promise<number>((resolve, reject) => {
 		const ws = fs.createWriteStream(file, { flags: flags })
@@ -19,7 +26,11 @@ function fsWrite(file: string, data: string | Buffer, flags: string = 'w', tryMk
 	})
 }
 
-// fs.mkdir Promise wrapper
+/**
+ * fs.mkdir Promise wrapper
+ *
+ * @param dir Path to directory to create
+ */
 function fsMkdir(dir: string): Promise<void> {
 	return new Promise<void>((resolve, reject) => {
 		fs.mkdir(dir, err => {
@@ -35,8 +46,16 @@ function fsMkdir(dir: string): Promise<void> {
 	})
 }
 
-// Promisified mkdir -p with cache to prevent duplicate calls
+/**
+ * Map of pending fsMkdir calls
+ */
 const mkdirCache: { [dir: string]: Promise<void> } = {}
+
+/**
+ * Promisified mkdir -p with cache to prevent duplicate calls
+ *
+ * @param dir Path to directory to create
+ */
 export function mkdir(dir: string): Promise<void> {
 	const pathInfo = path.parse(dir)
 	if (pathInfo.dir === pathInfo.root) {
@@ -67,15 +86,32 @@ export function mkdir(dir: string): Promise<void> {
 	return promise
 }
 
+/**
+ * Create or truncate a file and write the given data to it
+ *
+ * @param file Path of file to write to
+ * @param data Data to write
+ */
 export function writeFile(file: string, data: string | Buffer): Promise<number> {
 	return fsWrite(file, data, 'w')
 }
 
+/**
+ * Create a file if necessary and append the given data to it
+ *
+ * @param file Path of file to write to
+ * @param data Data to write
+ */
 export function appendFile(file: string, data: string | Buffer): Promise<number> {
 	return fsWrite(file, data, 'a')
 }
 
-// fs.rename Promise wrapper
+/**
+ * fs.rename Promise wrapper
+ *
+ * @param from
+ * @param to
+ */
 export function renameFile(from: string, to: string): Promise<void> {
 	return new Promise((resolve, reject) => {
 		fs.rename(from, to, err => {
@@ -88,7 +124,11 @@ export function renameFile(from: string, to: string): Promise<void> {
 	})
 }
 
-// fs.unlink Promise wrapper
+/**
+ * fs.unlink Promise wrapper
+ *
+ * @param file
+ */
 export function removeFile(file: string): Promise<void> {
 	return new Promise((resolve, reject) => {
 		fs.unlink(file, err => {
@@ -101,8 +141,13 @@ export function removeFile(file: string): Promise<void> {
 	})
 }
 
-// Basic scheduling function to prevent chains of function calls from
-// blocking I/O for long periods of time
+/**
+ * Scheduling function to prevent chains of function calls from
+ * blocking I/O for long periods of time
+ *
+ * @param _this The context in which the functions are called
+ * @param fcns Functions to call
+ */
 export function queue(_this: any, ...fcns: Function[]): Promise<void> {
 	const wait = () => new Promise<void>((resolve, reject) => { setImmediate(resolve) })
 	let promise = wait()

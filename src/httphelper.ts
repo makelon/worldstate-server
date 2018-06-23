@@ -3,7 +3,13 @@ import https = require('https')
 import nodeUrl = require('url')
 import config from './config'
 
-// Create a HTTP request options object to use when fetching the worldstate dump
+/**
+ * Create a reusable HTTP request options object for repeated requests to the same host
+ *
+ * @param url
+ * @param method
+ * @returns Request options object
+ */
 export function prepareRequest(url: string, method: string = 'GET'): https.RequestOptions {
 	const wsUrlParsed = nodeUrl.parse(url),
 		requestOptions: https.RequestOptions = {
@@ -30,6 +36,12 @@ export function prepareRequest(url: string, method: string = 'GET'): https.Reque
 	return requestOptions
 }
 
+/**
+ * Send a HTTP(S) request
+ *
+ * @param requestOptions
+ * @returns HTTP request object
+ */
 export function sendRequest(requestOptions: https.RequestOptions): http.ClientRequest {
 	const req = requestOptions.protocol == 'https:'
 		? https.request(requestOptions)

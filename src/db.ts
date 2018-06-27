@@ -31,21 +31,17 @@ function errorHandler(err: NodeJS.ErrnoException): void {
 type TableMap = { [tblName: string]: WfDbTableI<WfDbTableType> }
 
 export default class Database implements WfDb {
-	private dbName: string
 	private loading: number = 0
 	private tables: TableMap = {}
-	private ee: EventEmitter
+	private ee = new EventEmitter()
 
-	constructor(dbName: string) {
-		this.dbName = dbName
-		this.ee = new EventEmitter()
-	}
+	constructor(private dbName: string) {}
 
 	/**
-	* Create and remove tables as required by the config.
-	* If reloading existing tables, update their path info
-	*
-	* @param onLoad Function to call once all tables are loaded
+	 * Create and remove tables as required by the config.
+	 * If reloading existing tables, update their path info
+	 *
+	 * @param onLoad Function to call once all tables are loaded
 	*/
 	setupTables(onLoad: () => void): void {
 		const oldTables: WfSet = {}
@@ -75,10 +71,10 @@ export default class Database implements WfDb {
 	}
 
 	/**
-	* Return table
-	*
-	* @param string tableName
-	* @returns WfDbTable
+	 * Return table
+	 *
+	 * @param string tableName
+	 * @returns WfDbTable
 	*/
 	getTable(tableName: string): WfDbTable<WfDbTableType> {
 		return this.tables[tableName] || null
@@ -115,18 +111,16 @@ export default class Database implements WfDb {
 type RecordMap<T> = { [id: string]: T }
 
 class Table<T extends WfDbTableType> implements WfDbTableI<T> {
-	private dbName: string
-	private tableName: string
-	private tablePath: string = ''
-	private ready: boolean = false
+	private tablePath = ''
+	private ready = false
 	private records: RecordMap<T> = {}
-	private lastUpdate: number = 0
-	private updates: string = ''
-	private tmpUpdates: string = ''
-	private tmpUpdateCount: number = 0
-	private tableBusy: boolean = true
-	private tableTmpBusy: boolean = true
-	private ee: EventEmitter = new EventEmitter()
+	private lastUpdate = 0
+	private updates = ''
+	private tmpUpdates = ''
+	private tmpUpdateCount = 0
+	private tableBusy = true
+	private tableTmpBusy = true
+	private ee = new EventEmitter()
 
 	/**
 	 * Create a database table and load its data
@@ -135,9 +129,11 @@ class Table<T extends WfDbTableType> implements WfDbTableI<T> {
 	 * @param tableName Table name
 	 * @param onLoad Function to call once the table is ready
 	 */
-	constructor(dbName: string, tableName: string, onLoad: () => void) {
-		this.dbName = dbName
-		this.tableName = tableName
+	constructor(
+		private dbName: string,
+		private tableName: string,
+		onLoad: () => void
+	) {
 		this.ee.once('load', onLoad)
 		this.setPath()
 		if (this.tablePath != '') {

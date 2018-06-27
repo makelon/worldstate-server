@@ -6,7 +6,6 @@ import tags = require('./tags')
 import h = require('./helpers')
 import items = require('./items')
 import promisify = require('./promisify')
-import Database from './db'
 import config from './config'
 import httpHelper = require('./httphelper');
 
@@ -25,21 +24,20 @@ function looksLikeWorldstate(ws: any) {
 let numInstances = 0
 
 export default class Worldstate {
-	private db: Database
-	private platform: string
 	private requestOptions: https.RequestOptions | null = null
 	private requestTimerId?: NodeJS.Timer
 	private ws: any
-	private now: number = 0
-	private ready: boolean = false
-	private reloading: boolean = false
-	private retryTimeout: number = config.minRetryTimeout
-	private nextUpdate: number = Date.now() + 3000
+	private now = 0
+	private ready = false
+	private reloading = false
+	private retryTimeout = config.minRetryTimeout
+	private nextUpdate = Date.now() + 3000
 
-	constructor(platform: string) {
+	constructor(
+		private db: WfDb,
+		private platform: string
+	) {
 		log.notice('Creating instance %s', platform)
-		this.platform = platform
-		this.db = new Database(this.platform)
 	}
 
 	/**

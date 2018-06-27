@@ -6,7 +6,7 @@ const fixtures = require('./deps/fixtures')
 const MockGame = require('./deps/mockgame')
 
 describe('Worldstate server', () => {
-	const ws = new Worldstate('pc'),
+	const ws = new Worldstate(new Database('pc'), 'pc'),
 		server = new Server({pc: ws}),
 		mockGame = new MockGame('127.0.0.1', 20354)
 		timestamp = fixtures.timeNowShort,

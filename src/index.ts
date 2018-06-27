@@ -4,6 +4,7 @@ import log = require('./log')
 import tags = require('./tags')
 import Server from './server'
 import Worldstate from './worldstate'
+import Database from './db';
 
 process.chdir(__dirname)
 
@@ -49,9 +50,9 @@ function start() {
 }
 
 const server = new Server({
-	pc: new Worldstate('pc'),
-	ps4: new Worldstate('ps4'),
-	xb1: new Worldstate('xb1')
+	pc: new Worldstate(new Database('pc'), 'pc'),
+	ps4: new Worldstate(new Database('ps4'), 'ps4'),
+	xb1: new Worldstate(new Database('xb1'), 'xb1')
 })
 
 process.on('SIGINT', exit)

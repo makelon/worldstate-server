@@ -9,6 +9,6 @@
 		"strictPropertyInitialization": true,
 	},
 	"include": [
-		"src/*"
+		"src/**/*"
 	]
 }

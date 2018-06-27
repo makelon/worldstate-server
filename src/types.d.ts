@@ -201,6 +201,11 @@ interface WfUpgrade {
 	value: number
 }
 
+interface WfReader {
+	start(db: WfDb): void
+	read(input: any[], timestamp: number): void
+}
+
 interface WfDb {
 	setupTables(onLoad: () => void): void
 	getTable<T extends keyof WfRecordTypes>(tblName: T): WfDbTable<WfRecordTypes[T]>

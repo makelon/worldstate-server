@@ -1,7 +1,8 @@
+const Database = require('../out/db').default
 const Worldstate = require('../out/worldstate').default
 const fixtures = require('./deps/fixtures')
 
-describe('World state', () => {
+describe('Worldstate', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc')
 
 	function setWorldstateData(data, timestamp) {

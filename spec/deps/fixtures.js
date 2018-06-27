@@ -116,6 +116,10 @@ function* getAcolytes() {
 	expected.health = acolyte.HealthPercent
 	expected.healthHistory[1] = [timeLocalShort, acolyte.HealthPercent]
 	yield [data, expected]
+
+	acolyte.LocTag = 'RogueAcolyte'
+	expected.name = 'Mania'
+	yield [data, expected]
 }
 
 function* getAlerts() {
@@ -149,14 +153,29 @@ function* getAlerts() {
 		},
 		data = { Alerts: [alert] }
 	yield [data, expected]
+
+	alert.MissionInfo.faction = factions[1].id
+	expected.faction = factions[1].name
+	yield [data, expected]
+
+	alert.MissionInfo.missionReward = itemRewards.input
+	expected.rewards = itemRewards.output
+	yield [data, expected]
+
+	delete alert.MissionInfo.missionReward.items
+	delete expected.rewards.items
+	yield [data, expected]
 }
 
 function* getBounties() {
+	let timeLocalShort = timeNowShort
 	const bounty = {
             _id: { $oid: entryId },
             Activation: { $date: { $numberLong: timeStartLong } },
             Expiry: { $date: { $numberLong: timeEndLong } },
-            Tag: 'CetusSyndicate',
+			Tag: 'CetusSyndicate',
+			HealthPct: 0.9,
+			VictimNode: nodes[1].id,
             Jobs: [
                 {
                     rewards: rewardTables.input,
@@ -171,6 +190,9 @@ function* getBounties() {
 			start: timeStartShort,
 			end: timeEndShort,
 			syndicate: 'Cetus',
+			health: 0.9,
+			healthHistory: [[timeStartShort, 1], [timeNowShort, 0.9]],
+			location: nodes[1].name,
 			jobs: [
 				{
 					rewards: rewardTables.output,
@@ -182,10 +204,18 @@ function* getBounties() {
 		},
 		data = { SyndicateMissions: [bounty] }
 	yield [data, expected]
+
+	timeLocalShort += timeStep
+	bounty.HealthPct = 0.4
+	bounty.VictimNode = nodes[0].id
+	expected.health = bounty.HealthPct
+	expected.healthHistory.push([timeLocalShort, bounty.HealthPct])
+	expected.location = nodes[0].name
+	yield [data, expected]
 }
 
 function* getDailyDeals() {
-	const dailyDeal = {
+	const deal = {
             Activation: { $date: { $numberLong: timeStartLong } },
             Expiry: { $date: { $numberLong: timeEndLong } },
 			StoreItem: items[0].id,
@@ -205,7 +235,11 @@ function* getDailyDeals() {
 			stock: 200,
 			sold: 125
 		},
-		data = { DailyDeals: [dailyDeal] }
+		data = { DailyDeals: [deal] }
+	yield [data, expected]
+
+	deal.StoreItem = items[1].id
+	expected.item = { name: items[1].name, type: items[1].type }
 	yield [data, expected]
 }
 
@@ -239,6 +273,12 @@ function* getFactionProjects() {
 	projects[0] = 35
 	expected.progress = projects[0]
 	expected.progressHistory[1] = [timeLocalShort, projects[0]]
+	yield [data, expected]
+
+	timeLocalShort += timeStep
+	projects[0] = 15
+	expected.progress = projects[0]
+	expected.progressHistory = [[timeLocalShort, projects[0]]]
 	yield [data, expected]
 }
 
@@ -291,6 +331,10 @@ function* getGoals() {
 	fomorian.HealthPct = 0.5
 	expected.health = fomorian.HealthPct
 	expected.healthHistory[2] = [timeLocalShort, fomorian.HealthPct]
+	yield [data, expected]
+
+	fomorian.VictimNode = nodes[1].id
+	expected.victimLocation = nodes[1].name
 	yield [data, expected]
 }
 
@@ -349,6 +393,10 @@ function* getInvasions() {
 	expected.score = invasion.Count
 	expected.scoreHistory[3] = [timeLocalShort, invasion.Count]
 	yield [data, expected]
+
+	invasion.AttackerReward = undefined
+	delete expected.rewardsAttacker
+	yield [data, expected]
 }
 
 function* getNews() {
@@ -380,6 +428,10 @@ function* getNews() {
 		},
 		data = { Events: [article] }
 	yield [data, expected]
+
+	article.Messages[0].Message = 'More free tests!'
+	expected.text = article.Messages[0].Message
+	yield [data, expected]
 }
 
 function* getSorties() {
@@ -402,6 +454,11 @@ function* getSorties() {
 		},
 		data = { Sorties: [sortie] }
 	yield [data, expected]
+
+	sortie.Boss = 'SORTIE_BOSS_JACKAL'
+	expected.bossName = 'Jackal'
+	expected.faction = factions[1].name
+	yield [data, expected]
 }
 
 function* getUpgrades() {
@@ -423,10 +480,14 @@ function* getUpgrades() {
 		},
 		data = { GlobalUpgrades: [upgrade] }
 	yield [data, expected]
+
+	upgrade.Activation.sec = timeStartShort - 1000
+	expected.start = upgrade.Activation.sec
+	yield [data, expected]
 }
 
 function* getVoidFissures() {
-	const voidFissure = {
+	const fissure = {
             _id: { $oid: entryId },
             Activation: { $date: { $numberLong: timeStartLong } },
             Expiry: { $date: { $numberLong: timeEndLong } },
@@ -442,7 +503,11 @@ function* getVoidFissures() {
 			missionType: missionTypes[0].name,
 			tier: 'Lith'
 		},
-		data = { ActiveMissions: [voidFissure] }
+		data = { ActiveMissions: [fissure] }
+	yield [data, expected]
+
+	fissure.Expiry.$date.$numberLong += 500000
+	expected.end += 500
 	yield [data, expected]
 }
 
@@ -465,6 +530,19 @@ function* getVoidTraders() {
 			items: [ { name: items[0].name, type: items[0].type, ducats: 4, credits: 9 } ]
 		},
 		data = { VoidTraders: [voidTrader] }
+	yield [data, expected]
+
+	voidTrader.Node = nodes[1].id
+	voidTrader.Manifest[0].PrimePrice = 5
+	expected.location = nodes[1].name
+	expected.items[0].ducats = 5
+	yield [data, expected]
+
+	voidTrader.Activation.$date.$numberLong = timeEndLong
+	expected.id = entryId + timeEndShort.toString()
+	expected.start = timeEndShort
+	expected.active = false
+	delete expected.items
 	yield [data, expected]
 }
 

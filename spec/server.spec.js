@@ -1,11 +1,12 @@
 const http = require('http')
 
+const Database = require('../out/db').default
 const Server = require('../out/server').default
 const Worldstate = require('../out/worldstate').default
 const fixtures = require('./deps/fixtures')
 const MockGame = require('./deps/mockgame')
 
-describe('Worldstate server', () => {
+describe('Server', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc'),
 		server = new Server({pc: ws}),
 		mockGame = new MockGame('127.0.0.1', 20354)

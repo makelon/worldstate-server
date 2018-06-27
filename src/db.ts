@@ -28,7 +28,7 @@ function errorHandler(err: NodeJS.ErrnoException): void {
 	}
 }
 
-type TableMap = { [tblName: string]: WfDbTableI<WfDbTableType> }
+type TableMap = { [tblName: string]: WfDbTableI<WfRecordType> }
 
 export default class Database implements WfDb {
 	private loading: number = 0
@@ -76,8 +76,8 @@ export default class Database implements WfDb {
 	 * @param string tableName
 	 * @returns WfDbTable
 	*/
-	getTable(tableName: string): WfDbTable<WfDbTableType> {
-		return this.tables[tableName] || null
+	getTable<T extends WfRecordType>(tableName: string): WfDbTable<T> {
+		return (this.tables[tableName] as WfDbTable<T>) || null
 	}
 
 	/**
@@ -110,7 +110,7 @@ export default class Database implements WfDb {
 
 type RecordMap<T> = { [id: string]: T }
 
-class Table<T extends WfDbTableType> implements WfDbTableI<T> {
+class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	private tablePath = ''
 	private ready = false
 	private records: RecordMap<T> = {}

@@ -203,12 +203,13 @@ interface WfUpgrade {
 
 interface WfDb {
 	setupTables(onLoad: () => void): void
-	getTable(tblName: string): WfDbTable<WfDbTableType> | null
+	getTable<T extends keyof WfRecordTypes>(tblName: T): WfDbTable<WfRecordTypes[T]>
+	getTable<T extends WfRecordType>(tblName: string): WfDbTable<T>
 	flush(): void
 	setPaths(): void
 }
 
-interface WfDbTableI<T extends WfDbTableType> {
+interface WfDbTableI<T extends WfRecordType> {
 	setPath(): void
 	isReady(): boolean
 	get(id: string): T | null
@@ -222,7 +223,9 @@ interface WfDbTableI<T extends WfDbTableType> {
 	flush(): void
 }
 
-type WfDbTableTypes = {
+type WfDbTable<T extends WfRecordType> = WfDbTableI<T> | null
+
+type WfRecordTypes = {
 	news: WfNews
 	alerts: WfAlert
 	events: WfEvent
@@ -238,6 +241,4 @@ type WfDbTableTypes = {
 	upgrades: WfUpgrade
 }
 
-type WfDbTableType = WfDbTableTypes[keyof WfDbTableTypes]
-
-type WfDbTable<T extends WfDbTableType> = WfDbTableI<T> | null
+type WfRecordType = WfRecordTypes[keyof WfRecordTypes]

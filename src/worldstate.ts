@@ -249,7 +249,7 @@ export default class Worldstate {
 	 * Events and tactical alerts are found in the Goals section
 	 */
 	private readNews(): void {
-		const table = this.db.getTable('news') as WfDbTable<WfNews>
+		const table = this.db.getTable('news')
 		if (!table || !this.ws.Events) {
 			return
 		}
@@ -302,7 +302,7 @@ export default class Worldstate {
 	 * Read alerts
 	 */
 	private readAlerts(): void {
-		const table = this.db.getTable('alerts') as WfDbTable<WfAlert>
+		const table = this.db.getTable('alerts')
 		if (!table || !this.ws.Alerts) {
 			return
 		}
@@ -380,7 +380,7 @@ export default class Worldstate {
 	 * @param events Event info from readGoals
 	 */
 	private readEvents(events: any[]): void {
-		const table = this.db.getTable('events') as WfDbTable<WfEvent>
+		const table = this.db.getTable('events')
 		if (!table) {
 			return
 		}
@@ -474,7 +474,7 @@ export default class Worldstate {
 	 * @param fomorians Fomorian info from readGoals
 	 */
 	private readFomorians(fomorians: any[]): void {
-		const table = this.db.getTable('fomorians') as WfDbTable<WfFomorian>
+		const table = this.db.getTable('fomorians')
 		if (!table) {
 			return
 		}
@@ -578,7 +578,7 @@ export default class Worldstate {
 	 * Read sorties
 	 */
 	private readSorties(): void {
-		const table = this.db.getTable('sorties') as WfDbTable<WfSortie>
+		const table = this.db.getTable('sorties')
 		if (!table || !this.ws.Sorties) {
 			return
 		}
@@ -628,7 +628,7 @@ export default class Worldstate {
 	 * Read void fissures
 	 */
 	private readVoidFissures(): void {
-		const table = this.db.getTable('fissures') as WfDbTable<WfVoidFissure>
+		const table = this.db.getTable('fissures')
 		if (!table || !this.ws.ActiveMissions) {
 			return
 		}
@@ -668,7 +668,7 @@ export default class Worldstate {
 	 * Read invasions
 	 */
 	private readInvasions(): void {
-		const table = this.db.getTable('invasions') as WfDbTable<WfInvasion>
+		const table = this.db.getTable('invasions')
 		if (!table || !this.ws.Invasions) {
 			return
 		}
@@ -833,7 +833,7 @@ export default class Worldstate {
 	 * @param bounties Bounty info from readSyndicateMissions
 	 */
 	private readBounties(bounties: any[]): void {
-		const table = this.db.getTable('bounties') as WfDbTable<WfBounty>
+		const table = this.db.getTable('bounties')
 		if (!table) {
 			return
 		}
@@ -917,7 +917,7 @@ export default class Worldstate {
 	 * Read global boosters
 	 */
 	private readUpgrades(): void {
-		const table = this.db.getTable('upgrades') as WfDbTable<WfUpgrade>
+		const table = this.db.getTable('upgrades')
 		if (!table || !this.ws.GlobalUpgrades) {
 			return
 		}
@@ -956,7 +956,7 @@ export default class Worldstate {
 	 * Read void traders
 	 */
 	private readVoidTraders(): void {
-		const table = this.db.getTable('voidtraders') as WfDbTable<WfVoidTrader>
+		const table = this.db.getTable('voidtraders')
 		if (!table || !this.ws.VoidTraders) {
 			return
 		}
@@ -1026,7 +1026,7 @@ export default class Worldstate {
 	 * Read faction projects
 	 */
 	private readFactionProjects(): void {
-		const table = this.db.getTable('factionprojects') as WfDbTable<WfFomorianProgress>
+		const table = this.db.getTable('factionprojects')
 		if (!table || !this.ws.ProjectPct) {
 			return
 		}
@@ -1097,7 +1097,7 @@ export default class Worldstate {
 	 * Read acolytes
 	 */
 	private readAcolytes(): void {
-		const table = this.db.getTable('acolytes') as WfDbTable<WfAcolyte>
+		const table = this.db.getTable('acolytes')
 		if (!table || !this.ws.PersistentEnemies) {
 			return
 		}
@@ -1184,7 +1184,7 @@ export default class Worldstate {
 	 * Read Darvo's daily deals
 	 */
 	private readDailyDeals(): void {
-		const table = this.db.getTable('dailydeals') as WfDbTable<WfDailyDeal>
+		const table = this.db.getTable('dailydeals')
 		if (!table || !this.ws.DailyDeals) {
 			return
 		}

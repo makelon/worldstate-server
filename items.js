@@ -31,6 +31,7 @@ let lang,
 						"": "Companion",
 						"patterns": "Cosmetic"
 					},
+					"quarterswallpapers": "Cosmetic",
 					"projections": "Relic"
 				},
 				"gameplay": {

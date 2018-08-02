@@ -7,6 +7,7 @@
 		"newLine": "LF",
 		"strict": true,                           /* Enable all strict type-checking options. */
 		"strictPropertyInitialization": true,
+		"strictNullChecks": true
 	},
 	"include": [
 		"src/**/*"

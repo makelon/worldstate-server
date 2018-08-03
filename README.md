@@ -30,7 +30,7 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
 
 7. Start the server.
 
-   `node out/main`
+   `node out`
 
 ## API
 

@@ -30,7 +30,6 @@ const defaults = {
 	updateInterval: 180000,
 	instanceDelay: 10000, // Time to wait between platform requests on startup
 	enableConsoleTime: true, // Enable timestamps in console output
-	enableHttpReload: false, // Allow reload requests over the HTTP interface
 	enableDbWrites: true, // Enable persistent storage
 	listen: 0, // <port number> | <interface address>:<port number> | socket path
 	userAgent: 'Warframe Worldstate v1.0 for Node.js',
@@ -53,7 +52,6 @@ class WfConfig {
 	instanceDelay!: number
 	enableConsoleTime!: boolean
 	enableDbWrites!: boolean
-	enableHttpReload!: boolean
 	listen!: number | string
 	userAgent!: string
 	cors!: string
@@ -93,7 +91,6 @@ class WfConfig {
 		this.updateInterval = ('updateInterval' in overrides) ? overrides.updateInterval : defaults.updateInterval
 		this.instanceDelay = ('instanceDelay' in overrides) ? overrides.instanceDelay : defaults.instanceDelay
 		this.enableConsoleTime = ('enableConsoleTime' in overrides) ? overrides.enableConsoleTime : defaults.enableConsoleTime
-		this.enableHttpReload = ('enableHttpReload' in overrides) ? overrides.enableHttpReload : defaults.enableHttpReload
 		this.enableDbWrites = ('enableDbWrites' in overrides) ? overrides.enableDbWrites : defaults.enableDbWrites
 		this.listen = ('listen' in overrides) ? overrides.listen : defaults.listen
 		this.userAgent = ('userAgent' in overrides) ? overrides.userAgent : defaults.userAgent

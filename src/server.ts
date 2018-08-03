@@ -165,18 +165,6 @@ export default class Server {
 		const reqUrl = req.url || '/'
 		log.notice('Got request: %s', reqUrl)
 		req.on('error', err => { log.info('HTTP request error: %s', err.message) })
-		if (reqUrl == '/reload') {
-			// Permitting HTTP reload requests can be useful for testing and Windows platforms
-			if (!config.enableHttpReload) {
-				res.statusCode = 404
-				res.end()
-			}
-			else {
-				res.end()
-				this.reload()
-			}
-			return
-		}
 		const urlParts = reqUrl.substr(1).split('/'),
 			platform = urlParts[0] || 'pc',
 			instance = this.instances[platform]

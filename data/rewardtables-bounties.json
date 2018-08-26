@@ -612,7 +612,7 @@
                 "chance": 0.0842
             },
             {
-                "name": "Shimmering Blight",
+                "name": "Revenant Systems Blueprint",
                 "count": 1,
                 "chance": 0.0842
             },
@@ -634,7 +634,7 @@
                 "chance": 0.2051
             },
             {
-                "name": "Shimmering Blight",
+                "name": "Revenant Systems Blueprint",
                 "count": 1,
                 "chance": 0.2051
             },
@@ -705,7 +705,7 @@
                 "chance": 0.086
             },
             {
-                "name": "Fracturing Wind",
+                "name": "Revenant Systems Blueprint",
                 "count": 1,
                 "chance": 0.0968
             },
@@ -727,7 +727,7 @@
                 "chance": 0.19510000000000002
             },
             {
-                "name": "Fracturing Wind",
+                "name": "Revenant Systems Blueprint",
                 "count": 1,
                 "chance": 0.2195
             },
@@ -798,7 +798,7 @@
                 "chance": 0.0851
             },
             {
-                "name": "Swirling Tiger",
+                "name": "Revenant Systems Blueprint",
                 "count": 1,
                 "chance": 0.0851
             },
@@ -820,7 +820,7 @@
                 "chance": 0.1905
             },
             {
-                "name": "Swirling Tiger",
+                "name": "Revenant Systems Blueprint",
                 "count": 1,
                 "chance": 0.1905
             },
@@ -891,7 +891,7 @@
                 "chance": 0.0851
             },
             {
-                "name": "Eleventh Storm",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.0851
             },
@@ -933,7 +933,7 @@
                 "chance": 0.0833
             },
             {
-                "name": "Eleventh Storm",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.0833
             },
@@ -960,7 +960,7 @@
                 "chance": 0.1905
             },
             {
-                "name": "Eleventh Storm",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.1905
             },
@@ -1031,7 +1031,7 @@
                 "chance": 0.0851
             },
             {
-                "name": "Gemini Cross",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.0851
             },
@@ -1073,7 +1073,7 @@
                 "chance": 0.0833
             },
             {
-                "name": "Gemini Cross",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.0833
             },
@@ -1100,7 +1100,7 @@
                 "chance": 0.1905
             },
             {
-                "name": "Gemini Cross",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.1905
             },
@@ -1171,7 +1171,7 @@
                 "chance": 0.0833
             },
             {
-                "name": "Sinking Talon",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.0833
             },
@@ -1213,7 +1213,7 @@
                 "chance": 0.0816
             },
             {
-                "name": "Sinking Talon",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.0816
             },
@@ -1240,7 +1240,7 @@
                 "chance": 0.2
             },
             {
-                "name": "Sinking Talon",
+                "name": "Revenant Chassis Blueprint",
                 "count": 1,
                 "chance": 0.2
             },
@@ -1300,74 +1300,84 @@
             {
                 "name": "Breath Of The Eidolon",
                 "count": 5,
-                "chance": 0.1812
+                "chance": 0.1689
             },
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.1812
+                "chance": 0.1689
             },
             {
                 "name": "Cetus Wisp",
                 "count": 2,
-                "chance": 0.1449
+                "chance": 0.1351
             },
             {
                 "name": "Kuva",
                 "count": 300,
-                "chance": 0.0507
+                "chance": 0.0473
             },
             {
                 "name": "Axi K3 Relic",
                 "count": 1,
-                "chance": 0.2754
+                "chance": 0.2568
             },
             {
                 "name": "Furax Wraith Left Gauntlet",
                 "count": 1,
-                "chance": 0.057999999999999996
+                "chance": 0.0541
             },
             {
                 "name": "Carving Mantis",
                 "count": 1,
-                "chance": 0.057999999999999996
+                "chance": 0.0541
             },
             {
                 "name": "Eidolon Lens Blueprint",
                 "count": 1,
-                "chance": 0.0507
+                "chance": 0.0473
+            },
+            {
+                "name": "Revenant Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.0676
             }
         ],
         [
             {
                 "name": "Cetus Wisp",
                 "count": 2,
-                "chance": 0.2273
+                "chance": 0.2041
             },
             {
                 "name": "Kuva",
                 "count": 300,
-                "chance": 0.0795
+                "chance": 0.07139999999999999
             },
             {
                 "name": "Axi K3 Relic",
                 "count": 1,
-                "chance": 0.4318
+                "chance": 0.38780000000000003
             },
             {
                 "name": "Furax Wraith Left Gauntlet",
                 "count": 1,
-                "chance": 0.0909
+                "chance": 0.0816
             },
             {
                 "name": "Carving Mantis",
                 "count": 1,
-                "chance": 0.0909
+                "chance": 0.0816
             },
             {
                 "name": "Eidolon Lens Blueprint",
                 "count": 1,
-                "chance": 0.0795
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Revenant Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.102
             }
         ]
     ],
@@ -1415,74 +1425,84 @@
             {
                 "name": "Breath Of The Eidolon",
                 "count": 5,
-                "chance": 0.1812
+                "chance": 0.1689
             },
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.1812
+                "chance": 0.1689
             },
             {
                 "name": "Cetus Wisp",
                 "count": 2,
-                "chance": 0.1449
+                "chance": 0.1351
             },
             {
                 "name": "Kuva",
                 "count": 300,
-                "chance": 0.0507
+                "chance": 0.0473
             },
             {
                 "name": "Axi O3 Relic",
                 "count": 1,
-                "chance": 0.2754
+                "chance": 0.2568
             },
             {
                 "name": "Furax Wraith Right Gauntlet",
                 "count": 1,
-                "chance": 0.057999999999999996
+                "chance": 0.0541
             },
             {
                 "name": "Swooping Falcon",
                 "count": 1,
-                "chance": 0.057999999999999996
+                "chance": 0.0541
             },
             {
                 "name": "Eidolon Lens Blueprint",
                 "count": 1,
-                "chance": 0.0507
+                "chance": 0.0473
+            },
+            {
+                "name": "Revenant Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.0676
             }
         ],
         [
             {
                 "name": "Cetus Wisp",
                 "count": 2,
-                "chance": 0.2273
+                "chance": 0.2041
             },
             {
                 "name": "Kuva",
                 "count": 300,
-                "chance": 0.0795
+                "chance": 0.07139999999999999
             },
             {
                 "name": "Axi O3 Relic",
                 "count": 1,
-                "chance": 0.4318
+                "chance": 0.38780000000000003
             },
             {
                 "name": "Furax Wraith Right Gauntlet",
                 "count": 1,
-                "chance": 0.0909
+                "chance": 0.0816
             },
             {
                 "name": "Swooping Falcon",
                 "count": 1,
-                "chance": 0.0909
+                "chance": 0.0816
             },
             {
                 "name": "Eidolon Lens Blueprint",
                 "count": 1,
-                "chance": 0.0795
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Revenant Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.102
             }
         ]
     ],
@@ -1530,74 +1550,84 @@
             {
                 "name": "Breath Of The Eidolon",
                 "count": 5,
-                "chance": 0.1812
+                "chance": 0.1689
             },
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.1812
+                "chance": 0.1689
             },
             {
                 "name": "Cetus Wisp",
                 "count": 2,
-                "chance": 0.1449
+                "chance": 0.1351
             },
             {
                 "name": "Kuva",
                 "count": 300,
-                "chance": 0.0507
+                "chance": 0.0473
             },
             {
                 "name": "Axi L2 Relic",
                 "count": 1,
-                "chance": 0.2754
+                "chance": 0.2568
             },
             {
                 "name": "Furax Wraith Blueprint",
                 "count": 1,
-                "chance": 0.057999999999999996
+                "chance": 0.0541
             },
             {
                 "name": "Twirling Spire",
                 "count": 1,
-                "chance": 0.057999999999999996
+                "chance": 0.0541
             },
             {
                 "name": "Eidolon Lens Blueprint",
                 "count": 1,
-                "chance": 0.0507
+                "chance": 0.0473
+            },
+            {
+                "name": "Revenant Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.0676
             }
         ],
         [
             {
                 "name": "Cetus Wisp",
                 "count": 2,
-                "chance": 0.2273
+                "chance": 0.2041
             },
             {
                 "name": "Kuva",
                 "count": 300,
-                "chance": 0.0795
+                "chance": 0.07139999999999999
             },
             {
                 "name": "Axi L2 Relic",
                 "count": 1,
-                "chance": 0.4318
+                "chance": 0.38780000000000003
             },
             {
                 "name": "Furax Wraith Blueprint",
                 "count": 1,
-                "chance": 0.0909
+                "chance": 0.0816
             },
             {
                 "name": "Twirling Spire",
                 "count": 1,
-                "chance": 0.0909
+                "chance": 0.0816
             },
             {
                 "name": "Eidolon Lens Blueprint",
                 "count": 1,
-                "chance": 0.0795
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Revenant Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.102
             }
         ]
     ],

@@ -101,7 +101,7 @@ export default class InvasionReader implements WfReader {
 					Math.abs(score - scoreHistory[scoreHistory.length - 2][1]) / invasionDb.endScore >= 0.01
 					|| Math.abs(score) >= invasionDb.endScore
 				) {
-					lastHist[0] = timestamp
+					scoreHistory[scoreHistory.length - 1][0] = timestamp
 					updateDb = true
 				}
 				if (updateDb) {

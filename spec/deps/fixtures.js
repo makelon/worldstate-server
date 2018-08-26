@@ -394,6 +394,12 @@ function* getInvasions() {
 	expected.scoreHistory[3] = [timeLocalShort, invasion.Count]
 	yield [data, expected]
 
+	timeLocalShort += timeStep
+	invasion.Count += -30
+	expected.score = invasion.Count
+	expected.scoreHistory.push([timeLocalShort, invasion.Count])
+	yield [data, expected]
+
 	invasion.AttackerReward = undefined
 	delete expected.rewardsAttacker
 	yield [data, expected]

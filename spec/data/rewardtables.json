@@ -19,14 +19,46 @@
         [
             {
                 "name": "Mock Item",
-                "count": 15,
+                "count": 25,
                 "chance": 1
             }
         ],
         [
             {
                 "name": "Endo",
-                "count": 50,
+                "count": 60,
+                "chance": 1
+            }
+        ]
+    ],
+    "InfestedPlainsBountyMockRewardTable": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 25,
+                "chance": 1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 60,
+                "chance": 1
+            }
+        ]
+    ],
+    "GhoulEmergenceBountyMockRewardTable": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 35,
+                "chance": 1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 70,
                 "chance": 1
             }
         ]

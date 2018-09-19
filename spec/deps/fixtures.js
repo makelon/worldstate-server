@@ -31,13 +31,29 @@ const items = [
 			items: [ { name: items[1].name, type: items[1].type, count: 3 } ]
 		}
 	},
-	rewardTables = {
-		input: 'MockRewardTable',
-		output: [
-			[ { name: items[0].name, type: items[0].type, count: 15, chance: 1 } ],
-			[ { name: 'Endo', type: 'Endo', count: 50, chance: 1 } ]
-		]
-	},
+	rewardTables = [
+		{
+			input: 'MockRewardTable',
+			output: [
+				[ { name: items[0].name, type: items[0].type, count: 15, chance: 1 } ],
+				[ { name: 'Endo', type: 'Endo', count: 50, chance: 1 } ]
+			]
+		},
+		{
+			input: 'MockRewardTable',
+			output: [
+				[ { name: items[0].name, type: items[0].type, count: 25, chance: 1 } ],
+				[ { name: 'Endo', type: 'Endo', count: 60, chance: 1 } ]
+			]
+		},
+		{
+			input: 'MockRewardTable',
+			output: [
+				[ { name: items[0].name, type: items[0].type, count: 35, chance: 1 } ],
+				[ { name: 'Endo', type: 'Endo', count: 70, chance: 1 } ]
+			]
+		}
+	],
 	entryId = '5b291c5825666c0225476ac6',
 	factions = [
 		{
@@ -169,48 +185,107 @@ function* getAlerts() {
 
 function* getBounties() {
 	let timeLocalShort = timeNowShort
-	const bounty = {
+	const bountySyndicate = {
             _id: { $oid: entryId },
             Activation: { $date: { $numberLong: timeStartLong } },
             Expiry: { $date: { $numberLong: timeEndLong } },
 			Tag: 'CetusSyndicate',
-			HealthPct: 0.9,
-			VictimNode: nodes[1].id,
             Jobs: [
                 {
-                    rewards: rewardTables.input,
+                    rewards: rewardTables[1].input,
                     minEnemyLevel: 5,
                     maxEnemyLevel: 15,
                     xpAmounts: [100, 300]
                 },
             ]
         },
-		expected = {
+		expectedSyndicate = {
 			id: entryId,
 			start: timeStartShort,
 			end: timeEndShort,
 			syndicate: 'Cetus',
-			health: 0.9,
-			healthHistory: [[timeStartShort, 1], [timeNowShort, 0.9]],
-			location: nodes[1].name,
 			jobs: [
 				{
-					rewards: rewardTables.output,
+					rewards: rewardTables[1].output,
 					minLevel: 5,
 					maxLevel: 15,
 					xpAmounts: [100, 300]
 				}
 			]
 		},
-		data = { SyndicateMissions: [bounty] }
+		bountyInfested = {
+            _id: { $oid: entryId + '2' },
+            Activation: { $date: { $numberLong: timeStartLong } },
+            Expiry: { $date: { $numberLong: timeEndLong } },
+			Tag: 'InfestedPlains',
+            Jobs: [
+                {
+                    rewards: rewardTables[1].input,
+                    minEnemyLevel: 10,
+                    maxEnemyLevel: 20,
+                    xpAmounts: [200, 400]
+                },
+            ]
+        },
+		expectedInfested = {
+			id: entryId + '2',
+			start: timeStartShort,
+			end: timeEndShort,
+			syndicate: 'Plague Star',
+			jobs: [
+				{
+					rewards: rewardTables[1].output,
+					minLevel: 10,
+					maxLevel: 20,
+					xpAmounts: [200, 400]
+				}
+			]
+		},
+		bountyGhoul = {
+            _id: { $oid: entryId + '3' },
+            Activation: { $date: { $numberLong: timeStartLong } },
+            Expiry: { $date: { $numberLong: timeEndLong } },
+			Tag: 'GhoulEmergence',
+			HealthPct: 0.9,
+			VictimNode: nodes[1].id,
+            Jobs: [
+                {
+                    rewards: rewardTables[2].input,
+                    minEnemyLevel: 15,
+                    maxEnemyLevel: 25,
+                    xpAmounts: [250, 450]
+                },
+            ]
+        },
+		expectedGhoul = {
+			id: entryId + '3',
+			start: timeStartShort,
+			end: timeEndShort,
+			syndicate: 'Ghoul Purge',
+			health: 0.9,
+			healthHistory: [[timeStartShort, 1], [timeNowShort, 0.9]],
+			location: nodes[1].name,
+			jobs: [
+				{
+					rewards: rewardTables[2].output,
+					minLevel: 15,
+					maxLevel: 25,
+					xpAmounts: [250, 450]
+				}
+			]
+		},
+		data = { Goals: [bountyGhoul], SyndicateMissions: [bountySyndicate] },
+		expected = [expectedGhoul, expectedSyndicate]
 	yield [data, expected]
 
 	timeLocalShort += timeStep
-	bounty.HealthPct = 0.4
-	bounty.VictimNode = nodes[0].id
-	expected.health = bounty.HealthPct
-	expected.healthHistory.push([timeLocalShort, bounty.HealthPct])
-	expected.location = nodes[0].name
+	bountyGhoul.HealthPct = 0.4
+	bountyGhoul.VictimNode = nodes[0].id
+	data.Goals.push(bountyInfested)
+	expected.push(expectedInfested)
+	expectedGhoul.health = bountyGhoul.HealthPct
+	expectedGhoul.healthHistory.push([timeLocalShort, bountyGhoul.HealthPct])
+	expectedGhoul.location = nodes[0].name
 	yield [data, expected]
 }
 
@@ -299,7 +374,7 @@ function* getGoals() {
 				minEnemyLevel: 20,
 				maxEnemyLevel: 30,
 				requiredItems: [items[0].id],
-				missionReward: { randomizedItems: rewardTables.input },
+				missionReward: { randomizedItems: rewardTables[0].input },
 			},
 			Reward: itemRewards.input
 		},
@@ -316,7 +391,7 @@ function* getGoals() {
 			missionLocation: nodes[1].name,
 			requiredItems: [ { name: items[0].name, type: items[0].type } ],
 			goalRewards: itemRewards.output,
-			randomRewards: rewardTables.output
+			randomRewards: rewardTables[0].output
 		},
 		data = { Goals: [fomorian] }
 	yield [data, expected]
@@ -446,7 +521,7 @@ function* getSorties() {
             Activation: { $date: { $numberLong: timeStartLong } },
             Expiry: { $date: { $numberLong: timeEndLong } },
             Boss: 'SORTIE_BOSS_VOR',
-            Reward: rewardTables.input,
+            Reward: rewardTables[0].input,
             Variants: [ { missionType: missionTypes[0].id, modifierType: 'SORTIE_MODIFIER_EXIMUS', node: nodes[0].id, } ]
 		},
 		expected = {
@@ -455,7 +530,7 @@ function* getSorties() {
 			end: timeEndShort,
 			faction: factions[0].name,
 			bossName: 'Vor',
-			rewards: rewardTables.output,
+			rewards: rewardTables[0].output,
 			missions: [ { missionType: missionTypes[0].name, modifier: 'Eximus stronghold', location: nodes[0].name } ]
 		},
 		data = { Sorties: [sortie] }

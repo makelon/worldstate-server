@@ -42,6 +42,9 @@ export default class Worldstate {
 	private ready = false
 	private retryTimeout = config.minRetryTimeout
 	private nextUpdate = Date.now() + 3000
+	private defer: {[type: string]: any[]} = {
+		bounties: []
+	}
 
 	private readers: { [readerId: string]: WfReader } = {
 		acolytes: new AcolyteReader(this.platform),
@@ -79,8 +82,7 @@ export default class Worldstate {
 	}
 
 	/**
-	 * Re-read the most recent worldstate dump and update all known records.
-	 * If worldstate hasn't been read yet, update any old records when the next worldstate request occurs
+	 * Re-read the most recent worldstate dump and update all known records
 	 */
 	reload(): void {
 		this.setRequestOptions()
@@ -341,6 +343,9 @@ export default class Worldstate {
 			if (goal.Fomorian) {
 				fomorians.push(goal)
 			}
+			else if (goal.Jobs && ['GhoulEmergence', 'InfestedPlains'].indexOf(goal.Tag) > -1) {
+				this.defer.bounties.push(goal)
+			}
 		}
 		this.readers['fomorians'].read(fomorians, this.now)
 	}
@@ -385,18 +390,11 @@ export default class Worldstate {
 	 */
 	private readSyndicateMissions(): void {
 		log.notice('Reading %s syndicate missions', this.platform)
-		const bounties = []
+		const bounties = this.defer.bounties.splice(0) // Clear deferred bounties
 		if (this.ws.SyndicateMissions && this.ws.SyndicateMissions[0]) {
 			for (const missions of this.ws.SyndicateMissions) {
 				if (missions.Jobs) {
 					bounties.push(missions)
-				}
-			}
-		}
-		if (this.ws.Goals && this.ws.Goals[0]) {
-			for (const goal of this.ws.Goals) {
-				if (goal.Tag == 'GhoulEmergence' && goal.Jobs) {
-					bounties.push(goal)
 				}
 			}
 		}

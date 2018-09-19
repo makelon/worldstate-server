@@ -27,10 +27,10 @@ describe('Item functions', () => {
 	})
 
 	it('should return reward tables', () => {
-		expect(items.getRandomRewards(fixtures.rewardTables.input)).toEqual(fixtures.rewardTables.output)
+		expect(items.getRandomRewards(fixtures.rewardTables[0].input)).toEqual(fixtures.rewardTables[0].output)
 	})
 
 	it('should return bounty reward tables', () => {
-		expect(items.getBountyRewards('CetusSyndicate', fixtures.rewardTables.input)).toEqual(fixtures.rewardTables.output)
+		expect(items.getBountyRewards('CetusSyndicate', fixtures.rewardTables[1].input)).toEqual(fixtures.rewardTables[1].output)
 	})
 })

@@ -43,9 +43,10 @@ describe('Worldstate', () => {
 		let timestamp = fixtures.timeNowShort
 		for (const [data, expected] of fixtures.getBounties()) {
 			setWorldstateData(data, timestamp)
+			ws.readGoals()
 			ws.readSyndicateMissions()
 			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
+			expect(result[dataKey].data).toEqual(expected)
 			timestamp += fixtures.timeStep
 		}
 	})

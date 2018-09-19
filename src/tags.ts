@@ -116,10 +116,11 @@ export const
 		RedVeilSyndicate: 'Red Veil',
 		SteelMeridianSyndicate: 'Steel Meridian',
 		GhoulEmergence: 'Ghoul Purge',
+		InfestedPlains: 'Plague Star',
 	},
 	upgradeTypes: WfMap = {
 		GAMEPLAY_KILL_XP_AMOUNT: 'Affinity',
-		GAMEPLAY_MONEY_REWARD_AMOUNT: 'Credits',
+		GAMEPLAY_MONEY_REWARD_AMOUNT: 'Credit',
 		GAMEPLAY_PICKUP_AMOUNT: 'Resource',
 		GAMEPLAY_PICKUP_RATE: 'Resource Chance',
 	},

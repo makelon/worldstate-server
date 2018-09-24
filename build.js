@@ -116,7 +116,8 @@ function build() {
 		}
 		const reBuildError = /^.+\(\d+,\d+\): error/,
 			reBuildIndent = /^  /,
-			reBuildTimestamp = /^\d\d:\d\d:\d\d - /
+			reBuildTimestamp = /^\d\d:\d\d:\d\d - /,
+			reBuildComplete = /Watching for file changes.$/
 		let buildErrors = false
 		tsc.stdout.setEncoding('utf8')
 			.on('data', data => {
@@ -137,7 +138,7 @@ function build() {
 						line = line.substr(11)
 					}
 					printBuild(line)
-					if (opt.run && opt.watch && line.substr(0, 20) == 'Compilation complete') {
+					if (opt.run && opt.watch && reBuildComplete.test(line)) {
 						if (buildErrors) {
 							buildErrors = false
 							return

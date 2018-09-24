@@ -41,22 +41,14 @@ function reload() {
 	server.reload()
 }
 
-/**
- * Start the server
- */
-function start() {
-	load()
-	server.start()
-}
+process.on('SIGINT', exit)
+process.on('SIGTERM', exit)
+process.on('SIGUSR2', reload)
 
+load()
 const server = new Server({
 	pc: new Worldstate(new Database('pc'), 'pc'),
 	ps4: new Worldstate(new Database('ps4'), 'ps4'),
 	xb1: new Worldstate(new Database('xb1'), 'xb1')
 })
-
-process.on('SIGINT', exit)
-process.on('SIGTERM', exit)
-process.on('SIGUSR2', reload)
-
-start()
+server.start()

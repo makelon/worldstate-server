@@ -11,7 +11,8 @@ const dataFiles = {
 		rewardTables: [
 			'./data/rewardtables-bounties.json',
 			'./data/rewardtables-dynamic.json',
-			'./data/rewardtables-sorties.json'
+			'./data/rewardtables-sorties.json',
+			'./data/rewardtables-extra.json'
 		],
 		itemNames: './data/itemnames.json',
 		itemTypes: './data/itemtypes.json',

@@ -117,6 +117,7 @@ export const
 		SteelMeridianSyndicate: 'Steel Meridian',
 		GhoulEmergence: 'Ghoul Purge',
 		InfestedPlains: 'Plague Star',
+		SolarisSyndicate: 'Fortuna',
 	},
 	upgradeTypes: WfMap = {
 		GAMEPLAY_KILL_XP_AMOUNT: 'Affinity',

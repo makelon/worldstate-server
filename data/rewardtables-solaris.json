@@ -1,0 +1,1409 @@
+{
+    "SolarisSyndicateBountyVenusTierATableARewards": [
+        [
+            {
+                "name": "Oxium",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.2
+            },
+            {
+                "name": "Mytocardia Spore",
+                "count": 5,
+                "chance": 0.2
+            },
+            {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Oxium",
+                "count": 100,
+                "chance": 0.1549
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1549
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1549
+            },
+            {
+                "name": "Mytocardia Spore",
+                "count": 5,
+                "chance": 0.1549
+            },
+            {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.1549
+            },
+            {
+                "name": "Garuda Chassis Blueprint",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Garuda Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.3056
+            },
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.3056
+            },
+            {
+                "name": "Neo A2 Relic",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierATableBRewards": [
+        [
+            {
+                "name": "Cryotic",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.2
+            },
+            {
+                "name": "Thermal Sludge",
+                "count": 5,
+                "chance": 0.2
+            },
+            {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Cryotic",
+                "count": 100,
+                "chance": 0.1549
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1549
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1549
+            },
+            {
+                "name": "Thermal Sludge",
+                "count": 5,
+                "chance": 0.1549
+            },
+            {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.1549
+            },
+            {
+                "name": "Garuda Chassis Blueprint",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Garuda Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.3056
+            },
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.3056
+            },
+            {
+                "name": "Neo A2 Relic",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierATableCRewards": [
+        [
+            {
+                "name": "Plastids",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.2
+            },
+            {
+                "name": "Gorgaricus Spore",
+                "count": 5,
+                "chance": 0.2
+            },
+            {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Plastids",
+                "count": 100,
+                "chance": 0.1549
+            },
+            {
+                "name": "Credits Cache",
+                "count": 1500,
+                "chance": 0.1549
+            },
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 0.1549
+            },
+            {
+                "name": "Gorgaricus Spore",
+                "count": 5,
+                "chance": 0.1549
+            },
+            {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.1549
+            },
+            {
+                "name": "Garuda Chassis Blueprint",
+                "count": 1,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Garuda Chassis Blueprint",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.3056
+            },
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.3056
+            },
+            {
+                "name": "Neo A2 Relic",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierBTableARewards": [
+        [
+            {
+                "name": "Mytocardia Spore",
+                "count": 15,
+                "chance": 0.2
+            },
+            {
+                "name": "Oxium",
+                "count": 200,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Mytocardia Spore",
+                "count": 15,
+                "chance": 0.1481
+            },
+            {
+                "name": "Oxium",
+                "count": 200,
+                "chance": 0.1481
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1481
+            },
+            {
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.1481
+            },
+            {
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.0741
+            },
+            {
+                "name": "Lith B5 Relic",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ],
+        [
+            {
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Lith B5 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Synth Charge",
+                "count": 1,
+                "chance": 0.22219999999999998
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierBTableBRewards": [
+        [
+            {
+                "name": "Thermal Sludge",
+                "count": 15,
+                "chance": 0.2
+            },
+            {
+                "name": "Cryotic",
+                "count": 200,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Thermal Sludge",
+                "count": 15,
+                "chance": 0.1481
+            },
+            {
+                "name": "Cryotic",
+                "count": 200,
+                "chance": 0.1481
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1481
+            },
+            {
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.1481
+            },
+            {
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.0741
+            },
+            {
+                "name": "Lith B5 Relic",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ],
+        [
+            {
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Lith B5 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Mecha Overdrive",
+                "count": 1,
+                "chance": 0.22219999999999998
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierBTableCRewards": [
+        [
+            {
+                "name": "Gorgaricus Spore",
+                "count": 15,
+                "chance": 0.2
+            },
+            {
+                "name": "Nano Spores",
+                "count": 200,
+                "chance": 0.2
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.2
+            },
+            {
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Gorgaricus Spore",
+                "count": 15,
+                "chance": 0.1481
+            },
+            {
+                "name": "Nano Spores",
+                "count": 200,
+                "chance": 0.1481
+            },
+            {
+                "name": "Credits Cache",
+                "count": 2500,
+                "chance": 0.1481
+            },
+            {
+                "name": "Endo",
+                "count": 100,
+                "chance": 0.1481
+            },
+            {
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.1481
+            },
+            {
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.0741
+            },
+            {
+                "name": "Lith B5 Relic",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ],
+        [
+            {
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Tepa Nodule",
+                "count": 5,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Lith B5 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Tek Assault",
+                "count": 1,
+                "chance": 0.22219999999999998
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierCTableARewards": [
+        [
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.4
+            },
+            {
+                "name": "Circuits",
+                "count": 300,
+                "chance": 0.2
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.25
+            },
+            {
+                "name": "Circuits",
+                "count": 300,
+                "chance": 0.125
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso S8 Relic",
+                "count": 1,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Meso S8 Relic",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Synth Deconstruct",
+                "count": 1,
+                "chance": 0.25
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierCTableBRewards": [
+        [
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.4
+            },
+            {
+                "name": "Plastids",
+                "count": 300,
+                "chance": 0.2
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.25
+            },
+            {
+                "name": "Plastids",
+                "count": 300,
+                "chance": 0.125
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso S8 Relic",
+                "count": 1,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Meso S8 Relic",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Mecha Recharge",
+                "count": 1,
+                "chance": 0.25
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierCTableCRewards": [
+        [
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.4
+            },
+            {
+                "name": "Rubedo",
+                "count": 300,
+                "chance": 0.2
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.25
+            },
+            {
+                "name": "Rubedo",
+                "count": 300,
+                "chance": 0.125
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso S8 Relic",
+                "count": 1,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Meso S8 Relic",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Tek Enhance",
+                "count": 1,
+                "chance": 0.25
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierDTableARewards": [
+        [
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.2581
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.2581
+            },
+            {
+                "name": "Fieldron",
+                "count": 2,
+                "chance": 0.2903
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1935
+            }
+        ],
+        [
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.1975
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1975
+            },
+            {
+                "name": "Fieldron",
+                "count": 2,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1481
+            },
+            {
+                "name": "Neo K2 Relic",
+                "count": 1,
+                "chance": 0.1852
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.049400000000000006
+            }
+        ],
+        [
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.17579999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.17579999999999998
+            },
+            {
+                "name": "Fieldron",
+                "count": 2,
+                "chance": 0.1978
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1319
+            },
+            {
+                "name": "Neo K2 Relic",
+                "count": 1,
+                "chance": 0.1648
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.044000000000000004
+            },
+            {
+                "name": "Synth Fiber",
+                "count": 1,
+                "chance": 0.1099
+            }
+        ],
+        [
+            {
+                "name": "Neo K2 Relic",
+                "count": 1,
+                "chance": 0.5172
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.1379
+            },
+            {
+                "name": "Synth Fiber",
+                "count": 1,
+                "chance": 0.3448
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierDTableBRewards": [
+        [
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.2581
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.2581
+            },
+            {
+                "name": "Detonite Injector",
+                "count": 2,
+                "chance": 0.2903
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1935
+            }
+        ],
+        [
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.1975
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1975
+            },
+            {
+                "name": "Detonite Injector",
+                "count": 2,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1481
+            },
+            {
+                "name": "Neo G1 Relic",
+                "count": 1,
+                "chance": 0.1852
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.049400000000000006
+            }
+        ],
+        [
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.17579999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.17579999999999998
+            },
+            {
+                "name": "Detonite Injector",
+                "count": 2,
+                "chance": 0.1978
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1319
+            },
+            {
+                "name": "Neo G1 Relic",
+                "count": 1,
+                "chance": 0.1648
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.044000000000000004
+            },
+            {
+                "name": "Mecha Empowered",
+                "count": 1,
+                "chance": 0.1099
+            }
+        ],
+        [
+            {
+                "name": "Neo G1 Relic",
+                "count": 1,
+                "chance": 0.5172
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.1379
+            },
+            {
+                "name": "Mecha Empowered",
+                "count": 1,
+                "chance": 0.3448
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierDTableCRewards": [
+        [
+            {
+                "name": "Kuva",
+                "count": 200,
+                "chance": 0.2581
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.2581
+            },
+            {
+                "name": "Mutagen Mass",
+                "count": 2,
+                "chance": 0.2903
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1935
+            }
+        ],
+        [
+            {
+                "name": "Kuva",
+                "count": 200,
+                "chance": 0.1975
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.1975
+            },
+            {
+                "name": "Mutagen Mass",
+                "count": 2,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1481
+            },
+            {
+                "name": "Neo A2 Relic",
+                "count": 1,
+                "chance": 0.1852
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.049400000000000006
+            }
+        ],
+        [
+            {
+                "name": "Kuva",
+                "count": 200,
+                "chance": 0.17579999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.17579999999999998
+            },
+            {
+                "name": "Mutagen Mass",
+                "count": 2,
+                "chance": 0.1978
+            },
+            {
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.1319
+            },
+            {
+                "name": "Neo A2 Relic",
+                "count": 1,
+                "chance": 0.1648
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.044000000000000004
+            },
+            {
+                "name": "Tek Gravity",
+                "count": 1,
+                "chance": 0.1099
+            }
+        ],
+        [
+            {
+                "name": "Neo A2 Relic",
+                "count": 1,
+                "chance": 0.5172
+            },
+            {
+                "name": "Tellurium",
+                "count": 1,
+                "chance": 0.1379
+            },
+            {
+                "name": "Tek Gravity",
+                "count": 1,
+                "chance": 0.3448
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierETableARewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.5
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.25
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.3333
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Axi C3 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.0833
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.2857
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.1429
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.1429
+            },
+            {
+                "name": "Axi C3 Relic",
+                "count": 1,
+                "chance": 0.2143
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Synth Reflex",
+                "count": 1,
+                "chance": 0.1429
+            }
+        ],
+        [
+            {
+                "name": "Axi C3 Relic",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Synth Reflex",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierETableBRewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.5
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.25
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.3333
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Axi K4 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.0833
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.2857
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.1429
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.1429
+            },
+            {
+                "name": "Axi K4 Relic",
+                "count": 1,
+                "chance": 0.2143
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Mecha Pulse",
+                "count": 1,
+                "chance": 0.1429
+            }
+        ],
+        [
+            {
+                "name": "Axi K4 Relic",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Mecha Pulse",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "SolarisSyndicateBountyVenusTierETableCRewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.5
+            },
+            {
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.25
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.3333
+            },
+            {
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Axi L2 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.0833
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.2857
+            },
+            {
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.1429
+            },
+            {
+                "name": "Axi L2 Relic",
+                "count": 1,
+                "chance": 0.2143
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Tek Collateral",
+                "count": 1,
+                "chance": 0.1429
+            }
+        ],
+        [
+            {
+                "name": "Axi L2 Relic",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Kuva",
+                "count": 500,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Tek Collateral",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ]
+}

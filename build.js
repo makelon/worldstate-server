@@ -9,7 +9,8 @@ process.chdir(__dirname)
 
 const dataFiles = {
 		rewardTables: [
-			'./data/rewardtables-bounties.json',
+			'./data/rewardtables-cetus.json',
+			'./data/rewardtables-solaris.json',
 			'./data/rewardtables-dynamic.json',
 			'./data/rewardtables-sorties.json',
 			'./data/rewardtables-extra.json'

@@ -44,7 +44,7 @@
             {
                 "name": "Kuva",
                 "count": 6000,
-                "chance": 0.14
+                "chance": 0.12
             },
             {
                 "name": "Credit Booster",
@@ -74,7 +74,17 @@
             {
                 "name": "Melee Riven Mod",
                 "count": 1,
-                "chance": 0.1014
+                "chance": 0.0814
+            },
+            {
+                "name": "Zaw Riven Mod",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kitgun Riven Mod",
+                "count": 1,
+                "chance": 0.02
             }
         ]
     ]

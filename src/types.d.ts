@@ -201,6 +201,14 @@ interface WfUpgrade {
 	value: number
 }
 
+interface WfDayNight {
+	id: string
+	start: number
+	length: number
+	dayStart: number
+	dayEnd: number
+}
+
 interface WfReader {
 	start(db: WfDb): void
 	read(input: any[], timestamp: number): void
@@ -244,6 +252,7 @@ type WfRecordTypes = {
 	acolytes: WfAcolyte
 	dailydeals: WfDailyDeal
 	upgrades: WfUpgrade
+	daynight: WfDayNight
 }
 
 type WfRecordType = WfRecordTypes[keyof WfRecordTypes]

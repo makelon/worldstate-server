@@ -8,17 +8,18 @@ import config from './config'
 import httpHelper = require('./httphelper')
 
 import AcolyteReader from './readers/acolytes'
-import NewsReader from './readers/news'
 import AlertReader from './readers/alerts'
 import BountieReader from './readers/bounties'
 import DailyDealReader from './readers/dailydeals'
+import DayNightReader from './readers/daynight'
 import FactionProjectReader from './readers/factionprojects'
 import FomorianReader from './readers/fomorians'
+import InvasionReader from './readers/invasions'
+import NewsReader from './readers/news'
 import SortieReader from './readers/sorties'
 import UpgradeReader from './readers/upgrades'
 import VoidFissureReader from './readers/voidfissures'
 import VoidTraderReader from './readers/voidtraders'
-import InvasionReader from './readers/invasions'
 
 /**
  * Check whether the given data is likely to be worldstate data
@@ -58,7 +59,8 @@ export default class Worldstate {
 		news: new NewsReader(this.platform),
 		sorties: new SortieReader(this.platform),
 		upgrades: new UpgradeReader(this.platform),
-		voidtraders: new VoidTraderReader(this.platform)
+		voidtraders: new VoidTraderReader(this.platform),
+		daynight: new DayNightReader(this.platform)
 	}
 
 	constructor(

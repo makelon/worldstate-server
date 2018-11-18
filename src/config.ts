@@ -17,13 +17,15 @@ const defaults = {
 		'voidtraders',
 		'acolytes',
 		'dailydeals',
-		'upgrades'
+		'upgrades',
+		'daynight'
 	],
 	wsUrls: { // Worldstate endpoints
 		'pc': 'http://content.warframe.com/dynamic/worldState.php',
 		'ps4': 'http://content.ps4.warframe.com/dynamic/worldState.php',
 		'xb1': 'http://content.xb1.warframe.com/dynamic/worldState.php',
 	},
+	dayNightPath: './daynight.json',
 	minRetryTimeout: 10000,
 	maxRetryTimeout: 120000,
 	requestTimeout: 30000,
@@ -45,6 +47,7 @@ class WfConfig {
 	dbRoot!: string
 	wsFields!: ReadonlyArray<string>
 	wsUrls!: WfMap
+	dayNightPath!: string
 	minRetryTimeout!: number
 	maxRetryTimeout!: number
 	requestTimeout!: number
@@ -82,6 +85,7 @@ class WfConfig {
 		else {
 			this.wsUrls = defaults.wsUrls
 		}
+		this.dayNightPath = ('dayNightPath' in overrides) ? overrides.dayNightPath : defaults.dayNightPath
 		this.logLevel = ('logLevel' in overrides) ? overrides.logLevel : defaults.logLevel
 		this.dbRoot = ('dbRoot' in overrides) ? overrides.dbRoot : defaults.dbRoot
 		this.wsFields = ('wsFields' in overrides) ? overrides.wsFields : defaults.wsFields

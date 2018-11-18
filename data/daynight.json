@@ -1,0 +1,57 @@
+{
+	"pc": [
+		{
+			"id": "earth",
+			"start": 0,
+			"length": 28800,
+			"dayStart": 0,
+			"dayEnd": 14400
+		},
+		{
+			"id": "cetus",
+			"start": 1509371722,
+			"length": 8998.8748,
+			"dayStart": 2249.7187,
+			"dayEnd": 8248.9686
+		},
+		{
+			"id": "fortuna",
+			"start": 1542131224,
+			"length": 1600,
+			"dayStart": 800,
+			"dayEnd": 1200
+		}
+	],
+	"ps4": [
+		{
+			"id": "earth",
+			"start": 0,
+			"length": 28800,
+			"dayStart": 0,
+			"dayEnd": 14400
+		},
+		{
+			"id": "cetus",
+			"start": 1509371722,
+			"length": 8998.8748,
+			"dayStart": 2249.7187,
+			"dayEnd": 8248.9686
+		}
+	],
+	"xb1": [
+		{
+			"id": "earth",
+			"start": 0,
+			"length": 28800,
+			"dayStart": 0,
+			"dayEnd": 14400
+		},
+		{
+			"id": "cetus",
+			"start": 1509371722,
+			"length": 8998.8748,
+			"dayStart": 2249.7187,
+			"dayEnd": 8248.9686
+		}
+	]
+}

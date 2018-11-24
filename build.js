@@ -17,7 +17,7 @@ const dataFiles = {
 		],
 		itemNames: './data/itemnames.json',
 		itemTypes: './data/itemtypes.json',
-		solarMap: './data/starchart.json',
+		starChart: './data/starchart.json',
 		dayNight: './data/daynight.json'
 	},
 	opt = {},
@@ -174,7 +174,7 @@ function buildData() {
 		buildRewardTables(),
 		copyFile(dataFiles.itemNames),
 		copyFile(dataFiles.itemTypes),
-		copyFile(dataFiles.solarMap),
+		copyFile(dataFiles.starChart),
 		copyFile(dataFiles.dayNight)
 	]).then(() => {
 		if (watcher) {

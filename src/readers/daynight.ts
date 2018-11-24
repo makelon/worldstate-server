@@ -13,15 +13,17 @@ export default class DayNightReader implements WfReader {
 	start(db: WfDb): void {
 		this.dbTable = db.getTable('daynight')
 		let dayNightInput: any
-		try {
-			dayNightInput = JSON.parse(fs.readFileSync(config.dayNightPath, 'utf8'))
-		}
-		catch (err) {
-			if (err.code == 'ENOENT') {
-				log.warning('Cannot open day cycle data: File %s does not exist', config.dayNightPath)
+		if (config.dayNightPath) {
+			try {
+				dayNightInput = JSON.parse(fs.readFileSync(config.dayNightPath, 'utf8'))
 			}
-			else {
-				log.error(err.message)
+			catch (err) {
+				if (err.code == 'ENOENT') {
+					log.warning('Cannot open day cycle data: File %s does not exist', config.dayNightPath)
+				}
+				else {
+					log.error(err.message)
+				}
 			}
 		}
 		const dayNightCycles = dayNightInput && dayNightInput[this.platform]

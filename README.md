@@ -160,6 +160,30 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
     }
     ```
 
+* `daynight` - Day cycles for regions that have them.
+
+    ```
+    "daynight": {
+    	"time": 1512345678,
+    	"data": [
+    		{
+    			"id": "regionId",
+    			"start": 1512345678,
+    			"dayStart": 0,
+    			"dayEnd": 14400,
+    			"length": 28800,
+    		},
+    		<...>
+    	]
+    }
+    ```
+
+    **Notes**
+
+    `start` is a timestamp of a past midnight in the region.
+
+    `dayStart` and `dayEnd` are the number of seconds into the cycle when day starts and ends.
+
 * `factionprojects` - Balor Fomorian and Razorback construction progress.
 
     ```

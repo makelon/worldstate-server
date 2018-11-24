@@ -2,5 +2,6 @@
 	"wsUrls": {
 		"pc": "http://127.0.0.1:20354"
 	},
-	"listen": "127.0.0.1:20355"
+	"listen": "127.0.0.1:20355",
+	"dayNightPath": null
 }

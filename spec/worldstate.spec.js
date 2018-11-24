@@ -63,6 +63,24 @@ describe('Worldstate', () => {
 		}
 	})
 
+	it('should read day cycles', () => {
+		// More of an algorithm test as very little data processing is going on
+		const dataKey = 'daynight'
+		for (const [data, time, expected] of fixtures.getDayNight()) {
+			ws.readers.daynight.read(data)
+			const result = JSON.parse(ws.get([dataKey]))[dataKey].data[0],
+				cycleTime = (time - result.start) % result.length,
+				isDay = cycleTime >= result.dayStart && cycleTime < result.dayEnd,
+				cycleEnd = isDay
+					? result.dayEnd
+					: (cycleTime < result.dayStart
+						? result.dayStart
+						: result.dayStart + result.length)
+			expect(isDay).toEqual(expected.isDay)
+			expect(cycleEnd - cycleTime).toEqual(expected.cycleEnd)
+		}
+	})
+
 	it('should read faction projects', () => {
 		const dataKey = 'factionprojects'
 		let timestamp = fixtures.timeNowShort

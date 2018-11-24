@@ -318,6 +318,33 @@ function* getDailyDeals() {
 	yield [data, expected]
 }
 
+function* getDayNight() {
+	const dayNight = {
+			id: "cetus",
+			start: 1542131224,
+			length: 1600,
+			dayStart: 800,
+			dayEnd: 1200
+		},
+		expected = {},
+		data = [dayNight]
+	expected.cycleEnd = 123
+	expected.isDay = false
+	yield [data, dayNight.start - expected.cycleEnd + dayNight.dayStart, expected]
+
+	expected.cycleEnd = 234
+	expected.isDay = true
+	yield [data, dayNight.start - expected.cycleEnd + dayNight.dayEnd, expected]
+
+	expected.cycleEnd = 345
+	expected.isDay = false
+	yield [data, dayNight.start - expected.cycleEnd + dayNight.length + dayNight.dayStart, expected]
+
+	dayNight.dayStart = 0
+	expected.isDay = true
+	yield [data, dayNight.start - expected.cycleEnd + dayNight.dayEnd, expected]
+}
+
 function* getFactionProjects() {
 	let timeLocalShort = timeNowShort
 	const projects = [25],
@@ -645,6 +672,7 @@ module.exports = {
 	getAlerts,
 	getBounties,
 	getDailyDeals,
+	getDayNight,
 	getFactionProjects,
 	getGoals,
 	getInvasions,

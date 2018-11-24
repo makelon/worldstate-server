@@ -24,6 +24,7 @@ const defaults = {
 		'pc': 'http://content.warframe.com/dynamic/worldState.php',
 		'ps4': 'http://content.ps4.warframe.com/dynamic/worldState.php',
 		'xb1': 'http://content.xb1.warframe.com/dynamic/worldState.php',
+		'ns': 'http://content.swi.warframe.com/dynamic/worldState.php'
 	},
 	dayNightPath: './daynight.json',
 	minRetryTimeout: 10000,
@@ -76,11 +77,13 @@ class WfConfig {
 			}
 		}
 		if (overrides.wsUrls) {
-			const wsUrls = overrides.wsUrls
+			const wsUrls = overrides.wsUrls as WfMap
 			this.wsUrls = {}
-			if ('pc' in wsUrls) this.wsUrls.pc = wsUrls.pc
-			if ('ps4' in wsUrls) this.wsUrls.ps4 = wsUrls.ps4
-			if ('xb1' in wsUrls) this.wsUrls.xb1 = wsUrls.xb1
+			for (const platform in defaults.wsUrls) {
+				if (platform in wsUrls) {
+					this.wsUrls[platform] = wsUrls[platform]
+				}
+			}
 		}
 		else {
 			this.wsUrls = defaults.wsUrls
@@ -106,7 +109,9 @@ class WfConfig {
 			}
 		}
 		this.tlsVerify = ('tlsVerify' in overrides) ? overrides.tlsVerify : defaults.tlsVerify
-		if (!this.dbRoot) this.enableDbWrites = false
+		if (!this.dbRoot) {
+			this.enableDbWrites = false
+		}
 	}
 }
 

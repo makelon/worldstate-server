@@ -49,7 +49,8 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
 
 * `pc` - PC  
 * `ps4` - PlayStation 4  
-* `xb1` - Xbox One
+* `xb1` - Xbox One  
+* `ns` - Nintendo Switch
 
 `components` - Comma-separated list of components. If omitted, all components are returned.
 

@@ -37,6 +37,9 @@ let lang,
 				"gameplay": {
 					"eidolon": {
 						"resources": "Resource"
+					},
+					"venus": {
+						"resources": "Resource"
 					}
 				},
 				"items": {

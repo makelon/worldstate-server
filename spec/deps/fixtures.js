@@ -186,19 +186,19 @@ function* getAlerts() {
 function* getBounties() {
 	let timeLocalShort = timeNowShort
 	const bountySyndicate = {
-            _id: { $oid: entryId },
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
+			_id: { $oid: entryId },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
 			Tag: 'CetusSyndicate',
-            Jobs: [
-                {
-                    rewards: rewardTables[1].input,
-                    minEnemyLevel: 5,
-                    maxEnemyLevel: 15,
-                    xpAmounts: [100, 300]
-                },
-            ]
-        },
+			Jobs: [
+				{
+					rewards: rewardTables[1].input,
+					minEnemyLevel: 5,
+					maxEnemyLevel: 15,
+					xpAmounts: [100, 300]
+				},
+			]
+		},
 		expectedSyndicate = {
 			id: entryId,
 			start: timeStartShort,
@@ -214,19 +214,19 @@ function* getBounties() {
 			]
 		},
 		bountyInfested = {
-            _id: { $oid: entryId + '2' },
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
+			_id: { $oid: entryId + '2' },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
 			Tag: 'InfestedPlains',
-            Jobs: [
-                {
-                    rewards: rewardTables[1].input,
-                    minEnemyLevel: 10,
-                    maxEnemyLevel: 20,
-                    xpAmounts: [200, 400]
-                },
-            ]
-        },
+			Jobs: [
+				{
+					rewards: rewardTables[1].input,
+					minEnemyLevel: 10,
+					maxEnemyLevel: 20,
+					xpAmounts: [200, 400]
+				},
+			]
+		},
 		expectedInfested = {
 			id: entryId + '2',
 			start: timeStartShort,
@@ -242,21 +242,21 @@ function* getBounties() {
 			]
 		},
 		bountyGhoul = {
-            _id: { $oid: entryId + '3' },
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
+			_id: { $oid: entryId + '3' },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
 			Tag: 'GhoulEmergence',
 			HealthPct: 0.9,
 			VictimNode: nodes[1].id,
-            Jobs: [
-                {
-                    rewards: rewardTables[2].input,
-                    minEnemyLevel: 15,
-                    maxEnemyLevel: 25,
-                    xpAmounts: [250, 450]
-                },
-            ]
-        },
+			Jobs: [
+				{
+					rewards: rewardTables[2].input,
+					minEnemyLevel: 15,
+					maxEnemyLevel: 25,
+					xpAmounts: [250, 450]
+				},
+			]
+		},
 		expectedGhoul = {
 			id: entryId + '3',
 			start: timeStartShort,
@@ -291,8 +291,8 @@ function* getBounties() {
 
 function* getDailyDeals() {
 	const deal = {
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
 			StoreItem: items[0].id,
 			Discount: 70,
 			OriginalPrice: 125,
@@ -544,12 +544,12 @@ function* getNews() {
 
 function* getSorties() {
 	const sortie = {
-            _id: { $oid: entryId },
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
-            Boss: 'SORTIE_BOSS_VOR',
-            Reward: rewardTables[0].input,
-            Variants: [ { missionType: missionTypes[0].id, modifierType: 'SORTIE_MODIFIER_EXIMUS', node: nodes[0].id, } ]
+			_id: { $oid: entryId },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
+			Boss: 'SORTIE_BOSS_VOR',
+			Reward: rewardTables[0].input,
+			Variants: [ { missionType: missionTypes[0].id, modifierType: 'SORTIE_MODIFIER_EXIMUS', node: nodes[0].id, } ]
 		},
 		expected = {
 			id: entryId,
@@ -571,9 +571,9 @@ function* getSorties() {
 
 function* getUpgrades() {
 	const upgrade = {
-            _id: { $id: entryId },
-            Activation: { sec: timeStartShort, usec: 0 },
-            ExpiryDate: { sec: timeEndShort, usec: 0 },
+			_id: { $id: entryId },
+			Activation: { sec: timeStartShort, usec: 0 },
+			ExpiryDate: { sec: timeEndShort, usec: 0 },
 			UpgradeType: 'GAMEPLAY_KILL_XP_AMOUNT',
 			OperationType: 'MULTIPLY',
 			Value: 2,
@@ -596,11 +596,11 @@ function* getUpgrades() {
 
 function* getVoidFissures() {
 	const fissure = {
-            _id: { $oid: entryId },
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
-            Node: nodes[0].id,
-            Modifier: 'VoidT1'
+			_id: { $oid: entryId },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
+			Node: nodes[0].id,
+			Modifier: 'VoidT1'
 		},
 		expected = {
 			id: entryId,
@@ -621,12 +621,12 @@ function* getVoidFissures() {
 
 function* getVoidTraders() {
 	const voidTrader = {
-            _id: { $oid: entryId },
-            Activation: { $date: { $numberLong: timeStartLong } },
-            Expiry: { $date: { $numberLong: timeEndLong } },
-            Character: 'Baro\'Ki Teel',
-            Node: nodes[0].id,
-            Manifest: [ { ItemType: items[0].id, PrimePrice: 4, RegularPrice: 9 } ]
+			_id: { $oid: entryId },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
+			Character: 'Baro\'Ki Teel',
+			Node: nodes[0].id,
+			Manifest: [ { ItemType: items[0].id, PrimePrice: 4, RegularPrice: 9 } ]
 		},
 		expected = {
 			id: entryId + timeStartShort.toString(),

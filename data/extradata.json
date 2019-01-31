@@ -44,5 +44,97 @@
                 ]
             }
         ]
+    },
+    "ps4": {
+        "bounties": [
+            {
+                "id": "VoxSolarisSyndicate",
+                "syndicate": "Vox Solaris",
+                "jobs": [
+                    {
+                        "rewards": "PTN",
+                        "minEnemyLevel": "40",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 1"
+                    },
+                    {
+                        "rewards": "PTO",
+                        "minEnemyLevel": "40",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 2"
+                    },
+                    {
+                        "rewards": "PTP",
+                        "minEnemyLevel": "40",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 3"
+                    },
+                    {
+                        "rewards": "PTQ",
+                        "minEnemyLevel": "50",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 4"
+                    }
+                ]
+            }
+        ]
+    },
+    "xb1": {
+        "bounties": [
+            {
+                "id": "VoxSolarisSyndicate",
+                "syndicate": "Vox Solaris",
+                "jobs": [
+                    {
+                        "rewards": "PTN",
+                        "minEnemyLevel": "40",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 1"
+                    },
+                    {
+                        "rewards": "PTO",
+                        "minEnemyLevel": "40",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 2"
+                    },
+                    {
+                        "rewards": "PTP",
+                        "minEnemyLevel": "40",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 3"
+                    },
+                    {
+                        "rewards": "PTQ",
+                        "minEnemyLevel": "50",
+                        "maxEnemyLevel": "60",
+                        "xpAmounts": [
+                            "1000"
+                        ],
+                        "title": "Profit-Taker - Phase 4"
+                    }
+                ]
+            }
+        ]
     }
 }

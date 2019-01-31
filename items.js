@@ -25,10 +25,12 @@ let lang,
 				"game": {
 					"catbrowpet": {
 						"": "Companion",
+						"colors": "Cosmetic",
 						"patterns": "Cosmetic"
 					},
 					"kubrowpet": {
 						"": "Companion",
+						"colors": "Cosmetic",
 						"patterns": "Cosmetic"
 					},
 					"quarterswallpapers": "Cosmetic",

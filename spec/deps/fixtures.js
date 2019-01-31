@@ -203,7 +203,7 @@ function* getBounties() {
 			id: entryId,
 			start: timeStartShort,
 			end: timeEndShort,
-			syndicate: 'Cetus',
+			syndicate: 'Ostron',
 			jobs: [
 				{
 					rewards: rewardTables[1].output,
@@ -343,6 +343,26 @@ function* getDayNight() {
 	dayNight.dayStart = 0
 	expected.isDay = true
 	yield [data, dayNight.start - expected.cycleEnd + dayNight.dayEnd, expected]
+}
+
+function* getExtraBounties() {
+	const expectedSyndicate = {
+		id: 'ExtraBounty',
+		start: 0,
+		end: 0,
+		syndicate: 'Extra Bounty Syndicate',
+		jobs: [
+			{
+				rewards: rewardTables[0].output,
+				minLevel: 3,
+				maxLevel: 8,
+				xpAmounts: [1234],
+				title: 'Extra Bounty Title'
+			}
+		]
+	}
+	yield ['data/extradata.json', [expectedSyndicate]];
+	yield ['data/nonexistent.json', []];
 }
 
 function* getFactionProjects() {
@@ -673,6 +693,7 @@ module.exports = {
 	getBounties,
 	getDailyDeals,
 	getDayNight,
+	getExtraBounties,
 	getFactionProjects,
 	getGoals,
 	getInvasions,

@@ -109,7 +109,7 @@ export const
 	syndicateNames: WfMap = {
 		ArbitersSyndicate: 'Arbiters of Hexis',
 		CephalonSudaSyndicate: 'Cephalon Suda',
-		CetusSyndicate: 'Cetus',
+		CetusSyndicate: 'Ostron',
 		NewLokaSyndicate: 'New Loka',
 		PerrinSyndicate: 'The Perrin Sequence',
 		QuillsSyndicate: 'The Quills',
@@ -117,7 +117,7 @@ export const
 		SteelMeridianSyndicate: 'Steel Meridian',
 		GhoulEmergence: 'Ghoul Purge',
 		InfestedPlains: 'Plague Star',
-		SolarisSyndicate: 'Fortuna',
+		SolarisSyndicate: 'Solaris United',
 	},
 	upgradeTypes: WfMap = {
 		GAMEPLAY_KILL_XP_AMOUNT: 'Affinity',

@@ -1405,5 +1405,196 @@
                 "chance": 0.3333
             }
         ]
+    ],
+    "PTN": [
+        [
+            {
+                "name": "Gyromag Systems",
+                "count": 5,
+                "chance": 0.25
+            },
+            {
+                "name": "Lith C4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Quick Reload",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Atmo Systems",
+                "count": 4,
+                "chance": 0.1
+            },
+            {
+                "name": "Vega Toroid",
+                "count": 3,
+                "chance": 0.125
+            },
+            {
+                "name": "Lith B6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Repeller Systems",
+                "count": 3,
+                "chance": 0.075
+            },
+            {
+                "name": "Deadly Efficiency",
+                "count": 1,
+                "chance": 0.0125
+            },
+            {
+                "name": "Strain Eruption",
+                "count": 1,
+                "chance": 0.0125
+            }
+        ]
+    ],
+    "PTO": [
+        [
+            {
+                "name": "Gyromag Systems",
+                "count": 5,
+                "chance": 0.25
+            },
+            {
+                "name": "Lith K2 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Resolute Focus",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Atmo Systems",
+                "count": 4,
+                "chance": 0.1
+            },
+            {
+                "name": "Calda Toroid",
+                "count": 3,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso Z2 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Repeller Systems",
+                "count": 3,
+                "chance": 0.075
+            },
+            {
+                "name": "Arch-Gun Ace",
+                "count": 1,
+                "chance": 0.0125
+            },
+            {
+                "name": "Strain Fever",
+                "count": 1,
+                "chance": 0.0125
+            }
+        ]
+    ],
+    "PTP": [
+        [
+            {
+                "name": "Gyromag Systems",
+                "count": 5,
+                "chance": 0.25
+            },
+            {
+                "name": "Meso M2 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Marked Target",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Atmo Systems",
+                "count": 4,
+                "chance": 0.1
+            },
+            {
+                "name": "Sola Toroid",
+                "count": 3,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo Z2 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Repeller Systems",
+                "count": 3,
+                "chance": 0.075
+            },
+            {
+                "name": "Sabot Rounds",
+                "count": 1,
+                "chance": 0.0125
+            },
+            {
+                "name": "Strain Infection",
+                "count": 1,
+                "chance": 0.0125
+            }
+        ]
+    ],
+    "PTQ": [
+        [
+            {
+                "name": "Gyromag Systems",
+                "count": 5,
+                "chance": 0.2857
+            },
+            {
+                "name": "Neo S9 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.1714
+            },
+            {
+                "name": "Ammo Chain",
+                "count": 1,
+                "chance": 0.1714
+            },
+            {
+                "name": "Atmo Systems",
+                "count": 4,
+                "chance": 0.1143
+            },
+            {
+                "name": "Axi R2 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Repeller Systems",
+                "count": 3,
+                "chance": 0.0857
+            },
+            {
+                "name": "Critical Focus",
+                "count": 1,
+                "chance": 0.0143
+            },
+            {
+                "name": "Strain Consume",
+                "count": 1,
+                "chance": 0.0143
+            }
+        ]
     ]
 }

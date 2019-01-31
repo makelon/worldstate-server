@@ -1,4 +1,5 @@
 import config from './config'
+import extraData from './extradata'
 import items = require('./items')
 import log = require('./log')
 import tags = require('./tags')
@@ -25,6 +26,7 @@ function load() {
 	try {
 		items.load('./rewardtables.json', './itemnames.json', './itemtypes.json')
 		tags.load('./starchart.json')
+		extraData.load('./extradata.json')
 	}
 	catch (err) {
 		log.error(err.message)

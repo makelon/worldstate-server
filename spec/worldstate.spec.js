@@ -1,6 +1,7 @@
 const Database = require('../out/db').default
 const Worldstate = require('../out/worldstate').default
 const fixtures = require('./deps/fixtures')
+const extraData = require('../out/extradata').default
 
 describe('Worldstate', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc')
@@ -175,5 +176,30 @@ describe('Worldstate', () => {
 			expect(result[dataKey].data[0]).toEqual(expected)
 			timestamp += fixtures.timeStep
 		}
+	})
+
+	it('should load extra data', () => {
+		extraData.data = {}
+		extraData.load('data/extradata.json')
+		expect(extraData.data.pc.bounties.length).toBe(1)
+		expect(extraData.getData('pc', 'bounties')).toEqual(extraData.data.pc.bounties)
+		expect(extraData.getData('pc', 'x')).toEqual([])
+		expect(extraData.getData('x', 'bounties')).toEqual([])
+		extraData.data = {}
+	})
+
+	it('should load extra bounties', () => {
+		extraData.data = {}
+		const dataKey = 'bounties'
+		let timestamp = fixtures.timeNowShort
+		setWorldstateData({}, timestamp)
+		for (const [dataPath, expected] of fixtures.getExtraBounties()) {
+			extraData.load(dataPath)
+			ws.readSyndicateMissions()
+			const result = JSON.parse(ws.get([dataKey]))
+			expect(result[dataKey].data).toEqual(expected)
+			timestamp += fixtures.timeStep
+		}
+		extraData.data = {}
 	})
 })

@@ -3,6 +3,7 @@ import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
 import history = require('../history')
+import extraData from '../extradata'
 
 export default class BountyReader implements WfReader {
 	private dbTable!: WfDbTable<WfBounty>
@@ -81,6 +82,43 @@ export default class BountyReader implements WfReader {
 			}
 			delete oldIds[id]
 		}
+
+		for (const bounty of extraData.getData(this.platform, 'bounties')) {
+			const id = bounty.id
+			let bountyDb = this.dbTable.get(id)
+			const jobs: WfBountyJob[] = [],
+				bountyCurrent: WfBounty = {
+					id: id,
+					start: 0,
+					end: 0,
+					syndicate: bounty.syndicate,
+					jobs: jobs
+				}
+			for (const job of bounty.jobs) {
+				jobs.push({
+					rewards: items.getRandomRewards(job.rewards),
+					minLevel: job.minEnemyLevel,
+					maxLevel: job.maxEnemyLevel,
+					xpAmounts: job.xpAmounts,
+					title: job.title
+				})
+			}
+			if (bountyDb) {
+				const diff = this.getDifference(bountyDb, bountyCurrent)
+				if (Object.keys(diff).length) {
+					this.dbTable.moveTmp(id)
+					this.dbTable.add(id, bountyCurrent, true)
+					log.debug('Updating bounty %s for %s', id, this.platform)
+				}
+			}
+			else {
+				bountyDb = bountyCurrent
+				this.dbTable.add(id, bountyDb, true)
+				log.debug('Found bounty %s for %s', id, this.platform)
+			}
+			delete oldIds[id]
+		}
+
 		this.cleanOld(oldIds, timestamp)
 	}
 
@@ -102,6 +140,7 @@ export default class BountyReader implements WfReader {
 					|| jobFirst.maxLevel != jobSecond.maxLevel
 					|| compare.getRandomRewardDifference(jobFirst.rewards, jobSecond.rewards) !== null
 					|| jobFirst.xpAmounts.join(' ') != jobSecond.xpAmounts.join(' ')
+					|| jobFirst.title != jobSecond.title
 				) {
 					diff.jobs = second.jobs
 					break

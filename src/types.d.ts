@@ -79,6 +79,7 @@ interface WfBountyJob {
 	maxLevel: number
 	xpAmounts: number[]
 	rewards: WfRandomRewardTable
+	title?: string
 }
 
 interface WfBounty {

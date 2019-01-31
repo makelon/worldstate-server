@@ -18,7 +18,8 @@ const dataFiles = {
 		itemNames: './data/itemnames.json',
 		itemTypes: './data/itemtypes.json',
 		starChart: './data/starchart.json',
-		dayNight: './data/daynight.json'
+		dayNight: './data/daynight.json',
+		extraData: './data/extradata.json'
 	},
 	opt = {},
 	outDir = './out'
@@ -175,7 +176,8 @@ function buildData() {
 		copyFile(dataFiles.itemNames),
 		copyFile(dataFiles.itemTypes),
 		copyFile(dataFiles.starChart),
-		copyFile(dataFiles.dayNight)
+		copyFile(dataFiles.dayNight),
+		copyFile(dataFiles.extraData)
 	]).then(() => {
 		if (watcher) {
 			watcher.ee.emit('done')

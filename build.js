@@ -7,7 +7,9 @@ const cproc = require('child_process'),
 
 process.chdir(__dirname)
 
-const dataFiles = {
+const itemNames = './data/itemnames.json',
+	itemTypes = './data/itemtypes.json',
+	dataFiles = {
 		rewardTables: [
 			'./data/rewardtables-cetus.json',
 			'./data/rewardtables-solaris.json',
@@ -15,11 +17,14 @@ const dataFiles = {
 			'./data/rewardtables-sorties.json',
 			'./data/rewardtables-extra.json'
 		],
-		itemNames: './data/itemnames.json',
-		itemTypes: './data/itemtypes.json',
-		starChart: './data/starchart.json',
-		dayNight: './data/daynight.json',
-		extraData: './data/extradata.json'
+		copy: [
+			itemNames,
+			itemTypes,
+			'./data/starchart.json',
+			'./data/daynight.json',
+			'./data/extradata.json',
+			'./data/challenges.json'
+		]
 	},
 	opt = {},
 	outDir = './out'
@@ -173,11 +178,7 @@ function buildData() {
 	printBuild('Building data files')
 	Promise.all([
 		buildRewardTables(),
-		copyFile(dataFiles.itemNames),
-		copyFile(dataFiles.itemTypes),
-		copyFile(dataFiles.starChart),
-		copyFile(dataFiles.dayNight),
-		copyFile(dataFiles.extraData)
+		copyFiles(dataFiles.copy),
 	]).then(() => {
 		if (watcher) {
 			watcher.ee.emit('done')
@@ -222,6 +223,14 @@ function buildRewardTables() {
 				resolve()
 			})
 		}))
+}
+
+function copyFiles(filePaths) {
+	const promises = []
+	for (const filePath of filePaths) {
+		promises.push(copyFile(filePath))
+	}
+	return promises
 }
 
 function copyFile(filePath) {
@@ -309,7 +318,7 @@ for (const c of process.argv[2] || 'bd') {
 	}
 }
 
-if (opt.data && !(fs.existsSync(dataFiles.itemNames) && fs.existsSync(dataFiles.itemTypes))) {
+if (opt.data && !(fs.existsSync(itemNames) && fs.existsSync(itemTypes))) {
 	console.log(
 		'WARNING: itemnames.json or itemtypes.json is missing.\n' +
 		'You probably want to put the following file in the folder "%s"\n' +

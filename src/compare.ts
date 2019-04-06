@@ -4,7 +4,7 @@
  * @param obj Object to update
  * @param diff Differences to apply
  */
-export function patch<T extends WfRecordType>(obj: T, diff: Partial<T>): void {
+export function patch<T>(obj: T, diff: Partial<T>): void {
 	for (const key in diff) {
 		if (diff[key] === undefined) {
 			delete obj[key]
@@ -23,7 +23,7 @@ export function patch<T extends WfRecordType>(obj: T, diff: Partial<T>): void {
  * @param keys Array of keys to inspect
  * @returns Object containing difference
  */
-export function getValueDifference<T extends WfRecordType>(first: T, second: T, keys: (keyof T)[]): Partial<T> {
+export function getValueDifference<T>(first: T, second: T, keys: (keyof T)[]): Partial<T> {
 	const diff: Partial<T> = {}
 	for (const key of keys) {
 		if (first[key] != second[key]) {

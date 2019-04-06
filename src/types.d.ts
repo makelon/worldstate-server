@@ -33,6 +33,11 @@ type WfRewardTableMap = {
 
 type WfProgressHistory = [number, number][]
 
+interface WfChallengeInfo {
+	description: string,
+	xpAmount: number
+}
+
 interface WfAlert {
 	id: string
 	start: number
@@ -211,6 +216,25 @@ interface WfDayNight {
 	dayEnd: number
 }
 
+interface WfChallenge {
+	id: string
+	start: number
+	end: number
+	daily: boolean
+	description: string
+	xpAmount: number
+}
+
+interface WfChallengeSeason {
+	id: string
+	start: number
+	end: number
+	syndicate: string
+	season: number
+	phase: number
+	challenges: WfChallenge[]
+}
+
 interface WfReader {
 	start(db: WfDb): void
 	read(input: any[], timestamp: number): void
@@ -255,6 +279,7 @@ type WfRecordTypes = {
 	dailydeals: WfDailyDeal
 	upgrades: WfUpgrade
 	daynight: WfDayNight
+	challenges: WfChallengeSeason
 }
 
 type WfRecordType = WfRecordTypes[keyof WfRecordTypes]

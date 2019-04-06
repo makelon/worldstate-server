@@ -1,0 +1,10 @@
+{
+    "Challenge1000": {
+        "description": "Test challenge 1000 standing",
+        "xpAmount": 1000
+    },
+    "Challenge5000": {
+        "description": "Test challenge 5000 standing",
+        "xpAmount": 5000
+    }
+}

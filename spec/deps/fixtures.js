@@ -54,6 +54,16 @@ const items = [
 			]
 		}
 	],
+	challenges = [
+		{
+			input: 'Challenge1000',
+			output: { description: 'Test challenge 1000 standing', xpAmount: 1000 }
+		},
+		{
+			input: 'Challenge5000',
+			output: { description: 'Test challenge 5000 standing', xpAmount: 5000 }
+		}
+	],
 	entryId = '5b291c5825666c0225476ac6',
 	factions = [
 		{
@@ -288,6 +298,52 @@ function* getBounties() {
 	expectedGhoul.health = bountyGhoul.HealthPct
 	expectedGhoul.healthHistory.push([timeLocalShort, bountyGhoul.HealthPct])
 	expectedGhoul.location = nodes[0].name
+	yield [data, expected]
+}
+
+function* getChallenges() {
+	const challenge = {
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
+			AffiliationTag: 'RadioLegionSyndicate',
+			Season: 3,
+			Phase: 7,
+			ActiveChallenges: [
+				{
+					Activation: { $date: { $numberLong: timeStartLong } },
+					Expiry: { $date: { $numberLong: timeEndLong } },
+					_id: { $oid: entryId },
+					Daily: true,
+					Challenge: challenges[0].input
+				},
+			]
+		},
+		expected = {
+			id: 'RadioLegionSyndicate' + timeEndShort,
+			start: timeStartShort,
+			end: timeEndShort,
+			syndicate: 'Nightwave',
+			season: 3,
+			phase: 7,
+			challenges: [
+				{
+					id: entryId,
+					start: timeStartShort,
+					end: timeEndShort,
+					daily: true,
+					description: challenges[0].output.description,
+					xpAmount: challenges[0].output.xpAmount
+				}
+			]
+		},
+		data = { SeasonInfo: challenge }
+	yield [data, expected]
+
+	delete challenge.ActiveChallenges[0].Daily
+	challenge.ActiveChallenges[0].Challenge = challenges[1].input
+	expected.challenges[0].daily = false
+	expected.challenges[0].description = challenges[1].output.description
+	expected.challenges[0].xpAmount = challenges[1].output.xpAmount
 	yield [data, expected]
 }
 
@@ -693,6 +749,7 @@ module.exports = {
 	getAcolytes,
 	getAlerts,
 	getBounties,
+	getChallenges,
 	getDailyDeals,
 	getDayNight,
 	getExtraBounties,

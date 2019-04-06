@@ -3,7 +3,8 @@ import fs = require('fs')
 export let
 	locations: WfMap,
 	nodeMissionTypes: WfMap,
-	nodeFactions: WfMap
+	nodeFactions: WfMap,
+	challenges: {[id: string]: WfChallengeInfo}
 
 export const
 	acolyteNames: WfMap = {
@@ -118,6 +119,7 @@ export const
 		GhoulEmergence: 'Ghoul Purge',
 		InfestedPlains: 'Plague Star',
 		SolarisSyndicate: 'Solaris United',
+		RadioLegionSyndicate: 'Nightwave',
 	},
 	upgradeTypes: WfMap = {
 		GAMEPLAY_KILL_XP_AMOUNT: 'Affinity',
@@ -136,17 +138,19 @@ export const
 	}
 
 /**
- * Load star chart node information
+ * Load star chart node and challenge information
  *
  * @param _starchart Path to star chart JSON data
+ * @param _challenges Path to challenges JSON data
  */
-export function load(_starchart: string): void {
+export function load(_starchart: string, _challenges: string): void {
 	try {
 		let tmp = JSON.parse(fs.readFileSync(_starchart, 'utf8'))
 		locations = tmp.locations
 		nodeMissionTypes = tmp.missionTypes
 		nodeFactions = tmp.factions
-		tmp = null
+
+		challenges = JSON.parse(fs.readFileSync(_challenges, 'utf8'))
 	}
 	catch(err) {
 		throw Error(`Failed to initialize tags: '${err.message}'`)

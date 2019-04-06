@@ -52,6 +52,18 @@ describe('Worldstate', () => {
 		}
 	})
 
+	it('should read challenges', () => {
+		const dataKey = 'challenges'
+		let timestamp = fixtures.timeNowShort
+		for (const [data, expected] of fixtures.getChallenges()) {
+			setWorldstateData(data, timestamp)
+			ws.readChallenges()
+			const result = JSON.parse(ws.get([dataKey]))
+			expect(result[dataKey].data[0]).toEqual(expected)
+			timestamp += fixtures.timeStep
+		}
+	})
+
 	it('should read daily deals', () => {
 		const dataKey = 'dailydeals'
 		let timestamp = fixtures.timeNowShort

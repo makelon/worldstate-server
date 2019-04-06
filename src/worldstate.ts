@@ -10,6 +10,7 @@ import httpHelper = require('./httphelper')
 import AcolyteReader from './readers/acolytes'
 import AlertReader from './readers/alerts'
 import BountieReader from './readers/bounties'
+import ChallengeReader from './readers/challenges'
 import DailyDealReader from './readers/dailydeals'
 import DayNightReader from './readers/daynight'
 import FactionProjectReader from './readers/factionprojects'
@@ -60,7 +61,8 @@ export default class Worldstate {
 		sorties: new SortieReader(this.platform),
 		upgrades: new UpgradeReader(this.platform),
 		voidtraders: new VoidTraderReader(this.platform),
-		daynight: new DayNightReader(this.platform)
+		daynight: new DayNightReader(this.platform),
+		challenges: new ChallengeReader(this.platform)
 	}
 
 	constructor(
@@ -268,6 +270,7 @@ export default class Worldstate {
 			this,
 			this.readAcolytes,
 			this.readAlerts,
+			this.readChallenges,
 			this.readDailyDeals,
 			this.readFactionProjects,
 			this.readGoals,
@@ -302,6 +305,17 @@ export default class Worldstate {
 			alerts = []
 		}
 		this.readers['alerts'].read(alerts, this.now)
+	}
+
+	/**
+	 * Read challenges
+	 */
+	private readChallenges(): void {
+		let challengeSeasons = this.ws.SeasonInfo
+		if (!challengeSeasons) {
+			challengeSeasons = {}
+		}
+		this.readers['challenges'].read(challengeSeasons, this.now)
 	}
 
 	/**

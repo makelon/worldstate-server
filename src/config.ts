@@ -18,7 +18,8 @@ const defaults = {
 		'acolytes',
 		'dailydeals',
 		'upgrades',
-		'daynight'
+		'daynight',
+		'challenges'
 	],
 	wsUrls: { // Worldstate endpoints
 		'pc': 'http://content.warframe.com/dynamic/worldState.php',
@@ -105,7 +106,12 @@ class WfConfig {
 		this.tlsCa = ''
 		if ('tlsCa' in overrides) {
 			for (const ca of overrides.tlsCa) {
-				this.tlsCa += fs.readFileSync(ca, 'ascii')
+				try {
+					this.tlsCa += fs.readFileSync(ca, 'ascii')
+				}
+				catch (err) {
+					log.warning('Failed to open certificate database: ' + err.message)
+				}
 			}
 		}
 		this.tlsVerify = ('tlsVerify' in overrides) ? overrides.tlsVerify : defaults.tlsVerify

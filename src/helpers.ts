@@ -139,3 +139,18 @@ export function getAcolyteName(acolyteTag: string): string {
 	const acolyteId = acolyteTag.substr(acolyteTag.lastIndexOf('/') + 1)
 	return tags.acolyteNames[acolyteId] || acolyteId
 }
+
+/**
+ * @param challengeTag
+ * @returns Challenge info
+ */
+export function getChallenge(challengeTag: string): WfChallengeInfo {
+	const challengeId = challengeTag.substr(challengeTag.lastIndexOf('/') + 1)
+	if (challengeId in tags.challenges) {
+		return tags.challenges[challengeId]
+	}
+	return {
+		description: 'Unknown challenge ' + challengeId,
+		xpAmount: 0
+	}
+}

@@ -82,6 +82,13 @@
 			"length": 8998.8748,
 			"dayStart": 2249.7187,
 			"dayEnd": 8248.9686
+		},
+		{
+			"id": "fortuna",
+			"start": 1542131224,
+			"length": 1600,
+			"dayStart": 800,
+			"dayEnd": 1200
 		}
 	]
 }

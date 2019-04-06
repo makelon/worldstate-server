@@ -149,6 +149,7 @@ function* getAlerts() {
 				location: nodes[0].id,
 				minEnemyLevel: 15,
 				maxEnemyLevel: 17,
+				maxWaveNum: 10,
 				missionReward: {
 					credits: 6500
 				}
@@ -163,6 +164,7 @@ function* getAlerts() {
 			faction: factions[0].name,
 			minLevel: 15,
 			maxLevel: 17,
+			missionLength: 10,
 			rewards: {
 				credits: 6500
 			}

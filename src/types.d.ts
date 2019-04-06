@@ -42,6 +42,7 @@ interface WfAlert {
 	faction: string
 	minLevel: number
 	maxLevel: number
+	missionLength?: number
 	rewards?: WfRewards
 }
 

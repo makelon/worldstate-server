@@ -43,6 +43,9 @@ export default class AlertReader implements WfReader {
 				if (rewards) {
 					alertCurrent.rewards = rewards
 				}
+				if (mi.maxWaveNum) {
+					alertCurrent.missionLength = mi.maxWaveNum
+				}
 				if (alertDb) {
 					const diff = this.getDifference(alertDb, alertCurrent)
 					if (Object.keys(diff).length) {
@@ -65,7 +68,7 @@ export default class AlertReader implements WfReader {
 		const diff = compare.getValueDifference(
 				first,
 				second,
-				['start', 'end', 'location', 'faction', 'maxLevel', 'minLevel', 'missionType']
+				['start', 'end', 'location', 'faction', 'maxLevel', 'minLevel', 'missionType', 'missionLength']
 			),
 			rewardDiff = compare.getRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {

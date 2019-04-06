@@ -134,7 +134,11 @@ export default class Server {
 			this.httpServer.listen(listenOpts, () => {
 				const address = this.httpServer.address()
 				let listenStr
-				if (typeof address == 'string') {
+				if (address === null) {
+					log.error('Server does not seem to be listening');
+					process.exit(1);
+				}
+				else if (typeof address == 'string') {
 					if (os.platform() != 'win32') {
 						fs.chmodSync(address, 0o660)
 					}

@@ -23,7 +23,7 @@ export default class UpgradeReader implements WfReader {
 		for (const upgradeInput of upgradeInputs) {
 			const id = h.getId(upgradeInput),
 				end = h.getDate(upgradeInput.ExpiryDate)
-			if (!id) {
+			if (!id || ('Nodes' in upgradeInput)) {
 				continue
 			}
 			if (end >= timestamp) {

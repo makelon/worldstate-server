@@ -1,0 +1,6831 @@
+{
+    "Axi A1 Relic": [
+        [
+            {
+                "name": "Akstiletto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fragor Prime Head",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nikana Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            }
+        ]
+    ],
+    "Axi A2 Relic": [
+        [
+            {
+                "name": "Aklex Prime Link",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Aklex Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi A3 Relic": [
+        [
+            {
+                "name": "Akbolto Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hydroid Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kogake Prime Boot",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi A4 Relic": [
+        [
+            {
+                "name": "Akbolto Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Zephyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi A5 Relic": [
+        [
+            {
+                "name": "Akvasto Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Vasto Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akvasto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vasto Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vasto Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi B1 Relic": [
+        [
+            {
+                "name": "Banshee Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Buckle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ash Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi B2 Relic": [
+        [
+            {
+                "name": "Banshee Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Orthos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Head",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi C1 Relic": [
+        [
+            {
+                "name": "Cernos Prime Lower Limb",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vectis Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi C2 Relic": [
+        [
+            {
+                "name": "Cernos Prime Lower Limb",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi C3 Relic": [
+        [
+            {
+                "name": "Chroma Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Pyrana Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi C4 Relic": [
+        [
+            {
+                "name": "Chroma Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Sybaris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kogake Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Pyrana Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi E1 Relic": [
+        [
+            {
+                "name": "Ember Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Glaive Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Latron Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sicarus Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Frost Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi E2 Relic": [
+        [
+            {
+                "name": "Euphona Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Bronco Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi G1 Relic": [
+        [
+            {
+                "name": "Galatine Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kavasa Prime Kubrow Collar Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi H1 Relic": [
+        [
+            {
+                "name": "Helios Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akstiletto Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fragor Prime Head",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vectis Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi H2 Relic": [
+        [
+            {
+                "name": "Helios Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Trinity Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akstiletto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Oberon Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi H3 Relic": [
+        [
+            {
+                "name": "Hydroid Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kronen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi H4 Relic": [
+        [
+            {
+                "name": "Hydroid Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbolto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mesa Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mirage Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi K1 Relic": [
+        [
+            {
+                "name": "Kavasa Prime Buckle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Odonata Prime Harness Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hikou Prime Pouch",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akstiletto Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi K2 Relic": [
+        [
+            {
+                "name": "Kronen Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi K3 Relic": [
+        [
+            {
+                "name": "Kronen Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Pyrana Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Tiberon Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi K4 Relic": [
+        [
+            {
+                "name": "Kronen Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kogake Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Destreza Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi K5 Relic": [
+        [
+            {
+                "name": "Kronen Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hydroid Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Equinox Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi L1 Relic": [
+        [
+            {
+                "name": "Loki Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Glaive Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Reaper Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Wyrm Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Latron Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi L2 Relic": [
+        [
+            {
+                "name": "Limbo Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tiberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nami Skyla Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi L3 Relic": [
+        [
+            {
+                "name": "Limbo Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akjagara Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Zephyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nami Skyla Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kronen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi N1 Relic": [
+        [
+            {
+                "name": "Akstiletto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Wings Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ash Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            }
+        ]
+    ],
+    "Axi N2 Relic": [
+        [
+            {
+                "name": "Carrier Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nikana Prime Hilt",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ash Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi N3 Relic": [
+        [
+            {
+                "name": "Nekros Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Volt Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi N4 Relic": [
+        [
+            {
+                "name": "Nikana Prime Hilt",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hydroid Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi N5 Relic": [
+        [
+            {
+                "name": "Nami Skyla Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nekros Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Oberon Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi N6 Relic": [
+        [
+            {
+                "name": "Nikana Prime Hilt",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Saryn Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nikana Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi O1 Relic": [
+        [
+            {
+                "name": "Oberon Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akstiletto Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi O2 Relic": [
+        [
+            {
+                "name": "Oberon Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tiberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi O3 Relic": [
+        [
+            {
+                "name": "Oberon Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Venka Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Zephyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Destreza Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi O4 Relic": [
+        [
+            {
+                "name": "Oberon Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Gram Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tiberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Destreza Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Zephyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi R1 Relic": [
+        [
+            {
+                "name": "Rhino Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Dakra Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ankyros Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Boltor Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mag Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boar Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi R2 Relic": [
+        [
+            {
+                "name": "Redeemer Prime Handle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mirage Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Chroma Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Destreza Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi S1 Relic": [
+        [
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbronco Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Scindo Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Trinity Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Axi S2 Relic": [
+        [
+            {
+                "name": "Sicarus Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ember Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Wyrm Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Loki Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Latron Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi S3 Relic": [
+        [
+            {
+                "name": "Scindo Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nyx Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ankyros Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rhino Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boltor Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hikou Prime Stars",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi S4 Relic": [
+        [
+            {
+                "name": "Soma Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nova Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dakra Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mag Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boar Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi T1 Relic": [
+        [
+            {
+                "name": "Tigris Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akstiletto Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vectis Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Harness Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi T2 Relic": [
+        [
+            {
+                "name": "Tipedo Prime Handle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kogake Prime Boot",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Stradavar Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V1 Relic": [
+        [
+            {
+                "name": "Odonata Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vauban Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Volt Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Axi V2 Relic": [
+        [
+            {
+                "name": "Vectis Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hikou Prime Pouch",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mag Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boar Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Axi V3 Relic": [
+        [
+            {
+                "name": "Vectis Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vasto Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V4 Relic": [
+        [
+            {
+                "name": "Vectis Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Harness Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V5 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V6 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V7 Relic": [
+        [
+            {
+                "name": "Venka Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kogake Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Silva & Aegis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nami Skyla Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V8 Relic": [
+        [
+            {
+                "name": "Volt Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Volt Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Odonata Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Odonata Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith A1 Relic": [
+        [
+            {
+                "name": "Saryn Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vectis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akstiletto Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vasto Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith A2 Relic": [
+        [
+            {
+                "name": "Akstiletto Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbronco Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith A3 Relic": [
+        [
+            {
+                "name": "Akjagara Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbolto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tiberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rubico Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B1 Relic": [
+        [
+            {
+                "name": "Boar Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Rhino Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Boltor Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mag Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ankyros Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B2 Relic": [
+        [
+            {
+                "name": "Ballistica Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Tigris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B3 Relic": [
+        [
+            {
+                "name": "Ballistica Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Limbo Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B4 Relic": [
+        [
+            {
+                "name": "Boltor Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Rhino Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Scindo Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nyx Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ankyros Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B5 Relic": [
+        [
+            {
+                "name": "Ballistica Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rubico Prime Stock",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Oberon Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B6 Relic": [
+        [
+            {
+                "name": "Ballistica Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Redeemer Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Limbo Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith C1 Relic": [
+        [
+            {
+                "name": "Carrier Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kavasa Prime Band",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nova Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nova Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith C2 Relic": [
+        [
+            {
+                "name": "Cernos Prime Lower Limb",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nami Skyla Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith C3 Relic": [
+        [
+            {
+                "name": "Chroma Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Silva & Aegis Prime Hilt",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith C4 Relic": [
+        [
+            {
+                "name": "Chroma Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Orthos Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith F1 Relic": [
+        [
+            {
+                "name": "Scindo Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith F2 Relic": [
+        [
+            {
+                "name": "Odonata Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hikou Prime Stars",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vauban Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Lith G1 Relic": [
+        [
+            {
+                "name": "Glaive Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ember Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Latron Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Frost Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Reaper Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith G2 Relic": [
+        [
+            {
+                "name": "Glaive Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Loki Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Frost Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bo Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Wyrm Prime Cerebrum",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Latron Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith H1 Relic": [
+        [
+            {
+                "name": "Helios Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akstiletto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nami Skyla Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith H2 Relic": [
+        [
+            {
+                "name": "Helios Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Oberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Orthos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Zephyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith K1 Relic": [
+        [
+            {
+                "name": "Kavasa Prime Buckle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tigris Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Harness Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith K2 Relic": [
+        [
+            {
+                "name": "Kogake Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Zephyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Rubico Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith M1 Relic": [
+        [
+            {
+                "name": "Mag Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Soma Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dakra Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Boar Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith M2 Relic": [
+        [
+            {
+                "name": "Mag Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Boar Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nova Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Soma Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dakra Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith M3 Relic": [
+        [
+            {
+                "name": "Mesa Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Rubico Prime Stock",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Oberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Silva & Aegis Prime Hilt",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith M4 Relic": [
+        [
+            {
+                "name": "Mesa Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Stradavar Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Destreza Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akjagara Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Equinox Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith N1 Relic": [
+        [
+            {
+                "name": "Nova Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbronco Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith N2 Relic": [
+        [
+            {
+                "name": "Nekros Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Band",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith N3 Relic": [
+        [
+            {
+                "name": "Nekros Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Sybaris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith O1 Relic": [
+        [
+            {
+                "name": "Oberon Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbolto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rubico Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith P1 Relic": [
+        [
+            {
+                "name": "Pyrana Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Sybaris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith P2 Relic": [
+        [
+            {
+                "name": "Pyrana Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ballistica Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Gram Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Tipedo Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith S1 Relic": [
+        [
+            {
+                "name": "Paris Prime Grip",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hikou Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith S2 Relic": [
+        [
+            {
+                "name": "Soma Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nyx Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kavasa Prime Band",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Lith S3 Relic": [
+        [
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ash Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Soma Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith S4 Relic": [
+        [
+            {
+                "name": "Saryn Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Trinity Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Kubrow Collar Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith S5 Relic": [
+        [
+            {
+                "name": "Spira Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbronco Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith S6 Relic": [
+        [
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kavasa Prime Band",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith S7 Relic": [
+        [
+            {
+                "name": "Sybaris Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Grip",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith T1 Relic": [
+        [
+            {
+                "name": "Tigris Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ballistica Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith T2 Relic": [
+        [
+            {
+                "name": "Tiberon Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Silva & Aegis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith V1 Relic": [
+        [
+            {
+                "name": "Fragor Prime Handle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Volt Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Lith V2 Relic": [
+        [
+            {
+                "name": "Vauban Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith V3 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tigris Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith V4 Relic": [
+        [
+            {
+                "name": "Vauban Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tigris Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith V5 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ballistica Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith Z1 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith Z2 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nami Skyla Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso A1 Relic": [
+        [
+            {
+                "name": "Akjagara Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kronen Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Sybaris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso B1 Relic": [
+        [
+            {
+                "name": "Boar Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Dakra Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mag Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso B2 Relic": [
+        [
+            {
+                "name": "Banshee Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hydroid Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kronen Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Oberon Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Silva & Aegis Prime Hilt",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso B3 Relic": [
+        [
+            {
+                "name": "Boar Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mag Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dakra Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nova Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Soma Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso C1 Relic": [
+        [
+            {
+                "name": "Carrier Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nova Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Scindo Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ash Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Meso C2 Relic": [
+        [
+            {
+                "name": "Carrier Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Odonata Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso C3 Relic": [
+        [
+            {
+                "name": "Cernos Prime Lower Limb",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Saryn Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nami Skyla Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso D1 Relic": [
+        [
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.36329999999999996
+            },
+            {
+                "name": "Orthos Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dual Kamas Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso D2 Relic": [
+        [
+            {
+                "name": "Destreza Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso D3 Relic": [
+        [
+            {
+                "name": "Destreza Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nami Skyla Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kronen Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso E1 Relic": [
+        [
+            {
+                "name": "Ember Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Wyrm Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bo Prime Ornament",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Frost Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Latron Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso E2 Relic": [
+        [
+            {
+                "name": "Equinox Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Rubico Prime Stock",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Destreza Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Pyrana Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso F1 Relic": [
+        [
+            {
+                "name": "Fragor Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nekros Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dual Kamas Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso F2 Relic": [
+        [
+            {
+                "name": "Frost Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Reaper Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Latron Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ember Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sicarus Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso F3 Relic": [
+        [
+            {
+                "name": "Frost Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Glaive Prime Disc",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ember Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Reaper Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Loki Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso G1 Relic": [
+        [
+            {
+                "name": "Galatine Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso H1 Relic": [
+        [
+            {
+                "name": "Helios Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Oberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso K1 Relic": [
+        [
+            {
+                "name": "Kogake Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akstiletto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso M1 Relic": [
+        [
+            {
+                "name": "Mag Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Boar Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rhino Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dakra Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boltor Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ankyros Prime Gauntlet",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso M2 Relic": [
+        [
+            {
+                "name": "Mirage Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akjagara Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Silva & Aegis Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kogake Prime Boot",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso M3 Relic": [
+        [
+            {
+                "name": "Mirage Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Equinox Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kogake Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Gram Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N1 Relic": [
+        [
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nyx Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Dual Kamas Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Meso N2 Relic": [
+        [
+            {
+                "name": "Ash Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vauban Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hikou Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N3 Relic": [
+        [
+            {
+                "name": "Nekros Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Euphona Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Cerebrum",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N4 Relic": [
+        [
+            {
+                "name": "Nikana Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Oberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N5 Relic": [
+        [
+            {
+                "name": "Nekros Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hydroid Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N6 Relic": [
+        [
+            {
+                "name": "Nyx Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Scindo Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rhino Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boltor Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hikou Prime Pouch",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso O1 Relic": [
+        [
+            {
+                "name": "Oberon Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akstiletto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso O2 Relic": [
+        [
+            {
+                "name": "Oberon Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbronco Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Tiberon Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso P1 Relic": [
+        [
+            {
+                "name": "Pyrana Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Oberon Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Chroma Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso R1 Relic": [
+        [
+            {
+                "name": "Rubico Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbronco Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tiberon Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S1 Relic": [
+        [
+            {
+                "name": "Soma Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Odonata Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nova Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Tigris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S2 Relic": [
+        [
+            {
+                "name": "Saryn Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Grip",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S3 Relic": [
+        [
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ash Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S4 Relic": [
+        [
+            {
+                "name": "Saryn Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S5 Relic": [
+        [
+            {
+                "name": "Sybaris Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S6 Relic": [
+        [
+            {
+                "name": "Spira Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S7 Relic": [
+        [
+            {
+                "name": "Sybaris Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Grip",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nami Skyla Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S8 Relic": [
+        [
+            {
+                "name": "Sybaris Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ballistica Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Gram Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso S9 Relic": [
+        [
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Saryn Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso T1 Relic": [
+        [
+            {
+                "name": "Tiberon Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso T2 Relic": [
+        [
+            {
+                "name": "Tiberon Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso T3 Relic": [
+        [
+            {
+                "name": "Tiberon Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Chroma Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Limbo Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso V1 Relic": [
+        [
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Carrier Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vectis Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Meso V2 Relic": [
+        [
+            {
+                "name": "Vasto Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ash Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nikana Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Volt Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Meso V3 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kavasa Prime Band",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Volt Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso V4 Relic": [
+        [
+            {
+                "name": "Vauban Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ash Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso V5 Relic": [
+        [
+            {
+                "name": "Venka Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Euphona Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Silva & Aegis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso Z1 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Limbo Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso Z2 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Hydroid Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rubico Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Redeemer Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso Z3 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akjagara Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Rubico Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Chroma Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Stradavar Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo A1 Relic": [
+        [
+            {
+                "name": "Akstiletto Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vectis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo A2 Relic": [
+        [
+            {
+                "name": "Akbolto Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Zephyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Pyrana Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kronen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Limbo Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo B1 Relic": [
+        [
+            {
+                "name": "Banshee Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Vectis Prime Stock",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo B2 Relic": [
+        [
+            {
+                "name": "Banshee Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Venka Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo B3 Relic": [
+        [
+            {
+                "name": "Boltor Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mag Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dakra Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Boar Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Rhino Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo B4 Relic": [
+        [
+            {
+                "name": "Banshee Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kronen Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo B5 Relic": [
+        [
+            {
+                "name": "Banshee Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Destreza Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Oberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo C1 Relic": [
+        [
+            {
+                "name": "Chroma Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Redeemer Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Pyrana Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Limbo Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kronen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mesa Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo D1 Relic": [
+        [
+            {
+                "name": "Dakra Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mag Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Trinity Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vasto Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boar Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Neo E1 Relic": [
+        [
+            {
+                "name": "Ember Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Reaper Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Frost Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Loki Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Wyrm Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo F1 Relic": [
+        [
+            {
+                "name": "Frost Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Bo Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Sicarus Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ember Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sicarus Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo G1 Relic": [
+        [
+            {
+                "name": "Gram Prime Handle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Paris Prime Grip",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Hydroid Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kogake Prime Boot",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo H1 Relic": [
+        [
+            {
+                "name": "Hydroid Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tigris Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fragor Prime Head",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo H2 Relic": [
+        [
+            {
+                "name": "Hydroid Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Rubico Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo K1 Relic": [
+        [
+            {
+                "name": "Kogake Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Zephyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Silva & Aegis Prime Hilt",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo K2 Relic": [
+        [
+            {
+                "name": "Kogake Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mirage Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Chroma Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo L1 Relic": [
+        [
+            {
+                "name": "Limbo Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kronen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo M1 Relic": [
+        [
+            {
+                "name": "Mirage Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Euphona Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbolto Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo M2 Relic": [
+        [
+            {
+                "name": "Mesa Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Limbo Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N1 Relic": [
+        [
+            {
+                "name": "Nyx Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Soma Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Kubrow Collar Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Hikou Prime Stars",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vectis Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N10 Relic": [
+        [
+            {
+                "name": "Nami Skyla Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ballistica Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Tipedo Prime Ornament",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Redeemer Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Zephyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N2 Relic": [
+        [
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vauban Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fang Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vasto Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nova Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Neo N3 Relic": [
+        [
+            {
+                "name": "Nekros Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ash Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N4 Relic": [
+        [
+            {
+                "name": "Nikana Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Venka Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ash Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N5 Relic": [
+        [
+            {
+                "name": "Nikana Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ash Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akstiletto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N6 Relic": [
+        [
+            {
+                "name": "Nikana Prime Hilt",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Sybaris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N7 Relic": [
+        [
+            {
+                "name": "Nekros Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N8 Relic": [
+        [
+            {
+                "name": "Nami Skyla Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbolto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N9 Relic": [
+        [
+            {
+                "name": "Nova Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Soma Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mag Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Boar Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dakra Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo O1 Relic": [
+        [
+            {
+                "name": "Odonata Prime Wings Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Aklex Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Volt Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Volt Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Harness Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo R1 Relic": [
+        [
+            {
+                "name": "Rhino Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Boltor Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nyx Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Hikou Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ankyros Prime Gauntlet",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S1 Relic": [
+        [
+            {
+                "name": "Saryn Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Trinity Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Soma Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S10 Relic": [
+        [
+            {
+                "name": "Saryn Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nikana Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Spira Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S11 Relic": [
+        [
+            {
+                "name": "Stradavar Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kronen Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S2 Relic": [
+        [
+            {
+                "name": "Nyx Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nova Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.11
+            }
+        ]
+    ],
+    "Neo S3 Relic": [
+        [
+            {
+                "name": "Soma Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vasto Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Spira Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Carrier Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S5 Relic": [
+        [
+            {
+                "name": "Sicarus Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Glaive Prime Disc",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Frost Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Latron Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ember Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Reaper Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S6 Relic": [
+        [
+            {
+                "name": "Silva & Aegis Prime Guard",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Buckle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Trinity Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S7 Relic": [
+        [
+            {
+                "name": "Silva & Aegis Prime Guard",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Sybaris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ballistica Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S8 Relic": [
+        [
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nikana Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hydroid Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S9 Relic": [
+        [
+            {
+                "name": "Silva & Aegis Prime Guard",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Destreza Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akjagara Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo T1 Relic": [
+        [
+            {
+                "name": "Tigris Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V1 Relic": [
+        [
+            {
+                "name": "Nyx Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Volt Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nova Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            }
+        ]
+    ],
+    "Neo V2 Relic": [
+        [
+            {
+                "name": "Vauban Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Galatine Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fang Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V3 Relic": [
+        [
+            {
+                "name": "Vauban Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Tigris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Galatine Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V4 Relic": [
+        [
+            {
+                "name": "Venka Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Saryn Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ash Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Tigris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V5 Relic": [
+        [
+            {
+                "name": "Vauban Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Silva & Aegis Prime Hilt",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V6 Relic": [
+        [
+            {
+                "name": "Vauban Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mirage Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V7 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Pyrana Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbolto Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo Z1 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Galatine Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Paris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nekros Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo Z2 Relic": [
+        [
+            {
+                "name": "Zephyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mesa Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Pyrana Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbolto Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ]
+}

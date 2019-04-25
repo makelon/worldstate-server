@@ -1,4 +1,18 @@
 {
+	"Mock Item": [
+		[
+			{
+				"name": "Mock Item",
+				"count": 1,
+				"chance": 0.3
+			},
+			{
+				"name": "Mock Item 2",
+				"count": 5,
+				"chance": 0.7
+			}
+		]
+	],
     "MockRewardTable": [
         [
             {

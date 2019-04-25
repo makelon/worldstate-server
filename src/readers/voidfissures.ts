@@ -54,6 +54,8 @@ export default class VoidFissureReader implements WfReader {
 		this.cleanOld(oldIds)
 	}
 
+	get entityRewards() { return {} }
+
 	private getDifference(first: WfVoidFissure, second: WfVoidFissure): Partial<WfVoidFissure> {
 		return compare.getValueDifference(
 			first,

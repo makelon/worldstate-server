@@ -1,4 +1,5 @@
 import fs = require('fs')
+import EntityRewards from './entityrewards'
 
 let rewardTables: WfRewardTableMap,
 	itemNames: WfMap,
@@ -37,12 +38,14 @@ function getItemType(itemName: string): string {
 
 /**
  * @param itemId
+ * @param entityRewards An EntityRewards object to store the item's reward table in
  * @returns Name and type of the item matching a given item ID
  */
-export function getItem(itemId: string): WfItem {
+export function getItem(itemId: string, entityRewards: EntityRewards): WfItem {
 	// Id prefixes are stripped to reduce memory consumption of the <itemNames> map
 	itemId = itemId.replace(/^\/Lotus(?:(?:\/Types)?\/StoreItems)?\//, '')
 	const itemName = itemNames[lcItemIds ? itemId.toLowerCase() : itemId] || itemId.substr(itemId.lastIndexOf('/') + 1)
+	entityRewards.add(itemName)
 	return {
 		name: itemName,
 		type: getItemType(itemName)
@@ -51,12 +54,13 @@ export function getItem(itemId: string): WfItem {
 
 /**
  * @param itemIds
+ * @param entityRewards An EntityRewards object to store each item's reward table in
  * @returns Names and types of the items matching given item IDs
  */
-export function getItems(itemIds: string[]): WfItem[] {
+export function getItems(itemIds: string[], entityRewards: EntityRewards): WfItem[] {
 	const ret: WfItem[] = []
 	for (const itemId of itemIds) {
-		ret.push(getItem(itemId))
+		ret.push(getItem(itemId, entityRewards))
 	}
 	return ret
 }
@@ -66,16 +70,17 @@ export function getItems(itemIds: string[]): WfItem[] {
  * Refer to types.ts for details.
  *
  * @param rewards
+ * @param entityRewards An EntityRewards object to store each reward's reward table in
  * @returns Reward info
  */
-export function getRewards(rewards: any): WfRewards | null {
+export function getRewards(rewards: any, entityRewards: EntityRewards): WfRewards | null {
 	const ret: WfRewards = {},
 		items: WfReward[] = []
 	if (rewards.credits) {
 		ret.credits = Number(rewards.credits)
 	}
 	for (const itemId of rewards.items || []) {
-		const item = getItem(itemId)
+		const item = getItem(itemId, entityRewards)
 		items.push({
 			name: item.name,
 			type: item.type,
@@ -83,7 +88,7 @@ export function getRewards(rewards: any): WfRewards | null {
 		})
 	}
 	for (const reward of rewards.countedItems || []) {
-		const item = getItem(reward.ItemType)
+		const item = getItem(reward.ItemType, entityRewards)
 		items.push({
 			name: item.name,
 			type: item.type,
@@ -98,14 +103,18 @@ export function getRewards(rewards: any): WfRewards | null {
 
 /**
  * Return reward table as an array of reward tiers, where each reward tier is an array of rewards.
- * Refer to types.ts for details.
+ * Refer to types.d.ts for details.
  *
  * @param tableId Reward table manifest ID
+ * @param entityRewards An EntityRewards object to store each reward's reward table in
  */
-export function getRandomRewards(tableId: string): WfRandomRewardTable {
+export function getRandomRewards(tableId: string, entityRewards: EntityRewards): WfRandomRewardTable {
+	const ret: WfRandomRewardTable = []
 	tableId = tableId.substr(tableId.lastIndexOf('/') + 1)
-	const rewardTable = rewardTables[tableId] || [],
-		ret: WfRandomRewardTable = []
+	if (!(tableId in rewardTables)) {
+		return ret
+	}
+	const rewardTable = rewardTables[tableId]
 	for (const tier of rewardTable) {
 		const retTier: WfRandomReward[] = []
 		ret.push(retTier)
@@ -116,6 +125,7 @@ export function getRandomRewards(tableId: string): WfRandomRewardTable {
 				count: reward.count,
 				chance: reward.chance
 			})
+			entityRewards.add(reward.name)
 		}
 	}
 	return ret
@@ -126,8 +136,9 @@ export function getRandomRewards(tableId: string): WfRandomRewardTable {
  *
  * @param syndicateTag
  * @param tableId
+ * @param entityRewards An EntityRewards object to store each reward's reward table in
  */
-export function getBountyRewards(syndicateTag: string, tableId: string): WfRandomRewardTable {
+export function getBountyRewards(syndicateTag: string, tableId: string, entityRewards: EntityRewards): WfRandomRewardTable {
 	tableId = syndicateTag + 'Bounty' + tableId.substr(tableId.lastIndexOf('/') + 1)
-	return getRandomRewards(tableId)
+	return getRandomRewards(tableId, entityRewards)
 }

@@ -238,6 +238,7 @@ interface WfChallengeSeason {
 interface WfReader {
 	start(db: WfDb): void
 	read(input: any[], timestamp: number): void
+	readonly entityRewards: WfRewardTableMap
 }
 
 interface WfDb {

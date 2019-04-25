@@ -80,6 +80,8 @@ export default class FactionProjectReader implements WfReader {
 		this.cleanOld(oldIds, timestamp)
 	}
 
+	get entityRewards() { return {} }
+
 	private getDifference(first: WfFomorianProgress, second: WfFomorianProgress): Partial<WfFomorianProgress> {
 		return compare.getValueDifference(
 			first,

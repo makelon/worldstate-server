@@ -77,6 +77,8 @@ export default class AcolyteReader implements WfReader {
 		this.cleanOld(oldIds, timestamp)
 	}
 
+	get entityRewards() { return {} }
+
 	private getDifference(first: WfAcolyte, second: WfAcolyte): Partial<WfAcolyte> {
 		return compare.getValueDifference(
 			first,

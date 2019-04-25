@@ -62,6 +62,8 @@ export default class NewsReader implements WfReader {
 		this.cleanOld(oldIds)
 	}
 
+	get entityRewards() { return {} }
+
 	private getDifference(first: WfNews, second: WfNews): Partial<WfNews> {
 		return compare.getValueDifference(
 			first,

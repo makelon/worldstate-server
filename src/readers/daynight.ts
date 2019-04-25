@@ -65,6 +65,8 @@ export default class DayNightReader implements WfReader {
 		this.cleanOld(oldIds)
 	}
 
+	get entityRewards() { return {} }
+
 	private getDifference(first: WfDayNight, second: WfDayNight): Partial<WfDayNight> {
 		return compare.getValueDifference(
 			first,

@@ -54,6 +54,8 @@ export default class UpgradeReader implements WfReader {
 		this.cleanOld(oldIds)
 	}
 
+	get entityRewards() { return {} }
+
 	private getDifference(first: WfUpgrade, second: WfUpgrade): Partial<WfUpgrade> {
 		return compare.getValueDifference(
 			first,

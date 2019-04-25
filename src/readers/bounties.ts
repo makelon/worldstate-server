@@ -4,9 +4,11 @@ import items = require('../items')
 import log = require('../log')
 import history = require('../history')
 import extraData from '../extradata'
+import EntityRewards from '../entityrewards'
 
 export default class BountyReader implements WfReader {
 	private dbTable!: WfDbTable<WfBounty>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -21,6 +23,7 @@ export default class BountyReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s bounties', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const bounty of bountiesInput) {
 			const id = h.getId(bounty),
@@ -48,7 +51,7 @@ export default class BountyReader implements WfReader {
 				}
 				for (const job of bounty.Jobs) {
 					jobs.push({
-						rewards: items.getBountyRewards(bounty.Tag, job.rewards),
+						rewards: items.getBountyRewards(bounty.Tag, job.rewards, this._entityRewards),
 						minLevel: job.minEnemyLevel,
 						maxLevel: job.maxEnemyLevel,
 						xpAmounts: job.xpAmounts
@@ -96,7 +99,7 @@ export default class BountyReader implements WfReader {
 				}
 			for (const job of bounty.jobs) {
 				jobs.push({
-					rewards: items.getRandomRewards(job.rewards),
+					rewards: items.getRandomRewards(job.rewards, this._entityRewards),
 					minLevel: job.minEnemyLevel,
 					maxLevel: job.maxEnemyLevel,
 					xpAmounts: job.xpAmounts,
@@ -121,6 +124,8 @@ export default class BountyReader implements WfReader {
 
 		this.cleanOld(oldIds, timestamp)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfBounty, second: WfBounty): Partial<WfBounty> {
 		const diff = compare.getValueDifference(

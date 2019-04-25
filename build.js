@@ -14,6 +14,7 @@ const itemNames = './data/itemnames.json',
 			'./data/rewardtables-cetus.json',
 			'./data/rewardtables-solaris.json',
 			'./data/rewardtables-dynamic.json',
+			'./data/rewardtables-relics.json',
 			'./data/rewardtables-sorties.json',
 			'./data/rewardtables-extra.json'
 		],

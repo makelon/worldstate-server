@@ -3,9 +3,11 @@ import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
 import history = require('../history')
+import EntityRewards from '../entityrewards'
 
 export default class FomorianReader implements WfReader {
 	private dbTable!: WfDbTable<WfFomorian>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -20,6 +22,7 @@ export default class FomorianReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s fomorians', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const fomorianInput of fomoriansInput) {
 			const id = h.getId(fomorianInput),
@@ -32,7 +35,7 @@ export default class FomorianReader implements WfReader {
 				let fomorianDb = this.dbTable.get(id)
 				const start = h.getDate(fomorianInput.Activation),
 					mi = fomorianInput.MissionInfo,
-					requiredItems = items.getItems(mi.requiredItems),
+					requiredItems = items.getItems(mi.requiredItems, this._entityRewards),
 					fomorianCurrent: WfFomorian = {
 						id: id,
 						start: start,
@@ -47,20 +50,20 @@ export default class FomorianReader implements WfReader {
 						requiredItems: requiredItems
 					}
 				if (fomorianInput.Reward) {
-					const rewards = items.getRewards(fomorianInput.Reward)
+					const rewards = items.getRewards(fomorianInput.Reward, this._entityRewards)
 					if (rewards) {
 						fomorianCurrent.goalRewards = rewards
 					}
 				}
 				if (mi.missionReward) {
 					if (mi.missionReward.randomizedItems) {
-						const rewards = items.getRandomRewards(mi.missionReward.randomizedItems)
+						const rewards = items.getRandomRewards(mi.missionReward.randomizedItems, this._entityRewards)
 						if (rewards) {
 							fomorianCurrent.randomRewards = rewards
 						}
 					}
 					else {
-						const rewards = items.getRewards(mi.missionReward)
+						const rewards = items.getRewards(mi.missionReward, this._entityRewards)
 						if (rewards) {
 							fomorianCurrent.missionRewards = rewards
 						}
@@ -98,6 +101,8 @@ export default class FomorianReader implements WfReader {
 		}
 		this.cleanOld(oldIds, timestamp)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfFomorian, second: WfFomorian): Partial<WfFomorian> {
 		const diff = compare.getValueDifference(

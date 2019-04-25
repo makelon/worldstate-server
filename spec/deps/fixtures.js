@@ -64,6 +64,14 @@ const items = [
 			output: { description: 'Test challenge 5000 standing', xpAmount: 5000 }
 		}
 	],
+	entityRewardTables = {
+		[items[0].name]: [
+			[
+				{ name: items[0].name, type: items[0].type, count: 1, chance: 0.3 },
+				{ name: items[1].name, type: items[1].type, count: 5, chance: 0.7 }
+			]
+		]
+	},
 	entryId = '5b291c5825666c0225476ac6',
 	factions = [
 		{
@@ -741,6 +749,7 @@ module.exports = {
 	timeStep,
 	items,
 	itemRewards,
+	entityRewardTables,
 	rewardTables,
 	entryId,
 	factions,

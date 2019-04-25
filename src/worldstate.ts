@@ -44,10 +44,9 @@ export default class Worldstate {
 	private ready = false
 	private retryTimeout = config.minRetryTimeout
 	private nextUpdate = Date.now() + 3000
-	private defer: {[type: string]: any[]} = {
+	private defer: { [type: string]: any[] } = {
 		bounties: []
 	}
-
 	private readers: { [readerId: string]: WfReader } = {
 		acolytes: new AcolyteReader(this.platform),
 		alerts: new AlertReader(this.platform),
@@ -139,8 +138,14 @@ export default class Worldstate {
 			// Raw worldstate dump
 			return JSON.stringify(this.ws || {})
 		}
-		const ret: {[key: string]: any} = {}
-		ret.time = this.now
+		const ret: {
+			[key: string]: any
+			time: number
+			rewardtables: WfRewardTableMap
+		} = {
+			time: this.now,
+			rewardtables: {}
+		}
 		for (const type of types) {
 			// Timestamped database content
 			const table = this.db.getTable(type)
@@ -148,14 +153,18 @@ export default class Worldstate {
 				log.debug('"%s" is not a valid worldstate category', type)
 			}
 			else if (table.isReady()) {
+				log.debug('Sending %s', type)
 				ret[type] = {
 					time: table.getLastUpdate(),
 					data: table.getAll()
 				}
-				log.debug('Sending %s', type)
+				const entityRewards = this.readers[type].entityRewards
+				for (const entityName in entityRewards) {
+					ret.rewardtables[entityName] = entityRewards[entityName]
+				}
 			}
 			else {
-				ret[type] = ''
+				ret[type] = {}
 				log.debug('Database %s/%s is not ready', this.platform, type)
 			}
 		}

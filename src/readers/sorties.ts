@@ -3,9 +3,11 @@ import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
 import tags = require('../tags')
+import EntityRewards from '../entityrewards'
 
 export default class SortieReader implements WfReader {
 	private dbTable!: WfDbTable<WfSortie>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -20,6 +22,7 @@ export default class SortieReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s sorties', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const sortieInput of sortiesInput) {
 			const id = h.getId(sortieInput),
@@ -38,7 +41,7 @@ export default class SortieReader implements WfReader {
 						end: end,
 						faction: h.getFaction(faction),
 						bossName: boss,
-						rewards: items.getRandomRewards(sortieInput.Reward),
+						rewards: items.getRandomRewards(sortieInput.Reward, this._entityRewards),
 						missions: missions
 					}
 				for (const missionInput of sortieInput.Variants) {
@@ -65,6 +68,8 @@ export default class SortieReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfSortie, second: WfSortie): Partial<WfSortie> {
 		const diff = compare.getValueDifference(

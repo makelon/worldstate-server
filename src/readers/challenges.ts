@@ -2,8 +2,6 @@ import compare = require('../compare')
 import h = require('../helpers')
 import log = require('../log')
 
-const challenges: {[id: string]: WfChallengeInfo} = {}
-
 export default class ChallengeReader implements WfReader {
 	private dbTable!: WfDbTable<WfChallengeSeason>
 
@@ -63,6 +61,8 @@ export default class ChallengeReader implements WfReader {
 		delete oldIds[id]
 		this.cleanOld(oldIds)
 	}
+
+	get entityRewards() { return {} }
 
 	private getDifference(first: WfChallengeSeason, second: WfChallengeSeason): Partial<WfChallenge> {
 		const diff = compare.getValueDifference(

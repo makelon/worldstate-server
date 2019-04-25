@@ -2,9 +2,11 @@ import compare = require('../compare')
 import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
+import EntityRewards from '../entityrewards'
 
 export default class DailyDealReader implements WfReader {
 	private dbTable!: WfDbTable<WfDailyDeal>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -19,6 +21,7 @@ export default class DailyDealReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s daily deals', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const dealInput of dealsInput) {
 			const start = h.getDate(dealInput.Activation),
@@ -31,7 +34,7 @@ export default class DailyDealReader implements WfReader {
 					id: id,
 					start: start,
 					end: end,
-					item: items.getItem(dealInput.StoreItem),
+					item: items.getItem(dealInput.StoreItem, this._entityRewards),
 					price: dealInput.SalePrice,
 					originalPrice: dealInput.OriginalPrice,
 					stock: dealInput.AmountTotal,
@@ -62,6 +65,8 @@ export default class DailyDealReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfDailyDeal, second: WfDailyDeal): Partial<WfDailyDeal> {
 		const diff = compare.getValueDifference(

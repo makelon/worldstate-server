@@ -2,9 +2,11 @@ import compare = require('../compare')
 import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
+import EntityRewards from '../entityrewards'
 
 export default class AlertReader implements WfReader {
 	private dbTable!: WfDbTable<WfAlert>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -19,6 +21,7 @@ export default class AlertReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s alerts', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const alertInput of alertsInput) {
 			const id = h.getId(alertInput),
@@ -29,7 +32,7 @@ export default class AlertReader implements WfReader {
 			if (end >= timestamp) {
 				const alertDb = this.dbTable.get(id),
 					mi = alertInput.MissionInfo,
-					rewards = items.getRewards(mi.missionReward),
+					rewards = items.getRewards(mi.missionReward, this._entityRewards),
 					alertCurrent: WfAlert = {
 						id: id,
 						start: h.getDate(alertInput.Activation),
@@ -63,6 +66,8 @@ export default class AlertReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfAlert, second: WfAlert): Partial<WfAlert> {
 		const diff = compare.getValueDifference(

@@ -2,9 +2,11 @@ import compare = require('../compare')
 import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
+import EntityRewards from '../entityrewards'
 
 export default class VoidTraderReader implements WfReader {
 	private dbTable!: WfDbTable<WfVoidTrader>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -19,6 +21,7 @@ export default class VoidTraderReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s void traders', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const voidTraderInput of voidTradersInput) {
 			let id = h.getId(voidTraderInput)
@@ -44,7 +47,7 @@ export default class VoidTraderReader implements WfReader {
 					voidTraderCurrent.items = voidTraderItems
 					voidTraderCurrent.active = true
 					for (const itemInput of itemsInput) {
-						const item = items.getItem(itemInput.ItemType)
+						const item = items.getItem(itemInput.ItemType, this._entityRewards)
 						voidTraderItems.push({
 							name: item.name,
 							type: item.type,
@@ -70,6 +73,8 @@ export default class VoidTraderReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfVoidTrader, second: WfVoidTrader): Partial<WfVoidTrader> {
 		const diff = compare.getValueDifference(

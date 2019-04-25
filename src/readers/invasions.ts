@@ -3,9 +3,11 @@ import h = require('../helpers')
 import items = require('../items')
 import log = require('../log')
 import history = require('../history')
+import EntityRewards from '../entityrewards'
 
 export default class InvasionReader implements WfReader {
 	private dbTable!: WfDbTable<WfInvasion>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -20,6 +22,7 @@ export default class InvasionReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s invasions', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const invasion of invasions) {
 			const id = h.getId(invasion),
@@ -45,13 +48,13 @@ export default class InvasionReader implements WfReader {
 					factionDefender: factionDefender
 				}
 			if (invasion.AttackerReward) {
-				const rewards = items.getRewards(invasion.AttackerReward)
+				const rewards = items.getRewards(invasion.AttackerReward, this._entityRewards)
 				if (rewards) {
 					invasionCurrent.rewardsAttacker = rewards
 				}
 			}
 			if (invasion.DefenderReward) {
-				const rewards = items.getRewards(invasion.DefenderReward)
+				const rewards = items.getRewards(invasion.DefenderReward, this._entityRewards)
 				if (rewards) {
 					invasionCurrent.rewardsDefender = rewards
 				}
@@ -117,6 +120,8 @@ export default class InvasionReader implements WfReader {
 		}
 		this.cleanOld(oldIds, timestamp)
 	}
+
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfInvasion, second: WfInvasion): Partial<WfInvasion> {
 		const diff = compare.getValueDifference(

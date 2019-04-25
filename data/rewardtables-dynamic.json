@@ -4,7 +4,7 @@
             {
                 "name": "Endo",
                 "count": 1300,
-                "chance": 0.38
+                "chance": 0.365
             },
             {
                 "name": "Ayatan Valana Sculpture",
@@ -40,13 +40,18 @@
                 "name": "Adaptation",
                 "count": 1,
                 "chance": 0.02
+            },
+            {
+                "name": "Aura Forma Blueprint",
+                "count": 1,
+                "chance": 0.015
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 1600,
-                "chance": 0.5
+                "chance": 0.48
             },
             {
                 "name": "Ayatan Vaya Sculpture",
@@ -77,13 +82,18 @@
                 "name": "Adaptation",
                 "count": 1,
                 "chance": 0.025
+            },
+            {
+                "name": "Aura Forma Blueprint",
+                "count": 1,
+                "chance": 0.02
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 2000,
-                "chance": 0.55
+                "chance": 0.525
             },
             {
                 "name": "Ayatan Orta Sculpture",
@@ -114,125 +124,130 @@
                 "name": "Seeding Step Ephemera Blueprint",
                 "count": 1,
                 "chance": 0.02
+            },
+            {
+                "name": "Aura Forma Blueprint",
+                "count": 1,
+                "chance": 0.025
             }
         ]
     ],
     "emA": [
         [
             {
-                "name": "Spoiled Strike",
-                "count": 1,
-                "chance": 0.0834
-            },
-            {
                 "name": "Corrupt Charge",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Hollow Point",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
+            },
+            {
+                "name": "Spoiled Strike",
+                "count": 1,
+                "chance": 0.0435
             },
             {
                 "name": "Magnum Force",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Tainted Clip",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Critical Delay",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Heavy Caliber",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Tainted Mag",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Vile Precision",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Narrow Minded",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Fleeting Expertise",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Blind Rage",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Overextended",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Tainted Shell",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Vicious Spread",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Burdened Magazine",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Anemic Agility",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Vile Acceleration",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Frail Momentum",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Critical Deceleration",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Creeping Bullseye",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Transient Fortitude",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             },
             {
                 "name": "Depleted Reload",
                 "count": 1,
-                "chance": 0.0417
+                "chance": 0.0435
             }
         ]
     ],

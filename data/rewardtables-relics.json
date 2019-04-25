@@ -883,6 +883,40 @@
             }
         ]
     ],
+    "Axi L4 Relic": [
+        [
+            {
+                "name": "Loki Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Volt Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Odonata Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bo Prime Ornament",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Wyrm Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi N1 Relic": [
         [
             {
@@ -2753,6 +2787,40 @@
             }
         ]
     ],
+    "Lith O2 Relic": [
+        [
+            {
+                "name": "Odonata Prime Wings Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Loki Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Volt Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bo Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Wyrm Prime Cerebrum",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Lith P1 Relic": [
         [
             {
@@ -4341,6 +4409,40 @@
             },
             {
                 "name": "Tiberon Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso O3 Relic": [
+        [
+            {
+                "name": "Odonata Prime Wings Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Volt Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Wyrm Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Loki Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Systems Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -6755,6 +6857,40 @@
             },
             {
                 "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V8 Relic": [
+        [
+            {
+                "name": "Volt Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Bo Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Loki Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Odonata Prime Harness Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Wyrm Prime Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

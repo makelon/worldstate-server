@@ -51,12 +51,12 @@ let lang,
 					"miscitems": {
 						"": "Resource",
 						"*": {
-							"photobooth": ""
+							"photobooth": "",
+							"forma": ""
 						},
 						"orokincatalyst": "",
 						"orokinreactor": "",
-						"utilityunlocker": "",
-						"forma": ""
+						"utilityunlocker": ""
 					},
 					"plants": "Resource",
 					"research": "Resource",

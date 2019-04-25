@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "^11.10.4",
-		"jasmine": "^3.3.1"
+		"@types/node": "^11.13.4",
+		"jasmine": "^3.4.0"
 	},
 	"private": true,
 	"scripts": {

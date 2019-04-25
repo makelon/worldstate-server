@@ -39,6 +39,16 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
 ```
 {
 	"time": 1512345678,
+	"rewardtables": {
+		<entity name>: [
+			[
+				{ "name": "Item name", "type": "Item type", "count": 1, "chance": 0.5 },
+				<...>
+			],
+			<... higher reward tiers>
+		],
+		<... reward tables for other entities included in the response>
+	},
 	<component data described below>
 }
 ```
@@ -130,7 +140,42 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
     						],
     						<... higher reward tiers>
     					],
-    					xpAmounts: [500, <...>]
+    					"rotation": "Reward table rotation id",
+    					"xpAmounts": [500, <...>]
+    				},
+    				<...>
+    			]
+    		},
+    		<...>
+    	]
+    }
+    ```
+
+    **Notes**
+
+    `rotation` corresponds to the rotation information found in the [public reward tables](https://n8k6e2y6.ssl.hwcdn.net/repos/hnfvc0o3jnfvc873njb03enrf56.html#cetusRewards).
+
+* `challenges` - Timed challenges.
+
+    ```
+    "challenges": {
+    	"time": 1512345678,
+    	"data": [
+    		{
+    			"id": "59abcdef0123456789abcdef",
+    			"start": 1512345678,
+    			"end": 1523456789,
+    			"syndicate": "Syndicate name",
+    			"season": 0,
+    			"phase": 3,
+    			"challenges": [
+    				{
+    					"id": "000100000123456789abcdef",
+    					"start": 1555113600,
+    					"end": 1555372800,
+    					"daily": true | false,
+    					"description": "Challenge description",
+    					"xpAmount": 1000
     				},
     				<...>
     			]
@@ -300,15 +345,15 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
     			"factionAttacker": "Attacking faction",
     			"factionDefender": "Defending faction",
     			"rewardsAttacker": {
-    				credits: 9000,
-    				items: [
+    				"credits": 9000,
+    				"items": [
     					{ "name": "Item name", "type": "Item type", "count": 1 },
     					<...>
     				]
     			},
     			"rewardsDefender": {
-    				credits: 9000,
-    				items: [
+    				"credits": 9000,
+    				"items": [
     					{ "name": "Item name", "type": "Item type", "count": 1 },
     					<...>
     				]

@@ -2,6 +2,7 @@ import fs = require('fs')
 import EntityRewards from './entityrewards'
 
 let rewardTables: WfRewardTableMap,
+	rewardTableRotations: WfMap,
 	itemNames: WfMap,
 	itemTypes: WfMap,
 	lcItemIds: boolean
@@ -10,12 +11,14 @@ let rewardTables: WfRewardTableMap,
  * Load item info and reward tables
  *
  * @param _rewardTables Path to reward table JSON data
+ * @param _rewardTableRotations Path to reward table rotation JSON data
  * @param _itemNames Path to item name JSON data
  * @param _itemTypes Path to item type JSON data
  */
-export function load(_rewardTables: string, _itemNames: string, _itemTypes: string): void {
+export function load(_rewardTables: string, _rewardTableRotations: string, _itemNames: string, _itemTypes: string): void {
 	try {
 		rewardTables = JSON.parse(fs.readFileSync(_rewardTables, 'utf8'))
+		rewardTableRotations = JSON.parse(fs.readFileSync(_rewardTableRotations, 'utf8'))
 		itemNames = JSON.parse(fs.readFileSync(_itemNames, 'utf8'))
 		itemTypes = JSON.parse(fs.readFileSync(_itemTypes, 'utf8'))
 	}
@@ -132,13 +135,9 @@ export function getRandomRewards(tableId: string, entityRewards: EntityRewards):
 }
 
 /**
- * Wrapper for getRandomRewards with the syndicate tag as reward table ID prefix
- *
- * @param syndicateTag
  * @param tableId
- * @param entityRewards An EntityRewards object to store each reward's reward table in
+ * @returns Rotation identifier of a given reward table
  */
-export function getBountyRewards(syndicateTag: string, tableId: string, entityRewards: EntityRewards): WfRandomRewardTable {
-	tableId = syndicateTag + 'Bounty' + tableId.substr(tableId.lastIndexOf('/') + 1)
-	return getRandomRewards(tableId, entityRewards)
+export function getRewardTableRotation(tableId: string): string {
+	return rewardTableRotations[tableId] || ''
 }

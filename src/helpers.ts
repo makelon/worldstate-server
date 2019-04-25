@@ -154,3 +154,13 @@ export function getChallenge(challengeTag: string): WfChallengeInfo {
 		xpAmount: 0
 	}
 }
+
+/**
+ * Combine bounty job and syndicate info into a reward table ID
+ *
+ * @param syndicateTag
+ * @param tableId
+ */
+export function getBountyRewardTableId(syndicateTag: string, tableId: string): string {
+	return syndicateTag + 'Bounty' + tableId.substr(tableId.lastIndexOf('/') + 1)
+}

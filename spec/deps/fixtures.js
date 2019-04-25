@@ -227,6 +227,7 @@ function* getBounties() {
 			jobs: [
 				{
 					rewards: rewardTables[1].output,
+					rotation: 'B',
 					minLevel: 5,
 					maxLevel: 15,
 					xpAmounts: [100, 300]
@@ -288,6 +289,7 @@ function* getBounties() {
 			jobs: [
 				{
 					rewards: rewardTables[2].output,
+					rotation: 'C',
 					minLevel: 15,
 					maxLevel: 25,
 					xpAmounts: [250, 450]

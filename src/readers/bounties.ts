@@ -34,13 +34,13 @@ export default class BountyReader implements WfReader {
 			}
 			if (end >= timestamp) {
 				let bountyDb = this.dbTable.get(id)
-				const jobs: WfBountyJob[] = [],
+				const jobsCurrent: WfBountyJob[] = [],
 					bountyCurrent: WfBounty = {
 						id: id,
 						start: h.getDate(bounty.Activation),
 						end: end,
 						syndicate: h.getSyndicateName(bounty.Tag),
-						jobs: jobs
+						jobs: jobsCurrent
 					}
 				if ('HealthPct' in bounty) {
 					bountyCurrent.health = 1
@@ -50,12 +50,18 @@ export default class BountyReader implements WfReader {
 					bountyCurrent.location = h.getLocation(bounty.VictimNode)
 				}
 				for (const job of bounty.Jobs) {
-					jobs.push({
-						rewards: items.getBountyRewards(bounty.Tag, job.rewards, this._entityRewards),
-						minLevel: job.minEnemyLevel,
-						maxLevel: job.maxEnemyLevel,
-						xpAmounts: job.xpAmounts
-					})
+					const rewardTableId = h.getBountyRewardTableId(bounty.Tag, job.rewards),
+						jobCurrent: WfBountyJob = {
+							rewards: items.getRandomRewards(rewardTableId, this._entityRewards),
+							minLevel: job.minEnemyLevel,
+							maxLevel: job.maxEnemyLevel,
+							xpAmounts: job.xpAmounts
+						},
+						rewardTableRotation = items.getRewardTableRotation(rewardTableId)
+					if (rewardTableRotation) {
+						jobCurrent.rotation = rewardTableRotation
+					}
+					jobsCurrent.push(jobCurrent)
 				}
 				if (bountyDb) {
 					const diff = this.getDifference(bountyDb, bountyCurrent)
@@ -139,13 +145,16 @@ export default class BountyReader implements WfReader {
 		else {
 			for (let jobIdx = 0; jobIdx < first.jobs.length; ++jobIdx) {
 				const jobFirst = first.jobs[jobIdx],
-					jobSecond = second.jobs[jobIdx]
+					jobSecond = second.jobs[jobIdx],
+					jobDiff = compare.getValueDifference(
+						jobFirst,
+						jobSecond,
+						['minLevel', 'maxLevel', 'title', 'rotation']
+					)
 				if (
-					jobFirst.minLevel != jobSecond.minLevel
-					|| jobFirst.maxLevel != jobSecond.maxLevel
+					Object.keys(jobDiff).length
 					|| compare.getRandomRewardDifference(jobFirst.rewards, jobSecond.rewards) !== null
 					|| jobFirst.xpAmounts.join(' ') != jobSecond.xpAmounts.join(' ')
-					|| jobFirst.title != jobSecond.title
 				) {
 					diff.jobs = second.jobs
 					break

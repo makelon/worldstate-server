@@ -7,28 +7,41 @@ const cproc = require('child_process'),
 
 process.chdir(__dirname)
 
-const itemNames = './data/itemnames.json',
-	itemTypes = './data/itemtypes.json',
+const itemNames = 'itemnames.json',
+	itemTypes = 'itemtypes.json',
+	dataDir = 'data',
 	dataFiles = {
-		rewardTables: [
-			'./data/rewardtables-cetus.json',
-			'./data/rewardtables-solaris.json',
-			'./data/rewardtables-dynamic.json',
-			'./data/rewardtables-relics.json',
-			'./data/rewardtables-sorties.json',
-			'./data/rewardtables-extra.json'
+		concat: [
+			{
+				input: [
+					'rewardtables-cetus.json',
+					'rewardtables-solaris.json',
+					'rewardtables-dynamic.json',
+					'rewardtables-relics.json',
+					'rewardtables-sorties.json',
+					'rewardtables-extra.json'
+				],
+				output: 'rewardtables.json'
+			},
+			{
+				input: [
+					'rewardtables-cetus-rotations.json',
+					'rewardtables-solaris-rotations.json',
+				],
+				output: 'rewardtables-rotations.json'
+			}
 		],
 		copy: [
 			itemNames,
 			itemTypes,
-			'./data/starchart.json',
-			'./data/daynight.json',
-			'./data/extradata.json',
-			'./data/challenges.json'
+			'starchart.json',
+			'daynight.json',
+			'extradata.json',
+			'challenges.json'
 		]
 	},
 	opt = {},
-	outDir = './out'
+	outDir = 'out'
 let tscPath,
 	tsc,
 	server,
@@ -50,7 +63,7 @@ function printLines(prefix, data, colorData) {
 	const date = new Date(),
 		timeMillis = date.getMilliseconds()
 	let postfix,
-		timeString = `\u001b[97m${date.toLocaleTimeString()}.`
+		timeString = `\u001b[97m${date.toLocaleTimeString('en-US', { hour12: false })}.`
 	if (timeMillis < 10) {
 		timeString += '00'
 	}
@@ -79,7 +92,7 @@ function build() {
 	catch (err) {
 		if (err.code != 'EEXIST') {
 			printErrors(err.message)
-			process.exit()
+			process.exit(1)
 		}
 	}
 
@@ -97,31 +110,7 @@ function build() {
 		}
 		tsc = cproc.spawn(process.argv0, tscArgs)
 		if (opt.watch) {
-			watcher = {
-				timer: 0,
-				ee: new EventEmitter(),
-			}
-			const watch = []
-			for (const key in dataFiles) {
-				if (typeof dataFiles[key] == 'string') {
-					watch.push(dataFiles[key])
-				}
-				else {
-					watch.push(...dataFiles[key])
-				}
-			}
-			for (const file of watch) {
-				try {
-					fs.watch(file, (eventType, filename) => {
-						if (watcher.timer) {
-							clearTimeout(watcher.timer)
-							watcher.timer = 0
-						}
-						watcher.timer = setTimeout(buildData, 200)
-					})
-				}
-				catch (err) {}
-			}
+			watchData()
 			buildData()
 		}
 		const reBuildError = /^.+\(\d+,\d+\): error/,
@@ -178,8 +167,8 @@ function build() {
 function buildData() {
 	printBuild('Building data files')
 	Promise.all([
-		buildRewardTables(),
-		copyFiles(dataFiles.copy),
+		...dataFiles.concat.map(x => concatFiles(x)),
+		...dataFiles.copy.map(x => copyFile(x)),
 	]).then(() => {
 		if (watcher) {
 			watcher.ee.emit('done')
@@ -187,14 +176,40 @@ function buildData() {
 		printBuild('Data files built')
 	}).catch(err => {
 		printErrors(err.message)
+		process.exit(1)
 	})
 }
 
-function buildRewardTables() {
+function watchData() {
+	watcher = {
+		timer: 0,
+		ee: new EventEmitter(),
+	}
+	const watch = dataFiles.copy.slice()
+	for (const key in dataFiles.concat) {
+		watch.push(...dataFiles.concat[key].input)
+	}
+	for (const file of watch) {
+		try {
+			fs.watch(path.join(dataDir, file), () => {
+				if (watcher.timer) {
+					clearTimeout(watcher.timer)
+					watcher.timer = 0
+				}
+				watcher.timer = setTimeout(buildData, 200)
+			})
+		}
+		catch (err) {
+			printBuild(`Failed to watch ${file}`)
+		}
+	}
+}
+
+function concatFiles(fileGroup) {
 	const promises = []
-	for (const f of dataFiles.rewardTables) {
+	for (const filePath of fileGroup.input) {
 		promises.push(new Promise((resolve, reject) => {
-			fs.readFile(f, 'utf8', (err, content) => {
+			fs.readFile(path.join(dataDir, filePath), 'utf8', (err, content) => {
 				if (err) {
 					reject(err)
 					return
@@ -210,13 +225,13 @@ function buildRewardTables() {
 	}
 	return Promise.all(promises)
 		.then(inputs => new Promise((resolve, reject) => {
-			const rewardTables = {}
-			for (const table of inputs) {
-				for (const key in table) {
-					rewardTables[key] = table[key]
+			const result = {}
+			for (const input of inputs) {
+				for (const key in input) {
+					result[key] = input[key]
 				}
 			}
-			fs.writeFile(path.join(outDir, 'rewardtables.json'), JSON.stringify(rewardTables), 'utf8', (err) => {
+			fs.writeFile(path.join(outDir, fileGroup.output), JSON.stringify(result), 'utf8', (err) => {
 				if (err) {
 					reject(err)
 					return
@@ -226,23 +241,11 @@ function buildRewardTables() {
 		}))
 }
 
-function copyFiles(filePaths) {
-	const promises = []
-	for (const filePath of filePaths) {
-		promises.push(copyFile(filePath))
-	}
-	return promises
-}
-
 function copyFile(filePath) {
 	return new Promise((resolve, reject) => {
-		const rs = fs.createReadStream(filePath),
+		const rs = fs.createReadStream(path.join(dataDir, filePath)),
 			ws = fs.createWriteStream(path.join(outDir, path.basename(filePath)))
-		rs.on('error', (err) => {
-			printBuild(`!! Cannot open file ${filePath}`)
-			ws.write('{}')
-			resolve()
-		})
+		rs.on('error', reject)
 		ws.on('error', reject)
 		rs.pipe(ws).on('close', resolve)
 	})
@@ -285,7 +288,7 @@ try {
 }
 catch (err) {
 	printErrors('Typescript compiler not found')
-	process.exit()
+	process.exit(1)
 }
 
 for (const c of process.argv[2] || 'bd') {
@@ -319,7 +322,7 @@ for (const c of process.argv[2] || 'bd') {
 	}
 }
 
-if (opt.data && !(fs.existsSync(itemNames) && fs.existsSync(itemTypes))) {
+if (opt.data && !(fs.existsSync(path.join(dataDir, itemNames)) && fs.existsSync(path.join(dataDir, itemTypes)))) {
 	console.log(
 		'WARNING: itemnames.json or itemtypes.json is missing.\n' +
 		'You probably want to put the following file in the folder "%s"\n' +
@@ -329,7 +332,7 @@ if (opt.data && !(fs.existsSync(itemNames) && fs.existsSync(itemTypes))) {
 		'and run the command\n' +
 		'\n' +
 		'	%s items\n',
-		path.join(__dirname, 'data'),
+		path.join(__dirname, dataDir),
 		path.basename(process.argv0).replace(/\.exe$/, '')
 	)
 	const rl = readline.createInterface({

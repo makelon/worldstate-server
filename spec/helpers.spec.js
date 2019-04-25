@@ -79,4 +79,8 @@ describe('Helper functions', () => {
 	it('should return acolyte names', () => {
 		expect(h.getAcolyteName('RogueAcolyte')).toBe('Mania')
 	})
+
+	it('should return bounty reward table ids', () => {
+		expect(h.getBountyRewardTableId('Pre', '/Path/To/Post')).toBe('PreBountyPost')
+	})
 })

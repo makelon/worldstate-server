@@ -135,8 +135,8 @@ export default class Server {
 				const address = this.httpServer.address()
 				let listenStr
 				if (address === null) {
-					log.error('Server does not seem to be listening');
-					process.exit(1);
+					log.error('Server does not seem to be listening')
+					process.exit(1)
 				}
 				else if (typeof address == 'string') {
 					if (os.platform() != 'win32') {

@@ -5,7 +5,7 @@ import log = require('./log')
 import tags = require('./tags')
 import Server from './server'
 import Worldstate from './worldstate'
-import Database from './db';
+import Database from './db'
 
 process.chdir(__dirname)
 
@@ -24,7 +24,7 @@ function load() {
 	log.setLevel(config.logLevel)
 	log.setTimestamps(config.enableConsoleTime)
 	try {
-		items.load('./rewardtables.json', './itemnames.json', './itemtypes.json')
+		items.load('./rewardtables.json', './rewardtables-rotations.json', './itemnames.json', './itemtypes.json')
 		tags.load('./starchart.json', './challenges.json')
 		extraData.load('./extradata.json')
 	}

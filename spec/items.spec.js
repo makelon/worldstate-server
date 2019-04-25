@@ -1,5 +1,5 @@
 const items = require('../out/items')
-
+const h = require('../out/helpers')
 const fixtures = require('./deps/fixtures')
 const EntityRewards = require('../out/entityrewards').default
 
@@ -38,7 +38,8 @@ describe('Item functions', () => {
 
 	it('should return bounty reward tables', () => {
 		const entityRewards = new EntityRewards(),
-			rewards = items.getBountyRewards('CetusSyndicate', fixtures.rewardTables[1].input, entityRewards)
+			rewardTableId = h.getBountyRewardTableId('CetusSyndicate', fixtures.rewardTables[1].input),
+			rewards = items.getRandomRewards(rewardTableId, entityRewards)
 		expect(rewards).toEqual(fixtures.rewardTables[1].output)
 		expect(entityRewards.rewards).toEqual(fixtures.entityRewardTables)
 	})

@@ -144,7 +144,7 @@ export default class Worldstate {
 		for (const type of types) {
 			// Timestamped database content
 			const table = this.db.getTable(type)
-			if (!table) {
+			if (!table || !(type in this.readers)) {
 				log.debug('"%s" is not a valid worldstate category', type)
 			}
 			else if (table.isReady()) {

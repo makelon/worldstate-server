@@ -7,7 +7,6 @@ const defaults = {
 	wsFields: [ // Components to parse
 		'news',
 		'alerts',
-		'events',
 		'fomorians',
 		'sorties',
 		'invasions',

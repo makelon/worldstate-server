@@ -341,6 +341,12 @@ if (opt.data && !(fs.existsSync(path.join(dataDir, itemNames)) && fs.existsSync(
 	})
 	rl.question('Continue anyway? [yN] ', (answer) => {
 		if (answer.toLowerCase() == 'y') {
+			for (const fileName of [itemNames, itemTypes]) {
+				const filePath = path.join(dataDir, fileName);
+				if (!fs.existsSync(filePath)) {
+					fs.writeFileSync(filePath, '{}', 'utf8');
+				}
+			}
 			build()
 		}
 		rl.close()

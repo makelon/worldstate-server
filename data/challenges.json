@@ -200,7 +200,7 @@
         "xpAmount": "3000"
     },
     "SeasonWeeklyPerfectAnimalCapture": {
-        "description": "Complete 10 perfect animal captures",
+        "description": "Complete 6 perfect animal captures",
         "xpAmount": "3000"
     },
     "SeasonWeeklyPickUpRareMods": {
@@ -208,7 +208,7 @@
         "xpAmount": "3000"
     },
     "SeasonWeeklyPlainsBounties": {
-        "description": "Complete 8 bounties in the Plains of Eidolon",
+        "description": "Complete 5 bounties in the Plains of Eidolon",
         "xpAmount": "3000"
     },
     "SeasonWeeklySabotageCaches": {
@@ -216,7 +216,7 @@
         "xpAmount": "3000"
     },
     "SeasonWeeklySanctuaryOnslaught": {
-        "description": "Complete 3 zones in Sanctuary Onslaught",
+        "description": "Complete 8 zones in Sanctuary Onslaught",
         "xpAmount": "3000"
     },
     "SeasonWeeklySimarisScan": {
@@ -236,7 +236,7 @@
         "xpAmount": "3000"
     },
     "SeasonWeeklyVenusBounties": {
-        "description": "Complete 8 bounties in Orb Vallis",
+        "description": "Complete 5 bounties in Orb Vallis",
         "xpAmount": "3000"
     },
     "SeasonWeeklyHardKillSilverGroveSpecters": {
@@ -256,7 +256,7 @@
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardEliteSanctuaryOnslaught": {
-        "description": "Complete 3 zones in Elite Sanctuary Onslaught",
+        "description": "Complete 8 zones in Elite Sanctuary Onslaught",
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardExterminateNoAlarm": {
@@ -264,11 +264,11 @@
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardFriendsDefense": {
-        "description": "Complete 40 waves in a defense mission while playing with a friend or clanmate",
+        "description": "Complete 20 waves in a defense mission while playing with a friend or clanmate",
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardFriendsProfitTaker": {
-        "description": "Kill the Profit-Taker in Orb Vallis while playing with a friend or clanmate",
+        "description": "Kill the Profit-Taker in Orb Vallis",
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardFriendsSortie": {
@@ -276,7 +276,7 @@
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardFriendsSurvival": {
-        "description": "Stay 60 minutes in a survival mission while playing with a friend or clanmate",
+        "description": "Stay 30 minutes in a survival mission while playing with a friend or clanmate",
         "xpAmount": "5000"
     },
     "SeasonWeeklyHardIndexWinStreak": {

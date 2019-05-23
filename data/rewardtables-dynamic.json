@@ -93,7 +93,7 @@
             {
                 "name": "Endo",
                 "count": 2000,
-                "chance": 0.525
+                "chance": 0.475
             },
             {
                 "name": "Ayatan Orta Sculpture",
@@ -123,12 +123,12 @@
             {
                 "name": "Seeding Step Ephemera Blueprint",
                 "count": 1,
-                "chance": 0.02
+                "chance": 0.05
             },
             {
                 "name": "Aura Forma Blueprint",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.045
             }
         ]
     ],

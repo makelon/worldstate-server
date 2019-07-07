@@ -19,8 +19,16 @@
         "description": "Complete a mission",
         "xpAmount": "1000"
     },
+    "SeasonDailyDeployAirSupport": {
+        "description": "Deploy an Air Support charge in a mission",
+        "xpAmount": "1000"
+    },
     "SeasonDailyDeployGlyph": {
         "description": "Deploy a glyph",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyInteractWithPet": {
+        "description": "Interact with a pet",
         "xpAmount": "1000"
     },
     "SeasonDailyKillEnemies": {
@@ -103,12 +111,16 @@
         "description": "Pick up 8 modules",
         "xpAmount": "1000"
     },
+    "SeasonDailyPickUpMedallion": {
+        "description": "Pick up 5 syndicate medallions",
+        "xpAmount": "1000"
+    },
     "SeasonDailyPlaceMarker": {
         "description": "Mark 5 modules or resources",
         "xpAmount": "1000"
     },
     "SeasonDailyPlayEmote": {
-        "description": "Perform an emote",
+        "description": "Play an emote",
         "xpAmount": "1000"
     },
     "SeasonDailySlideKills": {
@@ -116,191 +128,219 @@
         "xpAmount": "1000"
     },
     "SeasonDailySolveCiphers": {
-        "description": "Solve 8 ciphers",
+        "description": "Hack 8 consoles",
         "xpAmount": "1000"
+    },
+    "SeasonDailyTransmuteMods": {
+        "description": "Transmute 3 modules",
+        "xpAmount": "1000"
+    },
+    "SeasonWeeklyCompleteDisruptionConduits": {
+        "description": "Complete 12 conduits in Disruption missions",
+        "xpAmount": "4500"
+    },
+    "SeasonWeeklyCompleteKuva": {
+        "description": "Destroy 3 Kuva Siphons",
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCatchRarePlainsFish": {
         "description": "Catch 6 rare fish in Plains of Eidolon",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCatchRareVenusFish": {
         "description": "Catch 6 rare servofish in Orb Vallis",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteAssassination": {
         "description": "Complete 3 assassination missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteCapture": {
         "description": "Complete 3 capture missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteClemMission": {
         "description": "Help Clem with his weekly mission",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteExterminate": {
         "description": "Complete 3 exterminate missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteInvasionMissions": {
         "description": "Complete 9 invasion missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteMobileDefense": {
         "description": "Complete 3 mobile defense missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteNightmareMissions": {
         "description": "Complete 3 nightmare missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteRescue": {
         "description": "Complete 3 rescue missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteSabotage": {
         "description": "Complete 3 sabotage missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteSortie": {
         "description": "Complete a sortie",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteSpy": {
         "description": "Complete 3 spy missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteSyndicateMissions": {
         "description": "Complete 10 syndicate missions",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteTreasures": {
         "description": "Fully socket 3 Ayatan sculptures",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
+    },
+    "SeasonWeeklyCompleteVenusRace": {
+        "description": "Complete 3 K-Drive races in Orb Vallis",
+        "xpAmount": "4500"
     },
     "SeasonWeeklyGildModular": {
         "description": "Gild a modular item",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyKillEnemies": {
         "description": "Kill 500 enemies",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyKillEximus": {
         "description": "Kill 30 eximus enemies",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
+    },
+    "SeasonWeeklyKillThumper": {
+        "description": "Kill a Tusk Thumper in Plains of Eidolon",
+        "xpAmount": "4500"
     },
     "SeasonWeeklyMineRarePlainsResources": {
         "description": "Mine 6 rare gems in Plains of Eidolon",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyMineRareVenusResources": {
         "description": "Mine 6 rare gems in Orb Vallis",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyPerfectAnimalCapture": {
         "description": "Complete 6 perfect animal captures",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyPickUpRareMods": {
         "description": "Pick up 8 rare modules",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyPlainsBounties": {
         "description": "Complete 5 different bounties in the Plains of Eidolon",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklySabotageCaches": {
         "description": "Find all caches in a sabotage mission 3 times",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklySanctuaryOnslaught": {
         "description": "Complete 8 zones in Sanctuary Onslaught",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklySimarisScan": {
         "description": "Complete 5 scans for Cephalon Simaris",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyUnlockDragonVaults": {
         "description": "Open 4 Orokin vaults",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyUnlockRelics": {
         "description": "Open 3 relics",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyUseForma": {
         "description": "Use 3 forma",
-        "xpAmount": "6000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyVenusBounties": {
         "description": "Complete 5 different bounties in Orb Vallis",
-        "xpAmount": "6000"
-    },
-    "SeasonWeeklyHardKillSilverGroveSpecters": {
-        "description": "Kill 3 Silver Grove specters",
-        "xpAmount": "9000"
-    },
-    "SeasonWeeklyHardLuaPuzzles": {
-        "description": "Complete 4 halls of ascension on Lua",
-        "xpAmount": "9000"
+        "xpAmount": "4500"
     },
     "SeasonWeeklyHardCompleteNightmareMissions": {
         "description": "Complete 10 nightmare missions",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardCompleteSortie": {
         "description": "Complete 3 sorties",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardEliteSanctuaryOnslaught": {
         "description": "Complete 8 zones in Elite Sanctuary Onslaught",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardExterminateNoAlarm": {
         "description": "Complete an exterminate mission with level 30 or higher enemies without raising alarms",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardFriendsDefense": {
         "description": "Complete 20 waves in a defense mission",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardFriendsProfitTaker": {
         "description": "Kill the Profit-Taker in Orb Vallis",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardFriendsSortie": {
         "description": "Complete a sortie",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardFriendsSurvival": {
         "description": "Stay 30 minutes in a survival mission",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardIndexWinStreak": {
         "description": "Win 3 wagers in a row without letting the enemy score in one match of the Index",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardKillEnemies": {
         "description": "Kill 1,500 enemies",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardKillEximus": {
         "description": "Kill 100 eximus enemies",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardKillOrCaptureRainalyst": {
         "description": "Kill or capture an Eidolon Hydrolyst",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardKillRopalolyst": {
+        "description": "Kill an Eidolon Ropalolyst",
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardKillSilverGroveSpecters": {
+        "description": "Kill 3 Silver Grove specters",
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardKillThumper": {
+        "description": "Kill a Tusk Thumper Doma in Plains of Eidolon",
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardKuvaSurvivalNoCapsules": {
         "description": "Stay 30 minutes in the Kuva survival mission",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardLuaPuzzles": {
+        "description": "Complete 4 halls of ascension on Lua",
+        "xpAmount": "7000"
     },
     "SeasonWeeklyHardUnlockRelics": {
         "description": "Open 10 relics",
-        "xpAmount": "9000"
+        "xpAmount": "7000"
     }
 }

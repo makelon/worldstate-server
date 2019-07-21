@@ -33,6 +33,7 @@ export const
 		1: 'FC_CORPUS'
 	},
 	missionTypes: WfMap = {
+		MT_ARTIFACT: 'Disruption',
 		MT_ASSASSINATION: 'Assassination',
 		MT_ASSAULT: 'Assault',
 		MT_CAPTURE: 'Capture',

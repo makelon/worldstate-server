@@ -447,24 +447,33 @@ function* getFactionProjects() {
 		}
 	yield [data, expected]
 
+  // Small increment should add volatile record
 	timeLocalShort += timeStep
 	projects[0] += 0.25
 	expected.progress = projects[0]
 	expected.progressHistory.push([-timeLocalShort, projects[0]])
 	yield [data, expected]
 
+  // Small increment should update volatile record
 	timeLocalShort += timeStep
 	projects[0] += 0.25
 	expected.progress = projects[0]
 	expected.progressHistory[1] = [-timeLocalShort, projects[0]]
 	yield [data, expected]
 
+  // Small decrement should be ignored
+	timeLocalShort += timeStep
+	projects[0] -= 0.5
+	yield [data, expected]
+
+  // Large increment should make last record permanent
 	timeLocalShort += timeStep
 	projects[0] = 35
 	expected.progress = projects[0]
 	expected.progressHistory[1] = [timeLocalShort, projects[0]]
 	yield [data, expected]
 
+  // Large decrement should reset progress history
 	timeLocalShort += timeStep
 	projects[0] = 15
 	expected.progress = projects[0]

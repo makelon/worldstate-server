@@ -1631,6 +1631,40 @@
             }
         ]
     ],
+    "Axi S5 Relic": [
+        [
+            {
+                "name": "Spira Prime Pouch",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nikana Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi T1 Relic": [
         [
             {
@@ -1966,6 +2000,40 @@
             },
             {
                 "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi V9 Relic": [
+        [
+            {
+                "name": "Venka Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Valkyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Spira Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Saryn Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -2408,6 +2476,40 @@
             },
             {
                 "name": "Paris Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith C5 Relic": [
+        [
+            {
+                "name": "Cernos Prime Lower Limb",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Venka Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Saryn Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Spira Prime Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -3569,6 +3671,40 @@
             }
         ]
     ],
+    "Lith V6 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Saryn Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nikana Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Lith W1 Relic": [
         [
             {
@@ -4681,6 +4817,40 @@
             },
             {
                 "name": "Kronen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N8 Relic": [
+        [
+            {
+                "name": "Nikana Prime Hilt",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -6755,6 +6925,40 @@
             },
             {
                 "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S13 Relic": [
+        [
+            {
+                "name": "Saryn Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Saryn Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Spira Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nikana Prime Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

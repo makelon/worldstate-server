@@ -1414,7 +1414,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith W1 Relic (Radiant)",
+                "name": "Lith S8 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1434,7 +1434,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Lith L1 Relic (Radiant)",
+                "name": "Lith L2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1463,7 +1463,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith W1 Relic (Radiant)",
+                "name": "Lith D1 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1483,7 +1483,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso K2 Relic (Radiant)",
+                "name": "Meso W1 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1512,7 +1512,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Meso N7 Relic (Radiant)",
+                "name": "Meso D4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1532,7 +1532,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo S12 Relic (Radiant)",
+                "name": "Neo T2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1561,7 +1561,7 @@
                 "chance": 0.2857
             },
             {
-                "name": "Neo R2 Relic (Radiant)",
+                "name": "Neo Z4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.1714
             },
@@ -1576,7 +1576,7 @@
                 "chance": 0.1143
             },
             {
-                "name": "Axi P1 Relic (Radiant)",
+                "name": "Axi P2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.1429
             },

@@ -2,27 +2,42 @@
     "arbitrations": [
         [
             {
-                "name": "Endo",
-                "count": 1300,
-                "chance": 0.365
-            },
-            {
                 "name": "Ayatan Valana Sculpture",
                 "count": 1,
-                "chance": 0.18
+                "chance": 0.09
             },
             {
                 "name": "Ayatan Sah Sculpture",
                 "count": 1,
-                "chance": 0.18
+                "chance": 0.09
             },
             {
                 "name": "Ayatan Ayr Sculpture",
                 "count": 1,
-                "chance": 0.18
+                "chance": 0.09
             },
             {
-                "name": "Sharpshooter",
+                "name": "Vitus Essence",
+                "count": 3,
+                "chance": 0.07
+            },
+            {
+                "name": "Arcane Pistoleer",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Tanker",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Bodyguard",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Combat Discipline",
                 "count": 1,
                 "chance": 0.02
             },
@@ -42,29 +57,54 @@
                 "chance": 0.02
             },
             {
+                "name": "Aerodynamic",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
                 "name": "Aura Forma Blueprint",
                 "count": 1,
-                "chance": 0.015
+                "chance": 0.01
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.4
             }
         ],
         [
             {
-                "name": "Endo",
-                "count": 1600,
-                "chance": 0.48
-            },
-            {
                 "name": "Ayatan Vaya Sculpture",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.12
             },
             {
                 "name": "Ayatan Piv Sculpture",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.12
             },
             {
-                "name": "Sharpshooter",
+                "name": "Vitus Essence",
+                "count": 3,
+                "chance": 0.07
+            },
+            {
+                "name": "Arcane Bodyguard",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Blade Charger",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Primary Charger",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Combat Discipline",
                 "count": 1,
                 "chance": 0.025
             },
@@ -80,6 +120,11 @@
             },
             {
                 "name": "Adaptation",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Shepherd",
                 "count": 1,
                 "chance": 0.025
             },
@@ -87,26 +132,51 @@
                 "name": "Aura Forma Blueprint",
                 "count": 1,
                 "chance": 0.02
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.395
             }
         ],
         [
             {
-                "name": "Endo",
-                "count": 2000,
-                "chance": 0.475
-            },
-            {
                 "name": "Ayatan Orta Sculpture",
                 "count": 1,
-                "chance": 0.29
+                "chance": 0.2
             },
             {
-                "name": "Sharpshooter",
+                "name": "Vitus Essence",
+                "count": 3,
+                "chance": 0.07
+            },
+            {
+                "name": "Arcane Pistoleer",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Tanker",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Blade Charger",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Arcane Primary Charger",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Combat Discipline",
                 "count": 1,
                 "chance": 0.035
             },
             {
-                "name": "Vigorous Swap",
+                "name": "Melee Guidance",
                 "count": 1,
                 "chance": 0.035
             },
@@ -116,7 +186,7 @@
                 "chance": 0.035
             },
             {
-                "name": "Adaptation",
+                "name": "Swift Momentum",
                 "count": 1,
                 "chance": 0.035
             },
@@ -129,6 +199,11 @@
                 "name": "Aura Forma Blueprint",
                 "count": 1,
                 "chance": 0.045
+            },
+            {
+                "name": "Endo",
+                "count": 1500,
+                "chance": 0.295
             }
         ]
     ],

@@ -107,12 +107,10 @@ function build() {
 		}
 		if (opt.watch) {
 			tscArgs.push('-w')
-		}
-		tsc = cproc.spawn(process.argv0, tscArgs)
-		if (opt.watch) {
 			watchData()
 			buildData()
 		}
+		tsc = cproc.spawn(process.argv0, tscArgs)
 		const reBuildError = /^.+\(\d+,\d+\): error/,
 			reBuildIndent = /^  /,
 			reBuildTimestamp = /^\d\d:\d\d:\d\d - /,
@@ -154,7 +152,7 @@ function build() {
 		if (opt.run && !opt.watch) {
 			tsc.on('close', () => {
 				if (!buildErrors) {
-					startServer(opt.watch)
+					startServer(false)
 				}
 			})
 		}
@@ -172,6 +170,7 @@ function buildData() {
 	]).then(() => {
 		if (watcher) {
 			watcher.ee.emit('done')
+			watcher.timer = 0
 		}
 		printBuild('Data files built')
 	}).catch(err => {
@@ -186,8 +185,8 @@ function watchData() {
 		ee: new EventEmitter(),
 	}
 	const watch = dataFiles.copy.slice()
-	for (const key in dataFiles.concat) {
-		watch.push(...dataFiles.concat[key].input)
+	for (const files of dataFiles.concat) {
+		watch.push(...files.input)
 	}
 	for (const file of watch) {
 		try {

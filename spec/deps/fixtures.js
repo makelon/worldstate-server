@@ -54,6 +54,11 @@ const items = [
 			]
 		}
 	],
+	acolyteRewardTables = {
+		Torment: [
+			[ { name: items[0].name, type: items[0].type, count: 15, chance: 1 } ]
+		]
+	},
 	challenges = [
 		{
 			input: 'Challenge1000',
@@ -126,7 +131,8 @@ function* getAcolytes() {
 			health: 0.75,
 			healthHistory: [[timeLocalShort, 0.75]],
 			discovered: false,
-			location: nodes[0].name
+			location: nodes[0].name,
+			rewards: acolyteRewardTables['Torment']
 		},
 		data = { PersistentEnemies: [acolyte] }
 	yield [data, expected]
@@ -153,6 +159,7 @@ function* getAcolytes() {
 
 	acolyte.LocTag = 'RogueAcolyte'
 	expected.name = 'Mania'
+	expected.rewards = []
 	yield [data, expected]
 }
 

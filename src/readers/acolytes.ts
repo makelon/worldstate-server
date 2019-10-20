@@ -1,10 +1,13 @@
 import compare = require('../compare')
 import h = require('../helpers')
 import log = require('../log')
+import items = require('../items')
 import history = require('../history')
+import EntityRewards from '../entityrewards'
 
 export default class AcolyteReader implements WfReader {
 	private dbTable!: WfDbTable<WfAcolyte>
+	private _entityRewards = new EntityRewards()
 
 	constructor(
 		private platform: string
@@ -19,25 +22,30 @@ export default class AcolyteReader implements WfReader {
 			return
 		}
 		log.notice('Reading %s acolytes', this.platform)
+		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const acolyteInput of acolytesInput) {
-			const id = h.getId(acolyteInput),
-				name = h.getAcolyteName(acolyteInput.LocTag),
-				health = Number(acolyteInput.HealthPercent),
-				discovered = acolyteInput.Discovered == true,
-				location = h.getLocation(acolyteInput.LastDiscoveredLocation)
+			const id = h.getId(acolyteInput)
 			if (!id) {
 				continue
 			}
-			let acolyteDb = this.dbTable.get(id)
-			const acolyteCurrent: WfAcolyte = {
-				id: id,
-				name: name,
-				health: health,
-				healthHistory: [[timestamp, health]],
-				discovered: false,
-				location: location
+			const name = h.getAcolyteName(acolyteInput.LocTag),
+				health = Number(acolyteInput.HealthPercent),
+				discovered = acolyteInput.Discovered == true,
+				location = h.getLocation(acolyteInput.LastDiscoveredLocation),
+				rewards = items.getRandomRewards(name, this._entityRewards),
+				acolyteCurrent: WfAcolyte = {
+					id: id,
+					name: name,
+					health: health,
+					healthHistory: [[timestamp, health]],
+					discovered: false,
+					location: location,
+				}
+			if (rewards) {
+				acolyteCurrent.rewards = rewards
 			}
+			let acolyteDb = this.dbTable.get(id)
 			if (acolyteDb) {
 				const diff = this.getDifference(acolyteDb, acolyteCurrent)
 				if (Object.keys(diff).length) {
@@ -77,14 +85,19 @@ export default class AcolyteReader implements WfReader {
 		this.cleanOld(oldIds, timestamp)
 	}
 
-	get entityRewards() { return {} }
+	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfAcolyte, second: WfAcolyte): Partial<WfAcolyte> {
-		return compare.getValueDifference(
-			first,
-			second,
-			['name', 'location']
-		)
+		const diff = compare.getValueDifference(
+				first,
+				second,
+				['name', 'location']
+			),
+			rewardDiff = compare.getRandomRewardDifference(first.rewards, second.rewards)
+		if (rewardDiff !== null) {
+			diff.rewards = rewardDiff
+		}
+		return diff
 	}
 
 	private cleanOld(oldIds: WfSet, timestamp: number): void {

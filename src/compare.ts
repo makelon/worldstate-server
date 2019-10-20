@@ -151,6 +151,9 @@ export function getRandomRewardDifference(first?: WfRandomRewardTable, second?: 
 		}
 	}
 
+	if (first.length != second.length) {
+		return second
+	}
 	for (let tierIdx = 0; tierIdx < first.length; ++tierIdx) {
 		const tierFirst = first[tierIdx],
 			tierSecond = second[tierIdx]

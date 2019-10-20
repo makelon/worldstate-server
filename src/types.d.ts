@@ -187,6 +187,7 @@ interface WfAcolyte {
 	healthHistory: WfProgressHistory
 	discovered: boolean
 	location: string
+	rewards?: WfRandomRewardTable
 }
 
 interface WfDailyDeal {

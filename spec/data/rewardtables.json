@@ -13,6 +13,15 @@
 			}
 		]
 	],
+	"Torment": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 15,
+                "chance": 1
+            }
+        ]
+	],
     "MockRewardTable": [
         [
             {

@@ -113,7 +113,7 @@ export default class InvasionReader implements WfReader {
 						scoreHistory: scoreHistory
 					})
 				}
-				log.debug('Updating invasion %s for %s (%f -> %f)', id, this.platform, invasionDb.score, score)
+				log.debug('Updating invasion %s for %s (%d -> %d)', id, this.platform, invasionDb.score, score)
 				invasionDb.score = score
 			}
 			delete oldIds[id]

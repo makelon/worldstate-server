@@ -59,12 +59,12 @@ export default class FactionProjectReader implements WfReader {
 						progressHistory: progressHistory
 					})
 				}
-				log.debug('Updating faction project %s for %s (%f -> %f)', id, this.platform, projectDb.progress, progress)
+				log.debug('Updating faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
 				projectDb.progress = progress
 			}
 			else if (progress < projectDb.progress * 0.9) {
 				// Faction project was probably reset
-				log.debug('Resetting faction project %s for %s (%f -> %f)', id, this.platform, projectDb.progress, progress)
+				log.debug('Resetting faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
 				const prevProgress = projectDb.progressHistory[projectDb.progressHistory.length - 1]
 				prevProgress[0] = Math.abs(prevProgress[0])
 				this.dbTable.moveTmp(id)
@@ -76,7 +76,7 @@ export default class FactionProjectReader implements WfReader {
 				}, true)
 			}
 			else if (progress < projectDb.progress) {
-				log.notice('Ignoring reverse progress in faction project %s for %s (%f -> %f)', id, this.platform, projectDb.progress, progress);
+				log.notice('Ignoring reverse progress in faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress);
 			}
 			delete oldIds[id]
 		}

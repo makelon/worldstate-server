@@ -208,7 +208,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 				}).on('close', () => {
 					const tEnd = process.hrtime(),
 						loadTime = (tEnd[0] * 1e9 + tEnd[1]) - (tStart[0] * 1e9 + tStart[1])
-					log.notice('Loaded %d records and %d updates from %s/%s in %f ms', recordCount, updateCount, this.dbName, this.tableName, Math.floor(loadTime / 1e3) / 1e3)
+					log.notice('Loaded %d records and %d updates from %s/%s in %d ms', recordCount, updateCount, this.dbName, this.tableName, Math.floor(loadTime / 1e3) / 1e3)
 					resolve()
 				})
 		})

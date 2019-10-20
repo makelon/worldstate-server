@@ -66,7 +66,7 @@ export default class AcolyteReader implements WfReader {
 					discovered: discovered,
 					location: location
 				})
-				log.debug('Updating acolyte %s for %s (discovered -> s)', id, this.platform, discovered ? 'true' : 'false')
+				log.debug('Updating acolyte %s for %s (discovered -> %s)', id, this.platform, discovered ? 'true' : 'false')
 			}
 			if (acolyteDb.health != health) {
 				const healthHistory = acolyteDb.healthHistory
@@ -77,7 +77,7 @@ export default class AcolyteReader implements WfReader {
 						healthHistory: healthHistory
 					})
 				}
-				log.debug('Updating acolyte %s for %s (%f -> %f)', id, this.platform, acolyteDb.health, health)
+				log.debug('Updating acolyte %s for %s (%d -> %d)', id, this.platform, acolyteDb.health, health)
 				acolyteDb.health = health
 			}
 			delete oldIds[id]

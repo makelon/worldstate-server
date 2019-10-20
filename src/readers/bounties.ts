@@ -84,7 +84,7 @@ export default class BountyReader implements WfReader {
 							health: health,
 							healthHistory: healthHistory
 						})
-						log.debug('Updating bounty %s for %s (%f -> %f)', id, this.platform, bountyDb.health, health)
+						log.debug('Updating bounty %s for %s (%d -> %d)', id, this.platform, bountyDb.health, health)
 					}
 					bountyDb.health = health
 				}

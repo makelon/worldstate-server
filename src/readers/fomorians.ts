@@ -93,7 +93,7 @@ export default class FomorianReader implements WfReader {
 							healthHistory: healthHistory
 						})
 					}
-					log.debug('Updating fomorian %s for %s (%f -> %f)', id, this.platform, fomorianDb.health, health)
+					log.debug('Updating fomorian %s for %s (%d -> %d)', id, this.platform, fomorianDb.health, health)
 					fomorianDb.health = health
 				}
 			}

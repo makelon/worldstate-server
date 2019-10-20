@@ -247,7 +247,6 @@ interface WfDb {
 	getTable<T extends keyof WfRecordTypes>(tblName: T): WfDbTable<WfRecordTypes[T]>
 	getTable<T extends WfRecordType>(tblName: string): WfDbTable<T>
 	flush(): void
-	setPaths(): void
 }
 
 interface WfDbTableI<T extends WfRecordType> {

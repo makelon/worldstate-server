@@ -294,9 +294,6 @@ export default class Worldstate {
 		).catch(err => { log.error('Error reading worldstate: %s', err.message) })
 	}
 
-	/**
-	 * Read acolytes
-	 */
 	private readAcolytes(): void {
 		let acolytes = this.ws.PersistentEnemies
 		if (!acolytes || !acolytes[0]) {
@@ -305,9 +302,6 @@ export default class Worldstate {
 		this.readers['acolytes'].read(acolytes, this.now)
 	}
 
-	/**
-	 * Read alerts
-	 */
 	private readAlerts(): void {
 		let alerts = this.ws.Alerts
 		if (!alerts || !alerts[0]) {
@@ -316,9 +310,6 @@ export default class Worldstate {
 		this.readers['alerts'].read(alerts, this.now)
 	}
 
-	/**
-	 * Read challenges
-	 */
 	private readChallenges(): void {
 		let challengeSeasons = this.ws.SeasonInfo
 		if (!challengeSeasons) {
@@ -327,9 +318,6 @@ export default class Worldstate {
 		this.readers['challenges'].read(challengeSeasons, this.now)
 	}
 
-	/**
-	 * Read Darvo's daily deals
-	 */
 	private readDailyDeals(): void {
 		let deals = this.ws.DailyDeals
 		if (!deals || !deals[0]) {
@@ -338,9 +326,6 @@ export default class Worldstate {
 		this.readers['dailydeals'].read(deals, this.now)
 	}
 
-	/**
-	 * Read faction projects
-	 */
 	private readFactionProjects(): void {
 		let projects = this.ws.ProjectPct
 		if (!projects || !projects[0]) {
@@ -375,9 +360,6 @@ export default class Worldstate {
 		this.readers['fomorians'].read(fomorians, this.now)
 	}
 
-	/**
-	 * Read invasions
-	 */
 	private readInvasions(): void {
 		let invasions = this.ws.Invasions
 		if (!invasions || !invasions[0]) {
@@ -387,7 +369,6 @@ export default class Worldstate {
 	}
 
 	/**
-	 * Read news articles
 	 * Events and tactical alerts are found in the Goals section
 	 */
 	private readNews(): void {
@@ -398,9 +379,6 @@ export default class Worldstate {
 		this.readers['news'].read(articles, this.now)
 	}
 
-	/**
-	 * Read sorties
-	 */
 	private readSorties(): void {
 		let sorties = this.ws.Sorties
 		if (!sorties || !sorties[0]) {
@@ -410,7 +388,6 @@ export default class Worldstate {
 	}
 
 	/**
-	 * Read syndicate missions
 	 * Syndicate missions and Bounties are found under the same key
 	 */
 	private readSyndicateMissions(): void {
@@ -427,7 +404,7 @@ export default class Worldstate {
 	}
 
 	/**
-	 * Read global boosters
+	 * Read global modifiers, which includes boosters
 	 */
 	private readUpgrades(): void {
 		let upgrades = this.ws.GlobalUpgrades
@@ -437,9 +414,6 @@ export default class Worldstate {
 		this.readers['upgrades'].read(upgrades, this.now)
 	}
 
-	/**
-	 * Read void fissures
-	 */
 	private readVoidFissures(): void {
 		let fissures = this.ws.ActiveMissions
 		if (!fissures || !fissures[0]) {
@@ -448,9 +422,6 @@ export default class Worldstate {
 		this.readers['fissures'].read(fissures, this.now)
 	}
 
-	/**
-	 * Read void traders
-	 */
 	private readVoidTraders(): void {
 		let voidTraders = this.ws.VoidTraders
 		if (!voidTraders || !voidTraders[0]) {

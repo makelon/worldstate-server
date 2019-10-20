@@ -97,15 +97,6 @@ export default class Database implements WfDb {
 			this.tables[table].flush()
 		}
 	}
-
-	/**
-	 * Update paths for all tables
-	 */
-	setPaths(): void {
-		for (const table in this.tables) {
-			this.tables[table].setPath()
-		}
-	}
 }
 
 type RecordMap<T> = { [id: string]: T }

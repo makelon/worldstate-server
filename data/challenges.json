@@ -264,7 +264,7 @@
         "xpAmount": "4500"
     },
     "SeasonWeeklyUseForma": {
-        "description": "Use 3 forma",
+        "description": "Use a forma",
         "xpAmount": "4500"
     },
     "SeasonWeeklyVenusBounties": {
@@ -324,7 +324,7 @@
         "xpAmount": "7000"
     },
     "SeasonWeeklyHardKillSilverGroveSpecters": {
-        "description": "Kill 3 Silver Grove specters",
+        "description": "Kill a Silver Grove specter",
         "xpAmount": "7000"
     },
     "SeasonWeeklyHardKillThumper": {

@@ -8119,5 +8119,175 @@
                 "chance": 0.25329999999999997
             }
         ]
+    ],
+    "Requiem I Relic": [
+        [
+            {
+                "name": "Exilus Weapon Adapter Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Lohk",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Xata",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kuva",
+                "count": 1200,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Riven Sliver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Requiem II Relic": [
+        [
+            {
+                "name": "Exilus Weapon Adapter Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Jahu",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vome",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kuva",
+                "count": 1200,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Riven Sliver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Requiem III Relic": [
+        [
+            {
+                "name": "Exilus Weapon Adapter Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ris",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fass",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kuva",
+                "count": 1200,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Riven Sliver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Requiem IV Relic": [
+        [
+            {
+                "name": "Exilus Weapon Adapter Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Netra",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Khra",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kuva",
+                "count": 1200,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Riven Sliver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Requiem Relic": [
+        [
+            {
+                "name": "Exilus Weapon Adapter Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Lohk",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Xata",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kuva",
+                "count": 1200,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Riven Sliver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
     ]
 }

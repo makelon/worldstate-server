@@ -42,16 +42,6 @@
                 "chance": 0.02
             },
             {
-                "name": "Vigorous Swap",
-                "count": 1,
-                "chance": 0.02
-            },
-            {
-                "name": "Rolling Guard",
-                "count": 1,
-                "chance": 0.02
-            },
-            {
                 "name": "Adaptation",
                 "count": 1,
                 "chance": 0.02
@@ -69,7 +59,7 @@
             {
                 "name": "Endo",
                 "count": 900,
-                "chance": 0.4
+                "chance": 0.44
             }
         ],
         [
@@ -109,16 +99,6 @@
                 "chance": 0.025
             },
             {
-                "name": "Vigorous Swap",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Rolling Guard",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
                 "name": "Adaptation",
                 "count": 1,
                 "chance": 0.025
@@ -136,7 +116,7 @@
             {
                 "name": "Endo",
                 "count": 1200,
-                "chance": 0.395
+                "chance": 0.445
             }
         ],
         [
@@ -181,11 +161,6 @@
                 "chance": 0.035
             },
             {
-                "name": "Rolling Guard",
-                "count": 1,
-                "chance": 0.035
-            },
-            {
                 "name": "Swift Momentum",
                 "count": 1,
                 "chance": 0.035
@@ -203,7 +178,7 @@
             {
                 "name": "Endo",
                 "count": 1500,
-                "chance": 0.295
+                "chance": 0.33
             }
         ]
     ],
@@ -553,6 +528,59 @@
                 "name": "Searing Steel",
                 "count": 1,
                 "chance": 0.0101
+            }
+        ]
+    ],
+    "kuvasiphon": [
+        [
+            {
+                "name": "Endo",
+                "count": 80,
+                "chance": 0.7
+            },
+            {
+                "name": "Requiem I Relic",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Requiem II Relic",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Requiem III Relic",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Requiem IV Relic",
+                "count": 1,
+                "chance": 0.075
+            }
+        ]
+    ],
+    "kuvaflood": [
+        [
+            {
+                "name": "Requiem I Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Requiem II Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Requiem III Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Requiem IV Relic",
+                "count": 1,
+                "chance": 0.25
             }
         ]
     ]

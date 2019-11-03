@@ -5,18 +5,22 @@ module.exports = class MockGame {
 		this.hostname = hostname
 		this.port = port
 		this.server = http.createServer()
-			.on('request', (req, res) => {
-				res.on('finish', () => {
-					if (this.onDone) {
-						this.onDone()
-					}
-				})
-				res.end(this.data, 'utf8')
-			})
 	}
 
 	start(callback) {
+		this.server.on('request', (req, res) => {
+			res.on('finish', () => {
+				if (this.onDone) {
+					this.onDone()
+				}
+			})
+			res.end(this.data, 'utf8')
+		})
 		this.server.listen(this.port, this.hostname, callback)
+	}
+
+	shutdown(callback) {
+		this.server.close(callback)
 	}
 
 	setData(data, timestamp) {

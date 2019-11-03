@@ -1,5 +1,6 @@
 import http = require('http')
 import https = require('https')
+import zlib = require('zlib');
 import nodeUrl = require('url')
 import config from './config'
 
@@ -11,21 +12,21 @@ import config from './config'
  * @returns Request options object
  */
 export function prepareRequest(url: string, method: string = 'GET'): https.RequestOptions {
-	const wsUrlParsed = nodeUrl.parse(url),
+	const urlParsed = nodeUrl.parse(url),
 		requestOptions: https.RequestOptions = {
-			protocol: wsUrlParsed.protocol,
-			hostname: wsUrlParsed.hostname,
-			port: wsUrlParsed.port,
+			protocol: urlParsed.protocol,
+			hostname: urlParsed.hostname,
+			port: urlParsed.port,
 			method: method,
-			path: wsUrlParsed.path,
-			auth: wsUrlParsed.auth,
+			path: urlParsed.path,
+			auth: urlParsed.auth,
 			headers: {
 				'Accept-Encoding': 'gzip, deflate',
 				'User-Agent': config.userAgent
 			},
 		timeout: config.requestTimeout
 	}
-	if (wsUrlParsed.protocol == 'https:') {
+	if (urlParsed.protocol == 'https:') {
 		if (!config.tlsVerify) {
 			requestOptions.rejectUnauthorized = false
 		}
@@ -50,4 +51,31 @@ export function sendRequest(requestOptions: https.RequestOptions): http.ClientRe
 		.once('timeout', () => { req.abort() })
 		.end()
 	return req
+}
+
+export function getResponseData(res: http.IncomingMessage): Promise<string> {
+	let decomp,
+		resData = ''
+	switch (res.headers['content-encoding']) {
+		case 'gzip':
+			decomp = zlib.createGunzip()
+			break
+		case 'deflate':
+			decomp = zlib.createInflate()
+			break
+	}
+	const resStream = decomp ? res.pipe(decomp) : res
+	resStream.setEncoding('utf8')
+
+	return new Promise<string>((resolve, reject) => {
+		resStream.on('error', reject)
+			.on('data', (data: string) => { resData += data })
+			.on('end', () => {
+				if (res.statusCode != 200) {
+					reject(new Error(`HTTP error ${res.statusCode}: ${resData}`))
+					return
+				}
+				resolve(resData)
+			})
+	})
 }

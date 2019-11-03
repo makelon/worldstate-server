@@ -44,6 +44,30 @@ export function getDate(struct: any): number {
 }
 
 /**
+ * Get current unix time
+ *
+ * @returns Timestamp in seconds
+ */
+export function getCurrentTime(): number {
+	return Math.floor(Date.now() / 1000)
+}
+
+/**
+ * Convert timestamp to unix time
+ *
+ * @param str String that will be parsed as a date format
+ * @returns Timestamp in seconds or 0 if input cannot be parsed
+ */
+export function strToTime(str: string): number {
+	try {
+		return Math.floor(new Date(str).getTime() / 1000)
+	}
+	catch (err) {
+		return 0
+	}
+}
+
+/**
  * @param nodeId
  * @returns Location of a node in the star chart
  */

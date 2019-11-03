@@ -1,14 +1,15 @@
 import http = require('http')
 import https = require('https')
-import zlib = require('zlib')
 import log = require('./log')
 import h = require('./helpers')
 import promisify = require('./promisify')
 import config from './config'
 import httpHelper = require('./httphelper')
+import Kuvalog from './kuvalog'
 
 import AcolyteReader from './readers/acolytes'
 import AlertReader from './readers/alerts'
+import ArbitrationReader from './readers/arbitrations'
 import BountieReader from './readers/bounties'
 import ChallengeReader from './readers/challenges'
 import DailyDealReader from './readers/dailydeals'
@@ -16,6 +17,7 @@ import DayNightReader from './readers/daynight'
 import FactionProjectReader from './readers/factionprojects'
 import FomorianReader from './readers/fomorians'
 import InvasionReader from './readers/invasions'
+import KuvaSiphonReader from './readers/kuvasiphons'
 import NewsReader from './readers/news'
 import SortieReader from './readers/sorties'
 import UpgradeReader from './readers/upgrades'
@@ -31,11 +33,6 @@ function looksLikeWorldstate(ws: any) {
 	return ws.hasOwnProperty('WorldSeed')
 }
 
-/**
- * Counter used with <config.instanceDelay> to start each instance at the specified time
- */
-let numInstances = 0
-
 export default class Worldstate {
 	private requestOptions: https.RequestOptions | null = null
 	private requestTimerId?: NodeJS.Timer
@@ -47,28 +44,33 @@ export default class Worldstate {
 	private defer: { [type: string]: any[] } = {
 		bounties: []
 	}
-	private readers: { [readerId: string]: WfReader } = {
+	private kuvalog = new Kuvalog(this.platform, this.instanceDelay)
+	private readers: Readonly<{ [readerId in WfRecordKey]: WfReader }> = {
 		acolytes: new AcolyteReader(this.platform),
 		alerts: new AlertReader(this.platform),
+		arbitrations: new ArbitrationReader(this.platform),
 		bounties: new BountieReader(this.platform),
+		challenges: new ChallengeReader(this.platform),
 		dailydeals: new DailyDealReader(this.platform),
+		daynight: new DayNightReader(this.platform),
 		fissures: new VoidFissureReader(this.platform),
+		fomorians: new FomorianReader(this.platform),
 		factionprojects: new FactionProjectReader(this.platform),
 		invasions: new InvasionReader(this.platform),
-		fomorians: new FomorianReader(this.platform),
+		kuvasiphons: new KuvaSiphonReader(this.platform),
 		news: new NewsReader(this.platform),
 		sorties: new SortieReader(this.platform),
 		upgrades: new UpgradeReader(this.platform),
 		voidtraders: new VoidTraderReader(this.platform),
-		daynight: new DayNightReader(this.platform),
-		challenges: new ChallengeReader(this.platform)
 	}
 
 	constructor(
 		private db: WfDb,
-		private platform: string
+		private platform: string,
+		private instanceDelay: number,
 	) {
-		log.notice('Creating instance %s', platform)
+		log.notice('Creating worldstate instance %s', platform)
+		this.kuvalog.onUpdate(() => { this.readKuvalog() })
 	}
 
 	/**
@@ -78,8 +80,8 @@ export default class Worldstate {
 		this.db.setupTables(() => {
 			this.initReaders()
 			this.ready = true
-			this.scheduleWorldstateRequest(config.instanceDelay * numInstances)
-			++numInstances
+			this.scheduleWorldstateRequest(this.instanceDelay)
+			this.kuvalog.start()
 		})
 		this.setRequestOptions()
 	}
@@ -90,6 +92,7 @@ export default class Worldstate {
 	reload(): void {
 		this.setRequestOptions()
 		this.db.setupTables(() => {
+			this.kuvalog.reload()
 			if (this.ws) {
 				log.info('Reloading %s worldstate', this.platform)
 				this.initReaders()
@@ -103,7 +106,7 @@ export default class Worldstate {
 	 */
 	private initReaders(): void {
 		for (const readerId in this.readers) {
-			this.readers[readerId].start(this.db)
+			this.readers[readerId as WfRecordKey].start(this.db)
 		}
 	}
 
@@ -146,13 +149,18 @@ export default class Worldstate {
 			time: this.now,
 			rewardtables: {}
 		}
-		for (const type of types) {
+		for (const type of types as WfRecordKey[]) {
+			if (!(type in this.readers)) {
+				log.debug('"%s" is not a valid worldstate category', type)
+				continue
+			}
 			// Timestamped database content
 			const table = this.db.getTable(type)
-			if (!table || !(type in this.readers)) {
-				log.debug('"%s" is not a valid worldstate category', type)
+			if (!table) {
+				log.debug('"%s" has not been loaded', type)
+				continue
 			}
-			else if (table.isReady()) {
+			if (table.isReady()) {
 				log.debug('Sending %s', type)
 				ret[type] = {
 					time: table.getLastUpdate(),
@@ -172,10 +180,11 @@ export default class Worldstate {
 	}
 
 	/**
-	 * @returns Milliseconds until next worldstate request
+	 * @returns Time when the next potential update happens
 	 */
 	getNextUpdate(): number {
-		return this.nextUpdate - Date.now()
+		const nextKuvaUpdate = this.kuvalog.getNextUpdate()
+		return nextKuvaUpdate ? Math.min(this.nextUpdate, nextKuvaUpdate) : this.nextUpdate
 	}
 
 	/**
@@ -230,45 +239,29 @@ export default class Worldstate {
 	 * Start the parsing process if the dump passes validity tests
 	 */
 	private handleWorldstateResponse(res: http.IncomingMessage): void {
-		let decomp,
-			resData = ''
-		switch (res.headers['content-encoding']) {
-			case 'gzip':
-				decomp = zlib.createGunzip()
-				break
-			case 'deflate':
-				decomp = zlib.createInflate()
-				break
-		}
-		const resStream = decomp ? res.pipe(decomp) : res
-		resStream.setEncoding('utf8')
-			.on('error', (err: Error) => { this.retryRequestWorldstate(0, err.message) })
-			.on('data', (data: string) => { resData += data })
-			.on('end', () => {
+		httpHelper.getResponseData(res)
+			.then(resData => {
+				let resParsed: any
 				try {
-					const resParsed = JSON.parse(resData)
-					if (res.statusCode != 200) {
-						throw new Error(`HTTP error ${res.statusCode}: ${resParsed || resData}`)
-					}
-					if (!looksLikeWorldstate(resParsed)) {
-						const resHead = resData.length > 210 ? resData.slice(0, 200) + '...' : resData
-						throw new Error(`Response does not look like worldstate data: '${resHead}'`)
-					}
-					const timestamp = h.getDate(resParsed)
-					if (!timestamp) {
-						throw new Error('Response does not have a timestamp')
-					}
-					this.ws = resParsed
-					this.now = timestamp
+					resParsed = JSON.parse(resData)
 				}
 				catch (err) {
-					this.retryRequestWorldstate(res.statusCode, err.message)
-					return
+					throw new Error(`Failed to parse response: ${err.message}`)
 				}
+				if (!looksLikeWorldstate(resParsed)) {
+					const resHead = resData.length > 210 ? resData.slice(0, 200) + '...' : resData
+					throw new Error(`Response does not look like worldstate data: '${resHead}'`)
+				}
+				const timestamp = h.getDate(resParsed)
+				if (!timestamp) {
+					throw new Error('Response does not have a timestamp')
+				}
+				this.ws = resParsed
+				this.now = timestamp
 				this.readWorldstate()
 				this.retryTimeout = Math.max(config.minRetryTimeout, this.retryTimeout - 1500)
 				this.scheduleWorldstateRequest(config.updateInterval)
-			})
+			}).catch((err: Error) => { this.retryRequestWorldstate(res.complete ? res.statusCode : 0, err.message) })
 	}
 
 	/**
@@ -366,6 +359,14 @@ export default class Worldstate {
 			invasions = []
 		}
 		this.readers['invasions'].read(invasions, this.now)
+	}
+
+	/**
+	 * Kuvalog is a third party data source that provides information about arbitration and kuva missions
+	 */
+	private readKuvalog(): void {
+		this.readers['arbitrations'].read(this.kuvalog.arbitrations, this.kuvalog.getLastUpdate())
+		this.readers['kuvasiphons'].read(this.kuvalog.kuvamissions, this.kuvalog.getLastUpdate())
 	}
 
 	/**

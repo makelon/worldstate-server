@@ -1,3 +1,4 @@
+const config = require('../out/config').default
 const Database = require('../out/db').default
 const Worldstate = require('../out/worldstate').default
 const fixtures = require('./deps/fixtures')
@@ -191,6 +192,7 @@ describe('Worldstate', () => {
 	})
 
 	it('should load extra data', () => {
+		config.wsUrls.pc = ''
 		extraData.data = {}
 		extraData.load('data/extradata.json')
 		expect(extraData.data.pc.bounties.length).toBe(1)
@@ -198,9 +200,11 @@ describe('Worldstate', () => {
 		expect(extraData.getData('pc', 'x')).toEqual([])
 		expect(extraData.getData('x', 'bounties')).toEqual([])
 		extraData.data = {}
+		delete config.wsUrls.pc
 	})
 
 	it('should load extra bounties', () => {
+		config.wsUrls.pc = ''
 		extraData.data = {}
 		const dataKey = 'bounties'
 		let timestamp = fixtures.timeNowShort
@@ -213,5 +217,6 @@ describe('Worldstate', () => {
 			timestamp += fixtures.timeStep
 		}
 		extraData.data = {}
+		delete config.wsUrls.pc
 	})
 })

@@ -85,5 +85,37 @@
                 "chance": 1
             }
         ]
+    ],
+    "arbitrations": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 15,
+                "chance": 1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 50,
+                "chance": 1
+            }
+        ]
+    ],
+    "kuvasiphon": [
+        [
+            {
+                "name": "Mock Item",
+                "count": 25,
+                "chance": 1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 60,
+                "chance": 1
+            }
+        ]
     ]
 }

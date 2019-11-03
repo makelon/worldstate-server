@@ -5,26 +5,34 @@ const defaults = {
 	logLevel: 'info', // debug, notice, info, warning, error
 	dbRoot: '', // Where to store the database files. Storage is disabled if this value is empty
 	wsFields: [ // Components to parse
-		'news',
-		'alerts',
-		'fomorians',
-		'sorties',
-		'invasions',
-		'fissures',
-		'bounties',
-		'factionprojects',
-		'voidtraders',
 		'acolytes',
+		'alerts',
+		'arbitrations',
+		'bounties',
+		'challenges',
 		'dailydeals',
-		'upgrades',
 		'daynight',
-		'challenges'
+		'factionprojects',
+		'fissures',
+		'fomorians',
+		'invasions',
+		'kuvasiphons',
+		'news',
+		'sorties',
+		'upgrades',
+		'voidtraders',
 	],
 	wsUrls: { // Worldstate endpoints
-		'pc': 'http://content.warframe.com/dynamic/worldState.php',
-		'ps4': 'http://content.ps4.warframe.com/dynamic/worldState.php',
-		'xb1': 'http://content.xb1.warframe.com/dynamic/worldState.php',
-		'ns': 'http://content.swi.warframe.com/dynamic/worldState.php'
+		pc: 'http://content.warframe.com/dynamic/worldState.php',
+		ps4: 'http://content.ps4.warframe.com/dynamic/worldState.php',
+		xb1: 'http://content.xb1.warframe.com/dynamic/worldState.php',
+		ns: 'http://content.swi.warframe.com/dynamic/worldState.php'
+	},
+	kuvalogUrls: {
+		pc: '',
+		ps4: '',
+		xb1: '',
+		ns: ''
 	},
 	dayNightPath: './daynight.json',
 	minRetryTimeout: 10000,
@@ -48,6 +56,7 @@ class WfConfig {
 	dbRoot!: string
 	wsFields!: ReadonlyArray<string>
 	wsUrls!: WfMap
+	kuvalogUrls!: WfMap
 	dayNightPath!: string
 	minRetryTimeout!: number
 	maxRetryTimeout!: number
@@ -76,17 +85,20 @@ class WfConfig {
 				process.exit(1)
 			}
 		}
-		if (overrides.wsUrls) {
-			const wsUrls = overrides.wsUrls as WfMap
-			this.wsUrls = {}
-			for (const platform in defaults.wsUrls) {
-				if (platform in wsUrls) {
-					this.wsUrls[platform] = wsUrls[platform]
+		const urlTypes: ('wsUrls' | 'kuvalogUrls')[] = ['wsUrls', 'kuvalogUrls'];
+		for (const urlType of urlTypes) {
+			if (overrides[urlType]) {
+				const urls = overrides[urlType] as WfMap
+				this[urlType] = {}
+				for (const platform in defaults[urlType]) {
+					if (platform in urls) {
+						this[urlType][platform] = urls[platform]
+					}
 				}
 			}
-		}
-		else {
-			this.wsUrls = defaults.wsUrls
+			else {
+				this[urlType] = defaults[urlType]
+			}
 		}
 		this.dayNightPath = ('dayNightPath' in overrides) ? overrides.dayNightPath : defaults.dayNightPath
 		this.logLevel = ('logLevel' in overrides) ? overrides.logLevel : defaults.logLevel

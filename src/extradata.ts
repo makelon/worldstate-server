@@ -27,7 +27,7 @@ class ExtraData {
 	 * @param dataType
 	 * @returns Extra data of the selected type for the chosen platform
 	 */
-	getData<T extends keyof WfRecordTypes>(platform: string, dataType: T): any[] {
+	getData<T extends WfRecordKey>(platform: string, dataType: T): any[] {
 		return platform in config.wsUrls && platform in this.data && dataType in this.data[platform]
 			 ? this.data[platform][dataType]
 			 : []

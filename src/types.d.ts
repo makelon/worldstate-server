@@ -51,6 +51,27 @@ interface WfAlert {
 	rewards?: WfRewards
 }
 
+interface WfArbitration {
+	id: string
+	start: number
+	end: number
+	location: string
+	missionType: string
+	faction: string
+	rewards: WfRandomRewardTable
+}
+
+interface WfKuvaSiphon {
+	id: string
+	start: number
+	end: number
+	location: string
+	missionType: string
+	faction: string
+	flood: boolean
+	rewards: WfRandomRewardTable
+}
+
 interface WfInvasion {
 	id: string
 	start: number
@@ -245,7 +266,7 @@ interface WfReader {
 
 interface WfDb {
 	setupTables(onLoad: () => void): void
-	getTable<T extends keyof WfRecordTypes>(tblName: T): WfDbTable<WfRecordTypes[T]>
+	getTable<T extends WfRecordKey>(tblName: T): WfDbTable<WfRecordTypes[T]>
 	getTable<T extends WfRecordType>(tblName: string): WfDbTable<T>
 	flush(): void
 }
@@ -267,21 +288,24 @@ interface WfDbTableI<T extends WfRecordType> {
 type WfDbTable<T extends WfRecordType> = WfDbTableI<T> | null
 
 type WfRecordTypes = {
-	news: WfNews
-	alerts: WfAlert
-	events: WfEvent
-	fomorians: WfFomorian
-	sorties: WfSortie
-	invasions: WfInvasion
-	fissures: WfVoidFissure
-	bounties: WfBounty
-	factionprojects: WfFomorianProgress
-	voidtraders: WfVoidTrader
 	acolytes: WfAcolyte
-	dailydeals: WfDailyDeal
-	upgrades: WfUpgrade
-	daynight: WfDayNight
+	alerts: WfAlert
+	arbitrations: WfArbitration
+	bounties: WfBounty
 	challenges: WfChallengeSeason
+	dailydeals: WfDailyDeal
+	daynight: WfDayNight
+	factionprojects: WfFomorianProgress
+	fissures: WfVoidFissure
+	fomorians: WfFomorian
+	invasions: WfInvasion
+	kuvasiphons: WfKuvaSiphon
+	news: WfNews
+	sorties: WfSortie
+	upgrades: WfUpgrade
+	voidtraders: WfVoidTrader
 }
 
-type WfRecordType = WfRecordTypes[keyof WfRecordTypes]
+type WfRecordKey = keyof WfRecordTypes
+
+type WfRecordType = WfRecordTypes[WfRecordKey]

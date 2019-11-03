@@ -182,7 +182,7 @@ export default class Server {
 			}
 			responseText = instance.get(types)
 			// Set s-maxage to tell caches when the next update happens
-			cacheTtl = Math.ceil(instance.getNextUpdate() / 1000)
+			cacheTtl = Math.ceil((instance.getNextUpdate() - Date.now()) / 1000)
 			// Set max-age to tell browsers to update every <updateInterval> seconds. Subtract 1 to prevent accidental cache hits
 			cacheTtlBrowser = config.updateInterval < 1000 ? 0 : Math.floor(config.updateInterval / 1000) - 1
 		}

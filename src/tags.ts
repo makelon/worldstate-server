@@ -133,6 +133,7 @@ export const
 		VoidT2: 'Meso',
 		VoidT3: 'Neo',
 		VoidT4: 'Axi',
+		VoidT5: 'Requiem',
 	},
 	voidTraderNames: WfMap = {
 		'Baro\'Ki Teel': 'Baro Ki\'Teer'

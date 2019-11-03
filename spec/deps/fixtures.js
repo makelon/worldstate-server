@@ -110,8 +110,8 @@ const items = [
 	],
 	timeNowLong = Date.now(),
 	timeNowShort = Math.floor(timeNowLong / 1000),
-	timeStartLong = timeNowLong - 300000,
-	timeEndLong = timeNowLong + 300000,
+	timeStartLong = timeNowLong - 300e3,
+	timeEndLong = timeNowLong + 300e3,
 	timeStartShort = Math.floor(timeStartLong / 1000),
 	timeEndShort = Math.floor(timeEndLong / 1000),
 	timeStep = 40
@@ -611,6 +611,51 @@ function* getInvasions() {
 	yield [data, expected]
 }
 
+function* getKuvalog() {
+	const timeStartStr = new Date(timeStartLong).toISOString(),
+		timeEndStr = new Date(timeEndLong).toISOString(),
+		data = [
+			{
+				start: timeStartStr,
+				end: timeEndStr,
+				missiontype: 'KuvaMission6',
+				solnode: nodes[0].id,
+				realtime: timeStartStr
+			},
+			{
+				start: timeStartStr,
+				end: timeEndStr,
+				missiontype: 'EliteAlertMission',
+				solnode: nodes[1].id,
+				realtime: timeStartStr
+			}
+		],
+		expectedArbitration = {
+			id: timeStartShort.toString(),
+			start: timeStartShort,
+			end: timeEndShort,
+			faction: factions[1].name,
+			location: nodes[1].name,
+			missionType: missionTypes[1].name,
+			rewards: rewardTables[0].output
+		},
+		expectedKuvamission = {
+			id: 'KuvaMission6' + timeStartShort.toString(),
+			start: timeStartShort,
+			end: timeEndShort,
+			faction: factions[0].name,
+			location: nodes[0].name,
+			missionType: missionTypes[0].name,
+			flood: false,
+			rewards: rewardTables[1].output
+		}
+	yield [data, expectedArbitration, expectedKuvamission]
+
+	data[1].end = new Date(timeStartLong + 4800e3).toISOString()
+	expectedArbitration.end = timeStartShort + 3600
+	yield [data, expectedArbitration, expectedKuvamission]
+}
+
 function* getNews() {
 	const article = {
 			_id: { $oid: entryId },
@@ -783,6 +828,7 @@ module.exports = {
 	getFactionProjects,
 	getGoals,
 	getInvasions,
+	getKuvalog,
 	getNews,
 	getSorties,
 	getUpgrades,

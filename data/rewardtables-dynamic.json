@@ -536,27 +536,27 @@
             {
                 "name": "Endo",
                 "count": 80,
-                "chance": 0.7
+                "chance": 0.5
             },
             {
                 "name": "Requiem I Relic",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.125
             },
             {
                 "name": "Requiem II Relic",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.125
             },
             {
                 "name": "Requiem III Relic",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.125
             },
             {
                 "name": "Requiem IV Relic",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.125
             }
         ]
     ],

@@ -289,7 +289,7 @@ export default class Worldstate {
 
 	private readAcolytes(): void {
 		let acolytes = this.ws.PersistentEnemies
-		if (!acolytes || !acolytes[0]) {
+		if (!Array.isArray(acolytes)) {
 			acolytes = []
 		}
 		this.readers['acolytes'].read(acolytes, this.now)
@@ -297,7 +297,7 @@ export default class Worldstate {
 
 	private readAlerts(): void {
 		let alerts = this.ws.Alerts
-		if (!alerts || !alerts[0]) {
+		if (!Array.isArray(alerts)) {
 			alerts = []
 		}
 		this.readers['alerts'].read(alerts, this.now)
@@ -313,7 +313,7 @@ export default class Worldstate {
 
 	private readDailyDeals(): void {
 		let deals = this.ws.DailyDeals
-		if (!deals || !deals[0]) {
+		if (!Array.isArray(deals)) {
 			deals = []
 		}
 		this.readers['dailydeals'].read(deals, this.now)
@@ -321,7 +321,7 @@ export default class Worldstate {
 
 	private readFactionProjects(): void {
 		let projects = this.ws.ProjectPct
-		if (!projects || !projects[0]) {
+		if (!Array.isArray(projects)) {
 			projects = []
 		}
 		this.readers['factionprojects'].read(projects, this.now)
@@ -338,7 +338,7 @@ export default class Worldstate {
 		}
 		log.notice('Reading %s goals', this.platform)
 		let goals = this.ws.Goals
-		if (!goals[0]) {
+		if (!Array.isArray(goals)) {
 			goals = []
 		}
 		const fomorians = []
@@ -355,7 +355,7 @@ export default class Worldstate {
 
 	private readInvasions(): void {
 		let invasions = this.ws.Invasions
-		if (!invasions || !invasions[0]) {
+		if (!Array.isArray(invasions)) {
 			invasions = []
 		}
 		this.readers['invasions'].read(invasions, this.now)
@@ -374,7 +374,7 @@ export default class Worldstate {
 	 */
 	private readNews(): void {
 		let articles = this.ws.Events
-		if (!articles || !articles[0]) {
+		if (!Array.isArray(articles)) {
 			articles = []
 		}
 		this.readers['news'].read(articles, this.now)
@@ -382,7 +382,7 @@ export default class Worldstate {
 
 	private readSorties(): void {
 		let sorties = this.ws.Sorties
-		if (!sorties || !sorties[0]) {
+		if (!Array.isArray(sorties)) {
 			sorties = []
 		}
 		this.readers['sorties'].read(sorties, this.now)
@@ -409,7 +409,7 @@ export default class Worldstate {
 	 */
 	private readUpgrades(): void {
 		let upgrades = this.ws.GlobalUpgrades
-		if (!upgrades || !upgrades[0]) {
+		if (!Array.isArray(upgrades)) {
 			upgrades = []
 		}
 		this.readers['upgrades'].read(upgrades, this.now)
@@ -417,7 +417,7 @@ export default class Worldstate {
 
 	private readVoidFissures(): void {
 		let fissures = this.ws.ActiveMissions
-		if (!fissures || !fissures[0]) {
+		if (!Array.isArray(fissures)) {
 			fissures = []
 		}
 		this.readers['fissures'].read(fissures, this.now)
@@ -425,7 +425,7 @@ export default class Worldstate {
 
 	private readVoidTraders(): void {
 		let voidTraders = this.ws.VoidTraders
-		if (!voidTraders || !voidTraders[0]) {
+		if (!Array.isArray(voidTraders)) {
 			voidTraders = []
 		}
 		this.readers['voidtraders'].read(voidTraders, this.now)

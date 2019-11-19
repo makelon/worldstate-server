@@ -203,6 +203,40 @@
             }
         ]
     ],
+    "Axi A7 Relic": [
+        [
+            {
+                "name": "Ash Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fragor Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Systems",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akstiletto Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi B1 Relic": [
         [
             {
@@ -4011,6 +4045,74 @@
             }
         ]
     ],
+    "Lith V7 Relic": [
+        [
+            {
+                "name": "Vauban Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ash Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akstiletto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Fragor Prime Head",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Carrier Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith V8 Relic": [
+        [
+            {
+                "name": "Vauban Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Fragor Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vectis Prime Stock",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ash Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Lith W1 Relic": [
         [
             {
@@ -5978,6 +6080,40 @@
             }
         ]
     ],
+    "Meso V6 Relic": [
+        [
+            {
+                "name": "Vectis Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Vauban Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Cerebrum",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akstiletto Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Meso W1 Relic": [
         [
             {
@@ -6211,6 +6347,40 @@
             },
             {
                 "name": "Mesa Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo A4 Relic": [
+        [
+            {
+                "name": "Akstiletto Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Ash Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vectis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Carrier Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vauban Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

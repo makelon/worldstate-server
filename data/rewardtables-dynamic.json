@@ -583,5 +583,331 @@
                 "chance": 0.25
             }
         ]
+    ],
+    "X1U": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4000,
+                "chance": 0.1518
+            },
+            {
+                "name": "Credits Cache",
+                "count": 5000,
+                "chance": 0.1518
+            },
+            {
+                "name": "Credits Cache",
+                "count": 7500,
+                "chance": 0.1518
+            },
+            {
+                "name": "Kuva",
+                "count": 75,
+                "chance": 0.1518
+            },
+            {
+                "name": "Kuva",
+                "count": 125,
+                "chance": 0.0737
+            },
+            {
+                "name": "Ancient Healer Specter Blueprint",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Charger Specter Blueprint",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Nano Spores",
+                "count": 500,
+                "chance": 0.1518
+            },
+            {
+                "name": "Norg",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Boot",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 240,
+                "chance": 0.1265
+            },
+            {
+                "name": "Endo",
+                "count": 320,
+                "chance": 0.1265
+            },
+            {
+                "name": "Plastids",
+                "count": 100,
+                "chance": 0.1265
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kuva",
+                "count": 125,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kuva",
+                "count": 175,
+                "chance": 0.1265
+            },
+            {
+                "name": "Argon Crystal",
+                "count": 1,
+                "chance": 0.1106
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.1106
+            },
+            {
+                "name": "Clem Clone Blueprint",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Universal Medallion",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ],
+        [
+            {
+                "name": "Kuva",
+                "count": 175,
+                "chance": 0.1518
+            },
+            {
+                "name": "Kuva",
+                "count": 225,
+                "chance": 0.1518
+            },
+            {
+                "name": "Endo",
+                "count": 320,
+                "chance": 0.1518
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.1518
+            },
+            {
+                "name": "Argon Crystal",
+                "count": 1,
+                "chance": 0.1518
+            },
+            {
+                "name": "Day Of The Dead Sigil",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Kavat Genetic Code",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Kubrow Egg",
+                "count": 1,
+                "chance": 0.0553
+            },
+            {
+                "name": "Endo",
+                "count": 480,
+                "chance": 0.0553
+            },
+            {
+                "name": "Nitain Extract",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Universal Medallion",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ]
+    ],
+    "X1V": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 5000,
+                "chance": 0.1518
+            },
+            {
+                "name": "Credits Cache",
+                "count": 7500,
+                "chance": 0.1518
+            },
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.1518
+            },
+            {
+                "name": "Kuva",
+                "count": 100,
+                "chance": 0.1518
+            },
+            {
+                "name": "Kuva",
+                "count": 150,
+                "chance": 0.1518
+            },
+            {
+                "name": "Ancient Healer Specter Blueprint",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Charger Specter Blueprint",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Pherliac Pods",
+                "count": 2,
+                "chance": 0.0737
+            },
+            {
+                "name": "Norg",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Boot",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 320,
+                "chance": 0.1265
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.1265
+            },
+            {
+                "name": "Argon Crystal",
+                "count": 1,
+                "chance": 0.1265
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 2,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kuva",
+                "count": 150,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kuva",
+                "count": 200,
+                "chance": 0.1265
+            },
+            {
+                "name": "Mutagen Mass",
+                "count": 1,
+                "chance": 0.1106
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.1106
+            },
+            {
+                "name": "Clem Clone Blueprint",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Universal Medallion",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ],
+        [
+            {
+                "name": "Kuva",
+                "count": 200,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kuva",
+                "count": 250,
+                "chance": 0.1265
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.1265
+            },
+            {
+                "name": "Endo",
+                "count": 640,
+                "chance": 0.1265
+            },
+            {
+                "name": "Argon Crystal",
+                "count": 2,
+                "chance": 0.1265
+            },
+            {
+                "name": "Day Of The Dead Sigil",
+                "count": 1,
+                "chance": 0.1265
+            },
+            {
+                "name": "Kavat Genetic Code",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Kubrow Egg",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Lith D1 Relic",
+                "count": 1,
+                "chance": 0.0737
+            },
+            {
+                "name": "Nitain Extract",
+                "count": 1,
+                "chance": 0.0101
+            },
+            {
+                "name": "Universal Medallion",
+                "count": 1,
+                "chance": 0.0101
+            }
+        ]
     ]
 }

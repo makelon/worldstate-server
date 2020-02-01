@@ -59,6 +59,7 @@ let lang,
 						"utilityunlocker": ""
 					},
 					"plants": "Resource",
+					"railjackmiscitems": "Resource",
 					"research": "Resource",
 					"shipdecos": "Cosmetic"
 				},

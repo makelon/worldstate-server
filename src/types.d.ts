@@ -38,6 +38,16 @@ interface WfChallengeInfo {
 	xpAmount: number
 }
 
+interface WfAcolyte {
+	id: string
+	name: string
+	health: number
+	healthHistory: WfProgressHistory
+	discovered: boolean
+	location: string
+	rewards?: WfRandomRewardTable
+}
+
 interface WfAlert {
 	id: string
 	start: number
@@ -61,46 +71,6 @@ interface WfArbitration {
 	rewards: WfRandomRewardTable
 }
 
-interface WfKuvaSiphon {
-	id: string
-	start: number
-	end: number
-	location: string
-	missionType: string
-	faction: string
-	flood: boolean
-	rewards: WfRandomRewardTable
-}
-
-interface WfInvasion {
-	id: string
-	start: number
-	endScore: number
-	score: number
-	scoreHistory: WfProgressHistory
-	location: string
-	factionAttacker: string
-	factionDefender: string
-	rewardsAttacker?: WfRewards
-	rewardsDefender?: WfRewards
-}
-
-interface WfSortieMission {
-	missionType: string
-	modifier: string
-	location: string
-}
-
-interface WfSortie {
-	id: string
-	start: number
-	end: number
-	faction: string
-	bossName: string
-	rewards: WfRandomRewardTable
-	missions: WfSortieMission[]
-}
-
 interface WfBountyJob {
 	minLevel: number
 	maxLevel: number
@@ -121,35 +91,42 @@ interface WfBounty {
 	healthHistory?: WfProgressHistory
 }
 
-interface WfVoidFissure {
+interface WfChallenge {
 	id: string
 	start: number
 	end: number
-	location: string
-	faction: string
-	missionType: string
-	tier: string
+	daily: boolean
+	description: string
+	xpAmount: number
 }
 
-interface WfEventInterim {
-	location: string
-	requirements?: number
-	rewards?: WfRewards
-}
-
-interface WfEvent {
+interface WfChallengeSeason {
 	id: string
 	start: number
 	end: number
-	tag: string
-	endGoal?: number
-	location?: string
-	faction?: string
-	prereqTags?: string[]
-	rewards?: WfRewards
-	rewardNode?: string
-	subGoals?: WfEventInterim[]
-	clanGoals?: number[]
+	syndicate: string
+	season: number
+	phase: number
+	challenges: WfChallenge[]
+}
+
+interface WfDailyDeal {
+	id: string
+	start: number
+	end: number
+	item: WfItem
+	price: number
+	originalPrice: number
+	stock: number
+	sold: number
+}
+
+interface WfDayNight {
+	id: string
+	start: number
+	length: number
+	dayStart: number
+	dayEnd: number
 }
 
 interface WfFomorian {
@@ -176,6 +153,82 @@ interface WfFomorianProgress {
 	progressHistory: WfProgressHistory
 }
 
+interface WfKuvaSiphon {
+	id: string
+	start: number
+	end: number
+	location: string
+	missionType: string
+	faction: string
+	flood: boolean
+	rewards: WfRandomRewardTable
+}
+
+interface WfInvasion {
+	id: string
+	start: number
+	endScore: number
+	score: number
+	scoreHistory: WfProgressHistory
+	location: string
+	factionAttacker: string
+	factionDefender: string
+	rewardsAttacker?: WfRewards
+	rewardsDefender?: WfRewards
+}
+
+interface WfNews {
+	id: string
+	start: number
+	text: string
+	link: string
+	eventStart?: number
+	eventEnd?: number
+	eventUrl?: string
+}
+
+interface WfSortieMission {
+	missionType: string
+	modifier: string
+	location: string
+}
+
+interface WfSentientAnomaly {
+	id: string
+	start: number
+	end?: number
+	location: string
+}
+
+interface WfSortie {
+	id: string
+	start: number
+	end: number
+	faction: string
+	bossName: string
+	rewards: WfRandomRewardTable
+	missions: WfSortieMission[]
+}
+
+interface WfVoidFissure {
+	id: string
+	start: number
+	end: number
+	location: string
+	faction: string
+	missionType: string
+	tier: string
+}
+
+interface WfUpgrade {
+	id: string
+	start: number
+	end: number
+	type: string
+	opType: string
+	value: number
+}
+
 interface WfVoidTraderItem extends WfItem {
 	ducats: number
 	credits: number
@@ -189,73 +242,6 @@ interface WfVoidTrader {
 	location: string
 	active: boolean
 	items?: WfVoidTraderItem[]
-}
-
-interface WfNews {
-	id: string
-	start: number
-	text: string
-	link: string
-	eventStart?: number
-	eventEnd?: number
-	eventUrl?: string
-}
-
-interface WfAcolyte {
-	id: string
-	name: string
-	health: number
-	healthHistory: WfProgressHistory
-	discovered: boolean
-	location: string
-	rewards?: WfRandomRewardTable
-}
-
-interface WfDailyDeal {
-	id: string
-	start: number
-	end: number
-	item: WfItem
-	price: number
-	originalPrice: number
-	stock: number
-	sold: number
-}
-
-interface WfUpgrade {
-	id: string
-	start: number
-	end: number
-	type: string
-	opType: string
-	value: number
-}
-
-interface WfDayNight {
-	id: string
-	start: number
-	length: number
-	dayStart: number
-	dayEnd: number
-}
-
-interface WfChallenge {
-	id: string
-	start: number
-	end: number
-	daily: boolean
-	description: string
-	xpAmount: number
-}
-
-interface WfChallengeSeason {
-	id: string
-	start: number
-	end: number
-	syndicate: string
-	season: number
-	phase: number
-	challenges: WfChallenge[]
 }
 
 interface WfReader {
@@ -288,22 +274,23 @@ interface WfDbTableI<T extends WfRecordType> {
 type WfDbTable<T extends WfRecordType> = WfDbTableI<T> | null
 
 type WfRecordTypes = {
-	acolytes: WfAcolyte
-	alerts: WfAlert
-	arbitrations: WfArbitration
-	bounties: WfBounty
-	challenges: WfChallengeSeason
-	dailydeals: WfDailyDeal
-	daynight: WfDayNight
-	factionprojects: WfFomorianProgress
-	fissures: WfVoidFissure
-	fomorians: WfFomorian
-	invasions: WfInvasion
-	kuvasiphons: WfKuvaSiphon
-	news: WfNews
-	sorties: WfSortie
-	upgrades: WfUpgrade
-	voidtraders: WfVoidTrader
+	'acolytes': WfAcolyte
+	'alerts': WfAlert
+	'arbitrations': WfArbitration
+	'bounties': WfBounty
+	'challenges': WfChallengeSeason
+	'dailydeals': WfDailyDeal
+	'daynight': WfDayNight
+	'factionprojects': WfFomorianProgress
+	'fissures': WfVoidFissure
+	'fomorians': WfFomorian
+	'invasions': WfInvasion
+	'kuvasiphons': WfKuvaSiphon
+	'news': WfNews
+	'sentient-anomalies': WfSentientAnomaly
+	'sorties': WfSortie
+	'upgrades': WfUpgrade
+	'voidtraders': WfVoidTrader
 }
 
 type WfRecordKey = keyof WfRecordTypes

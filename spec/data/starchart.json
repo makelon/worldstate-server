@@ -1,14 +1,20 @@
 {
 	"locations": {
 		"SolNode1": "Location1",
-		"SolNode2": "Location2"
+		"SolNode2": "Location2",
+		"CrewBattleNode1": "RailjackLocation1",
+		"CrewBattleNode2": "RailjackLocation2"
 	},
 	"factions": {
 		"SolNode1": "FC_GRINEER",
-		"SolNode2": "FC_CORPUS"
+		"SolNode2": "FC_CORPUS",
+		"CrewBattleNode1": "FC_GRINEER",
+		"CrewBattleNode2": "FC_GRINEER"
 	},
 	"missionTypes": {
 		"SolNode1": "MT_CAPTURE",
-		"SolNode2": "MT_INTEL"
+		"SolNode2": "MT_INTEL",
+		"CrewBattleNode1": "MT_RAILJACK",
+		"CrewBattleNode2": "MT_RAILJACK"
 	}
 }

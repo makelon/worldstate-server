@@ -143,6 +143,19 @@ describe('Worldstate', () => {
 		}
 	})
 
+	it('should read sentient anomalies', () => {
+		const dataKey = 'sentient-anomalies'
+		let timestamp = fixtures.timeNowShort
+		for (const [mission, expected] of fixtures.getSentientAnomalies()) {
+			const data = { Tmp: JSON.stringify(mission) }
+			setWorldstateData(data, timestamp)
+			ws.readSentientAnomalies()
+			const result = JSON.parse(ws.get([dataKey]))
+			expect(result[dataKey].data[0]).toEqual(expected)
+			timestamp += fixtures.timeStep
+		}
+	})
+
 	it('should read sorties', () => {
 		const dataKey = 'sorties'
 		let timestamp = fixtures.timeNowShort

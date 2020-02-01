@@ -19,6 +19,7 @@ import FomorianReader from './readers/fomorians'
 import InvasionReader from './readers/invasions'
 import KuvaSiphonReader from './readers/kuvasiphons'
 import NewsReader from './readers/news'
+import SentientAnomalyReader from './readers/sentient-anomalies'
 import SortieReader from './readers/sorties'
 import UpgradeReader from './readers/upgrades'
 import VoidFissureReader from './readers/voidfissures'
@@ -46,22 +47,23 @@ export default class Worldstate {
 	}
 	private kuvalog = new Kuvalog(this.platform, this.instanceDelay)
 	private readers: Readonly<{ [readerId in WfRecordKey]: WfReader }> = {
-		acolytes: new AcolyteReader(this.platform),
-		alerts: new AlertReader(this.platform),
-		arbitrations: new ArbitrationReader(this.platform),
-		bounties: new BountieReader(this.platform),
-		challenges: new ChallengeReader(this.platform),
-		dailydeals: new DailyDealReader(this.platform),
-		daynight: new DayNightReader(this.platform),
-		fissures: new VoidFissureReader(this.platform),
-		fomorians: new FomorianReader(this.platform),
-		factionprojects: new FactionProjectReader(this.platform),
-		invasions: new InvasionReader(this.platform),
-		kuvasiphons: new KuvaSiphonReader(this.platform),
-		news: new NewsReader(this.platform),
-		sorties: new SortieReader(this.platform),
-		upgrades: new UpgradeReader(this.platform),
-		voidtraders: new VoidTraderReader(this.platform),
+		'acolytes': new AcolyteReader(this.platform),
+		'alerts': new AlertReader(this.platform),
+		'arbitrations': new ArbitrationReader(this.platform),
+		'bounties': new BountieReader(this.platform),
+		'challenges': new ChallengeReader(this.platform),
+		'dailydeals': new DailyDealReader(this.platform),
+		'daynight': new DayNightReader(this.platform),
+		'fissures': new VoidFissureReader(this.platform),
+		'fomorians': new FomorianReader(this.platform),
+		'factionprojects': new FactionProjectReader(this.platform),
+		'invasions': new InvasionReader(this.platform),
+		'kuvasiphons': new KuvaSiphonReader(this.platform),
+		'news': new NewsReader(this.platform),
+		'sentient-anomalies': new SentientAnomalyReader(this.platform),
+		'sorties': new SortieReader(this.platform),
+		'upgrades': new UpgradeReader(this.platform),
+		'voidtraders': new VoidTraderReader(this.platform),
 	}
 
 	constructor(
@@ -278,6 +280,7 @@ export default class Worldstate {
 			this.readGoals,
 			this.readInvasions,
 			this.readNews,
+			this.readSentientAnomalies,
 			this.readSorties,
 			this.readSyndicateMissions,
 			this.readUpgrades,
@@ -292,7 +295,12 @@ export default class Worldstate {
 		if (!Array.isArray(acolytes)) {
 			acolytes = []
 		}
-		this.readers['acolytes'].read(acolytes, this.now)
+		try {
+			this.readers['acolytes'].read(acolytes, this.now)
+		}
+		catch (err) {
+			log.error('Error reading acolytes for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readAlerts(): void {
@@ -300,7 +308,12 @@ export default class Worldstate {
 		if (!Array.isArray(alerts)) {
 			alerts = []
 		}
-		this.readers['alerts'].read(alerts, this.now)
+		try {
+			this.readers['alerts'].read(alerts, this.now)
+		}
+		catch (err) {
+			log.error('Error reading alerts for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readChallenges(): void {
@@ -308,7 +321,12 @@ export default class Worldstate {
 		if (!challengeSeasons) {
 			challengeSeasons = {}
 		}
-		this.readers['challenges'].read(challengeSeasons, this.now)
+		try {
+			this.readers['challenges'].read(challengeSeasons, this.now)
+		}
+		catch (err) {
+			log.error('Error reading challenges for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readDailyDeals(): void {
@@ -316,7 +334,12 @@ export default class Worldstate {
 		if (!Array.isArray(deals)) {
 			deals = []
 		}
-		this.readers['dailydeals'].read(deals, this.now)
+		try {
+			this.readers['dailydeals'].read(deals, this.now)
+		}
+		catch (err) {
+			log.error('Error reading dailydeals for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readFactionProjects(): void {
@@ -324,7 +347,12 @@ export default class Worldstate {
 		if (!Array.isArray(projects)) {
 			projects = []
 		}
-		this.readers['factionprojects'].read(projects, this.now)
+		try {
+			this.readers['factionprojects'].read(projects, this.now)
+		}
+		catch (err) {
+			log.error('Error reading faction projects for %s: %s', this.platform, err.message)
+		}
 	}
 
 	/**
@@ -350,7 +378,12 @@ export default class Worldstate {
 				this.defer.bounties.push(goal)
 			}
 		}
-		this.readers['fomorians'].read(fomorians, this.now)
+		try {
+			this.readers['fomorians'].read(fomorians, this.now)
+		}
+		catch (err) {
+			log.error('Error reading fomorians for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readInvasions(): void {
@@ -358,15 +391,30 @@ export default class Worldstate {
 		if (!Array.isArray(invasions)) {
 			invasions = []
 		}
-		this.readers['invasions'].read(invasions, this.now)
+		try {
+			this.readers['invasions'].read(invasions, this.now)
+		}
+		catch (err) {
+			log.error('Error reading invasions for %s: %s', this.platform, err.message)
+		}
 	}
 
 	/**
 	 * Kuvalog is a third party data source that provides information about arbitration and kuva missions
 	 */
 	private readKuvalog(): void {
-		this.readers['arbitrations'].read(this.kuvalog.arbitrations, this.kuvalog.getLastUpdate())
-		this.readers['kuvasiphons'].read(this.kuvalog.kuvamissions, this.kuvalog.getLastUpdate())
+		try {
+			this.readers['arbitrations'].read(this.kuvalog.arbitrations, this.kuvalog.getLastUpdate())
+		}
+		catch (err) {
+			log.error('Error reading arbitrations for %s: %s', this.platform, err.message)
+		}
+		try {
+			this.readers['kuvasiphons'].read(this.kuvalog.kuvamissions, this.kuvalog.getLastUpdate())
+		}
+		catch (err) {
+			log.error('Error reading kuvasiphons for %s: %s', this.platform, err.message)
+		}
 	}
 
 	/**
@@ -377,7 +425,21 @@ export default class Worldstate {
 		if (!Array.isArray(articles)) {
 			articles = []
 		}
-		this.readers['news'].read(articles, this.now)
+		try {
+			this.readers['news'].read(articles, this.now)
+		}
+		catch (err) {
+			log.error('Error reading news for %s: %s', this.platform, err.message)
+		}
+	}
+
+	private readSentientAnomalies(): void {
+		try {
+			this.readers['sentient-anomalies'].read(this.ws.Tmp, this.now)
+		}
+		catch (err) {
+			log.error('Error reading sentient anomalies for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readSorties(): void {
@@ -385,7 +447,12 @@ export default class Worldstate {
 		if (!Array.isArray(sorties)) {
 			sorties = []
 		}
-		this.readers['sorties'].read(sorties, this.now)
+		try {
+			this.readers['sorties'].read(sorties, this.now)
+		}
+		catch (err) {
+			log.error('Error reading sorties for %s: %s', this.platform, err.message)
+		}
 	}
 
 	/**
@@ -401,7 +468,12 @@ export default class Worldstate {
 				}
 			}
 		}
-		this.readers['bounties'].read(bounties, this.now)
+		try {
+			this.readers['bounties'].read(bounties, this.now)
+		}
+		catch (err) {
+			log.error('Error reading bounties for %s: %s', this.platform, err.message)
+		}
 	}
 
 	/**
@@ -412,7 +484,12 @@ export default class Worldstate {
 		if (!Array.isArray(upgrades)) {
 			upgrades = []
 		}
-		this.readers['upgrades'].read(upgrades, this.now)
+		try {
+			this.readers['upgrades'].read(upgrades, this.now)
+		}
+		catch (err) {
+			log.error('Error reading upgrades for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readVoidFissures(): void {
@@ -420,7 +497,12 @@ export default class Worldstate {
 		if (!Array.isArray(fissures)) {
 			fissures = []
 		}
-		this.readers['fissures'].read(fissures, this.now)
+		try {
+			this.readers['fissures'].read(fissures, this.now)
+		}
+		catch (err) {
+			log.error('Error reading void fissures for %s: %s', this.platform, err.message)
+		}
 	}
 
 	private readVoidTraders(): void {
@@ -428,7 +510,12 @@ export default class Worldstate {
 		if (!Array.isArray(voidTraders)) {
 			voidTraders = []
 		}
-		this.readers['voidtraders'].read(voidTraders, this.now)
+		try {
+			this.readers['voidtraders'].read(voidTraders, this.now)
+		}
+		catch (err) {
+			log.error('Error reading void traders for %s: %s', this.platform, err.message)
+		}
 	}
 
 	/**

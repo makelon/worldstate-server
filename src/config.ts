@@ -18,6 +18,7 @@ const defaults = {
 		'invasions',
 		'kuvasiphons',
 		'news',
+		'sentient-anomalies',
 		'sorties',
 		'upgrades',
 		'voidtraders',

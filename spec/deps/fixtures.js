@@ -108,6 +108,18 @@ const items = [
 			name: 'Location2'
 		}
 	],
+	nodesRailjack = [
+		{
+			id: 'CrewBattleNode1',
+			nodeId: 1,
+			name: 'RailjackLocation1'
+		},
+		{
+			id: 'CrewBattleNode2',
+			nodeId: 2,
+			name: 'RailjackLocation2'
+		}
+	],
 	timeNowLong = Date.now(),
 	timeNowShort = Math.floor(timeNowLong / 1000),
 	timeStartLong = timeNowLong - 300e3,
@@ -691,6 +703,51 @@ function* getNews() {
 	yield [data, expected]
 }
 
+function *getSentientAnomalies() {
+	let timeLocalShort = timeNowShort
+	const mission = {
+			sfn: nodesRailjack[0].nodeId
+		},
+		expected = {
+			id: mission.sfn.toString(),
+			start: timeLocalShort,
+			location: nodesRailjack[0].name
+		}
+	yield [mission, expected]
+
+	timeLocalShort += timeStep
+	delete mission.sfn
+	expected.end = timeLocalShort
+	yield [mission, expected]
+
+	timeLocalShort += timeStep
+	mission.sfn = nodesRailjack[1].nodeId
+	expected.id = mission.sfn.toString()
+	expected.start = timeLocalShort
+	expected.location = nodesRailjack[1].name
+	delete expected.end
+	yield [mission, expected]
+
+	timeLocalShort += timeStep
+	delete mission.sfn
+	expected.end = timeLocalShort
+	yield [mission, expected]
+
+	timeLocalShort += timeStep
+	mission.sfn = nodesRailjack[1].nodeId
+	expected.start = timeLocalShort
+	expected.id = mission.sfn.toString()
+	delete expected.end
+	yield [mission, expected]
+
+	timeLocalShort += timeStep
+	mission.sfn = nodesRailjack[0].nodeId
+	expected.id = mission.sfn.toString()
+	expected.start = timeLocalShort
+	expected.location = nodesRailjack[0].name
+	yield [mission, expected]
+}
+
 function* getSorties() {
 	const sortie = {
 			_id: { $oid: entryId },
@@ -830,6 +887,7 @@ module.exports = {
 	getInvasions,
 	getKuvalog,
 	getNews,
+	getSentientAnomalies,
 	getSorties,
 	getUpgrades,
 	getVoidFissures,

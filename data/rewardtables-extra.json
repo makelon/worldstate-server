@@ -138,5 +138,229 @@
                 "chance": 0.05
             }
         ]
+    ],
+    "Angst": [
+        [
+            {
+                "name": "Body Count",
+                "count": 1,
+                "chance": 0.5152
+            },
+            {
+                "name": "Spring-Loaded Chamber",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Repeater Clip",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Pressurized Magazine",
+                "count": 1,
+                "chance": 0.0404
+            }
+        ]
+    ],
+    "Malice": [
+        [
+            {
+                "name": "Focused Defense",
+                "count": 1,
+                "chance": 0.5152
+            },
+            {
+                "name": "Targeting Subsystem",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Guided Ordnance",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Narrow Barrel",
+                "count": 1,
+                "chance": 0.0404
+            }
+        ]
+    ],
+    "Mania": [
+        [
+            {
+                "name": "Catalyzer Link",
+                "count": 1,
+                "chance": 0.5152
+            },
+            {
+                "name": "Embedded Catalyzer",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Weeping Wounds",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Nano-Applicator",
+                "count": 1,
+                "chance": 0.0404
+            }
+        ]
+    ],
+    "Misery": [
+        [
+            {
+                "name": "Focused Defense",
+                "count": 1,
+                "chance": 0.2538
+            },
+            {
+                "name": "Body Count",
+                "count": 1,
+                "chance": 0.0857
+            },
+            {
+                "name": "Hydraulic Crosshairs",
+                "count": 1,
+                "chance": 0.0857
+            },
+            {
+                "name": "Catalyzer Link",
+                "count": 1,
+                "chance": 0.0857
+            },
+            {
+                "name": "Shrapnel Shot",
+                "count": 1,
+                "chance": 0.0857
+            },
+            {
+                "name": "Blood Rush",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Weeping Wounds",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Sharpened Bullets",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Embedded Catalyzer",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Bladed Rounds",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Spring-Loaded Chamber",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Laser Sight",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Repeater Clip",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Targeting Subsystem",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Guided Ordnance",
+                "count": 1,
+                "chance": 0.037
+            },
+            {
+                "name": "Maiming Strike",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Pressurized Magazine",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Argon Scope",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Nano-Applicator",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Narrow Barrel",
+                "count": 1,
+                "chance": 0.0067
+            }
+        ]
+    ],
+    "Torment": [
+        [
+            {
+                "name": "Hydraulic Crosshairs",
+                "count": 1,
+                "chance": 0.5152
+            },
+            {
+                "name": "Laser Sight",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Blood Rush",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Argon Scope",
+                "count": 1,
+                "chance": 0.0404
+            }
+        ]
+    ],
+    "Violence": [
+        [
+            {
+                "name": "Shrapnel Shot",
+                "count": 1,
+                "chance": 0.5152
+            },
+            {
+                "name": "Sharpened Bullets",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Bladed Rounds",
+                "count": 1,
+                "chance": 0.2222
+            },
+            {
+                "name": "Maiming Strike",
+                "count": 1,
+                "chance": 0.0404
+            }
+        ]
     ]
 }

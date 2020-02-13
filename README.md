@@ -79,7 +79,14 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
     				<...>
     			],
     			"discovered": true | false,
-    			"location": "Planet/Node"
+    			"location": "Planet/Node",
+    			"rewards": [
+    				[
+    					{ "name": "Item name", "type": "Item type", "count": 1, "chance": 0.5 },
+    					<...>
+    				],
+    				<... higher reward tiers>
+    			]
     		},
     		<...>
     	]
@@ -370,6 +377,33 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
 
     The last pair in `scoreHistory` may have a negative timestamp, indicating that the value may change in the future.
 
+* `kuvasiphons` - Kuva siphons.
+
+    ```
+    "kuvasiphons": {
+    	"time": 1512345678,
+    	"data": [
+    		{
+    			"id": "KuvaMission21581609600",
+    			"start": 1512345678,
+    			"end": 1523456789,
+    			"location": "Planet/Node",
+    			"faction": "Faction",
+    			"missionType": "Mission type",
+    			"flood": true | false,
+    			"rewards": [
+    				[
+    					{ "name": "Item name", "type": "Item type", "count": 1, "chance": 0.5 },
+    					<...>
+    				],
+    				<... higher reward tiers>
+    			]
+    		},
+    		<...>
+    	]
+    }
+    ```
+
 * `news` - News articles.
 
     ```
@@ -393,6 +427,27 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
     **Notes**
 
     `eventStart`, `eventEnd` and `eventUrl` are present if the event takes place on an external web site.
+
+* `sentient-anomalies` - Railjack nodes with a sentient anomaly.
+
+    ```
+    "sentient-anomalies": {
+    	"time": 1512345678,
+    	"data": [
+    		{
+    			"id": "510",
+    			"start": 1512345678,
+    			"end": 1523456789,
+    			"location": "Planet/Node"
+    		},
+    		<...>
+    	]
+    }
+    ```
+
+    **Notes**
+
+    `end` will be absent if the mission is active.
 
 * `sorties` - Sorties.
 

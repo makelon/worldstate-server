@@ -1635,7 +1635,7 @@
         [
             {
                 "name": "Endo",
-                "count": 100,
+                "count": 300,
                 "chance": 0.3333
             },
             {
@@ -1652,7 +1652,7 @@
         [
             {
                 "name": "Endo",
-                "count": 100,
+                "count": 300,
                 "chance": 0.1174
             },
             {

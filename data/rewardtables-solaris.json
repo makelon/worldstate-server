@@ -1414,7 +1414,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith S8 Relic (Radiant)",
+                "name": "Lith C6 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1434,7 +1434,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Lith L2 Relic (Radiant)",
+                "name": "Lith M5 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1463,7 +1463,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith D1 Relic (Radiant)",
+                "name": "Lith C6 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1483,7 +1483,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso B4 Relic (Radiant)",
+                "name": "Meso E4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1512,7 +1512,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Meso D4 Relic (Radiant)",
+                "name": "Meso R3 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1532,7 +1532,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo T2 Relic (Radiant)",
+                "name": "Neo I2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1561,7 +1561,7 @@
                 "chance": 0.2857
             },
             {
-                "name": "Neo I1 Relic (Radiant)",
+                "name": "Neo P1 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.1714
             },
@@ -1576,7 +1576,7 @@
                 "chance": 0.1143
             },
             {
-                "name": "Axi A8 Relic (Radiant)",
+                "name": "Axi G4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.1429
             },

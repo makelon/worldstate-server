@@ -1691,7 +1691,7 @@
                 "chance": 0.046900000000000004
             },
             {
-                "name": "Lith L2 Relic",
+                "name": "Neo I2 Relic",
                 "count": 1,
                 "chance": 0.1784
             }
@@ -1723,7 +1723,7 @@
                 "chance": 0.059500000000000004
             },
             {
-                "name": "Lith L2 Relic",
+                "name": "Neo I2 Relic",
                 "count": 1,
                 "chance": 0.2262
             },
@@ -1799,7 +1799,7 @@
                 "chance": 0.046900000000000004
             },
             {
-                "name": "Neo I1 Relic",
+                "name": "Neo P1 Relic",
                 "count": 1,
                 "chance": 0.1784
             }
@@ -1831,7 +1831,7 @@
                 "chance": 0.059500000000000004
             },
             {
-                "name": "Neo I1 Relic",
+                "name": "Neo P1 Relic",
                 "count": 1,
                 "chance": 0.2262
             },

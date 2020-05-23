@@ -3773,6 +3773,40 @@
             }
         ]
     ],
+    "Lith N4 Relic": [
+        [
+            {
+                "name": "Ninkondi Prime Handle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Atlas Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ivara Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Bronco Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Gram Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Lith O1 Relic": [
         [
             {

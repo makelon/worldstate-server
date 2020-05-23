@@ -11,6 +11,10 @@
         "description": "Scan 25 objects or enemies",
         "xpAmount": "1000"
     },
+    "SeasonDailyCollectHundredResources": {
+        "description": "Collect 100 resources",
+        "xpAmount": "1000"
+    },
     "SeasonDailyCollectCredits": {
         "description": "Collect 15,000 credits",
         "xpAmount": "1000"
@@ -19,12 +23,32 @@
         "description": "Complete a mission",
         "xpAmount": "1000"
     },
+    "SeasonDailyCompleteMissionMelee": {
+        "description": "Complete a mission with only a melee weapon equipped",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyCompleteMissionPrimary": {
+        "description": "Complete a mission with only a primary weapon equipped",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyCompleteMissionSecondary": {
+        "description": "Complete a mission with only a secondary weapon equipped",
+        "xpAmount": "1000"
+    },
     "SeasonDailyDeployAirSupport": {
         "description": "Deploy an Air Support charge in a mission",
         "xpAmount": "1000"
     },
     "SeasonDailyDeployGlyph": {
         "description": "Deploy a glyph",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyDeploySpecter": {
+        "description": "Deploy a specter",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyDonateLeverian": {
+        "description": "Donate to the Leverian",
         "xpAmount": "1000"
     },
     "SeasonDailyInteractWithPet": {
@@ -99,6 +123,18 @@
         "description": "Kill 150 enemies with viral damage",
         "xpAmount": "1000"
     },
+    "SeasonDailyKillThrall": {
+        "description": "Kill a Kuva Thrall",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyLichNode": {
+        "description": "Clear a personal Kuva Lich influenced node",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyMercyKill": {
+        "description": "Mercy kill an enemy",
+        "xpAmount": "1000"
+    },
     "SeasonDailyOpenLockers": {
         "description": "Open 20 lockers",
         "xpAmount": "1000"
@@ -123,6 +159,14 @@
         "description": "Play an emote",
         "xpAmount": "1000"
     },
+    "SeasonDailyPlayMinigame": {
+        "description": "Play a game of Frame Fighter, Happy Zephyr, or Wyrmius",
+        "xpAmount": "1000"
+    },
+    "SeasonDailyRailjackHijackDestroyThree": {
+        "description": "While piloting a hijacked crewship, destroy 3 enemy fighters",
+        "xpAmount": "1000"
+    },
     "SeasonDailySlideKills": {
         "description": "Kill 20 enemies while sliding",
         "xpAmount": "1000"
@@ -131,9 +175,21 @@
         "description": "Hack 8 consoles",
         "xpAmount": "1000"
     },
+    "SeasonDailySuspendFiveEnemies": {
+        "description": "Suspend 5 or more enemies in the air at once with a heavy slam melee attack",
+        "xpAmount": "1000"
+    },
     "SeasonDailyTransmuteMods": {
         "description": "Transmute 3 modules",
         "xpAmount": "1000"
+    },
+    "SeasonDailyVisitFeaturedDojo": {
+        "description": "Visit a featured dojo",
+        "xpAmount": "1000"
+    },
+    "SeasonWeeklyBoardingPartyNoDamage": {
+        "description": "Clear a Railjack boarding party without your Warframe taking damage",
+        "xpAmount": "4500"
     },
     "SeasonWeeklyCompleteDisruptionConduits": {
         "description": "Complete 12 conduits in Disruption missions",
@@ -207,8 +263,20 @@
         "description": "Complete 3 K-Drive races in Orb Vallis",
         "xpAmount": "4500"
     },
+    "SeasonWeeklyDestroyCrewshipArtillery": {
+        "description": "Destroy a Crewship with forward artillery",
+        "xpAmount": "4500"
+    },
     "SeasonWeeklyGildModular": {
         "description": "Gild a modular item",
+        "xpAmount": "4500"
+    },
+    "SeasonWeeklyHijackCrewship": {
+        "description": "Hijack a crewship from the enemy",
+        "xpAmount": "4500"
+    },
+    "SeasonWeeklyKillArchgunEnemies": {
+        "description": "Kill 500 enemies with an Archgun",
         "xpAmount": "4500"
     },
     "SeasonWeeklyKillEnemies": {
@@ -241,6 +309,10 @@
     },
     "SeasonWeeklyPlainsBounties": {
         "description": "Complete 5 different bounties in the Plains of Eidolon",
+        "xpAmount": "4500"
+    },
+    "SeasonWeeklyRailjackMissions": {
+        "description": "Complete 3 Railjack missions",
         "xpAmount": "4500"
     },
     "SeasonWeeklySabotageCaches": {
@@ -287,6 +359,14 @@
         "description": "Complete an exterminate mission with level 30 or higher enemies without raising alarms",
         "xpAmount": "7000"
     },
+    "SeasonWeeklyHardFastCapture": {
+        "description": "Finish a capture mission in less than 90 seconds",
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardFinishLich": {
+        "description": "Kill or convert a Kuva Lich",
+        "xpAmount": "7000"
+    },
     "SeasonWeeklyHardFriendsDefense": {
         "description": "Complete 20 waves in a defense mission",
         "xpAmount": "7000"
@@ -315,6 +395,10 @@
         "description": "Kill 100 eximus enemies",
         "xpAmount": "7000"
     },
+    "SeasonWeeklyHardKillExploiterOrb": {
+        "description": "Kill the Exploiter Orb",
+        "xpAmount": "7000"
+    },
     "SeasonWeeklyHardKillOrCaptureRainalyst": {
         "description": "Kill or capture an Eidolon Hydrolyst",
         "xpAmount": "7000"
@@ -337,6 +421,14 @@
     },
     "SeasonWeeklyHardLuaPuzzles": {
         "description": "Complete 4 halls of ascension on Lua",
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardRailjackMissions": {
+        "description": "Complete 8 Railjack missions",
+        "xpAmount": "7000"
+    },
+    "SeasonWeeklyHardSpyManualNoAlarms": {
+        "description": "Complete a spy mission with 3 manual console hacks and no alarms",
         "xpAmount": "7000"
     },
     "SeasonWeeklyHardUnlockRelics": {

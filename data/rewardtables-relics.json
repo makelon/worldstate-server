@@ -2107,6 +2107,40 @@
             }
         ]
     ],
+    "Axi S7 Relic": [
+        [
+            {
+                "name": "Soma Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Trinity Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Kubrow Collar Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nova Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vasto Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi T1 Relic": [
         [
             {
@@ -3428,6 +3462,40 @@
             },
             {
                 "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith K4 Relic": [
+        [
+            {
+                "name": "Kavasa Prime Buckle",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Trinity Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Soma Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nova Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Dual Kamas Prime Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -5259,6 +5327,40 @@
             },
             {
                 "name": "Akjagara Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso D5 Relic": [
+        [
+            {
+                "name": "Dual Kamas Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nova Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Vasto Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Soma Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -8081,6 +8183,40 @@
             },
             {
                 "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo N12 Relic": [
+        [
+            {
+                "name": "Nova Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Dual Kamas Prime Handle",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kavasa Prime Band",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Trinity Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Soma Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vasto Prime Receiver",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

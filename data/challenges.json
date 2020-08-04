@@ -165,7 +165,7 @@
     },
     "SeasonDailyRailjackHijackDestroyThree": {
         "description": "While piloting a hijacked crewship, destroy 3 enemy fighters",
-        "xpAmount": "1000"
+        "xpAmount": "4500"
     },
     "SeasonDailySlideKills": {
         "description": "Kill 20 enemies while sliding",

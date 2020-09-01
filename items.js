@@ -42,6 +42,9 @@ let lang,
 					},
 					"venus": {
 						"resources": "Resource"
+					},
+					"infestedmicroplanet": {
+						"Resources": "Resource",
 					}
 				},
 				"items": {

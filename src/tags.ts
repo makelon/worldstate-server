@@ -121,6 +121,7 @@ export const
 		InfestedPlains: 'Plague Star',
 		SolarisSyndicate: 'Solaris United',
 		RadioLegionSyndicate: 'Nightwave',
+		EntratiSyndicate: 'Entrati',
 	},
 	upgradeTypes: WfMap = {
 		GAMEPLAY_KILL_XP_AMOUNT: 'Affinity',

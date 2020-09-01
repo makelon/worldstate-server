@@ -1,0 +1,1389 @@
+{
+    "EntratiSyndicateBountyTierATableARewards": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4500,
+                "chance": 0.3333
+            },
+            {
+                "name": "Endo",
+                "count": 150,
+                "chance": 0.3333
+            },
+            {
+                "name": "Ganglion",
+                "count": 15,
+                "chance": 0.3333
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4500,
+                "chance": 0.2581
+            },
+            {
+                "name": "Endo",
+                "count": 150,
+                "chance": 0.2581
+            },
+            {
+                "name": "Ganglion",
+                "count": 15,
+                "chance": 0.2581
+            },
+            {
+                "name": "Credits Cache",
+                "count": 6000,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 6000,
+                "chance": 0.3056
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.3056
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierATableBRewards": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4500,
+                "chance": 0.3333
+            },
+            {
+                "name": "Endo",
+                "count": 150,
+                "chance": 0.3333
+            },
+            {
+                "name": "Pustulite",
+                "count": 15,
+                "chance": 0.3333
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4500,
+                "chance": 0.2581
+            },
+            {
+                "name": "Endo",
+                "count": 150,
+                "chance": 0.2581
+            },
+            {
+                "name": "Pustulite",
+                "count": 15,
+                "chance": 0.2581
+            },
+            {
+                "name": "Credits Cache",
+                "count": 6000,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 6000,
+                "chance": 0.3056
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.3056
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierATableCRewards": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4500,
+                "chance": 0.3333
+            },
+            {
+                "name": "Endo",
+                "count": 150,
+                "chance": 0.3333
+            },
+            {
+                "name": "Lucent Teroglobe",
+                "count": 15,
+                "chance": 0.3333
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 4500,
+                "chance": 0.2581
+            },
+            {
+                "name": "Endo",
+                "count": 150,
+                "chance": 0.2581
+            },
+            {
+                "name": "Lucent Teroglobe",
+                "count": 15,
+                "chance": 0.2581
+            },
+            {
+                "name": "Credits Cache",
+                "count": 6000,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.07519999999999999
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.07519999999999999
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 6000,
+                "chance": 0.3056
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.3056
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.3056
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierCTableARewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.45
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Catalyzer Link",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.075
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.225
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Catalyzer Link",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.0375
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Xaku Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Weeping Wounds",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Embedded Catalyzer",
+                "count": 1,
+                "chance": 0.0875
+            }
+        ],
+        [
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Xaku Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Weeping Wounds",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Embedded Catalyzer",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Nano-Applicator",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierCTableBRewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.45
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Shrapnel Shot",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.075
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.225
+            },
+            {
+                "name": "Vazarin Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Shrapnel Shot",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.0375
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Xaku Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Sharpened Bullets",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Bladed Rounds",
+                "count": 1,
+                "chance": 0.0875
+            }
+        ],
+        [
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Xaku Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sharpened Bullets",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Bladed Rounds",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Maiming Strike",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierCTableCRewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.45
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Body Count",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.075
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.225
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Zenurik Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Body Count",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Scintillant",
+                "count": 1,
+                "chance": 0.0375
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Xaku Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Spring-Loaded Chamber",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Repeater Clip",
+                "count": 1,
+                "chance": 0.0875
+            }
+        ],
+        [
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Xaku Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Spring-Loaded Chamber",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Repeater Clip",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Pressurized Magazine",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierBTableARewards": [
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.25
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Carnis Mandible",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Jugulus Barbs",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Saxum Thorax",
+                "count": 1,
+                "chance": 0.05
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.125
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Mandible",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Barbs",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Thorax",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Carapace",
+                "count": 1,
+                "chance": 0.025
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Stinger",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Spines",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Spittle",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierBTableBRewards": [
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.4
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.2
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Carnis Mandible",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Jugulus Barbs",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Saxum Thorax",
+                "count": 1,
+                "chance": 0.05
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.44439999999999996
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.0694
+            },
+            {
+                "name": "Meso D5 Relic",
+                "count": 1,
+                "chance": 0.0694
+            },
+            {
+                "name": "Carnis Mandible",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Jugulus Barbs",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Saxum Thorax",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.0444
+            },
+            {
+                "name": "Carnis Carapace",
+                "count": 1,
+                "chance": 0.0222
+            },
+            {
+                "name": "Jugulus Carapace",
+                "count": 1,
+                "chance": 0.0222
+            },
+            {
+                "name": "Saxum Carapace",
+                "count": 1,
+                "chance": 0.0222
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.125
+            },
+            {
+                "name": "Axi S7 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Stinger",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Spines",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Spittle",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierBTableCRewards": [
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.25
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Carnis Mandible",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Jugulus Barbs",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Saxum Thorax",
+                "count": 1,
+                "chance": 0.05
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 250,
+                "chance": 0.125
+            },
+            {
+                "name": "Lith K4 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Mandible",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Barbs",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Thorax",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Carapace",
+                "count": 1,
+                "chance": 0.025
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Carapace",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.125
+            },
+            {
+                "name": "Axi S7 Relic",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Carnis Stinger",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Jugulus Spines",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Saxum Spittle",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierDTableARewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.45
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Hydraulic Crosshairs",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Fass Residue",
+                "count": 5,
+                "chance": 0.075
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.225
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Hydraulic Crosshairs",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Fass Residue",
+                "count": 5,
+                "chance": 0.0375
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Xaku Systems Blueprint",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Laser Sight",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Blood Rush",
+                "count": 1,
+                "chance": 0.0875
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.18
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Hydraulic Crosshairs",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Fass Residue",
+                "count": 5,
+                "chance": 0.03
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Xaku Systems Blueprint",
+                "count": 1,
+                "chance": 0.06
+            },
+            {
+                "name": "Laser Sight",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Blood Rush",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Argon Scope",
+                "count": 1,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Xaku Systems Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Laser Sight",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Blood Rush",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Argon Scope",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierDTableBRewards": [
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.45
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.175
+            },
+            {
+                "name": "Focused Defense",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Vome Residue",
+                "count": 5,
+                "chance": 0.075
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.225
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Focused Defense",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Vome Residue",
+                "count": 5,
+                "chance": 0.0375
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Xaku Systems Blueprint",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Targeting Subsystem",
+                "count": 1,
+                "chance": 0.0875
+            },
+            {
+                "name": "Guided Ordnance",
+                "count": 1,
+                "chance": 0.0875
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.18
+            },
+            {
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Focused Defense",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Vome Residue",
+                "count": 5,
+                "chance": 0.03
+            },
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Xaku Systems Blueprint",
+                "count": 1,
+                "chance": 0.06
+            },
+            {
+                "name": "Targeting Subsystem",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Guided Ordnance",
+                "count": 1,
+                "chance": 0.07
+            },
+            {
+                "name": "Narrow Barrel",
+                "count": 1,
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Neo N12 Relic",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Xaku Systems Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Targeting Subsystem",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Guided Ordnance",
+                "count": 1,
+                "chance": 0.1167
+            },
+            {
+                "name": "Narrow Barrel",
+                "count": 1,
+                "chance": 0.3333
+            }
+        ]
+    ],
+    "EntratiSyndicateBountyTierETableARewards": [
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.4545
+            },
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.4545
+            },
+            {
+                "name": "Kuva",
+                "count": 750,
+                "chance": 0.0909
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.2857
+            },
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.2857
+            },
+            {
+                "name": "Kuva",
+                "count": 750,
+                "chance": 0.0571
+            },
+            {
+                "name": "Axi S7 Relic",
+                "count": 1,
+                "chance": 0.2857
+            },
+            {
+                "name": "Xaku Chassis Blueprint",
+                "count": 1,
+                "chance": 0.0857
+            }
+        ],
+        [
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Kuva",
+                "count": 750,
+                "chance": 0.0444
+            },
+            {
+                "name": "Axi S7 Relic",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Xaku Chassis Blueprint",
+                "count": 1,
+                "chance": 0.0667
+            },
+            {
+                "name": "Quassus Blueprint",
+                "count": 1,
+                "chance": 0.22219999999999998
+            }
+        ],
+        [
+            {
+                "name": "Axi S7 Relic",
+                "count": 1,
+                "chance": 0.43479999999999996
+            },
+            {
+                "name": "Xaku Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1304
+            },
+            {
+                "name": "Quassus Blueprint",
+                "count": 1,
+                "chance": 0.43479999999999996
+            }
+        ]
+    ]
+}

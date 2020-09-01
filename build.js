@@ -15,6 +15,7 @@ const itemNames = 'itemnames.json',
 			{
 				input: [
 					'rewardtables-cetus.json',
+					'rewardtables-deimos.json',
 					'rewardtables-solaris.json',
 					'rewardtables-dynamic.json',
 					'rewardtables-relics.json',
@@ -26,6 +27,7 @@ const itemNames = 'itemnames.json',
 			{
 				input: [
 					'rewardtables-cetus-rotations.json',
+					'rewardtables-deimos-rotations.json',
 					'rewardtables-solaris-rotations.json',
 				],
 				output: 'rewardtables-rotations.json'

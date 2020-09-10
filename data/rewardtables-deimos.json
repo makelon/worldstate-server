@@ -223,74 +223,74 @@
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.45
+                "chance": 0.31579999999999997
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.175
+                "chance": 0.18420000000000003
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.175
+                "chance": 0.18420000000000003
             },
             {
                 "name": "Catalyzer Link",
                 "count": 1,
-                "chance": 0.125
+                "chance": 0.1316
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.18420000000000003
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.225
+                "chance": 0.15380000000000002
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Catalyzer Link",
                 "count": 1,
-                "chance": 0.0625
+                "chance": 0.0641
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.0375
+                "chance": 0.0897
             },
             {
                 "name": "Meso D5 Relic",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.2564
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.07690000000000001
             },
             {
                 "name": "Weeping Wounds",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Embedded Catalyzer",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             }
         ],
         [
@@ -326,74 +326,74 @@
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.45
+                "chance": 0.31579999999999997
             },
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.175
+                "chance": 0.18420000000000003
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.175
+                "chance": 0.18420000000000003
             },
             {
                 "name": "Shrapnel Shot",
                 "count": 1,
-                "chance": 0.125
+                "chance": 0.1316
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.18420000000000003
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.225
+                "chance": 0.15380000000000002
             },
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Shrapnel Shot",
                 "count": 1,
-                "chance": 0.0625
+                "chance": 0.0641
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.0375
+                "chance": 0.0897
             },
             {
                 "name": "Meso D5 Relic",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.2564
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.07690000000000001
             },
             {
                 "name": "Sharpened Bullets",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Bladed Rounds",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             }
         ],
         [
@@ -429,74 +429,74 @@
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.45
+                "chance": 0.31579999999999997
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.175
+                "chance": 0.18420000000000003
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.175
+                "chance": 0.18420000000000003
             },
             {
                 "name": "Body Count",
                 "count": 1,
-                "chance": 0.125
+                "chance": 0.1316
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.18420000000000003
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.225
+                "chance": 0.15380000000000002
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Body Count",
                 "count": 1,
-                "chance": 0.0625
+                "chance": 0.0641
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.0375
+                "chance": 0.0897
             },
             {
                 "name": "Meso D5 Relic",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.2564
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.07690000000000001
             },
             {
                 "name": "Spring-Loaded Chamber",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             },
             {
                 "name": "Repeater Clip",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0897
             }
         ],
         [

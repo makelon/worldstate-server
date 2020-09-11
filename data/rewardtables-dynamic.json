@@ -834,5 +834,184 @@
                 "chance": 0.0101
             }
         ]
+    ],
+    "granumVoid": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 2000,
+                "chance": 0.5
+            },
+            {
+                "name": "Void Traces",
+                "count": 5,
+                "chance": 0.3333
+            },
+            {
+                "name": "Granum Crown Decoration",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.3333
+            },
+            {
+                "name": "Corpus Ship Bridge Scene",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Stropha Barrel",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Stropha Blade",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Stahlta Receiver",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Velox Barrel",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Protea Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ]
+    ],
+    "granumVoidExtended": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.5
+            },
+            {
+                "name": "Void Traces",
+                "count": 10,
+                "chance": 0.3333
+            },
+            {
+                "name": "Exemplar Granum Crown Decoration",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 5000,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.3333
+            },
+            {
+                "name": "Corpus Ship Hangar Scene",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Stropha Receiver",
+                "count": 1,
+                "chance": 0.2963
+            },
+            {
+                "name": "Stahlta Stock",
+                "count": 1,
+                "chance": 0.2963
+            },
+            {
+                "name": "Velox Receiver",
+                "count": 1,
+                "chance": 0.2963
+            },
+            {
+                "name": "Protea Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ]
+    ],
+    "granumVoidNightmare": [
+        [
+            {
+                "name": "Credits Cache",
+                "count": 7500,
+                "chance": 0.5
+            },
+            {
+                "name": "Void Traces",
+                "count": 15,
+                "chance": 0.3333
+            },
+            {
+                "name": "Zenith Granum Crown Decoration",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Credits Cache",
+                "count": 10000,
+                "chance": 0.5
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.3333
+            },
+            {
+                "name": "Corpus Ship Orbital Cannon Scene",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Mortuus Shoulder Guard",
+                "count": 1,
+                "chance": 0.2963
+            },
+            {
+                "name": "Stropha Stock",
+                "count": 1,
+                "chance": 0.2963
+            },
+            {
+                "name": "Stahlta Barrel",
+                "count": 1,
+                "chance": 0.2963
+            },
+            {
+                "name": "Protea Systems Blueprint",
+                "count": 1,
+                "chance": 0.11109999999999999
+            }
+        ]
     ]
 }

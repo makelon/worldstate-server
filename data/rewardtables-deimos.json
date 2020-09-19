@@ -1385,5 +1385,107 @@
                 "chance": 0.43479999999999996
             }
         ]
+    ],
+    "191B.1": [
+        [
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.5
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso N9 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Trapezium Xenorhast",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Cabochon Embolos",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ]
+    ],
+    "191B.2": [
+        [
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.5
+            },
+            {
+                "name": "Neo Z5 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo T2 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Neo T3 Relic",
+                "count": 1,
+                "chance": 0.125
+            }
+        ]
+    ],
+    "191B.3": [
+        [
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.5125
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.1125
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.1125
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.1125
+            }
+        ]
     ]
 }

@@ -109,8 +109,12 @@ function build() {
 		}
 		if (opt.watch) {
 			tscArgs.push('-w')
-			watchData()
-			buildData()
+			buildData().then(() => {
+				watchData()
+				if (!opt.build) {
+					watcher.ee.on('done', postBuild)
+				}
+			})
 		}
 		tsc = cproc.spawn(process.argv0, tscArgs)
 		const reBuildError = /^.+\(\d+,\d+\): error/,
@@ -166,7 +170,7 @@ function build() {
 
 function buildData() {
 	printBuild('Building data files')
-	Promise.all([
+	return Promise.all([
 		...dataFiles.concat.map(x => concatFiles(x)),
 		...dataFiles.copy.map(x => copyFile(x)),
 	]).then(() => {
@@ -195,7 +199,6 @@ function watchData() {
 			fs.watch(path.join(dataDir, file), () => {
 				if (watcher.timer) {
 					clearTimeout(watcher.timer)
-					watcher.timer = 0
 				}
 				watcher.timer = setTimeout(buildData, 200)
 			})

@@ -108,7 +108,7 @@ function build() {
 			tscArgs.push('--sourceMap')
 		}
 		if (opt.watch) {
-			tscArgs.push('-w')
+			tscArgs.push('-w', '--preserveWatchOutput')
 			buildData().then(() => {
 				watchData()
 				if (!opt.build) {
@@ -125,7 +125,7 @@ function build() {
 		tsc.stdout.setEncoding('utf8')
 			.on('data', data => {
 				for (line of data.split('\n')) {
-					if (line.trim() === '' || line == '\x1bc') {
+					if (line.trim() === '') {
 						continue
 					}
 					if (reBuildError.test(line)) {

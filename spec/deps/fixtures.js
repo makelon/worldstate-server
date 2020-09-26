@@ -716,8 +716,12 @@ function *getSentientAnomalies() {
 	yield [mission, expected]
 
 	timeLocalShort += timeStep
-	delete mission.sfn
 	expected.end = timeLocalShort
+	yield [{}, expected]
+
+	timeLocalShort += timeStep
+	expected.start = timeLocalShort
+	delete expected.end
 	yield [mission, expected]
 
 	timeLocalShort += timeStep
@@ -725,27 +729,11 @@ function *getSentientAnomalies() {
 	expected.id = mission.sfn.toString()
 	expected.start = timeLocalShort
 	expected.location = nodesRailjack[1].name
-	delete expected.end
 	yield [mission, expected]
 
 	timeLocalShort += timeStep
-	delete mission.sfn
 	expected.end = timeLocalShort
-	yield [mission, expected]
-
-	timeLocalShort += timeStep
-	mission.sfn = nodesRailjack[1].nodeId
-	expected.start = timeLocalShort
-	expected.id = mission.sfn.toString()
-	delete expected.end
-	yield [mission, expected]
-
-	timeLocalShort += timeStep
-	mission.sfn = nodesRailjack[0].nodeId
-	expected.id = mission.sfn.toString()
-	expected.start = timeLocalShort
-	expected.location = nodesRailjack[0].name
-	yield [mission, expected]
+	yield [{}, expected]
 }
 
 function* getSorties() {

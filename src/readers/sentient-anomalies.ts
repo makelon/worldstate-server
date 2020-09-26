@@ -37,6 +37,11 @@ export default class SentientAnomalyReader implements WfReader {
 					location: h.getLocation(`CrewBattleNode${id}`),
 				}
 			if (!missionDb) {
+				if (this.lastMission) {
+					this.lastMission.end = timestamp
+					this.dbTable.moveTmp(this.lastMission.id)
+					log.debug('Expired and removed sentient anomaly %s for %s', this.lastMission.id, this.platform)
+				}
 				this.dbTable.add(id, missionCurrent, true)
 				this.lastMission = missionCurrent
 				log.debug('Found sentient anomaly %s for %s', id, this.platform)

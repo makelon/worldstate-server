@@ -361,9 +361,6 @@ export default class Worldstate {
 	 * Both the Razorback and Balor Fomorian are found in this section
 	 */
 	private readGoals(): void {
-		if (!this.ws.Goals) {
-			return
-		}
 		log.notice('Reading %s goals', this.platform)
 		let goals = this.ws.Goals
 		if (!Array.isArray(goals)) {

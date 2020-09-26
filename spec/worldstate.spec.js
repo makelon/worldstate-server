@@ -7,6 +7,16 @@ const extraData = require('../out/extradata').default
 describe('Worldstate', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc')
 
+	function runStandardTests(dataKey, timestamp, testCaseGenerator, worldstateReader, dataTransformer) {
+		for (const [data, expected] of testCaseGenerator()) {
+			setWorldstateData(dataTransformer ? dataTransformer(data) : data, timestamp)
+			worldstateReader.call(ws)
+			const result = JSON.parse(ws.get([dataKey]))
+			expect(result[dataKey].data).toEqual(Array.isArray(expected) ? expected : [expected])
+			timestamp += fixtures.timeStep
+		}
+	}
+
 	function setWorldstateData(data, timestamp) {
 		ws.ws = data
 		ws.now = timestamp
@@ -17,64 +27,31 @@ describe('Worldstate', () => {
 	})
 
 	it('should read acolytes', () => {
-		const dataKey = 'acolytes'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getAcolytes()) {
-			setWorldstateData(data, timestamp)
-			ws.readAcolytes()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('acolytes', fixtures.timeNowShort, fixtures.getAcolytes, ws.readAcolytes)
 	})
 
 	it('should read alerts', () => {
-		const dataKey = 'alerts'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getAlerts()) {
-			setWorldstateData(data, timestamp)
-			ws.readAlerts()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('alerts', fixtures.timeNowShort, fixtures.getAlerts, ws.readAlerts)
 	})
 
 	it('should read bounties', () => {
-		const dataKey = 'bounties'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getBounties()) {
-			setWorldstateData(data, timestamp)
-			ws.readGoals()
-			ws.readSyndicateMissions()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests(
+			'bounties',
+			fixtures.timeNowShort,
+			fixtures.getBounties,
+			() => {
+				ws.readGoals()
+				ws.readSyndicateMissions()
+			}
+		)
 	})
 
 	it('should read challenges', () => {
-		const dataKey = 'challenges'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getChallenges()) {
-			setWorldstateData(data, timestamp)
-			ws.readChallenges()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('challenges', fixtures.timeNowShort, fixtures.getChallenges, ws.readChallenges)
 	})
 
 	it('should read daily deals', () => {
-		const dataKey = 'dailydeals'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getDailyDeals()) {
-			setWorldstateData(data, timestamp)
-			ws.readDailyDeals()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('dailydeals', fixtures.timeNowShort, fixtures.getDailyDeals, ws.readDailyDeals)
 	})
 
 	it('should read day cycles', () => {
@@ -96,112 +73,45 @@ describe('Worldstate', () => {
 	})
 
 	it('should read faction projects', () => {
-		const dataKey = 'factionprojects'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getFactionProjects()) {
-			setWorldstateData(data, timestamp)
-			ws.readFactionProjects()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('factionprojects', fixtures.timeNowShort, fixtures.getFactionProjects, ws.readFactionProjects)
 	})
 
 	it('should read fomorians', () => {
-		const dataKey = 'fomorians'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getGoals()) {
-			setWorldstateData(data, timestamp)
-			ws.readGoals()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('fomorians', fixtures.timeNowShort, fixtures.getGoals, ws.readGoals)
 	})
 
 	it('should read invasions', () => {
-		const dataKey = 'invasions'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getInvasions()) {
-			setWorldstateData(data, timestamp)
-			ws.readInvasions()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('invasions', fixtures.timeNowShort, fixtures.getInvasions, ws.readInvasions)
 	})
 
 	it('should read news', () => {
-		const dataKey = 'news'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getNews()) {
-			setWorldstateData(data, timestamp)
-			ws.readNews()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('news', fixtures.timeNowShort, fixtures.getNews, ws.readNews)
 	})
 
 	it('should read sentient anomalies', () => {
-		const dataKey = 'sentient-anomalies'
-		let timestamp = fixtures.timeNowShort
-		for (const [mission, expected] of fixtures.getSentientAnomalies()) {
-			const data = { Tmp: JSON.stringify(mission) }
-			setWorldstateData(data, timestamp)
-			ws.readSentientAnomalies()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests(
+			'sentient-anomalies',
+			fixtures.timeNowShort,
+			fixtures.getSentientAnomalies,
+			ws.readSentientAnomalies,
+			data => ({ Tmp: JSON.stringify(data) })
+		)
 	})
 
 	it('should read sorties', () => {
-		const dataKey = 'sorties'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getSorties()) {
-			setWorldstateData(data, timestamp)
-			ws.readSorties()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('sorties', fixtures.timeNowShort, fixtures.getSorties, ws.readSorties)
 	})
 
 	it('should read upgrades', () => {
-		const dataKey = 'upgrades'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getUpgrades()) {
-			setWorldstateData(data, timestamp)
-			ws.readUpgrades()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('upgrades', fixtures.timeNowShort, fixtures.getUpgrades, ws.readUpgrades)
 	})
 
 	it('should read void fissures', () => {
-		const dataKey = 'fissures'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getVoidFissures()) {
-			setWorldstateData(data, timestamp)
-			ws.readVoidFissures()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('fissures', fixtures.timeNowShort, fixtures.getVoidFissures, ws.readVoidFissures)
 	})
 
 	it('should read void traders', () => {
-		const dataKey = 'voidtraders'
-		let timestamp = fixtures.timeNowShort
-		for (const [data, expected] of fixtures.getVoidTraders()) {
-			setWorldstateData(data, timestamp)
-			ws.readVoidTraders()
-			const result = JSON.parse(ws.get([dataKey]))
-			expect(result[dataKey].data[0]).toEqual(expected)
-			timestamp += fixtures.timeStep
-		}
+		runStandardTests('voidtraders', fixtures.timeNowShort, fixtures.getVoidTraders, ws.readVoidTraders)
 	})
 
 	it('should load extra data', () => {

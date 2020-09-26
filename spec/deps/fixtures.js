@@ -173,6 +173,8 @@ function* getAcolytes() {
 	expected.name = 'Mania'
 	expected.rewards = []
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getAlerts() {
@@ -220,6 +222,8 @@ function* getAlerts() {
 	delete alert.MissionInfo.missionReward.items
 	delete expected.rewards.items
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getBounties() {
@@ -328,6 +332,8 @@ function* getBounties() {
 	expectedGhoul.healthHistory.push([timeLocalShort, bountyGhoul.HealthPct])
 	expectedGhoul.location = nodes[0].name
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getChallenges() {
@@ -374,6 +380,8 @@ function* getChallenges() {
 	expected.challenges[0].description = challenges[1].output.description
 	expected.challenges[0].xpAmount = challenges[1].output.xpAmount
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getDailyDeals() {
@@ -403,6 +411,8 @@ function* getDailyDeals() {
 	deal.StoreItem = items[1].id
 	expected.item = { name: items[1].name, type: items[1].type }
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getDayNight() {
@@ -498,6 +508,8 @@ function* getFactionProjects() {
 	expected.progress = projects[0]
 	expected.progressHistory = [[timeLocalShort, projects[0]]]
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getGoals() {
@@ -554,6 +566,8 @@ function* getGoals() {
 	fomorian.VictimNode = nodes[1].id
 	expected.victimLocation = nodes[1].name
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getInvasions() {
@@ -621,6 +635,8 @@ function* getInvasions() {
 	invasion.AttackerReward = undefined
 	delete expected.rewardsAttacker
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getKuvalog() {
@@ -701,6 +717,8 @@ function* getNews() {
 	article.Messages[0].Message = 'More free tests!'
 	expected.text = article.Messages[0].Message
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function *getSentientAnomalies() {
@@ -761,6 +779,8 @@ function* getSorties() {
 	expected.bossName = 'Jackal'
 	expected.faction = factions[1].name
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getUpgrades() {
@@ -786,6 +806,8 @@ function* getUpgrades() {
 	upgrade.Activation.sec = timeStartShort - 1000
 	expected.start = upgrade.Activation.sec
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getVoidFissures() {
@@ -811,6 +833,8 @@ function* getVoidFissures() {
 	fissure.Expiry.$date.$numberLong += 500000
 	expected.end += 500
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 function* getVoidTraders() {
@@ -846,6 +870,8 @@ function* getVoidTraders() {
 	expected.active = false
 	delete expected.items
 	yield [data, expected]
+
+	yield [{}, []]
 }
 
 module.exports = {

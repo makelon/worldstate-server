@@ -1,5 +1,6 @@
-import fs = require('fs')
-import log = require('./log')
+import { readFileSync } from 'fs'
+
+import * as log from './log'
 
 const defaults = {
 	logLevel: 'info', // debug, notice, info, warning, error
@@ -75,7 +76,7 @@ class WfConfig {
 	load(configPath: string): void {
 		let overrides: any = {}
 		try {
-			overrides = JSON.parse(fs.readFileSync(configPath, 'utf8'))
+			overrides = JSON.parse(readFileSync(configPath, 'utf8'))
 		}
 		catch (err) {
 			if (err.code == 'ENOENT') {
@@ -119,7 +120,7 @@ class WfConfig {
 		if ('tlsCa' in overrides) {
 			for (const ca of overrides.tlsCa) {
 				try {
-					this.tlsCa += fs.readFileSync(ca, 'ascii')
+					this.tlsCa += readFileSync(ca, 'ascii')
 				}
 				catch (err) {
 					log.warning('Failed to open certificate database: ' + err.message)

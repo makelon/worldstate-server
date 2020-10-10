@@ -1,9 +1,9 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import items = require('../items')
-import log = require('../log')
-import history = require('../history')
+import { getRewardDifference, getValueDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getDate, getFaction, getId, getLocation } from '../helpers'
+import { update } from '../history'
+import { getRewards } from '../items'
+import * as log from '../log'
 
 export default class InvasionReader implements WfReader {
 	private dbTable!: WfDbTable<WfInvasion>
@@ -25,36 +25,36 @@ export default class InvasionReader implements WfReader {
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const invasion of invasions) {
-			const id = h.getId(invasion),
-				start = h.getDate(invasion.Activation),
+			const id = getId(invasion),
+				start = getDate(invasion.Activation),
 				score = Number(invasion.Count)
 			if (!id || !start) {
 				continue
 			}
 			let invasionDb = this.dbTable.get(id)
-			const location = h.getLocation(invasion.Node),
+			const location = getLocation(invasion.Node),
 				endScore = Number(invasion.Goal),
 				// Reversed because xMissionInfo.faction is the mission's opposing faction
-				factionAttacker = h.getFaction(invasion.DefenderMissionInfo.faction),
-				factionDefender = h.getFaction(invasion.AttackerMissionInfo.faction),
+				factionAttacker = getFaction(invasion.DefenderMissionInfo.faction),
+				factionDefender = getFaction(invasion.AttackerMissionInfo.faction),
 				invasionCurrent: WfInvasion = {
 					id: id,
 					start: start,
 					endScore: endScore,
-					location: h.getLocation(invasion.Node),
+					location: getLocation(invasion.Node),
 					score: 0,
 					scoreHistory: [[start, 0]],
 					factionAttacker: factionAttacker,
 					factionDefender: factionDefender
 				}
 			if (invasion.AttackerReward) {
-				const rewards = items.getRewards(invasion.AttackerReward, this._entityRewards)
+				const rewards = getRewards(invasion.AttackerReward, this._entityRewards)
 				if (rewards) {
 					invasionCurrent.rewardsAttacker = rewards
 				}
 			}
 			if (invasion.DefenderReward) {
-				const rewards = items.getRewards(invasion.DefenderReward, this._entityRewards)
+				const rewards = getRewards(invasion.DefenderReward, this._entityRewards)
 				if (rewards) {
 					invasionCurrent.rewardsDefender = rewards
 				}
@@ -62,7 +62,7 @@ export default class InvasionReader implements WfReader {
 			if (invasionDb) {
 				const diff = this.getDifference(invasionDb, invasionCurrent)
 				if (Object.keys(diff).length) {
-					compare.patch(invasionDb, diff)
+					patch(invasionDb, diff)
 					this.dbTable.updateTmp(id, diff)
 					log.debug('Updating invasion %s for %s', id, this.platform)
 				}
@@ -99,7 +99,7 @@ export default class InvasionReader implements WfReader {
 					scoreHistory.push(lastHist)
 					updateDb = true
 				}
-				history.update(score, scoreHistory, timestamp)
+				update(score, scoreHistory, timestamp)
 				if (
 					Math.abs(score - scoreHistory[scoreHistory.length - 2][1]) / invasionDb.endScore >= 0.01
 					|| Math.abs(score) >= invasionDb.endScore
@@ -124,13 +124,13 @@ export default class InvasionReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfInvasion, second: WfInvasion): Partial<WfInvasion> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 				first,
 				second,
 				['start', 'endScore', 'location', 'factionAttacker', 'factionDefender']
 			),
-			rewardDiffAttacker = compare.getRewardDifference(first.rewardsAttacker, second.rewardsAttacker),
-			rewardDiffDefender = compare.getRewardDifference(first.rewardsDefender, second.rewardsDefender)
+			rewardDiffAttacker = getRewardDifference(first.rewardsAttacker, second.rewardsAttacker),
+			rewardDiffDefender = getRewardDifference(first.rewardsDefender, second.rewardsDefender)
 		if (rewardDiffAttacker !== null) {
 			diff.rewardsAttacker = rewardDiffAttacker
 		}

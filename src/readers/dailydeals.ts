@@ -1,8 +1,8 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import items = require('../items')
-import log = require('../log')
+import { getValueDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getDate } from '../helpers'
+import { getItem } from '../items'
+import * as log from '../log'
 
 export default class DailyDealReader implements WfReader {
 	private dbTable!: WfDbTable<WfDailyDeal>
@@ -24,8 +24,8 @@ export default class DailyDealReader implements WfReader {
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const dealInput of dealsInput) {
-			const start = h.getDate(dealInput.Activation),
-				end = h.getDate(dealInput.Expiry),
+			const start = getDate(dealInput.Activation),
+				end = getDate(dealInput.Expiry),
 				id = start.toString(),
 				sold = Number(dealInput.AmountSold)
 			if (end >= timestamp) {
@@ -34,7 +34,7 @@ export default class DailyDealReader implements WfReader {
 					id: id,
 					start: start,
 					end: end,
-					item: items.getItem(dealInput.StoreItem, this._entityRewards),
+					item: getItem(dealInput.StoreItem, this._entityRewards),
 					price: dealInput.SalePrice,
 					originalPrice: dealInput.OriginalPrice,
 					stock: dealInput.AmountTotal,
@@ -43,7 +43,7 @@ export default class DailyDealReader implements WfReader {
 				if (dealDb) {
 					const diff = this.getDifference(dealDb, dealCurrent)
 					if (Object.keys(diff).length) {
-						compare.patch(dealDb, diff)
+						patch(dealDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating daily deal %s for %s', id, this.platform)
 					}
@@ -69,7 +69,7 @@ export default class DailyDealReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfDailyDeal, second: WfDailyDeal): Partial<WfDailyDeal> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 			first,
 			second,
 			['start', 'end', 'price', 'originalPrice', 'stock']

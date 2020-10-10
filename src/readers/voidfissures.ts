@@ -1,6 +1,6 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import log = require('../log')
+import { getValueDifference, patch } from '../compare'
+import { getDate, getId, getLocation, getNodeFaction, getNodeMissionType, getVoidTier } from '../helpers'
+import * as log from '../log'
 
 export default class VoidFissureReader implements WfReader {
 	private dbTable!: WfDbTable<WfVoidFissure>
@@ -20,8 +20,8 @@ export default class VoidFissureReader implements WfReader {
 		log.notice('Reading %s void fissures', this.platform)
 		const oldIds = this.dbTable.getIdMap()
 		for (const fissureInput of fissuresInput) {
-			const id = h.getId(fissureInput),
-				end = h.getDate(fissureInput.Expiry)
+			const id = getId(fissureInput),
+				end = getDate(fissureInput.Expiry)
 			if (!id) {
 				continue
 			}
@@ -29,17 +29,17 @@ export default class VoidFissureReader implements WfReader {
 				const fissureDb = this.dbTable.get(id),
 					fissureProcessed: WfVoidFissure = {
 						id: id,
-						start: h.getDate(fissureInput.Activation),
+						start: getDate(fissureInput.Activation),
 						end: end,
-						location: h.getLocation(fissureInput.Node),
-						faction: h.getNodeFaction(fissureInput.Node),
-						missionType: h.getNodeMissionType(fissureInput.Node),
-						tier: h.getVoidTier(fissureInput.Modifier)
+						location: getLocation(fissureInput.Node),
+						faction: getNodeFaction(fissureInput.Node),
+						missionType: getNodeMissionType(fissureInput.Node),
+						tier: getVoidTier(fissureInput.Modifier)
 					}
 				if (fissureDb) {
 					const diff = this.getDifference(fissureDb, fissureProcessed)
 					if (Object.keys(diff).length) {
-						compare.patch(fissureDb, diff)
+						patch(fissureDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating void fissure %s for %s', id, this.platform)
 					}
@@ -57,7 +57,7 @@ export default class VoidFissureReader implements WfReader {
 	get entityRewards() { return {} }
 
 	private getDifference(first: WfVoidFissure, second: WfVoidFissure): Partial<WfVoidFissure> {
-		return compare.getValueDifference(
+		return getValueDifference(
 			first,
 			second,
 			['start', 'end', 'location', 'faction', 'missionType', 'tier']

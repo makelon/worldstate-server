@@ -1,6 +1,7 @@
-import fs = require('fs')
-import path = require('path')
-import log = require('./log')
+import { createWriteStream, mkdir, rename, unlink } from 'fs'
+import { dirname, join as joinPath, parse as parsePath, sep as pathSeparator } from 'path'
+
+import * as log from './log'
 
 /**
  * fs.write Promise wrapper. Creates directory tree if necessary
@@ -10,16 +11,16 @@ import log = require('./log')
  * @param flags File mode - 'a': append, 'w': write
  * @param tryMkdir Whether to try to create missing folders. Used for preventing infinite recursion
  */
-function fsWrite(file: string, data: string | Buffer, flags: string = 'w', tryMkdir: boolean = true): Promise<number> {
+function promiseWrite(file: string, data: string | Buffer, flags: string = 'w', tryMkdir: boolean = true): Promise<number> {
 	return new Promise<number>((resolve, reject) => {
-		const ws = fs.createWriteStream(file, { flags: flags })
+		const ws = createWriteStream(file, { flags: flags })
 		ws.on('error', err => {
 			if (!tryMkdir || err.code != 'ENOENT') {
 				reject(err)
 				return
 			}
-			mkdir(path.dirname(file))
-				.then(() => fsWrite(file, data, flags, false))
+			createDirectory(dirname(file))
+				.then(() => promiseWrite(file, data, flags, false))
 				.then(resolve)
 		})
 		ws.end(data, () => { resolve(ws.bytesWritten) })
@@ -31,9 +32,9 @@ function fsWrite(file: string, data: string | Buffer, flags: string = 'w', tryMk
  *
  * @param dir Path to directory to create
  */
-function fsMkdir(dir: string): Promise<void> {
+function promiseMkdir(dir: string): Promise<void> {
 	return new Promise<void>((resolve, reject) => {
-		fs.mkdir(dir, err => {
+		mkdir(dir, err => {
 			if (err && err.code != 'EEXIST') {
 				log.error('mkdir: Failed to create folder "%s"', dir)
 				reject(err)
@@ -56,19 +57,19 @@ const mkdirCache: { [dir: string]: Promise<void> } = {}
  *
  * @param dir Path to directory to create
  */
-export function mkdir(dir: string): Promise<void> {
-	const pathInfo = path.parse(dir)
+export function createDirectory(dir: string): Promise<void> {
+	const pathInfo = parsePath(dir)
 	if (pathInfo.dir === pathInfo.root) {
 		log.error('mkdir: Cannot create root folder "%s"', dir)
 	}
-	dir = path.join(pathInfo.dir, pathInfo.base)
+	dir = joinPath(pathInfo.dir, pathInfo.base)
 	if (mkdirCache[dir]) {
 		log.debug('mkdir: Returning cached promise for "%s"', dir)
 		return mkdirCache[dir]
 	}
-	const createThen = (dirInner: string) => () => fsMkdir(dirInner),
-		dirs = dir.substr(pathInfo.root.length).split(path.sep)
-	let curPath = pathInfo.root || `.${path.sep}`,
+	const createThen = (dirInner: string) => () => promiseMkdir(dirInner),
+		dirs = dir.substr(pathInfo.root.length).split(pathSeparator)
+	let curPath = pathInfo.root || `.${pathSeparator}`,
 		promise = Promise.resolve()
 	for (const subDir of dirs) {
 		curPath += subDir
@@ -81,7 +82,7 @@ export function mkdir(dir: string): Promise<void> {
 			promise = promise.then(createThen(curPath))
 			mkdirCache[curPath] = promise
 		}
-		curPath += path.sep
+		curPath += pathSeparator
 	}
 	return promise
 }
@@ -93,7 +94,7 @@ export function mkdir(dir: string): Promise<void> {
  * @param data Data to write
  */
 export function writeFile(file: string, data: string | Buffer): Promise<number> {
-	return fsWrite(file, data, 'w')
+	return promiseWrite(file, data, 'w')
 }
 
 /**
@@ -103,7 +104,7 @@ export function writeFile(file: string, data: string | Buffer): Promise<number> 
  * @param data Data to write
  */
 export function appendFile(file: string, data: string | Buffer): Promise<number> {
-	return fsWrite(file, data, 'a')
+	return promiseWrite(file, data, 'a')
 }
 
 /**
@@ -114,7 +115,7 @@ export function appendFile(file: string, data: string | Buffer): Promise<number>
  */
 export function renameFile(from: string, to: string): Promise<void> {
 	return new Promise((resolve, reject) => {
-		fs.rename(from, to, err => {
+		rename(from, to, err => {
 			if (err) {
 				reject(err)
 				return
@@ -131,7 +132,7 @@ export function renameFile(from: string, to: string): Promise<void> {
  */
 export function removeFile(file: string): Promise<void> {
 	return new Promise((resolve, reject) => {
-		fs.unlink(file, err => {
+		unlink(file, err => {
 			if (err && err.code != 'ENOENT') {
 				reject(err)
 				return

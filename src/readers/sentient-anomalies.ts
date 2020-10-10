@@ -1,5 +1,5 @@
-import h = require('../helpers')
-import log = require('../log')
+import { getLocation } from '../helpers'
+import * as log from '../log'
 
 export default class SentientAnomalyReader implements WfReader {
 	private dbTable!: WfDbTable<WfSentientAnomaly>
@@ -34,7 +34,7 @@ export default class SentientAnomalyReader implements WfReader {
 				missionCurrent: WfSentientAnomaly = {
 					id: id,
 					start: timestamp,
-					location: h.getLocation(`CrewBattleNode${id}`),
+					location: getLocation(`CrewBattleNode${id}`),
 				}
 			if (!missionDb) {
 				if (this.lastMission) {

@@ -1,7 +1,8 @@
-import fs = require('fs')
-import log = require('../log')
+import { readFileSync } from 'fs'
+
+import { getValueDifference } from '../compare'
 import config from '../config'
-import compare = require('../compare')
+import * as log from '../log'
 
 export default class DayNightReader implements WfReader {
 	private dbTable!: WfDbTable<WfDayNight>
@@ -15,7 +16,7 @@ export default class DayNightReader implements WfReader {
 		let dayNightInput: any
 		if (config.dayNightPath) {
 			try {
-				dayNightInput = JSON.parse(fs.readFileSync(config.dayNightPath, 'utf8'))
+				dayNightInput = JSON.parse(readFileSync(config.dayNightPath, 'utf8'))
 			}
 			catch (err) {
 				if (err.code == 'ENOENT') {
@@ -68,7 +69,7 @@ export default class DayNightReader implements WfReader {
 	get entityRewards() { return {} }
 
 	private getDifference(first: WfDayNight, second: WfDayNight): Partial<WfDayNight> {
-		return compare.getValueDifference(
+		return getValueDifference(
 			first,
 			second,
 			['start', 'length', 'dayStart', 'dayEnd']

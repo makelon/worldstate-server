@@ -1,6 +1,7 @@
-import fs = require('fs')
-import log = require('./log')
+import { readFileSync } from 'fs'
+
 import config from './config'
+import * as log from './log'
 
 class ExtraData {
 	private data: any = {}
@@ -12,7 +13,7 @@ class ExtraData {
 	 */
 	load(dataPath: string): void {
 		try {
-			this.data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+			this.data = JSON.parse(readFileSync(dataPath, 'utf8'))
 		}
 		catch (err) {
 			if (err.code !== 'ENOENT') {

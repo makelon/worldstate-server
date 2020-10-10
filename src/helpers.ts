@@ -1,4 +1,4 @@
-import tags = require('./tags')
+import * as tags from './tags'
 
 /**
  * Convert number to a string with leading zeros. Helper function for date/time formatting

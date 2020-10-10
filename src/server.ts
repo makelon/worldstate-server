@@ -1,14 +1,14 @@
-import fs = require('fs')
-import http = require('http')
-import net = require('net')
-import os = require('os')
+import { chmodSync } from 'fs'
+import { createServer, IncomingMessage, Server as HttpServer, ServerResponse } from 'http'
+import { isIP, isIPv6 } from 'net'
+import { platform } from 'os'
 
 import config from './config'
-import log = require('./log')
+import * as log from './log'
 import Worldstate from './worldstate'
 
 export default class Server {
-	private httpServer: http.Server
+	private httpServer: HttpServer
 	private running = false
 
 	/**
@@ -17,7 +17,7 @@ export default class Server {
 	 * @param instances Worldstate instances to keep track of and update
 	 */
 	constructor(private instances: {[platform: string]: Worldstate}) {
-		this.httpServer = http.createServer()
+		this.httpServer = createServer()
 			.on('request', (req, res) => { this.handleRequest(req, res) })
 			.on('error', err => {
 				if (this.httpServer.listening) {
@@ -110,11 +110,11 @@ export default class Server {
 				if (address[0] == '[' && address[address.length - 1] == ']' ) {
 					address6 = address.slice(1, -1)
 				}
-				if (address6 && net.isIPv6(address6)) {
+				if (address6 && isIPv6(address6)) {
 					listenOpts.host = address6
 					listenOpts.port = port
 				}
-				else if (net.isIP(address)) {
+				else if (isIP(address)) {
 					listenOpts.host = address
 					listenOpts.port = port
 				}
@@ -139,8 +139,8 @@ export default class Server {
 					process.exit(1)
 				}
 				else if (typeof address == 'string') {
-					if (os.platform() != 'win32') {
-						fs.chmodSync(address, 0o660)
+					if (platform() != 'win32') {
+						chmodSync(address, 0o660)
 					}
 					listenStr = address
 				}
@@ -165,7 +165,7 @@ export default class Server {
 	 * @param req
 	 * @param res
 	 */
-	private handleRequest(req: http.IncomingMessage, res: http.ServerResponse) {
+	private handleRequest(req: IncomingMessage, res: ServerResponse) {
 		const reqUrl = req.url || '/'
 		log.notice('Got request: %s', reqUrl)
 		req.on('error', err => { log.info('HTTP request error: %s', err.message) })

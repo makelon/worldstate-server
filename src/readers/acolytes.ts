@@ -1,9 +1,9 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import log = require('../log')
-import items = require('../items')
-import history = require('../history')
+import { patch, getValueDifference, getRandomRewardDifference } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getAcolyteName, getId, getLocation } from '../helpers'
+import { checkpoint, end, update } from '../history'
+import { getRandomRewards } from '../items'
+import * as log from '../log'
 
 export default class AcolyteReader implements WfReader {
 	private dbTable!: WfDbTable<WfAcolyte>
@@ -25,15 +25,15 @@ export default class AcolyteReader implements WfReader {
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const acolyteInput of acolytesInput) {
-			const id = h.getId(acolyteInput)
+			const id = getId(acolyteInput)
 			if (!id) {
 				continue
 			}
-			const name = h.getAcolyteName(acolyteInput.LocTag),
+			const name = getAcolyteName(acolyteInput.LocTag),
 				health = Number(acolyteInput.HealthPercent),
 				discovered = acolyteInput.Discovered == true,
-				location = h.getLocation(acolyteInput.LastDiscoveredLocation),
-				rewards = items.getRandomRewards(name, this._entityRewards),
+				location = getLocation(acolyteInput.LastDiscoveredLocation),
+				rewards = getRandomRewards(name, this._entityRewards),
 				acolyteCurrent: WfAcolyte = {
 					id: id,
 					name: name,
@@ -49,7 +49,7 @@ export default class AcolyteReader implements WfReader {
 			if (acolyteDb) {
 				const diff = this.getDifference(acolyteDb, acolyteCurrent)
 				if (Object.keys(diff).length) {
-					compare.patch(acolyteDb, diff)
+					patch(acolyteDb, diff)
 					this.dbTable.updateTmp(id, diff)
 					log.debug('Updating acolyte %s for %s', id, this.platform)
 				}
@@ -70,8 +70,8 @@ export default class AcolyteReader implements WfReader {
 			}
 			if (acolyteDb.health != health) {
 				const healthHistory = acolyteDb.healthHistory
-				history.update(health, healthHistory, timestamp)
-				if (history.checkpoint(health, healthHistory, timestamp, 0.01)) {
+				update(health, healthHistory, timestamp)
+				if (checkpoint(health, healthHistory, timestamp, 0.01)) {
 					this.dbTable.updateTmp(id, {
 						health: health,
 						healthHistory: healthHistory
@@ -88,12 +88,12 @@ export default class AcolyteReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfAcolyte, second: WfAcolyte): Partial<WfAcolyte> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 				first,
 				second,
 				['name', 'location']
 			),
-			rewardDiff = compare.getRandomRewardDifference(first.rewards, second.rewards)
+			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {
 			diff.rewards = rewardDiff
 		}
@@ -104,7 +104,7 @@ export default class AcolyteReader implements WfReader {
 		for (const id in oldIds) {
 			const acolyteDb = this.dbTable!.get(id)
 			if (acolyteDb) {
-				history.end(acolyteDb.healthHistory, timestamp)
+				end(acolyteDb.healthHistory, timestamp)
 				acolyteDb.health = 0
 				this.dbTable!.moveTmp(id)
 			}

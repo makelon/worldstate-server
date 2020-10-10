@@ -1,7 +1,8 @@
-import http = require('http')
-import https = require('https')
-import zlib = require('zlib')
-import nodeUrl = require('url')
+import { ClientRequest, IncomingMessage, request as httpRequest } from 'http'
+import { RequestOptions, request as httpsRequest } from 'https'
+import { parse as parseUrl } from 'url'
+import { createGunzip, createInflate } from 'zlib'
+
 import config from './config'
 
 /**
@@ -11,9 +12,9 @@ import config from './config'
  * @param method
  * @returns Request options object
  */
-export function prepareRequest(url: string, method: string = 'GET'): https.RequestOptions {
-	const urlParsed = nodeUrl.parse(url),
-		requestOptions: https.RequestOptions = {
+export function prepareRequest(url: string, method: string = 'GET'): RequestOptions {
+	const urlParsed = parseUrl(url),
+		requestOptions: RequestOptions = {
 			protocol: urlParsed.protocol,
 			hostname: urlParsed.hostname,
 			port: urlParsed.port,
@@ -43,25 +44,25 @@ export function prepareRequest(url: string, method: string = 'GET'): https.Reque
  * @param requestOptions
  * @returns HTTP request object
  */
-export function sendRequest(requestOptions: https.RequestOptions): http.ClientRequest {
+export function sendRequest(requestOptions: RequestOptions): ClientRequest {
 	const req = requestOptions.protocol == 'https:'
-		? https.request(requestOptions)
-		: http.request(requestOptions)
+		? httpsRequest(requestOptions)
+		: httpRequest(requestOptions)
 	req.setTimeout(config.requestTimeout)
 		.once('timeout', () => { req.abort() })
 		.end()
 	return req
 }
 
-export function getResponseData(res: http.IncomingMessage): Promise<string> {
+export function getResponseData(res: IncomingMessage): Promise<string> {
 	let decomp,
 		resData = ''
 	switch (res.headers['content-encoding']) {
 		case 'gzip':
-			decomp = zlib.createGunzip()
+			decomp = createGunzip()
 			break
 		case 'deflate':
-			decomp = zlib.createInflate()
+			decomp = createInflate()
 			break
 	}
 	const resStream = decomp ? res.pipe(decomp) : res

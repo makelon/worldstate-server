@@ -1,17 +1,18 @@
-import http = require('http')
-import https = require('https')
-import EventEmitter = require('events')
-import log = require('./log')
-import h = require('./helpers')
+import { EventEmitter } from 'events'
+import { IncomingMessage } from 'http'
+import { RequestOptions } from 'https'
+
 import config from './config'
-import httpHelper = require('./httphelper')
+import { getCurrentTime, strToTime } from './helpers'
+import { getResponseData, prepareRequest, sendRequest } from './httphelper'
+import * as log from './log'
 
 function looksLikeKuvalog(kuvalog: any) {
 	return Array.isArray(kuvalog) && kuvalog[0] && kuvalog[0].hasOwnProperty('missiontype')
 }
 
 export default class Kuvalog {
-	private requestOptions: https.RequestOptions | null = null
+	private requestOptions: RequestOptions | null = null
 	private requestTimerId?: NodeJS.Timer
 	private _arbitrations: any[] = []
 	private _kuvamissions: any[] = []
@@ -56,7 +57,7 @@ export default class Kuvalog {
 		try {
 			const url = config.kuvalogUrls[this.platform]
 			this.requestOptions = url
-				? httpHelper.prepareRequest(url)
+				? prepareRequest(url)
 				: null
 		}
 		catch(err) {
@@ -100,7 +101,7 @@ export default class Kuvalog {
 		}
 		log.notice('Requesting %s//%s%s', this.requestOptions.protocol, this.requestOptions.hostname, this.requestOptions.path)
 
-		const req = httpHelper.sendRequest(this.requestOptions)
+		const req = sendRequest(this.requestOptions)
 		req.setTimeout(config.requestTimeout)
 			.once('response', res => { this.handleKuvalogResponse(res) })
 			.once('error', err => { this.retryRequestKuvalog(0, err.message) })
@@ -125,8 +126,8 @@ export default class Kuvalog {
 	 * Read kuvalog dump and schedule next request
 	 * Start the parsing process if the dump passes validity tests
 	 */
-	private handleKuvalogResponse(res: http.IncomingMessage): void {
-		httpHelper.getResponseData(res)
+	private handleKuvalogResponse(res: IncomingMessage): void {
+		getResponseData(res)
 			.then(resData => {
 				let resParsed: any
 				try {
@@ -143,13 +144,13 @@ export default class Kuvalog {
 					lastKuvaSiphonStart = 0
 				for (const mission of resParsed) {
 					if (mission.missiontype === 'EliteAlertMission') {
-						lastArbitrationStart = Math.max(lastArbitrationStart, h.strToTime(mission.start))
+						lastArbitrationStart = Math.max(lastArbitrationStart, strToTime(mission.start))
 					}
 					else if (mission.missiontype.startsWith('KuvaMission')) {
-						lastKuvaSiphonStart = Math.max(lastKuvaSiphonStart, h.strToTime(mission.start))
+						lastKuvaSiphonStart = Math.max(lastKuvaSiphonStart, strToTime(mission.start))
 					}
 				}
-				const responseAge = h.getCurrentTime() - Math.min(lastArbitrationStart, lastKuvaSiphonStart)
+				const responseAge = getCurrentTime() - Math.min(lastArbitrationStart, lastKuvaSiphonStart)
 				this.scheduleKuvalogRequest(responseAge >= 3600 ? 60000 : 1000 * (3700 - responseAge))
 				this.retryTimeout = Math.max(config.minRetryTimeout, this.retryTimeout - 1500)
 				this.readKuvalog(resParsed)
@@ -162,7 +163,7 @@ export default class Kuvalog {
 	private readKuvalog(input: any[]): void {
 		this._arbitrations = []
 		this._kuvamissions = []
-		this.lastUpdate = h.getCurrentTime()
+		this.lastUpdate = getCurrentTime()
 		for (const mission of input) {
 			if (mission.missiontype === 'EliteAlertMission') {
 				this._arbitrations.push(mission)

@@ -1,4 +1,4 @@
-import fs = require('fs')
+import { readFileSync } from 'fs'
 
 export let
 	locations: WfMap,
@@ -148,12 +148,12 @@ export const
  */
 export function load(_starchart: string, _challenges: string): void {
 	try {
-		let tmp = JSON.parse(fs.readFileSync(_starchart, 'utf8'))
+		let tmp = JSON.parse(readFileSync(_starchart, 'utf8'))
 		locations = tmp.locations
 		nodeMissionTypes = tmp.missionTypes
 		nodeFactions = tmp.factions
 
-		challenges = JSON.parse(fs.readFileSync(_challenges, 'utf8'))
+		challenges = JSON.parse(readFileSync(_challenges, 'utf8'))
 	}
 	catch(err) {
 		throw Error(`Failed to initialize tags: '${err.message}'`)

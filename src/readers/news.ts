@@ -1,6 +1,6 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import log = require('../log')
+import { getValueDifference, patch } from '../compare'
+import { getDate, getId } from '../helpers'
+import * as log from '../log'
 
 export default class NewsReader implements WfReader {
 	private dbTable!: WfDbTable<WfNews>
@@ -20,8 +20,8 @@ export default class NewsReader implements WfReader {
 		log.notice('Reading %s news', this.platform)
 		const oldIds = this.dbTable.getIdMap()
 		for (const articleInput of articlesInput) {
-			const id = h.getId(articleInput),
-				start = h.getDate(articleInput.Date)
+			const id = getId(articleInput),
+				start = getDate(articleInput.Date)
 			let text: string = ''
 			for (const message of articleInput.Messages) {
 				if (message.LanguageCode == 'en') {
@@ -37,10 +37,10 @@ export default class NewsReader implements WfReader {
 					link: articleInput.Prop,
 				}
 			if (articleInput.EventStartDate) {
-				articleCurrent.eventStart = h.getDate(articleInput.EventStartDate)
+				articleCurrent.eventStart = getDate(articleInput.EventStartDate)
 			}
 			if (articleInput.EventEndDate) {
-				articleCurrent.eventEnd = h.getDate(articleInput.EventEndDate)
+				articleCurrent.eventEnd = getDate(articleInput.EventEndDate)
 			}
 			if (articleInput.EventLiveUrl) {
 				articleCurrent.eventUrl = articleInput.EventLiveUrl
@@ -48,7 +48,7 @@ export default class NewsReader implements WfReader {
 			if (articleDb) {
 				const diff = this.getDifference(articleDb, articleCurrent)
 				if (Object.keys(diff).length) {
-					compare.patch(articleDb, diff)
+					patch(articleDb, diff)
 					this.dbTable.updateTmp(id, diff)
 					log.debug('Updating news article %s for %s', id, this.platform)
 				}
@@ -65,7 +65,7 @@ export default class NewsReader implements WfReader {
 	get entityRewards() { return {} }
 
 	private getDifference(first: WfNews, second: WfNews): Partial<WfNews> {
-		return compare.getValueDifference(
+		return getValueDifference(
 			first,
 			second,
 			['start', 'text', 'link', 'eventStart', 'eventEnd', 'eventUrl']

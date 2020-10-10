@@ -1,8 +1,8 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import items = require('../items')
-import log = require('../log')
+import { getRandomRewardDifference, getValueDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getLocation, getNodeFaction, getNodeMissionType, strToTime } from '../helpers'
+import { getRandomRewards } from '../items'
+import * as log from '../log'
 
 const missionPrefixLength = 'KuvaMission'.length
 
@@ -28,8 +28,8 @@ export default class KuvaSiphonReader implements WfReader {
 		const oldIds = this.dbTable.getIdMap()
 		let missionIdx = 0
 		for (const kuvamissionInput of kuvamissionsInput) {
-			const start = h.strToTime(kuvamissionInput.start),
-				end = h.strToTime(kuvamissionInput.end)
+			const start = strToTime(kuvamissionInput.start),
+				end = strToTime(kuvamissionInput.end)
 			if (!start) {
 				continue
 			}
@@ -43,16 +43,16 @@ export default class KuvaSiphonReader implements WfReader {
 						id: id,
 						start: start,
 						end: Math.min(end, start + 3600),
-						location: h.getLocation(kuvamissionInput.solnode),
-						faction: h.getNodeFaction(kuvamissionInput.solnode),
-						missionType: h.getNodeMissionType(kuvamissionInput.solnode),
+						location: getLocation(kuvamissionInput.solnode),
+						faction: getNodeFaction(kuvamissionInput.solnode),
+						missionType: getNodeMissionType(kuvamissionInput.solnode),
 						flood: isKuvaFlood,
-						rewards: items.getRandomRewards(rewardTableId, this._entityRewards),
+						rewards: getRandomRewards(rewardTableId, this._entityRewards),
 					}
 				if (kuvamissionDb) {
 					const diff = this.getDifference(kuvamissionDb, kuvamissionCurrent)
 					if (Object.keys(diff).length) {
-						compare.patch(kuvamissionDb, diff)
+						patch(kuvamissionDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating kuva siphon %s for %s', id, this.platform)
 					}
@@ -71,12 +71,12 @@ export default class KuvaSiphonReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfKuvaSiphon, second: WfKuvaSiphon): Partial<WfKuvaSiphon> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 				first,
 				second,
 				['start', 'end', 'location', 'faction', 'missionType', 'flood']
 			),
-			rewardDiff = compare.getRandomRewardDifference(first.rewards, second.rewards)
+			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {
 			diff.rewards = rewardDiff
 		}

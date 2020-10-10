@@ -1,8 +1,8 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import items = require('../items')
-import log = require('../log')
+import { getValueDifference, getVoidTraderItemDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getDate, getId, getLocation, getVoidTraderName } from '../helpers'
+import { getItem } from '../items'
+import * as log from '../log'
 
 export default class VoidTraderReader implements WfReader {
 	private dbTable!: WfDbTable<WfVoidTrader>
@@ -24,12 +24,12 @@ export default class VoidTraderReader implements WfReader {
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const voidTraderInput of voidTradersInput) {
-			let id = h.getId(voidTraderInput)
+			let id = getId(voidTraderInput)
 			if (!id) {
 				continue
 			}
-			const start = h.getDate(voidTraderInput.Activation),
-				end = h.getDate(voidTraderInput.Expiry)
+			const start = getDate(voidTraderInput.Activation),
+				end = getDate(voidTraderInput.Expiry)
 			id += start.toString()
 			if (end >= timestamp) {
 				const voidTraderDb = this.dbTable.get(id),
@@ -37,8 +37,8 @@ export default class VoidTraderReader implements WfReader {
 						id: id,
 						start: start,
 						end: end,
-						name: h.getVoidTraderName(voidTraderInput.Character),
-						location: h.getLocation(voidTraderInput.Node),
+						name: getVoidTraderName(voidTraderInput.Character),
+						location: getLocation(voidTraderInput.Node),
 						active: false
 					}
 				if (start <= timestamp) {
@@ -47,7 +47,7 @@ export default class VoidTraderReader implements WfReader {
 					voidTraderCurrent.items = voidTraderItems
 					voidTraderCurrent.active = true
 					for (const itemInput of itemsInput) {
-						const item = items.getItem(itemInput.ItemType, this._entityRewards)
+						const item = getItem(itemInput.ItemType, this._entityRewards)
 						voidTraderItems.push({
 							name: item.name,
 							type: item.type,
@@ -59,7 +59,7 @@ export default class VoidTraderReader implements WfReader {
 				if (voidTraderDb) {
 					const diff = this.getDifference(voidTraderDb, voidTraderCurrent)
 					if (Object.keys(diff).length) {
-						compare.patch(voidTraderDb, diff)
+						patch(voidTraderDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating void trader %s for %s', id, this.platform)
 					}
@@ -77,12 +77,12 @@ export default class VoidTraderReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfVoidTrader, second: WfVoidTrader): Partial<WfVoidTrader> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 				first,
 				second,
 				['start', 'end', 'name', 'location', 'active']
 			),
-			voidTraderItemDiff = compare.getVoidTraderItemDifference(first.items, second.items)
+			voidTraderItemDiff = getVoidTraderItemDifference(first.items, second.items)
 		if (voidTraderItemDiff !== null) {
 			diff.items = voidTraderItemDiff
 		}

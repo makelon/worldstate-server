@@ -1,7 +1,7 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import log = require('../log')
-import tags = require('../tags')
+import { getValueDifference, patch } from '../compare'
+import { getDate, getId } from '../helpers'
+import * as log from '../log'
+import { upgradeTypes } from '../tags'
 
 export default class UpgradeReader implements WfReader {
 	private dbTable!: WfDbTable<WfUpgrade>
@@ -21,8 +21,8 @@ export default class UpgradeReader implements WfReader {
 		log.notice('Reading %s upgrades', this.platform)
 		const oldIds = this.dbTable.getIdMap()
 		for (const upgradeInput of upgradeInputs) {
-			const id = h.getId(upgradeInput),
-				end = h.getDate(upgradeInput.ExpiryDate)
+			const id = getId(upgradeInput),
+				end = getDate(upgradeInput.ExpiryDate)
 			if (!id || ('Nodes' in upgradeInput)) {
 				continue
 			}
@@ -30,16 +30,16 @@ export default class UpgradeReader implements WfReader {
 				const upgradeDb = this.dbTable.get(id),
 					upgradeProcessed: WfUpgrade = {
 						id: id,
-						start: h.getDate(upgradeInput.Activation),
+						start: getDate(upgradeInput.Activation),
 						end: end,
-						type: tags.upgradeTypes[upgradeInput.UpgradeType] || upgradeInput.UpgradeType,
+						type: upgradeTypes[upgradeInput.UpgradeType] || upgradeInput.UpgradeType,
 						opType: upgradeInput.OperationType,
 						value: Number(upgradeInput.Value)
 					}
 				if (upgradeDb) {
 					const diff = this.getDifference(upgradeDb, upgradeProcessed)
 					if (Object.keys(diff).length) {
-						compare.patch(upgradeDb, diff)
+						patch(upgradeDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating upgrade %s for %s', id, this.platform)
 					}
@@ -57,7 +57,7 @@ export default class UpgradeReader implements WfReader {
 	get entityRewards() { return {} }
 
 	private getDifference(first: WfUpgrade, second: WfUpgrade): Partial<WfUpgrade> {
-		return compare.getValueDifference(
+		return getValueDifference(
 			first,
 			second,
 			['start', 'end', 'type', 'opType', 'value']

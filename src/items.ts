@@ -1,4 +1,5 @@
-import fs = require('fs')
+import { readFileSync } from 'fs'
+
 import EntityRewards from './entityrewards'
 
 let rewardTables: WfRewardTableMap,
@@ -17,10 +18,10 @@ let rewardTables: WfRewardTableMap,
  */
 export function load(_rewardTables: string, _rewardTableRotations: string, _itemNames: string, _itemTypes: string): void {
 	try {
-		rewardTables = JSON.parse(fs.readFileSync(_rewardTables, 'utf8'))
-		rewardTableRotations = JSON.parse(fs.readFileSync(_rewardTableRotations, 'utf8'))
-		itemNames = JSON.parse(fs.readFileSync(_itemNames, 'utf8'))
-		itemTypes = JSON.parse(fs.readFileSync(_itemTypes, 'utf8'))
+		rewardTables = JSON.parse(readFileSync(_rewardTables, 'utf8'))
+		rewardTableRotations = JSON.parse(readFileSync(_rewardTableRotations, 'utf8'))
+		itemNames = JSON.parse(readFileSync(_itemNames, 'utf8'))
+		itemTypes = JSON.parse(readFileSync(_itemTypes, 'utf8'))
 	}
 	catch (err) {
 		throw new Error(`Failed to load item info: '${err.message}'`)

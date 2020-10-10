@@ -1,10 +1,11 @@
-import fs = require('fs')
-import path = require('path')
-import readline = require('readline')
-import EventEmitter = require('events')
-import log = require('./log')
+import { EventEmitter } from 'events'
+import { createReadStream } from 'fs'
+import { basename, join as joinPath } from 'path'
+import { createInterface } from 'readline'
+
 import config from './config'
-import promisify = require('./promisify')
+import * as log from './log'
+import { appendFile, renameFile, removeFile, writeFile } from './promisify'
 
 /**
  * Number of table updates before temp file cleanup is initiated
@@ -142,7 +143,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	 */
 	setPath(): void {
 		if (config.dbRoot) {
-			this.tablePath = path.join(config.dbRoot, this.dbName, path.basename(this.tableName) + '.db')
+			this.tablePath = joinPath(config.dbRoot, this.dbName, basename(this.tableName) + '.db')
 		}
 		else {
 			this.tablePath = ''
@@ -158,7 +159,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	private load(tablePath: string): Promise<void> {
 		return new Promise<void>((resolve, reject) => {
 			log.notice('Loading %s/%s', this.dbName, this.tableName)
-			const readStream = fs.createReadStream(tablePath, {
+			const readStream = createReadStream(tablePath, {
 					encoding: 'utf8',
 					flags: 'r'
 				}),
@@ -172,7 +173,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			})
 			let recordCount = 0,
 				updateCount = 0
-			readline.createInterface(readStream)
+			createInterface(readStream)
 				.on('line', line => {
 					const dataStart = line.indexOf('\t'),
 						id = line.substr(0, dataStart),
@@ -337,13 +338,13 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			records += serialize(id, this.records[id])
 		}
 		if (records === '') {
-			promisify.removeFile(this.tablePath + '.tmp')
+			removeFile(this.tablePath + '.tmp')
 				.catch(errorHandler)
 				.then(() => { this.tableTmpBusy = false })
 		}
 		else {
-			promisify.writeFile(this.tablePath + '.tmp1', records)
-				.then(() => promisify.renameFile(this.tablePath + '.tmp1', this.tablePath + '.tmp'))
+			writeFile(this.tablePath + '.tmp1', records)
+				.then(() => renameFile(this.tablePath + '.tmp1', this.tablePath + '.tmp'))
 				.catch(errorHandler)
 				.then(() => { this.tableTmpBusy = false })
 		}
@@ -368,7 +369,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			this.tableBusy = true
 			const updatesBuf = this.updates
 			this.updates = ''
-			promisify.appendFile(this.tablePath, updatesBuf)
+			appendFile(this.tablePath, updatesBuf)
 				.catch(err => {
 					this.updates = updatesBuf + this.updates
 					errorHandler(err)
@@ -381,7 +382,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			this.tableTmpBusy = true
 			const tmpUpdatesBuf = this.tmpUpdates
 			this.tmpUpdates = ''
-			promisify.appendFile(this.tablePath + '.tmp', tmpUpdatesBuf)
+			appendFile(this.tablePath + '.tmp', tmpUpdatesBuf)
 				.then(() => {
 					this.tableTmpBusy = false
 					if (this.tmpUpdateCount >= cleanTmpThreshold) {

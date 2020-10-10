@@ -1,6 +1,6 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import log = require('../log')
+import { getValueDifference, patch } from '../compare'
+import { getDate, getId, getChallenge, getSyndicateName } from '../helpers'
+import * as log from '../log'
 
 export default class ChallengeReader implements WfReader {
 	private dbTable!: WfDbTable<WfChallengeSeason>
@@ -19,26 +19,26 @@ export default class ChallengeReader implements WfReader {
 		}
 		log.notice('Reading %s challenges', this.platform)
 		const oldIds = this.dbTable.getIdMap(),
-			end = h.getDate(challengeSeasonInput.Expiry),
+			end = getDate(challengeSeasonInput.Expiry),
 			id = challengeSeasonInput.AffiliationTag + end
 		if (end >= timestamp && Array.isArray(challengeSeasonInput.ActiveChallenges)) {
 			const challengeDb = this.dbTable.get(id),
 				challenges: WfChallenge[] = [],
 				challengeCurrent: WfChallengeSeason = {
 					id: id,
-					start: h.getDate(challengeSeasonInput.Activation),
-					end: h.getDate(challengeSeasonInput.Expiry),
-					syndicate: h.getSyndicateName(challengeSeasonInput.AffiliationTag),
+					start: getDate(challengeSeasonInput.Activation),
+					end: getDate(challengeSeasonInput.Expiry),
+					syndicate: getSyndicateName(challengeSeasonInput.AffiliationTag),
 					season: challengeSeasonInput.Season,
 					phase: challengeSeasonInput.Phase,
 					challenges: challenges
 				}
 			for (const challengeInput of challengeSeasonInput.ActiveChallenges) {
-				const challengeInfo = h.getChallenge(challengeInput.Challenge)
+				const challengeInfo = getChallenge(challengeInput.Challenge)
 				challenges.push({
-					id: h.getId(challengeInput),
-					start: h.getDate(challengeInput.Activation),
-					end: h.getDate(challengeInput.Expiry),
+					id: getId(challengeInput),
+					start: getDate(challengeInput.Activation),
+					end: getDate(challengeInput.Expiry),
 					daily: challengeInput.Daily == true,
 					description: challengeInfo.description,
 					xpAmount: challengeInfo.xpAmount
@@ -48,7 +48,7 @@ export default class ChallengeReader implements WfReader {
 			if (challengeDb) {
 				const diff = this.getDifference(challengeDb, challengeCurrent)
 				if (Object.keys(diff).length) {
-					compare.patch(challengeDb, diff)
+					patch(challengeDb, diff)
 					this.dbTable.updateTmp(id, diff)
 					log.debug('Updating challenge %s for %s', id, this.platform)
 				}
@@ -65,7 +65,7 @@ export default class ChallengeReader implements WfReader {
 	get entityRewards() { return {} }
 
 	private getDifference(first: WfChallengeSeason, second: WfChallengeSeason): Partial<WfChallenge> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 			first,
 			second,
 			['start', 'end', 'syndicate', 'season', 'phase']
@@ -75,7 +75,7 @@ export default class ChallengeReader implements WfReader {
 		}
 		else {
 			for (let challengeId = 0; challengeId < first.challenges.length; ++challengeId) {
-				const challengeDiff = compare.getValueDifference(
+				const challengeDiff = getValueDifference(
 					first.challenges[challengeId],
 					second.challenges[challengeId],
 					['start', 'end', 'description', 'xpAmount']

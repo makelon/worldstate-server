@@ -1,4 +1,4 @@
-import items = require('./items')
+import { getRandomRewards } from './items'
 
 export default class EntityRewards {
 	private cache: WfSet = {}
@@ -13,7 +13,7 @@ export default class EntityRewards {
 		entityName = entityName.replace(/ \(.+\)$/, '')
 		if (!(entityName in this.cache)) {
 			this.cache[entityName] = true
-			const entityRewards = items.getRandomRewards(entityName, this)
+			const entityRewards = getRandomRewards(entityName, this)
 			if (entityRewards.length) {
 				this._rewards[entityName] = entityRewards
 			}

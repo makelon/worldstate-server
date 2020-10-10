@@ -1,6 +1,7 @@
-import util = require('util')
-import os = require('os')
-import h = require('./helpers')
+import { EOL } from 'os'
+import { format as formatString } from 'util'
+
+import { pad } from './helpers'
 
 let enableTimestamps = true
 
@@ -20,10 +21,10 @@ function timestamp(): string {
 		return ''
 	}
 	const d = new Date(),
-		hh = h.pad(d.getHours()),
-		mm = h.pad(d.getMinutes()),
-		ss = h.pad(d.getSeconds()),
-		ms = h.pad(d.getMilliseconds(), 3)
+		hh = pad(d.getHours()),
+		mm = pad(d.getMinutes()),
+		ss = pad(d.getSeconds()),
+		ms = pad(d.getMilliseconds(), 3)
 	return `${hh}:${mm}:${ss}.${ms} `
 }
 
@@ -35,7 +36,7 @@ function timestamp(): string {
  * @param params Replacement parameters
  */
 function _print(stream: NodeJS.WriteStream, format: string, params: any[]): void {
-	stream.write(timestamp() + util.format(format, ...params) + os.EOL)
+	stream.write(timestamp() + formatString(format, ...params) + EOL)
 }
 
 /**

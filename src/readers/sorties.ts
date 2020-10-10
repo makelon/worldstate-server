@@ -1,9 +1,9 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import items = require('../items')
-import log = require('../log')
-import tags = require('../tags')
+import { getRandomRewardDifference, getValueDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getDate, getFaction, getId, getLocation, getMissionType } from '../helpers'
+import { getRandomRewards } from '../items'
+import * as log from '../log'
+import { sortieBosses, sortieModifiers } from '../tags'
 
 export default class SortieReader implements WfReader {
 	private dbTable!: WfDbTable<WfSortie>
@@ -25,36 +25,36 @@ export default class SortieReader implements WfReader {
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const sortieInput of sortiesInput) {
-			const id = h.getId(sortieInput),
-				start = h.getDate(sortieInput.Activation),
-				end = h.getDate(sortieInput.Expiry)
+			const id = getId(sortieInput),
+				start = getDate(sortieInput.Activation),
+				end = getDate(sortieInput.Expiry)
 			if (!id) {
 				continue
 			}
 			if (end >= timestamp) {
-				const { faction, name: boss } = tags.sortieBosses[sortieInput.Boss] || { faction: 'Unknown', name: sortieInput.Boss },
+				const { faction, name: boss } = sortieBosses[sortieInput.Boss] || { faction: 'Unknown', name: sortieInput.Boss },
 					missions: WfSortieMission[] = [],
 					sortieDb = this.dbTable.get(id),
 					sortieCurrent: WfSortie = {
 						id: id,
 						start: start,
 						end: end,
-						faction: h.getFaction(faction),
+						faction: getFaction(faction),
 						bossName: boss,
-						rewards: items.getRandomRewards(sortieInput.Reward, this._entityRewards),
+						rewards: getRandomRewards(sortieInput.Reward, this._entityRewards),
 						missions: missions
 					}
 				for (const missionInput of sortieInput.Variants) {
 					missions.push({
-						missionType: h.getMissionType(missionInput.missionType),
-						modifier: tags.sortieModifiers[missionInput.modifierType] || missionInput.modifierType,
-						location: h.getLocation(missionInput.node)
+						missionType: getMissionType(missionInput.missionType),
+						modifier: sortieModifiers[missionInput.modifierType] || missionInput.modifierType,
+						location: getLocation(missionInput.node)
 					})
 				}
 				if (sortieDb) {
 					const diff = this.getDifference(sortieDb, sortieCurrent)
 					if (Object.keys(diff).length) {
-						compare.patch(sortieDb, diff)
+						patch(sortieDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating sortie %s for %s', id, this.platform)
 					}
@@ -72,12 +72,12 @@ export default class SortieReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfSortie, second: WfSortie): Partial<WfSortie> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 				first,
 				second,
 				['start', 'end', 'faction', 'bossName']
 			),
-			rewardDiff = compare.getRandomRewardDifference(first.rewards, second.rewards)
+			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {
 			diff.rewards = rewardDiff
 		}

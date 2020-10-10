@@ -1,11 +1,11 @@
 import config from './config'
-import extraData from './extradata'
-import items = require('./items')
-import log = require('./log')
-import tags = require('./tags')
-import Server from './server'
-import Worldstate from './worldstate'
 import Database from './db'
+import extraData from './extradata'
+import { load as loadItems } from './items'
+import * as log from './log'
+import Server from './server'
+import { load as loadTags } from './tags'
+import Worldstate from './worldstate'
 
 process.chdir(__dirname)
 
@@ -24,8 +24,8 @@ function load() {
 	log.setLevel(config.logLevel)
 	log.setTimestamps(config.enableConsoleTime)
 	try {
-		items.load('./rewardtables.json', './rewardtables-rotations.json', './itemnames.json', './itemtypes.json')
-		tags.load('./starchart.json', './challenges.json')
+		loadItems('./rewardtables.json', './rewardtables-rotations.json', './itemnames.json', './itemtypes.json')
+		loadTags('./starchart.json', './challenges.json')
 		extraData.load('./extradata.json')
 	}
 	catch (err) {

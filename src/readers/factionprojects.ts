@@ -1,7 +1,7 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import log = require('../log')
-import history = require('../history')
+import { getValueDifference, patch } from '../compare'
+import { getFomorianFaction, getFomorianType } from '../helpers'
+import { checkpoint, end, update } from '../history'
+import * as log from '../log'
 
 export default class FactionProjectReader implements WfReader {
 	private dbTable!: WfDbTable<WfFomorianProgress>
@@ -23,12 +23,12 @@ export default class FactionProjectReader implements WfReader {
 		for (const projectIdx in projectsInput) {
 			const projectInput = projectsInput[projectIdx],
 				id = projectIdx.toString(),
-				faction = h.getFomorianFaction(id)
+				faction = getFomorianFaction(id)
 			if (!faction) {
 				continue
 			}
 			let projectDb = this.dbTable.get(id)
-			const fomorianType = h.getFomorianType(faction),
+			const fomorianType = getFomorianType(faction),
 				progress = Number(projectInput),
 				projectCurrent: WfFomorianProgress = {
 					id: id,
@@ -39,7 +39,7 @@ export default class FactionProjectReader implements WfReader {
 			if (projectDb) {
 				const diff = this.getDifference(projectDb, projectCurrent)
 				if (Object.keys(diff).length) {
-					compare.patch(projectDb, diff)
+					patch(projectDb, diff)
 					this.dbTable.updateTmp(id, diff)
 					log.debug('Updating faction project %s for %s', id, this.platform)
 				}
@@ -52,8 +52,8 @@ export default class FactionProjectReader implements WfReader {
 
 			if (progress > projectDb.progress) {
 				const progressHistory = projectDb.progressHistory
-				history.update(progress, progressHistory, timestamp)
-				if (history.checkpoint(progress, progressHistory, timestamp, 1)) {
+				update(progress, progressHistory, timestamp)
+				if (checkpoint(progress, progressHistory, timestamp, 1)) {
 					this.dbTable.updateTmp(id, {
 						progress: progress,
 						progressHistory: progressHistory
@@ -86,7 +86,7 @@ export default class FactionProjectReader implements WfReader {
 	get entityRewards() { return {} }
 
 	private getDifference(first: WfFomorianProgress, second: WfFomorianProgress): Partial<WfFomorianProgress> {
-		return compare.getValueDifference(
+		return getValueDifference(
 			first,
 			second,
 			['type']
@@ -97,7 +97,7 @@ export default class FactionProjectReader implements WfReader {
 		for (const id in oldIds) {
 			const projectDb = this.dbTable!.get(id)
 			if (projectDb) {
-				history.end(projectDb.progressHistory, timestamp)
+				end(projectDb.progressHistory, timestamp)
 				projectDb.progress = 0
 				this.dbTable!.moveTmp(id)
 			}

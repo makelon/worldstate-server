@@ -1,9 +1,9 @@
-import compare = require('../compare')
-import h = require('../helpers')
-import items = require('../items')
-import log = require('../log')
-import history = require('../history')
+import { getItemDifference, getRandomRewardDifference, getRewardDifference, getValueDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
+import { getDate, getFomorianType, getId, getLocation, getMissionType } from '../helpers'
+import { checkpoint, end, update } from '../history'
+import { getItems, getRandomRewards, getRewards } from '../items'
+import * as log from '../log'
 
 export default class FomorianReader implements WfReader {
 	private dbTable!: WfDbTable<WfFomorian>
@@ -25,45 +25,45 @@ export default class FomorianReader implements WfReader {
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const fomorianInput of fomoriansInput) {
-			const id = h.getId(fomorianInput),
-				end = h.getDate(fomorianInput.Expiry),
+			const id = getId(fomorianInput),
+				end = getDate(fomorianInput.Expiry),
 				health = Number(fomorianInput.HealthPct)
 			if (!id) {
 				continue
 			}
 			if (end >= timestamp) {
 				let fomorianDb = this.dbTable.get(id)
-				const start = h.getDate(fomorianInput.Activation),
+				const start = getDate(fomorianInput.Activation),
 					mi = fomorianInput.MissionInfo,
-					requiredItems = items.getItems(mi.requiredItems, this._entityRewards),
+					requiredItems = getItems(mi.requiredItems, this._entityRewards),
 					fomorianCurrent: WfFomorian = {
 						id: id,
 						start: start,
 						end: end,
-						type: h.getFomorianType(fomorianInput.Faction),
+						type: getFomorianType(fomorianInput.Faction),
 						health: 1,
 						healthHistory: [[start, 1]],
 						endGoal: fomorianInput.Goal,
-						missionType: h.getMissionType(mi.missionType),
-						victimLocation: h.getLocation(fomorianInput.VictimNode),
-						missionLocation: h.getLocation(mi.location),
+						missionType: getMissionType(mi.missionType),
+						victimLocation: getLocation(fomorianInput.VictimNode),
+						missionLocation: getLocation(mi.location),
 						requiredItems: requiredItems
 					}
 				if (fomorianInput.Reward) {
-					const rewards = items.getRewards(fomorianInput.Reward, this._entityRewards)
+					const rewards = getRewards(fomorianInput.Reward, this._entityRewards)
 					if (rewards) {
 						fomorianCurrent.goalRewards = rewards
 					}
 				}
 				if (mi.missionReward) {
 					if (mi.missionReward.randomizedItems) {
-						const rewards = items.getRandomRewards(mi.missionReward.randomizedItems, this._entityRewards)
+						const rewards = getRandomRewards(mi.missionReward.randomizedItems, this._entityRewards)
 						if (rewards) {
 							fomorianCurrent.randomRewards = rewards
 						}
 					}
 					else {
-						const rewards = items.getRewards(mi.missionReward, this._entityRewards)
+						const rewards = getRewards(mi.missionReward, this._entityRewards)
 						if (rewards) {
 							fomorianCurrent.missionRewards = rewards
 						}
@@ -73,7 +73,7 @@ export default class FomorianReader implements WfReader {
 				if (fomorianDb) {
 					const diff = this.getDifference(fomorianDb, fomorianCurrent)
 					if (Object.keys(diff).length) {
-						compare.patch(fomorianDb, diff)
+						patch(fomorianDb, diff)
 						this.dbTable.updateTmp(id, diff)
 						log.debug('Updating fomorian %s for %s', id, this.platform)
 					}
@@ -86,8 +86,8 @@ export default class FomorianReader implements WfReader {
 
 				if (fomorianDb.health != health) {
 					const healthHistory = fomorianDb.healthHistory
-					history.update(health, healthHistory, timestamp)
-					if (history.checkpoint(health, healthHistory, timestamp, 0.01)) {
+					update(health, healthHistory, timestamp)
+					if (checkpoint(health, healthHistory, timestamp, 0.01)) {
 						this.dbTable.updateTmp(id, {
 							health: health,
 							healthHistory: healthHistory
@@ -105,15 +105,15 @@ export default class FomorianReader implements WfReader {
 	get entityRewards() { return this._entityRewards.rewards }
 
 	private getDifference(first: WfFomorian, second: WfFomorian): Partial<WfFomorian> {
-		const diff = compare.getValueDifference(
+		const diff = getValueDifference(
 				first,
 				second,
 				['start', 'end', 'type', 'endGoal', 'missionType', 'victimLocation', 'missionLocation']
 			),
-			goalRewardDiff = compare.getRewardDifference(first.goalRewards, second.goalRewards),
-			missionRewardDiff = compare.getRewardDifference(first.missionRewards, second.missionRewards),
-			randomRewardDiff = compare.getRandomRewardDifference(first.randomRewards, second.randomRewards),
-			requiredItemsDiff = compare.getItemDifference(first.requiredItems, second.requiredItems)
+			goalRewardDiff = getRewardDifference(first.goalRewards, second.goalRewards),
+			missionRewardDiff = getRewardDifference(first.missionRewards, second.missionRewards),
+			randomRewardDiff = getRandomRewardDifference(first.randomRewards, second.randomRewards),
+			requiredItemsDiff = getItemDifference(first.requiredItems, second.requiredItems)
 		if (goalRewardDiff !== null) {
 			diff.goalRewards = goalRewardDiff
 		}
@@ -133,7 +133,7 @@ export default class FomorianReader implements WfReader {
 		for (const id in oldIds) {
 			const fomorianDb = this.dbTable!.get(id)
 			if (fomorianDb) {
-				history.end(fomorianDb.healthHistory, timestamp)
+				end(fomorianDb.healthHistory, timestamp)
 				fomorianDb.health = 0
 				this.dbTable!.moveTmp(id)
 			}

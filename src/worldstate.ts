@@ -1,11 +1,12 @@
-import http = require('http')
-import https = require('https')
-import log = require('./log')
-import h = require('./helpers')
-import promisify = require('./promisify')
+import { IncomingMessage } from 'http'
+import { RequestOptions } from 'https'
+
 import config from './config'
-import httpHelper = require('./httphelper')
+import { getDate } from './helpers'
+import { getResponseData, prepareRequest, sendRequest } from './httphelper'
 import Kuvalog from './kuvalog'
+import * as log from './log'
+import { queue } from './promisify'
 
 import AcolyteReader from './readers/acolytes'
 import AlertReader from './readers/alerts'
@@ -35,7 +36,7 @@ function looksLikeWorldstate(ws: any) {
 }
 
 export default class Worldstate {
-	private requestOptions: https.RequestOptions | null = null
+	private requestOptions: RequestOptions | null = null
 	private requestTimerId?: NodeJS.Timer
 	private ws: any
 	private now = 0
@@ -119,7 +120,7 @@ export default class Worldstate {
 		try {
 			const url = config.wsUrls[this.platform]
 			this.requestOptions = url
-				? httpHelper.prepareRequest(url)
+				? prepareRequest(url)
 				: null
 		}
 		catch(err) {
@@ -215,7 +216,7 @@ export default class Worldstate {
 		}
 		log.notice('Requesting %s//%s%s', this.requestOptions.protocol, this.requestOptions.hostname, this.requestOptions.path)
 
-		const req = httpHelper.sendRequest(this.requestOptions)
+		const req = sendRequest(this.requestOptions)
 		req.setTimeout(config.requestTimeout)
 			.once('response', res => { this.handleWorldstateResponse(res) })
 			.once('error', err => { this.retryRequestWorldstate(0, err.message) })
@@ -240,8 +241,8 @@ export default class Worldstate {
 	 * Read worldstate dump and schedule next request
 	 * Start the parsing process if the dump passes validity tests
 	 */
-	private handleWorldstateResponse(res: http.IncomingMessage): void {
-		httpHelper.getResponseData(res)
+	private handleWorldstateResponse(res: IncomingMessage): void {
+		getResponseData(res)
 			.then(resData => {
 				let resParsed: any
 				try {
@@ -254,7 +255,7 @@ export default class Worldstate {
 					const resHead = resData.length > 210 ? resData.slice(0, 200) + '...' : resData
 					throw new Error(`Response does not look like worldstate data: '${resHead}'`)
 				}
-				const timestamp = h.getDate(resParsed)
+				const timestamp = getDate(resParsed)
 				if (!timestamp) {
 					throw new Error('Response does not have a timestamp')
 				}
@@ -270,7 +271,7 @@ export default class Worldstate {
 	 * Parse the worldstate dump using a chain of Promises to minimize blocking
 	 */
 	private readWorldstate(): void {
-		promisify.queue(
+		queue(
 			this,
 			this.readAcolytes,
 			this.readAlerts,

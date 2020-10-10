@@ -140,7 +140,7 @@ function getItemType(itemId) {
 			}
 			return branch[''] || ''
 		}
-		branch = branch[dir];
+		branch = branch[dir]
 		if (typeof branch == 'string') {
 			return branch
 		}

@@ -76,7 +76,7 @@ export default class FactionProjectReader implements WfReader {
 				}, true)
 			}
 			else if (progress < projectDb.progress) {
-				log.notice('Ignoring reverse progress in faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress);
+				log.notice('Ignoring reverse progress in faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
 			}
 			delete oldIds[id]
 		}

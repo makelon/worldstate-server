@@ -86,7 +86,7 @@ class WfConfig {
 				process.exit(1)
 			}
 		}
-		const urlTypes: ('wsUrls' | 'kuvalogUrls')[] = ['wsUrls', 'kuvalogUrls'];
+		const urlTypes: ('wsUrls' | 'kuvalogUrls')[] = ['wsUrls', 'kuvalogUrls']
 		for (const urlType of urlTypes) {
 			if (overrides[urlType]) {
 				const urls = overrides[urlType] as WfMap

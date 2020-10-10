@@ -14,7 +14,7 @@ const items = [
 			name: 'NonexistentItem',
 			type: 'Misc'
 		}
-	]
+	],
 	itemRewards = {
 		input: {
 			credits: 6500,
@@ -458,8 +458,8 @@ function* getExtraBounties() {
 			}
 		]
 	}
-	yield ['data/extradata.json', [expectedSyndicate]];
-	yield ['data/nonexistent.json', []];
+	yield ['data/extradata.json', [expectedSyndicate]]
+	yield ['data/nonexistent.json', []]
 }
 
 function* getFactionProjects() {

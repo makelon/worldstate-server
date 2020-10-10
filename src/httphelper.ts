@@ -1,6 +1,6 @@
 import http = require('http')
 import https = require('https')
-import zlib = require('zlib');
+import zlib = require('zlib')
 import nodeUrl = require('url')
 import config from './config'
 

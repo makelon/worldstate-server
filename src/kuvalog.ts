@@ -152,7 +152,7 @@ export default class Kuvalog {
 				const responseAge = h.getCurrentTime() - Math.min(lastArbitrationStart, lastKuvaSiphonStart)
 				this.scheduleKuvalogRequest(responseAge >= 3600 ? 60000 : 1000 * (3700 - responseAge))
 				this.retryTimeout = Math.max(config.minRetryTimeout, this.retryTimeout - 1500)
-				this.readKuvalog(resParsed);
+				this.readKuvalog(resParsed)
 			}).catch((err: Error) => { this.retryRequestKuvalog(res.complete ? res.statusCode : 0, err.message) })
 	}
 

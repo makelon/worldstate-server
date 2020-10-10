@@ -37,9 +37,9 @@ describe('Kuvalog', () => {
 		for (const [testData, expectedArbitration, expectedKuvamission] of fixtures.getKuvalog()) {
 			ws.kuvalog.readKuvalog(testData)
 			const resultArbitrations = JSON.parse(ws.get([dataKeyArbitrations]))
-			expect(resultArbitrations[dataKeyArbitrations].data[0]).toEqual(expectedArbitration)
+			expect(resultArbitrations[dataKeyArbitrations].data).toEqual(expectedArbitration)
 			const resultKuvaSiphons = JSON.parse(ws.get([dataKeyKuvaSiphons]))
-			expect(resultKuvaSiphons[dataKeyKuvaSiphons].data[0]).toEqual(expectedKuvamission)
+			expect(resultKuvaSiphons[dataKeyKuvaSiphons].data).toEqual(expectedKuvamission)
 		}
 	})
 })

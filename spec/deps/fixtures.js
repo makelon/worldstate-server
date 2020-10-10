@@ -677,11 +677,13 @@ function* getKuvalog() {
 			flood: false,
 			rewards: rewardTables[1].output
 		}
-	yield [data, expectedArbitration, expectedKuvamission]
+	yield [data, [expectedArbitration], [expectedKuvamission]]
 
 	data[1].end = new Date(timeStartLong + 4800e3).toISOString()
 	expectedArbitration.end = timeStartShort + 3600
-	yield [data, expectedArbitration, expectedKuvamission]
+	yield [data, [expectedArbitration], [expectedKuvamission]]
+
+	yield [[], [], []]
 }
 
 function* getNews() {

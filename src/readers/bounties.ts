@@ -11,6 +11,11 @@ export default class BountyReader extends WfReader<WfBounty> {
 	private _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'bounties'
 
+	protected isActive(bounty: WfBounty, timestamp: number) {
+		return (bounty.end === 0 || bounty.end >= timestamp)
+			&& (bounty.health === undefined || bounty.health > 0)
+	}
+
 	read(bountiesInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

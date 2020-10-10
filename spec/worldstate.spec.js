@@ -7,7 +7,8 @@ const extraData = require('../out/extradata').default
 describe('Worldstate', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc')
 
-	function runStandardTests(dataKey, timestamp, testCaseGenerator, worldstateReader, dataTransformer) {
+	function runStandardTests(dataKey, testCaseGenerator, worldstateReader, includeExpireTest, dataTransformer) {
+		let timestamp = fixtures.timeNowShort
 		for (const [data, expected] of testCaseGenerator()) {
 			setWorldstateData(dataTransformer ? dataTransformer(data) : data, timestamp)
 			worldstateReader.call(ws)
@@ -15,6 +16,19 @@ describe('Worldstate', () => {
 			expect(result[dataKey].data).toEqual(Array.isArray(expected) ? expected : [expected])
 			timestamp += fixtures.timeStep
 		}
+		if (includeExpireTest) {
+			runExpireTest(dataKey, testCaseGenerator, worldstateReader)
+		}
+	}
+
+	function runExpireTest(dataKey, testCaseGenerator, worldstateReader) {
+		setWorldstateData(testCaseGenerator().next().value[0], fixtures.timeNowShort)
+		worldstateReader.call(ws)
+		let result = JSON.parse(ws.get([dataKey]))
+		expect(result[dataKey].data.length).toBe(1)
+		ws.now = fixtures.timeEndShort + 1
+		result = JSON.parse(ws.get([dataKey]))
+		expect(result[dataKey].data.length).toBe(0)
 	}
 
 	function setWorldstateData(data, timestamp) {
@@ -27,31 +41,31 @@ describe('Worldstate', () => {
 	})
 
 	it('should read acolytes', () => {
-		runStandardTests('acolytes', fixtures.timeNowShort, fixtures.getAcolytes, ws.readAcolytes)
+		runStandardTests('acolytes', fixtures.getAcolytes, ws.readAcolytes)
 	})
 
 	it('should read alerts', () => {
-		runStandardTests('alerts', fixtures.timeNowShort, fixtures.getAlerts, ws.readAlerts)
+		runStandardTests('alerts', fixtures.getAlerts, ws.readAlerts, true)
 	})
 
 	it('should read bounties', () => {
 		runStandardTests(
 			'bounties',
-			fixtures.timeNowShort,
 			fixtures.getBounties,
 			() => {
 				ws.readGoals()
 				ws.readSyndicateMissions()
-			}
+			},
+			true
 		)
 	})
 
 	it('should read challenges', () => {
-		runStandardTests('challenges', fixtures.timeNowShort, fixtures.getChallenges, ws.readChallenges)
+		runStandardTests('challenges', fixtures.getChallenges, ws.readChallenges, true)
 	})
 
 	it('should read daily deals', () => {
-		runStandardTests('dailydeals', fixtures.timeNowShort, fixtures.getDailyDeals, ws.readDailyDeals)
+		runStandardTests('dailydeals', fixtures.getDailyDeals, ws.readDailyDeals, true)
 	})
 
 	it('should read day cycles', () => {
@@ -67,51 +81,51 @@ describe('Worldstate', () => {
 					: (cycleTime < result.dayStart
 						? result.dayStart
 						: result.dayStart + result.length)
-			expect(isDay).toEqual(expected.isDay)
-			expect(cycleEnd - cycleTime).toEqual(expected.cycleEnd)
+			expect(isDay).toBe(expected.isDay)
+			expect(cycleEnd - cycleTime).toBe(expected.cycleEnd)
 		}
 	})
 
 	it('should read faction projects', () => {
-		runStandardTests('factionprojects', fixtures.timeNowShort, fixtures.getFactionProjects, ws.readFactionProjects)
+		runStandardTests('factionprojects', fixtures.getFactionProjects, ws.readFactionProjects)
 	})
 
 	it('should read fomorians', () => {
-		runStandardTests('fomorians', fixtures.timeNowShort, fixtures.getGoals, ws.readGoals)
+		runStandardTests('fomorians', fixtures.getGoals, ws.readGoals, true)
 	})
 
 	it('should read invasions', () => {
-		runStandardTests('invasions', fixtures.timeNowShort, fixtures.getInvasions, ws.readInvasions)
+		runStandardTests('invasions', fixtures.getInvasions, ws.readInvasions)
 	})
 
 	it('should read news', () => {
-		runStandardTests('news', fixtures.timeNowShort, fixtures.getNews, ws.readNews)
+		runStandardTests('news', fixtures.getNews, ws.readNews)
 	})
 
 	it('should read sentient anomalies', () => {
 		runStandardTests(
 			'sentient-anomalies',
-			fixtures.timeNowShort,
 			fixtures.getSentientAnomalies,
 			ws.readSentientAnomalies,
+			false,
 			data => ({ Tmp: JSON.stringify(data) })
 		)
 	})
 
 	it('should read sorties', () => {
-		runStandardTests('sorties', fixtures.timeNowShort, fixtures.getSorties, ws.readSorties)
+		runStandardTests('sorties', fixtures.getSorties, ws.readSorties, true)
 	})
 
 	it('should read upgrades', () => {
-		runStandardTests('upgrades', fixtures.timeNowShort, fixtures.getUpgrades, ws.readUpgrades)
+		runStandardTests('upgrades', fixtures.getUpgrades, ws.readUpgrades, true)
 	})
 
 	it('should read void fissures', () => {
-		runStandardTests('fissures', fixtures.timeNowShort, fixtures.getVoidFissures, ws.readVoidFissures)
+		runStandardTests('fissures', fixtures.getVoidFissures, ws.readVoidFissures, true)
 	})
 
 	it('should read void traders', () => {
-		runStandardTests('voidtraders', fixtures.timeNowShort, fixtures.getVoidTraders, ws.readVoidTraders)
+		runStandardTests('voidtraders', fixtures.getVoidTraders, ws.readVoidTraders, true)
 	})
 
 	it('should load extra data', () => {

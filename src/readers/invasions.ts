@@ -10,6 +10,10 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'invasions'
 
+	protected isActive(invasion: WfInvasion) {
+		return Math.abs(invasion.score) < invasion.endScore
+	}
+
 	read(invasions: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

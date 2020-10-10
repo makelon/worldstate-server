@@ -9,6 +9,10 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'dailydeals'
 
+	protected isActive(deal: WfDailyDeal, timestamp: number) {
+		return deal.end >= timestamp
+	}
+
 	read(dealsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

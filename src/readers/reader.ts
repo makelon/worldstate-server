@@ -3,6 +3,7 @@ type WfReaderData<T> = { time: number, data: T[] } | undefined
 export default abstract class WfReader<T extends WfRecordType> {
 	protected dbTable?: WfDbTable<T>
 	protected abstract readonly dbTableId: WfRecordKey
+	protected isActive?(record: T, timestamp: number): boolean
 
 	constructor(
 		protected platform: string
@@ -16,13 +17,16 @@ export default abstract class WfReader<T extends WfRecordType> {
 
 	get entityRewards(): WfRewardTableMap { return {} }
 
-	getData(): WfReaderData<T> {
+	getData(timestamp: number): WfReaderData<T> {
 		if (!this.dbTable?.isReady()) {
 			return
 		}
+		const records = this.dbTable.getAll()
 		return {
 			time: this.dbTable.getLastUpdate(),
-			data: this.dbTable.getAll()
+			data: this.isActive
+				? records.filter(record => this.isActive!(record, timestamp))
+				: records,
 		}
 	}
 }

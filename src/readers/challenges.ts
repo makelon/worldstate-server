@@ -6,6 +6,10 @@ import WfReader from './reader'
 export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 	protected readonly dbTableId = 'challenges'
 
+	protected isActive(challengeSeason: WfChallengeSeason, timestamp: number) {
+		return challengeSeason.end >= timestamp
+	}
+
 	read(challengeSeasonInput: any, timestamp: number): void {
 		if (!this.dbTable) {
 			return

@@ -10,6 +10,10 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 	private _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'acolytes'
 
+	protected isActive(acolyte: WfAcolyte) {
+		return acolyte.health > 0
+	}
+
 	read(acolytesInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

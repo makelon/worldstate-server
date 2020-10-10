@@ -10,6 +10,10 @@ export default class SortieReader extends WfReader<WfSortie> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'sorties'
 
+	protected isActive(sortie: WfSortie, timestamp: number) {
+		return sortie.end >= timestamp
+	}
+
 	read(sortiesInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

@@ -9,6 +9,10 @@ export default class ArbitrationReader extends WfReader<WfArbitration> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'arbitrations'
 
+	protected isActive(arbitration: WfArbitration, timestamp: number) {
+		return arbitration.end >= timestamp
+	}
+
 	read(arbitrationsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

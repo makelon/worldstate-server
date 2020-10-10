@@ -7,6 +7,10 @@ import WfReader from './reader'
 export default class UpgradeReader extends WfReader<WfUpgrade> {
 	protected readonly dbTableId = 'upgrades'
 
+	protected isActive(upgrade: WfUpgrade, timestamp: number) {
+		return upgrade.end >= timestamp
+	}
+
 	read(upgradeInputs: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

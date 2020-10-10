@@ -6,6 +6,10 @@ import WfReader from './reader'
 export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 	protected readonly dbTableId = 'fissures'
 
+	protected isActive(fissure: WfVoidFissure, timestamp: number) {
+		return fissure.end >= timestamp
+	}
+
 	read(fissuresInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

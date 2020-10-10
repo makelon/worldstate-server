@@ -9,6 +9,10 @@ export default class AlertReader extends WfReader<WfAlert> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'alerts'
 
+	protected isActive(alert: WfAlert, timestamp: number) {
+		return alert.end >= timestamp
+	}
+
 	read(alertsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

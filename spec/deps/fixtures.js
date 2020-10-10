@@ -174,6 +174,9 @@ function* getAcolytes() {
 	expected.rewards = []
 	yield [data, expected]
 
+	acolyte.HealthPercent = 0
+	yield [data, []]
+
 	yield [{}, []]
 }
 
@@ -307,7 +310,7 @@ function* getBounties() {
 			end: timeEndShort,
 			syndicate: 'Ghoul Purge',
 			health: 0.9,
-			healthHistory: [[timeStartShort, 1], [timeNowShort, 0.9]],
+			healthHistory: [[timeStartShort, 1]],
 			location: nodes[1].name,
 			jobs: [
 				{
@@ -319,19 +322,25 @@ function* getBounties() {
 				}
 			]
 		},
-		data = { Goals: [bountyGhoul], SyndicateMissions: [bountySyndicate] },
-		expected = [expectedGhoul, expectedSyndicate]
-	yield [data, expected]
+		data = { SyndicateMissions: [bountySyndicate] }
+	yield [data, [expectedSyndicate]]
+
+	timeLocalShort += timeStep
+	expectedGhoul.healthHistory.push([timeLocalShort, bountyGhoul.HealthPct])
+	data.Goals = [bountyGhoul]
+	yield [data, [expectedSyndicate, expectedGhoul]]
 
 	timeLocalShort += timeStep
 	bountyGhoul.HealthPct = 0.4
 	bountyGhoul.VictimNode = nodes[0].id
-	data.Goals.push(bountyInfested)
-	expected.push(expectedInfested)
+	data.Goals[1] = bountyInfested
 	expectedGhoul.health = bountyGhoul.HealthPct
 	expectedGhoul.healthHistory.push([timeLocalShort, bountyGhoul.HealthPct])
 	expectedGhoul.location = nodes[0].name
-	yield [data, expected]
+	yield [data, [expectedSyndicate, expectedGhoul, expectedInfested]]
+
+	bountyGhoul.HealthPct = 0
+	yield [data, [expectedSyndicate, expectedInfested]]
 
 	yield [{}, []]
 }
@@ -567,6 +576,9 @@ function* getGoals() {
 	expected.victimLocation = nodes[1].name
 	yield [data, expected]
 
+	fomorian.HealthPct = 0
+	yield [data, []]
+
 	yield [{}, []]
 }
 
@@ -635,6 +647,9 @@ function* getInvasions() {
 	invasion.AttackerReward = undefined
 	delete expected.rewardsAttacker
 	yield [data, expected]
+
+	invasion.Count = invasion.Goal
+	yield [data, []]
 
 	yield [{}, []]
 }

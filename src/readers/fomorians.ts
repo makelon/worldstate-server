@@ -10,6 +10,10 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'fomorians'
 
+	protected isActive(fomorian: WfFomorian, timestamp: number) {
+		return fomorian.health > 0 && fomorian.end >= timestamp
+	}
+
 	read(fomoriansInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

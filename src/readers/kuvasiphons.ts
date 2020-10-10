@@ -11,6 +11,10 @@ export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'kuvasiphons'
 
+	protected isActive(kuvamission: WfKuvaSiphon, timestamp: number) {
+		return kuvamission.end >= timestamp
+	}
+
 	read(kuvamissionsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

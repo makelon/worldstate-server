@@ -159,7 +159,7 @@ export default class Worldstate {
 				continue
 			}
 			const reader = this.readers[type],
-				readerData = reader.getData()
+				readerData = reader.getData(this.now)
 			if (readerData) {
 				log.debug('Sending %s', type)
 				ret[type] = readerData

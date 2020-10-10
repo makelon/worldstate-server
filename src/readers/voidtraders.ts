@@ -9,6 +9,10 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'voidtraders'
 
+	protected isActive(voidTrader: WfVoidTrader, timestamp: number) {
+		return voidTrader.end >= timestamp
+	}
+
 	read(voidTradersInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
 			return

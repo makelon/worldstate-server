@@ -244,12 +244,6 @@ interface WfVoidTrader {
 	items?: WfVoidTraderItem[]
 }
 
-interface WfReader {
-	start(db: WfDb): void
-	read(input: any[], timestamp: number): void
-	readonly entityRewards: WfRewardTableMap
-}
-
 interface WfDb {
 	setupTables(onLoad: () => void): void
 	getTable<T extends WfRecordKey>(tblName: T): WfDbTable<WfRecordTypes[T]>

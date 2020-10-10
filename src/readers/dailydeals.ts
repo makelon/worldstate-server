@@ -3,18 +3,11 @@ import EntityRewards from '../entityrewards'
 import { getDate } from '../helpers'
 import { getItem } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class DailyDealReader implements WfReader {
-	private dbTable!: WfDbTable<WfDailyDeal>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('dailydeals')
-	}
+export default class DailyDealReader extends WfReader<WfDailyDeal> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'dailydeals'
 
 	read(dealsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

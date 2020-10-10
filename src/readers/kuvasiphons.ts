@@ -3,20 +3,13 @@ import EntityRewards from '../entityrewards'
 import { getLocation, getNodeFaction, getNodeMissionType, strToTime } from '../helpers'
 import { getRandomRewards } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
 const missionPrefixLength = 'KuvaMission'.length
 
-export default class KuvaSiphonReader implements WfReader {
-	private dbTable!: WfDbTable<WfKuvaSiphon>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('kuvasiphons')
-	}
+export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'kuvasiphons'
 
 	read(kuvamissionsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

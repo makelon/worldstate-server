@@ -1,17 +1,10 @@
 import { getValueDifference, patch } from '../compare'
 import { getDate, getId, getChallenge, getSyndicateName } from '../helpers'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class ChallengeReader implements WfReader {
-	private dbTable!: WfDbTable<WfChallengeSeason>
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('challenges')
-	}
+export default class ChallengeReader extends WfReader<WfChallengeSeason> {
+	protected readonly dbTableId = 'challenges'
 
 	read(challengeSeasonInput: any, timestamp: number): void {
 		if (!this.dbTable) {
@@ -61,8 +54,6 @@ export default class ChallengeReader implements WfReader {
 		delete oldIds[id]
 		this.cleanOld(oldIds)
 	}
-
-	get entityRewards() { return {} }
 
 	private getDifference(first: WfChallengeSeason, second: WfChallengeSeason): Partial<WfChallenge> {
 		const diff = getValueDifference(

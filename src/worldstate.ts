@@ -25,6 +25,7 @@ import SortieReader from './readers/sorties'
 import UpgradeReader from './readers/upgrades'
 import VoidFissureReader from './readers/voidfissures'
 import VoidTraderReader from './readers/voidtraders'
+import WfReader from './readers/reader'
 
 /**
  * Check whether the given data is likely to be worldstate data
@@ -47,7 +48,7 @@ export default class Worldstate {
 		bounties: []
 	}
 	private kuvalog = new Kuvalog(this.platform, this.instanceDelay)
-	private readers: Readonly<{ [readerId in WfRecordKey]: WfReader }> = {
+	private readers: Readonly<{ [T in WfRecordKey]: WfReader<WfRecordTypes[T]> }> = {
 		'acolytes': new AcolyteReader(this.platform),
 		'alerts': new AlertReader(this.platform),
 		'arbitrations': new ArbitrationReader(this.platform),
@@ -157,26 +158,19 @@ export default class Worldstate {
 				log.debug('"%s" is not a valid worldstate category', type)
 				continue
 			}
-			// Timestamped database content
-			const table = this.db.getTable(type)
-			if (!table) {
-				log.debug('"%s" has not been loaded', type)
-				continue
-			}
-			if (table.isReady()) {
+			const reader = this.readers[type],
+				readerData = reader.getData()
+			if (readerData) {
 				log.debug('Sending %s', type)
-				ret[type] = {
-					time: table.getLastUpdate(),
-					data: table.getAll()
-				}
-				const entityRewards = this.readers[type].entityRewards
+				ret[type] = readerData
+				const entityRewards = reader.entityRewards
 				for (const entityName in entityRewards) {
 					ret.rewardtables[entityName] = entityRewards[entityName]
 				}
 			}
 			else {
-				ret[type] = {}
 				log.debug('Database %s/%s is not ready', this.platform, type)
+				ret[type] = {}
 			}
 		}
 		return JSON.stringify(ret)

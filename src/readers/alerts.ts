@@ -3,18 +3,11 @@ import EntityRewards from '../entityrewards'
 import { getDate, getFaction, getId, getLocation, getMissionType } from '../helpers'
 import { getRewards } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class AlertReader implements WfReader {
-	private dbTable!: WfDbTable<WfAlert>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('alerts')
-	}
+export default class AlertReader extends WfReader<WfAlert> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'alerts'
 
 	read(alertsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

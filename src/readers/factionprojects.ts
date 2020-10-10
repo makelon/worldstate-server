@@ -2,17 +2,10 @@ import { getValueDifference, patch } from '../compare'
 import { getFomorianFaction, getFomorianType } from '../helpers'
 import { checkpoint, end, update } from '../history'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class FactionProjectReader implements WfReader {
-	private dbTable!: WfDbTable<WfFomorianProgress>
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('factionprojects')
-	}
+export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
+	protected readonly dbTableId = 'factionprojects'
 
 	read(projectsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
@@ -82,8 +75,6 @@ export default class FactionProjectReader implements WfReader {
 		}
 		this.cleanOld(oldIds, timestamp)
 	}
-
-	get entityRewards() { return {} }
 
 	private getDifference(first: WfFomorianProgress, second: WfFomorianProgress): Partial<WfFomorianProgress> {
 		return getValueDifference(

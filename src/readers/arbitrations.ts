@@ -3,18 +3,11 @@ import EntityRewards from '../entityrewards'
 import { getLocation, getNodeFaction, getNodeMissionType, strToTime } from '../helpers'
 import { getRandomRewards } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class ArbitrationReader implements WfReader {
-	private dbTable!: WfDbTable<WfArbitration>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('arbitrations')
-	}
+export default class ArbitrationReader extends WfReader<WfArbitration> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'arbitrations'
 
 	read(arbitrationsInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

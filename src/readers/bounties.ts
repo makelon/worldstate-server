@@ -5,18 +5,11 @@ import { getDate, getId, getLocation, getBountyRewardTableId, getSyndicateName }
 import { checkpoint, end, update } from '../history'
 import { getRandomRewards, getRewardTableRotation } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class BountyReader implements WfReader {
-	private dbTable!: WfDbTable<WfBounty>
+export default class BountyReader extends WfReader<WfBounty> {
 	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('bounties')
-	}
+	protected readonly dbTableId = 'bounties'
 
 	read(bountiesInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

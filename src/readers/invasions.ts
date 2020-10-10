@@ -4,18 +4,11 @@ import { getDate, getFaction, getId, getLocation } from '../helpers'
 import { update } from '../history'
 import { getRewards } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class InvasionReader implements WfReader {
-	private dbTable!: WfDbTable<WfInvasion>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('invasions')
-	}
+export default class InvasionReader extends WfReader<WfInvasion> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'invasions'
 
 	read(invasions: any[], timestamp: number): void {
 		if (!this.dbTable) {

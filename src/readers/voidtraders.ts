@@ -3,18 +3,11 @@ import EntityRewards from '../entityrewards'
 import { getDate, getId, getLocation, getVoidTraderName } from '../helpers'
 import { getItem } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class VoidTraderReader implements WfReader {
-	private dbTable!: WfDbTable<WfVoidTrader>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('voidtraders')
-	}
+export default class VoidTraderReader extends WfReader<WfVoidTrader> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'voidtraders'
 
 	read(voidTradersInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

@@ -1,19 +1,12 @@
 import { getValueDifference, patch } from '../compare'
 import { getDate, getId } from '../helpers'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class NewsReader implements WfReader {
-	private dbTable!: WfDbTable<WfNews>
+export default class NewsReader extends WfReader<WfNews> {
+	protected readonly dbTableId = 'news'
 
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('news')
-	}
-
-	read(articlesInput: any[], timestamp: number): void {
+	read(articlesInput: any[]): void {
 		if (!this.dbTable) {
 			return
 		}
@@ -61,8 +54,6 @@ export default class NewsReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
-
-	get entityRewards() { return {} }
 
 	private getDifference(first: WfNews, second: WfNews): Partial<WfNews> {
 		return getValueDifference(

@@ -1,17 +1,10 @@
 import { getValueDifference, patch } from '../compare'
 import { getDate, getId, getLocation, getNodeFaction, getNodeMissionType, getVoidTier } from '../helpers'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class VoidFissureReader implements WfReader {
-	private dbTable!: WfDbTable<WfVoidFissure>
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('fissures')
-	}
+export default class VoidFissureReader extends WfReader<WfVoidFissure> {
+	protected readonly dbTableId = 'fissures'
 
 	read(fissuresInput: any[], timestamp: number): void {
 		if (!this.dbTable) {
@@ -53,8 +46,6 @@ export default class VoidFissureReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
-
-	get entityRewards() { return {} }
 
 	private getDifference(first: WfVoidFissure, second: WfVoidFissure): Partial<WfVoidFissure> {
 		return getValueDifference(

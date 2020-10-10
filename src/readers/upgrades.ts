@@ -2,17 +2,10 @@ import { getValueDifference, patch } from '../compare'
 import { getDate, getId } from '../helpers'
 import * as log from '../log'
 import { upgradeTypes } from '../tags'
+import WfReader from './reader'
 
-export default class UpgradeReader implements WfReader {
-	private dbTable!: WfDbTable<WfUpgrade>
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('upgrades')
-	}
+export default class UpgradeReader extends WfReader<WfUpgrade> {
+	protected readonly dbTableId = 'upgrades'
 
 	read(upgradeInputs: any[], timestamp: number): void {
 		if (!this.dbTable) {
@@ -53,8 +46,6 @@ export default class UpgradeReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
-
-	get entityRewards() { return {} }
 
 	private getDifference(first: WfUpgrade, second: WfUpgrade): Partial<WfUpgrade> {
 		return getValueDifference(

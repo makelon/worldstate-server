@@ -4,18 +4,11 @@ import { getAcolyteName, getId, getLocation } from '../helpers'
 import { checkpoint, end, update } from '../history'
 import { getRandomRewards } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class AcolyteReader implements WfReader {
-	private dbTable!: WfDbTable<WfAcolyte>
+export default class AcolyteReader extends WfReader<WfAcolyte> {
 	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('acolytes')
-	}
+	protected readonly dbTableId = 'acolytes'
 
 	read(acolytesInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

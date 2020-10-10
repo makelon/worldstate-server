@@ -4,18 +4,11 @@ import { getDate, getFaction, getId, getLocation, getMissionType } from '../help
 import { getRandomRewards } from '../items'
 import * as log from '../log'
 import { sortieBosses, sortieModifiers } from '../tags'
+import WfReader from './reader'
 
-export default class SortieReader implements WfReader {
-	private dbTable!: WfDbTable<WfSortie>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('sorties')
-	}
+export default class SortieReader extends WfReader<WfSortie> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'sorties'
 
 	read(sortiesInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

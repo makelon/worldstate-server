@@ -3,16 +3,13 @@ import { readFileSync } from 'fs'
 import { getValueDifference } from '../compare'
 import config from '../config'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class DayNightReader implements WfReader {
-	private dbTable!: WfDbTable<WfDayNight>
-
-	constructor(
-		private platform: string
-	) {}
+export default class DayNightReader extends WfReader<WfDayNight> {
+	protected readonly dbTableId = 'daynight'
 
 	start(db: WfDb): void {
-		this.dbTable = db.getTable('daynight')
+		this.dbTable = db.getTable(this.dbTableId)
 		let dayNightInput: any
 		if (config.dayNightPath) {
 			try {
@@ -65,8 +62,6 @@ export default class DayNightReader implements WfReader {
 		}
 		this.cleanOld(oldIds)
 	}
-
-	get entityRewards() { return {} }
 
 	private getDifference(first: WfDayNight, second: WfDayNight): Partial<WfDayNight> {
 		return getValueDifference(

@@ -1,17 +1,10 @@
 import { getLocation } from '../helpers'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class SentientAnomalyReader implements WfReader {
-	private dbTable!: WfDbTable<WfSentientAnomaly>
+export default class SentientAnomalyReader extends WfReader<WfSentientAnomaly> {
 	private lastMission?: WfSentientAnomaly
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('sentient-anomalies')
-	}
+	protected readonly dbTableId = 'sentient-anomalies'
 
 	read(missionInput: any, timestamp: number): void {
 		if (!this.dbTable) {
@@ -55,8 +48,6 @@ export default class SentientAnomalyReader implements WfReader {
 			log.debug('Expired sentient anomaly %s for %s', this.lastMission.id, this.platform)
 		}
 	}
-
-	get entityRewards() { return {} }
 
 	private cleanOld(): void {
 		for (const mission of this.dbTable!.getAll()) {

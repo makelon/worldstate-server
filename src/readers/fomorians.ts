@@ -4,18 +4,11 @@ import { getDate, getFomorianType, getId, getLocation, getMissionType } from '..
 import { checkpoint, end, update } from '../history'
 import { getItems, getRandomRewards, getRewards } from '../items'
 import * as log from '../log'
+import WfReader from './reader'
 
-export default class FomorianReader implements WfReader {
-	private dbTable!: WfDbTable<WfFomorian>
-	private _entityRewards = new EntityRewards()
-
-	constructor(
-		private platform: string
-	) {}
-
-	start(db: WfDb): void {
-		this.dbTable = db.getTable('fomorians')
-	}
+export default class FomorianReader extends WfReader<WfFomorian> {
+	private readonly _entityRewards = new EntityRewards()
+	protected readonly dbTableId = 'fomorians'
 
 	read(fomoriansInput: any[], timestamp: number): void {
 		if (!this.dbTable) {

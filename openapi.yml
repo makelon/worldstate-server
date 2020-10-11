@@ -1,0 +1,1454 @@
+openapi: 3.0.1
+info:
+  title: Tenno Tools
+  description: Warframe Worldstate API used by Tenno Tools
+  version: 1.0.0
+servers:
+- url: 'https://api.tenno.tools/worldstate/{platform}'
+  variables:
+    platform:
+      default: pc
+      enum:
+      - 'pc'
+      - 'ps4'
+      - 'xb1'
+      - 'ns'
+tags:
+- name: worldstate
+  description: >-
+    Multiple component types can be requested in one query using a comma-separated list.
+    For example, /alerts,invasions,sorties will include anything matching those types in the response.
+components:
+  schemas:
+    Item:
+      type: object
+      properties:
+        name:
+          type: string
+        type:
+          type: string
+      required:
+      - name
+      - type
+    Reward:
+      allOf:
+      - $ref: '#/components/schemas/Item'
+      - type: object
+        properties:
+          count:
+            type: integer
+        required:
+        - count
+    Rewards:
+      type: object
+      properties:
+        credits:
+          type: integer
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Reward'
+    RandomReward:
+      allOf:
+      - $ref: '#/components/schemas/Reward'
+      - type: object
+        properties:
+          chance:
+            type: number
+        required:
+        - chance
+    RewardTableTier:
+      type: array
+      items:
+        $ref: '#/components/schemas/RandomReward'
+      description: Possible rewards.
+    RewardTable:
+      type: array
+      items:
+        $ref: '#/components/schemas/RewardTableTier'
+      description: Reward table tier, e.g. rotation in a mission with rotating reward tables.
+    ItemRewardTable:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/RewardTable'
+      description: Reward tables associated with items included in the response.
+    ProgressHistory:
+      type: array
+      items:
+        type: array
+        items:
+          type: number
+          minItems: 2
+          maxItems: 2
+          description: >-
+            Timestamp and accompanying value of the corresponding property. Timestamp will be negative if the value is volatile and expected to change.
+    Acolyte:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        health:
+          type: number
+        healthHistory:
+          $ref: '#/components/schemas/ProgressHistory'
+        discovered:
+          type: boolean
+        location:
+          type: string
+        rewards:
+          $ref: '#/components/schemas/RewardTable'
+      required:
+      - id
+      - name
+      - health
+      - healthHistory
+      - discovered
+      - location
+    Alert:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        location:
+          type: string
+        missionType:
+          type: string
+        faction:
+          type: string
+        minLevel:
+          type: integer
+        maxLevel:
+          type: integer
+        missionLength:
+          type: integer
+        rewards:
+          $ref: '#/components/schemas/Rewards'
+      required:
+      - id
+      - start
+      - end
+      - location
+      - missionType
+      - faction
+      - minLevel
+      - maxLevel
+    Arbitration:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        location:
+          type: string
+        missionType:
+          type: string
+        faction:
+          type: string
+        rewards:
+          $ref: '#/components/schemas/RewardTable'
+      required:
+      - id
+      - start
+      - end
+      - location
+      - missionType
+      - faction
+      - rewards
+    Article:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        text:
+          type: string
+        link:
+          type: string
+        eventStart:
+          type: integer
+        eventEnd:
+          type: integer
+        eventUrl:
+          type: string
+      required:
+      - id
+      - start
+      - text
+    Bounty:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        syndicate:
+          type: string
+        jobs:
+          $ref: '#/components/schemas/BountyJob'
+        location:
+          type: string
+        health:
+          type: number
+        healthHistory:
+          $ref: '#/components/schemas/ProgressHistory'
+      required:
+      - id
+      - start
+      - end
+      - syndicate
+      - jobs
+    BountyJob:
+      type: object
+      properties:
+        minLevel:
+          type: integer
+        maxLevel:
+          type: integer
+        xpAmounts:
+          type: array
+          items:
+            type: integer
+        rewards:
+          $ref: '#/components/schemas/RewardTable'
+        rotation:
+          type: string
+        title:
+          type: string
+      required:
+      - minLevel
+      - maxLevel
+      - xpAmounts
+      - rewards
+    ChallengeSeason:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        syndicate:
+          type: string
+        season:
+          type: integer
+        phase:
+          type: integer
+        challenges:
+          type: array
+          items:
+            $ref: '#/components/schemas/Challenge'
+      required:
+      - id
+      - start
+      - end
+      - syndicate
+      - season
+      - phase
+      - challenges
+    Challenge:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        daily:
+          type: boolean
+        description:
+          type: string
+        xpAmount:
+          type: integer
+      required:
+      - id
+      - start
+      - end
+      - daily
+      - description
+      - xpAmount
+    DailyDeal:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        item:
+          $ref: '#/components/schemas/Item'
+        price:
+          type: integer
+        originalPrice:
+          type: integer
+        stock:
+          type: integer
+        sold:
+          type: integer
+      required:
+      - id
+      - start
+      - end
+      - item
+      - price
+      - originalPrice
+      - stock
+      - sold
+    DayNight:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        length:
+          type: number
+        dayStart:
+          type: number
+        dayEnd:
+          type: number
+      required:
+      - id
+      - start
+      - length
+      - dayStart
+      - dayEnd
+    FactionProject:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        progress:
+          type: number
+        progressHistory:
+          $ref: '#/components/schemas/ProgressHistory'
+      required:
+      - id
+      - type
+      - progress
+      - progressHistory
+    Fomorian:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        type:
+          type: string
+        health:
+          type: number
+        healthHistory:
+          $ref: '#/components/schemas/ProgressHistory'
+        endGoal:
+          type: integer
+        missionType:
+          type: string
+        victimLocation:
+          type: string
+        missionLocation:
+          type: string
+        requiredItems:
+          type: array
+          items:
+            $ref: '#/components/schemas/Item'
+        goalRewards:
+          $ref: '#/components/schemas/Rewards'
+        missionRewards:
+          $ref: '#/components/schemas/Rewards'
+        randomRewards:
+          $ref: '#/components/schemas/RewardTable'
+      required:
+      - id
+      - start
+      - end
+      - type
+    KuvaSiphon:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        location:
+          type: string
+        missionType:
+          type: string
+        faction:
+          type: string
+        flood:
+          type: boolean
+        rewards:
+          $ref: '#/components/schemas/RewardTable'
+      required:
+      - id
+      - start
+      - end
+      - location
+      - missionType
+      - faction
+      - flood
+      - rewards
+    Invasion:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        endScore:
+          type: integer
+        score:
+          type: integer
+        scoreHistory:
+          $ref: '#/components/schemas/ProgressHistory'
+        location:
+          type: string
+        factionAttacker:
+          type: string
+        factionDefender:
+          type: string
+        rewardsAttacker:
+          $ref: '#/components/schemas/Rewards'
+        rewardsDefender:
+          $ref: '#/components/schemas/Rewards'
+      required:
+      - id
+      - start
+      - endScore
+      - score
+      - scoreHistory
+      - location
+      - factionAttacker
+      - factionDefender
+    SentientOutpost:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        location:
+          type: string
+      required:
+      - id
+      - start
+      - location
+    SortieMission:
+      type: object
+      properties:
+        missionType:
+          type: string
+        modifier:
+          type: string
+        location:
+          type: string
+      required:
+      - missionType
+      - modifier
+      - location
+    Sortie:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        faction:
+          type: string
+        bossName:
+          type: string
+        rewards:
+          $ref: '#/components/schemas/RewardTable'
+        missions:
+          type: array
+          items:
+            $ref: '#/components/schemas/SortieMission'
+      required:
+      - id
+      - start
+      - end
+      - faction
+      - bossName
+      - rewards
+      - missions
+    VoidFissure:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        location:
+          type: string
+        faction:
+          type: string
+        missionType:
+          type: string
+        tier:
+          type: string
+      required:
+      - id
+      - start
+      - end
+      - location
+      - faction
+      - missionType
+      - tier
+    Upgrade:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        type:
+          type: string
+        opType:
+          type: string
+        value:
+          type: integer
+      required:
+      - id
+      - start
+      - end
+      - type
+      - opType
+      - value
+    VoidTrader:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        name:
+          type: string
+        location:
+          type: string
+        active:
+          type: boolean
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/VoidTraderItem'
+      required:
+      - id
+      - start
+      - end
+      - name
+      - location
+      - active
+      - items
+    VoidTraderItem:
+      allOf:
+      - $ref: '#/components/schemas/Item'
+      - type: object
+        properties:
+          ducats:
+            type: integer
+          credits:
+            type: integer
+        required:
+        - ducats
+        - credits
+    BaseReponse:
+      type: object
+      properties:
+        time:
+          type: integer
+          description: Timestamp of the last world state update
+        rewardtables:
+          $ref: '#/components/schemas/ItemRewardTable'
+      required:
+      - time
+      - rewardtables
+paths:
+  /acolytes:
+    get:
+      summary: List of currently active acolytes
+      operationId: getAcolytes
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    acolytes:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Acolyte'
+                        time:
+                          type: integer
+                          description: Timestamp of the last acolyte data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - acolytes
+              example:
+                time: 1602434022
+                rewardtables: &itemrewards
+                  Neo N12 Relic:
+                  - - name: Nova Prime Chassis Blueprint
+                      type: Warframe
+                      count: 1
+                      chance: 0.02
+                    - name: Dual Kamas Prime Handle
+                      type: Weapon
+                      count: 1
+                      chance: 0.11
+                acolytes:
+                  time: 1602434022
+                  data:
+                  - id: 5f8333e6e3b754a026b3d52d
+                    name: Violence
+                    health: 0.98
+                    healthHistory: &healthhistory
+                    -
+                      - 1602435822
+                      - 0.98
+                    -
+                      - 1602435942
+                      - 0.9650941736833631
+                    -
+                      - -1602436062
+                      - 0.9590517019476051
+                    discovered: false
+                    location: Pluto/Hieracon
+                    rewards: &rewardtable
+                    - - name: Shrapnel Shot
+                        type: Mod
+                        count: 1
+                        chance: 0.5152
+                      - name: Neo N12 Relic
+                        type: Relic
+                        count: 1
+                        chance: 0.0404
+  /alerts:
+    get:
+      summary: List of currently active alerts
+      operationId: getAlerts
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    alerts:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Alert'
+                        time:
+                          type: integer
+                          description: Timestamp of the last alert data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - alerts
+              example:
+                time: 1602438172
+                rewardtables: *itemrewards
+                alerts:
+                  time: 1602438172
+                  data:
+                  - id: 5f83435e73c435ece2c6551b
+                    start: 1602437982
+                    end: 1602440327
+                    location: Mars/Olympus
+                    missionType: Exterminate
+                    faction: Grineer
+                    minLevel: 15
+                    maxLevel: 17
+                    rewards:
+                      credits: 6500
+                      items:
+                      - name: Neo N12 Relic
+                        type: Relic
+                        count: 1
+  /arbitrations:
+    get:
+      summary: List of currently active arbitration missions
+      operationId: getArbitrations
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    arbitrations:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Arbitration'
+                        time:
+                          type: integer
+                          description: Timestamp of the last arbitration data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - arbitrations
+              example:
+                time: 1602438172
+                rewardtables: *itemrewards
+                arbitrations:
+                  time: 1602438302
+                  data:
+                  - id: '1602435292'
+                    start: 1602435292
+                    end: 1602438892
+                    location: Sedna/Kelpie
+                    faction: Grineer
+                    missionType: Disruption
+                    rewards: *rewardtable
+  /bounties:
+    get:
+      summary: Bounty tasks in open landscape areas
+      operationId: getBounties
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    bounties:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Bounty'
+                        time:
+                          type: integer
+                          description: Timestamp of the last bounty data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - bounties
+              example:
+                time: 1602438172
+                rewardtables: *itemrewards
+                bounties:
+                  time: 1602438172
+                  data:
+                  - id: 5f83441225666c0225476ac6
+                    start: 1602437982
+                    end: 1602441202
+                    syndicate: Ostron
+                    jobs:
+                    - rewards: *rewardtable
+                      minLevel: 40
+                      maxLevel: 60
+                      xpAmounts:
+                      - 1000
+                      title: Bounty Title
+                      rotation: C
+  /challenges:
+    get:
+      summary: List of currently active Nightwave challenges
+      operationId: getChallenges
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    challenges:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/ChallengeSeason'
+                        time:
+                          type: integer
+                          description: Timestamp of the last challenge data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - challenges
+              example:
+                time: 1602429391
+                rewardtables: {}
+                challenges:
+                  time: 1602381839
+                  data:
+                  - id: RadioLegion3Syndicate1605484800
+                    start: 1589155200
+                    end: 1605484800
+                    syndicate: RadioLegion3Syndicate
+                    season: 4
+                    phase: 3
+                    challenges:
+                    - id: 000500220000000000000295
+                      start: 1601856000
+                      end: 1602460800
+                      daily: false
+                      description: Mine 6 rare gems in Orb Vallis
+                      xpAmount: 4500
+  /dailydeals:
+    get:
+      summary: Information about Darvo's daily item sale
+      operationId: getDailyDeals
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    dailydeals:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/DailyDeal'
+                        time:
+                          type: integer
+                          description: Timestamp of the last daily deal update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - dailydeals
+              example:
+                time: 1602429391
+                rewardtables: *itemrewards
+                dailydeals:
+                  time: 1602428243
+                  data:
+                  - id: '1602363600'
+                    start: 1602363600
+                    end: 1602457200
+                    item:
+                      name: Neo N12 Relic
+                      type: Relic
+                    price: 165
+                    originalPrice: 235
+                    stock: 250
+                    sold: 124
+  /daynight:
+    get:
+      summary: Current time of day in areas with dynamic day cycles
+      operationId: getDayCycles
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    daynight:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/DayNight'
+                        time:
+                          type: integer
+                          description: Timestamp of the last day cycle update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - daynight
+              example:
+                time: 1602429513
+                rewardtables: {}
+                daynight:
+                  time: 1602381839
+                  data:
+                  - id: earth
+                    start: 0
+                    length: 28800
+                    dayStart: 0
+                    dayEnd: 14400
+                  - id: cetus
+                    start: 1509371722
+                    length: 8998.8748
+                    dayStart: 2249.7187
+                    dayEnd: 8248.9686
+  /factionprojects:
+    get:
+      summary: Progress of enemy faction projects
+      operationId: getFactionProjects
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    factionprojects:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/FactionProject'
+                        time:
+                          type: integer
+                          description: Timestamp of the last faction project update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - factionprojects
+              example:
+                time: 1602429513
+                rewardtables: {}
+                factionprojects:
+                  time: 1602438172
+                  data:
+                  - id: '0'
+                    type: Balor Fomorian
+                    progress: 3.4488579032238844
+                    progressHistory:
+                    -
+                      - 1602437982
+                      - 0
+                    -
+                      - 1602438102
+                      - 1.7105091278024527
+                    -
+                      - 1602438172
+                      - 3.4488579032238844
+  /fissures:
+    get:
+      summary: List of currently active void fissure missions
+      operationId: getVoidFissures
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    fissures:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/VoidFissure'
+                        time:
+                          type: integer
+                          description: Timestamp of the last void fissure data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - fissures
+              example:
+                time: 1602429513
+                rewardtables: {}
+                fissures:
+                  time: 1602429084
+                  data:
+                  - id: 5f8314cdb7aceaf08952772b
+                    start: 1602426061
+                    end: 1602432830
+                    location: Jupiter/Callisto
+                    faction: Corpus
+                    missionType: Interception
+                    tier: Meso
+  /fomorians:
+    get:
+      summary: List of currently active fomorian attacks
+      operationId: getFomorians
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    fomorians:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Fomorian'
+                        time:
+                          type: integer
+                          description: Timestamp of the last fomorian data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - fomorians
+              example:
+                time: 1602429513
+                rewardtables: *itemrewards
+                fomorians:
+                  time: 1602438172
+                  data:
+                  - id: 5f83435ebcef7ea15e4f14e5
+                    start: 1602437969
+                    end: 1602672549
+                    type: Razorback
+                    health: 0.9546783535250828
+                    healthHistory: *healthhistory
+                    endGoal: 3
+                    missionType: Assassination
+                    victimLocation: Saturn/Kronia Relay
+                    missionLocation: EventNode5
+                    requiredItems:
+                    - name: Razorback Cipher
+                      type: Misc
+                    goalRewards:
+                      credits: 200000
+                      items:
+                      - name: Orokin Catalyst
+                        type: Misc
+                        count: 1
+                    randomRewards: *rewardtable
+  /invasions:
+    get:
+      summary: List of currently active invasion missions
+      operationId: getInvasions
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    invasions:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Invasion'
+                        time:
+                          type: integer
+                          description: Timestamp of the last invasion data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - invasions
+              example:
+                time: 1602431622
+                rewardtables: *itemrewards
+                invasions:
+                  time: 1602438172
+                  data:
+                  - id: 5f83435eef8152049290279c
+                    start: 1602437972
+                    endScore: 31000
+                    location: Ceres/Kiste
+                    score: 971.0933943144481
+                    scoreHistory:
+                    -
+                      - 1602437972
+                      - 0
+                    -
+                      - 1602438102
+                      - 882.3878536384497
+                    -
+                      - -1602438172
+                      - 971.0933943144481
+                    factionAttacker: Corpus
+                    factionDefender: Grineer
+                    rewardsAttacker:
+                      items:
+                      - name: Neo N12 Relic
+                        type: Relic
+                        count: 1
+                    rewardsDefender:
+                      items:
+                      - name: Detonite Injector
+                        type: Resource
+                        count: 3
+  /kuvasiphons:
+    get:
+      summary: List of currently active kuva siphon missions
+      operationId: getKuvaSiphons
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    kuvasiphons:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/KuvaSiphon'
+                        time:
+                          type: integer
+                          description: Timestamp of the last kuva siphon data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - kuvasiphons
+              example:
+                time: 1602431622
+                rewardtables: *itemrewards
+                kuvasiphons:
+                  time: 1602442442
+                  data:
+                  - id: KuvaMission11602439432
+                    start: 1602439432
+                    end: 1602443032
+                    location: Mars/War
+                    faction: Grineer
+                    missionType: Assassination
+                    flood: false
+                    rewards: *rewardtable
+  /news:
+    get:
+      summary: News and announcements about Warframe
+      operationId: getNews
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    news:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Article'
+                        time:
+                          type: integer
+                          description: Timestamp of the last news list update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - news
+              example:
+                time: 1602431622
+                rewardtables: {}
+                news:
+                  time: 1602431622
+                  data:
+                  - id: 5f832a0e2183dbbc2d17d9bf
+                    start: 1602431489
+                    text: 'TACTICAL ALERT: Wolf Hunt is Live!'
+                    eventUrl: 'https://www.warframe.example/news/the-wolf-of-saturn-six-showdown'
+                  - id: 5f832a0e2183dbbc2d17d9b0
+                    start: 1602431267
+                    text: 'Free Frost Prime, Prime Syandana and more!'
+                    link: 'https://www.warframe.example/freeprime'
+                  - id: 5f832a0e2183dbbc2d17d9b5
+                    start: 1602430514
+                    text: 'Coming Soon: Devstream #89!'
+                    link: 'https://forums.warframe.example/topic/768133-coming-soon-devstream-89/'
+                    eventStart: 1602555078
+                    eventEnd: 1602466189
+                    eventUrl: 'http://www.twitch.example/warframe'
+  /sentient-anomalies:
+    get:
+      summary: Information about the currently active Sentient Outpost mission
+      operationId: getSentientAnomalies
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    sentient-anomalies:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/SentientOutpost'
+                        time:
+                          type: integer
+                          description: Timestamp of the last sentient outpost data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - sentient-anomalies
+              example:
+                time: 1602429513
+                rewardtables: {}
+                sentient-anomalies:
+                  time: 1602428963
+                  data:
+                  - id: '552'
+                    start: 1602428903
+                    location: Veil/Rya
+  /sorties:
+    get:
+      summary: List of currently active sortie missions
+      operationId: getSorties
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    sorties:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Sortie'
+                        time:
+                          type: integer
+                          description: Timestamp of the last sortie data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - sorties
+              example:
+                time: 1602429513
+                rewardtables: *itemrewards
+                sorties:
+                  time: 1602381839
+                  data:
+                  - id: 5f81d6fd1adaf47a34b039cf
+                    start: 1602345600
+                    end: 1602432000
+                    faction: Corpus
+                    bossName: Nef Anyo
+                    rewards: *rewardtable
+                    missions:
+                    - missionType: Spy
+                      modifier: Elemental buffs (Blast)
+                      location: Phobos/Iliad
+  /upgrades:
+    get:
+      summary: List of currently active global boosters
+      operationId: getUpgrades
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    upgrades:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Upgrade'
+                        time:
+                          type: integer
+                          description: Timestamp of the last global booster data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - upgrades
+              example:
+                time: 1602429513
+                rewardtables: {}
+                upgrades:
+                  time: 1602381839
+                  data:
+                  - id: 5f806eb4e4c66853301d0bb1
+                    start: 1602270000
+                    end: 1602529200
+                    type: Affinity
+                    opType: MULTIPLY
+                    value: 2
+  /voidtraders:
+    get:
+      summary: List of currently active and planned void trader visits
+      operationId: getVoidTraders
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    voidtraders:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/VoidTrader'
+                        time:
+                          type: integer
+                          description: Timestamp of the last void trader data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - voidtraders
+              example:
+                time: 1602429513
+                rewardtables: *itemrewards
+                voidtraders:
+                  time: 1602438172
+                  data:
+                  - id: 5f83435e06c56f9baa4989ab1602314525
+                    start: 1602314525
+                    end: 1602561438
+                    name: Baro Ki'Teer
+                    location: Saturn/Kronia Relay
+                    active: true
+                    items:
+                    - name: Zephyr Immortal Skin
+                      type: Cosmetic
+                      ducats: 550
+                      credits: 100000
+                    - name: Neo N12 Relic
+                      type: Relic
+                      ducats: 2800
+                      credits: 100000
+                  - id: 5f83435e06d51f9baa4989qc1602438178
+                    start: 1602438178
+                    end: 1603226994
+                    name: Barok Eater
+                    location: Earth/Strata Relay
+                    active: false

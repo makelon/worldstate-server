@@ -34,6 +34,8 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
 
 ## API
 
+API documentation is hosted at [https://docs.tenno.tools/api/](https://docs.tenno.tools/api/), but more detailed descriptions are available in this readme.
+
 `GET /<platform>` or `GET /<platform>/<components>` returns a response with the following format:
 
 ```

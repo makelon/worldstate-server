@@ -51,7 +51,7 @@ export default class SentientAnomalyReader extends WfReader<WfSentientAnomaly> {
 
 	private cleanOld(): void {
 		for (const mission of this.dbTable!.getAll()) {
-			if (mission.end) {
+			if (mission.end || !this.lastMission) {
 				this.dbTable!.moveTmp(mission.id)
 				log.debug('Removed sentient anomaly %s for %s', mission.id, this.platform)
 			}

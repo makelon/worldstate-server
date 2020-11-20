@@ -1487,5 +1487,800 @@
                 "chance": 0.1125
             }
         ]
+    ],
+    "1bq3": [
+        [
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.3125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.25
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.1563
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0313
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0313
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0313
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.1563
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Necramech Steel Fiber",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Necramech Efficiency",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0313
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0313
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0313
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.1
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.1
+            },
+            {
+                "name": "Necramech Steel Fiber",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Necramech Efficiency",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.075
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.05
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.025
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.20829999999999999
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Steel Fiber",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Necramech Efficiency",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0833
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ]
+    ],
+    "1bq4": [
+        [
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.25
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Reach",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0833
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.11539999999999999
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Necramech Reach",
+                "count": 1,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0385
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0385
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0385
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.11539999999999999
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Necramech Slipstream",
+                "count": 1,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Necramech Drift",
+                "count": 1,
+                "chance": 0.07690000000000001
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0385
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0385
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0385
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.0882
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0588
+            },
+            {
+                "name": "Necramech Reach",
+                "count": 1,
+                "chance": 0.0588
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0588
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0294
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0294
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0294
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0882
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0588
+            },
+            {
+                "name": "Necramech Slipstream",
+                "count": 1,
+                "chance": 0.0588
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.0588
+            },
+            {
+                "name": "Necramech Drift",
+                "count": 1,
+                "chance": 0.0588
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0294
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0294
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0294
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0794
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.0588
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.0588
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.0382
+            }
+        ],
+        [
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.1364
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Slipstream",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Drift",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.12269999999999999
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.0591
+            }
+        ]
+    ],
+    "1bq5": [
+        [
+            {
+                "name": "Endo",
+                "count": 1500,
+                "chance": 0.3
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.2
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.1
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 1500,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0741
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.037000000000000005
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.037000000000000005
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.037000000000000005
+            },
+            {
+                "name": "Sporothrix Barrel",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0741
+            },
+            {
+                "name": "Necramech Stretch",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Necramech Friction",
+                "count": 1,
+                "chance": 0.0741
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0556
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 1500,
+                "chance": 0.0857
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0571
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0571
+            },
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0286
+            },
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0286
+            },
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0286
+            },
+            {
+                "name": "Sporothrix Barrel",
+                "count": 1,
+                "chance": 0.0643
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.0643
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0571
+            },
+            {
+                "name": "Necramech Stretch",
+                "count": 1,
+                "chance": 0.0571
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.0571
+            },
+            {
+                "name": "Necramech Friction",
+                "count": 1,
+                "chance": 0.0571
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.0429
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0429
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.0429
+            },
+            {
+                "name": "Sporothrix Stock",
+                "count": 1,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0571
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.0571
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.0429
+            }
+        ],
+        [
+            {
+                "name": "Sporothrix Barrel",
+                "count": 1,
+                "chance": 0.09
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.09
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.08
+            },
+            {
+                "name": "Necramech Stretch",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Necramech Friction",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.06
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.06
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.06
+            },
+            {
+                "name": "Sporothrix Stock",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.08
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.06
+            }
+        ]
     ]
 }

@@ -25,8 +25,8 @@ export function prepareRequest(url: string, method: string = 'GET'): RequestOpti
 				'Accept-Encoding': 'gzip, deflate',
 				'User-Agent': config.userAgent
 			},
-		timeout: config.requestTimeout
-	}
+			timeout: config.requestTimeout
+		}
 	if (urlParsed.protocol == 'https:') {
 		if (!config.tlsVerify) {
 			requestOptions.rejectUnauthorized = false

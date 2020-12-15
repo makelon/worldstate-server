@@ -8,7 +8,7 @@ import * as log from '../log'
 import WfReader from './reader'
 
 export default class BountyReader extends WfReader<WfBounty> {
-	private _entityRewards = new EntityRewards()
+	private readonly _entityRewards = new EntityRewards()
 	protected readonly dbTableId = 'bounties'
 
 	protected isActive(bounty: WfBounty, timestamp: number) {

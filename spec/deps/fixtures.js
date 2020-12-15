@@ -738,7 +738,7 @@ function* getNews() {
 	yield [{}, []]
 }
 
-function *getSentientAnomalies() {
+function* getSentientAnomalies() {
 	let timeLocalShort = timeNowShort
 	const mission = {
 			sfn: nodesRailjack[0].nodeId

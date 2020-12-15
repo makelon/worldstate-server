@@ -44,7 +44,7 @@
                 "chance": 0.07519999999999999
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith K5 Relic",
                 "count": 1,
                 "chance": 0.07519999999999999
             }
@@ -61,7 +61,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith K5 Relic",
                 "count": 1,
                 "chance": 0.3056
             },
@@ -117,7 +117,7 @@
                 "chance": 0.07519999999999999
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith M7 Relic",
                 "count": 1,
                 "chance": 0.07519999999999999
             }
@@ -134,7 +134,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith M7 Relic",
                 "count": 1,
                 "chance": 0.3056
             },
@@ -190,7 +190,7 @@
                 "chance": 0.07519999999999999
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith K5 Relic",
                 "count": 1,
                 "chance": 0.07519999999999999
             }
@@ -207,7 +207,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith K5 Relic",
                 "count": 1,
                 "chance": 0.3056
             },
@@ -273,7 +273,7 @@
                 "chance": 0.0897
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.2564
             },
@@ -295,7 +295,7 @@
         ],
         [
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.3333
             },
@@ -376,7 +376,7 @@
                 "chance": 0.0897
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.2564
             },
@@ -398,7 +398,7 @@
         ],
         [
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.3333
             },
@@ -479,7 +479,7 @@
                 "chance": 0.0897
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.2564
             },
@@ -501,7 +501,7 @@
         ],
         [
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.3333
             },
@@ -540,7 +540,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith M7 Relic",
                 "count": 1,
                 "chance": 0.1
             },
@@ -572,7 +572,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith M7 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -597,7 +597,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -629,7 +629,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -654,7 +654,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -688,12 +688,12 @@
                 "chance": 0.2
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith K5 Relic",
                 "count": 1,
                 "chance": 0.125
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.125
             },
@@ -725,12 +725,12 @@
                 "chance": 0.11109999999999999
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith K5 Relic",
                 "count": 1,
                 "chance": 0.0694
             },
             {
-                "name": "Meso F2 Relic",
+                "name": "Meso E5 Relic",
                 "count": 1,
                 "chance": 0.0694
             },
@@ -755,7 +755,7 @@
                 "chance": 0.11109999999999999
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.0444
             },
@@ -787,7 +787,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -812,7 +812,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Axi E1 Relic",
+                "name": "Axi H5 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -846,7 +846,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith M7 Relic",
                 "count": 1,
                 "chance": 0.1
             },
@@ -878,7 +878,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Lith G1 Relic",
+                "name": "Lith M7 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -903,7 +903,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -935,7 +935,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -960,7 +960,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Axi E1 Relic",
+                "name": "Axi A12 Relic",
                 "count": 1,
                 "chance": 0.05
             },
@@ -1036,7 +1036,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.25
             },
@@ -1083,7 +1083,7 @@
                 "chance": 0.03
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.2
             },
@@ -1110,7 +1110,7 @@
         ],
         [
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.3333
             },
@@ -1191,7 +1191,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.25
             },
@@ -1238,7 +1238,7 @@
                 "chance": 0.03
             },
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.2
             },
@@ -1265,7 +1265,7 @@
         ],
         [
             {
-                "name": "Neo S5 Relic",
+                "name": "Neo B6 Relic",
                 "count": 1,
                 "chance": 0.3333
             },
@@ -1326,7 +1326,7 @@
                 "chance": 0.0571
             },
             {
-                "name": "Axi E1 Relic",
+                "name": "Axi A12 Relic",
                 "count": 1,
                 "chance": 0.2857
             },
@@ -1353,7 +1353,7 @@
                 "chance": 0.0444
             },
             {
-                "name": "Axi E1 Relic",
+                "name": "Axi A12 Relic",
                 "count": 1,
                 "chance": 0.22219999999999998
             },
@@ -1370,7 +1370,7 @@
         ],
         [
             {
-                "name": "Axi E1 Relic",
+                "name": "Axi A12 Relic",
                 "count": 1,
                 "chance": 0.43479999999999996
             },
@@ -1386,900 +1386,2189 @@
             }
         ]
     ],
-    "191B.1": [
+    "191B.1A": [
         [
             {
-                "name": "Orokin Orientation Matrix",
-                "count": 3,
+                "name": "Residual Boils",
+                "count": 1,
                 "chance": 0.5
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.125
             },
             {
                 "name": "Meso N10 Relic",
                 "count": 1,
                 "chance": 0.125
-            },
-            {
-                "name": "Meso C6 Relic",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Meso E4 Relic",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Trapezium Xenorhast",
-                "count": 1,
-                "chance": 0.0625
-            },
-            {
-                "name": "Cabochon Embolos",
-                "count": 1,
-                "chance": 0.0625
             }
         ]
     ],
-    "191B.2": [
+    "191B.1B": [
         [
             {
-                "name": "Orokin Ballistics Matrix",
-                "count": 3,
+                "name": "Residual Viremia",
+                "count": 1,
                 "chance": 0.5
             },
             {
-                "name": "Neo D2 Relic",
+                "name": "Necramech Efficiency",
                 "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
                 "chance": 0.125
             },
             {
                 "name": "Neo I2 Relic",
                 "count": 1,
                 "chance": 0.125
-            },
-            {
-                "name": "Neo T2 Relic",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Neo N13 Relic",
-                "count": 1,
-                "chance": 0.125
             }
         ]
     ],
-    "191B.3": [
+    "191B.1C": [
         [
             {
-                "name": "Orokin Animus Matrix",
-                "count": 3,
-                "chance": 0.5125
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.5
             },
             {
-                "name": "Damaged Necramech Weapon Barrel",
+                "name": "Necramech Thrusters",
                 "count": 1,
-                "chance": 0.05
-            },
-            {
-                "name": "Damaged Necramech Weapon Receiver",
-                "count": 1,
-                "chance": 0.05
+                "chance": 0.2
             },
             {
                 "name": "Damaged Necramech Weapon Stock",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.15
             },
             {
-                "name": "Axi B3 Relic",
-                "count": 1,
-                "chance": 0.1125
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.1
             },
             {
-                "name": "Axi T4 Relic",
-                "count": 1,
-                "chance": 0.1125
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.025
             },
             {
                 "name": "Axi C5 Relic",
                 "count": 1,
-                "chance": 0.1125
+                "chance": 0.025
             }
         ]
     ],
-    "1bq3": [
+    "191B.2A": [
         [
             {
-                "name": "Endo",
-                "count": 500,
-                "chance": 0.3125
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.5
             },
             {
-                "name": "Orokin Orientation Matrix",
-                "count": 2,
-                "chance": 0.25
-            },
-            {
-                "name": "Necramech Redirection",
+                "name": "Necramech Blitz",
                 "count": 1,
                 "chance": 0.25
             },
             {
-                "name": "Residual Boils",
+                "name": "Arum Spinosa Blueprint",
                 "count": 1,
-                "chance": 0.0625
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.0625
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.0625
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 500,
-                "chance": 0.1563
-            },
-            {
-                "name": "Orokin Orientation Matrix",
-                "count": 2,
-                "chance": 0.125
-            },
-            {
-                "name": "Necramech Redirection",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.0313
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.0313
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.0313
-            },
-            {
-                "name": "Endo",
-                "count": 750,
-                "chance": 0.1563
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 2,
-                "chance": 0.125
-            },
-            {
-                "name": "Necramech Steel Fiber",
-                "count": 1,
-                "chance": 0.0625
-            },
-            {
-                "name": "Necramech Efficiency",
-                "count": 1,
-                "chance": 0.0625
-            },
-            {
-                "name": "Residual Shock",
-                "count": 1,
-                "chance": 0.0313
-            },
-            {
-                "name": "Residual Viremia",
-                "count": 1,
-                "chance": 0.0313
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.0313
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 500,
                 "chance": 0.125
             },
             {
                 "name": "Orokin Orientation Matrix",
-                "count": 2,
-                "chance": 0.1
-            },
-            {
-                "name": "Necramech Redirection",
-                "count": 1,
-                "chance": 0.1
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Endo",
-                "count": 750,
-                "chance": 0.125
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 2,
-                "chance": 0.1
-            },
-            {
-                "name": "Necramech Steel Fiber",
-                "count": 1,
-                "chance": 0.05
-            },
-            {
-                "name": "Necramech Efficiency",
-                "count": 1,
-                "chance": 0.05
-            },
-            {
-                "name": "Residual Shock",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Residual Viremia",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
-                "name": "Scintillant",
                 "count": 3,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ]
+    ],
+    "191B.2B": [
+        [
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0625
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ]
+    ],
+    "191B.2C": [
+        [
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "191B.3A": [
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ]
+    ],
+    "191B.3B": [
+        [
+            {
+                "name": "Endo",
+                "count": 2500,
+                "chance": 0.5
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0313
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0313
+            }
+        ]
+    ],
+    "191B.3C": [
+        [
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
                 "chance": 0.075
             },
             {
-                "name": "Orokin Animus Matrix",
-                "count": 2,
-                "chance": 0.05
-            },
-            {
-                "name": "Necramech Thrusters",
+                "name": "Axi C5 Relic",
                 "count": 1,
-                "chance": 0.05
-            },
-            {
-                "name": "Theorem Contagion",
-                "count": 1,
-                "chance": 0.025
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 750,
-                "chance": 0.20829999999999999
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 2,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Necramech Steel Fiber",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Necramech Efficiency",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Residual Shock",
-                "count": 1,
-                "chance": 0.0417
-            },
-            {
-                "name": "Residual Viremia",
-                "count": 1,
-                "chance": 0.0417
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.0417
-            },
-            {
-                "name": "Scintillant",
-                "count": 3,
-                "chance": 0.125
-            },
-            {
-                "name": "Orokin Animus Matrix",
-                "count": 2,
-                "chance": 0.0833
-            },
-            {
-                "name": "Necramech Thrusters",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Theorem Contagion",
-                "count": 1,
-                "chance": 0.0417
+                "chance": 0.075
             }
         ]
     ],
-    "1bq4": [
+    "1bq3.A": [
         [
             {
-                "name": "Endo",
-                "count": 1000,
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
                 "chance": 0.25
             },
             {
                 "name": "Orokin Orientation Matrix",
-                "count": 3,
-                "chance": 0.16670000000000001
+                "count": 2,
+                "chance": 0.125
             },
             {
-                "name": "Necramech Reach",
+                "name": "Meso N10 Relic",
                 "count": 1,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Necramech Blitz",
-                "count": 1,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.0833
+                "chance": 0.125
             }
         ],
         [
             {
-                "name": "Endo",
-                "count": 1000,
-                "chance": 0.11539999999999999
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.125
             },
             {
                 "name": "Orokin Orientation Matrix",
-                "count": 3,
-                "chance": 0.07690000000000001
+                "count": 2,
+                "chance": 0.0625
             },
             {
-                "name": "Necramech Reach",
+                "name": "Meso N10 Relic",
                 "count": 1,
-                "chance": 0.07690000000000001
-            },
-            {
-                "name": "Necramech Blitz",
-                "count": 1,
-                "chance": 0.07690000000000001
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.0385
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.0385
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.0385
-            },
-            {
-                "name": "Arum Spinosa Guard",
-                "count": 1,
-                "chance": 0.11539999999999999
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 3,
-                "chance": 0.07690000000000001
-            },
-            {
-                "name": "Necramech Slipstream",
-                "count": 1,
-                "chance": 0.07690000000000001
-            },
-            {
-                "name": "Necramech Continuity",
-                "count": 1,
-                "chance": 0.07690000000000001
-            },
-            {
-                "name": "Necramech Drift",
-                "count": 1,
-                "chance": 0.07690000000000001
+                "chance": 0.0625
             },
             {
                 "name": "Residual Shock",
                 "count": 1,
-                "chance": 0.0385
+                "chance": 0.25
             },
             {
-                "name": "Residual Viremia",
+                "name": "Necramech Steel Fiber",
                 "count": 1,
-                "chance": 0.0385
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.0385
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 1000,
-                "chance": 0.0882
-            },
-            {
-                "name": "Orokin Orientation Matrix",
-                "count": 3,
-                "chance": 0.0588
-            },
-            {
-                "name": "Necramech Reach",
-                "count": 1,
-                "chance": 0.0588
-            },
-            {
-                "name": "Necramech Blitz",
-                "count": 1,
-                "chance": 0.0588
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.0294
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.0294
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.0294
-            },
-            {
-                "name": "Arum Spinosa Guard",
-                "count": 1,
-                "chance": 0.0882
+                "chance": 0.125
             },
             {
                 "name": "Orokin Ballistics Matrix",
-                "count": 3,
-                "chance": 0.0588
+                "count": 2,
+                "chance": 0.0625
             },
             {
-                "name": "Necramech Slipstream",
+                "name": "Neo D2 Relic",
                 "count": 1,
-                "chance": 0.0588
+                "chance": 0.0313
             },
             {
-                "name": "Necramech Continuity",
+                "name": "Neo N13 Relic",
                 "count": 1,
-                "chance": 0.0588
-            },
-            {
-                "name": "Necramech Drift",
-                "count": 1,
-                "chance": 0.0588
-            },
-            {
-                "name": "Residual Shock",
-                "count": 1,
-                "chance": 0.0294
-            },
-            {
-                "name": "Residual Viremia",
-                "count": 1,
-                "chance": 0.0294
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.0294
-            },
-            {
-                "name": "Arum Spinosa Rivet",
-                "count": 1,
-                "chance": 0.0794
-            },
-            {
-                "name": "Orokin Animus Matrix",
-                "count": 3,
-                "chance": 0.0588
-            },
-            {
-                "name": "Necramech Seismic Wave",
-                "count": 1,
-                "chance": 0.0588
-            },
-            {
-                "name": "Theorem Contagion",
-                "count": 1,
-                "chance": 0.0382
+                "chance": 0.0313
             }
         ],
         [
-            {
-                "name": "Arum Spinosa Guard",
-                "count": 1,
-                "chance": 0.1364
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 3,
-                "chance": 0.0909
-            },
-            {
-                "name": "Necramech Slipstream",
-                "count": 1,
-                "chance": 0.0909
-            },
-            {
-                "name": "Necramech Continuity",
-                "count": 1,
-                "chance": 0.0909
-            },
-            {
-                "name": "Necramech Drift",
-                "count": 1,
-                "chance": 0.0909
-            },
-            {
-                "name": "Residual Shock",
-                "count": 1,
-                "chance": 0.0455
-            },
-            {
-                "name": "Residual Viremia",
-                "count": 1,
-                "chance": 0.0455
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.0455
-            },
-            {
-                "name": "Arum Spinosa Rivet",
-                "count": 1,
-                "chance": 0.12269999999999999
-            },
-            {
-                "name": "Orokin Animus Matrix",
-                "count": 3,
-                "chance": 0.0909
-            },
-            {
-                "name": "Necramech Seismic Wave",
-                "count": 1,
-                "chance": 0.0909
-            },
-            {
-                "name": "Theorem Contagion",
-                "count": 1,
-                "chance": 0.0591
-            }
-        ]
-    ],
-    "1bq5": [
-        [
-            {
-                "name": "Endo",
-                "count": 1500,
-                "chance": 0.3
-            },
-            {
-                "name": "Orokin Orientation Matrix",
-                "count": 4,
-                "chance": 0.2
-            },
-            {
-                "name": "Necramech Fury",
-                "count": 1,
-                "chance": 0.2
-            },
             {
                 "name": "Residual Boils",
                 "count": 1,
-                "chance": 0.1
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.1
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.1
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 1500,
                 "chance": 0.11109999999999999
             },
             {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
                 "name": "Orokin Orientation Matrix",
-                "count": 4,
-                "chance": 0.0741
+                "count": 2,
+                "chance": 0.0278
             },
             {
-                "name": "Necramech Fury",
+                "name": "Meso N10 Relic",
                 "count": 1,
-                "chance": 0.0741
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.037000000000000005
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.037000000000000005
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.037000000000000005
-            },
-            {
-                "name": "Sporothrix Barrel",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Sporothrix Receiver",
-                "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 4,
-                "chance": 0.0741
-            },
-            {
-                "name": "Necramech Stretch",
-                "count": 1,
-                "chance": 0.0741
-            },
-            {
-                "name": "Necramech Hydraulics",
-                "count": 1,
-                "chance": 0.0741
-            },
-            {
-                "name": "Necramech Friction",
-                "count": 1,
-                "chance": 0.0741
+                "chance": 0.0278
             },
             {
                 "name": "Residual Shock",
                 "count": 1,
-                "chance": 0.0556
+                "chance": 0.11109999999999999
             },
             {
-                "name": "Residual Viremia",
+                "name": "Necramech Steel Fiber",
                 "count": 1,
                 "chance": 0.0556
             },
             {
-                "name": "Theorem Infection",
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo D2 Relic",
                 "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
                 "chance": 0.0556
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0139
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.0139
             }
         ],
         [
             {
-                "name": "Endo",
-                "count": 1500,
-                "chance": 0.0857
-            },
-            {
-                "name": "Orokin Orientation Matrix",
-                "count": 4,
-                "chance": 0.0571
-            },
-            {
-                "name": "Necramech Fury",
-                "count": 1,
-                "chance": 0.0571
-            },
-            {
-                "name": "Residual Boils",
-                "count": 1,
-                "chance": 0.0286
-            },
-            {
-                "name": "Residual Malodor",
-                "count": 1,
-                "chance": 0.0286
-            },
-            {
-                "name": "Theorem Demulcent",
-                "count": 1,
-                "chance": 0.0286
-            },
-            {
-                "name": "Sporothrix Barrel",
-                "count": 1,
-                "chance": 0.0643
-            },
-            {
-                "name": "Sporothrix Receiver",
-                "count": 1,
-                "chance": 0.0643
-            },
-            {
-                "name": "Orokin Ballistics Matrix",
-                "count": 4,
-                "chance": 0.0571
-            },
-            {
-                "name": "Necramech Stretch",
-                "count": 1,
-                "chance": 0.0571
-            },
-            {
-                "name": "Necramech Hydraulics",
-                "count": 1,
-                "chance": 0.0571
-            },
-            {
-                "name": "Necramech Friction",
-                "count": 1,
-                "chance": 0.0571
-            },
-            {
                 "name": "Residual Shock",
                 "count": 1,
-                "chance": 0.0429
+                "chance": 0.1429
             },
             {
-                "name": "Residual Viremia",
-                "count": 1,
-                "chance": 0.0429
-            },
-            {
-                "name": "Theorem Infection",
-                "count": 1,
-                "chance": 0.0429
-            },
-            {
-                "name": "Sporothrix Stock",
+                "name": "Necramech Steel Fiber",
                 "count": 1,
                 "chance": 0.07139999999999999
             },
             {
-                "name": "Orokin Animus Matrix",
-                "count": 4,
-                "chance": 0.0571
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.035699999999999996
             },
             {
-                "name": "Necramech Streamline",
+                "name": "Neo D2 Relic",
                 "count": 1,
-                "chance": 0.0571
+                "chance": 0.0179
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0179
             },
             {
                 "name": "Theorem Contagion",
                 "count": 1,
-                "chance": 0.0429
+                "chance": 0.35710000000000003
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.10710000000000001
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0179
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.0179
+            }
+        ]
+    ],
+    "1bq3.B": [
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.125
             }
         ],
         [
             {
-                "name": "Sporothrix Barrel",
+                "name": "Residual Malodor",
                 "count": 1,
-                "chance": 0.09
+                "chance": 0.25
             },
             {
-                "name": "Sporothrix Receiver",
+                "name": "Necramech Redirection",
                 "count": 1,
-                "chance": 0.09
+                "chance": 0.125
             },
             {
-                "name": "Orokin Ballistics Matrix",
-                "count": 4,
-                "chance": 0.08
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.0625
             },
             {
-                "name": "Necramech Stretch",
+                "name": "Meso C6 Relic",
                 "count": 1,
-                "chance": 0.08
-            },
-            {
-                "name": "Necramech Hydraulics",
-                "count": 1,
-                "chance": 0.08
-            },
-            {
-                "name": "Necramech Friction",
-                "count": 1,
-                "chance": 0.08
-            },
-            {
-                "name": "Residual Shock",
-                "count": 1,
-                "chance": 0.06
+                "chance": 0.0625
             },
             {
                 "name": "Residual Viremia",
                 "count": 1,
-                "chance": 0.06
+                "chance": 0.25
             },
             {
-                "name": "Theorem Infection",
+                "name": "Necramech Efficiency",
                 "count": 1,
-                "chance": 0.06
+                "chance": 0.125
             },
             {
-                "name": "Sporothrix Stock",
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.0625
+            },
+            {
+                "name": "Neo I2 Relic",
                 "count": 1,
-                "chance": 0.1
-            },
+                "chance": 0.0625
+            }
+        ],
+        [
             {
-                "name": "Orokin Animus Matrix",
-                "count": 4,
-                "chance": 0.08
-            },
-            {
-                "name": "Necramech Streamline",
+                "name": "Residual Malodor",
                 "count": 1,
-                "chance": 0.08
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.0278
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Necramech Efficiency",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0278
             },
             {
                 "name": "Theorem Contagion",
                 "count": 1,
-                "chance": 0.06
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0139
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.0139
+            }
+        ],
+        [
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Necramech Efficiency",
+                "count": 1,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.035699999999999996
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.035699999999999996
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.35710000000000003
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.10710000000000001
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0179
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.0179
+            }
+        ]
+    ],
+    "1bq3.C": [
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.125
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.125
+            }
+        ],
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Necramech Reach",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.0625
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Necramech Redirection",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 2,
+                "chance": 0.0278
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Necramech Reach",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0139
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.0139
+            }
+        ],
+        [
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Necramech Reach",
+                "count": 1,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 2,
+                "chance": 0.035699999999999996
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.035699999999999996
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.35710000000000003
+            },
+            {
+                "name": "Necramech Thrusters",
+                "count": 1,
+                "chance": 0.1429
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.10710000000000001
+            },
+            {
+                "name": "Scintillant",
+                "count": 3,
+                "chance": 0.07139999999999999
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 2,
+                "chance": 0.0179
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.0179
+            }
+        ]
+    ],
+    "1bq4.A": [
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0208
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Necramech Slipstream",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0417
+            },
+            {
+                "name": "Neo D2 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0208
+            }
+        ],
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.1818
+            },
+            {
+                "name": "Necramech Slipstream",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0227
+            },
+            {
+                "name": "Neo D2 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2273
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.0682
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            }
+        ],
+        [
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Necramech Slipstream",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo D2 Relic",
+                "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.0139
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.0139
+            }
+        ]
+    ],
+    "1bq4.B": [
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0208
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0417
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ],
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.1818
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0227
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2273
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.0682
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            }
+        ],
+        [
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Necramech Continuity",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.0139
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.0139
+            }
+        ]
+    ],
+    "1bq4.C": [
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.0208
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Necramech Drift",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0417
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ],
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Blitz",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Arum Spinosa Blueprint",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 3,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.1818
+            },
+            {
+                "name": "Necramech Drift",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0227
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2273
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.0682
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            }
+        ],
+        [
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Necramech Drift",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Arum Spinosa Guard",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 3,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Seismic Wave",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Arum Spinosa Rivet",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 3,
+                "chance": 0.0139
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.0139
+            }
+        ]
+    ],
+    "1bq5.A": [
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0208
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Necramech Stretch",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Sporothrix Barrel",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0417
+            },
+            {
+                "name": "Neo D2 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0208
+            }
+        ],
+        [
+            {
+                "name": "Residual Boils",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Meso N10 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.1818
+            },
+            {
+                "name": "Necramech Stretch",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Sporothrix Barrel",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0227
+            },
+            {
+                "name": "Neo D2 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2273
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.0682
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0341
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.0341
+            }
+        ],
+        [
+            {
+                "name": "Residual Shock",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Necramech Stretch",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Sporothrix Barrel",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo D2 Relic",
+                "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Barrel",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0417
+            },
+            {
+                "name": "Axi B3 Relic",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ]
+    ],
+    "1bq5.B": [
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0208
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Endo",
+                "count": 2500,
+                "chance": 0.3333
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0208
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0208
+            }
+        ],
+        [
+            {
+                "name": "Residual Malodor",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Meso C6 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Endo",
+                "count": 2500,
+                "chance": 0.1818
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2273
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.0682
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0341
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.0341
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 2500,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Residual Viremia",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Necramech Hydraulics",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Sporothrix Receiver",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0139
+            },
+            {
+                "name": "Neo I2 Relic",
+                "count": 1,
+                "chance": 0.0139
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Receiver",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0417
+            },
+            {
+                "name": "Axi T4 Relic",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ]
+    ],
+    "1bq5.C": [
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.5
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.25
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0625
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ],
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.0417
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.0208
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.0208
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.3333
+            },
+            {
+                "name": "Necramech Friction",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Sporothrix Stock",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0417
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0417
+            }
+        ],
+        [
+            {
+                "name": "Theorem Demulcent",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Necramech Fury",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Sporothrix Blueprint",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Orokin Orientation Matrix",
+                "count": 4,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Meso E4 Relic",
+                "count": 1,
+                "chance": 0.011399999999999999
+            },
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.1818
+            },
+            {
+                "name": "Necramech Friction",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Sporothrix Stock",
+                "count": 1,
+                "chance": 0.0455
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0227
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0227
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2273
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.0682
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0341
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.0341
+            }
+        ],
+        [
+            {
+                "name": "Theorem Infection",
+                "count": 1,
+                "chance": 0.22219999999999998
+            },
+            {
+                "name": "Necramech Friction",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Sporothrix Stock",
+                "count": 1,
+                "chance": 0.0556
+            },
+            {
+                "name": "Orokin Ballistics Matrix",
+                "count": 4,
+                "chance": 0.0278
+            },
+            {
+                "name": "Neo N13 Relic",
+                "count": 1,
+                "chance": 0.0278
+            },
+            {
+                "name": "Theorem Contagion",
+                "count": 1,
+                "chance": 0.2778
+            },
+            {
+                "name": "Necramech Streamline",
+                "count": 1,
+                "chance": 0.11109999999999999
+            },
+            {
+                "name": "Damaged Necramech Weapon Stock",
+                "count": 1,
+                "chance": 0.0833
+            },
+            {
+                "name": "Orokin Animus Matrix",
+                "count": 4,
+                "chance": 0.0417
+            },
+            {
+                "name": "Axi C5 Relic",
+                "count": 1,
+                "chance": 0.0417
             }
         ]
     ]

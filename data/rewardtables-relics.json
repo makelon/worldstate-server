@@ -101,6 +101,40 @@
             }
         ]
     ],
+    "Axi A12 Relic": [
+        [
+            {
+                "name": "Akbolto Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Helios Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mirage Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Kogake Prime Boot",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi A2 Relic": [
         [
             {
@@ -1082,6 +1116,40 @@
             },
             {
                 "name": "Paris Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Axi H5 Relic": [
+        [
+            {
+                "name": "Helios Prime Cerebrum",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Mirage Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbolto Prime Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -3773,6 +3841,40 @@
             }
         ]
     ],
+    "Lith K5 Relic": [
+        [
+            {
+                "name": "Kogake Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Akbolto Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Banshee Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Lith L1 Relic": [
         [
             {
@@ -4040,6 +4142,40 @@
             },
             {
                 "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith M7 Relic": [
+        [
+            {
+                "name": "Mirage Prime Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Euphona Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Kogake Prime Boot",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Akbolto Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Banshee Prime Neuroptics Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -6075,6 +6211,40 @@
             },
             {
                 "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso E5 Relic": [
+        [
+            {
+                "name": "Euphona Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Banshee Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Helios Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Helios Prime Carapace",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -8280,6 +8450,40 @@
             },
             {
                 "name": "Ballistica Prime Lower Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo B6 Relic": [
+        [
+            {
+                "name": "Banshee Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Kogake Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akbolto Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Euphona Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Mirage Prime Neuroptics Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             },

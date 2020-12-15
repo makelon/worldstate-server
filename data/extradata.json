@@ -42,39 +42,6 @@
                         "title": "Profit-Taker - Phase 4"
                     }
                 ]
-            },
-            {
-                "id": "191Y",
-                "syndicate": "Necraloid",
-                "jobs": [
-                    {
-                        "rewards": "191B.1",
-                        "minEnemyLevel": 30,
-                        "maxEnemyLevel": 40,
-                        "xpAmounts": [
-                            10
-                        ],
-                        "title": "Isolation Vault - Tier 1"
-                    },
-                    {
-                        "rewards": "191B.2",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 50,
-                        "xpAmounts": [
-                            15
-                        ],
-                        "title": "Isolation Vault - Tier 2"
-                    },
-                    {
-                        "rewards": "191B.3",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            20
-                        ],
-                        "title": "Isolation Vault - Tier 3"
-                    }
-                ]
             }
         ]
     },
@@ -119,39 +86,6 @@
                             1000
                         ],
                         "title": "Profit-Taker - Phase 4"
-                    }
-                ]
-            },
-            {
-                "id": "191Y",
-                "syndicate": "Necraloid",
-                "jobs": [
-                    {
-                        "rewards": "191B.1",
-                        "minEnemyLevel": 30,
-                        "maxEnemyLevel": 40,
-                        "xpAmounts": [
-                            10
-                        ],
-                        "title": "Isolation Vault - Tier 1"
-                    },
-                    {
-                        "rewards": "191B.2",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 50,
-                        "xpAmounts": [
-                            15
-                        ],
-                        "title": "Isolation Vault - Tier 2"
-                    },
-                    {
-                        "rewards": "191B.3",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            20
-                        ],
-                        "title": "Isolation Vault - Tier 3"
                     }
                 ]
             }
@@ -200,39 +134,6 @@
                         "title": "Profit-Taker - Phase 4"
                     }
                 ]
-            },
-            {
-                "id": "191Y",
-                "syndicate": "Necraloid",
-                "jobs": [
-                    {
-                        "rewards": "191B.1",
-                        "minEnemyLevel": 30,
-                        "maxEnemyLevel": 40,
-                        "xpAmounts": [
-                            10
-                        ],
-                        "title": "Isolation Vault - Tier 1"
-                    },
-                    {
-                        "rewards": "191B.2",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 50,
-                        "xpAmounts": [
-                            15
-                        ],
-                        "title": "Isolation Vault - Tier 2"
-                    },
-                    {
-                        "rewards": "191B.3",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            20
-                        ],
-                        "title": "Isolation Vault - Tier 3"
-                    }
-                ]
             }
         ]
     },
@@ -277,39 +178,6 @@
                             1000
                         ],
                         "title": "Profit-Taker - Phase 4"
-                    }
-                ]
-            },
-            {
-                "id": "191Y",
-                "syndicate": "Necraloid",
-                "jobs": [
-                    {
-                        "rewards": "191B.1",
-                        "minEnemyLevel": 30,
-                        "maxEnemyLevel": 40,
-                        "xpAmounts": [
-                            10
-                        ],
-                        "title": "Isolation Vault - Tier 1"
-                    },
-                    {
-                        "rewards": "191B.2",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 50,
-                        "xpAmounts": [
-                            15
-                        ],
-                        "title": "Isolation Vault - Tier 2"
-                    },
-                    {
-                        "rewards": "191B.3",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            20
-                        ],
-                        "title": "Isolation Vault - Tier 3"
                     }
                 ]
             }

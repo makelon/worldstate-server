@@ -59,6 +59,9 @@ export default class BountyReader extends WfReader<WfBounty> {
 					if (rewardTableRotation) {
 						jobCurrent.rotation = rewardTableRotation
 					}
+					if (job.isVault) {
+					  jobCurrent.title = `Vault Level ${job.minEnemyLevel} - ${job.maxEnemyLevel}`;
+					}
 					jobsCurrent.push(jobCurrent)
 				}
 				if (bountyDb) {

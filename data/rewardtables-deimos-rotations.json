@@ -19,13 +19,13 @@
     "191B.3A": "A",
     "191B.3B": "B",
     "191B.3C": "C",
-    "1bq3.A": "A",
-    "1bq3.B": "B",
-    "1bq3.C": "C",
-    "1bq4.A": "A",
-    "1bq4.B": "B",
-    "1bq4.C": "C",
-    "1bq5.A": "A",
-    "1bq5.B": "B",
-    "1bq5.C": "C"
+    "EntratiSyndicateBountyVaultBountyTierATableARewards": "A",
+    "EntratiSyndicateBountyVaultBountyTierATableBRewards": "B",
+    "EntratiSyndicateBountyVaultBountyTierATableCRewards": "C",
+    "EntratiSyndicateBountyVaultBountyTierBTableARewards": "A",
+    "EntratiSyndicateBountyVaultBountyTierBTableBRewards": "B",
+    "EntratiSyndicateBountyVaultBountyTierBTableCRewards": "C",
+    "EntratiSyndicateBountyVaultBountyTierCTableARewards": "A",
+    "EntratiSyndicateBountyVaultBountyTierCTableBRewards": "B",
+    "EntratiSyndicateBountyVaultBountyTierCTableCRewards": "C"
 }

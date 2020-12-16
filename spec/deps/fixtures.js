@@ -325,6 +325,9 @@ function* getBounties() {
 		data = { SyndicateMissions: [bountySyndicate] }
 	yield [data, [expectedSyndicate]]
 
+  bountySyndicate.Jobs[0].isVault = true
+  expectedSyndicate.jobs[0].title = 'Vault Level 5 - 15'
+
 	timeLocalShort += timeStep
 	expectedGhoul.healthHistory.push([timeLocalShort, bountyGhoul.HealthPct])
 	data.Goals = [bountyGhoul]

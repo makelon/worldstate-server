@@ -811,17 +811,12 @@
             {
                 "name": "Kavat Genetic Code",
                 "count": 1,
-                "chance": 0.0737
+                "chance": 0.1106
             },
             {
                 "name": "Kubrow Egg",
                 "count": 1,
-                "chance": 0.0737
-            },
-            {
-                "name": "Lith P4 Relic",
-                "count": 1,
-                "chance": 0.0737
+                "chance": 0.1106
             },
             {
                 "name": "Nitain Extract",

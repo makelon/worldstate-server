@@ -1414,7 +1414,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith P4 Relic (Radiant)",
+                "name": "Lith D4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1434,7 +1434,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Lith N5 Relic (Radiant)",
+                "name": "Lith B8 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1463,7 +1463,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith D3 Relic",
+                "name": "Lith G3 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1483,7 +1483,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso E4 Relic (Radiant)",
+                "name": "Meso P4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1532,7 +1532,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Neo I2 Relic (Radiant)",
+                "name": "Neo N14 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1561,7 +1561,7 @@
                 "chance": 0.2857
             },
             {
-                "name": "Neo D2 Relic",
+                "name": "Neo Z7 Relic",
                 "count": 1,
                 "chance": 0.1714
             },
@@ -1576,7 +1576,7 @@
                 "chance": 0.1143
             },
             {
-                "name": "Axi W1 Relic (Radiant)",
+                "name": "Axi O5 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.1429
             },

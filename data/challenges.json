@@ -59,6 +59,10 @@
         "description": "Kill 200 enemies",
         "xpAmount": 1000
     },
+    "SeasonDailyKillEnemiesWhileOnKDrive": {
+        "description": "Kill 20 Enemies while riding a K-Drive",
+        "xpAmount": 1000
+    },
     "SeasonDailyKillEnemiesWithAbilities": {
         "description": "Kill 150 enemies with abilities",
         "xpAmount": 1000
@@ -151,6 +155,10 @@
         "description": "Pick up 5 syndicate medallions",
         "xpAmount": 1000
     },
+    "SeasonDailyPilotFallenMech": {
+        "description": "Find and pilot a Fallen Necramech on Deimos",
+        "xpAmount": 1000
+    },
     "SeasonDailyPlaceMarker": {
         "description": "Mark 5 modules or resources",
         "xpAmount": 1000
@@ -166,6 +174,10 @@
     "SeasonDailyRailjackHijackDestroyThree": {
         "description": "While piloting a hijacked crewship, destroy 3 enemy fighters",
         "xpAmount": 4500
+    },
+    "SeasonDailyRequiemTotem": {
+        "description": "Activate a Requiem Obelisk on Deimos",
+        "xpAmount": 1000
     },
     "SeasonDailySlideKills": {
         "description": "Kill 20 enemies while sliding",
@@ -267,6 +279,10 @@
         "description": "Destroy a Crewship with forward artillery",
         "xpAmount": 4500
     },
+    "SeasonWeeklyFeedHelminth": {
+        "description": "Feed the Helminth any resource",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyGildModular": {
         "description": "Gild a modular item",
         "xpAmount": 4500
@@ -275,12 +291,20 @@
         "description": "Hijack a crewship from the enemy",
         "xpAmount": 4500
     },
+    "SeasonWeeklyIsolationBounties": {
+        "description": "Do an Isolation Bounty",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyKillArchgunEnemies": {
         "description": "Kill 500 enemies with an Archgun",
         "xpAmount": 4500
     },
     "SeasonWeeklyKillEnemies": {
         "description": "Kill 500 enemies",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyKillEnemiesInMech": {
+        "description": "Kill 100 enemies with a Necramech",
         "xpAmount": 4500
     },
     "SeasonWeeklyKillEximus": {
@@ -343,12 +367,20 @@
         "description": "Complete 5 different bounties in Orb Vallis",
         "xpAmount": 4500
     },
+    "SeasonWeeklyHardCollectUniqueResources": {
+        "description": "Collect 20 different type of resources",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardCompleteNightmareMissions": {
         "description": "Complete 10 nightmare missions",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardCompleteSortie": {
         "description": "Complete 3 sorties",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardCompleteSteelPathMissions": {
+        "description": "Complete 5 Steel Path Missions",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardEliteSanctuaryOnslaught": {
@@ -389,6 +421,10 @@
     },
     "SeasonWeeklyHardKillEnemies": {
         "description": "Kill 1,500 enemies",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardKillEnemiesSteelPath": {
+        "description": "Kill 1,000 Enemies on The Steel Path",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardKillEximus": {

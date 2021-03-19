@@ -765,7 +765,7 @@
                 "chance": 0.11
             },
             {
-                "name": "Pangolin Prime Blueprint",
+                "name": "Pangolin Prime Handle",
                 "count": 1,
                 "chance": 0.25329999999999997
             },
@@ -2413,6 +2413,40 @@
             }
         ]
     ],
+    "Axi S8 Relic": [
+        [
+            {
+                "name": "Scindo Prime Blade",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Venka Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nyx Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Grip",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hikou Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi T1 Relic": [
         [
             {
@@ -2648,6 +2682,40 @@
                 "name": "Forma Blueprint",
                 "count": 1,
                 "chance": 0.11
+            }
+        ]
+    ],
+    "Axi V10 Relic": [
+        [
+            {
+                "name": "Venka Prime Gauntlet",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Hikou Prime Stars",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Cernos Prime String",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
             }
         ]
     ],
@@ -3598,6 +3666,40 @@
             },
             {
                 "name": "Fang Prime Blade",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith C7 Relic": [
+        [
+            {
+                "name": "Cernos Prime Lower Limb",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Nyx Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Scindo Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Valkyr Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Hikou Prime Pouch",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -7163,6 +7265,40 @@
             },
             {
                 "name": "Pangolin Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso N11 Relic": [
+        [
+            {
+                "name": "Nyx Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Valkyr Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Cernos Prime Upper Limb",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Scindo Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -11175,6 +11311,40 @@
             },
             {
                 "name": "Wyrm Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo V9 Relic": [
+        [
+            {
+                "name": "Valkyr Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Cernos Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Venka Prime Blades",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Nyx Prime Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

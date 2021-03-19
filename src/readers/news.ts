@@ -17,7 +17,7 @@ export default class NewsReader extends WfReader<WfNews> {
 				start = getDate(articleInput.Date)
 			let text: string = ''
 			for (const message of articleInput.Messages) {
-				if (message.LanguageCode == 'en') {
+				if (message.LanguageCode === 'en') {
 					text = message.Message
 					break
 				}
@@ -27,7 +27,7 @@ export default class NewsReader extends WfReader<WfNews> {
 					id: id,
 					start: start,
 					text: text,
-					link: articleInput.Prop,
+					link: this.getLink(articleInput),
 				}
 			if (articleInput.EventStartDate) {
 				articleCurrent.eventStart = getDate(articleInput.EventStartDate)
@@ -39,11 +39,17 @@ export default class NewsReader extends WfReader<WfNews> {
 				articleCurrent.eventUrl = articleInput.EventLiveUrl
 			}
 			if (articleDb) {
-				const diff = this.getDifference(articleDb, articleCurrent)
-				if (Object.keys(diff).length) {
-					patch(articleDb, diff)
-					this.dbTable.updateTmp(id, diff)
-					log.debug('Updating news article %s for %s', id, this.platform)
+				if (text === '') {
+					this.dbTable.remove(id)
+					log.debug('Removing news article %s for %s', id, this.platform)
+				}
+				else {
+					const diff = this.getDifference(articleDb, articleCurrent)
+					if (Object.keys(diff).length) {
+						patch(articleDb, diff)
+						this.dbTable.updateTmp(id, diff)
+						log.debug('Updating news article %s for %s', id, this.platform)
+					}
 				}
 			}
 			else if (text !== '') {
@@ -53,6 +59,17 @@ export default class NewsReader extends WfReader<WfNews> {
 			delete oldIds[id]
 		}
 		this.cleanOld(oldIds)
+	}
+
+	private getLink(articleInput: any): string {
+		if (articleInput.Prop) {
+			return articleInput.Prop
+		}
+		if (!Array.isArray(articleInput.Links) || articleInput.Links.length === 0) {
+			return ''
+		}
+		const link = articleInput.Links.find((link: any) => link.LanguageCode === 'en')
+		return typeof link?.Link === 'string' ? link.Link : ''
 	}
 
 	private getDifference(first: WfNews, second: WfNews): Partial<WfNews> {

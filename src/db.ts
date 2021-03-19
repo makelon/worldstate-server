@@ -286,11 +286,12 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	}
 
 	/**
-	 * Remove record
+	 * Remove record and force a cleanup on the next flush() call
 	 *
 	 * @param id Id of record to remove
 	 */
 	remove(id: string): void {
+		this.tmpUpdateCount = cleanTmpThreshold
 		delete this.records[id]
 	}
 
@@ -304,8 +305,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	moveTmp(id: string): void {
 		if (id in this.records) {
 			this.updates += serialize(id, this.records[id])
-			this.tmpUpdateCount = cleanTmpThreshold
-			delete this.records[id]
+			this.remove(id)
 		}
 	}
 

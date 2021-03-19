@@ -705,20 +705,24 @@ function* getKuvalog() {
 }
 
 function* getNews() {
-	const article = {
+	const articleLink = {
+			LanguageCode: 'en',
+			Link: 'news_link_url',
+		},
+		articleMessage = {
+			LanguageCode: 'en',
+			Message: 'Free tests!'
+		},
+		article = {
 			_id: { $oid: entryId },
-			Messages: [
-				{
-					LanguageCode: 'en',
-					Message: 'Free tests!'
-				}
-			],
-			Prop: 'news_link',
+			Messages: [articleMessage],
+			Prop: 'news_prop_url',
 			Date: { $date: { $numberLong: timeStartLong - 100000} },
 			EventStartDate: { $date: { $numberLong: timeStartLong } },
 			EventEndDate: { $date: { $numberLong: timeEndLong } },
 			EventLiveUrl: 'event_live_url',
 			ImageUrl: 'image_url',
+			Links: [articleLink],
 			Priority: false,
 			MobileOnly: false
 		},
@@ -726,7 +730,7 @@ function* getNews() {
 			id: entryId,
 			start: timeStartShort - 100,
 			text: 'Free tests!',
-			link: 'news_link',
+			link: 'news_prop_url',
 			eventStart: timeStartShort,
 			eventEnd: timeEndShort,
 			eventUrl: 'event_live_url'
@@ -734,9 +738,25 @@ function* getNews() {
 		data = { Events: [article] }
 	yield [data, expected]
 
-	article.Messages[0].Message = 'More free tests!'
+	articleMessage.Message = 'More free tests!'
 	expected.text = article.Messages[0].Message
 	yield [data, expected]
+
+	article.Prop = ''
+	expected.link = 'news_link_url'
+	yield [data, expected]
+
+	articleLink.Link = {a: 'b'}
+	expected.link = ''
+	yield [data, expected]
+
+	articleLink.Link = 'news_link_url'
+	articleLink.LanguageCode = 'sv'
+	expected.link = ''
+	yield [data, expected]
+
+	articleMessage.LanguageCode = 'sv'
+	yield [data, []]
 
 	yield [{}, []]
 }

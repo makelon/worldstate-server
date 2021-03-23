@@ -16,10 +16,10 @@ export default class Server {
 	 *
 	 * @param instances Worldstate instances to keep track of and update
 	 */
-	constructor(private instances: {[platform: string]: Worldstate}) {
+	constructor(private instances: {[platform in WfPlatform]?: Worldstate}) {
 		this.httpServer = createServer()
 			.on('request', (req, res) => { this.handleRequest(req, res) })
-			.on('error', err => {
+			.on('error', (err: NodeJS.ErrnoException) => {
 				if (this.httpServer.listening) {
 					log.error(err.message)
 				}
@@ -41,7 +41,7 @@ export default class Server {
 		this.running = true
 		this.startServer()
 		for (const platform in this.instances) {
-			this.instances[platform].start()
+			this.instances[platform as WfPlatform]!.start()
 		}
 	}
 
@@ -51,7 +51,7 @@ export default class Server {
 	reload(): void {
 		const oldListen = config.listen
 		for (const platform in this.instances) {
-			this.instances[platform].reload()
+			this.instances[platform as WfPlatform]!.reload()
 		}
 		if (config.listen != oldListen) {
 			this.startServer()
@@ -170,7 +170,7 @@ export default class Server {
 		log.notice('Got request: %s', reqUrl)
 		req.on('error', err => { log.info('HTTP request error: %s', err.message) })
 		const urlParts = reqUrl.substr(1).split('/'),
-			platform = urlParts[0] || 'pc',
+			platform = (urlParts[0] || 'pc') as WfPlatform,
 			instance = this.instances[platform]
 		let responseText: string,
 			cacheTtl: number,

@@ -11,7 +11,7 @@ export default class UpgradeReader extends WfReader<WfUpgrade> {
 		return upgrade.end >= timestamp
 	}
 
-	read(upgradeInputs: any[], timestamp: number): void {
+	read(upgradeInputs: UpgradeEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

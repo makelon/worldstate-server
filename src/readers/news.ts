@@ -6,7 +6,7 @@ import WfReader from './reader'
 export default class NewsReader extends WfReader<WfNews> {
 	protected readonly dbTableId = 'news'
 
-	read(articlesInput: any[]): void {
+	read(articlesInput: NewsEntry[]): void {
 		if (!this.dbTable) {
 			return
 		}
@@ -61,14 +61,14 @@ export default class NewsReader extends WfReader<WfNews> {
 		this.cleanOld(oldIds)
 	}
 
-	private getLink(articleInput: any): string {
+	private getLink(articleInput: NewsEntry): string {
 		if (articleInput.Prop) {
 			return articleInput.Prop
 		}
 		if (!Array.isArray(articleInput.Links) || articleInput.Links.length === 0) {
 			return ''
 		}
-		const link = articleInput.Links.find((link: any) => link.LanguageCode === 'en')
+		const link = articleInput.Links.find(findLink => findLink.LanguageCode === 'en')
 		return typeof link?.Link === 'string' ? link.Link : ''
 	}
 

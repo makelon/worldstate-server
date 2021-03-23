@@ -1,5 +1,5 @@
 const h = require('../out/helpers')
-const fixtures = require('./deps/fixtures')
+const fixtures = require('./fixtures/data')
 
 describe('Helper functions', () => {
 	it('should pad numbers', () => {

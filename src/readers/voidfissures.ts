@@ -10,7 +10,7 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 		return fissure.end >= timestamp
 	}
 
-	read(fissuresInput: any[], timestamp: number): void {
+	read(fissuresInput: VoidFissureEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

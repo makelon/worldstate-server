@@ -2,7 +2,28 @@ import { readFileSync } from 'fs'
 
 import * as log from './log'
 
-const defaults = {
+interface WfConfigI {
+	logLevel: string
+	dbRoot: string
+	wsFields: ReadonlyArray<WfRecordKey>
+	wsUrls: WfMap<WfPlatform, string>
+	kuvalogUrls: WfMap<WfPlatform, string>
+	dayNightPath: string
+	minRetryTimeout: number
+	maxRetryTimeout: number
+	requestTimeout: number
+	updateInterval: number
+	instanceDelay: number
+	enableConsoleTime: boolean
+	enableDbWrites: boolean
+	listen: number | string
+	userAgent: string
+	cors: string
+	tlsCa: string
+	tlsVerify: boolean
+}
+
+const defaults: WfConfigI = {
 	logLevel: 'info', // debug, notice, info, warning, error
 	dbRoot: '', // Where to store the database files. Storage is disabled if this value is empty
 	wsFields: [ // Components to parse
@@ -53,12 +74,12 @@ const defaults = {
 	tlsVerify: true, // Check validity of certificate when requesting worldstate from HTTPS host
 }
 
-class WfConfig {
+class WfConfig implements WfConfigI {
 	logLevel!: string
 	dbRoot!: string
-	wsFields!: ReadonlyArray<string>
-	wsUrls!: WfMap
-	kuvalogUrls!: WfMap
+	wsFields!: ReadonlyArray<WfRecordKey>
+	wsUrls!: WfMap<WfPlatform, string>
+	kuvalogUrls!: WfMap<WfPlatform, string>
 	dayNightPath!: string
 	minRetryTimeout!: number
 	maxRetryTimeout!: number
@@ -74,27 +95,38 @@ class WfConfig {
 	tlsVerify!: boolean
 
 	load(configPath: string): void {
-		let overrides: any = {}
+		let overrides: Partial<WfConfigI>
+
+		function getValue<T extends keyof WfConfigI>(name: T): WfConfigI[T] {
+			return typeof overrides[name] === 'undefined'
+				? defaults[name]
+				: overrides[name] as WfConfigI[T]
+		}
+
 		try {
-			overrides = JSON.parse(readFileSync(configPath, 'utf8'))
+			const tmp: unknown = JSON.parse(readFileSync(configPath, 'utf8'))
+			if (typeof tmp !== 'object' || tmp === null) {
+				throw new Error('Failed to parse config.json')
+			}
+			overrides = tmp
 		}
 		catch (err) {
 			if (err.code == 'ENOENT') {
 				log.warning('Cannot open config.json. Using defaults')
+				overrides = {}
 			}
 			else {
 				log.error(err.message)
 				process.exit(1)
 			}
 		}
-		const urlTypes: ('wsUrls' | 'kuvalogUrls')[] = ['wsUrls', 'kuvalogUrls']
-		for (const urlType of urlTypes) {
+		for (const urlType of ['wsUrls', 'kuvalogUrls'] as const) {
 			if (overrides[urlType]) {
-				const urls = overrides[urlType] as WfMap
+				const urls = overrides[urlType] || {}
 				this[urlType] = {}
 				for (const platform in defaults[urlType]) {
 					if (platform in urls) {
-						this[urlType][platform] = urls[platform]
+						this[urlType][platform as WfPlatform] = urls[platform as WfPlatform]
 					}
 				}
 			}
@@ -102,22 +134,23 @@ class WfConfig {
 				this[urlType] = defaults[urlType]
 			}
 		}
-		this.dayNightPath = ('dayNightPath' in overrides) ? overrides.dayNightPath : defaults.dayNightPath
-		this.logLevel = ('logLevel' in overrides) ? overrides.logLevel : defaults.logLevel
-		this.dbRoot = ('dbRoot' in overrides) ? overrides.dbRoot : defaults.dbRoot
-		this.wsFields = ('wsFields' in overrides) ? overrides.wsFields : defaults.wsFields
-		this.minRetryTimeout = ('minRetryTimeout' in overrides) ? overrides.minRetryTimeout : defaults.minRetryTimeout
-		this.maxRetryTimeout = ('maxRetryTimeout' in overrides) ? overrides.maxRetryTimeout : defaults.maxRetryTimeout
-		this.requestTimeout = ('requestTimeout' in overrides) ? overrides.requestTimeout : defaults.requestTimeout
-		this.updateInterval = ('updateInterval' in overrides) ? overrides.updateInterval : defaults.updateInterval
-		this.instanceDelay = ('instanceDelay' in overrides) ? overrides.instanceDelay : defaults.instanceDelay
-		this.enableConsoleTime = ('enableConsoleTime' in overrides) ? overrides.enableConsoleTime : defaults.enableConsoleTime
-		this.enableDbWrites = ('enableDbWrites' in overrides) ? overrides.enableDbWrites : defaults.enableDbWrites
-		this.listen = ('listen' in overrides) ? overrides.listen : defaults.listen
-		this.userAgent = ('userAgent' in overrides) ? overrides.userAgent : defaults.userAgent
-		this.cors = ('cors' in overrides) ? overrides.cors : defaults.cors
+
+		this.dayNightPath = getValue('dayNightPath')
+		this.logLevel = getValue('logLevel')
+		this.dbRoot = getValue('dbRoot')
+		this.wsFields = getValue('wsFields')
+		this.minRetryTimeout = getValue('minRetryTimeout')
+		this.maxRetryTimeout = getValue('maxRetryTimeout')
+		this.requestTimeout = getValue('requestTimeout')
+		this.updateInterval = getValue('updateInterval')
+		this.instanceDelay = getValue('instanceDelay')
+		this.enableConsoleTime = getValue('enableConsoleTime')
+		this.enableDbWrites = getValue('enableDbWrites')
+		this.listen = getValue('listen')
+		this.userAgent = getValue('userAgent')
+		this.cors = getValue('cors')
 		this.tlsCa = ''
-		if ('tlsCa' in overrides) {
+		if (overrides.tlsCa) {
 			for (const ca of overrides.tlsCa) {
 				try {
 					this.tlsCa += readFileSync(ca, 'ascii')
@@ -127,7 +160,7 @@ class WfConfig {
 				}
 			}
 		}
-		this.tlsVerify = ('tlsVerify' in overrides) ? overrides.tlsVerify : defaults.tlsVerify
+		this.tlsVerify = getValue('tlsVerify')
 		if (!this.dbRoot) {
 			this.enableDbWrites = false
 		}

@@ -7,7 +7,7 @@ import WfReader from './reader'
 export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 	protected readonly dbTableId = 'factionprojects'
 
-	read(projectsInput: any[], timestamp: number): void {
+	read(projectsInput: FactionProjectEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

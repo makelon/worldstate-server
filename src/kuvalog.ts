@@ -7,22 +7,22 @@ import { getCurrentTime, strToTime } from './helpers'
 import { getResponseData, prepareRequest, sendRequest } from './httphelper'
 import * as log from './log'
 
-function looksLikeKuvalog(kuvalog: any) {
-	return Array.isArray(kuvalog) && kuvalog[0] && kuvalog[0].hasOwnProperty('missiontype')
+function looksLikeKuvalog(kuvalog: KuvalogEntry[]): boolean {
+	return Array.isArray(kuvalog) && kuvalog[0] && 'missiontype' in kuvalog[0]
 }
 
 export default class Kuvalog {
 	private requestOptions: RequestOptions | null = null
 	private requestTimerId?: NodeJS.Timer
-	private _arbitrations: any[] = []
-	private _kuvamissions: any[] = []
+	private _arbitrations: KuvalogEntry[] = []
+	private _kuvamissions: KuvalogEntry[] = []
 	private retryTimeout = config.minRetryTimeout
 	private lastUpdate = 0
 	private nextUpdate = 0
 	private ee = new EventEmitter()
 
 	constructor(
-		private platform: string,
+		private platform: WfPlatform,
 		private instanceDelay: number,
 	) {
 		log.notice('Creating kuvalog instance %s', platform)
@@ -129,7 +129,7 @@ export default class Kuvalog {
 	private handleKuvalogResponse(res: IncomingMessage): void {
 		getResponseData(res)
 			.then(resData => {
-				let resParsed: any
+				let resParsed: KuvalogEntry[]
 				try {
 					resParsed = JSON.parse(resData)
 				}
@@ -160,7 +160,7 @@ export default class Kuvalog {
 	/**
 	 * Update the lists of kuva and arbitration missions
 	 */
-	private readKuvalog(input: any[]): void {
+	private readKuvalog(input: KuvalogEntry[]): void {
 		this._arbitrations = []
 		this._kuvamissions = []
 		this.lastUpdate = getCurrentTime()
@@ -179,7 +179,7 @@ export default class Kuvalog {
 		return this.lastUpdate
 	}
 
-	get arbitrations() { return this._arbitrations }
+	get arbitrations(): KuvalogEntry[] { return this._arbitrations }
 
-	get kuvamissions() { return this._kuvamissions }
+	get kuvamissions(): KuvalogEntry[] { return this._kuvamissions }
 }

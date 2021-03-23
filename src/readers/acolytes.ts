@@ -14,7 +14,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 		return acolyte.health > 0
 	}
 
-	read(acolytesInput: any[], timestamp: number): void {
+	read(acolytesInput: AcolyteEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

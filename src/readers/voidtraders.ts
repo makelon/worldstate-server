@@ -13,7 +13,7 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 		return voidTrader.end >= timestamp
 	}
 
-	read(voidTradersInput: any[], timestamp: number): void {
+	read(voidTradersInput: VoidTraderEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

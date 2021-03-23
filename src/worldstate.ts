@@ -27,25 +27,54 @@ import VoidFissureReader from './readers/voidfissures'
 import VoidTraderReader from './readers/voidtraders'
 import WfReader from './readers/reader'
 
+interface WorldstateStruct {
+	WorldSeed: string
+	Time: number
+	PersistentEnemies: AcolyteEntry[]
+	Alerts: AlertEntry[]
+	SeasonInfo: ChallengeSeasonEntry | Record<string, never>
+	DailyDeals: DailyDealEntry[]
+	ProjectPct: FactionProjectEntry
+	Goals: GoalEntry[]
+	Invasions: InvasionEntry[]
+	Events: NewsEntry[]
+	Tmp: string
+	Sorties: SortieEntry[]
+	SyndicateMissions: BountyEntry[]
+	GlobalUpgrades: UpgradeEntry[]
+	ActiveMissions: VoidFissureEntry[]
+	VoidTraders: VoidTraderEntry[]
+}
+
+type WfResponse = {
+	[key in WfRecordKey]?: {
+		time?: number
+		data?: WfRecordType[]
+	}
+} & {
+	time: number
+	rewardtables: WfRewardTableMap
+}
+
 /**
  * Check whether the given data is likely to be worldstate data
  *
  * @param ws
  */
-function looksLikeWorldstate(ws: any) {
-	return ws.hasOwnProperty('WorldSeed')
+function looksLikeWorldstate(ws: WorldstateStruct): boolean {
+	return 'WorldSeed' in ws
 }
 
 export default class Worldstate {
 	private requestOptions: RequestOptions | null = null
 	private requestTimerId?: NodeJS.Timer
-	private ws: any
+	private ws?: WorldstateStruct
 	private now = 0
 	private ready = false
 	private retryTimeout = config.minRetryTimeout
 	private nextUpdate = Date.now() + 3000
-	private defer: { [type: string]: any[] } = {
-		bounties: []
+	private defer: { bounties: BountyEntry[] } = {
+		bounties: [],
 	}
 	private kuvalog = new Kuvalog(this.platform, this.instanceDelay)
 	private readers: Readonly<{ [T in WfRecordKey]: WfReader<WfRecordTypes[T]> }> = {
@@ -70,7 +99,7 @@ export default class Worldstate {
 
 	constructor(
 		private db: WfDb,
-		private platform: string,
+		private platform: WfPlatform,
 		private instanceDelay: number,
 	) {
 		log.notice('Creating worldstate instance %s', platform)
@@ -145,11 +174,7 @@ export default class Worldstate {
 			// Raw worldstate dump
 			return JSON.stringify(this.ws || {})
 		}
-		const ret: {
-			[key: string]: any
-			time: number
-			rewardtables: WfRewardTableMap
-		} = {
+		const ret: WfResponse = {
 			time: this.now,
 			rewardtables: {}
 		}
@@ -238,7 +263,7 @@ export default class Worldstate {
 	private handleWorldstateResponse(res: IncomingMessage): void {
 		getResponseData(res)
 			.then(resData => {
-				let resParsed: any
+				let resParsed: WorldstateStruct
 				try {
 					resParsed = JSON.parse(resData)
 				}
@@ -286,7 +311,7 @@ export default class Worldstate {
 	}
 
 	private readAcolytes(): void {
-		let acolytes = this.ws.PersistentEnemies
+		let acolytes = this.ws?.PersistentEnemies
 		if (!Array.isArray(acolytes)) {
 			acolytes = []
 		}
@@ -299,7 +324,7 @@ export default class Worldstate {
 	}
 
 	private readAlerts(): void {
-		let alerts = this.ws.Alerts
+		let alerts = this.ws?.Alerts
 		if (!Array.isArray(alerts)) {
 			alerts = []
 		}
@@ -312,7 +337,7 @@ export default class Worldstate {
 	}
 
 	private readChallenges(): void {
-		let challengeSeasons = this.ws.SeasonInfo
+		let challengeSeasons = this.ws?.SeasonInfo
 		if (!challengeSeasons) {
 			challengeSeasons = {}
 		}
@@ -325,7 +350,7 @@ export default class Worldstate {
 	}
 
 	private readDailyDeals(): void {
-		let deals = this.ws.DailyDeals
+		let deals = this.ws?.DailyDeals
 		if (!Array.isArray(deals)) {
 			deals = []
 		}
@@ -338,7 +363,7 @@ export default class Worldstate {
 	}
 
 	private readFactionProjects(): void {
-		let projects = this.ws.ProjectPct
+		let projects = this.ws?.ProjectPct
 		if (!Array.isArray(projects)) {
 			projects = []
 		}
@@ -357,16 +382,16 @@ export default class Worldstate {
 	 */
 	private readGoals(): void {
 		log.notice('Reading %s goals', this.platform)
-		let goals = this.ws.Goals
+		let goals = this.ws?.Goals
 		if (!Array.isArray(goals)) {
 			goals = []
 		}
-		const fomorians = []
+		const fomorians: GoalEntry[] = []
 		for (const goal of goals) {
 			if (goal.Fomorian) {
 				fomorians.push(goal)
 			}
-			else if (goal.Jobs && ['GhoulEmergence', 'InfestedPlains'].indexOf(goal.Tag) > -1) {
+			else if (goal.Jobs && goal.Tag && ['GhoulEmergence', 'InfestedPlains'].indexOf(goal.Tag) > -1) {
 				this.defer.bounties.push(goal)
 			}
 		}
@@ -379,7 +404,7 @@ export default class Worldstate {
 	}
 
 	private readInvasions(): void {
-		let invasions = this.ws.Invasions
+		let invasions = this.ws?.Invasions
 		if (!Array.isArray(invasions)) {
 			invasions = []
 		}
@@ -413,7 +438,7 @@ export default class Worldstate {
 	 * Events and tactical alerts are found in the Goals section
 	 */
 	private readNews(): void {
-		let articles = this.ws.Events
+		let articles = this.ws?.Events
 		if (!Array.isArray(articles)) {
 			articles = []
 		}
@@ -427,7 +452,7 @@ export default class Worldstate {
 
 	private readSentientAnomalies(): void {
 		try {
-			this.readers['sentient-anomalies'].read(this.ws.Tmp, this.now)
+			this.readers['sentient-anomalies'].read(this.ws?.Tmp, this.now)
 		}
 		catch (err) {
 			log.error('Error reading sentient anomalies for %s: %s', this.platform, err.message)
@@ -435,7 +460,7 @@ export default class Worldstate {
 	}
 
 	private readSorties(): void {
-		let sorties = this.ws.Sorties
+		let sorties = this.ws?.Sorties
 		if (!Array.isArray(sorties)) {
 			sorties = []
 		}
@@ -453,7 +478,7 @@ export default class Worldstate {
 	private readSyndicateMissions(): void {
 		log.notice('Reading %s syndicate missions', this.platform)
 		const bounties = this.defer.bounties.splice(0) // Clear deferred bounties
-		if (this.ws.SyndicateMissions && this.ws.SyndicateMissions[0]) {
+		if (this.ws?.SyndicateMissions && this.ws.SyndicateMissions[0]) {
 			for (const missions of this.ws.SyndicateMissions) {
 				if (missions.Jobs) {
 					bounties.push(missions)
@@ -472,7 +497,7 @@ export default class Worldstate {
 	 * Read global modifiers, which includes boosters
 	 */
 	private readUpgrades(): void {
-		let upgrades = this.ws.GlobalUpgrades
+		let upgrades = this.ws?.GlobalUpgrades
 		if (!Array.isArray(upgrades)) {
 			upgrades = []
 		}
@@ -485,7 +510,7 @@ export default class Worldstate {
 	}
 
 	private readVoidFissures(): void {
-		let fissures = this.ws.ActiveMissions
+		let fissures = this.ws?.ActiveMissions
 		if (!Array.isArray(fissures)) {
 			fissures = []
 		}
@@ -498,7 +523,7 @@ export default class Worldstate {
 	}
 
 	private readVoidTraders(): void {
-		let voidTraders = this.ws.VoidTraders
+		let voidTraders = this.ws?.VoidTraders
 		if (!Array.isArray(voidTraders)) {
 			voidTraders = []
 		}

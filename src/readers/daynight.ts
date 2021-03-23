@@ -10,7 +10,7 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 
 	start(db: WfDb): void {
 		this.dbTable = db.getTable(this.dbTableId)
-		let dayNightInput: any
+		let dayNightInput: WfMap<WfPlatform, WfDayNight[]> = {}
 		if (config.dayNightPath) {
 			try {
 				dayNightInput = JSON.parse(readFileSync(config.dayNightPath, 'utf8'))
@@ -24,13 +24,13 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 				}
 			}
 		}
-		const dayNightCycles = dayNightInput && dayNightInput[this.platform]
-			? dayNightInput[this.platform]
+		const dayNightCycles = dayNightInput
+			? dayNightInput[this.platform] || []
 			: []
-		this.read(dayNightCycles, Math.floor(Date.now() / 1000))
+		this.read(dayNightCycles)
 	}
 
-	read(dayNightCycles: any[], timestamp: number): void {
+	read(dayNightCycles: WfDayNight[]): void {
 		if (!this.dbTable) {
 			return
 		}

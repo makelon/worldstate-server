@@ -13,7 +13,7 @@ export default class ArbitrationReader extends WfReader<WfArbitration> {
 		return arbitration.end >= timestamp
 	}
 
-	read(arbitrationsInput: any[], timestamp: number): void {
+	read(arbitrationsInput: KuvalogEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

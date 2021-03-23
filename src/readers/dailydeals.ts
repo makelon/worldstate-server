@@ -13,7 +13,7 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 		return deal.end >= timestamp
 	}
 
-	read(dealsInput: any[], timestamp: number): void {
+	read(dealsInput: DailyDealEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

@@ -14,7 +14,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 		return Math.abs(invasion.score) < invasion.endScore
 	}
 
-	read(invasions: any[], timestamp: number): void {
+	read(invasions: InvasionEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}
@@ -29,8 +29,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 				continue
 			}
 			let invasionDb = this.dbTable.get(id)
-			const location = getLocation(invasion.Node),
-				endScore = Number(invasion.Goal),
+			const endScore = Number(invasion.Goal),
 				// Reversed because xMissionInfo.faction is the mission's opposing faction
 				factionAttacker = getFaction(invasion.DefenderMissionInfo.faction),
 				factionDefender = getFaction(invasion.AttackerMissionInfo.faction),

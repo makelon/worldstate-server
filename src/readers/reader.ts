@@ -6,14 +6,14 @@ export default abstract class WfReader<T extends WfRecordType> {
 	protected isActive?(record: T, timestamp: number): boolean
 
 	constructor(
-		protected platform: string
+		protected platform: WfPlatform
 	) {}
 
 	start(db: WfDb): void {
 		this.dbTable = db.getTable<T>(this.dbTableId)
 	}
 
-	abstract read(input: any[], timestamp: number): void
+	abstract read(input: any, timestamp: number): void
 
 	get entityRewards(): WfRewardTableMap { return {} }
 

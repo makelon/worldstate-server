@@ -16,7 +16,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 			&& (bounty.health === undefined || bounty.health > 0)
 	}
 
-	read(bountiesInput: any[], timestamp: number): void {
+	read(bountiesInput: BountyEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}
@@ -44,7 +44,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 					bountyCurrent.health = 1
 					bountyCurrent.healthHistory = [[bountyCurrent.start, 1]]
 				}
-				if ('VictimNode' in bounty) {
+				if ('VictimNode' in bounty && bounty.VictimNode) {
 					bountyCurrent.location = getLocation(bounty.VictimNode)
 				}
 				for (const job of bounty.Jobs) {

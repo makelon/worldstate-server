@@ -51,7 +51,7 @@ load()
 const wsInstances: {[platform: string]: Worldstate} = {}
 let numInstances = 0
 for (const platform in config.wsUrls) {
-	wsInstances[platform] = new Worldstate(new Database(platform), platform, config.instanceDelay * numInstances)
+	wsInstances[platform] = new Worldstate(new Database(platform), platform as WfPlatform, config.instanceDelay * numInstances)
 	++numInstances
 }
 const server = new Server(wsInstances)

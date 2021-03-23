@@ -11,11 +11,11 @@ import * as log from './log'
  * @param flags File mode - 'a': append, 'w': write
  * @param tryMkdir Whether to try to create missing folders. Used for preventing infinite recursion
  */
-function promiseWrite(file: string, data: string | Buffer, flags: string = 'w', tryMkdir: boolean = true): Promise<number> {
+function promiseWrite(file: string, data: string | Buffer, flags = 'w', tryMkdir = true): Promise<number> {
 	return new Promise<number>((resolve, reject) => {
 		const ws = createWriteStream(file, { flags: flags })
-		ws.on('error', err => {
-			if (!tryMkdir || err.code != 'ENOENT') {
+		ws.on('error', (err: NodeJS.ErrnoException) => {
+			if (!tryMkdir || err.code !== 'ENOENT') {
 				reject(err)
 				return
 			}
@@ -149,8 +149,8 @@ export function removeFile(file: string): Promise<void> {
  * @param _this The context in which the functions are called
  * @param fcns Functions to call
  */
-export function queue(_this: any, ...fcns: Function[]): Promise<void> {
-	const wait = () => new Promise<void>((resolve, reject) => { setImmediate(resolve) })
+export function queue(_this: ThisType<unknown>, ...fcns: Array<() => void>): Promise<void> {
+	const wait = () => new Promise<void>((resolve) => { setImmediate(resolve) })
 	let promise = wait()
 	for (let i = 0, lastFun = fcns.length - 1; i <= lastFun; ++i) {
 		promise = promise.then(() => {

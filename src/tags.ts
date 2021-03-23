@@ -55,9 +55,9 @@ export const
 		MT_SURVIVAL: 'Survival',
 		MT_TERRITORY: 'Interception',
 		MT_ARENA: 'Arena',
-		MT_PVP: 'Conclave'
+		MT_PVP: 'Conclave',
 	},
-	sortieBosses: {[name: string]: WfMap} = {
+	sortieBosses: WfMap<string, { faction: string, name: string }> = {
 		SORTIE_BOSS_VOR: { faction: 'FC_GRINEER', name: 'Vor' },
 		SORTIE_BOSS_HEK: { faction: 'FC_GRINEER', name: 'Vay Hek' },
 		SORTIE_BOSS_RUK: { faction: 'FC_GRINEER', name: 'Sargas Ruk' },

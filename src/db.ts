@@ -7,21 +7,16 @@ import config from './config'
 import * as log from './log'
 import { appendFile, renameFile, removeFile, writeFile } from './promisify'
 
+type WfRecordPatchContext<T extends WfRecordType> = {
+	[K in keyof T]: T[K] extends string | number | boolean | undefined | null ? never : K
+}[keyof T]
+
+type WfRecordPatch<T extends WfRecordType> = Partial<T> & { __context?: WfRecordPatchContext<T> }
+
 /**
  * Number of table updates before temp file cleanup is initiated
  */
 const cleanTmpThreshold = 50
-
-/**
- * Return record string to be written to file
- *
- * @param id
- * @param data
- * @returns Serialized data
- */
-function serialize(id: string, data: any): string {
-	return id + '\t' + JSON.stringify(data) + '\n'
-}
 
 function errorHandler(err: NodeJS.ErrnoException): void {
 	if (err) {
@@ -29,11 +24,9 @@ function errorHandler(err: NodeJS.ErrnoException): void {
 	}
 }
 
-type TableMap = { [tblName: string]: WfDbTableI<WfRecordType> }
-
 export default class Database implements WfDb {
-	private loading: number = 0
-	private tables: TableMap = {}
+	private loading = 0
+	private tables: { [tblName: string]: WfDbTableI<WfRecordType> } = {}
 	private ee = new EventEmitter()
 
 	constructor(private dbName: string) {}
@@ -100,12 +93,10 @@ export default class Database implements WfDb {
 	}
 }
 
-type RecordMap<T> = { [id: string]: T }
-
 class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	private tablePath = ''
 	private ready = false
-	private records: RecordMap<T> = {}
+	private records: { [id: string]: T } = {}
 	private lastUpdate = 0
 	private updates = ''
 	private tmpUpdates = ''
@@ -157,14 +148,14 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	 * @returns Promise that resolves when the table is ready
 	 */
 	private load(tablePath: string): Promise<void> {
-		return new Promise<void>((resolve, reject) => {
+		return new Promise<void>(resolve => {
 			log.notice('Loading %s/%s', this.dbName, this.tableName)
 			const readStream = createReadStream(tablePath, {
 					encoding: 'utf8',
 					flags: 'r'
 				}),
 				tStart = process.hrtime()
-			readStream.on('error', err => {
+			readStream.on('error', (err: NodeJS.ErrnoException) => {
 				if (err && err.code != 'ENOENT') {
 					throw new Error(`Error loading database ${this.dbName}/${this.tableName}: ${err.message}`)
 				}
@@ -176,33 +167,23 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			createInterface(readStream)
 				.on('line', line => {
 					const dataStart = line.indexOf('\t'),
-						id = line.substr(0, dataStart),
-						data = JSON.parse(line.substr(dataStart + 1))
-					let record = this.records[id] as any
-					if (record) {
-						// Read incremental updates for record
-						if (data.__context) {
-							// Updates belong in a subkey of <record>
-							const context = data.__context
-							if (!(context in record)) {
-								record[context] = {}
-							}
-							record = record[context]
-							delete data.__context
-						}
-						for (const key in data) {
-							record[key] = data[key]
-						}
+						id = line.substr(0, dataStart)
+					let patch: WfRecordPatch<T>
+					try {
+						patch = this.parsePatch(line.substr(dataStart + 1))
+					}
+					catch (err) {
+						log.error('Failed to read record %s/%s: %s', this.dbName, this.tableName, err.message)
+						return
+					}
+					if (this.records[id]) {
+						this.applyPatch(this.records[id], patch)
 						++updateCount
 						++this.tmpUpdateCount
 						log.debug('Updated record %s in %s/%s', id, this.dbName, this.tableName)
 					}
 					else {
-						// Read new record
-						this.records[id] = data
-						if (!('id' in data)) {
-							data.id = id
-						}
+						this.loadRecord(id, patch as T)
 						++recordCount
 						log.debug('Loaded record %s from %s/%s', id, this.dbName, this.tableName)
 					}
@@ -213,6 +194,44 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 					resolve()
 				})
 		})
+	}
+
+	/**
+	 * Parse a JSON object
+	 */
+	private parsePatch(input: string): WfRecordPatch<T> {
+		const parsed: unknown = JSON.parse(input)
+		if (typeof parsed !== 'object' || parsed === null) {
+			throw new Error('Expected an object')
+		}
+		return parsed as T
+	}
+
+	/**
+	 * Read a new record from temporary storage
+	 */
+	private loadRecord(id: string, record: T): void {
+		this.records[id] = record
+		if (!('id' in record)) {
+			record.id = id
+		}
+	}
+
+	/**
+	 * Read incremental update for a record
+	 */
+	private applyPatch(record: T, patch: WfRecordPatch<T>): void {
+		const context = patch.__context
+		delete patch.__context
+		if (context) {
+			if (!record[context]) {
+				record[context] = Object.create({})
+			}
+			Object.assign(record[context], patch)
+		}
+		else {
+			Object.assign(record, patch)
+		}
 	}
 
 	/**
@@ -304,7 +323,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	 */
 	moveTmp(id: string): void {
 		if (id in this.records) {
-			this.updates += serialize(id, this.records[id])
+			this.updates += this.serialize(id, this.records[id])
 			this.remove(id)
 		}
 	}
@@ -315,11 +334,22 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	 * @param id Id of record to update
 	 * @param updates Updated record data
 	 */
-	updateTmp(id: string, updates: any): void {
+	updateTmp(id: string, updates: Partial<T>): void {
 		if (id in this.records) {
 			++this.tmpUpdateCount
-			this.tmpUpdates += serialize(id, updates)
+			this.tmpUpdates += this.serialize(id, updates)
 		}
+	}
+
+	/**
+	 * Return record string to be written to file
+	 *
+	 * @param id
+	 * @param data
+	 * @returns Serialized data
+	 */
+	private serialize(id: string, data: Partial<T>): string {
+		return id + '\t' + JSON.stringify(data) + '\n'
 	}
 
 	/**
@@ -335,7 +365,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 		this.tableTmpBusy = true
 		let records = ''
 		for (const id in this.records) {
-			records += serialize(id, this.records[id])
+			records += this.serialize(id, this.records[id])
 		}
 		if (records === '') {
 			removeFile(this.tablePath + '.tmp')

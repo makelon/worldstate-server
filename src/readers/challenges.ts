@@ -10,7 +10,7 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 		return challengeSeason.end >= timestamp
 	}
 
-	read(challengeSeasonInput: any, timestamp: number): void {
+	read(challengeSeasonInput: ChallengeSeasonEntry, timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

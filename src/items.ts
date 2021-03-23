@@ -69,6 +69,15 @@ export function getItems(itemIds: string[], entityRewards: EntityRewards): WfIte
 	return ret
 }
 
+interface RewardsStruct {
+	credits?: number
+	items?: string[]
+	countedItems?: Array<{
+		ItemType: string
+		ItemCount: string
+	}>
+}
+
 /**
  * Create a WfRewards object with credit and item rewards for the given input.
  * Refer to types.ts for details.
@@ -77,7 +86,7 @@ export function getItems(itemIds: string[], entityRewards: EntityRewards): WfIte
  * @param entityRewards An EntityRewards object to store each reward's reward table in
  * @returns Reward info
  */
-export function getRewards(rewards: any, entityRewards: EntityRewards): WfRewards | null {
+export function getRewards(rewards: RewardsStruct, entityRewards: EntityRewards): WfRewards | null {
 	const ret: WfRewards = {},
 		items: WfReward[] = []
 	if (rewards.credits) {

@@ -15,7 +15,7 @@ export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
 		return kuvamission.end >= timestamp
 	}
 
-	read(kuvamissionsInput: any[], timestamp: number): void {
+	read(kuvamissionsInput: KuvalogEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

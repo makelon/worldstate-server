@@ -1,8 +1,8 @@
 const config = require('../out/config').default
 const Database = require('../out/db').default
-const Worldstate = require('../out/worldstate').default
-const fixtures = require('./deps/fixtures')
 const extraData = require('../out/extradata').default
+const Worldstate = require('../out/worldstate').default
+const fixtures = require('./fixtures/data')
 
 describe('Worldstate', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc')

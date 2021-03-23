@@ -11,7 +11,7 @@ export let debug = _log,
 	warning = _log,
 	error = _error
 
-function _noop(...args: any[]): void {}
+function _noop(): void {}
 
 /**
  * @returns Timestamp formatted as hh:mm:ss.SSS

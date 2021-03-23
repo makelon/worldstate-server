@@ -3,8 +3,26 @@ import { readFileSync } from 'fs'
 import config from './config'
 import * as log from './log'
 
+interface ExtraPlatformDataBountyJob {
+	rewards: string,
+	minEnemyLevel: number,
+	maxEnemyLevel: number,
+	xpAmounts: number[],
+	title: string,
+}
+
+interface ExtraPlatformDataBounty {
+	id: string,
+	syndicate: string,
+	jobs: ExtraPlatformDataBountyJob[],
+}
+
+interface ExtraPlatformData {
+	bounties: ExtraPlatformDataBounty[],
+}
+
 class ExtraData {
-	private data: any = {}
+	private data: WfMap<WfPlatform, ExtraPlatformData> = {}
 
 	/**
 	 * Load extra data that isn't available in the worldstate dump
@@ -28,10 +46,10 @@ class ExtraData {
 	 * @param dataType
 	 * @returns Extra data of the selected type for the chosen platform
 	 */
-	getData<T extends WfRecordKey>(platform: string, dataType: T): any[] {
-		return platform in config.wsUrls && platform in this.data && dataType in this.data[platform]
-			 ? this.data[platform][dataType]
-			 : []
+	getData<T extends keyof ExtraPlatformData>(platform: WfPlatform, dataType: T): ExtraPlatformData[T] {
+		return platform in config.wsUrls
+			? this.data[platform]?.[dataType] || []
+			: []
 	}
 }
 

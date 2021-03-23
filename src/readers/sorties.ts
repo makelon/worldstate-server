@@ -14,7 +14,7 @@ export default class SortieReader extends WfReader<WfSortie> {
 		return sortie.end >= timestamp
 	}
 
-	read(sortiesInput: any[], timestamp: number): void {
+	read(sortiesInput: SortieEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

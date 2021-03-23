@@ -4,9 +4,16 @@ import * as tags from './tags'
  * Convert number to a string with leading zeros. Helper function for date/time formatting
  */
 const padValues = ['', '0', '00']
-export function pad(n: number, len: number = 2): string {
+export function pad(n: number, len = 2): string {
 	const s = n.toString()
 	return padValues[len - s.length] + s
+}
+
+interface IdStruct {
+	_id: {
+		$id?: string
+		$oid?: string
+	}
 }
 
 /**
@@ -15,11 +22,18 @@ export function pad(n: number, len: number = 2): string {
  * @param struct Entry data
  * @returns Entry ID or empty string if not found
  */
-export function getId(struct: any): string {
-	if (!struct._id) {
-		return ''
+export function getId(struct: IdStruct): string {
+	return typeof struct === 'object' && struct._id
+		? struct._id.$oid || struct._id.$id || ''
+		: ''
+}
+
+interface DateStruct {
+	sec?: string
+	Time?: number
+	$date?: {
+		$numberLong: number
 	}
-	return struct._id.$oid || struct._id.$id || ''
 }
 
 /**
@@ -28,10 +42,10 @@ export function getId(struct: any): string {
  * @param struct Entry data
  * @returns Timestamp in seconds or 0 if missing or invalid parameter
  */
-export function getDate(struct: any): number {
-	if (struct) {
+export function getDate(struct: DateStruct): number {
+	if (typeof struct === 'object' && struct !== null) {
 		const timeShort = struct.sec || struct.Time
-		if (timeShort && !/\D/.test(timeShort)) {
+		if (timeShort && (typeof timeShort === 'number' || !/\D/.test(timeShort))) {
 			// Old worldstate format without milliseconds
 			return Number(timeShort)
 		}
@@ -136,7 +150,7 @@ export function getFomorianType(factionId: string): string {
  * @returns Faction ID of a construction project
  */
 export function getFomorianFaction(projectIdx: string): string {
-	return tags.fomorianFactions[projectIdx]
+	return tags.fomorianFactions[projectIdx] || 'Unknown fomorian project ' + projectIdx
 }
 
 /**

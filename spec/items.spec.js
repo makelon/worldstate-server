@@ -1,7 +1,7 @@
-const items = require('../out/items')
-const h = require('../out/helpers')
-const fixtures = require('./deps/fixtures')
 const EntityRewards = require('../out/entityrewards').default
+const h = require('../out/helpers')
+const items = require('../out/items')
+const fixtures = require('./fixtures/data')
 
 describe('Item functions', () => {
 	it('should return items', () => {

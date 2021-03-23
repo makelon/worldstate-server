@@ -14,7 +14,7 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 		return fomorian.health > 0 && fomorian.end >= timestamp
 	}
 
-	read(fomoriansInput: any[], timestamp: number): void {
+	read(fomoriansInput: GoalEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

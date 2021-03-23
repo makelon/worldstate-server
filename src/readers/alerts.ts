@@ -13,7 +13,7 @@ export default class AlertReader extends WfReader<WfAlert> {
 		return alert.end >= timestamp
 	}
 
-	read(alertsInput: any[], timestamp: number): void {
+	read(alertsInput: AlertEntry[], timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}

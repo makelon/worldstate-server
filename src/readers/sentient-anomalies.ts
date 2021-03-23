@@ -6,23 +6,24 @@ export default class SentientAnomalyReader extends WfReader<WfSentientAnomaly> {
 	private lastMission?: WfSentientAnomaly
 	protected readonly dbTableId = 'sentient-anomalies'
 
-	read(missionInput: any, timestamp: number): void {
+	read(missionInput: string, timestamp: number): void {
 		if (!this.dbTable) {
 			return
 		}
 		log.notice('Reading %s sentient anomalies', this.platform)
+		let parsedMissionInput: { sfn: number }
 		if (typeof missionInput !== 'string' || missionInput.length > 100) {
 			return
 		}
 		try {
-			missionInput = JSON.parse(missionInput)
+			parsedMissionInput = JSON.parse(missionInput)
 		}
 		catch (err) {
 			return
 		}
-		if (missionInput.hasOwnProperty('sfn') && typeof missionInput.sfn === 'number') {
+		if ('sfn' in parsedMissionInput && typeof parsedMissionInput.sfn === 'number') {
 			this.cleanOld()
-			const id = (missionInput.sfn as number).toString(),
+			const id = (parsedMissionInput.sfn as number).toString(),
 				missionDb = this.dbTable.get(id),
 				missionCurrent: WfSentientAnomaly = {
 					id: id,

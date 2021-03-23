@@ -4,15 +4,15 @@ const config = require('../out/config').default
 const Database = require('../out/db').default
 const Server = require('../out/server').default
 const Worldstate = require('../out/worldstate').default
-const fixtures = require('./deps/fixtures')
-const MockGame = require('./deps/mockgame')
+const fixtures = require('./fixtures/data')
+const MockGame = require('./fixtures/mockgame')
 
 describe('Server', () => {
 	const mockGameHost = '127.0.0.1',
 		mockGamePort = 20354,
 		ws = new Worldstate(new Database('pc'), 'pc', 0),
 		server = new Server({pc: ws}),
-		mockGame = new MockGame(mockGameHost, mockGamePort)
+		mockGame = new MockGame(mockGameHost, mockGamePort),
 		timestamp = fixtures.timeNowShort,
 		[[testData, expected]] = fixtures.getAlerts()
 

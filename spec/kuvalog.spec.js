@@ -1,8 +1,8 @@
 const config = require('../out/config').default
 const Database = require('../out/db').default
 const Worldstate = require('../out/worldstate').default
-const fixtures = require('./deps/fixtures')
-const MockGame = require('./deps/mockgame')
+const fixtures = require('./fixtures/data')
+const MockGame = require('./fixtures/mockgame')
 
 describe('Kuvalog', () => {
 	const mockKuvalogHost = '127.0.0.1',

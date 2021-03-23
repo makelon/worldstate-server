@@ -170,13 +170,13 @@ export default class Worldstate {
 		}
 		types = types || config.wsFields.slice()
 		log.debug('Fetching %s for %s', types.join(', '), this.platform)
-		if (types[0] == 'worldstate') {
+		if (types[0] === 'worldstate') {
 			// Raw worldstate dump
 			return JSON.stringify(this.ws || {})
 		}
 		const ret: WfResponse = {
 			time: this.now,
-			rewardtables: {}
+			rewardtables: {},
 		}
 		for (const type of types as WfRecordKey[]) {
 			if (!(type in this.readers)) {

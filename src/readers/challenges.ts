@@ -28,7 +28,7 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 					syndicate: getSyndicateName(challengeSeasonInput.AffiliationTag),
 					season: challengeSeasonInput.Season,
 					phase: challengeSeasonInput.Phase,
-					challenges: challenges
+					challenges: challenges,
 				}
 			for (const challengeInput of challengeSeasonInput.ActiveChallenges) {
 				const challengeInfo = getChallenge(challengeInput.Challenge)
@@ -36,9 +36,9 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 					id: getId(challengeInput),
 					start: getDate(challengeInput.Activation),
 					end: getDate(challengeInput.Expiry),
-					daily: challengeInput.Daily == true,
+					daily: challengeInput.Daily === true,
 					description: challengeInfo.description,
-					xpAmount: challengeInfo.xpAmount
+					xpAmount: challengeInfo.xpAmount,
 				})
 			}
 			challenges.sort((a, b) => a.id.localeCompare(b.id))
@@ -65,7 +65,7 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 			second,
 			['start', 'end', 'syndicate', 'season', 'phase']
 		)
-		if (first.challenges.length != second.challenges.length) {
+		if (first.challenges.length !== second.challenges.length) {
 			diff.challenges = second.challenges
 		}
 		else {

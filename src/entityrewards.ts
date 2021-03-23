@@ -28,5 +28,5 @@ export default class EntityRewards {
 		this.cache = {}
 	}
 
-	get rewards() { return this._rewards }
+	get rewards(): WfRewardTableMap { return this._rewards }
 }

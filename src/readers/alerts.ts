@@ -38,7 +38,7 @@ export default class AlertReader extends WfReader<WfAlert> {
 						missionType: getMissionType(mi.missionType),
 						faction: getFaction(mi.faction),
 						minLevel: Number(mi.minEnemyLevel),
-						maxLevel: Number(mi.maxEnemyLevel)
+						maxLevel: Number(mi.maxEnemyLevel),
 					}
 				if (rewards) {
 					alertCurrent.rewards = rewards

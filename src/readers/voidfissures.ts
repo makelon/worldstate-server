@@ -31,7 +31,7 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 						location: getLocation(fissureInput.Node),
 						faction: getNodeFaction(fissureInput.Node),
 						missionType: getNodeMissionType(fissureInput.Node),
-						tier: getVoidTier(fissureInput.Modifier)
+						tier: getVoidTier(fissureInput.Modifier),
 					}
 				if (fissureDb) {
 					const diff = this.getDifference(fissureDb, fissureProcessed)

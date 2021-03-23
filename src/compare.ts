@@ -26,7 +26,7 @@ export function patch<T>(obj: T, diff: Partial<T>): void {
 export function getValueDifference<T>(first: T, second: T, keys: (keyof T)[]): Partial<T> {
 	const diff: Partial<T> = {}
 	for (const key of keys) {
-		if (first[key] != second[key]) {
+		if (first[key] !== second[key]) {
 			diff[key] = second[key]
 		}
 	}
@@ -58,15 +58,15 @@ export function getItemDifference(first?: WfItem[], second?: WfItem[]): WfItem[]
 		}
 	}
 
-	if (first.length != second.length) {
+	if (first.length !== second.length) {
 		return second
 	}
 	for (let itemIdx = 0; itemIdx < first.length; ++itemIdx) {
 		const itemFirst = first[itemIdx],
 			itemSecond = second[itemIdx]
 		if (
-			itemFirst.name != itemSecond.name
-			|| itemFirst.type != itemSecond.type
+			itemFirst.name !== itemSecond.name
+			|| itemFirst.type !== itemSecond.type
 		) {
 			return second
 		}
@@ -99,18 +99,18 @@ export function getRewardDifference(first?: WfRewards, second?: WfRewards): WfRe
 		}
 	}
 
-	if (first.credits != second.credits) {
+	if (first.credits !== second.credits) {
 		return second
 	}
 	if (first.items) {
-		if (second.items && first.items.length == second.items.length) {
+		if (second.items && first.items.length === second.items.length) {
 			for (let itemIdx = 0; itemIdx < first.items.length; ++itemIdx) {
 				const itemFirst = first.items[itemIdx],
 					itemSecond = second.items[itemIdx]
 				if (
-					itemFirst.name != itemSecond.name
-					|| itemFirst.type != itemSecond.type
-					|| itemFirst.count != itemSecond.count
+					itemFirst.name !== itemSecond.name
+					|| itemFirst.type !== itemSecond.type
+					|| itemFirst.count !== itemSecond.count
 				) {
 					return second
 				}
@@ -151,23 +151,23 @@ export function getRandomRewardDifference(first?: WfRandomRewardTable, second?: 
 		}
 	}
 
-	if (first.length != second.length) {
+	if (first.length !== second.length) {
 		return second
 	}
 	for (let tierIdx = 0; tierIdx < first.length; ++tierIdx) {
 		const tierFirst = first[tierIdx],
 			tierSecond = second[tierIdx]
-		if (tierFirst.length != tierSecond.length) {
+		if (tierFirst.length !== tierSecond.length) {
 			return second
 		}
 		for (let itemIdx = 0; itemIdx < tierFirst.length; ++itemIdx) {
 			const itemFirst = tierFirst[itemIdx],
 				itemSecond = tierSecond[itemIdx]
 			if (
-				itemFirst.name != itemSecond.name
-				|| itemFirst.type != itemSecond.type
-				|| itemFirst.count != itemSecond.count
-				|| itemFirst.chance != itemSecond.chance
+				itemFirst.name !== itemSecond.name
+				|| itemFirst.type !== itemSecond.type
+				|| itemFirst.count !== itemSecond.count
+				|| itemFirst.chance !== itemSecond.chance
 			) {
 				return second
 			}
@@ -201,17 +201,17 @@ export function getVoidTraderItemDifference(first?: WfVoidTraderItem[], second?:
 		}
 	}
 
-	if (first.length != second.length) {
+	if (first.length !== second.length) {
 		return second
 	}
 	for (let itemIdx = 0; itemIdx < first.length; ++itemIdx) {
 		const itemFirst = first[itemIdx],
 			itemSecond = second[itemIdx]
 		if (
-			itemFirst.name != itemSecond.name
-			|| itemFirst.type != itemSecond.type
-			|| itemFirst.credits != itemSecond.credits
-			|| itemFirst.ducats != itemSecond.ducats
+			itemFirst.name !== itemSecond.name
+			|| itemFirst.type !== itemSecond.type
+			|| itemFirst.credits !== itemSecond.credits
+			|| itemFirst.ducats !== itemSecond.ducats
 		) {
 			return second
 		}

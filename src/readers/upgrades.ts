@@ -31,7 +31,7 @@ export default class UpgradeReader extends WfReader<WfUpgrade> {
 						end: end,
 						type: upgradeTypes[upgradeInput.UpgradeType] || upgradeInput.UpgradeType,
 						opType: upgradeInput.OperationType,
-						value: Number(upgradeInput.Value)
+						value: Number(upgradeInput.Value),
 					}
 				if (upgradeDb) {
 					const diff = this.getDifference(upgradeDb, upgradeProcessed)

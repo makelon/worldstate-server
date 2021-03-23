@@ -5,14 +5,13 @@ export default abstract class WfReader<T extends WfRecordType> {
 	protected abstract readonly dbTableId: WfRecordKey
 	protected isActive?(record: T, timestamp: number): boolean
 
-	constructor(
-		protected platform: WfPlatform
-	) {}
+	constructor(protected platform: WfPlatform) {}
 
 	start(db: WfDb): void {
 		this.dbTable = db.getTable<T>(this.dbTableId)
 	}
 
+	//eslint-disable-next-line @typescript-eslint/no-explicit-any
 	abstract read(input: any, timestamp: number): void
 
 	get entityRewards(): WfRewardTableMap { return {} }

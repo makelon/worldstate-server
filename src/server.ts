@@ -1,7 +1,7 @@
 import { chmodSync } from 'fs'
 import { createServer, IncomingMessage, Server as HttpServer, ServerResponse } from 'http'
 import { isIP, isIPv6 } from 'net'
-import { platform } from 'os'
+import { platform as osPlatform } from 'os'
 
 import config from './config'
 import * as log from './log'
@@ -53,7 +53,7 @@ export default class Server {
 		for (const platform in this.instances) {
 			this.instances[platform as WfPlatform]!.reload()
 		}
-		if (config.listen != oldListen) {
+		if (config.listen !== oldListen) {
 			this.startServer()
 		}
 	}
@@ -63,7 +63,7 @@ export default class Server {
 	 *
 	 * @param callback Function to call after shutdown
 	 */
-	shutdown(callback: () => void) {
+	shutdown(callback: () => void): void {
 		log.info('Cleaning up before exit')
 		if (this.httpServer.listening) {
 			this.httpServer.close(callback)
@@ -86,7 +86,7 @@ export default class Server {
 			log.info('Server with PID %d running', process.pid)
 			return
 		}
-		if (typeof config.listen != 'number' && typeof config.listen != 'string') {
+		if (typeof config.listen !== 'number' && typeof config.listen !== 'string') {
 			log.error('Config error: Expected a number or a string for the listen setting')
 			process.exit(1)
 		}
@@ -95,19 +95,19 @@ export default class Server {
 			host?: string
 			path?: string
 		} = {}
-		if (typeof config.listen == 'number' || /^\d+$/.test(config.listen)) {
+		if (typeof config.listen === 'number' || /^\d+$/.test(config.listen)) {
 			listenOpts.port = Number(config.listen)
 		}
-		else if (typeof config.listen == 'string') {
+		else if (typeof config.listen === 'string') {
 			const addrLen = config.listen.search(/:\d+$/)
-			if (addrLen == -1) {
+			if (addrLen === -1) {
 				listenOpts.path = config.listen
 			}
 			else {
-				let address = config.listen.substr(0, addrLen),
-					address6,
+				const address = config.listen.substr(0, addrLen),
 					port = Number(config.listen.substr(addrLen + 1))
-				if (address[0] == '[' && address[address.length - 1] == ']' ) {
+				let address6: string | undefined
+				if (address[0] === '[' && address[address.length - 1] === ']' ) {
 					address6 = address.slice(1, -1)
 				}
 				if (address6 && isIPv6(address6)) {
@@ -118,7 +118,7 @@ export default class Server {
 					listenOpts.host = address
 					listenOpts.port = port
 				}
-				else if (addrLen == 0 || address == '*') {
+				else if (addrLen === 0 || address === '*') {
 					listenOpts.port = port
 				}
 				else {
@@ -138,13 +138,13 @@ export default class Server {
 					log.error('Server does not seem to be listening')
 					process.exit(1)
 				}
-				else if (typeof address == 'string') {
-					if (platform() != 'win32') {
+				else if (typeof address === 'string') {
+					if (osPlatform() !== 'win32') {
 						chmodSync(address, 0o660)
 					}
 					listenStr = address
 				}
-				else if (address.family == 'IPv6') {
+				else if (address.family === 'IPv6') {
 					listenStr = `[${address.address}]:${address.port}`
 				}
 				else {

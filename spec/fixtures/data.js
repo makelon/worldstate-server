@@ -2,91 +2,89 @@ const items = [
 		{
 			id: 'MockItemType',
 			name: 'Mock Item',
-			type: 'Cosmetic'
+			type: 'Cosmetic',
 		},
 		{
 			id: 'MockItemType2',
 			name: 'Mock Item 2',
-			type: 'Companion'
+			type: 'Companion',
 		},
 		{
 			id: 'NonexistentItem',
 			name: 'NonexistentItem',
-			type: 'Misc'
-		}
+			type: 'Misc',
+		},
 	],
 	itemRewards = {
 		input: {
 			credits: 6500,
-			items: [ items[0].id ]
+			items: [ items[0].id ],
 		},
 		output: {
 			credits: 6500,
-			items: [ { name: items[0].name, type: items[0].type, count: 1 } ]
-		}
+			items: [ { name: items[0].name, type: items[0].type, count: 1 } ],
+		},
 	},
 	countedItemRewards = {
 		input: [ { ItemType: items[1].id, ItemCount: 3 } ],
 		output: {
-			items: [ { name: items[1].name, type: items[1].type, count: 3 } ]
-		}
+			items: [ { name: items[1].name, type: items[1].type, count: 3 } ],
+		},
 	},
 	rewardTables = [
 		{
 			input: 'MockRewardTable',
 			output: [
 				[ { name: items[0].name, type: items[0].type, count: 15, chance: 1 } ],
-				[ { name: 'Endo', type: 'Endo', count: 50, chance: 1 } ]
-			]
+				[ { name: 'Endo', type: 'Endo', count: 50, chance: 1 } ],
+			],
 		},
 		{
 			input: 'MockRewardTable',
 			output: [
 				[ { name: items[0].name, type: items[0].type, count: 25, chance: 1 } ],
-				[ { name: 'Endo', type: 'Endo', count: 60, chance: 1 } ]
-			]
+				[ { name: 'Endo', type: 'Endo', count: 60, chance: 1 } ],
+			],
 		},
 		{
 			input: 'MockRewardTable',
 			output: [
 				[ { name: items[0].name, type: items[0].type, count: 35, chance: 1 } ],
-				[ { name: 'Endo', type: 'Endo', count: 70, chance: 1 } ]
-			]
-		}
+				[ { name: 'Endo', type: 'Endo', count: 70, chance: 1 } ],
+			],
+		},
 	],
 	acolyteRewardTables = {
-		Torment: [
-			[ { name: items[0].name, type: items[0].type, count: 15, chance: 1 } ]
-		]
+		Torment: [ [ { name: items[0].name, type: items[0].type, count: 15, chance: 1 } ] ],
 	},
 	challenges = [
 		{
 			input: 'Challenge1000',
-			output: { description: 'Test challenge 1000 standing', xpAmount: 1000 }
+			output: { description: 'Test challenge 1000 standing', xpAmount: 1000 },
 		},
 		{
 			input: 'Challenge5000',
-			output: { description: 'Test challenge 5000 standing', xpAmount: 5000 }
-		}
+			output: { description: 'Test challenge 5000 standing', xpAmount: 5000 },
+		},
 	],
 	entityRewardTables = {
 		[items[0].name]: [
 			[
 				{ name: items[0].name, type: items[0].type, count: 1, chance: 0.3 },
-				{ name: items[1].name, type: items[1].type, count: 5, chance: 0.7 }
-			]
-		]
+				{ name: items[1].name, type: items[1].type, count: 5, chance: 0.7 },
+			],
+		],
 	},
 	entryId = '5b291c5825666c0225476ac6',
 	factions = [
 		{
 			id: 'FC_GRINEER',
-			name: 'Grineer'
+			name: 'Grineer',
 		},
 		{
 			id: 'FC_CORPUS',
-			name: 'Corpus'
-		}
+			name: 'Corpus',
+		},
 	],
 	missionTypes = [
 		{
@@ -96,29 +94,29 @@ const items = [
 		{
 			id: 'MT_INTEL',
 			name: 'Spy',
-		}
+		},
 	],
 	nodes = [
 		{
 			id: 'SolNode1',
-			name: 'Location1'
+			name: 'Location1',
 		},
 		{
 			id: 'SolNode2',
-			name: 'Location2'
-		}
+			name: 'Location2',
+		},
 	],
 	nodesRailjack = [
 		{
 			id: 'CrewBattleNode1',
 			nodeId: 1,
-			name: 'RailjackLocation1'
+			name: 'RailjackLocation1',
 		},
 		{
 			id: 'CrewBattleNode2',
 			nodeId: 2,
-			name: 'RailjackLocation2'
-		}
+			name: 'RailjackLocation2',
+		},
 	],
 	timeNowLong = Date.now(),
 	timeNowShort = Math.floor(timeNowLong / 1000),
@@ -144,7 +142,7 @@ function* getAcolytes() {
 			healthHistory: [[timeLocalShort, 0.75]],
 			discovered: false,
 			location: nodes[0].name,
-			rewards: acolyteRewardTables['Torment']
+			rewards: acolyteRewardTables['Torment'],
 		},
 		data = { PersistentEnemies: [acolyte] }
 	yield [data, expected]
@@ -193,9 +191,9 @@ function* getAlerts() {
 				maxEnemyLevel: 17,
 				maxWaveNum: 10,
 				missionReward: {
-					credits: 6500
-				}
-			}
+					credits: 6500,
+				},
+			},
 		},
 		expected = {
 			id: entryId,
@@ -208,8 +206,8 @@ function* getAlerts() {
 			maxLevel: 17,
 			missionLength: 10,
 			rewards: {
-				credits: 6500
-			}
+				credits: 6500,
+			},
 		},
 		data = { Alerts: [alert] }
 	yield [data, expected]
@@ -241,9 +239,9 @@ function* getBounties() {
 					rewards: rewardTables[1].input,
 					minEnemyLevel: 5,
 					maxEnemyLevel: 15,
-					xpAmounts: [100, 300]
+					xpAmounts: [100, 300],
 				},
-			]
+			],
 		},
 		expectedSyndicate = {
 			id: entryId,
@@ -256,9 +254,9 @@ function* getBounties() {
 					rotation: 'B',
 					minLevel: 5,
 					maxLevel: 15,
-					xpAmounts: [100, 300]
-				}
-			]
+					xpAmounts: [100, 300],
+				},
+			],
 		},
 		bountyInfested = {
 			_id: { $oid: entryId + '2' },
@@ -270,9 +268,9 @@ function* getBounties() {
 					rewards: rewardTables[1].input,
 					minEnemyLevel: 10,
 					maxEnemyLevel: 20,
-					xpAmounts: [200, 400]
+					xpAmounts: [200, 400],
 				},
-			]
+			],
 		},
 		expectedInfested = {
 			id: entryId + '2',
@@ -284,9 +282,9 @@ function* getBounties() {
 					rewards: rewardTables[1].output,
 					minLevel: 10,
 					maxLevel: 20,
-					xpAmounts: [200, 400]
-				}
-			]
+					xpAmounts: [200, 400],
+				},
+			],
 		},
 		bountyGhoul = {
 			_id: { $oid: entryId + '3' },
@@ -300,9 +298,9 @@ function* getBounties() {
 					rewards: rewardTables[2].input,
 					minEnemyLevel: 15,
 					maxEnemyLevel: 25,
-					xpAmounts: [250, 450]
+					xpAmounts: [250, 450],
 				},
-			]
+			],
 		},
 		expectedGhoul = {
 			id: entryId + '3',
@@ -318,9 +316,9 @@ function* getBounties() {
 					rotation: 'C',
 					minLevel: 15,
 					maxLevel: 25,
-					xpAmounts: [250, 450]
-				}
-			]
+					xpAmounts: [250, 450],
+				},
+			],
 		},
 		data = { SyndicateMissions: [bountySyndicate] }
 	yield [data, [expectedSyndicate]]
@@ -361,9 +359,9 @@ function* getChallenges() {
 					Expiry: { $date: { $numberLong: timeEndLong } },
 					_id: { $oid: entryId },
 					Daily: true,
-					Challenge: challenges[0].input
+					Challenge: challenges[0].input,
 				},
-			]
+			],
 		},
 		expected = {
 			id: 'RadioLegionSyndicate' + timeEndShort,
@@ -379,9 +377,9 @@ function* getChallenges() {
 					end: timeEndShort,
 					daily: true,
 					description: challenges[0].output.description,
-					xpAmount: challenges[0].output.xpAmount
-				}
-			]
+					xpAmount: challenges[0].output.xpAmount,
+				},
+			],
 		},
 		data = { SeasonInfo: challenge }
 	yield [data, expected]
@@ -405,7 +403,7 @@ function* getDailyDeals() {
 			OriginalPrice: 125,
 			SalePrice: 38,
 			AmountTotal: 200,
-			AmountSold: 125
+			AmountSold: 125,
 		},
 		expected = {
 			id: timeStartShort.toString(),
@@ -415,7 +413,7 @@ function* getDailyDeals() {
 			price: 38,
 			originalPrice: 125,
 			stock: 200,
-			sold: 125
+			sold: 125,
 		},
 		data = { DailyDeals: [deal] }
 	yield [data, expected]
@@ -433,7 +431,7 @@ function* getDayNight() {
 			start: 1542131224,
 			length: 1600,
 			dayStart: 800,
-			dayEnd: 1200
+			dayEnd: 1200,
 		},
 		expected = {},
 		data = [dayNight]
@@ -466,9 +464,9 @@ function* getExtraBounties() {
 				minLevel: 3,
 				maxLevel: 8,
 				xpAmounts: [1234],
-				title: 'Extra Bounty Title'
-			}
-		]
+				title: 'Extra Bounty Title',
+			},
+		],
 	}
 	yield ['data/extradata.json', [expectedSyndicate]]
 	yield ['data/nonexistent.json', []]
@@ -481,10 +479,10 @@ function* getFactionProjects() {
 			id: '0',
 			type: 'Balor Fomorian',
 			progress: projects[0],
-			progressHistory: [[timeLocalShort, projects[0]]]
+			progressHistory: [[timeLocalShort, projects[0]]],
 		},
 		data = {
-			ProjectPct: projects
+			ProjectPct: projects,
 		}
 	yield [data, expected]
 
@@ -543,7 +541,7 @@ function* getGoals() {
 				requiredItems: [items[0].id],
 				missionReward: { randomizedItems: rewardTables[0].input },
 			},
-			Reward: itemRewards.input
+			Reward: itemRewards.input,
 		},
 		expected = {
 			id: entryId,
@@ -558,7 +556,7 @@ function* getGoals() {
 			missionLocation: nodes[1].name,
 			requiredItems: [ { name: items[0].name, type: items[0].type } ],
 			goalRewards: itemRewards.output,
-			randomRewards: rewardTables[0].output
+			randomRewards: rewardTables[0].output,
 		},
 		data = { Goals: [fomorian] }
 	yield [data, expected]
@@ -596,7 +594,7 @@ function* getInvasions() {
 			AttackerMissionInfo: { faction: factions[0].id },
 			DefenderReward: { countedItems: countedItemRewards.input },
 			DefenderMissionInfo: { faction: factions[1].id },
-			Activation: { $date: { $numberLong: timeStartLong } }
+			Activation: { $date: { $numberLong: timeStartLong } },
 		},
 		expected = {
 			id: entryId,
@@ -608,7 +606,7 @@ function* getInvasions() {
 			factionAttacker: factions[1].name,
 			factionDefender: factions[0].name,
 			rewardsAttacker: countedItemRewards.output,
-			rewardsDefender: countedItemRewards.output
+			rewardsDefender: countedItemRewards.output,
 		},
 		data = { Invasions: [invasion] }
 	yield [data, expected]
@@ -666,15 +664,15 @@ function* getKuvalog() {
 				end: timeEndStr,
 				missiontype: 'KuvaMission6',
 				solnode: nodes[0].id,
-				realtime: timeStartStr
+				realtime: timeStartStr,
 			},
 			{
 				start: timeStartStr,
 				end: timeEndStr,
 				missiontype: 'EliteAlertMission',
 				solnode: nodes[1].id,
-				realtime: timeStartStr
-			}
+				realtime: timeStartStr,
+			},
 		],
 		expectedArbitration = {
 			id: timeStartShort.toString(),
@@ -683,7 +681,7 @@ function* getKuvalog() {
 			faction: factions[1].name,
 			location: nodes[1].name,
 			missionType: missionTypes[1].name,
-			rewards: rewardTables[0].output
+			rewards: rewardTables[0].output,
 		},
 		expectedKuvamission = {
 			id: 'KuvaMission6' + timeStartShort.toString(),
@@ -693,7 +691,7 @@ function* getKuvalog() {
 			location: nodes[0].name,
 			missionType: missionTypes[0].name,
 			flood: false,
-			rewards: rewardTables[1].output
+			rewards: rewardTables[1].output,
 		}
 	yield [data, [expectedArbitration], [expectedKuvamission]]
 
@@ -711,7 +709,7 @@ function* getNews() {
 		},
 		articleMessage = {
 			LanguageCode: 'en',
-			Message: 'Free tests!'
+			Message: 'Free tests!',
 		},
 		article = {
 			_id: { $oid: entryId },
@@ -724,7 +722,7 @@ function* getNews() {
 			ImageUrl: 'image_url',
 			Links: [articleLink],
 			Priority: false,
-			MobileOnly: false
+			MobileOnly: false,
 		},
 		expected = {
 			id: entryId,
@@ -733,7 +731,7 @@ function* getNews() {
 			link: 'news_prop_url',
 			eventStart: timeStartShort,
 			eventEnd: timeEndShort,
-			eventUrl: 'event_live_url'
+			eventUrl: 'event_live_url',
 		},
 		data = { Events: [article] }
 	yield [data, expected]
@@ -764,12 +762,12 @@ function* getNews() {
 function* getSentientAnomalies() {
 	let timeLocalShort = timeNowShort
 	const mission = {
-			sfn: nodesRailjack[0].nodeId
+			sfn: nodesRailjack[0].nodeId,
 		},
 		expected = {
 			id: mission.sfn.toString(),
 			start: timeLocalShort,
-			location: nodesRailjack[0].name
+			location: nodesRailjack[0].name,
 		}
 	yield [mission, expected]
 
@@ -801,7 +799,7 @@ function* getSorties() {
 			Expiry: { $date: { $numberLong: timeEndLong } },
 			Boss: 'SORTIE_BOSS_VOR',
 			Reward: rewardTables[0].input,
-			Variants: [ { missionType: missionTypes[0].id, modifierType: 'SORTIE_MODIFIER_EXIMUS', node: nodes[0].id, } ]
+			Variants: [ { missionType: missionTypes[0].id, modifierType: 'SORTIE_MODIFIER_EXIMUS', node: nodes[0].id } ],
 		},
 		expected = {
 			id: entryId,
@@ -810,7 +808,7 @@ function* getSorties() {
 			faction: factions[0].name,
 			bossName: 'Vor',
 			rewards: rewardTables[0].output,
-			missions: [ { missionType: missionTypes[0].name, modifier: 'Eximus stronghold', location: nodes[0].name } ]
+			missions: [ { missionType: missionTypes[0].name, modifier: 'Eximus stronghold', location: nodes[0].name } ],
 		},
 		data = { Sorties: [sortie] }
 	yield [data, expected]
@@ -838,7 +836,7 @@ function* getUpgrades() {
 			end: timeEndShort,
 			type: 'Affinity',
 			opType: 'MULTIPLY',
-			value: 2
+			value: 2,
 		},
 		data = { GlobalUpgrades: [upgrade] }
 	yield [data, expected]
@@ -856,7 +854,7 @@ function* getVoidFissures() {
 			Activation: { $date: { $numberLong: timeStartLong } },
 			Expiry: { $date: { $numberLong: timeEndLong } },
 			Node: nodes[0].id,
-			Modifier: 'VoidT1'
+			Modifier: 'VoidT1',
 		},
 		expected = {
 			id: entryId,
@@ -865,7 +863,7 @@ function* getVoidFissures() {
 			location: nodes[0].name,
 			faction: factions[0].name,
 			missionType: missionTypes[0].name,
-			tier: 'Lith'
+			tier: 'Lith',
 		},
 		data = { ActiveMissions: [fissure] }
 	yield [data, expected]
@@ -884,7 +882,7 @@ function* getVoidTraders() {
 			Expiry: { $date: { $numberLong: timeEndLong } },
 			Character: 'Baro\'Ki Teel',
 			Node: nodes[0].id,
-			Manifest: [ { ItemType: items[0].id, PrimePrice: 4, RegularPrice: 9 } ]
+			Manifest: [ { ItemType: items[0].id, PrimePrice: 4, RegularPrice: 9 } ],
 		},
 		expected = {
 			id: entryId + timeStartShort.toString(),
@@ -893,7 +891,7 @@ function* getVoidTraders() {
 			name: 'Baro Ki\'Teer',
 			location: nodes[0].name,
 			active: true,
-			items: [ { name: items[0].name, type: items[0].type, ducats: 4, credits: 9 } ]
+			items: [ { name: items[0].name, type: items[0].type, ducats: 4, credits: 9 } ],
 		},
 		data = { VoidTraders: [voidTrader] }
 	yield [data, expected]
@@ -945,5 +943,5 @@ module.exports = {
 	getSorties,
 	getUpgrades,
 	getVoidFissures,
-	getVoidTraders
+	getVoidTraders,
 }

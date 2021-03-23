@@ -3,6 +3,9 @@ import { format as formatString } from 'util'
 
 import { pad } from './helpers'
 
+//eslint-disable-next-line @typescript-eslint/no-explicit-any
+type FormatParams = any[]
+
 let enableTimestamps = true
 
 export let debug = _log,
@@ -11,6 +14,7 @@ export let debug = _log,
 	warning = _log,
 	error = _error
 
+//eslint-disable-next-line @typescript-eslint/no-empty-function
 function _noop(): void {}
 
 /**
@@ -35,21 +39,21 @@ function timestamp(): string {
  * @param format Format string
  * @param params Replacement parameters
  */
-function _print(stream: NodeJS.WriteStream, format: string, params: any[]): void {
+function _print(stream: NodeJS.WriteStream, format: string, params: FormatParams): void {
 	stream.write(timestamp() + formatString(format, ...params) + EOL)
 }
 
 /**
  * _print(process.stdout, ...)
  */
-function _log(format: string, ...params: any[]): void {
+function _log(format: string, ...params: FormatParams): void {
 	_print(process.stdout, format, params)
 }
 
 /**
  * _print(process.stderr, ...)
  */
-function _error(format: string, ...params: any[]): void {
+function _error(format: string, ...params: FormatParams): void {
 	_print(process.stderr, format, params)
 }
 
@@ -67,16 +71,19 @@ export function setTimestamps(arg: boolean): void {
  */
 export function setLevel(level: string): void {
 	debug = notice = info = warning = error = _noop
-	switch(level.toLowerCase()) {
-		// Intentional fallthrough
+	switch (level.toLowerCase()) {
 		case 'debug':
 			debug = _log
+			// Fallthrough
 		case 'notice':
 			notice = _log
+			// Fallthrough
 		case 'info':
 			info = _log
+			// Fallthrough
 		case 'warning':
 			warning = _log
+			// Fallthrough
 		case 'error':
 			error = _error
 	}

@@ -49,13 +49,13 @@ const defaults: WfConfigI = {
 		pc: 'http://content.warframe.com/dynamic/worldState.php',
 		ps4: 'http://content.ps4.warframe.com/dynamic/worldState.php',
 		xb1: 'http://content.xb1.warframe.com/dynamic/worldState.php',
-		ns: 'http://content.swi.warframe.com/dynamic/worldState.php'
+		ns: 'http://content.swi.warframe.com/dynamic/worldState.php',
 	},
 	kuvalogUrls: {
 		pc: '',
 		ps4: '',
 		xb1: '',
-		ns: ''
+		ns: '',
 	},
 	dayNightPath: './daynight.json',
 	minRetryTimeout: 10000,
@@ -111,7 +111,7 @@ class WfConfig implements WfConfigI {
 			overrides = tmp
 		}
 		catch (err) {
-			if (err.code == 'ENOENT') {
+			if (err.code === 'ENOENT') {
 				log.warning('Cannot open config.json. Using defaults')
 				overrides = {}
 			}

@@ -39,13 +39,13 @@ export default class SortieReader extends WfReader<WfSortie> {
 						faction: getFaction(faction),
 						bossName: boss,
 						rewards: getRandomRewards(sortieInput.Reward, this._entityRewards),
-						missions: missions
+						missions: missions,
 					}
 				for (const missionInput of sortieInput.Variants) {
 					missions.push({
 						missionType: getMissionType(missionInput.missionType),
 						modifier: sortieModifiers[missionInput.modifierType] || missionInput.modifierType,
-						location: getLocation(missionInput.node)
+						location: getLocation(missionInput.node),
 					})
 				}
 				if (sortieDb) {
@@ -78,7 +78,7 @@ export default class SortieReader extends WfReader<WfSortie> {
 		if (rewardDiff !== null) {
 			diff.rewards = rewardDiff
 		}
-		if (first.missions.length != second.missions.length) {
+		if (first.missions.length !== second.missions.length) {
 			diff.missions = second.missions
 		}
 		else {
@@ -86,9 +86,9 @@ export default class SortieReader extends WfReader<WfSortie> {
 				const missionFirst = first.missions[missionIdx],
 					missionSecond = second.missions[missionIdx]
 				if (
-					missionFirst.location != missionSecond.location
-					|| missionFirst.missionType != missionSecond.missionType
-					|| missionFirst.modifier != missionSecond.modifier
+					missionFirst.location !== missionSecond.location
+					|| missionFirst.missionType !== missionSecond.missionType
+					|| missionFirst.modifier !== missionSecond.modifier
 				) {
 					diff.missions = second.missions
 					break

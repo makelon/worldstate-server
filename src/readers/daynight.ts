@@ -16,7 +16,7 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 				dayNightInput = JSON.parse(readFileSync(config.dayNightPath, 'utf8'))
 			}
 			catch (err) {
-				if (err.code == 'ENOENT') {
+				if (err.code === 'ENOENT') {
 					log.warning('Cannot open day cycle data: File %s does not exist', config.dayNightPath)
 				}
 				else {
@@ -44,7 +44,7 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 					start: dayNightCycle.start,
 					length: dayNightCycle.length,
 					dayStart: dayNightCycle.dayStart,
-					dayEnd: dayNightCycle.dayEnd
+					dayEnd: dayNightCycle.dayEnd,
 				}
 			if (dayNightDb) {
 				const diff = this.getDifference(dayNightDb, dayNightProcessed)

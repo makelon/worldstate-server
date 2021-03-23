@@ -35,7 +35,7 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 					price: dealInput.SalePrice,
 					originalPrice: dealInput.OriginalPrice,
 					stock: dealInput.AmountTotal,
-					sold: sold
+					sold: sold,
 				}
 				if (dealDb) {
 					const diff = this.getDifference(dealDb, dealCurrent)
@@ -50,9 +50,9 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 					this.dbTable.add(id, dealDb, true)
 					log.debug('Found daily deal %s for %s', id, this.platform)
 				}
-				if (dealDb.sold != sold) {
+				if (dealDb.sold !== sold) {
 					this.dbTable.updateTmp(id, {
-						sold: sold
+						sold: sold,
 					})
 					log.debug('Updating daily deal %s for %s (%d -> %d sold)', id, this.platform, dealDb.sold, sold)
 					dealDb.sold = sold
@@ -72,8 +72,8 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 			['start', 'end', 'price', 'originalPrice', 'stock']
 		)
 		if (
-			first.item.name != second.item.name
-			|| first.item.type != second.item.type
+			first.item.name !== second.item.name
+			|| first.item.type !== second.item.type
 		) {
 			diff.item = second.item
 		}

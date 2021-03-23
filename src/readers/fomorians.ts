@@ -1,7 +1,7 @@
 import { getItemDifference, getRandomRewardDifference, getRewardDifference, getValueDifference, patch } from '../compare'
 import EntityRewards from '../entityrewards'
 import { getDate, getFomorianType, getId, getLocation, getMissionType } from '../helpers'
-import { checkpoint, end, update } from '../history'
+import { checkpoint, finalize, update } from '../history'
 import { getItems, getRandomRewards, getRewards } from '../items'
 import * as log from '../log'
 import WfReader from './reader'
@@ -44,7 +44,7 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 						missionType: getMissionType(mi.missionType),
 						victimLocation: getLocation(fomorianInput.VictimNode),
 						missionLocation: getLocation(mi.location),
-						requiredItems: requiredItems
+						requiredItems: requiredItems,
 					}
 				if (fomorianInput.Reward) {
 					const rewards = getRewards(fomorianInput.Reward, this._entityRewards)
@@ -81,13 +81,13 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 					log.debug('Found fomorian %s for %s', id, this.platform)
 				}
 
-				if (fomorianDb.health != health) {
+				if (fomorianDb.health !== health) {
 					const healthHistory = fomorianDb.healthHistory
 					update(health, healthHistory, timestamp)
 					if (checkpoint(health, healthHistory, timestamp, 0.01)) {
 						this.dbTable.updateTmp(id, {
 							health: health,
-							healthHistory: healthHistory
+							healthHistory: healthHistory,
 						})
 					}
 					log.debug('Updating fomorian %s for %s (%d -> %d)', id, this.platform, fomorianDb.health, health)
@@ -130,7 +130,7 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 		for (const id in oldIds) {
 			const fomorianDb = this.dbTable!.get(id)
 			if (fomorianDb) {
-				end(fomorianDb.healthHistory, timestamp)
+				finalize(fomorianDb.healthHistory, timestamp)
 				fomorianDb.health = 0
 				this.dbTable!.moveTmp(id)
 			}

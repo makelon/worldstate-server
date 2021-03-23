@@ -1,6 +1,6 @@
 import { getValueDifference, patch } from '../compare'
 import { getFomorianFaction, getFomorianType } from '../helpers'
-import { checkpoint, end, update } from '../history'
+import { checkpoint, finalize, update } from '../history'
 import * as log from '../log'
 import WfReader from './reader'
 
@@ -27,7 +27,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 					id: id,
 					type: fomorianType,
 					progress: progress,
-					progressHistory: [[timestamp, progress]]
+					progressHistory: [[timestamp, progress]],
 				}
 			if (projectDb) {
 				const diff = this.getDifference(projectDb, projectCurrent)
@@ -49,7 +49,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 				if (checkpoint(progress, progressHistory, timestamp, 1)) {
 					this.dbTable.updateTmp(id, {
 						progress: progress,
-						progressHistory: progressHistory
+						progressHistory: progressHistory,
 					})
 				}
 				log.debug('Updating faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
@@ -65,7 +65,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 					id: id,
 					type: fomorianType,
 					progress: progress,
-					progressHistory: [[timestamp, progress]]
+					progressHistory: [[timestamp, progress]],
 				}, true)
 			}
 			else if (progress < projectDb.progress) {
@@ -88,7 +88,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 		for (const id in oldIds) {
 			const projectDb = this.dbTable!.get(id)
 			if (projectDb) {
-				end(projectDb.progressHistory, timestamp)
+				finalize(projectDb.progressHistory, timestamp)
 				projectDb.progress = 0
 				this.dbTable!.moveTmp(id)
 			}

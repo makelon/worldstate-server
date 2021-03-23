@@ -10,13 +10,13 @@ describe('Helper functions', () => {
 		const id = fixtures.entryId,
 			dataOld = {
 				_id: {
-					$id: id
-				}
+					$id: id,
+				},
 			},
 			dataNew = {
 				_id: {
-					$oid: id
-				}
+					$oid: id,
+				},
 			}
 		expect(h.getId(dataOld)).toBe(id)
 		expect(h.getId(dataNew)).toBe(id)
@@ -25,12 +25,12 @@ describe('Helper functions', () => {
 	it('should return timestamps', () => {
 		const dataOld = {
 				sec: fixtures.timeStartShort,
-				usec: 0
+				usec: 0,
 			},
 			dataNew = {
 				$date: {
-					$numberLong: fixtures.timeEndLong
-				}
+					$numberLong: fixtures.timeEndLong,
+				},
 			}
 		expect(h.getDate(dataOld)).toBe(fixtures.timeStartShort)
 		expect(h.getDate(dataNew)).toBe(fixtures.timeEndShort)

@@ -9,7 +9,7 @@ describe('Item functions', () => {
 			expectedItems = [
 				{ name: fixtures.items[0].name, type: fixtures.items[0].type },
 				{ name: fixtures.items[1].name, type: fixtures.items[1].type },
-				{ name: fixtures.items[2].name, type: fixtures.items[2].type }
+				{ name: fixtures.items[2].name, type: fixtures.items[2].type },
 			],
 			itemIds = fixtures.items.map(x => x.id)
 		expect(items.getItems(itemIds, entityRewards)).toEqual(expectedItems)

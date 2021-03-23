@@ -2,7 +2,7 @@ import { getRandomRewardDifference, getValueDifference, patch } from '../compare
 import EntityRewards from '../entityrewards'
 import extraData from '../extradata'
 import { getDate, getId, getLocation, getBountyRewardTableId, getSyndicateName } from '../helpers'
-import { checkpoint, end, update } from '../history'
+import { checkpoint, finalize, update } from '../history'
 import { getRandomRewards, getRewardTableRotation } from '../items'
 import * as log from '../log'
 import WfReader from './reader'
@@ -38,7 +38,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 						start: getDate(bounty.Activation),
 						end: end,
 						syndicate: getSyndicateName(bounty.Tag),
-						jobs: jobsCurrent
+						jobs: jobsCurrent,
 					}
 				if ('HealthPct' in bounty) {
 					bountyCurrent.health = 1
@@ -53,14 +53,14 @@ export default class BountyReader extends WfReader<WfBounty> {
 							rewards: getRandomRewards(rewardTableId, this._entityRewards),
 							minLevel: job.minEnemyLevel,
 							maxLevel: job.maxEnemyLevel,
-							xpAmounts: job.xpAmounts
+							xpAmounts: job.xpAmounts,
 						},
 						rewardTableRotation = getRewardTableRotation(rewardTableId)
 					if (rewardTableRotation) {
 						jobCurrent.rotation = rewardTableRotation
 					}
 					if (job.isVault) {
-					  jobCurrent.title = `Vault Level ${job.minEnemyLevel} - ${job.maxEnemyLevel}`
+						jobCurrent.title = `Vault Level ${job.minEnemyLevel} - ${job.maxEnemyLevel}`
 					}
 					jobsCurrent.push(jobCurrent)
 				}
@@ -77,13 +77,13 @@ export default class BountyReader extends WfReader<WfBounty> {
 					this.dbTable.add(id, bountyDb, true)
 					log.debug('Found bounty %s for %s', id, this.platform)
 				}
-				if (bountyDb.healthHistory && bountyDb.health != health) {
+				if (bountyDb.healthHistory && bountyDb.health !== health) {
 					const healthHistory = bountyDb.healthHistory
 					update(health, healthHistory, timestamp)
 					if (checkpoint(health, healthHistory, timestamp, 0.01)) {
 						this.dbTable.updateTmp(id, {
 							health: health,
-							healthHistory: healthHistory
+							healthHistory: healthHistory,
 						})
 						log.debug('Updating bounty %s for %s (%d -> %d)', id, this.platform, bountyDb.health, health)
 					}
@@ -102,7 +102,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 					start: 0,
 					end: 0,
 					syndicate: bounty.syndicate,
-					jobs: jobs
+					jobs: jobs,
 				}
 			for (const job of bounty.jobs) {
 				jobs.push({
@@ -110,7 +110,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 					minLevel: job.minEnemyLevel,
 					maxLevel: job.maxEnemyLevel,
 					xpAmounts: job.xpAmounts,
-					title: job.title
+					title: job.title,
 				})
 			}
 			if (bountyDb) {
@@ -136,11 +136,11 @@ export default class BountyReader extends WfReader<WfBounty> {
 
 	private getDifference(first: WfBounty, second: WfBounty): Partial<WfBounty> {
 		const diff = getValueDifference(
-				first,
-				second,
-				['start', 'end', 'syndicate', 'location']
-			)
-		if (first.jobs.length != second.jobs.length) {
+			first,
+			second,
+			['start', 'end', 'syndicate', 'location']
+		)
+		if (first.jobs.length !== second.jobs.length) {
 			diff.jobs = second.jobs
 		}
 		else {
@@ -155,7 +155,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 				if (
 					Object.keys(jobDiff).length
 					|| getRandomRewardDifference(jobFirst.rewards, jobSecond.rewards) !== null
-					|| jobFirst.xpAmounts.join(' ') != jobSecond.xpAmounts.join(' ')
+					|| jobFirst.xpAmounts.join(' ') !== jobSecond.xpAmounts.join(' ')
 				) {
 					diff.jobs = second.jobs
 					break
@@ -170,7 +170,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 			const bountyDb = this.dbTable!.get(id)
 			if (bountyDb) {
 				if (bountyDb.healthHistory) {
-					end(bountyDb.healthHistory, timestamp)
+					finalize(bountyDb.healthHistory, timestamp)
 					bountyDb.health = 0
 				}
 				this.dbTable!.moveTmp(id)

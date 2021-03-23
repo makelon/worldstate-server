@@ -15,7 +15,7 @@ export default class NewsReader extends WfReader<WfNews> {
 		for (const articleInput of articlesInput) {
 			const id = getId(articleInput),
 				start = getDate(articleInput.Date)
-			let text: string = ''
+			let text = ''
 			for (const message of articleInput.Messages) {
 				if (message.LanguageCode === 'en') {
 					text = message.Message

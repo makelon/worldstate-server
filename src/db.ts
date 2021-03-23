@@ -78,7 +78,7 @@ export default class Database implements WfDb {
 	 * Trigger the 'load' event when all tables are loaded
 	 */
 	private setReady(): void {
-		if (--this.loading == 0) {
+		if (--this.loading === 0) {
 			this.ee.emit('load')
 		}
 	}
@@ -119,7 +119,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	) {
 		this.ee.once('load', onLoad)
 		this.setPath()
-		if (this.tablePath != '') {
+		if (this.tablePath !== '') {
 			this.load(this.tablePath + '.tmp')
 				.then(() => { this.setReady() })
 				.catch(err => { log.error(err.message) })
@@ -152,11 +152,11 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			log.notice('Loading %s/%s', this.dbName, this.tableName)
 			const readStream = createReadStream(tablePath, {
 					encoding: 'utf8',
-					flags: 'r'
+					flags: 'r',
 				}),
 				tStart = process.hrtime()
 			readStream.on('error', (err: NodeJS.ErrnoException) => {
-				if (err && err.code != 'ENOENT') {
+				if (err && err.code !== 'ENOENT') {
 					throw new Error(`Error loading database ${this.dbName}/${this.tableName}: ${err.message}`)
 				}
 				log.notice('No database for %s/%s', this.dbName, this.tableName)

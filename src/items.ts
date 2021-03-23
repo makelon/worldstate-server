@@ -34,8 +34,8 @@ export function load(_rewardTables: string, _rewardTableRotations: string, _item
  * @returns Item type of a given item or 'Misc' if unknown
  */
 function getItemType(itemName: string): string {
-	if (itemName.slice(-4) == 'Endo') {
-	  return 'Endo'
+	if (itemName.slice(-4) === 'Endo') {
+		return 'Endo'
 	}
 	return itemTypes[itemName] || 'Misc'
 }
@@ -52,7 +52,7 @@ export function getItem(itemId: string, entityRewards: EntityRewards): WfItem {
 	entityRewards.add(itemName)
 	return {
 		name: itemName,
-		type: getItemType(itemName)
+		type: getItemType(itemName),
 	}
 }
 
@@ -97,7 +97,7 @@ export function getRewards(rewards: RewardsStruct, entityRewards: EntityRewards)
 		items.push({
 			name: item.name,
 			type: item.type,
-			count: 1
+			count: 1,
 		})
 	}
 	for (const reward of rewards.countedItems || []) {
@@ -105,7 +105,7 @@ export function getRewards(rewards: RewardsStruct, entityRewards: EntityRewards)
 		items.push({
 			name: item.name,
 			type: item.type,
-			count: Number(reward.ItemCount)
+			count: Number(reward.ItemCount),
 		})
 	}
 	if (items.length > 0) {
@@ -136,7 +136,7 @@ export function getRandomRewards(tableId: string, entityRewards: EntityRewards):
 				name: reward.name,
 				type: getItemType(reward.name),
 				count: reward.count,
-				chance: reward.chance
+				chance: reward.chance,
 			})
 			entityRewards.add(reward.name)
 		}

@@ -13,7 +13,7 @@ export const
 		ControlAcolyte: 'Torment',
 		DuellistAcolyte: 'Violence',
 		HeavyAcolyte: 'Malice',
-		RogueAcolyte: 'Mania'
+		RogueAcolyte: 'Mania',
 	},
 	factions: WfMap = {
 		FC_CORPUS: 'Corpus',
@@ -22,15 +22,15 @@ export const
 		FC_OROKIN: 'Corrupted',
 		FC_SENTIENT: 'Sentient',
 		FC_STALKER: 'Stalker',
-		FC_TENNO: 'Tenno'
+		FC_TENNO: 'Tenno',
 	},
 	fomorianTypes: WfMap = {
 		FC_CORPUS: 'Razorback',
-		FC_GRINEER: 'Balor Fomorian'
+		FC_GRINEER: 'Balor Fomorian',
 	},
 	fomorianFactions: WfMap = {
 		0: 'FC_GRINEER',
-		1: 'FC_CORPUS'
+		1: 'FC_CORPUS',
 	},
 	missionTypes: WfMap = {
 		MT_ARTIFACT: 'Disruption',
@@ -73,7 +73,7 @@ export const
 		SORTIE_BOSS_PHORID: { faction: 'FC_INFESTATION', name: 'Phorid' },
 		SORTIE_BOSS_LEPHANTIS: { faction: 'FC_INFESTATION', name: 'Lephantis' },
 		SORTIE_BOSS_INFALAD: { faction: 'FC_INFESTATION', name: 'Mutalist Alad V' },
-		SORTIE_BOSS_CORRUPTED_VOR: { faction: 'FC_OROKIN', name: 'Corrupted Vor' }
+		SORTIE_BOSS_CORRUPTED_VOR: { faction: 'FC_OROKIN', name: 'Corrupted Vor' },
 	},
 	sortieModifiers: WfMap = {
 		SORTIE_MODIFIER_HAZARD_FOG: 'Dense fog',
@@ -137,7 +137,7 @@ export const
 		VoidT5: 'Requiem',
 	},
 	voidTraderNames: WfMap = {
-		'Baro\'Ki Teel': 'Baro Ki\'Teer'
+		'Baro\'Ki Teel': 'Baro Ki\'Teer',
 	}
 
 /**
@@ -148,7 +148,7 @@ export const
  */
 export function load(_starchart: string, _challenges: string): void {
 	try {
-		let tmp = JSON.parse(readFileSync(_starchart, 'utf8'))
+		const tmp = JSON.parse(readFileSync(_starchart, 'utf8'))
 		locations = tmp.locations
 		nodeMissionTypes = tmp.missionTypes
 		nodeFactions = tmp.factions

@@ -189,7 +189,7 @@ export function getChallenge(challengeTag: string): WfChallengeInfo {
 	}
 	return {
 		description: 'Unknown challenge ' + challengeId,
-		xpAmount: 0
+		xpAmount: 0,
 	}
 }
 

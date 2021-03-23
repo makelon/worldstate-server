@@ -35,7 +35,7 @@ function promiseWrite(file: string, data: string | Buffer, flags = 'w', tryMkdir
 function promiseMkdir(dir: string): Promise<void> {
 	return new Promise<void>((resolve, reject) => {
 		mkdir(dir, err => {
-			if (err && err.code != 'EEXIST') {
+			if (err && err.code !== 'EEXIST') {
 				log.error('mkdir: Failed to create folder "%s"', dir)
 				reject(err)
 				return
@@ -133,7 +133,7 @@ export function renameFile(from: string, to: string): Promise<void> {
 export function removeFile(file: string): Promise<void> {
 	return new Promise((resolve, reject) => {
 		unlink(file, err => {
-			if (err && err.code != 'ENOENT') {
+			if (err && err.code !== 'ENOENT') {
 				reject(err)
 				return
 			}

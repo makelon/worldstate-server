@@ -41,7 +41,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 					score: 0,
 					scoreHistory: [[start, 0]],
 					factionAttacker: factionAttacker,
-					factionDefender: factionDefender
+					factionDefender: factionDefender,
 				}
 			if (invasion.AttackerReward) {
 				const rewards = getRewards(invasion.AttackerReward, this._entityRewards)
@@ -69,7 +69,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 				log.debug('Found invasion %s for %s', id, this.platform)
 			}
 
-			if (invasionDb.score != score) {
+			if (invasionDb.score !== score) {
 				const scoreHistory = invasionDb.scoreHistory
 				let lastHist = scoreHistory[scoreHistory.length - 1],
 					updateDb = false
@@ -106,7 +106,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 				if (updateDb) {
 					this.dbTable.updateTmp(id, {
 						score: score,
-						scoreHistory: scoreHistory
+						scoreHistory: scoreHistory,
 					})
 				}
 				log.debug('Updating invasion %s for %s (%d -> %d)', id, this.platform, invasionDb.score, score)
@@ -147,7 +147,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 				}
 				const prevScore = scoreHistory[scoreHistory.length - 1][1],
 					score = prevScore > 0 ? dbInvasion.endScore : -dbInvasion.endScore
-				if (score != prevScore) {
+				if (score !== prevScore) {
 					// Add final entry if necessary
 					scoreHistory.push([timestamp, score])
 					dbInvasion.score = score

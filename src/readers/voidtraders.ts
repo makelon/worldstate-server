@@ -36,7 +36,7 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 						end: end,
 						name: getVoidTraderName(voidTraderInput.Character),
 						location: getLocation(voidTraderInput.Node),
-						active: false
+						active: false,
 					}
 				if (start <= timestamp) {
 					const voidTraderItems: WfVoidTraderItem[] = [],
@@ -49,7 +49,7 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 							name: item.name,
 							type: item.type,
 							ducats: Number(itemInput.PrimePrice),
-							credits: Number(itemInput.RegularPrice)
+							credits: Number(itemInput.RegularPrice),
 						})
 					}
 				}

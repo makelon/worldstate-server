@@ -1,7 +1,7 @@
 import { patch, getValueDifference, getRandomRewardDifference } from '../compare'
 import EntityRewards from '../entityrewards'
 import { getAcolyteName, getId, getLocation } from '../helpers'
-import { checkpoint, end, update } from '../history'
+import { checkpoint, finalize, update } from '../history'
 import { getRandomRewards } from '../items'
 import * as log from '../log'
 import WfReader from './reader'
@@ -28,7 +28,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 			}
 			const name = getAcolyteName(acolyteInput.LocTag),
 				health = Number(acolyteInput.HealthPercent),
-				discovered = acolyteInput.Discovered == true,
+				discovered = acolyteInput.Discovered === true,
 				location = getLocation(acolyteInput.LastDiscoveredLocation),
 				rewards = getRandomRewards(name, this._entityRewards),
 				acolyteCurrent: WfAcolyte = {
@@ -56,22 +56,22 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 				this.dbTable.add(id, acolyteDb, true)
 				log.debug('Found acolyte %s for %s', id, this.platform)
 			}
-			if (acolyteDb.discovered != discovered) {
+			if (acolyteDb.discovered !== discovered) {
 				acolyteDb.discovered = discovered
 				acolyteDb.location = location
 				this.dbTable.updateTmp(id, {
 					discovered: discovered,
-					location: location
+					location: location,
 				})
 				log.debug('Updating acolyte %s for %s (discovered -> %s)', id, this.platform, discovered ? 'true' : 'false')
 			}
-			if (acolyteDb.health != health) {
+			if (acolyteDb.health !== health) {
 				const healthHistory = acolyteDb.healthHistory
 				update(health, healthHistory, timestamp)
 				if (checkpoint(health, healthHistory, timestamp, 0.01)) {
 					this.dbTable.updateTmp(id, {
 						health: health,
-						healthHistory: healthHistory
+						healthHistory: healthHistory,
 					})
 				}
 				log.debug('Updating acolyte %s for %s (%d -> %d)', id, this.platform, acolyteDb.health, health)
@@ -101,7 +101,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 		for (const id in oldIds) {
 			const acolyteDb = this.dbTable!.get(id)
 			if (acolyteDb) {
-				end(acolyteDb.healthHistory, timestamp)
+				finalize(acolyteDb.healthHistory, timestamp)
 				acolyteDb.health = 0
 				this.dbTable!.moveTmp(id)
 			}

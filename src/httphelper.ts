@@ -12,7 +12,7 @@ import config from './config'
  * @param method
  * @returns Request options object
  */
-export function prepareRequest(url: string, method: string = 'GET'): RequestOptions {
+export function prepareRequest(url: string, method = 'GET'): RequestOptions {
 	const urlParsed = parseUrl(url),
 		requestOptions: RequestOptions = {
 			protocol: urlParsed.protocol,
@@ -23,11 +23,11 @@ export function prepareRequest(url: string, method: string = 'GET'): RequestOpti
 			auth: urlParsed.auth,
 			headers: {
 				'Accept-Encoding': 'gzip, deflate',
-				'User-Agent': config.userAgent
+				'User-Agent': config.userAgent,
 			},
-			timeout: config.requestTimeout
+			timeout: config.requestTimeout,
 		}
-	if (urlParsed.protocol == 'https:') {
+	if (urlParsed.protocol === 'https:') {
 		if (!config.tlsVerify) {
 			requestOptions.rejectUnauthorized = false
 		}
@@ -45,7 +45,7 @@ export function prepareRequest(url: string, method: string = 'GET'): RequestOpti
  * @returns HTTP request object
  */
 export function sendRequest(requestOptions: RequestOptions): ClientRequest {
-	const req = requestOptions.protocol == 'https:'
+	const req = requestOptions.protocol === 'https:'
 		? httpsRequest(requestOptions)
 		: httpRequest(requestOptions)
 	req.setTimeout(config.requestTimeout)
@@ -72,7 +72,7 @@ export function getResponseData(res: IncomingMessage): Promise<string> {
 		resStream.on('error', reject)
 			.on('data', (data: string) => { resData += data })
 			.on('end', () => {
-				if (res.statusCode != 200) {
+				if (res.statusCode !== 200) {
 					reject(new Error(`HTTP error ${res.statusCode}: ${resData}`))
 					return
 				}

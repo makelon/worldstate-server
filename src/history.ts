@@ -46,7 +46,7 @@ export function checkpoint(progress: number, history: WfProgressHistory, timesta
  * @param progressHistory Previous progress records
  * @param timestamp Current time
  */
-export function end(progressHistory: WfProgressHistory, timestamp: number): void {
+export function finalize(progressHistory: WfProgressHistory, timestamp: number): void {
 	if (progressHistory[progressHistory.length - 1][0] < 0) {
 		progressHistory.pop()
 	}

@@ -90,6 +90,13 @@ describe('Worldstate', () => {
 		runStandardTests('factionprojects', fixtures.getFactionProjects, ws.readFactionProjects)
 	})
 
+	it('should skip unknown faction projects', () => {
+		const dataKey = 'factionprojects'
+		ws.readers[dataKey].read([10, 20, 30])
+		const result = JSON.parse(ws.get([dataKey]))[dataKey]
+		expect(result.data.length).toBe(2)
+	})
+
 	it('should read fomorians', () => {
 		runStandardTests('fomorians', fixtures.getGoals, ws.readGoals, true)
 	})

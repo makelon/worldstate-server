@@ -149,8 +149,8 @@ export function getFomorianType(factionId: string): string {
  * @param projectIdx
  * @returns Faction ID of a construction project
  */
-export function getFomorianFaction(projectIdx: string): string {
-	return tags.fomorianFactions[projectIdx] || 'Unknown fomorian project ' + projectIdx
+export function getFomorianFaction(projectIdx: string): string | undefined {
+	return tags.fomorianFactions[projectIdx]
 }
 
 /**

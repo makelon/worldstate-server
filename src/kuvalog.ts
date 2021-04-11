@@ -4,7 +4,7 @@ import { RequestOptions } from 'https'
 
 import config from './config'
 import { getCurrentTime, strToTime } from './helpers'
-import { getResponseData, prepareRequest, sendRequest } from './httphelper'
+import { getResponseData, prepareRequest, sendRequest } from './httphelpers'
 import * as log from './log'
 
 function looksLikeKuvalog(kuvalog: KuvalogEntry[]): boolean {

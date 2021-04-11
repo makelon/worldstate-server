@@ -1,7 +1,6 @@
-import { readFileSync } from 'fs'
-
 import { getValueDifference } from '../compare'
 import config from '../config'
+import { parseJsonFile } from '../fshelpers'
 import * as log from '../log'
 import WfReader from './reader'
 
@@ -10,23 +9,8 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 
 	start(db: WfDb): void {
 		this.dbTable = db.getTable(this.dbTableId)
-		let dayNightInput: WfMap<WfPlatform, WfDayNight[]> = {}
-		if (config.dayNightPath) {
-			try {
-				dayNightInput = JSON.parse(readFileSync(config.dayNightPath, 'utf8'))
-			}
-			catch (err) {
-				if (err.code === 'ENOENT') {
-					log.warning('Cannot open day cycle data: File %s does not exist', config.dayNightPath)
-				}
-				else {
-					log.error(err.message)
-				}
-			}
-		}
-		const dayNightCycles = dayNightInput
-			? dayNightInput[this.platform] || []
-			: []
+		const dayNightInput = parseJsonFile<WfMap<WfPlatform, WfDayNight[]>>(config.dayNightPath),
+			dayNightCycles = dayNightInput?.[this.platform] || []
 		this.read(dayNightCycles)
 	}
 

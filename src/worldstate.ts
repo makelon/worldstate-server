@@ -3,7 +3,7 @@ import { RequestOptions } from 'https'
 
 import config from './config'
 import { getDate } from './helpers'
-import { getResponseData, prepareRequest, sendRequest } from './httphelper'
+import { getResponseData, prepareRequest, sendRequest } from './httphelpers'
 import Kuvalog from './kuvalog'
 import * as log from './log'
 import { queue } from './promisify'

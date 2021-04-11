@@ -1,7 +1,5 @@
-import { readFileSync } from 'fs'
-
 import config from './config'
-import * as log from './log'
+import { parseJsonFile } from './fshelpers'
 
 interface ExtraPlatformDataBountyJob {
 	rewards: string,
@@ -30,15 +28,7 @@ class ExtraData {
 	 * @param dataPath
 	 */
 	load(dataPath: string): void {
-		try {
-			this.data = JSON.parse(readFileSync(dataPath, 'utf8'))
-		}
-		catch (err) {
-			if (err.code !== 'ENOENT') {
-				log.error(`Failed to load data: '${err.message}'`)
-			}
-			this.data = {}
-		}
+		this.data = parseJsonFile(dataPath) || {}
 	}
 
 	/**

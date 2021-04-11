@@ -147,7 +147,7 @@ describe('Worldstate', () => {
 		delete config.wsUrls.pc
 	})
 
-	it('should load extra bounties', () => {
+	it('should load extra bounties and clear them if data file is removed', () => {
 		config.wsUrls.pc = ''
 		extraData.data = {}
 		const dataKey = 'bounties'

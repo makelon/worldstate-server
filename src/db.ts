@@ -115,7 +115,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	constructor(
 		private dbName: string,
 		private tableName: string,
-		onLoad: () => void
+		onLoad: () => void,
 	) {
 		this.ee.once('load', onLoad)
 		this.setPath()

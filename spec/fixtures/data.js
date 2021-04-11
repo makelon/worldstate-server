@@ -629,7 +629,7 @@ function* getInvasions() {
 	expected.scoreHistory[1][0] *= -1 // Store local maximum
 	expected.scoreHistory.push(
 		[timeLocalShort - timeStep * 1 / 4, 0], // Score=0 interpolation
-		[-timeLocalShort, invasion.Count]
+		[-timeLocalShort, invasion.Count],
 	)
 	yield [data, expected]
 

@@ -306,7 +306,7 @@ export default class Worldstate {
 			this.readUpgrades,
 			this.readVoidFissures,
 			this.readVoidTraders,
-			this.flushDb
+			this.flushDb,
 		).catch(err => { log.error('Error reading worldstate: %s', err.message) })
 	}
 

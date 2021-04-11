@@ -20,9 +20,9 @@ const itemNames = 'itemnames.json',
 					'rewardtables-dynamic.json',
 					'rewardtables-relics.json',
 					'rewardtables-sorties.json',
-					'rewardtables-extra.json'
+					'rewardtables-extra.json',
 				],
-				output: 'rewardtables.json'
+				output: 'rewardtables.json',
 			},
 			{
 				input: [
@@ -30,8 +30,8 @@ const itemNames = 'itemnames.json',
 					'rewardtables-deimos-rotations.json',
 					'rewardtables-solaris-rotations.json',
 				],
-				output: 'rewardtables-rotations.json'
-			}
+				output: 'rewardtables-rotations.json',
+			},
 		],
 		copy: [
 			itemNames,
@@ -39,8 +39,8 @@ const itemNames = 'itemnames.json',
 			'starchart.json',
 			'daynight.json',
 			'extradata.json',
-			'challenges.json'
-		]
+			'challenges.json',
+		],
 	},
 	opt = {},
 	outDir = 'out'
@@ -80,7 +80,7 @@ function printLines(prefix, data, colorData) {
 		prefix += '\u001b[0m'
 		postfix = ''
 	}
-	for (line of data.split('\n')) {
+	for (const line of data.split('\n')) {
 		if (line.trim() !== '') {
 			process.stdout.write(timeString + prefix + line + postfix + os.EOL)
 		}
@@ -92,7 +92,7 @@ function build() {
 		fs.mkdirSync(outDir)
 	}
 	catch (err) {
-		if (err.code != 'EEXIST') {
+		if (err.code !== 'EEXIST') {
 			printErrors(err.message)
 			process.exit(1)
 		}
@@ -118,13 +118,13 @@ function build() {
 		}
 		tsc = cproc.spawn(process.argv0, tscArgs)
 		const reBuildError = /^.+\(\d+,\d+\): error/,
-			reBuildIndent = /^  /,
+			reBuildIndent = /^ {2}/,
 			reBuildTimestamp = /^\d\d:\d\d:\d\d - /,
 			reBuildComplete = /Watching for file changes.$/
 		let buildErrors = false
 		tsc.stdout.setEncoding('utf8')
 			.on('data', data => {
-				for (line of data.split('\n')) {
+				for (let line of data.split('\n')) {
 					if (line.trim() === '') {
 						continue
 					}
@@ -269,11 +269,11 @@ function postBuild() {
 
 function startServer(restart) {
 	server = cproc.spawn(process.argv0, ['index.js'], {
-		cwd: path.join(process.cwd(), outDir)
+		cwd: path.join(process.cwd(), outDir),
 	})
 	server.stdout.setEncoding('utf8').on('data', printServer)
 	server.stderr.setEncoding('utf8').on('data', printErrors)
-	server.on('exit', (code, signal) => {
+	server.on('exit', code => {
 		if (code) {
 			printErrors(`Server exited with error code ${code}`)
 			server = null
@@ -320,7 +320,7 @@ for (const c of process.argv[2] || 'bd') {
 				'	d	Build data files\n' +
 				'	r	Run the server when build finishes\n' +
 				'	s	Generate source maps during build process\n' +
-				'	w	Watch for changes in source or data files\n'
+				'	w	Watch for changes in source or data files\n',
 			)
 			process.exit()
 	}
@@ -337,14 +337,14 @@ if (opt.data && !(fs.existsSync(path.join(dataDir, itemNames)) && fs.existsSync(
 		'\n' +
 		'	%s items\n',
 		path.join(__dirname, dataDir),
-		path.basename(process.argv0).replace(/\.exe$/, '')
+		path.basename(process.argv0).replace(/\.exe$/, ''),
 	)
 	const rl = readline.createInterface({
 		input: process.stdin,
-		output: process.stdout
+		output: process.stdout,
 	})
 	rl.question('Continue anyway? [yN] ', (answer) => {
-		if (answer.toLowerCase() == 'y') {
+		if (answer.toLowerCase() === 'y') {
 			for (const fileName of [itemNames, itemTypes]) {
 				const filePath = path.join(dataDir, fileName)
 				if (!fs.existsSync(filePath)) {

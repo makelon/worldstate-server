@@ -63,7 +63,7 @@ export default class ArbitrationReader extends WfReader<WfArbitration> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'end', 'location', 'faction', 'missionType']
+				['start', 'end', 'location', 'faction', 'missionType'],
 			),
 			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {

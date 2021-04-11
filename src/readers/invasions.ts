@@ -123,7 +123,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'endScore', 'location', 'factionAttacker', 'factionDefender']
+				['start', 'endScore', 'location', 'factionAttacker', 'factionDefender'],
 			),
 			rewardDiffAttacker = getRewardDifference(first.rewardsAttacker, second.rewardsAttacker),
 			rewardDiffDefender = getRewardDifference(first.rewardsDefender, second.rewardsDefender)

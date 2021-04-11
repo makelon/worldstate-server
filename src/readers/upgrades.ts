@@ -55,7 +55,7 @@ export default class UpgradeReader extends WfReader<WfUpgrade> {
 		return getValueDifference(
 			first,
 			second,
-			['start', 'end', 'type', 'opType', 'value']
+			['start', 'end', 'type', 'opType', 'value'],
 		)
 	}
 

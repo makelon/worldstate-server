@@ -80,7 +80,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 		return getValueDifference(
 			first,
 			second,
-			['type']
+			['type'],
 		)
 	}
 

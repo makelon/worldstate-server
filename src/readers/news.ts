@@ -76,7 +76,7 @@ export default class NewsReader extends WfReader<WfNews> {
 		return getValueDifference(
 			first,
 			second,
-			['start', 'text', 'link', 'eventStart', 'eventEnd', 'eventUrl']
+			['start', 'text', 'link', 'eventStart', 'eventEnd', 'eventUrl'],
 		)
 	}
 

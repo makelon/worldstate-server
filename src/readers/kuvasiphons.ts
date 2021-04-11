@@ -71,7 +71,7 @@ export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'end', 'location', 'faction', 'missionType', 'flood']
+				['start', 'end', 'location', 'faction', 'missionType', 'flood'],
 			),
 			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {

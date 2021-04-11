@@ -138,7 +138,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 		const diff = getValueDifference(
 			first,
 			second,
-			['start', 'end', 'syndicate', 'location']
+			['start', 'end', 'syndicate', 'location'],
 		)
 		if (first.jobs.length !== second.jobs.length) {
 			diff.jobs = second.jobs
@@ -150,7 +150,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 					jobDiff = getValueDifference(
 						jobFirst,
 						jobSecond,
-						['minLevel', 'maxLevel', 'title', 'rotation']
+						['minLevel', 'maxLevel', 'title', 'rotation'],
 					)
 				if (
 					Object.keys(jobDiff).length

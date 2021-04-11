@@ -63,7 +63,7 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 		const diff = getValueDifference(
 			first,
 			second,
-			['start', 'end', 'syndicate', 'season', 'phase']
+			['start', 'end', 'syndicate', 'season', 'phase'],
 		)
 		if (first.challenges.length !== second.challenges.length) {
 			diff.challenges = second.challenges
@@ -73,7 +73,7 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 				const challengeDiff = getValueDifference(
 					first.challenges[challengeId],
 					second.challenges[challengeId],
-					['start', 'end', 'description', 'xpAmount']
+					['start', 'end', 'description', 'xpAmount'],
 				)
 				if (Object.keys(challengeDiff).length) {
 					diff.challenges = second.challenges

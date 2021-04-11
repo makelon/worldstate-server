@@ -88,7 +88,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['name', 'location']
+				['name', 'location'],
 			),
 			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {

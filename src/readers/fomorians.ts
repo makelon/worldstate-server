@@ -105,7 +105,7 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'end', 'type', 'endGoal', 'missionType', 'victimLocation', 'missionLocation']
+				['start', 'end', 'type', 'endGoal', 'missionType', 'victimLocation', 'missionLocation'],
 			),
 			goalRewardDiff = getRewardDifference(first.goalRewards, second.goalRewards),
 			missionRewardDiff = getRewardDifference(first.missionRewards, second.missionRewards),

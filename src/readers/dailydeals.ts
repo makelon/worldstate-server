@@ -69,7 +69,7 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 		const diff = getValueDifference(
 			first,
 			second,
-			['start', 'end', 'price', 'originalPrice', 'stock']
+			['start', 'end', 'price', 'originalPrice', 'stock'],
 		)
 		if (
 			first.item.name !== second.item.name

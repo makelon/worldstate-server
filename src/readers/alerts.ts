@@ -70,7 +70,7 @@ export default class AlertReader extends WfReader<WfAlert> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'end', 'location', 'faction', 'maxLevel', 'minLevel', 'missionType', 'missionLength']
+				['start', 'end', 'location', 'faction', 'maxLevel', 'minLevel', 'missionType', 'missionLength'],
 			),
 			rewardDiff = getRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {

@@ -72,7 +72,7 @@ export default class SortieReader extends WfReader<WfSortie> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'end', 'faction', 'bossName']
+				['start', 'end', 'faction', 'bossName'],
 			),
 			rewardDiff = getRandomRewardDifference(first.rewards, second.rewards)
 		if (rewardDiff !== null) {

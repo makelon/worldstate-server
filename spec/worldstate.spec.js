@@ -56,7 +56,7 @@ describe('Worldstate', () => {
 				ws.readGoals()
 				ws.readSyndicateMissions()
 			},
-			true
+			true,
 		)
 	})
 
@@ -115,7 +115,7 @@ describe('Worldstate', () => {
 			fixtures.getSentientAnomalies,
 			ws.readSentientAnomalies,
 			false,
-			data => ({ Tmp: JSON.stringify(data) })
+			data => ({ Tmp: JSON.stringify(data) }),
 		)
 	})
 

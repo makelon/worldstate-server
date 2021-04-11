@@ -55,7 +55,7 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 		return getValueDifference(
 			first,
 			second,
-			['start', 'end', 'location', 'faction', 'missionType', 'tier']
+			['start', 'end', 'location', 'faction', 'missionType', 'tier'],
 		)
 	}
 

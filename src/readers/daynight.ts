@@ -67,7 +67,7 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 		return getValueDifference(
 			first,
 			second,
-			['start', 'length', 'dayStart', 'dayEnd']
+			['start', 'length', 'dayStart', 'dayEnd'],
 		)
 	}
 

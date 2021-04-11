@@ -77,7 +77,7 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 		const diff = getValueDifference(
 				first,
 				second,
-				['start', 'end', 'name', 'location', 'active']
+				['start', 'end', 'name', 'location', 'active'],
 			),
 			voidTraderItemDiff = getVoidTraderItemDifference(first.items, second.items)
 		if (voidTraderItemDiff !== null) {

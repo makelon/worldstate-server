@@ -1008,5 +1008,409 @@
                 "chance": 0.11109999999999999
             }
         ]
+    ],
+    "voidstormEarth": [
+        [
+            {
+                "name": "Corrupted Holokey",
+                "count": 2,
+                "chance": 0.375
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.125
+            },
+            {
+                "name": "Epitaph Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Epitaph Barrel",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Epitaph Receiver",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Earth Resource Bundle",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith G4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith B8 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith T4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith P5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith K6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith A4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith I1 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "voidstormVenus": [
+        [
+            {
+                "name": "Corrupted Holokey",
+                "count": 2,
+                "chance": 0.375
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.125
+            },
+            {
+                "name": "Epitaph Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Epitaph Barrel",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Epitaph Receiver",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Venus Resource Bundle",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith G4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith B8 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith P5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith T4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith K6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith A4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Lith I1 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "voidstormSaturn": [
+        [
+            {
+                "name": "Corrupted Holokey",
+                "count": 4,
+                "chance": 0.375
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.125
+            },
+            {
+                "name": "Epitaph Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Epitaph Barrel",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Epitaph Receiver",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Saturn Resource Bundle",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Meso P4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso D6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso T5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso C6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso P5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso Z4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "voidstormNeptune": [
+        [
+            {
+                "name": "Corrupted Holokey",
+                "count": 3,
+                "chance": 0.375
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.125
+            },
+            {
+                "name": "Sevagoth Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sevagoth Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sevagoth Systems Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Neptune Resource Bundle",
+                "count": 1,
+                "chance": 0.05
+            },
+            {
+                "name": "Meso P4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso D6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso T5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso C6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso P5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Meso Z4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "voidstormPluto": [
+        [
+            {
+                "name": "Corrupted Holokey",
+                "count": 5,
+                "chance": 0.375
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.125
+            },
+            {
+                "name": "Sevagoth Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sevagoth Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sevagoth Systems Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Pluto Resource Bundle",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo D3 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo T4 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo A5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo V10 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo P2 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo B7 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Neo N15 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "voidstormVeil": [
+        [
+            {
+                "name": "Corrupted Holokey",
+                "count": 6,
+                "chance": 0.375
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.125
+            },
+            {
+                "name": "Sevagoth Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sevagoth Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Sevagoth Systems Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Veil Resource Bundle",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi O5 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi A13 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi N7 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi T7 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi G6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi C6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            },
+            {
+                "name": "Axi I1 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.025
+            }
+        ]
     ]
 }

@@ -1013,7 +1013,7 @@
         [
             {
                 "name": "Corrupted Holokey",
-                "count": 2,
+                "count": 3,
                 "chance": 0.375
             },
             {
@@ -1047,22 +1047,22 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith B8 Relic (Radiant)",
+                "name": "Lith T7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith T4 Relic (Radiant)",
+                "name": "Lith K7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith P5 Relic (Radiant)",
+                "name": "Lith N7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith K6 Relic (Radiant)",
+                "name": "Lith N8 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1082,7 +1082,7 @@
         [
             {
                 "name": "Corrupted Holokey",
-                "count": 2,
+                "count": 3,
                 "chance": 0.375
             },
             {
@@ -1116,22 +1116,22 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith B8 Relic (Radiant)",
+                "name": "Lith T7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith P5 Relic (Radiant)",
+                "name": "Lith K7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith T4 Relic (Radiant)",
+                "name": "Lith N7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith K6 Relic (Radiant)",
+                "name": "Lith N8 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1151,63 +1151,68 @@
         [
             {
                 "name": "Corrupted Holokey",
-                "count": 4,
-                "chance": 0.375
+                "count": 5,
+                "chance": 0.36590000000000006
             },
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.125
+                "chance": 0.122
             },
             {
                 "name": "Epitaph Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.09759999999999999
             },
             {
                 "name": "Epitaph Barrel",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.09759999999999999
             },
             {
                 "name": "Epitaph Receiver",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.09759999999999999
             },
             {
                 "name": "Saturn Resource Bundle",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.048799999999999996
             },
             {
                 "name": "Meso P4 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
-                "name": "Meso D6 Relic (Radiant)",
+                "name": "Meso B5 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
-                "name": "Meso T5 Relic (Radiant)",
+                "name": "Meso S10 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
                 "name": "Meso C6 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
                 "name": "Meso P5 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
+            },
+            {
+                "name": "Meso B6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.024399999999999998
             },
             {
                 "name": "Meso Z4 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             }
         ]
     ],
@@ -1215,63 +1220,68 @@
         [
             {
                 "name": "Corrupted Holokey",
-                "count": 3,
-                "chance": 0.375
+                "count": 4,
+                "chance": 0.36590000000000006
             },
             {
                 "name": "Endo",
                 "count": 900,
-                "chance": 0.125
+                "chance": 0.122
             },
             {
                 "name": "Sevagoth Chassis Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.09759999999999999
             },
             {
                 "name": "Sevagoth Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.09759999999999999
             },
             {
                 "name": "Sevagoth Systems Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.09759999999999999
             },
             {
                 "name": "Neptune Resource Bundle",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.048799999999999996
             },
             {
                 "name": "Meso P4 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
-                "name": "Meso D6 Relic (Radiant)",
+                "name": "Meso B5 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
-                "name": "Meso T5 Relic (Radiant)",
+                "name": "Meso S10 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
                 "name": "Meso C6 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             },
             {
                 "name": "Meso P5 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
+            },
+            {
+                "name": "Meso B6 Relic (Radiant)",
+                "count": 1,
+                "chance": 0.024399999999999998
             },
             {
                 "name": "Meso Z4 Relic (Radiant)",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.024399999999999998
             }
         ]
     ],
@@ -1279,7 +1289,7 @@
         [
             {
                 "name": "Corrupted Holokey",
-                "count": 5,
+                "count": 6,
                 "chance": 0.375
             },
             {
@@ -1308,7 +1318,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Neo D3 Relic (Radiant)",
+                "name": "Neo N16 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1318,7 +1328,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Neo A5 Relic (Radiant)",
+                "name": "Neo T5 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1333,12 +1343,12 @@
                 "chance": 0.025
             },
             {
-                "name": "Neo B7 Relic (Radiant)",
+                "name": "Neo P3 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Neo N15 Relic (Radiant)",
+                "name": "Neo N17 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             }
@@ -1348,7 +1358,7 @@
         [
             {
                 "name": "Corrupted Holokey",
-                "count": 6,
+                "count": 10,
                 "chance": 0.375
             },
             {
@@ -1387,12 +1397,12 @@
                 "chance": 0.025
             },
             {
-                "name": "Axi N7 Relic (Radiant)",
+                "name": "Axi A14 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Axi T7 Relic (Radiant)",
+                "name": "Axi I2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1407,7 +1417,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Axi I1 Relic (Radiant)",
+                "name": "Axi M2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             }

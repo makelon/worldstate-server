@@ -44,7 +44,7 @@
                 "chance": 0.07519999999999999
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.07519999999999999
             }
@@ -61,7 +61,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.3056
             },
@@ -117,7 +117,7 @@
                 "chance": 0.07519999999999999
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.07519999999999999
             }
@@ -134,7 +134,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.3056
             },
@@ -190,7 +190,7 @@
                 "chance": 0.07519999999999999
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.07519999999999999
             }
@@ -207,7 +207,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.3056
             },
@@ -250,74 +250,74 @@
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.15380000000000002
+                "chance": 0.1765
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Catalyzer Link",
                 "count": 1,
-                "chance": 0.0641
+                "chance": 0.0735
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2564
+                "chance": 0.1471
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.07690000000000001
+                "chance": 0.0882
             },
             {
                 "name": "Weeping Wounds",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Embedded Catalyzer",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             }
         ],
         [
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.12
             },
             {
                 "name": "Weeping Wounds",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.14
             },
             {
                 "name": "Embedded Catalyzer",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.14
             },
             {
                 "name": "Nano-Applicator",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.4
             }
         ]
     ],
@@ -353,74 +353,74 @@
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.15380000000000002
+                "chance": 0.1765
             },
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Shrapnel Shot",
                 "count": 1,
-                "chance": 0.0641
+                "chance": 0.0735
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2564
+                "chance": 0.1471
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.07690000000000001
+                "chance": 0.0882
             },
             {
                 "name": "Sharpened Bullets",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Bladed Rounds",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             }
         ],
         [
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.12
             },
             {
                 "name": "Sharpened Bullets",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.14
             },
             {
                 "name": "Bladed Rounds",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.14
             },
             {
                 "name": "Maiming Strike",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.4
             }
         ]
     ],
@@ -456,74 +456,74 @@
             {
                 "name": "Endo",
                 "count": 600,
-                "chance": 0.15380000000000002
+                "chance": 0.1765
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Body Count",
                 "count": 1,
-                "chance": 0.0641
+                "chance": 0.0735
             },
             {
                 "name": "Scintillant",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2564
+                "chance": 0.1471
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.07690000000000001
+                "chance": 0.0882
             },
             {
                 "name": "Spring-Loaded Chamber",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             },
             {
                 "name": "Repeater Clip",
                 "count": 1,
-                "chance": 0.0897
+                "chance": 0.10289999999999999
             }
         ],
         [
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Xaku Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.12
             },
             {
                 "name": "Spring-Loaded Chamber",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.14
             },
             {
                 "name": "Repeater Clip",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.14
             },
             {
                 "name": "Pressurized Magazine",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.4
             }
         ]
     ],
@@ -532,146 +532,136 @@
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5263
             },
             {
                 "name": "Endo",
                 "count": 250,
-                "chance": 0.25
+                "chance": 0.2632
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.0526
             },
             {
                 "name": "Carnis Mandible",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             },
             {
                 "name": "Jugulus Barbs",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             },
             {
                 "name": "Saxum Thorax",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             }
         ],
         [
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5264
             },
             {
                 "name": "Endo",
                 "count": 250,
-                "chance": 0.125
+                "chance": 0.1316
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             },
             {
                 "name": "Carnis Mandible",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0263
             },
             {
                 "name": "Jugulus Barbs",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0263
             },
             {
                 "name": "Saxum Thorax",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0263
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.125
-            },
-            {
-                "name": "Meso N6 Relic",
-                "count": 1,
-                "chance": 0.05
+                "chance": 0.1316
             },
             {
                 "name": "Carnis Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0263
             },
             {
                 "name": "Jugulus Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0263
             },
             {
                 "name": "Saxum Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0263
             }
         ],
         [
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5194
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.125
+                "chance": 0.12990000000000002
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.065
             },
             {
                 "name": "Carnis Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Jugulus Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Saxum Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.125
-            },
-            {
-                "name": "Neo R1 Relic",
-                "count": 1,
-                "chance": 0.05
+                "chance": 0.12990000000000002
             },
             {
                 "name": "Carnis Stinger",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Jugulus Spines",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Saxum Spittle",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             }
         ]
     ],
@@ -680,156 +670,136 @@
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.4
+                "chance": 0.4571
             },
             {
                 "name": "Endo",
                 "count": 250,
-                "chance": 0.2
+                "chance": 0.2286
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Meso N6 Relic",
-                "count": 1,
-                "chance": 0.125
+                "chance": 0.1429
             },
             {
                 "name": "Carnis Mandible",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0571
             },
             {
                 "name": "Jugulus Barbs",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0571
             },
             {
                 "name": "Saxum Thorax",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0571
             }
         ],
         [
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.44439999999999996
+                "chance": 0.48340000000000005
             },
             {
                 "name": "Endo",
                 "count": 250,
-                "chance": 0.11109999999999999
+                "chance": 0.1208
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.0694
-            },
-            {
-                "name": "Meso N6 Relic",
-                "count": 1,
-                "chance": 0.0694
+                "chance": 0.1118
             },
             {
                 "name": "Carnis Mandible",
                 "count": 1,
-                "chance": 0.0278
+                "chance": 0.0302
             },
             {
                 "name": "Jugulus Barbs",
                 "count": 1,
-                "chance": 0.0278
+                "chance": 0.0302
             },
             {
                 "name": "Saxum Thorax",
                 "count": 1,
-                "chance": 0.0278
+                "chance": 0.0302
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.11109999999999999
-            },
-            {
-                "name": "Neo R1 Relic",
-                "count": 1,
-                "chance": 0.0444
+                "chance": 0.1208
             },
             {
                 "name": "Carnis Carapace",
                 "count": 1,
-                "chance": 0.0222
+                "chance": 0.0242
             },
             {
                 "name": "Jugulus Carapace",
                 "count": 1,
-                "chance": 0.0222
+                "chance": 0.0242
             },
             {
                 "name": "Saxum Carapace",
                 "count": 1,
-                "chance": 0.0222
+                "chance": 0.0242
             }
         ],
         [
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5064
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.125
+                "chance": 0.1266
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0886
             },
             {
                 "name": "Carnis Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Jugulus Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Saxum Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.125
-            },
-            {
-                "name": "Axi S3 Relic",
-                "count": 1,
-                "chance": 0.05
+                "chance": 0.1266
             },
             {
                 "name": "Carnis Stinger",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Jugulus Spines",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Saxum Spittle",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             }
         ]
     ],
@@ -838,146 +808,136 @@
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5263
             },
             {
                 "name": "Endo",
                 "count": 250,
-                "chance": 0.25
+                "chance": 0.2632
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.0526
             },
             {
                 "name": "Carnis Mandible",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             },
             {
                 "name": "Jugulus Barbs",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             },
             {
                 "name": "Saxum Thorax",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0526
             }
         ],
         [
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5194
             },
             {
                 "name": "Endo",
                 "count": 250,
-                "chance": 0.125
+                "chance": 0.12990000000000002
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.065
             },
             {
                 "name": "Carnis Mandible",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Jugulus Barbs",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Saxum Thorax",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.125
-            },
-            {
-                "name": "Neo R1 Relic",
-                "count": 1,
-                "chance": 0.05
+                "chance": 0.12990000000000002
             },
             {
                 "name": "Carnis Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Jugulus Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             },
             {
                 "name": "Saxum Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.026000000000000002
             }
         ],
         [
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.5064
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.125
+                "chance": 0.1266
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0886
             },
             {
                 "name": "Carnis Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Jugulus Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Saxum Carapace",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.125
-            },
-            {
-                "name": "Axi S3 Relic",
-                "count": 1,
-                "chance": 0.05
+                "chance": 0.1266
             },
             {
                 "name": "Carnis Stinger",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Jugulus Spines",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             },
             {
                 "name": "Saxum Spittle",
                 "count": 1,
-                "chance": 0.025
+                "chance": 0.0253
             }
         ]
     ],
@@ -1013,126 +973,126 @@
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.225
+                "chance": 0.2466
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             },
             {
                 "name": "Hydraulic Crosshairs",
                 "count": 1,
-                "chance": 0.0625
+                "chance": 0.06849999999999999
             },
             {
                 "name": "Fass Residue",
                 "count": 5,
-                "chance": 0.0375
+                "chance": 0.041100000000000005
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.17809999999999998
             },
             {
                 "name": "Xaku Systems Blueprint",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.08220000000000001
             },
             {
                 "name": "Laser Sight",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             },
             {
                 "name": "Blood Rush",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.18
+                "chance": 0.1935
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Hydraulic Crosshairs",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0538
             },
             {
                 "name": "Fass Residue",
                 "count": 5,
-                "chance": 0.03
+                "chance": 0.0323
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.1398
             },
             {
                 "name": "Xaku Systems Blueprint",
                 "count": 1,
-                "chance": 0.06
+                "chance": 0.0645
             },
             {
                 "name": "Laser Sight",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Blood Rush",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Argon Scope",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.2151
             }
         ],
         [
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.24530000000000002
             },
             {
                 "name": "Xaku Systems Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.11320000000000001
             },
             {
                 "name": "Laser Sight",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.1321
             },
             {
                 "name": "Blood Rush",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.1321
             },
             {
                 "name": "Argon Scope",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.3774
             }
         ]
     ],
@@ -1168,126 +1128,126 @@
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.225
+                "chance": 0.2466
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             },
             {
                 "name": "Focused Defense",
                 "count": 1,
-                "chance": 0.0625
+                "chance": 0.06849999999999999
             },
             {
                 "name": "Vome Residue",
                 "count": 5,
-                "chance": 0.0375
+                "chance": 0.041100000000000005
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.17809999999999998
             },
             {
                 "name": "Xaku Systems Blueprint",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.08220000000000001
             },
             {
                 "name": "Targeting Subsystem",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             },
             {
                 "name": "Guided Ordnance",
                 "count": 1,
-                "chance": 0.0875
+                "chance": 0.0959
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.18
+                "chance": 0.1935
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Focused Defense",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0538
             },
             {
                 "name": "Vome Residue",
                 "count": 5,
-                "chance": 0.03
+                "chance": 0.0323
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.1398
             },
             {
                 "name": "Xaku Systems Blueprint",
                 "count": 1,
-                "chance": 0.06
+                "chance": 0.0645
             },
             {
                 "name": "Targeting Subsystem",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Guided Ordnance",
                 "count": 1,
-                "chance": 0.07
+                "chance": 0.0753
             },
             {
                 "name": "Narrow Barrel",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.2151
             }
         ],
         [
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.24530000000000002
             },
             {
                 "name": "Xaku Systems Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.11320000000000001
             },
             {
                 "name": "Targeting Subsystem",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.1321
             },
             {
                 "name": "Guided Ordnance",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.1321
             },
             {
                 "name": "Narrow Barrel",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.3774
             }
         ]
     ],
@@ -1326,7 +1286,7 @@
                 "chance": 0.0571
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2857
             },
@@ -1353,7 +1313,7 @@
                 "chance": 0.0444
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.22219999999999998
             },
@@ -1370,7 +1330,7 @@
         ],
         [
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.43479999999999996
             },

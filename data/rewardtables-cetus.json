@@ -305,69 +305,69 @@
             {
                 "name": "Steel Fiber",
                 "count": 1,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Oxium",
                 "count": 200,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Gara Systems Blueprint",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
                 "name": "Charged Chamber",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
                 "name": "Burning Wasp",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.0588
             }
         ],
         [
             {
                 "name": "Gara Systems Blueprint",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
                 "name": "Charged Chamber",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
                 "name": "Burning Wasp",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2545
+                "chance": 0.1458
             },
             {
                 "name": "Control Module",
                 "count": 2,
-                "chance": 0.0909
+                "chance": 0.1042
             }
         ]
     ],
@@ -398,69 +398,69 @@
             {
                 "name": "Energy Inversion",
                 "count": 1,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Cryotic",
                 "count": 200,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Gara Systems Blueprint",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
                 "name": "Speed Trigger",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
                 "name": "Reaping Spiral",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.0588
             }
         ],
         [
             {
                 "name": "Gara Systems Blueprint",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
                 "name": "Speed Trigger",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
                 "name": "Reaping Spiral",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2545
+                "chance": 0.1458
             },
             {
                 "name": "Neural Sensors",
                 "count": 2,
-                "chance": 0.0909
+                "chance": 0.1042
             }
         ]
     ],
@@ -491,69 +491,69 @@
             {
                 "name": "Point Strike",
                 "count": 1,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Circuits",
                 "count": 300,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.1508
+                "chance": 0.1597
             },
             {
                 "name": "Gara Systems Blueprint",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
                 "name": "Enhanced Durability",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
                 "name": "Grim Fury",
                 "count": 1,
-                "chance": 0.09519999999999999
+                "chance": 0.1008
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.0588
             }
         ],
         [
             {
                 "name": "Gara Systems Blueprint",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
                 "name": "Enhanced Durability",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
                 "name": "Grim Fury",
                 "count": 1,
-                "chance": 0.2182
+                "chance": 0.25
             },
             {
-                "name": "Lith B4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.2545
+                "chance": 0.1458
             },
             {
                 "name": "Orokin Cell",
                 "count": 2,
-                "chance": 0.0909
+                "chance": 0.1042
             }
         ]
     ],
@@ -584,69 +584,69 @@
             {
                 "name": "Gladiator Aegis",
                 "count": 1,
-                "chance": 0.1684
+                "chance": 0.1808
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0842
+                "chance": 0.0904
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.1789
+                "chance": 0.19210000000000002
             },
             {
                 "name": "Endo",
                 "count": 200,
-                "chance": 0.1789
+                "chance": 0.19210000000000002
             },
             {
                 "name": "Gara Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.0842
+                "chance": 0.0904
             },
             {
                 "name": "Augur Accord",
                 "count": 1,
-                "chance": 0.0842
+                "chance": 0.0904
             },
             {
                 "name": "Revenant Systems Blueprint",
                 "count": 1,
-                "chance": 0.0842
+                "chance": 0.0904
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1368
+                "chance": 0.07339999999999999
             }
         ],
         [
             {
                 "name": "Gara Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.2051
+                "chance": 0.2462
             },
             {
                 "name": "Augur Accord",
                 "count": 1,
-                "chance": 0.2051
+                "chance": 0.2462
             },
             {
                 "name": "Revenant Systems Blueprint",
                 "count": 1,
-                "chance": 0.2051
+                "chance": 0.2462
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Vigilante Supplies",
                 "count": 1,
-                "chance": 0.0513
+                "chance": 0.061500000000000006
             }
         ]
     ],
@@ -677,69 +677,69 @@
             {
                 "name": "Vigilante Armaments",
                 "count": 1,
-                "chance": 0.2043
+                "chance": 0.22089999999999999
             },
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.086
+                "chance": 0.09300000000000001
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.086
+                "chance": 0.09300000000000001
             },
             {
                 "name": "Endo",
                 "count": 200,
-                "chance": 0.2043
+                "chance": 0.22089999999999999
             },
             {
                 "name": "Gara Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.086
+                "chance": 0.09300000000000001
             },
             {
                 "name": "Gladiator Might",
                 "count": 1,
-                "chance": 0.086
+                "chance": 0.09300000000000001
             },
             {
                 "name": "Revenant Systems Blueprint",
                 "count": 1,
-                "chance": 0.0968
+                "chance": 0.1047
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1505
+                "chance": 0.0814
             }
         ],
         [
             {
                 "name": "Gara Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.19510000000000002
+                "chance": 0.2353
             },
             {
                 "name": "Gladiator Might",
                 "count": 1,
-                "chance": 0.19510000000000002
+                "chance": 0.2353
             },
             {
                 "name": "Revenant Systems Blueprint",
                 "count": 1,
-                "chance": 0.2195
+                "chance": 0.2647
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.34149999999999997
+                "chance": 0.2059
             },
             {
                 "name": "Augur Seeker",
                 "count": 1,
-                "chance": 0.048799999999999996
+                "chance": 0.0588
             }
         ]
     ],
@@ -770,69 +770,69 @@
             {
                 "name": "Augur Pact",
                 "count": 1,
-                "chance": 0.2021
+                "chance": 0.21969999999999998
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.0925
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.0925
             },
             {
                 "name": "Endo",
                 "count": 200,
-                "chance": 0.2021
+                "chance": 0.21969999999999998
             },
             {
                 "name": "Gara Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.09570000000000001
+                "chance": 0.10400000000000001
             },
             {
                 "name": "Vigilante Fervor",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.0925
             },
             {
                 "name": "Revenant Systems Blueprint",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.0925
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.15960000000000002
+                "chance": 0.0867
             }
         ],
         [
             {
                 "name": "Gara Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.2143
+                "chance": 0.2609
             },
             {
                 "name": "Vigilante Fervor",
                 "count": 1,
-                "chance": 0.1905
+                "chance": 0.23190000000000002
             },
             {
                 "name": "Revenant Systems Blueprint",
                 "count": 1,
-                "chance": 0.1905
+                "chance": 0.23190000000000002
             },
             {
-                "name": "Meso N6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.35710000000000003
+                "chance": 0.21739999999999998
             },
             {
                 "name": "Gladiator Vice",
                 "count": 1,
-                "chance": 0.047599999999999996
+                "chance": 0.057999999999999996
             }
         ]
     ],
@@ -863,116 +863,116 @@
             {
                 "name": "Gladiator Rush",
                 "count": 1,
-                "chance": 0.2021
+                "chance": 0.21350000000000002
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.2021
+                "chance": 0.21350000000000002
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.09570000000000001
+                "chance": 0.1011
             },
             {
                 "name": "Augur Reach",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.15960000000000002
+                "chance": 0.1124
             }
         ],
         [
             {
                 "name": "Gladiator Rush",
                 "count": 1,
-                "chance": 0.1979
+                "chance": 0.20879999999999999
             },
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1979
+                "chance": 0.20879999999999999
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.09380000000000001
+                "chance": 0.0989
             },
             {
                 "name": "Augur Reach",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1563
+                "chance": 0.1099
             },
             {
                 "name": "Vigilante Offense",
                 "count": 1,
-                "chance": 0.0208
+                "chance": 0.022000000000000002
             }
         ],
         [
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.2143
+                "chance": 0.2432
             },
             {
                 "name": "Augur Reach",
                 "count": 1,
-                "chance": 0.1905
+                "chance": 0.2162
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.1905
+                "chance": 0.2162
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.35710000000000003
+                "chance": 0.2703
             },
             {
                 "name": "Vigilante Offense",
                 "count": 1,
-                "chance": 0.047599999999999996
+                "chance": 0.0541
             }
         ]
     ],
@@ -1003,116 +1003,116 @@
             {
                 "name": "Vigilante Vigor",
                 "count": 1,
-                "chance": 0.2021
+                "chance": 0.21350000000000002
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.2021
+                "chance": 0.21350000000000002
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.09570000000000001
+                "chance": 0.1011
             },
             {
                 "name": "Gladiator Resolve",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.0851
+                "chance": 0.08990000000000001
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.15960000000000002
+                "chance": 0.1124
             }
         ],
         [
             {
                 "name": "Vigilante Vigor",
                 "count": 1,
-                "chance": 0.1979
+                "chance": 0.20879999999999999
             },
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1979
+                "chance": 0.20879999999999999
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.09380000000000001
+                "chance": 0.0989
             },
             {
                 "name": "Gladiator Resolve",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08789999999999999
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1563
+                "chance": 0.1099
             },
             {
                 "name": "Augur Secrets",
                 "count": 1,
-                "chance": 0.0208
+                "chance": 0.022000000000000002
             }
         ],
         [
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.2143
+                "chance": 0.2432
             },
             {
                 "name": "Gladiator Resolve",
                 "count": 1,
-                "chance": 0.1905
+                "chance": 0.2162
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.1905
+                "chance": 0.2162
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.35710000000000003
+                "chance": 0.2703
             },
             {
                 "name": "Augur Secrets",
                 "count": 1,
-                "chance": 0.047599999999999996
+                "chance": 0.0541
             }
         ]
     ],
@@ -1143,116 +1143,116 @@
             {
                 "name": "Augur Message",
                 "count": 1,
-                "chance": 0.1771
+                "chance": 0.1848
             },
             {
                 "name": "Kuva",
                 "count": 100,
-                "chance": 0.16670000000000001
+                "chance": 0.1739
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.087
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1771
+                "chance": 0.1848
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.087
             },
             {
                 "name": "Vigilante Pursuit",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.087
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.087
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1458
+                "chance": 0.10869999999999999
             }
         ],
         [
             {
                 "name": "Augur Message",
                 "count": 1,
-                "chance": 0.17350000000000002
+                "chance": 0.1809
             },
             {
                 "name": "Kuva",
                 "count": 100,
-                "chance": 0.16329999999999997
+                "chance": 0.1702
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0816
+                "chance": 0.0851
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.17350000000000002
+                "chance": 0.1809
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.0816
+                "chance": 0.0851
             },
             {
                 "name": "Vigilante Pursuit",
                 "count": 1,
-                "chance": 0.0816
+                "chance": 0.0851
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.0816
+                "chance": 0.0851
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1429
+                "chance": 0.10640000000000001
             },
             {
                 "name": "Gladiator Finesse",
                 "count": 1,
-                "chance": 0.0204
+                "chance": 0.0213
             }
         ],
         [
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.22219999999999998
             },
             {
                 "name": "Vigilante Pursuit",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.22219999999999998
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.22219999999999998
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.35
+                "chance": 0.2778
             },
             {
                 "name": "Gladiator Finesse",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.0556
             }
         ]
     ],
@@ -1291,7 +1291,7 @@
                 "chance": 0.060899999999999996
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.33039999999999997
             }
@@ -1318,7 +1318,7 @@
                 "chance": 0.0473
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2568
             },
@@ -1355,7 +1355,7 @@
                 "chance": 0.07139999999999999
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.38780000000000003
             },
@@ -1416,7 +1416,7 @@
                 "chance": 0.060899999999999996
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.33039999999999997
             }
@@ -1443,7 +1443,7 @@
                 "chance": 0.0473
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2568
             },
@@ -1480,7 +1480,7 @@
                 "chance": 0.07139999999999999
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.38780000000000003
             },
@@ -1541,7 +1541,7 @@
                 "chance": 0.060899999999999996
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.33039999999999997
             }
@@ -1568,7 +1568,7 @@
                 "chance": 0.0473
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2568
             },
@@ -1605,7 +1605,7 @@
                 "chance": 0.07139999999999999
             },
             {
-                "name": "Axi S3 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.38780000000000003
             },
@@ -1636,64 +1636,64 @@
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.3333
+                "chance": 0.3676
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2647
             },
             {
                 "name": "Hunter Adrenaline",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.3676
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1174
+                "chance": 0.12140000000000001
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1174
+                "chance": 0.0874
             },
             {
                 "name": "Hunter Adrenaline",
                 "count": 1,
-                "chance": 0.1174
+                "chance": 0.12140000000000001
             },
             {
                 "name": "Encrypted Journal Fragment",
                 "count": 1,
-                "chance": 0.18780000000000002
+                "chance": 0.1942
             },
             {
                 "name": "Hunter Munitions",
                 "count": 1,
-                "chance": 0.09390000000000001
+                "chance": 0.0971
             },
             {
                 "name": "Stubba Blueprint",
                 "count": 1,
-                "chance": 0.046900000000000004
+                "chance": 0.048499999999999995
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.09390000000000001
+                "chance": 0.0971
             },
             {
                 "name": "Breath Of The Eidolon",
                 "count": 5,
-                "chance": 0.046900000000000004
+                "chance": 0.048499999999999995
             },
             {
                 "name": "Neo N16 Relic",
                 "count": 1,
-                "chance": 0.1784
+                "chance": 0.1845
             }
         ],
         [
@@ -1744,64 +1744,64 @@
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.3333
+                "chance": 0.3676
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2647
             },
             {
                 "name": "Hunter Recovery",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.3676
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1174
+                "chance": 0.12140000000000001
             },
             {
-                "name": "Neo R1 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1174
+                "chance": 0.0874
             },
             {
                 "name": "Hunter Recovery",
                 "count": 1,
-                "chance": 0.1174
+                "chance": 0.12140000000000001
             },
             {
                 "name": "Encrypted Journal Fragment",
                 "count": 1,
-                "chance": 0.18780000000000002
+                "chance": 0.1942
             },
             {
                 "name": "Hunter Synergy",
                 "count": 1,
-                "chance": 0.09390000000000001
+                "chance": 0.0971
             },
             {
                 "name": "Quartakk Blueprint",
                 "count": 1,
-                "chance": 0.046900000000000004
+                "chance": 0.048499999999999995
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.09390000000000001
+                "chance": 0.0971
             },
             {
                 "name": "Breath Of The Eidolon",
                 "count": 5,
-                "chance": 0.046900000000000004
+                "chance": 0.048499999999999995
             },
             {
                 "name": "Neo T4 Relic",
                 "count": 1,
-                "chance": 0.1784
+                "chance": 0.1845
             }
         ],
         [
@@ -1844,6 +1844,254 @@
                 "name": "Nitain Extract",
                 "count": 1,
                 "chance": 0.059500000000000004
+            }
+        ]
+    ],
+    "plagueStar": [
+        [
+            {
+                "name": "Augur Message",
+                "count": 1,
+                "chance": 0.24719999999999998
+            },
+            {
+                "name": "Kuva",
+                "count": 100,
+                "chance": 0.23600000000000002
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.1461
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.24719999999999998
+            },
+            {
+                "name": "Lith T7 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Lith N7 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Meso B5 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Meso S10 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Meso B6 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Neo N16 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Neo T5 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Neo N17 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Axi A14 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Axi I2 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            },
+            {
+                "name": "Axi M2 Relic",
+                "count": 1,
+                "chance": 0.011200000000000002
+            }
+        ],
+        [
+            {
+                "name": "Augur Message",
+                "count": 1,
+                "chance": 0.12789999999999999
+            },
+            {
+                "name": "Kuva",
+                "count": 100,
+                "chance": 0.12210000000000001
+            },
+            {
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.0756
+            },
+            {
+                "name": "Endo",
+                "count": 300,
+                "chance": 0.12789999999999999
+            },
+            {
+                "name": "Lith T7 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Lith N7 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Meso B5 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Meso S10 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Meso B6 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Neo N16 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Neo T5 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Neo N17 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Axi A14 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Axi I2 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Axi M2 Relic",
+                "count": 1,
+                "chance": 0.0116
+            },
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.13949999999999999
+            },
+            {
+                "name": "Vigilante Pursuit",
+                "count": 1,
+                "chance": 0.13949999999999999
+            },
+            {
+                "name": "Revenant Chassis Blueprint",
+                "count": 1,
+                "chance": 0.13949999999999999
+            }
+        ],
+        [
+            {
+                "name": "Cetus Wisp",
+                "count": 1,
+                "chance": 0.1611
+            },
+            {
+                "name": "Vigilante Pursuit",
+                "count": 1,
+                "chance": 0.1611
+            },
+            {
+                "name": "Revenant Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1611
+            },
+            {
+                "name": "Lith T7 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Lith N7 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Meso B5 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Meso S10 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Meso B6 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Neo N16 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Neo T5 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Neo N17 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Axi A14 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Axi I2 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Axi M2 Relic",
+                "count": 1,
+                "chance": 0.0134
+            },
+            {
+                "name": "Gladiator Finesse",
+                "count": 1,
+                "chance": 0.3691
             }
         ]
     ]

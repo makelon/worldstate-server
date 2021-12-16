@@ -13,5 +13,8 @@
     "CetusSyndicateBountyTierDTableCRewards": "C",
     "CetusSyndicateBountyTierETableARewards": "A",
     "CetusSyndicateBountyTierETableBRewards": "B",
-    "CetusSyndicateBountyTierETableCRewards": "C"
+    "CetusSyndicateBountyTierETableCRewards": "C",
+    "CetusSyndicateBountyNarmerTableARewards": "A",
+    "CetusSyndicateBountyNarmerTableBRewards": "B",
+    "CetusSyndicateBountyNarmerTableCRewards": "C"
 }

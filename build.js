@@ -247,11 +247,25 @@ function concatFiles(fileGroup) {
 
 function copyFile(filePath) {
 	return new Promise((resolve, reject) => {
-		const rs = fs.createReadStream(path.join(dataDir, filePath)),
-			ws = fs.createWriteStream(path.join(outDir, path.basename(filePath)))
-		rs.on('error', reject)
-		ws.on('error', reject)
-		rs.pipe(ws).on('close', resolve)
+		fs.readFile(path.join(dataDir, filePath), 'utf8', (err, content) => {
+			if (err) {
+				reject(err)
+				return
+			}
+			try {
+				JSON.parse(content)
+				resolve(content)
+			}
+			catch (e) {
+				reject(new Error(`Failed to copy file ${filePath}: ${e.message}`))
+			}
+		})
+	}).then((content) => {
+		fs.writeFile(path.join(outDir, path.basename(filePath)), content, 'utf8', (err) => {
+			if (err) {
+				throw err
+			}
+		})
 	})
 }
 

@@ -1,4 +1,8 @@
 {
+    "SeasonDailyAFirmShake": {
+        "description": "Shake the hand of a fellow Tenno using the handshake emote",
+        "xpAmount": 1000
+    },
     "SeasonDailyAimGlide": {
         "description": "Kill 20 enemies while aim gliding",
         "xpAmount": 1000
@@ -135,6 +139,14 @@
         "description": "Clear a personal Kuva Lich influenced node",
         "xpAmount": 1000
     },
+    "SeasonDailyLiquidation": {
+        "description": "Sell any item in your inventory for credits",
+        "xpAmount": 1000
+    },
+    "SeasonDailyMedic": {
+        "description": "Revive a fellow Tenno or a companion",
+        "xpAmount": 1000
+    },
     "SeasonDailyMercyKill": {
         "description": "Mercy kill an enemy",
         "xpAmount": 1000
@@ -187,8 +199,16 @@
         "description": "Hack 8 consoles",
         "xpAmount": 1000
     },
+    "SeasonDailyStayOnTop": {
+        "description": "Kill 20 enemies using a Necramech while hovering",
+        "xpAmount": 1000
+    },
     "SeasonDailySuspendFiveEnemies": {
         "description": "Suspend 5 or more enemies in the air at once with a heavy slam melee attack",
+        "xpAmount": 1000
+    },
+    "SeasonDailyThePersonalTouch": {
+        "description": "Place 1 decoration in your orbiter",
         "xpAmount": 1000
     },
     "SeasonDailyTransmuteMods": {
@@ -198,6 +218,10 @@
     "SeasonDailyVisitFeaturedDojo": {
         "description": "Visit a featured dojo",
         "xpAmount": 1000
+    },
+    "SeasonWeeklyBloodthirsty": {
+        "description": "Kill 20 enemies in 5 seconds",
+        "xpAmount": 4500
     },
     "SeasonWeeklyBoardingPartyNoDamage": {
         "description": "Clear a Railjack boarding party without your Warframe taking damage",
@@ -351,6 +375,10 @@
         "description": "Complete 5 scans for Cephalon Simaris",
         "xpAmount": 4500
     },
+    "SeasonWeeklyTheOldWays": {
+        "description": "Complete 1 mission with only a single pistol and a glaive equipped",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyUnlockDragonVaults": {
         "description": "Open 4 Orokin vaults",
         "xpAmount": 4500
@@ -461,6 +489,10 @@
     },
     "SeasonWeeklyHardRailjackMissions": {
         "description": "Complete 8 Railjack missions",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardRiseOfTheMachine": {
+        "description": "Kill 300 enemies using a Necramech without getting destroyed",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardSpyManualNoAlarms": {

@@ -1037,11 +1037,6 @@
                 "chance": 0.1
             },
             {
-                "name": "Earth Resource Bundle",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
                 "name": "Lith G4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
@@ -1072,7 +1067,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith N9 Relic (Radiant)",
+                "name": "Lith N10 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             }
@@ -1106,11 +1101,6 @@
                 "chance": 0.1
             },
             {
-                "name": "Venus Resource Bundle",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
                 "name": "Lith G4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
@@ -1141,7 +1131,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith N9 Relic (Radiant)",
+                "name": "Lith N10 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             }
@@ -1173,11 +1163,6 @@
                 "name": "Epitaph Receiver",
                 "count": 1,
                 "chance": 0.09759999999999999
-            },
-            {
-                "name": "Saturn Resource Bundle",
-                "count": 1,
-                "chance": 0.048799999999999996
             },
             {
                 "name": "Meso P4 Relic (Radiant)",
@@ -1244,11 +1229,6 @@
                 "chance": 0.09759999999999999
             },
             {
-                "name": "Neptune Resource Bundle",
-                "count": 1,
-                "chance": 0.048799999999999996
-            },
-            {
                 "name": "Meso P4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.024399999999999998
@@ -1313,11 +1293,6 @@
                 "chance": 0.1
             },
             {
-                "name": "Pluto Resource Bundle",
-                "count": 1,
-                "chance": 0.025
-            },
-            {
                 "name": "Neo N16 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
@@ -1338,7 +1313,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Neo P2 Relic (Radiant)",
+                "name": "Neo P4 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1380,11 +1355,6 @@
                 "name": "Sevagoth Systems Blueprint",
                 "count": 1,
                 "chance": 0.1
-            },
-            {
-                "name": "Veil Resource Bundle",
-                "count": 1,
-                "chance": 0.025
             },
             {
                 "name": "Axi O5 Relic (Radiant)",

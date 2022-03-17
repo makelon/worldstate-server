@@ -5439,6 +5439,40 @@
             }
         ]
     ],
+    "Lith N10 Relic": [
+        [
+            {
+                "name": "Nezha Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Titania Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Inaros Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Lith N2 Relic": [
         [
             {
@@ -5680,27 +5714,27 @@
     "Lith N9 Relic": [
         [
             {
-                "name": "Nezha Prime Neuroptics Blueprint",
+                "name": "Nami Skyla Prime Blade",
                 "count": 1,
                 "chance": 0.02
             },
             {
-                "name": "Titania Prime Neuroptics Blueprint",
+                "name": "Mesa Prime Blueprint",
                 "count": 1,
                 "chance": 0.11
             },
             {
-                "name": "Inaros Prime Blueprint",
+                "name": "Akjagara Prime Receiver",
                 "count": 1,
                 "chance": 0.11
             },
             {
-                "name": "Braton Prime Stock",
+                "name": "Redeemer Prime Blade",
                 "count": 1,
                 "chance": 0.25329999999999997
             },
             {
-                "name": "Orthos Prime Handle",
+                "name": "Burston Prime Stock",
                 "count": 1,
                 "chance": 0.25329999999999997
             },
@@ -12297,6 +12331,40 @@
             },
             {
                 "name": "Orthos Prime Handle",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo P4 Relic": [
+        [
+            {
+                "name": "Pandero Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Karyst Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Zakti Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Paris Prime Upper Limb",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

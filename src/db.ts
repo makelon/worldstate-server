@@ -148,7 +148,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	 * @returns Promise that resolves when the table is ready
 	 */
 	private load(tablePath: string): Promise<void> {
-		return new Promise<void>(resolve => {
+		return new Promise<void>((resolve, reject) => {
 			log.notice('Loading %s/%s', this.dbName, this.tableName)
 			const readStream = createReadStream(tablePath, {
 					encoding: 'utf8',
@@ -157,42 +157,45 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 				tStart = process.hrtime()
 			readStream.on('error', (err: NodeJS.ErrnoException) => {
 				if (err && err.code !== 'ENOENT') {
-					throw new Error(`Error loading database ${this.dbName}/${this.tableName}: ${err.message}`)
+					reject(new Error(`Error loading database ${this.dbName}/${this.tableName}: ${err.message}`))
 				}
-				log.notice('No database for %s/%s', this.dbName, this.tableName)
-				resolve()
-			})
-			let recordCount = 0,
-				updateCount = 0
-			createInterface(readStream)
-				.on('line', line => {
-					const dataStart = line.indexOf('\t'),
-						id = line.substr(0, dataStart)
-					let patch: WfRecordPatch<T>
-					try {
-						patch = this.parsePatch(line.substr(dataStart + 1))
-					}
-					catch (err) {
-						log.error('Failed to read record %s/%s: %s', this.dbName, this.tableName, err.message)
-						return
-					}
-					if (this.records[id]) {
-						this.applyPatch(this.records[id], patch)
-						++updateCount
-						++this.tmpUpdateCount
-						log.debug('Updated record %s in %s/%s', id, this.dbName, this.tableName)
-					}
-					else {
-						this.loadRecord(id, patch as T)
-						++recordCount
-						log.debug('Loaded record %s from %s/%s', id, this.dbName, this.tableName)
-					}
-				}).on('close', () => {
-					const tEnd = process.hrtime(),
-						loadTime = (tEnd[0] * 1e9 + tEnd[1]) - (tStart[0] * 1e9 + tStart[1])
-					log.notice('Loaded %d records and %d updates from %s/%s in %d ms', recordCount, updateCount, this.dbName, this.tableName, Math.floor(loadTime / 1e3) / 1e3)
+				else {
+					log.notice('No database for %s/%s', this.dbName, this.tableName)
 					resolve()
-				})
+				}
+			}).on('open', () => {
+				let recordCount = 0,
+					updateCount = 0
+				createInterface(readStream)
+					.on('line', line => {
+						const dataStart = line.indexOf('\t'),
+							id = line.substr(0, dataStart)
+						let patch: WfRecordPatch<T>
+						try {
+							patch = this.parsePatch(line.substr(dataStart + 1))
+						}
+						catch (err) {
+							log.error('Failed to read record %s/%s: %s', this.dbName, this.tableName, err.message)
+							return
+						}
+						if (this.records[id]) {
+							this.applyPatch(this.records[id], patch)
+							++updateCount
+							++this.tmpUpdateCount
+							log.debug('Updated record %s in %s/%s', id, this.dbName, this.tableName)
+						}
+						else {
+							this.loadRecord(id, patch as T)
+							++recordCount
+							log.debug('Loaded record %s from %s/%s', id, this.dbName, this.tableName)
+						}
+					}).on('close', () => {
+						const tEnd = process.hrtime(),
+							loadTime = (tEnd[0] * 1e9 + tEnd[1]) - (tStart[0] * 1e9 + tStart[1])
+						log.notice('Loaded %d records and %d updates from %s/%s in %d ms', recordCount, updateCount, this.dbName, this.tableName, Math.floor(loadTime / 1e3) / 1e3)
+						resolve()
+					})
+			})
 		})
 	}
 

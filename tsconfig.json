@@ -8,5 +8,6 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"strict": true,
+		"useUnknownInCatchVariables": false
 	}
 }

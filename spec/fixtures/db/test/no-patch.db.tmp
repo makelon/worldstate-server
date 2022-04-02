@@ -1,2 +1,2 @@
-test1	{"data":"Test 1"}
-test2	{"data":"Test 2"}
+test1	{"id":"test1","data":"Test 1"}
+test2	{"id":"test2","data":"Test 2"}

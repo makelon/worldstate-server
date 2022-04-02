@@ -63,7 +63,7 @@ export function createDirectory(dir: string): Promise<void> {
 		log.error('mkdir: Cannot create root folder "%s"', dir)
 	}
 	dir = joinPath(pathInfo.dir, pathInfo.base)
-	if (mkdirCache[dir]) {
+	if (dir in mkdirCache) {
 		log.debug('mkdir: Returning cached promise for "%s"', dir)
 		return mkdirCache[dir]
 	}
@@ -73,7 +73,7 @@ export function createDirectory(dir: string): Promise<void> {
 		promise = Promise.resolve()
 	for (const subDir of dirs) {
 		curPath += subDir
-		if (mkdirCache[curPath]) {
+		if (curPath in mkdirCache) {
 			log.debug('mkdir: Returning cached promise for "%s"', curPath)
 			promise = mkdirCache[curPath]
 		}

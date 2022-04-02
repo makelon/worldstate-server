@@ -212,9 +212,6 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 	 */
 	private loadRecord(id: string, record: T): void {
 		this.records[id] = record
-		if (!('id' in record)) {
-			record.id = id
-		}
 	}
 
 	/**

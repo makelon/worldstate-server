@@ -7,6 +7,14 @@
         "description": "Kill 20 enemies while aim gliding",
         "xpAmount": 1000
     },
+    "SeasonDailyAugmentation": {
+        "description": "Install an augment mod on your Warframe",
+        "xpAmount": 1000
+    },
+    "SeasonDailyBuildersTouch": {
+        "description": "Claim an item from your foundry",
+        "xpAmount": 1000
+    },
     "SeasonDailyBulletJump": {
         "description": "Perform 150 bullet jumps",
         "xpAmount": 1000
@@ -37,6 +45,10 @@
     },
     "SeasonDailyCompleteMissionSecondary": {
         "description": "Complete a mission with only a secondary weapon equipped",
+        "xpAmount": 1000
+    },
+    "SeasonDailyDeathFromAbove": {
+        "description": "Kill 10 enemies with ground slams",
         "xpAmount": 1000
     },
     "SeasonDailyDeployAirSupport": {
@@ -207,8 +219,16 @@
         "description": "Suspend 5 or more enemies in the air at once with a heavy slam melee attack",
         "xpAmount": 1000
     },
+    "SeasonDailySwatter": {
+        "description": "Kill 3 drones or ospreys with your melee weapon",
+        "xpAmount": 1000
+    },
     "SeasonDailyThePersonalTouch": {
         "description": "Place 1 decoration in your orbiter",
+        "xpAmount": 1000
+    },
+    "SeasonDailyToppingOffTheTank": {
+        "description": "Successfully defend an excavator without allowing it to run out of power",
         "xpAmount": 1000
     },
     "SeasonDailyTransmuteMods": {
@@ -339,12 +359,24 @@
         "description": "Kill a Tusk Thumper in Plains of Eidolon",
         "xpAmount": 4500
     },
+    "SeasonWeeklyLoyalty": {
+        "description": "Gain 5,000 standing with any one syndicate faction",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyMadLab": {
+        "description": "Plunder one of Alad V's secret laboratories on Jupiter",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyMineRarePlainsResources": {
         "description": "Mine 6 rare gems in Plains of Eidolon",
         "xpAmount": 4500
     },
     "SeasonWeeklyMineRareVenusResources": {
         "description": "Mine 6 rare gems in Orb Vallis",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyNightAndDay": {
+        "description": "Collect 15 Vome or Fass residue in the Cambion Drift",
         "xpAmount": 4500
     },
     "SeasonWeeklyPerfectAnimalCapture": {
@@ -394,6 +426,10 @@
     "SeasonWeeklyVenusBounties": {
         "description": "Complete 5 different bounties in Orb Vallis",
         "xpAmount": 4500
+    },
+    "SeasonWeeklyHardAntiquarian": {
+        "description": "Open one of each era/tier of relic (Lith, Meso, Neo, Axi)",
+        "xpAmount": 7000
     },
     "SeasonWeeklyHardCollectUniqueResources": {
         "description": "Collect 20 different type of resources",
@@ -497,6 +533,14 @@
     },
     "SeasonWeeklyHardSpyManualNoAlarms": {
         "description": "Complete a spy mission with 3 manual console hacks and no alarms",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardTerminated": {
+        "description": "Destroy 3 Necramech Isolation Vault guardians",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardThePriceOfFreedom": {
+        "description": "Free one captured Solaris using a Granum crown",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardUnlockRelics": {

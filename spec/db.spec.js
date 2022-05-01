@@ -19,7 +19,7 @@ describe('Database', () => {
 
 	afterEach(done => {
 		config.wsFields = []
-		db.setupTables(done)
+		db.setupTables(() => done())
 	})
 
 	it('should load database records', done => {

@@ -14,12 +14,12 @@ describe('Kuvalog', () => {
 		config.kuvalogUrls.pc = `http://${mockKuvalogHost}:${mockKuvalogPort}`
 		const [[testData]] = fixtures.getKuvalog()
 		mockGame.setData(testData)
-		mockGame.start(done)
+		mockGame.start(() => done())
 	}, 1000)
 
 	afterAll(done => {
 		config.kuvalogUrls = {}
-		mockGame.shutdown(done)
+		mockGame.shutdown(() => done())
 	}, 1000)
 
 	it('should request kuvalog data', done => {

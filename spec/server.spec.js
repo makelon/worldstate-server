@@ -25,7 +25,7 @@ describe('Server', () => {
 		Promise.all([
 			new Promise(resolve => server.shutdown(resolve)),
 			new Promise(resolve => mockGame.shutdown(resolve)),
-		]).then(done)
+		]).then(() => done())
 	}, 1000)
 
 	it('should request worldstate data', done => {

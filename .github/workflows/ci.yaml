@@ -1,0 +1,45 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node: [ 12, 14 ]
+        include:
+          - node: 16
+            lint: true
+
+    name: Build and test (node-${{ matrix.node }})
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check linting
+        if: ${{ matrix.lint }}
+        run: npm run lint
+
+      - name: Create required files
+        run: echo '{}' | tee data/itemnames.json data/itemtypes.json
+
+      - name: Compile
+        run: npm run build
+
+      - name: Run tests
+        run: npm run test

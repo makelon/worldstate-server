@@ -854,7 +854,7 @@ function* getVoidFissures() {
 			Activation: { $date: { $numberLong: timeStartLong } },
 			Expiry: { $date: { $numberLong: timeEndLong } },
 			Node: nodes[0].id,
-			Modifier: 'VoidT1',
+			Modifier: 'VoidT2',
 		},
 		expected = {
 			id: entryId,

@@ -5,5 +5,4 @@ config.json
 data/itemnames.json
 data/itemtypes.json
 data/languages.json
-/package-lock.json
 /yarn.lock

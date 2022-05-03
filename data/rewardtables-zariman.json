@@ -1,0 +1,213 @@
+{
+    "1hZE": [
+        [
+            {
+                "name": "Credits",
+                "count": 15000,
+                "chance": 0.16
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.16
+            },
+            {
+                "name": "Voidplume Down",
+                "count": 1,
+                "chance": 0.12
+            },
+            {
+                "name": "Credits",
+                "count": 30000,
+                "chance": 0.12
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.12
+            },
+            {
+                "name": "Lith K5 Relic",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Lith M7 Relic",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Gyre Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.12
+            },
+            {
+                "name": "Entrati Lanthorn",
+                "count": 1,
+                "chance": 0.04
+            }
+        ]
+    ],
+    "1hZF": [
+        [
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.15
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Lith K5 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Lith M7 Relic",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Voidplume Vane",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Endo",
+                "count": 1500,
+                "chance": 0.1
+            },
+            {
+                "name": "Voidgel Orb",
+                "count": 5,
+                "chance": 0.05
+            },
+            {
+                "name": "Meso E5 Relic",
+                "count": 1,
+                "chance": 0.075
+            },
+            {
+                "name": "Gyre Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1
+            },
+            {
+                "name": "Entrati Lanthorn",
+                "count": 3,
+                "chance": 0.025
+            }
+        ]
+    ],
+    "1hZG": [
+        [
+            {
+                "name": "Endo",
+                "count": 2000,
+                "chance": 0.14
+            },
+            {
+                "name": "Greater Zenurik Lens",
+                "count": 1,
+                "chance": 0.14
+            },
+            {
+                "name": "Greater Madurai Lens",
+                "count": 1,
+                "chance": 0.12
+            },
+            {
+                "name": "Voidplume Crest",
+                "count": 1,
+                "chance": 0.12
+            },
+            {
+                "name": "Endo",
+                "count": 3000,
+                "chance": 0.12
+            },
+            {
+                "name": "Entrati Lanthorn",
+                "count": 3,
+                "chance": 0.08
+            },
+            {
+                "name": "Neo B6 Relic",
+                "count": 1,
+                "chance": 0.08
+            },
+            {
+                "name": "Gyre Systems Blueprint",
+                "count": 1,
+                "chance": 0.12
+            },
+            {
+                "name": "Alternox Blueprint",
+                "count": 1,
+                "chance": 0.08
+            }
+        ]
+    ],
+    "1hZH": [
+        [
+            {
+                "name": "Endo",
+                "count": 3000,
+                "chance": 0.1094
+            },
+            {
+                "name": "Greater Unairu Lens",
+                "count": 1,
+                "chance": 0.1094
+            },
+            {
+                "name": "Greater Vazarin Lens",
+                "count": 1,
+                "chance": 0.1094
+            },
+            {
+                "name": "Greater Naramon Lens",
+                "count": 1,
+                "chance": 0.1094
+            },
+            {
+                "name": "Endo",
+                "count": 4000,
+                "chance": 0.09380000000000001
+            },
+            {
+                "name": "Thrax Plasm",
+                "count": 15,
+                "chance": 0.09380000000000001
+            },
+            {
+                "name": "Axi H5 Relic",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Axi A12 Relic",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Gyre Blueprint",
+                "count": 1,
+                "chance": 0.125
+            },
+            {
+                "name": "Hespar Blueprint",
+                "count": 1,
+                "chance": 0.0625
+            },
+            {
+                "name": "Aeolak Blueprint",
+                "count": 1,
+                "chance": 0.0625
+            }
+        ]
+    ]
+}

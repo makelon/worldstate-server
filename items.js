@@ -46,7 +46,13 @@ const itemTypeTree = {
 				"resources": "Resource"
 			},
 			"infestedmicroplanet": {
-				"Resources": "Resource"
+				"resources": {
+					"": "Resource",
+					"mechs": ""
+				}
+			},
+			"zariman": {
+				"resources": "Resource"
 			}
 		},
 		"items": {
@@ -56,12 +62,12 @@ const itemTypeTree = {
 			"miscitems": {
 				"": "Resource",
 				"*": {
-					"photobooth": "",
-					"forma": ""
+					"photobooth": ""
 				},
 				"orokincatalyst": "",
 				"orokinreactor": "",
-				"utilityunlocker": ""
+				"utilityunlocker": "",
+				"forma": ""
 			},
 			"plants": "Resource",
 			"railjackmiscitems": "Resource",
@@ -84,7 +90,7 @@ const itemTypeTree = {
 			"kubrow": "Cosmetic",
 			"lens": "Lens",
 			"modfuserblueprint": "Mod",
-			"sentinelrecipes": "Companion",
+			"sentinelrecipes": "Weapon",
 			"syandanas": "Cosmetic",
 			"warframerecipes": "Warframe",
 			"warframeskins": "Cosmetic",
@@ -95,7 +101,8 @@ const itemTypeTree = {
 			"weaponskins": "Cosmetic"
 		},
 		"sentinels": {
-			"sentinelprecepts": "Mod"
+			"sentinelprecepts": "Mod",
+			"sentinelpowersuits": "Weapon"
 		},
 		"storeitems": {
 			"avatarimages": "Cosmetic",
@@ -107,7 +114,7 @@ const itemTypeTree = {
 		"": "Mod",
 		"fusionbundles": "Endo",
 		"focus": "Lens",
-		"cosmeticenhancers": "",
+		"cosmeticenhancers": "Arcane",
 		"skins": "Cosmetic"
 	},
 	"weapons": {

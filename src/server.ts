@@ -144,7 +144,7 @@ export default class Server {
 					}
 					listenStr = address
 				}
-				else if (address.family === 'IPv6') {
+				else if (address.family === 'IPv6' || (typeof address.family === 'number' && address.family === 6)) {
 					listenStr = `[${address.address}]:${address.port}`
 				}
 				else {

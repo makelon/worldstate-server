@@ -22,8 +22,9 @@ function promiseWrite(file: string, data: string | Buffer, flags = 'w', tryMkdir
 			createDirectory(dirname(file))
 				.then(() => promiseWrite(file, data, flags, false))
 				.then(resolve)
+		}).on('open', () => {
+			ws.end(data, () => { resolve(ws.bytesWritten) })
 		})
-		ws.end(data, () => { resolve(ws.bytesWritten) })
 	})
 }
 

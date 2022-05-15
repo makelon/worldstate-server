@@ -235,6 +235,10 @@
         "description": "Transmute 3 modules",
         "xpAmount": 1000
     },
+    "SeasonDailyTwoForOne": {
+        "description": "Pierce and kill 2 or more enemies in a single bow shot",
+        "xpAmount": 1000
+    },
     "SeasonDailyVisitFeaturedDojo": {
         "description": "Visit a featured dojo",
         "xpAmount": 1000

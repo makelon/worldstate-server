@@ -57,26 +57,34 @@
                     },
                     {
                         "rewards": "1hZF",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
+                        "minEnemyLevel": 60,
+                        "maxEnemyLevel": 65,
                         "xpAmounts": [
                             2
                         ]
                     },
                     {
                         "rewards": "1hZG",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
+                        "minEnemyLevel": 70,
+                        "maxEnemyLevel": 75,
                         "xpAmounts": [
                             3
                         ]
                     },
                     {
                         "rewards": "1hZH",
+                        "minEnemyLevel": 90,
+                        "maxEnemyLevel": 95,
+                        "xpAmounts": [
+                            4
+                        ]
+                    },
+                    {
+                        "rewards": "1hZI",
                         "minEnemyLevel": 110,
                         "maxEnemyLevel": 115,
                         "xpAmounts": [
-                            4
+                            5
                         ]
                     }
                 ]
@@ -141,26 +149,34 @@
                     },
                     {
                         "rewards": "1hZF",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
+                        "minEnemyLevel": 60,
+                        "maxEnemyLevel": 65,
                         "xpAmounts": [
                             2
                         ]
                     },
                     {
                         "rewards": "1hZG",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
+                        "minEnemyLevel": 70,
+                        "maxEnemyLevel": 75,
                         "xpAmounts": [
                             3
                         ]
                     },
                     {
                         "rewards": "1hZH",
+                        "minEnemyLevel": 90,
+                        "maxEnemyLevel": 95,
+                        "xpAmounts": [
+                            4
+                        ]
+                    },
+                    {
+                        "rewards": "1hZI",
                         "minEnemyLevel": 110,
                         "maxEnemyLevel": 115,
                         "xpAmounts": [
-                            4
+                            5
                         ]
                     }
                 ]
@@ -225,26 +241,34 @@
                     },
                     {
                         "rewards": "1hZF",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
+                        "minEnemyLevel": 60,
+                        "maxEnemyLevel": 65,
                         "xpAmounts": [
                             2
                         ]
                     },
                     {
                         "rewards": "1hZG",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
+                        "minEnemyLevel": 70,
+                        "maxEnemyLevel": 75,
                         "xpAmounts": [
                             3
                         ]
                     },
                     {
                         "rewards": "1hZH",
+                        "minEnemyLevel": 90,
+                        "maxEnemyLevel": 95,
+                        "xpAmounts": [
+                            4
+                        ]
+                    },
+                    {
+                        "rewards": "1hZI",
                         "minEnemyLevel": 110,
                         "maxEnemyLevel": 115,
                         "xpAmounts": [
-                            4
+                            5
                         ]
                     }
                 ]
@@ -309,26 +333,34 @@
                     },
                     {
                         "rewards": "1hZF",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
+                        "minEnemyLevel": 60,
+                        "maxEnemyLevel": 65,
                         "xpAmounts": [
                             2
                         ]
                     },
                     {
                         "rewards": "1hZG",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
+                        "minEnemyLevel": 70,
+                        "maxEnemyLevel": 75,
                         "xpAmounts": [
                             3
                         ]
                     },
                     {
                         "rewards": "1hZH",
+                        "minEnemyLevel": 90,
+                        "maxEnemyLevel": 95,
+                        "xpAmounts": [
+                            4
+                        ]
+                    },
+                    {
+                        "rewards": "1hZI",
                         "minEnemyLevel": 110,
                         "maxEnemyLevel": 115,
                         "xpAmounts": [
-                            4
+                            5
                         ]
                     }
                 ]

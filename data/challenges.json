@@ -543,6 +543,10 @@
         "description": "Destroy 3 Necramech Isolation Vault guardians",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardTheManyMadeWhole": {
+        "description": "Convert 10 riven slivers into a riven mod",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardThePriceOfFreedom": {
         "description": "Free one captured Solaris using a Granum crown",
         "xpAmount": 7000

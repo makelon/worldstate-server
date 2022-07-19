@@ -2098,7 +2098,7 @@
                 "chance": 0.048499999999999995
             },
             {
-                "name": "Neo K4 Relic",
+                "name": "Neo N21 Relic",
                 "count": 1,
                 "chance": 0.1845
             }
@@ -2130,7 +2130,7 @@
                 "chance": 0.0472
             },
             {
-                "name": "Neo K4 Relic",
+                "name": "Neo N21 Relic",
                 "count": 1,
                 "chance": 0.17920000000000003
             },
@@ -2156,107 +2156,97 @@
             {
                 "name": "Augur Message",
                 "count": 1,
-                "chance": 0.24719999999999998
+                "chance": 0.25
             },
             {
                 "name": "Kuva",
                 "count": 100,
-                "chance": 0.23600000000000002
+                "chance": 0.2386
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.1461
+                "chance": 0.1477
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.24719999999999998
+                "chance": 0.25
             },
             {
-                "name": "Lith G5 Relic",
+                "name": "Lith K9 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
-            },
-            {
-                "name": "Lith H4 Relic",
-                "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
                 "name": "Lith Z3 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
                 "name": "Lith T9 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
                 "name": "Meso A3 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
                 "name": "Neo N16 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
-                "name": "Neo K4 Relic",
+                "name": "Neo N21 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
-                "name": "Neo N20 Relic",
+                "name": "Neo G4 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
-                "name": "Axi K6 Relic",
+                "name": "Axi K8 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
                 "name": "Axi T8 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             },
             {
-                "name": "Axi G7 Relic",
+                "name": "Axi K9 Relic",
                 "count": 1,
-                "chance": 0.011200000000000002
+                "chance": 0.011399999999999999
             }
         ],
         [
             {
                 "name": "Augur Message",
                 "count": 1,
-                "chance": 0.12789999999999999
+                "chance": 0.12869999999999998
             },
             {
                 "name": "Kuva",
                 "count": 100,
-                "chance": 0.12210000000000001
+                "chance": 0.12279999999999999
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0756
+                "chance": 0.076
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.12789999999999999
+                "chance": 0.12869999999999998
             },
             {
-                "name": "Lith G5 Relic",
-                "count": 1,
-                "chance": 0.0058
-            },
-            {
-                "name": "Lith H4 Relic",
+                "name": "Lith K9 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
@@ -2281,17 +2271,17 @@
                 "chance": 0.0116
             },
             {
-                "name": "Neo K4 Relic",
+                "name": "Neo N21 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
             {
-                "name": "Neo N20 Relic",
+                "name": "Neo G4 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
             {
-                "name": "Axi K6 Relic",
+                "name": "Axi K8 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
@@ -2301,24 +2291,24 @@
                 "chance": 0.0058
             },
             {
-                "name": "Axi G7 Relic",
+                "name": "Axi K9 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.13949999999999999
+                "chance": 0.1404
             },
             {
                 "name": "Vigilante Pursuit",
                 "count": 1,
-                "chance": 0.13949999999999999
+                "chance": 0.1404
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.13949999999999999
+                "chance": 0.1404
             },
             {
                 "name": "Lith N11 Relic",
@@ -2331,7 +2321,7 @@
                 "chance": 0.0058
             },
             {
-                "name": "Meso I2 Relic",
+                "name": "Meso H2 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
@@ -2341,7 +2331,7 @@
                 "chance": 0.0058
             },
             {
-                "name": "Meso G3 Relic",
+                "name": "Meso H3 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
@@ -2356,17 +2346,17 @@
                 "chance": 0.0058
             },
             {
-                "name": "Axi S10 Relic",
+                "name": "Axi N8 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
             {
-                "name": "Axi S11 Relic",
+                "name": "Axi G8 Relic",
                 "count": 1,
                 "chance": 0.0058
             },
             {
-                "name": "Axi K7 Relic",
+                "name": "Axi K10 Relic",
                 "count": 1,
                 "chance": 0.0058
             }
@@ -2375,30 +2365,25 @@
             {
                 "name": "Augur Message",
                 "count": 1,
-                "chance": 0.0924
+                "chance": 0.0928
             },
             {
                 "name": "Kuva",
                 "count": 100,
-                "chance": 0.0882
+                "chance": 0.0886
             },
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.0546
+                "chance": 0.054900000000000004
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.0924
+                "chance": 0.0928
             },
             {
-                "name": "Lith G5 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Lith H4 Relic",
+                "name": "Lith K9 Relic",
                 "count": 1,
                 "chance": 0.0084
             },
@@ -2423,17 +2408,17 @@
                 "chance": 0.0126
             },
             {
-                "name": "Neo K4 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Neo N20 Relic",
+                "name": "Neo N21 Relic",
                 "count": 1,
                 "chance": 0.0042
             },
             {
-                "name": "Axi K6 Relic",
+                "name": "Neo G4 Relic",
+                "count": 1,
+                "chance": 0.0042
+            },
+            {
+                "name": "Axi K8 Relic",
                 "count": 1,
                 "chance": 0.0084
             },
@@ -2443,24 +2428,24 @@
                 "chance": 0.0042
             },
             {
-                "name": "Axi G7 Relic",
+                "name": "Axi K9 Relic",
                 "count": 1,
                 "chance": 0.0084
             },
             {
                 "name": "Cetus Wisp",
                 "count": 1,
-                "chance": 0.1008
+                "chance": 0.1013
             },
             {
                 "name": "Vigilante Pursuit",
                 "count": 1,
-                "chance": 0.1008
+                "chance": 0.1013
             },
             {
                 "name": "Revenant Chassis Blueprint",
                 "count": 1,
-                "chance": 0.1008
+                "chance": 0.1013
             },
             {
                 "name": "Lith N11 Relic",
@@ -2473,9 +2458,9 @@
                 "chance": 0.0042
             },
             {
-                "name": "Meso I2 Relic",
+                "name": "Meso H2 Relic",
                 "count": 1,
-                "chance": 0.0084
+                "chance": 0.0042
             },
             {
                 "name": "Meso G4 Relic",
@@ -2483,7 +2468,7 @@
                 "chance": 0.0042
             },
             {
-                "name": "Meso G3 Relic",
+                "name": "Meso H3 Relic",
                 "count": 1,
                 "chance": 0.0042
             },
@@ -2498,27 +2483,47 @@
                 "chance": 0.0084
             },
             {
-                "name": "Axi S10 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Axi S11 Relic",
+                "name": "Axi N8 Relic",
                 "count": 1,
                 "chance": 0.0042
             },
             {
-                "name": "Axi K7 Relic",
+                "name": "Axi G8 Relic",
+                "count": 1,
+                "chance": 0.0042
+            },
+            {
+                "name": "Axi K10 Relic",
                 "count": 1,
                 "chance": 0.0042
             },
             {
                 "name": "Gladiator Finesse",
                 "count": 1,
-                "chance": 0.2311
+                "chance": 0.2321
             },
             {
-                "name": "Meso P7 Relic",
+                "name": "Lith G5 Relic",
+                "count": 1,
+                "chance": 0.0042
+            },
+            {
+                "name": "Meso V7 Relic",
+                "count": 1,
+                "chance": 0.0042
+            },
+            {
+                "name": "Meso P8 Relic",
+                "count": 1,
+                "chance": 0.0042
+            },
+            {
+                "name": "Neo D5 Relic",
+                "count": 1,
+                "chance": 0.0042
+            },
+            {
+                "name": "Axi S12 Relic",
                 "count": 1,
                 "chance": 0.0042
             }
@@ -2550,9 +2555,9 @@
                 "chance": 0.0067
             },
             {
-                "name": "Meso I2 Relic",
+                "name": "Meso H2 Relic",
                 "count": 1,
-                "chance": 0.0134
+                "chance": 0.0067
             },
             {
                 "name": "Meso G4 Relic",
@@ -2560,7 +2565,7 @@
                 "chance": 0.0067
             },
             {
-                "name": "Meso G3 Relic",
+                "name": "Meso H3 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
@@ -2580,17 +2585,17 @@
                 "chance": 0.0134
             },
             {
-                "name": "Axi S10 Relic",
-                "count": 1,
-                "chance": 0.0134
-            },
-            {
-                "name": "Axi S11 Relic",
+                "name": "Axi N8 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
             {
-                "name": "Axi K7 Relic",
+                "name": "Axi G8 Relic",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Axi K10 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
@@ -2605,7 +2610,7 @@
                 "chance": 0.0067
             },
             {
-                "name": "Lith H4 Relic",
+                "name": "Lith K9 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
@@ -2615,22 +2620,32 @@
                 "chance": 0.0067
             },
             {
-                "name": "Meso P7 Relic",
+                "name": "Meso V7 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
             {
-                "name": "Neo K4 Relic",
+                "name": "Meso P8 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
             {
-                "name": "Axi G7 Relic",
+                "name": "Neo D5 Relic",
                 "count": 1,
                 "chance": 0.0067
             },
             {
-                "name": "Axi K6 Relic",
+                "name": "Axi S12 Relic",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Axi K8 Relic",
+                "count": 1,
+                "chance": 0.0067
+            },
+            {
+                "name": "Axi K9 Relic",
                 "count": 1,
                 "chance": 0.0067
             }

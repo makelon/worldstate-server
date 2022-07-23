@@ -753,6 +753,18 @@ function* getNews() {
 	expected.link = ''
 	yield [data, expected]
 
+	articleMessage.Message = '/Translations/ArticleMessage'
+	expected.text = 'Translated article message'
+	yield [data, expected]
+
+	articleMessage.Message = 'Not a translated message'
+	expected.text = 'Not a translated message'
+	yield [data, expected]
+
+	articleMessage.Message = '/Translations/UnknownMessage'
+	expected.text = '/Translations/UnknownMessage'
+	yield [data, expected]
+
 	articleMessage.LanguageCode = 'sv'
 	yield [data, []]
 

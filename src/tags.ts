@@ -4,7 +4,8 @@ export let
 	locations: WfMap,
 	nodeMissionTypes: WfMap,
 	nodeFactions: WfMap,
-	challenges: {[id: string]: WfChallengeInfo}
+	challenges: {[id: string]: WfChallengeInfo},
+	translations: WfMap
 
 export const
 	acolyteNames: WfMap = {
@@ -152,7 +153,7 @@ export const
  * @param _starchart Path to star chart JSON data
  * @param _challenges Path to challenges JSON data
  */
-export function load(_starchart: string, _challenges: string): void {
+export function load(_starchart: string, _challenges: string, _translations: string): void {
 	try {
 		const tmp = JSON.parse(readFileSync(_starchart, 'utf8'))
 		locations = tmp.locations
@@ -160,6 +161,7 @@ export function load(_starchart: string, _challenges: string): void {
 		nodeFactions = tmp.factions
 
 		challenges = JSON.parse(readFileSync(_challenges, 'utf8'))
+		translations = JSON.parse(readFileSync(_translations, 'utf8'))
 	}
 	catch(err) {
 		throw Error(`Failed to initialize tags: '${err.message}'`)

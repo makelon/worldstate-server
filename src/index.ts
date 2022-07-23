@@ -25,7 +25,7 @@ function load() {
 	log.setTimestamps(config.enableConsoleTime)
 	try {
 		loadItems('./rewardtables.json', './rewardtables-rotations.json', './itemnames.json', './itemtypes.json')
-		loadTags('./starchart.json', './challenges.json')
+		loadTags('./starchart.json', './challenges.json', './translations.json')
 		extraData.load('./extradata.json')
 	}
 	catch (err) {

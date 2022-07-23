@@ -1,6 +1,7 @@
 import { getValueDifference, patch } from '../compare'
 import { getDate, getId } from '../helpers'
 import * as log from '../log'
+import { translations } from '../tags'
 import WfReader from './reader'
 
 export default class NewsReader extends WfReader<WfNews> {
@@ -18,7 +19,9 @@ export default class NewsReader extends WfReader<WfNews> {
 			let text = ''
 			for (const message of articleInput.Messages) {
 				if (message.LanguageCode === 'en') {
-					text = message.Message
+					text = message.Message[0] === '/'
+						? translations[message.Message] || message.Message
+						: message.Message
 					break
 				}
 			}

@@ -76,7 +76,7 @@ export default class Worldstate {
 	private defer: { bounties: BountyEntry[] } = {
 		bounties: [],
 	}
-	private kuvalog = new Kuvalog(this.platform, this.instanceDelay)
+	private kuvalog = Kuvalog.getInstance()
 	private readers: Readonly<{ [T in WfRecordKey]: WfReader<WfRecordTypes[T]> }> = {
 		'acolytes': new AcolyteReader(this.platform),
 		'alerts': new AlertReader(this.platform),

@@ -20,12 +20,20 @@ export default class Kuvalog {
 	private lastUpdate = 0
 	private nextUpdate = 0
 	private ee = new EventEmitter()
+	private static instance?: Kuvalog
 
-	constructor(
+	private constructor(
 		private platform: WfPlatform,
 		private instanceDelay: number,
 	) {
 		log.notice('Creating kuvalog instance %s', platform)
+	}
+
+	static getInstance(): Kuvalog {
+		if (!Kuvalog.instance) {
+			Kuvalog.instance = new Kuvalog('pc', 0)
+		}
+		return Kuvalog.instance
 	}
 
 	/**

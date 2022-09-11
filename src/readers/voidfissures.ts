@@ -32,6 +32,7 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 						faction: getNodeFaction(fissureInput.Node),
 						missionType: getNodeMissionType(fissureInput.Node),
 						tier: getVoidTier(fissureInput.Modifier),
+						hard: fissureInput.Hard === true,
 					}
 				if (fissureDb) {
 					const diff = this.getDifference(fissureDb, fissureProcessed)
@@ -55,7 +56,7 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 		return getValueDifference(
 			first,
 			second,
-			['start', 'end', 'location', 'faction', 'missionType', 'tier'],
+			['start', 'end', 'location', 'faction', 'missionType', 'tier', 'hard'],
 		)
 	}
 

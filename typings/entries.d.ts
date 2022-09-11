@@ -167,6 +167,7 @@ interface UpgradeEntry extends BaseEntry {
 interface VoidFissureEntry extends BaseEntry, DateStartEntry, DateEndEntry {
 	Node: string
 	Modifier: string
+	Hard?: true
 }
 
 interface VoidStormEntry extends BaseEntry, DateStartEntry, DateEndEntry {

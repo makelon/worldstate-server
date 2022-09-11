@@ -876,12 +876,17 @@ function* getVoidFissures() {
 			faction: factions[0].name,
 			missionType: missionTypes[0].name,
 			tier: 'Lith',
+			hard: false,
 		},
 		data = { ActiveMissions: [fissure] }
 	yield [data, expected]
 
 	fissure.Expiry.$date.$numberLong += 500000
 	expected.end += 500
+	yield [data, expected]
+
+	fissure.Hard = true
+	expected.hard = true
 	yield [data, expected]
 
 	yield [{}, []]

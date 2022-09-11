@@ -178,9 +178,10 @@ interface WfVoidFissure {
 	faction: string
 	missionType: string
 	tier: string
+	hard: boolean
 }
 
-type WfVoidStorm = WfVoidFissure
+type WfVoidStorm = Omit<WfVoidFissure, 'hard'>
 
 interface WfUpgrade {
 	id: string

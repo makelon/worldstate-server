@@ -7,9 +7,11 @@ import config from './config'
 import * as log from './log'
 import { appendFile, renameFile, removeFile, writeFile } from './promisify'
 
-type WfRecordPatchContext<T extends WfRecordType> = {
+type WfSubRecord<T extends WfRecordType> = {
 	[K in keyof T]: T[K] extends string | number | boolean | undefined | null ? never : K
-}[keyof T]
+}
+
+type WfRecordPatchContext<T extends WfRecordType> = WfSubRecord<T>[keyof T]
 
 type WfRecordPatch<T extends WfRecordType> = Partial<T> & { __context?: WfRecordPatchContext<T> }
 
@@ -227,7 +229,7 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 			if (!record[context]) {
 				record[context] = Object.create({})
 			}
-			Object.assign(record[context], patch)
+			Object.assign(record[context] as WfSubRecord<T>, patch)
 		}
 		else {
 			Object.assign(record, patch)

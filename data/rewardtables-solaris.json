@@ -86,7 +86,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith T6 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.0833
             }
@@ -179,7 +179,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith C8 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.0833
             }
@@ -272,7 +272,7 @@
                 "chance": 0.3056
             },
             {
-                "name": "Lith T6 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.0833
             }
@@ -310,64 +310,64 @@
             {
                 "name": "Mytocardia Spore",
                 "count": 15,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Oxium",
                 "count": 200,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Shelter Debt-Bond",
                 "count": 2,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.0741
+                "chance": 0.0784
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.0741
+                "chance": 0.0784
             },
             {
-                "name": "Lith C8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.0588
             }
         ],
         [
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             },
             {
-                "name": "Lith C8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Synth Charge",
                 "count": 1,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             }
         ]
     ],
@@ -403,64 +403,64 @@
             {
                 "name": "Thermal Sludge",
                 "count": 15,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Cryotic",
                 "count": 200,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Shelter Debt-Bond",
                 "count": 2,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.0741
+                "chance": 0.0784
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.0741
+                "chance": 0.0784
             },
             {
-                "name": "Lith T6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.0588
             }
         ],
         [
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             },
             {
-                "name": "Lith T6 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Mecha Overdrive",
                 "count": 1,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             }
         ]
     ],
@@ -496,64 +496,64 @@
             {
                 "name": "Gorgaricus Spore",
                 "count": 15,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Nano Spores",
                 "count": 200,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Shelter Debt-Bond",
                 "count": 2,
-                "chance": 0.1481
+                "chance": 0.15689999999999998
             },
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.0741
+                "chance": 0.0784
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.0741
+                "chance": 0.0784
             },
             {
-                "name": "Lith C8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.0588
             }
         ],
         [
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             },
             {
-                "name": "Lith C8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.3333
+                "chance": 0.2
             },
             {
                 "name": "Tek Assault",
                 "count": 1,
-                "chance": 0.22219999999999998
+                "chance": 0.2667
             }
         ]
     ],
@@ -607,9 +607,14 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.125
+            },
+            {
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.125
             }
         ],
         [
@@ -619,9 +624,14 @@
                 "chance": 0.25
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.25
+            },
+            {
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.25
             },
             {
                 "name": "Synth Deconstruct",
@@ -680,9 +690,14 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.125
+            },
+            {
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.125
             }
         ],
         [
@@ -692,9 +707,14 @@
                 "chance": 0.25
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.25
+            },
+            {
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.25
             },
             {
                 "name": "Mecha Recharge",
@@ -753,9 +773,14 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.125
+            },
+            {
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.125
             }
         ],
         [
@@ -765,9 +790,14 @@
                 "chance": 0.25
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Credits Cache",
+                "count": 3000,
+                "chance": 0.25
+            },
+            {
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.25
             },
             {
                 "name": "Tek Enhance",
@@ -803,86 +833,86 @@
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.1975
+                "chance": 0.20670000000000002
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1975
+                "chance": 0.20670000000000002
             },
             {
                 "name": "Fieldron",
                 "count": 2,
-                "chance": 0.22219999999999998
+                "chance": 0.23260000000000003
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1481
+                "chance": 0.155
             },
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1852
+                "chance": 0.14730000000000001
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.049400000000000006
+                "chance": 0.051699999999999996
             }
         ],
         [
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.17579999999999998
+                "chance": 0.18309999999999998
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.17579999999999998
+                "chance": 0.18309999999999998
             },
             {
                 "name": "Fieldron",
                 "count": 2,
-                "chance": 0.1978
+                "chance": 0.20600000000000002
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1319
+                "chance": 0.1373
             },
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1648
+                "chance": 0.1304
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.044000000000000004
+                "chance": 0.0458
             },
             {
                 "name": "Synth Fiber",
                 "count": 1,
-                "chance": 0.1099
+                "chance": 0.1144
             }
         ],
         [
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.5172
+                "chance": 0.44880000000000003
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.1379
+                "chance": 0.1575
             },
             {
                 "name": "Synth Fiber",
                 "count": 1,
-                "chance": 0.3448
+                "chance": 0.3937
             }
         ]
     ],
@@ -913,86 +943,86 @@
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.1975
+                "chance": 0.20670000000000002
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1975
+                "chance": 0.20670000000000002
             },
             {
                 "name": "Detonite Injector",
                 "count": 2,
-                "chance": 0.22219999999999998
+                "chance": 0.23260000000000003
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1481
+                "chance": 0.155
             },
             {
-                "name": "Neo Z8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1852
+                "chance": 0.14730000000000001
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.049400000000000006
+                "chance": 0.051699999999999996
             }
         ],
         [
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.17579999999999998
+                "chance": 0.18309999999999998
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.17579999999999998
+                "chance": 0.18309999999999998
             },
             {
                 "name": "Detonite Injector",
                 "count": 2,
-                "chance": 0.1978
+                "chance": 0.20600000000000002
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1319
+                "chance": 0.1373
             },
             {
-                "name": "Neo Z8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1648
+                "chance": 0.1304
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.044000000000000004
+                "chance": 0.0458
             },
             {
                 "name": "Mecha Empowered",
                 "count": 1,
-                "chance": 0.1099
+                "chance": 0.1144
             }
         ],
         [
             {
-                "name": "Neo Z8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.5172
+                "chance": 0.44880000000000003
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.1379
+                "chance": 0.1575
             },
             {
                 "name": "Mecha Empowered",
                 "count": 1,
-                "chance": 0.3448
+                "chance": 0.3937
             }
         ]
     ],
@@ -1023,86 +1053,86 @@
             {
                 "name": "Kuva",
                 "count": 200,
-                "chance": 0.1975
+                "chance": 0.20670000000000002
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.1975
+                "chance": 0.20670000000000002
             },
             {
                 "name": "Mutagen Mass",
                 "count": 2,
-                "chance": 0.22219999999999998
+                "chance": 0.23260000000000003
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1481
+                "chance": 0.155
             },
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1852
+                "chance": 0.14730000000000001
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.049400000000000006
+                "chance": 0.051699999999999996
             }
         ],
         [
             {
                 "name": "Kuva",
                 "count": 200,
-                "chance": 0.17579999999999998
+                "chance": 0.18309999999999998
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.17579999999999998
+                "chance": 0.18309999999999998
             },
             {
                 "name": "Mutagen Mass",
                 "count": 2,
-                "chance": 0.1978
+                "chance": 0.20600000000000002
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1319
+                "chance": 0.1373
             },
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1648
+                "chance": 0.1304
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.044000000000000004
+                "chance": 0.0458
             },
             {
                 "name": "Tek Gravity",
                 "count": 1,
-                "chance": 0.1099
+                "chance": 0.1144
             }
         ],
         [
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.5172
+                "chance": 0.44880000000000003
             },
             {
                 "name": "Tellurium",
                 "count": 1,
-                "chance": 0.1379
+                "chance": 0.1575
             },
             {
                 "name": "Tek Gravity",
                 "count": 1,
-                "chance": 0.3448
+                "chance": 0.3937
             }
         ]
     ],
@@ -1141,7 +1171,7 @@
                 "chance": 0.16670000000000001
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.25
             },
@@ -1168,7 +1198,7 @@
                 "chance": 0.1429
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2143
             },
@@ -1185,7 +1215,7 @@
         ],
         [
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.5
             },
@@ -1236,7 +1266,7 @@
                 "chance": 0.16670000000000001
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.25
             },
@@ -1263,7 +1293,7 @@
                 "chance": 0.1429
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2143
             },
@@ -1280,7 +1310,7 @@
         ],
         [
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.5
             },
@@ -1341,7 +1371,7 @@
                 "chance": 0.16670000000000001
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.25
             },
@@ -1373,7 +1403,7 @@
                 "chance": 0.1429
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.2143
             },
@@ -1390,7 +1420,7 @@
         ],
         [
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
                 "chance": 0.5
             },

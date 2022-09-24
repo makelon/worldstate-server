@@ -4,47 +4,42 @@
             {
                 "name": "Credits",
                 "count": 15000,
-                "chance": 0.16
+                "chance": 0.1739
             },
             {
                 "name": "Endo",
                 "count": 500,
-                "chance": 0.16
+                "chance": 0.1739
             },
             {
                 "name": "Voidplume Down",
                 "count": 1,
-                "chance": 0.12
+                "chance": 0.1304
             },
             {
                 "name": "Credits",
                 "count": 30000,
-                "chance": 0.12
+                "chance": 0.1304
             },
             {
                 "name": "Endo",
                 "count": 750,
-                "chance": 0.12
+                "chance": 0.1304
             },
             {
-                "name": "Lith C8 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.08
-            },
-            {
-                "name": "Lith T6 Relic",
-                "count": 1,
-                "chance": 0.08
+                "chance": 0.087
             },
             {
                 "name": "Gyre Neuroptics Blueprint",
                 "count": 1,
-                "chance": 0.12
+                "chance": 0.1304
             },
             {
                 "name": "Entrati Lanthorn",
                 "count": 1,
-                "chance": 0.04
+                "chance": 0.0435
             }
         ]
     ],
@@ -53,52 +48,42 @@
             {
                 "name": "Endo",
                 "count": 1000,
-                "chance": 0.15
+                "chance": 0.2034
             },
             {
                 "name": "Ayatan Amber Star",
                 "count": 1,
-                "chance": 0.15
-            },
-            {
-                "name": "Lith C8 Relic",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Lith T6 Relic",
-                "count": 1,
-                "chance": 0.125
+                "chance": 0.2034
             },
             {
                 "name": "Voidplume Vane",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.1356
             },
             {
                 "name": "Endo",
                 "count": 1500,
-                "chance": 0.1
+                "chance": 0.1356
             },
             {
                 "name": "Voidgel Orb",
                 "count": 5,
-                "chance": 0.05
+                "chance": 0.0678
             },
             {
-                "name": "Meso R4 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.075
+                "chance": 0.08470000000000001
             },
             {
                 "name": "Gyre Chassis Blueprint",
                 "count": 1,
-                "chance": 0.1
+                "chance": 0.1356
             },
             {
                 "name": "Entrati Lanthorn",
                 "count": 3,
-                "chance": 0.025
+                "chance": 0.0339
             }
         ]
     ],
@@ -107,52 +92,47 @@
             {
                 "name": "Endo",
                 "count": 2000,
-                "chance": 0.12960000000000002
+                "chance": 0.1389
             },
             {
                 "name": "Greater Zenurik Lens",
                 "count": 1,
-                "chance": 0.12960000000000002
+                "chance": 0.1389
             },
             {
                 "name": "Greater Madurai Lens",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.11900000000000001
             },
             {
                 "name": "Voidplume Crest",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.11900000000000001
             },
             {
                 "name": "Endo",
                 "count": 3000,
-                "chance": 0.11109999999999999
+                "chance": 0.11900000000000001
             },
             {
                 "name": "Entrati Lanthorn",
                 "count": 3,
-                "chance": 0.0741
+                "chance": 0.0794
             },
             {
-                "name": "Neo K3 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.0741
-            },
-            {
-                "name": "Neo Z8 Relic",
-                "count": 1,
-                "chance": 0.0741
+                "chance": 0.0873
             },
             {
                 "name": "Gyre Systems Blueprint",
                 "count": 1,
-                "chance": 0.11109999999999999
+                "chance": 0.11900000000000001
             },
             {
                 "name": "Alternox Blueprint",
                 "count": 1,
-                "chance": 0.0741
+                "chance": 0.0794
             }
         ]
     ],
@@ -161,47 +141,47 @@
             {
                 "name": "Endo",
                 "count": 3000,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Greater Unairu Lens",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Greater Vazarin Lens",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Greater Naramon Lens",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Endo",
                 "count": 4000,
-                "chance": 0.1
+                "chance": 0.0974
             },
             {
                 "name": "Thrax Plasm",
                 "count": 15,
-                "chance": 0.1
+                "chance": 0.0649
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.0667
+                "chance": 0.1234
             },
             {
                 "name": "Gyre Blueprint",
                 "count": 1,
-                "chance": 0.1333
+                "chance": 0.12990000000000002
             },
             {
                 "name": "Hespar Blueprint",
                 "count": 1,
-                "chance": 0.1333
+                "chance": 0.12990000000000002
             }
         ]
     ],
@@ -210,47 +190,47 @@
             {
                 "name": "Endo",
                 "count": 3000,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Greater Unairu Lens",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Greater Vazarin Lens",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Greater Naramon Lens",
                 "count": 1,
-                "chance": 0.1167
+                "chance": 0.11359999999999999
             },
             {
                 "name": "Endo",
                 "count": 4000,
-                "chance": 0.1
+                "chance": 0.0974
             },
             {
                 "name": "Thrax Plasm",
                 "count": 15,
-                "chance": 0.1
+                "chance": 0.0649
             },
             {
-                "name": "Axi G5 Relic",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.0667
+                "chance": 0.1234
             },
             {
                 "name": "Gyre Blueprint",
                 "count": 1,
-                "chance": 0.1333
+                "chance": 0.12990000000000002
             },
             {
                 "name": "Aeolak Blueprint",
                 "count": 1,
-                "chance": 0.1333
+                "chance": 0.12990000000000002
             }
         ]
     ]

@@ -327,6 +327,10 @@
         "description": "Destroy a Crewship with forward artillery",
         "xpAmount": 4500
     },
+    "SeasonWeeklyEternalGuardian": {
+        "description": "Complete 3 Void Armageddon missions",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyFeedHelminth": {
         "description": "Feed the Helminth any resource",
         "xpAmount": 4500

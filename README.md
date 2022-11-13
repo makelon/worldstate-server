@@ -278,11 +278,16 @@ API documentation is hosted at [https://docs.tenno.tools/api/](https://docs.tenn
     			"location": "Planet/Node",
     			"faction": "Faction",
     			"missionType": "Mission type",
-    			"tier": "Void tier"
+    			"tier": "Void tier",
+    			"hard": true | false
     		},
     		<...>
     	]
     }
+
+    **Notes**
+
+    `hard` will be `true` for Steel Path missions.
     ```
 
 * `fomorians` - Balor Fomorian and Razorback attacks.
@@ -430,27 +435,6 @@ API documentation is hosted at [https://docs.tenno.tools/api/](https://docs.tenn
 
     `eventStart`, `eventEnd` and `eventUrl` are present if the event takes place on an external web site.
 
-* `sentient-anomalies` - Railjack nodes with a sentient anomaly.
-
-    ```
-    "sentient-anomalies": {
-    	"time": 1512345678,
-    	"data": [
-    		{
-    			"id": "510",
-    			"start": 1512345678,
-    			"end": 1523456789,
-    			"location": "Planet/Node"
-    		},
-    		<...>
-    	]
-    }
-    ```
-
-    **Notes**
-
-    `end` will be absent if the mission is active.
-
 * `sorties` - Sorties.
 
     ```
@@ -502,6 +486,26 @@ API documentation is hosted at [https://docs.tenno.tools/api/](https://docs.tenn
     **Notes**
 
     `opType` determines the mathematical operation by which `value` modifies the game's calculations.
+
+* `voidstorms` - Void storms.
+
+    ```
+    "voidstorms": {
+    	"time": 1512345678,
+    	"data": [
+    		{
+    			"id": "59abcdef0123456789abcdef",
+    			"start": 1512345678,
+    			"end": 1523456789,
+    			"location": "Planet/Node",
+    			"faction": "Faction",
+    			"missionType": "Mission type",
+    			"tier": "Void tier"
+    		},
+    		<...>
+    	]
+    }
+    ```
 
 * `voidtraders` - Void traders.
 

@@ -513,6 +513,34 @@ components:
           type: string
         tier:
           type: string
+        hard:
+          type: boolean
+      required:
+      - id
+      - start
+      - end
+      - location
+      - faction
+      - missionType
+      - tier
+      - hard
+    VoidStorm:
+      type: object
+      properties:
+        id:
+          type: string
+        start:
+          type: integer
+        end:
+          type: integer
+        location:
+          type: string
+        faction:
+          type: string
+        missionType:
+          type: string
+        tier:
+          type: string
       required:
       - id
       - start
@@ -1264,46 +1292,6 @@ paths:
                     eventStart: 1602555078
                     eventEnd: 1602466189
                     eventUrl: 'http://www.twitch.example/warframe'
-  /sentient-anomalies:
-    get:
-      summary: Information about the currently active Sentient Outpost mission
-      operationId: getSentientAnomalies
-      tags:
-      - worldstate
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                allOf:
-                - $ref: '#/components/schemas/BaseReponse'
-                - type: object
-                  properties:
-                    sentient-anomalies:
-                      type: object
-                      properties:
-                        data:
-                          type: array
-                          items:
-                            $ref: '#/components/schemas/SentientOutpost'
-                        time:
-                          type: integer
-                          description: Timestamp of the last sentient outpost data update
-                      required:
-                      - data
-                      - time
-                  required:
-                  - sentient-anomalies
-              example:
-                time: 1602429513
-                rewardtables: {}
-                sentient-anomalies:
-                  time: 1602428963
-                  data:
-                  - id: '552'
-                    start: 1602428903
-                    location: Veil/Rya
   /sorties:
     get:
       summary: List of currently active sortie missions
@@ -1394,6 +1382,50 @@ paths:
                     type: Affinity
                     opType: MULTIPLY
                     value: 2
+  /voidstorms:
+    get:
+      summary: List of currently active void storm missions
+      operationId: getVoidStorms
+      tags:
+      - worldstate
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/BaseReponse'
+                - type: object
+                  properties:
+                    voidstorms:
+                      type: object
+                      properties:
+                        data:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/VoidStorm'
+                        time:
+                          type: integer
+                          description: Timestamp of the last void storm data update
+                      required:
+                      - data
+                      - time
+                  required:
+                  - voidstorms
+              example:
+                time: 1602429513
+                rewardtables: {}
+                voidstorms:
+                  time: 1602429084
+                  data:
+                  - id: 5f8314cdb7aceaf08952772b
+                    start: 1602426061
+                    end: 1602432830
+                    location: Pluto/Peregrine Axis
+                    faction: Corpus
+                    missionType: Orphix
+                    tier: Axi
   /voidtraders:
     get:
       summary: List of currently active and planned void trader visits

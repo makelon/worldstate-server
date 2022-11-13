@@ -106,18 +106,6 @@ const items = [
 			name: 'Location2',
 		},
 	],
-	nodesRailjack = [
-		{
-			id: 'CrewBattleNode1',
-			nodeId: 1,
-			name: 'RailjackLocation1',
-		},
-		{
-			id: 'CrewBattleNode2',
-			nodeId: 2,
-			name: 'RailjackLocation2',
-		},
-	],
 	timeNowLong = Date.now(),
 	timeNowShort = Math.floor(timeNowLong / 1000),
 	timeStartLong = timeNowLong - 300e3,
@@ -771,39 +759,6 @@ function* getNews() {
 	yield [{}, []]
 }
 
-function* getSentientAnomalies() {
-	let timeLocalShort = timeNowShort
-	const mission = {
-			sfn: nodesRailjack[0].nodeId,
-		},
-		expected = {
-			id: mission.sfn.toString(),
-			start: timeLocalShort,
-			location: nodesRailjack[0].name,
-		}
-	yield [mission, expected]
-
-	timeLocalShort += timeStep
-	expected.end = timeLocalShort
-	yield [{}, expected]
-
-	timeLocalShort += timeStep
-	expected.start = timeLocalShort
-	delete expected.end
-	yield [mission, expected]
-
-	timeLocalShort += timeStep
-	mission.sfn = nodesRailjack[1].nodeId
-	expected.id = mission.sfn.toString()
-	expected.start = timeLocalShort
-	expected.location = nodesRailjack[1].name
-	yield [mission, expected]
-
-	timeLocalShort += timeStep
-	expected.end = timeLocalShort
-	yield [{}, expected]
-}
-
 function* getSorties() {
 	const sortie = {
 			_id: { $oid: entryId },
@@ -983,7 +938,6 @@ module.exports = {
 	getInvasions,
 	getKuvalog,
 	getNews,
-	getSentientAnomalies,
 	getSorties,
 	getUpgrades,
 	getVoidFissures,

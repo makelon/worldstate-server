@@ -153,13 +153,6 @@ interface WfSortieMission {
 	location: string
 }
 
-interface WfSentientAnomaly {
-	id: string
-	start: number
-	end?: number
-	location: string
-}
-
 interface WfSortie {
 	id: string
 	start: number

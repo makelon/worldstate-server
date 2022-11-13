@@ -54,7 +54,6 @@ type WfRecordTypes = {
 	'invasions': WfInvasion
 	'kuvasiphons': WfKuvaSiphon
 	'news': WfNews
-	'sentient-anomalies': WfSentientAnomaly
 	'sorties': WfSortie
 	'upgrades': WfUpgrade
 	'voidstorms': WfVoidStorm

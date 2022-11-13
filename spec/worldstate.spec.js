@@ -7,10 +7,10 @@ const fixtures = require('./fixtures/data')
 describe('Worldstate', () => {
 	const ws = new Worldstate(new Database('pc'), 'pc')
 
-	function runStandardTests(dataKey, testCaseGenerator, worldstateReader, includeExpireTest, dataTransformer) {
+	function runStandardTests(dataKey, testCaseGenerator, worldstateReader, includeExpireTest) {
 		let timestamp = fixtures.timeNowShort
 		for (const [data, expected] of testCaseGenerator()) {
-			setWorldstateData(dataTransformer ? dataTransformer(data) : data, timestamp)
+			setWorldstateData(data, timestamp)
 			worldstateReader.call(ws)
 			const result = JSON.parse(ws.get([dataKey]))
 			expect(result[dataKey].data).toEqual(Array.isArray(expected) ? expected : [expected])
@@ -107,16 +107,6 @@ describe('Worldstate', () => {
 
 	it('should read news', () => {
 		runStandardTests('news', fixtures.getNews, ws.readNews)
-	})
-
-	it('should read sentient anomalies', () => {
-		runStandardTests(
-			'sentient-anomalies',
-			fixtures.getSentientAnomalies,
-			ws.readSentientAnomalies,
-			false,
-			data => ({ Tmp: JSON.stringify(data) }),
-		)
 	})
 
 	it('should read sorties', () => {

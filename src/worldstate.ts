@@ -20,7 +20,6 @@ import FomorianReader from './readers/fomorians'
 import InvasionReader from './readers/invasions'
 import KuvaSiphonReader from './readers/kuvasiphons'
 import NewsReader from './readers/news'
-import SentientAnomalyReader from './readers/sentient-anomalies'
 import SortieReader from './readers/sorties'
 import UpgradeReader from './readers/upgrades'
 import VoidFissureReader from './readers/voidfissures'
@@ -93,7 +92,6 @@ export default class Worldstate {
 		'invasions': new InvasionReader(this.platform),
 		'kuvasiphons': new KuvaSiphonReader(this.platform),
 		'news': new NewsReader(this.platform),
-		'sentient-anomalies': new SentientAnomalyReader(this.platform),
 		'sorties': new SortieReader(this.platform),
 		'upgrades': new UpgradeReader(this.platform),
 		'voidstorms': new VoidStormReader(this.platform),
@@ -303,7 +301,6 @@ export default class Worldstate {
 			this.readGoals,
 			this.readInvasions,
 			this.readNews,
-			this.readSentientAnomalies,
 			this.readSorties,
 			this.readSyndicateMissions,
 			this.readUpgrades,
@@ -451,15 +448,6 @@ export default class Worldstate {
 		}
 		catch (err) {
 			log.error('Error reading news for %s: %s', this.platform, err.message)
-		}
-	}
-
-	private readSentientAnomalies(): void {
-		try {
-			this.readers['sentient-anomalies'].read(this.ws?.Tmp, this.now)
-		}
-		catch (err) {
-			log.error('Error reading sentient anomalies for %s: %s', this.platform, err.message)
 		}
 	}
 

@@ -40,7 +40,6 @@ const defaults: WfConfigI = {
 		'invasions',
 		'kuvasiphons',
 		'news',
-		'sentient-anomalies',
 		'sorties',
 		'upgrades',
 		'voidstorms',

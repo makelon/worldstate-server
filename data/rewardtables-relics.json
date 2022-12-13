@@ -203,6 +203,40 @@
             }
         ]
     ],
+    "Axi A15 Relic": [
+        [
+            {
+                "name": "Aksomati Prime Link",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Oberon Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ivara Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Baza Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi A2 Relic": [
         [
             {
@@ -2991,6 +3025,40 @@
             }
         ]
     ],
+    "Axi S13 Relic": [
+        [
+            {
+                "name": "Sybaris Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Baza Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ivara Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Aksomati Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Axi S2 Relic": [
         [
             {
@@ -4448,6 +4516,40 @@
             },
             {
                 "name": "Aksomati Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith B9 Relic": [
+        [
+            {
+                "name": "Baza Prime Stock",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Oberon Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Barrel",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -10228,6 +10330,40 @@
             }
         ]
     ],
+    "Meso O6 Relic": [
+        [
+            {
+                "name": "Oberon Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Silva & Aegis Prime Blade",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Lex Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Ivara Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Sybaris Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Braton Prime Barrel",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Meso P1 Relic": [
         [
             {
@@ -12812,6 +12948,40 @@
             }
         ]
     ],
+    "Neo I3 Relic": [
+        [
+            {
+                "name": "Ivara Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Sybaris Prime Receiver",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Baza Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Silva & Aegis Prime Hilt",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Aksomati Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
     "Neo K1 Relic": [
         [
             {
@@ -14337,6 +14507,40 @@
             },
             {
                 "name": "Astilla Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo S16 Relic": [
+        [
+            {
+                "name": "Silva & Aegis Prime Guard",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Oberon Prime Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Aksomati Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Braton Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

@@ -197,7 +197,7 @@
     },
     "SeasonDailyRailjackHijackDestroyThree": {
         "description": "While piloting a hijacked crewship, destroy 3 enemy fighters",
-        "xpAmount": 4500
+        "xpAmount": 1000
     },
     "SeasonDailyRequiemTotem": {
         "description": "Activate a Requiem Obelisk on Deimos",

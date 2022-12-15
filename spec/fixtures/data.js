@@ -887,6 +887,33 @@ function* getVoidFissures() {
 	yield [{}, []]
 }
 
+function* getVoidStorms() {
+	const storm = {
+			_id: { $oid: entryId },
+			Activation: { $date: { $numberLong: timeStartLong } },
+			Expiry: { $date: { $numberLong: timeEndLong } },
+			Node: nodes[0].id,
+			ActiveMissionTier: 'VoidT1',
+		},
+		expected = {
+			id: entryId,
+			start: timeStartShort,
+			end: timeEndShort,
+			location: nodes[0].name,
+			faction: factions[0].name,
+			missionType: missionTypes[0].name,
+			tier: 'Lith',
+		},
+		data = { VoidStorms: [storm] }
+	yield [data, expected]
+
+	storm.Expiry.$date.$numberLong += 500000
+	expected.end += 500
+	yield [data, expected]
+
+	yield [{}, []]
+}
+
 function* getVoidTraders() {
 	const voidTrader = {
 			_id: { $oid: entryId },
@@ -955,5 +982,6 @@ module.exports = {
 	getSorties,
 	getUpgrades,
 	getVoidFissures,
+	getVoidStorms,
 	getVoidTraders,
 }

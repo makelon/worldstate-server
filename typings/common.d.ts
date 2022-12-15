@@ -57,6 +57,7 @@ type WfRecordTypes = {
 	'sentient-anomalies': WfSentientAnomaly
 	'sorties': WfSortie
 	'upgrades': WfUpgrade
+	'voidstorms': WfVoidStorm
 	'voidtraders': WfVoidTrader
 }
 

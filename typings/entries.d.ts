@@ -169,6 +169,11 @@ interface VoidFissureEntry extends BaseEntry, DateStartEntry, DateEndEntry {
 	Modifier: string
 }
 
+interface VoidStormEntry extends BaseEntry, DateStartEntry, DateEndEntry {
+	ActiveMissionTier: string
+	Node: string
+}
+
 interface VoidTraderEntry extends BaseEntry, DateStartEntry, DateEndEntry {
 	Character: string
 	Node: string

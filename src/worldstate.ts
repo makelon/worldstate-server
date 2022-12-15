@@ -24,6 +24,7 @@ import SentientAnomalyReader from './readers/sentient-anomalies'
 import SortieReader from './readers/sorties'
 import UpgradeReader from './readers/upgrades'
 import VoidFissureReader from './readers/voidfissures'
+import VoidStormReader from './readers/voidstorms'
 import VoidTraderReader from './readers/voidtraders'
 import WfReader from './readers/reader'
 
@@ -43,6 +44,7 @@ interface WorldstateStruct {
 	SyndicateMissions: BountyEntry[]
 	GlobalUpgrades: UpgradeEntry[]
 	ActiveMissions: VoidFissureEntry[]
+	VoidStorms: VoidStormEntry[]
 	VoidTraders: VoidTraderEntry[]
 }
 
@@ -94,6 +96,7 @@ export default class Worldstate {
 		'sentient-anomalies': new SentientAnomalyReader(this.platform),
 		'sorties': new SortieReader(this.platform),
 		'upgrades': new UpgradeReader(this.platform),
+		'voidstorms': new VoidStormReader(this.platform),
 		'voidtraders': new VoidTraderReader(this.platform),
 	}
 
@@ -305,6 +308,7 @@ export default class Worldstate {
 			this.readSyndicateMissions,
 			this.readUpgrades,
 			this.readVoidFissures,
+			this.readVoidStorms,
 			this.readVoidTraders,
 			this.flushDb,
 		).catch(err => { log.error('Error reading worldstate: %s', err.message) })
@@ -519,6 +523,19 @@ export default class Worldstate {
 		}
 		catch (err) {
 			log.error('Error reading void fissures for %s: %s', this.platform, err.message)
+		}
+	}
+
+	private readVoidStorms(): void {
+		let voidstorms = this.ws?.VoidStorms
+		if (!Array.isArray(voidstorms)) {
+			voidstorms = []
+		}
+		try {
+			this.readers['voidstorms'].read(voidstorms, this.now)
+		}
+		catch (err) {
+			log.error('Error reading void storms for %s: %s', this.platform, err.message)
 		}
 	}
 

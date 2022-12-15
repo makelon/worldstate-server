@@ -43,6 +43,7 @@ const defaults: WfConfigI = {
 		'sentient-anomalies',
 		'sorties',
 		'upgrades',
+		'voidstorms',
 		'voidtraders',
 	],
 	wsUrls: { // Worldstate endpoints

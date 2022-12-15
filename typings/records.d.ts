@@ -180,6 +180,8 @@ interface WfVoidFissure {
 	tier: string
 }
 
+type WfVoidStorm = WfVoidFissure
+
 interface WfUpgrade {
 	id: string
 	start: number

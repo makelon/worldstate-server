@@ -131,6 +131,10 @@ describe('Worldstate', () => {
 		runStandardTests('fissures', fixtures.getVoidFissures, ws.readVoidFissures, true)
 	})
 
+	it('should read void storms', () => {
+		runStandardTests('voidstorms', fixtures.getVoidStorms, ws.readVoidStorms, true)
+	})
+
 	it('should read void traders', () => {
 		runStandardTests('voidtraders', fixtures.getVoidTraders, ws.readVoidTraders, true)
 	})

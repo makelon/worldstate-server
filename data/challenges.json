@@ -451,6 +451,10 @@
         "description": "Collect 20 different type of resources",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardCompleteArchonHunt": {
+        "description": "Complete an Archon Hunt",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardCompleteNightmareMissions": {
         "description": "Complete 10 nightmare missions",
         "xpAmount": 7000

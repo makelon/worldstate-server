@@ -5,7 +5,8 @@ const Worldstate = require('../out/worldstate').default
 const fixtures = require('./fixtures/data')
 
 describe('Worldstate', () => {
-	const ws = new Worldstate(new Database('pc'), 'pc')
+	const db = new Database('pc')
+	const ws = new Worldstate(db, 'pc')
 
 	function runStandardTests(dataKey, testCaseGenerator, worldstateReader, includeExpireTest) {
 		let timestamp = fixtures.timeNowShort
@@ -36,7 +37,8 @@ describe('Worldstate', () => {
 		ws.now = timestamp
 	}
 
-	beforeAll(() => {
+	beforeAll(done => {
+		db.ee.once('load', done)
 		ws.start()
 	})
 

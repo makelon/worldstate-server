@@ -1688,6 +1688,63 @@
         ],
         [
             {
+                "name": "Amar's Anguish",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.1273
+            },
+            {
+                "name": "Caliban Systems Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Boreal's Hatred",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 2,
+                "chance": 0.1273
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.1273
+            },
+            {
+                "name": "Nira's Contempt",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Verdilac Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.1273
+            }
+        ],
+        [
+            {
                 "name": "Caliban Systems Blueprint",
                 "count": 1,
                 "chance": 0.075
@@ -1786,6 +1843,63 @@
         ],
         [
             {
+                "name": "Boreal's Anguish",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.1273
+            },
+            {
+                "name": "Caliban Chassis Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Nira's Hatred",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 2,
+                "chance": 0.1273
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.1273
+            },
+            {
+                "name": "Amar's Contempt",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Nepheri Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.1273
+            }
+        ],
+        [
+            {
                 "name": "Caliban Chassis Blueprint",
                 "count": 1,
                 "chance": 0.075
@@ -1880,6 +1994,63 @@
                 "name": "Endo",
                 "count": 900,
                 "chance": 0.1892
+            }
+        ],
+        [
+            {
+                "name": "Nira's Anguish",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.1273
+            },
+            {
+                "name": "Caliban Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Amar's Hatred",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 2,
+                "chance": 0.1273
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.1273
+            },
+            {
+                "name": "Boreal's Contempt",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Korumm Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.1273
             }
         ],
         [
@@ -2364,188 +2535,6 @@
                 "name": "Axi N10 Relic",
                 "count": 1,
                 "chance": 0.0058
-            }
-        ],
-        [
-            {
-                "name": "Augur Message",
-                "count": 1,
-                "chance": 0.0928
-            },
-            {
-                "name": "Kuva",
-                "count": 100,
-                "chance": 0.0886
-            },
-            {
-                "name": "Naramon Lens",
-                "count": 1,
-                "chance": 0.054900000000000004
-            },
-            {
-                "name": "Endo",
-                "count": 300,
-                "chance": 0.0928
-            },
-            {
-                "name": "Lith G6 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Lith H7 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Lith S14 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso R5 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Neo A8 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Neo N21 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Neo K5 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Axi B5 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Axi S14 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Axi K9 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Cetus Wisp",
-                "count": 1,
-                "chance": 0.1013
-            },
-            {
-                "name": "Vigilante Pursuit",
-                "count": 1,
-                "chance": 0.1013
-            },
-            {
-                "name": "Revenant Chassis Blueprint",
-                "count": 1,
-                "chance": 0.1013
-            },
-            {
-                "name": "Lith H6 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Lith S12 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso A4 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso N13 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso P10 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Neo C3 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Neo C2 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Neo M4 Relic",
-                "count": 1,
-                "chance": 0.0084
-            },
-            {
-                "name": "Axi G9 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Axi G8 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Axi N10 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Gladiator Finesse",
-                "count": 1,
-                "chance": 0.2321
-            },
-            {
-                "name": "Lith B10 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Lith P6 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso K5 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso V7 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Meso K4 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Neo D5 Relic",
-                "count": 1,
-                "chance": 0.0042
-            },
-            {
-                "name": "Axi T10 Relic",
-                "count": 1,
-                "chance": 0.0042
             }
         ],
         [

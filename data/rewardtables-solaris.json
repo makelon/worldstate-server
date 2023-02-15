@@ -1493,6 +1493,63 @@
         ],
         [
             {
+                "name": "Amar's Anguish",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.1273
+            },
+            {
+                "name": "Caliban Systems Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Boreal's Hatred",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 2,
+                "chance": 0.1273
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.1273
+            },
+            {
+                "name": "Nira's Contempt",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Verdilac Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.1273
+            }
+        ],
+        [
+            {
                 "name": "Caliban Systems Blueprint",
                 "count": 1,
                 "chance": 0.075
@@ -1591,6 +1648,63 @@
         ],
         [
             {
+                "name": "Boreal's Anguish",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.1273
+            },
+            {
+                "name": "Caliban Chassis Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Nira's Hatred",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 2,
+                "chance": 0.1273
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.1273
+            },
+            {
+                "name": "Amar's Contempt",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Nepheri Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.1273
+            }
+        ],
+        [
+            {
                 "name": "Caliban Chassis Blueprint",
                 "count": 1,
                 "chance": 0.075
@@ -1685,6 +1799,63 @@
                 "name": "Endo",
                 "count": 900,
                 "chance": 0.1892
+            }
+        ],
+        [
+            {
+                "name": "Nira's Anguish",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 600,
+                "chance": 0.1273
+            },
+            {
+                "name": "Caliban Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Amar's Hatred",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 2,
+                "chance": 0.1273
+            },
+            {
+                "name": "Endo",
+                "count": 900,
+                "chance": 0.1273
+            },
+            {
+                "name": "Boreal's Contempt",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Korumm Blueprint",
+                "count": 1,
+                "chance": 0.0545
+            },
+            {
+                "name": "Narmer Isoplast",
+                "count": 3,
+                "chance": 0.0909
+            },
+            {
+                "name": "Endo",
+                "count": 1200,
+                "chance": 0.1273
             }
         ],
         [

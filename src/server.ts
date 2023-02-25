@@ -192,7 +192,7 @@ export default class Server {
 			cacheTtl = cacheTtlBrowser = 86400
 		}
 		res.setHeader('Cache-Control', `max-age=${cacheTtlBrowser},s-maxage=${cacheTtl}`)
-		res.setHeader('Content-Type', 'application/json')
+		res.setHeader('Content-Type', 'application/json; charset=utf-8')
 		if (config.cors) {
 			res.setHeader('Access-Control-Allow-Origin', config.cors)
 		}

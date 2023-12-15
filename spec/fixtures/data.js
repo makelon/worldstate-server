@@ -66,6 +66,10 @@ const items = [
 			input: 'Challenge5000',
 			output: { description: 'Test challenge 5000 standing', xpAmount: 5000 },
 		},
+		{
+			input: 'SeasonWeeklyPermanentChallenge15',
+			output: { description: 'Test permanent weekly challenge', xpAmount: 1000 },
+		},
 	],
 	entityRewardTables = {
 		[items[0].name]: [
@@ -377,6 +381,11 @@ function* getChallenges() {
 	expected.challenges[0].daily = false
 	expected.challenges[0].description = challenges[1].output.description
 	expected.challenges[0].xpAmount = challenges[1].output.xpAmount
+	yield [data, expected]
+
+	challenge.ActiveChallenges[0].Challenge = challenges[2].input
+	expected.challenges[0].description = challenges[2].output.description
+	expected.challenges[0].xpAmount = challenges[2].output.xpAmount
 	yield [data, expected]
 
 	yield [{}, []]

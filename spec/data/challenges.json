@@ -6,5 +6,9 @@
     "Challenge5000": {
         "description": "Test challenge 5000 standing",
         "xpAmount": 5000
+    },
+    "SeasonWeeklyPermanentChallenge": {
+        "description": "Test permanent weekly challenge",
+        "xpAmount": 1000
     }
 }

@@ -183,7 +183,10 @@ export function getAcolyteName(acolyteTag: string): string {
  * @returns Challenge info
  */
 export function getChallenge(challengeTag: string): WfChallengeInfo {
-	const challengeId = challengeTag.substr(challengeTag.lastIndexOf('/') + 1)
+	let challengeId = challengeTag.substr(challengeTag.lastIndexOf('/') + 1)
+	if (challengeId.startsWith('SeasonWeeklyPermanent')) {
+		challengeId = challengeId.replace(/\d+$/, '')
+	}
 	if (challengeId in tags.challenges) {
 		return tags.challenges[challengeId]
 	}

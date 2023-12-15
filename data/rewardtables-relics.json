@@ -18017,32 +18017,32 @@
     "Neo T5 Relic": [
         [
             {
-                "name": "Tenora Prime Receiver",
+                "name": "Tenora Prime Barrel",
                 "count": 1,
                 "chance": 0.02
             },
             {
-                "name": "Pandero Prime Barrel",
+                "name": "Magnus Prime Receiver",
                 "count": 1,
                 "chance": 0.11
             },
             {
-                "name": "Nezha Prime Neuroptics Blueprint",
+                "name": "Corinth Prime Receiver",
                 "count": 1,
                 "chance": 0.11
             },
             {
-                "name": "Octavia Prime Systems Blueprint",
+                "name": "Aksomati Prime Receiver",
                 "count": 1,
                 "chance": 0.25329999999999997
             },
             {
-                "name": "Vasto Prime Receiver",
+                "name": "Inaros Prime Systems Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             },
             {
-                "name": "Forma Blueprint",
+                "name": "Braton Prime Barrel",
                 "count": 1,
                 "chance": 0.25329999999999997
             }
@@ -18111,6 +18111,40 @@
             },
             {
                 "name": "Harrow Prime Chassis Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Neo T8 Relic": [
+        [
+            {
+                "name": "Tenora Prime Receiver",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Pandero Prime Barrel",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Nezha Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Octavia Prime Systems Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Vasto Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

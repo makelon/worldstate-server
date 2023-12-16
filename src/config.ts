@@ -46,10 +46,10 @@ const defaults: WfConfigI = {
 		'voidtraders',
 	],
 	wsUrls: { // Worldstate endpoints
-		pc: 'http://content.warframe.com/dynamic/worldState.php',
-		ps4: 'http://content.ps4.warframe.com/dynamic/worldState.php',
-		xb1: 'http://content.xb1.warframe.com/dynamic/worldState.php',
-		ns: 'http://content.swi.warframe.com/dynamic/worldState.php',
+		pc: 'https://content.warframe.com/dynamic/worldState.php',
+		ps4: 'https://content.warframe.com/dynamic/worldState.php',
+		xb1: 'https://content.warframe.com/dynamic/worldState.php',
+		ns: 'https://content.warframe.com/dynamic/worldState.php',
 	},
 	kuvalogUrls: {
 		pc: '',

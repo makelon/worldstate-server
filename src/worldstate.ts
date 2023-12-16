@@ -68,7 +68,7 @@ function looksLikeWorldstate(ws: WorldstateStruct): boolean {
 
 export default class Worldstate {
 	private requestOptions: RequestOptions | null = null
-	private requestTimerId?: NodeJS.Timer
+	private requestTimerId?: NodeJS.Timeout
 	private ws?: WorldstateStruct
 	private now = 0
 	private ready = false

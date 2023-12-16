@@ -2,7 +2,7 @@
 	"name": "tennotools-worldstate-server",
 	"version": "1.0.0",
 	"devDependencies": {
-		"@types/node": "^16.0.0",
+		"@types/node": "^20.10.4",
 		"@typescript-eslint/eslint-plugin": "^5.21.0",
 		"@typescript-eslint/parser": "^5.21.0",
 		"eslint": "^8.14.0",

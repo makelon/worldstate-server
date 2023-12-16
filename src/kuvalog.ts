@@ -13,7 +13,7 @@ function looksLikeKuvalog(kuvalog: KuvalogEntry[]): boolean {
 
 export default class Kuvalog {
 	private requestOptions: RequestOptions | null = null
-	private requestTimerId?: NodeJS.Timer
+	private requestTimerId?: NodeJS.Timeout
 	private _arbitrations: KuvalogEntry[] = []
 	private _kuvamissions: KuvalogEntry[] = []
 	private retryTimeout = config.minRetryTimeout

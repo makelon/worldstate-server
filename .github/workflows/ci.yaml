@@ -12,9 +12,9 @@ jobs:
 
     strategy:
       matrix:
-        node: [ 14, 18 ]
+        node: [ 16, 18 ]
         include:
-          - node: 16
+          - node: 20
             lint: true
 
     name: Build and test (node-${{ matrix.node }})

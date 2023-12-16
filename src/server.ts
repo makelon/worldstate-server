@@ -159,22 +159,44 @@ export default class Server {
 		}
 	}
 
+	private handleRequest(req: IncomingMessage, res: ServerResponse) {
+		let responseText = ''
+		req.on('error', err => { log.info('HTTP request error: %s', err.message) })
+		res.once('finish', () => {
+			log.notice('Responded with %s %s (%d bytes)', res.statusCode, res.statusMessage, Buffer.byteLength(responseText))
+		})
+		if (config.cors) {
+			res.setHeader('Access-Control-Allow-Origin', config.cors)
+		}
+		switch (req.method) {
+			case 'GET':
+				responseText = this.handleGetRequest(req, res)
+				break
+			case 'OPTIONS':
+				this.handleOptionsRequest(req, res)
+				break
+			default:
+				res.statusCode = 405
+		}
+		res.end(responseText)
+	}
+
 	/**
-	 * Read and respond to an HTTP request
+	 * Read and respond to a GET request
 	 *
 	 * @param req
 	 * @param res
 	 */
-	private handleRequest(req: IncomingMessage, res: ServerResponse) {
+	private handleGetRequest(req: IncomingMessage, res: ServerResponse): string {
 		const reqUrl = req.url || '/'
-		log.notice('Got request: %s', reqUrl)
-		req.on('error', err => { log.info('HTTP request error: %s', err.message) })
+		log.notice('Received GET request: %s', reqUrl)
 		const urlParts = reqUrl.substr(1).split('/'),
 			platform = (urlParts[0] || 'pc') as WfPlatform,
 			instance = this.instances[platform]
 		let responseText: string,
 			cacheTtl: number,
 			cacheTtlBrowser: number
+
 		if (instance) {
 			let types
 			if (urlParts[1]) {
@@ -193,11 +215,21 @@ export default class Server {
 		}
 		res.setHeader('Cache-Control', `max-age=${cacheTtlBrowser},s-maxage=${cacheTtl}`)
 		res.setHeader('Content-Type', 'application/json; charset=utf-8')
-		if (config.cors) {
-			res.setHeader('Access-Control-Allow-Origin', config.cors)
-		}
-		res.once('finish', () => {
-			log.notice('Responded with %s %s (%d bytes)', res.statusCode, res.statusMessage, Buffer.byteLength(responseText))
-		}).end(responseText, 'utf8')
+		return responseText
+	}
+
+	/**
+	 * Read and respond to an OPTIONS request
+	 *
+	 * @param req
+	 * @param res
+	 */
+	private handleOptionsRequest(req: IncomingMessage, res: ServerResponse) {
+		const reqUrl = req.url || '/'
+		log.notice('Received OPTIONS request: %s', reqUrl)
+		res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
+		res.setHeader('Access-Control-Max-Age', 3600)
+		res.setHeader('Vary', 'Accept-Encoding, Origin')
+		res.statusCode = 204
 	}
 }

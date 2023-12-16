@@ -78,25 +78,7 @@ export default class Worldstate {
 		bounties: [],
 	}
 	private kuvalog = Kuvalog.getInstance()
-	private readers: Readonly<{ [T in WfRecordKey]: WfReader<WfRecordTypes[T]> }> = {
-		'acolytes': new AcolyteReader(this.platform),
-		'alerts': new AlertReader(this.platform),
-		'arbitrations': new ArbitrationReader(this.platform),
-		'bounties': new BountieReader(this.platform),
-		'challenges': new ChallengeReader(this.platform),
-		'dailydeals': new DailyDealReader(this.platform),
-		'daynight': new DayNightReader(this.platform),
-		'fissures': new VoidFissureReader(this.platform),
-		'fomorians': new FomorianReader(this.platform),
-		'factionprojects': new FactionProjectReader(this.platform),
-		'invasions': new InvasionReader(this.platform),
-		'kuvasiphons': new KuvaSiphonReader(this.platform),
-		'news': new NewsReader(this.platform),
-		'sorties': new SortieReader(this.platform),
-		'upgrades': new UpgradeReader(this.platform),
-		'voidstorms': new VoidStormReader(this.platform),
-		'voidtraders': new VoidTraderReader(this.platform),
-	}
+	private readers: Readonly<{ [T in WfRecordKey]: WfReader<WfRecordTypes[T]> }>
 
 	constructor(
 		private db: WfDb,
@@ -105,6 +87,25 @@ export default class Worldstate {
 	) {
 		log.notice('Creating worldstate instance %s', platform)
 		this.kuvalog.onUpdate(() => { this.readKuvalog() })
+		this.readers = {
+			'acolytes': new AcolyteReader(this.platform),
+			'alerts': new AlertReader(this.platform),
+			'arbitrations': new ArbitrationReader(this.platform),
+			'bounties': new BountieReader(this.platform),
+			'challenges': new ChallengeReader(this.platform),
+			'dailydeals': new DailyDealReader(this.platform),
+			'daynight': new DayNightReader(this.platform),
+			'fissures': new VoidFissureReader(this.platform),
+			'fomorians': new FomorianReader(this.platform),
+			'factionprojects': new FactionProjectReader(this.platform),
+			'invasions': new InvasionReader(this.platform),
+			'kuvasiphons': new KuvaSiphonReader(this.platform),
+			'news': new NewsReader(this.platform),
+			'sorties': new SortieReader(this.platform),
+			'upgrades': new UpgradeReader(this.platform),
+			'voidstorms': new VoidStormReader(this.platform),
+			'voidtraders': new VoidTraderReader(this.platform),
+		}
 	}
 
 	/**

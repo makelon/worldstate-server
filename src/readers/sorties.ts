@@ -1,10 +1,10 @@
-import { getRandomRewardDifference, getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getDate, getFaction, getId, getLocation, getMissionType } from '../helpers'
-import { getRandomRewards } from '../items'
-import * as log from '../log'
-import { sortieBosses, sortieModifiers } from '../tags'
-import WfReader from './reader'
+import { getRandomRewardDifference, getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getDate, getFaction, getId, getLocation, getMissionType } from '../helpers.js'
+import { getRandomRewards } from '../items.js'
+import * as log from '../log.js'
+import { sortieBosses, sortieModifiers } from '../tags.js'
+import WfReader from './reader.js'
 
 export default class SortieReader extends WfReader<WfSortie> {
 	private readonly _entityRewards = new EntityRewards()

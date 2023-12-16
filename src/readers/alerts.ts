@@ -1,9 +1,9 @@
-import { getRewardDifference, getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getDate, getFaction, getId, getLocation, getMissionType } from '../helpers'
-import { getRewards } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getRewardDifference, getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getDate, getFaction, getId, getLocation, getMissionType } from '../helpers.js'
+import { getRewards } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class AlertReader extends WfReader<WfAlert> {
 	private readonly _entityRewards = new EntityRewards()

@@ -3,9 +3,9 @@ import { createReadStream } from 'fs'
 import { basename, join as joinPath } from 'path'
 import { createInterface } from 'readline'
 
-import config from './config'
-import * as log from './log'
-import { appendFile, renameFile, removeFile, writeFile } from './promisify'
+import config from './config.js'
+import * as log from './log.js'
+import { appendFile, renameFile, removeFile, writeFile } from './promisify.js'
 
 type WfSubRecord<T extends WfRecordType> = {
 	[K in keyof T]: T[K] extends string | number | boolean | undefined | null ? never : K

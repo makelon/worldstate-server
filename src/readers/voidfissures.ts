@@ -1,7 +1,7 @@
-import { getValueDifference, patch } from '../compare'
-import { getDate, getId, getLocation, getNodeFaction, getNodeMissionType, getVoidTier } from '../helpers'
-import * as log from '../log'
-import WfReader from './reader'
+import { getValueDifference, patch } from '../compare.js'
+import { getDate, getId, getLocation, getNodeFaction, getNodeMissionType, getVoidTier } from '../helpers.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 	protected readonly dbTableId = 'fissures'

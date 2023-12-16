@@ -1,6 +1,8 @@
-const fs = require('fs')
+import { readFileSync, writeFile } from 'fs'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
 
-process.chdir(__dirname)
+process.chdir(dirname(fileURLToPath(import.meta.url)))
 
 let lang,
 	itemNames = {},
@@ -131,7 +133,7 @@ const itemTypeTree = {
 /* eslint-enable comma-dangle */
 
 try {
-	lang = JSON.parse(fs.readFileSync('./data/languages.json', 'utf8'))
+	lang = JSON.parse(readFileSync('./data/languages.json', 'utf8'))
 }
 catch (e) {
 	console.log('Failed to read language file: %s', e.message)
@@ -174,12 +176,12 @@ for (let itemId in lang) {
 	}
 }
 
-fs.writeFile('./data/itemnames.json', JSON.stringify(itemNames), 'utf8', (err) => {
+writeFile('./data/itemnames.json', JSON.stringify(itemNames), 'utf8', (err) => {
 	if (err) {
 		console.log('Failed to write itemnames.json: %s', err.message)
 	}
 })
-fs.writeFile('./data/itemtypes.json', JSON.stringify(itemTypes), 'utf8', (err) => {
+writeFile('./data/itemtypes.json', JSON.stringify(itemTypes), 'utf8', (err) => {
 	if (err) {
 		console.log('Failed to write itemtypes.json: %s', err.message)
 	}

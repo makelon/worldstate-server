@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs'
 
-import EntityRewards from './entityrewards'
+import type EntityRewards from './entityrewards.js'
 
 let rewardTables: WfRewardTableMap,
 	rewardTableRotations: WfMap,

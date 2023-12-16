@@ -1,5 +1,5 @@
-const h = require('../out/helpers')
-const fixtures = require('./fixtures/data')
+import * as h from '../out/helpers.js'
+import fixtures from './fixtures/data.js'
 
 describe('Helper functions', () => {
 	it('should pad numbers', () => {

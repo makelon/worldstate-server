@@ -15,6 +15,7 @@
 		"lint": "eslint .",
 		"test": "jasmine"
 	},
+	"type": "module",
 	"author": "makelon",
 	"license": "MIT",
 	"repository": {

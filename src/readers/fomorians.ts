@@ -1,10 +1,10 @@
-import { getItemDifference, getRandomRewardDifference, getRewardDifference, getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getDate, getFomorianType, getId, getLocation, getMissionType } from '../helpers'
-import { checkpoint, finalize, update } from '../history'
-import { getItems, getRandomRewards, getRewards } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getItemDifference, getRandomRewardDifference, getRewardDifference, getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getDate, getFomorianType, getId, getLocation, getMissionType } from '../helpers.js'
+import { checkpoint, finalize, update } from '../history.js'
+import { getItems, getRandomRewards, getRewards } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class FomorianReader extends WfReader<WfFomorian> {
 	private readonly _entityRewards = new EntityRewards()

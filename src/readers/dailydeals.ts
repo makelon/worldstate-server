@@ -1,9 +1,9 @@
-import { getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getDate } from '../helpers'
-import { getItem } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getDate } from '../helpers.js'
+import { getItem } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class DailyDealReader extends WfReader<WfDailyDeal> {
 	private readonly _entityRewards = new EntityRewards()

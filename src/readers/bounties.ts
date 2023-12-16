@@ -1,11 +1,11 @@
-import { getRandomRewardDifference, getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import extraData from '../extradata'
-import { getDate, getId, getLocation, getBountyRewardTableId, getSyndicateName } from '../helpers'
-import { checkpoint, finalize, update } from '../history'
-import { getRandomRewards, getRewardTableRotation } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getRandomRewardDifference, getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import extraData from '../extradata.js'
+import { getDate, getId, getLocation, getBountyRewardTableId, getSyndicateName } from '../helpers.js'
+import { checkpoint, finalize, update } from '../history.js'
+import { getRandomRewards, getRewardTableRotation } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class BountyReader extends WfReader<WfBounty> {
 	private readonly _entityRewards = new EntityRewards()

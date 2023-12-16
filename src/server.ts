@@ -3,9 +3,9 @@ import { createServer, IncomingMessage, Server as HttpServer, ServerResponse } f
 import { isIP, isIPv6 } from 'net'
 import { platform as osPlatform } from 'os'
 
-import config from './config'
-import * as log from './log'
-import Worldstate from './worldstate'
+import config from './config.js'
+import * as log from './log.js'
+import type Worldstate from './worldstate.js'
 
 export default class Server {
 	private httpServer: HttpServer

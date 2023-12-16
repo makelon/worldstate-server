@@ -1,10 +1,10 @@
-const http = require('http')
+import { createServer } from 'http'
 
-module.exports = class MockGame {
+export default class MockGame {
 	constructor(hostname, port) {
 		this.hostname = hostname
 		this.port = port
-		this.server = http.createServer()
+		this.server = createServer()
 	}
 
 	start(callback) {

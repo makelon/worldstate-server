@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs'
 
-import * as log from './log'
+import * as log from './log.js'
 
 interface WfConfigI {
 	logLevel: string

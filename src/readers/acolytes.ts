@@ -1,10 +1,10 @@
-import { patch, getValueDifference, getRandomRewardDifference } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getAcolyteName, getId, getLocation } from '../helpers'
-import { checkpoint, finalize, update } from '../history'
-import { getRandomRewards } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { patch, getValueDifference, getRandomRewardDifference } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getAcolyteName, getId, getLocation } from '../helpers.js'
+import { checkpoint, finalize, update } from '../history.js'
+import { getRandomRewards } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class AcolyteReader extends WfReader<WfAcolyte> {
 	private readonly _entityRewards = new EntityRewards()

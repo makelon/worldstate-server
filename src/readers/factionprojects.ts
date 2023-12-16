@@ -1,8 +1,8 @@
-import { getValueDifference, patch } from '../compare'
-import { getFomorianFaction, getFomorianType } from '../helpers'
-import { checkpoint, finalize, update } from '../history'
-import * as log from '../log'
-import WfReader from './reader'
+import { getValueDifference, patch } from '../compare.js'
+import { getFomorianFaction, getFomorianType } from '../helpers.js'
+import { checkpoint, finalize, update } from '../history.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 	protected readonly dbTableId = 'factionprojects'

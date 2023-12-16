@@ -1,13 +1,13 @@
 {
 	"compilerOptions": {
-		"target": "es2015",
-		"module": "commonjs",
+		"module": "nodenext",
 		"outDir": "./out",
 		"newLine": "LF",
 		"noImplicitAny": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"strict": true,
-		"useUnknownInCatchVariables": false
+		"useUnknownInCatchVariables": false,
+		"verbatimModuleSyntax": true
 	}
 }

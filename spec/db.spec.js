@@ -1,5 +1,5 @@
-const config = require('../out/config').default
-const Db = require('../out/db').default
+import config from '../out/config.js'
+import Db from '../out/db.js'
 
 describe('Database', () => {
 	let originalWsFields,

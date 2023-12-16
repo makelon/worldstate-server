@@ -1,11 +1,11 @@
 import { EventEmitter } from 'events'
-import { IncomingMessage } from 'http'
-import { RequestOptions } from 'https'
+import { type IncomingMessage } from 'http'
+import { type RequestOptions } from 'https'
 
-import config from './config'
-import { getCurrentTime, strToTime } from './helpers'
-import { getResponseData, prepareRequest, sendRequest } from './httphelpers'
-import * as log from './log'
+import config from './config.js'
+import { getCurrentTime, strToTime } from './helpers.js'
+import { getResponseData, prepareRequest, sendRequest } from './httphelpers.js'
+import * as log from './log.js'
 
 function looksLikeKuvalog(kuvalog: KuvalogEntry[]): boolean {
 	return Array.isArray(kuvalog) && kuvalog[0] && 'missiontype' in kuvalog[0]

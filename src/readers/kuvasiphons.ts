@@ -1,9 +1,9 @@
-import { getRandomRewardDifference, getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getLocation, getNodeFaction, getNodeMissionType, strToTime } from '../helpers'
-import { getRandomRewards } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getRandomRewardDifference, getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getLocation, getNodeFaction, getNodeMissionType, strToTime } from '../helpers.js'
+import { getRandomRewards } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 const missionPrefixLength = 'KuvaMission'.length
 

@@ -1,7 +1,7 @@
 import { createWriteStream, mkdir, rename, unlink } from 'fs'
 import { dirname, join as joinPath, parse as parsePath, sep as pathSeparator } from 'path'
 
-import * as log from './log'
+import * as log from './log.js'
 
 /**
  * fs.write Promise wrapper. Creates directory tree if necessary

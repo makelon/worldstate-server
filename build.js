@@ -1,11 +1,13 @@
-const cproc = require('child_process'),
-	fs = require('fs'),
-	os = require('os'),
-	path = require('path'),
-	readline = require('readline'),
-	EventEmitter = require('events').EventEmitter
+import { spawn } from 'child_process'
+import { mkdirSync, watch, readFile, writeFile, existsSync, writeFileSync } from 'fs'
+import { EOL } from 'os'
+import { join, basename, dirname, resolve as resolvePath } from 'path'
+import { createInterface } from 'readline'
+import { EventEmitter } from 'events'
+import { fileURLToPath } from 'url'
 
-process.chdir(__dirname)
+const cwd = dirname(fileURLToPath(import.meta.url))
+process.chdir(cwd)
 
 const itemNames = 'itemnames.json',
 	itemTypes = 'itemtypes.json',
@@ -84,14 +86,14 @@ function printLines(prefix, data, colorData) {
 	}
 	for (const line of data.split('\n')) {
 		if (line.trim() !== '') {
-			process.stdout.write(timeString + prefix + line + postfix + os.EOL)
+			process.stdout.write(timeString + prefix + line + postfix + EOL)
 		}
 	}
 }
 
 function build() {
 	try {
-		fs.mkdirSync(outDir)
+		mkdirSync(outDir)
 	}
 	catch (err) {
 		if (err.code !== 'EEXIST') {
@@ -118,7 +120,12 @@ function build() {
 				}
 			})
 		}
-		tsc = cproc.spawn(process.argv0, tscArgs)
+		tsc = spawn(process.argv0, tscArgs)
+		tsc.on('close', code => {
+			if (code > 0) {
+				printErrors(`tsc exited with code ${code}`)
+			}
+		})
 		const reBuildError = /^.+\(\d+,\d+\): error/,
 			reBuildIndent = /^ {2}/,
 			reBuildTimestamp = /^\d\d:\d\d:\d\d - /,
@@ -192,13 +199,13 @@ function watchData() {
 		timer: 0,
 		ee: new EventEmitter(),
 	}
-	const watch = dataFiles.copy.slice()
+	const watchFiles = dataFiles.copy.slice()
 	for (const files of dataFiles.concat) {
-		watch.push(...files.input)
+		watchFiles.push(...files.input)
 	}
-	for (const file of watch) {
+	for (const file of watchFiles) {
 		try {
-			fs.watch(path.join(dataDir, file), () => {
+			watch(join(dataDir, file), () => {
 				if (watcher.timer) {
 					clearTimeout(watcher.timer)
 				}
@@ -215,7 +222,7 @@ function concatFiles(fileGroup) {
 	const promises = []
 	for (const filePath of fileGroup.input) {
 		promises.push(new Promise((resolve, reject) => {
-			fs.readFile(path.join(dataDir, filePath), 'utf8', (err, content) => {
+			readFile(join(dataDir, filePath), 'utf8', (err, content) => {
 				if (err) {
 					reject(err)
 					return
@@ -237,7 +244,7 @@ function concatFiles(fileGroup) {
 					result[key] = input[key]
 				}
 			}
-			fs.writeFile(path.join(outDir, fileGroup.output), JSON.stringify(result), 'utf8', (err) => {
+			writeFile(join(outDir, fileGroup.output), JSON.stringify(result), 'utf8', (err) => {
 				if (err) {
 					reject(err)
 					return
@@ -249,7 +256,7 @@ function concatFiles(fileGroup) {
 
 function copyFile(filePath) {
 	return new Promise((resolve, reject) => {
-		fs.readFile(path.join(dataDir, filePath), 'utf8', (err, content) => {
+		readFile(join(dataDir, filePath), 'utf8', (err, content) => {
 			if (err) {
 				reject(err)
 				return
@@ -263,7 +270,7 @@ function copyFile(filePath) {
 			}
 		})
 	}).then((content) => {
-		fs.writeFile(path.join(outDir, path.basename(filePath)), content, 'utf8', (err) => {
+		writeFile(join(outDir, basename(filePath)), content, 'utf8', (err) => {
 			if (err) {
 				throw err
 			}
@@ -284,8 +291,8 @@ function postBuild() {
 }
 
 function startServer(restart) {
-	server = cproc.spawn(process.argv0, ['index.js'], {
-		cwd: path.join(process.cwd(), outDir),
+	server = spawn(process.argv0, ['index.js'], {
+		cwd: join(process.cwd(), outDir),
 	})
 	server.stdout.setEncoding('utf8').on('data', printServer)
 	server.stderr.setEncoding('utf8').on('data', printErrors)
@@ -303,10 +310,8 @@ function startServer(restart) {
 	printBuild(`Server PID = ${server.pid}`)
 }
 
-try {
-	tscPath = require.resolve('typescript/bin/tsc')
-}
-catch (err) {
+tscPath = resolvePath(process.cwd(), 'node_modules/typescript/bin/tsc')
+if (!existsSync(tscPath)) {
 	printErrors('Typescript compiler not found')
 	process.exit(1)
 }
@@ -342,7 +347,7 @@ for (const c of process.argv[2] || 'bd') {
 	}
 }
 
-if (opt.data && !(fs.existsSync(path.join(dataDir, itemNames)) && fs.existsSync(path.join(dataDir, itemTypes)))) {
+if (opt.data && !(existsSync(join(dataDir, itemNames)) && existsSync(join(dataDir, itemTypes)))) {
 	console.log(
 		'WARNING: itemnames.json or itemtypes.json is missing.\n' +
 		'You probably want to put the following file in the folder "%s"\n' +
@@ -352,19 +357,19 @@ if (opt.data && !(fs.existsSync(path.join(dataDir, itemNames)) && fs.existsSync(
 		'and run the command\n' +
 		'\n' +
 		'	%s items\n',
-		path.join(__dirname, dataDir),
-		path.basename(process.argv0).replace(/\.exe$/, ''),
+		join(cwd, dataDir),
+		basename(process.argv0).replace(/\.exe$/, ''),
 	)
-	const rl = readline.createInterface({
+	const rl = createInterface({
 		input: process.stdin,
 		output: process.stdout,
 	})
 	rl.question('Continue anyway? [yN] ', (answer) => {
 		if (answer.toLowerCase() === 'y') {
 			for (const fileName of [itemNames, itemTypes]) {
-				const filePath = path.join(dataDir, fileName)
-				if (!fs.existsSync(filePath)) {
-					fs.writeFileSync(filePath, '{}', 'utf8')
+				const filePath = join(dataDir, fileName)
+				if (!existsSync(filePath)) {
+					writeFileSync(filePath, '{}', 'utf8')
 				}
 			}
 			build()

@@ -920,7 +920,7 @@ function* getVoidTraders() {
 	yield [{}, []]
 }
 
-module.exports = {
+export default {
 	timeNowShort,
 	timeStartShort,
 	timeStartLong,

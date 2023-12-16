@@ -1,8 +1,8 @@
-const config = require('../out/config').default
-const Database = require('../out/db').default
-const extraData = require('../out/extradata').default
-const Worldstate = require('../out/worldstate').default
-const fixtures = require('./fixtures/data')
+import config from '../out/config.js'
+import Database from '../out/db.js'
+import extraData from '../out/extradata.js'
+import Worldstate from '../out/worldstate.js'
+import fixtures from './fixtures/data.js'
 
 describe('Worldstate', () => {
 	const db = new Database('pc')

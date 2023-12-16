@@ -1,4 +1,4 @@
-import * as tags from './tags'
+import * as tags from './tags.js'
 
 /**
  * Convert number to a string with leading zeros. Helper function for date/time formatting

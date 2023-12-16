@@ -1,10 +1,10 @@
-import { getRewardDifference, getValueDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getDate, getFaction, getId, getLocation } from '../helpers'
-import { update } from '../history'
-import { getRewards } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getRewardDifference, getValueDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getDate, getFaction, getId, getLocation } from '../helpers.js'
+import { update } from '../history.js'
+import { getRewards } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class InvasionReader extends WfReader<WfInvasion> {
 	private readonly _entityRewards = new EntityRewards()

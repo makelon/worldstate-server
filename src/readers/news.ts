@@ -1,8 +1,8 @@
-import { getValueDifference, patch } from '../compare'
-import { getDate, getId } from '../helpers'
-import * as log from '../log'
-import { translations } from '../tags'
-import WfReader from './reader'
+import { getValueDifference, patch } from '../compare.js'
+import { getDate, getId } from '../helpers.js'
+import * as log from '../log.js'
+import { translations } from '../tags.js'
+import WfReader from './reader.js'
 
 export default class NewsReader extends WfReader<WfNews> {
 	protected readonly dbTableId = 'news'

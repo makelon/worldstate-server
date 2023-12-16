@@ -1,7 +1,7 @@
-import { getValueDifference, patch } from '../compare'
-import { getDate, getId, getChallenge, getSyndicateName } from '../helpers'
-import * as log from '../log'
-import WfReader from './reader'
+import { getValueDifference, patch } from '../compare.js'
+import { getDate, getId, getChallenge, getSyndicateName } from '../helpers.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 	protected readonly dbTableId = 'challenges'

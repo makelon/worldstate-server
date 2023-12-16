@@ -1,11 +1,11 @@
-const http = require('http')
+import http from 'http'
 
-const config = require('../out/config').default
-const Database = require('../out/db').default
-const Server = require('../out/server').default
-const Worldstate = require('../out/worldstate').default
-const fixtures = require('./fixtures/data')
-const MockGame = require('./fixtures/mockgame')
+import config from '../out/config.js'
+import Database from '../out/db.js'
+import Server from '../out/server.js'
+import Worldstate from '../out/worldstate.js'
+import fixtures from './fixtures/data.js'
+import MockGame from './fixtures/mockgame.js'
 
 describe('Server', () => {
 	const mockGameHost = '127.0.0.1',

@@ -1,5 +1,5 @@
-import config from './config'
-import { parseJsonFile } from './fshelpers'
+import config from './config.js'
+import { parseJsonFile } from './fshelpers.js'
 
 interface ExtraPlatformDataBountyJob {
 	rewards: string,

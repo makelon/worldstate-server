@@ -1,13 +1,16 @@
-import config from './config'
-import Database from './db'
-import extraData from './extradata'
-import { load as loadItems } from './items'
-import * as log from './log'
-import Server from './server'
-import { load as loadTags } from './tags'
-import Worldstate from './worldstate'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
 
-process.chdir(__dirname)
+import config from './config.js'
+import Database from './db.js'
+import extraData from './extradata.js'
+import { load as loadItems } from './items.js'
+import * as log from './log.js'
+import Server from './server.js'
+import { load as loadTags } from './tags.js'
+import Worldstate from './worldstate.js'
+
+process.chdir(dirname(fileURLToPath(import.meta.url)))
 
 /**
  * Shut down server and exit

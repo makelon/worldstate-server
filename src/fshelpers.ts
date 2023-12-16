@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs'
 
-import * as log from './log'
+import * as log from './log.js'
 
 export function parseJsonFile<T extends Record<string, unknown>>(path: string): T | null {
 	let parsedContent: T | null = null

@@ -1,4 +1,4 @@
-import { getRandomRewards } from './items'
+import { getRandomRewards } from './items.js'
 
 export default class EntityRewards {
 	private cache: WfSet = {}

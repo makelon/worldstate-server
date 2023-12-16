@@ -1,9 +1,9 @@
 import { ClientRequest, IncomingMessage, request as httpRequest } from 'http'
-import { RequestOptions, request as httpsRequest } from 'https'
+import { type RequestOptions, request as httpsRequest } from 'https'
 import { parse as parseUrl } from 'url'
 import { createGunzip, createInflate } from 'zlib'
 
-import config from './config'
+import config from './config.js'
 
 /**
  * Create a reusable HTTP request options object for repeated requests to the same host

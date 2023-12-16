@@ -1,9 +1,9 @@
-import { getValueDifference, getVoidTraderItemDifference, patch } from '../compare'
-import EntityRewards from '../entityrewards'
-import { getDate, getId, getLocation, getVoidTraderName } from '../helpers'
-import { getItem } from '../items'
-import * as log from '../log'
-import WfReader from './reader'
+import { getValueDifference, getVoidTraderItemDifference, patch } from '../compare.js'
+import EntityRewards from '../entityrewards.js'
+import { getDate, getId, getLocation, getVoidTraderName } from '../helpers.js'
+import { getItem } from '../items.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 	private readonly _entityRewards = new EntityRewards()

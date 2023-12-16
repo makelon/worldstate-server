@@ -1,7 +1,7 @@
 import { EOL } from 'os'
 import { format as formatString } from 'util'
 
-import { pad } from './helpers'
+import { pad } from './helpers.js'
 
 //eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FormatParams = any[]

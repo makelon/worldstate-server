@@ -1,8 +1,8 @@
-import { getValueDifference, patch } from '../compare'
-import { getDate, getId } from '../helpers'
-import * as log from '../log'
-import { upgradeTypes } from '../tags'
-import WfReader from './reader'
+import { getValueDifference, patch } from '../compare.js'
+import { getDate, getId } from '../helpers.js'
+import * as log from '../log.js'
+import { upgradeTypes } from '../tags.js'
+import WfReader from './reader.js'
 
 export default class UpgradeReader extends WfReader<WfUpgrade> {
 	protected readonly dbTableId = 'upgrades'

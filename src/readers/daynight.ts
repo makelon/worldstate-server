@@ -1,8 +1,8 @@
-import { getValueDifference } from '../compare'
-import config from '../config'
-import { parseJsonFile } from '../fshelpers'
-import * as log from '../log'
-import WfReader from './reader'
+import { getValueDifference } from '../compare.js'
+import config from '../config.js'
+import { parseJsonFile } from '../fshelpers.js'
+import * as log from '../log.js'
+import WfReader from './reader.js'
 
 export default class DayNightReader extends WfReader<WfDayNight> {
 	protected readonly dbTableId = 'daynight'

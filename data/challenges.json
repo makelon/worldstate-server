@@ -4,7 +4,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyAimGlide": {
-        "description": "Kill 20 enemies while aim gliding",
+        "description": "Kill 15 enemies while aim gliding",
         "xpAmount": 1000
     },
     "SeasonDailyAugmentation": {
@@ -19,8 +19,12 @@
         "description": "Perform 150 bullet jumps",
         "xpAmount": 1000
     },
+    "SeasonDailyCaptionThat": {
+        "description": "Take a screenshot in any Captura scene",
+        "xpAmount": 1000
+    },
     "SeasonDailyCodexScan": {
-        "description": "Scan 25 objects or enemies",
+        "description": "Scan 15 objects or enemies",
         "xpAmount": 1000
     },
     "SeasonDailyCollectHundredResources": {
@@ -28,7 +32,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyCollectCredits": {
-        "description": "Collect 15,000 credits",
+        "description": "Pick up 15,000 credits",
         "xpAmount": 1000
     },
     "SeasonDailyCompleteMission": {
@@ -67,6 +71,18 @@
         "description": "Donate to the Leverian",
         "xpAmount": 1000
     },
+    "SeasonDailyFeedMeMore": {
+        "description": "Fed the Maw in Duviri",
+        "xpAmount": 1000
+    },
+    "SeasonDailyHelpingHand": {
+        "description": "Rescue an animal in Duviri",
+        "xpAmount": 1000
+    },
+    "SeasonDailyHijackCrewship": {
+        "description": "Hijack a crewship from the enemy",
+        "xpAmount": 1000
+    },
     "SeasonDailyInteractWithPet": {
         "description": "Interact with a pet",
         "xpAmount": 1000
@@ -76,7 +92,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyKillEnemiesWhileOnKDrive": {
-        "description": "Kill 20 Enemies while riding a K-Drive",
+        "description": "Kill 20 Enemies while riding a K-Drive, Kaithe, Velocipod or Merulina",
         "xpAmount": 1000
     },
     "SeasonDailyKillEnemiesWithAbilities": {
@@ -176,7 +192,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyPickUpMedallion": {
-        "description": "Pick up 5 syndicate medallions",
+        "description": "Find 5 syndicate medallions",
         "xpAmount": 1000
     },
     "SeasonDailyPilotFallenMech": {
@@ -204,7 +220,7 @@
         "xpAmount": 1000
     },
     "SeasonDailySlideKills": {
-        "description": "Kill 20 enemies while sliding",
+        "description": "Kill 10 enemies while sliding",
         "xpAmount": 1000
     },
     "SeasonDailySolveCiphers": {
@@ -224,7 +240,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyThePersonalTouch": {
-        "description": "Place 1 decoration in your orbiter",
+        "description": "Place 1 decoration in your orbiter or Dormizone",
         "xpAmount": 1000
     },
     "SeasonDailyToppingOffTheTank": {
@@ -232,7 +248,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyTransmuteMods": {
-        "description": "Transmute 3 modules",
+        "description": "Transmute 1 modules",
         "xpAmount": 1000
     },
     "SeasonDailyTwoForOne": {
@@ -260,11 +276,11 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyCatchRarePlainsFish": {
-        "description": "Catch 6 rare fish in Plains of Eidolon",
+        "description": "Catch 3 rare fish in Plains of Eidolon",
         "xpAmount": 4500
     },
     "SeasonWeeklyCatchRareVenusFish": {
-        "description": "Catch 6 rare servofish in Orb Vallis",
+        "description": "Catch 3 rare servofish in Orb Vallis",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteAssassination": {
@@ -284,7 +300,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteInvasionMissions": {
-        "description": "Complete 9 invasion missions",
+        "description": "Complete 6 invasion missions",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteMobileDefense": {
@@ -312,15 +328,15 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteSyndicateMissions": {
-        "description": "Complete 10 syndicate missions",
+        "description": "Complete 5 syndicate missions",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteTreasures": {
-        "description": "Fully socket 3 Ayatan sculptures",
+        "description": "Retrieve the Ayatan statue for Maroo in Maroo's Bazaar",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteVenusRace": {
-        "description": "Complete 3 K-Drive races in Orb Vallis",
+        "description": "Complete 3 different K-Drive races in Orb Vallis on Venus or in Cambion Drift on Deimos",
         "xpAmount": 4500
     },
     "SeasonWeeklyDestroyCrewshipArtillery": {
@@ -328,7 +344,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyEternalGuardian": {
-        "description": "Complete 3 Void Armageddon missions",
+        "description": "Complete 2 Void Armageddon missions",
         "xpAmount": 4500
     },
     "SeasonWeeklyFeedHelminth": {
@@ -380,19 +396,19 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyMineRarePlainsResources": {
-        "description": "Mine 6 rare gems in Plains of Eidolon",
+        "description": "Mine 3 rare gems or ore in Plains of Eidolon",
         "xpAmount": 4500
     },
     "SeasonWeeklyMineRareVenusResources": {
-        "description": "Mine 6 rare gems in Orb Vallis",
+        "description": "Mine 3 rare gems or ore in Orb Vallis",
         "xpAmount": 4500
     },
     "SeasonWeeklyNightAndDay": {
-        "description": "Collect 15 Vome or Fass residue in the Cambion Drift",
+        "description": "Collect 10 Vome or Fass residue in the Cambion Drift",
         "xpAmount": 4500
     },
     "SeasonWeeklyPerfectAnimalCapture": {
-        "description": "Complete 6 perfect animal captures",
+        "description": "Complete 3 perfect animal captures",
         "xpAmount": 4500
     },
     "SeasonWeeklyPickUpRareMods": {
@@ -400,15 +416,19 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyPlainsBounties": {
-        "description": "Complete 5 different bounties in the Plains of Eidolon",
+        "description": "Complete 3 different bounties in the Plains of Eidolon",
         "xpAmount": 4500
     },
     "SeasonWeeklyRailjackMissions": {
         "description": "Complete 3 Railjack missions",
         "xpAmount": 4500
     },
+    "SeasonWeeklyRailjackHijackDestroyThree": {
+        "description": "While piloting a hijacked crewship, destroy 3 enemy fighters",
+        "xpAmount": 4500
+    },
     "SeasonWeeklySabotageCaches": {
-        "description": "Find all caches in a sabotage mission 3 times",
+        "description": "Find 6 caches across any sabotage missions",
         "xpAmount": 4500
     },
     "SeasonWeeklySanctuaryOnslaught": {
@@ -416,7 +436,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklySimarisScan": {
-        "description": "Complete 5 scans for Cephalon Simaris",
+        "description": "Complete 3 scans for Cephalon Simaris",
         "xpAmount": 4500
     },
     "SeasonWeeklyTheOldWays": {
@@ -436,7 +456,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyVenusBounties": {
-        "description": "Complete 5 different bounties in Orb Vallis",
+        "description": "Complete 3 different bounties in Orb Vallis",
         "xpAmount": 4500
     },
     "SeasonWeeklyZarimanBountyHunter": {
@@ -456,7 +476,7 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardCompleteNightmareMissions": {
-        "description": "Complete 10 nightmare missions",
+        "description": "Complete 5 nightmare missions",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardCompleteSortie": {
@@ -500,7 +520,7 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardFriendsSurvival": {
-        "description": "Stay 30 minutes in a survival mission",
+        "description": "Complete a survival mission reaching at least 20 minutes",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardIndexWinStreak": {
@@ -564,7 +584,7 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardTheManyMadeWhole": {
-        "description": "Convert 10 riven slivers into a riven mod",
+        "description": "Exchange 10 riven slivers for a riven mod",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardThePriceOfFreedom": {
@@ -574,5 +594,21 @@
     "SeasonWeeklyHardUnlockRelics": {
         "description": "Open 10 relics",
         "xpAmount": 7000
+    },
+    "SeasonWeeklyHardVitalArbiter": {
+        "description": "Complete an Arbitration mission",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyPermanentCompleteMissions": {
+        "description": "Complete any 15 missions",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyPermanentKillEnemies": {
+        "description": "Kill 500 enemies",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyPermanentKillEximus": {
+        "description": "Kill 30 eximus enemies",
+        "xpAmount": 4500
     }
 }

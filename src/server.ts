@@ -207,6 +207,7 @@ export default class Server {
 			cacheTtl = Math.ceil((instance.getNextUpdate() - Date.now()) / 1000)
 			// Set max-age to tell browsers to update every <updateInterval> seconds. Subtract 1 to prevent accidental cache hits
 			cacheTtlBrowser = config.updateInterval < 1000 ? 0 : Math.floor(config.updateInterval / 1000) - 1
+			res.setHeader('Last-Modified', new Date().toUTCString())
 		}
 		else {
 			res.statusCode = 404

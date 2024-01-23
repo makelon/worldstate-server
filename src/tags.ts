@@ -24,6 +24,7 @@ export const
 		FC_SENTIENT: 'Sentient',
 		FC_STALKER: 'Stalker',
 		FC_TENNO: 'Tenno',
+		FC_MITW: 'Murmur',
 	},
 	fomorianTypes: WfMap = {
 		FC_CORPUS: 'Razorback',

@@ -72,7 +72,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyFeedMeMore": {
-        "description": "Fed the Maw in Duviri",
+        "description": "Feed the Maw in Duviri",
         "xpAmount": 1000
     },
     "SeasonDailyHelpingHand": {
@@ -259,6 +259,10 @@
         "description": "Visit a featured dojo",
         "xpAmount": 1000
     },
+    "SeasonDailyYourMove": {
+        "description": "Complete a game of Komi in Duviri",
+        "xpAmount": 1000
+    },
     "SeasonWeeklyBloodthirsty": {
         "description": "Kill 20 enemies in 5 seconds",
         "xpAmount": 4500
@@ -379,6 +383,10 @@
         "description": "Kill 100 enemies with a Necramech",
         "xpAmount": 4500
     },
+    "SeasonWeeklyKillEnemiesWithHeadshots": {
+        "description": "Kill 100 enemies with headshots",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyKillEximus": {
         "description": "Kill 30 eximus enemies",
         "xpAmount": 4500
@@ -425,6 +433,10 @@
     },
     "SeasonWeeklyRailjackHijackDestroyThree": {
         "description": "While piloting a hijacked crewship, destroy 3 enemy fighters",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyRequiemTotem": {
+        "description": "Activate 3 Requiem Obelisks on Deimos",
         "xpAmount": 4500
     },
     "SeasonWeeklySabotageCaches": {
@@ -565,6 +577,10 @@
     },
     "SeasonWeeklyHardLuaPuzzles": {
         "description": "Complete 4 halls of ascension on Lua",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardPerplexed": {
+        "description": "Complete 3 puzzles in Duviri",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardRailjackMissions": {

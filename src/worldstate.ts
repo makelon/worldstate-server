@@ -312,30 +312,25 @@ export default class Worldstate {
 		).catch(err => { log.error('Error reading worldstate: %s', err.message) })
 	}
 
-	private readAcolytes(): void {
-		let acolytes = this.ws?.PersistentEnemies
-		if (!Array.isArray(acolytes)) {
-			acolytes = []
+	private simpleRead(entryKey: keyof WorldstateStruct, readerName: WfRecordKey): void {
+		let entries = this.ws?.[entryKey]
+		if (!Array.isArray(entries)) {
+			entries = []
 		}
 		try {
-			this.readers['acolytes'].read(acolytes, this.now)
+			this.readers[readerName].read(entries, this.now)
 		}
 		catch (err) {
-			log.error('Error reading acolytes for %s: %s', this.platform, err.message)
+			log.error('Error reading %s for %s: %s', readerName, this.platform, err.message)
 		}
 	}
 
+	private readAcolytes(): void {
+		this.simpleRead('PersistentEnemies', 'acolytes')
+	}
+
 	private readAlerts(): void {
-		let alerts = this.ws?.Alerts
-		if (!Array.isArray(alerts)) {
-			alerts = []
-		}
-		try {
-			this.readers['alerts'].read(alerts, this.now)
-		}
-		catch (err) {
-			log.error('Error reading alerts for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('Alerts', 'alerts')
 	}
 
 	private readChallenges(): void {
@@ -352,29 +347,11 @@ export default class Worldstate {
 	}
 
 	private readDailyDeals(): void {
-		let deals = this.ws?.DailyDeals
-		if (!Array.isArray(deals)) {
-			deals = []
-		}
-		try {
-			this.readers['dailydeals'].read(deals, this.now)
-		}
-		catch (err) {
-			log.error('Error reading dailydeals for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('DailyDeals', 'dailydeals')
 	}
 
 	private readFactionProjects(): void {
-		let projects = this.ws?.ProjectPct
-		if (!Array.isArray(projects)) {
-			projects = []
-		}
-		try {
-			this.readers['factionprojects'].read(projects, this.now)
-		}
-		catch (err) {
-			log.error('Error reading faction projects for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('ProjectPct', 'factionprojects')
 	}
 
 	/**
@@ -398,7 +375,7 @@ export default class Worldstate {
 			}
 		}
 		try {
-			this.readers['fomorians'].read(fomorians, this.now)
+			this.readers.fomorians.read(fomorians, this.now)
 		}
 		catch (err) {
 			log.error('Error reading fomorians for %s: %s', this.platform, err.message)
@@ -406,16 +383,7 @@ export default class Worldstate {
 	}
 
 	private readInvasions(): void {
-		let invasions = this.ws?.Invasions
-		if (!Array.isArray(invasions)) {
-			invasions = []
-		}
-		try {
-			this.readers['invasions'].read(invasions, this.now)
-		}
-		catch (err) {
-			log.error('Error reading invasions for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('Invasions', 'invasions')
 	}
 
 	/**
@@ -423,13 +391,13 @@ export default class Worldstate {
 	 */
 	private readKuvalog(): void {
 		try {
-			this.readers['arbitrations'].read(this.kuvalog.arbitrations, this.kuvalog.getLastUpdate())
+			this.readers.arbitrations.read(this.kuvalog.arbitrations, this.kuvalog.getLastUpdate())
 		}
 		catch (err) {
 			log.error('Error reading arbitrations for %s: %s', this.platform, err.message)
 		}
 		try {
-			this.readers['kuvasiphons'].read(this.kuvalog.kuvamissions, this.kuvalog.getLastUpdate())
+			this.readers.kuvasiphons.read(this.kuvalog.kuvamissions, this.kuvalog.getLastUpdate())
 		}
 		catch (err) {
 			log.error('Error reading kuvasiphons for %s: %s', this.platform, err.message)
@@ -440,29 +408,11 @@ export default class Worldstate {
 	 * Events and tactical alerts are found in the Goals section
 	 */
 	private readNews(): void {
-		let articles = this.ws?.Events
-		if (!Array.isArray(articles)) {
-			articles = []
-		}
-		try {
-			this.readers['news'].read(articles, this.now)
-		}
-		catch (err) {
-			log.error('Error reading news for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('Events', 'news')
 	}
 
 	private readSorties(): void {
-		let sorties = this.ws?.Sorties
-		if (!Array.isArray(sorties)) {
-			sorties = []
-		}
-		try {
-			this.readers['sorties'].read(sorties, this.now)
-		}
-		catch (err) {
-			log.error('Error reading sorties for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('Sorties', 'sorties')
 	}
 
 	/**
@@ -479,7 +429,7 @@ export default class Worldstate {
 			}
 		}
 		try {
-			this.readers['bounties'].read(bounties, this.now)
+			this.readers.bounties.read(bounties, this.now)
 		}
 		catch (err) {
 			log.error('Error reading bounties for %s: %s', this.platform, err.message)
@@ -490,55 +440,19 @@ export default class Worldstate {
 	 * Read global modifiers, which includes boosters
 	 */
 	private readUpgrades(): void {
-		let upgrades = this.ws?.GlobalUpgrades
-		if (!Array.isArray(upgrades)) {
-			upgrades = []
-		}
-		try {
-			this.readers['upgrades'].read(upgrades, this.now)
-		}
-		catch (err) {
-			log.error('Error reading upgrades for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('GlobalUpgrades', 'upgrades')
 	}
 
 	private readVoidFissures(): void {
-		let fissures = this.ws?.ActiveMissions
-		if (!Array.isArray(fissures)) {
-			fissures = []
-		}
-		try {
-			this.readers['fissures'].read(fissures, this.now)
-		}
-		catch (err) {
-			log.error('Error reading void fissures for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('ActiveMissions', 'fissures')
 	}
 
 	private readVoidStorms(): void {
-		let voidstorms = this.ws?.VoidStorms
-		if (!Array.isArray(voidstorms)) {
-			voidstorms = []
-		}
-		try {
-			this.readers['voidstorms'].read(voidstorms, this.now)
-		}
-		catch (err) {
-			log.error('Error reading void storms for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('VoidStorms', 'voidstorms')
 	}
 
 	private readVoidTraders(): void {
-		let voidTraders = this.ws?.VoidTraders
-		if (!Array.isArray(voidTraders)) {
-			voidTraders = []
-		}
-		try {
-			this.readers['voidtraders'].read(voidTraders, this.now)
-		}
-		catch (err) {
-			log.error('Error reading void traders for %s: %s', this.platform, err.message)
-		}
+		this.simpleRead('VoidTraders', 'voidtraders')
 	}
 
 	/**

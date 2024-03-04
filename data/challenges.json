@@ -219,6 +219,10 @@
         "description": "Activate a Requiem Obelisk on Deimos",
         "xpAmount": 1000
     },
+    "SeasonDailySalutations": {
+        "description": "Visit Acrithis in Duviri",
+        "xpAmount": 1000
+    },
     "SeasonDailySlideKills": {
         "description": "Kill 10 enemies while sliding",
         "xpAmount": 1000
@@ -499,6 +503,10 @@
         "description": "Complete 5 Steel Path Missions",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardEliteBeastSlayer": {
+        "description": "Defeat the Orowyrm in Steel Path",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardEliteSanctuaryOnslaught": {
         "description": "Complete 8 zones in Elite Sanctuary Onslaught",
         "xpAmount": 7000
@@ -521,6 +529,10 @@
     },
     "SeasonWeeklyHardFriendsDefense": {
         "description": "Complete 20 waves in a defense mission",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardFriendsMirrorDefense": {
+        "description": "Complete 3 waves of Mirror Defense",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardFriendsProfitTaker": {

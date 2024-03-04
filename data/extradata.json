@@ -88,6 +88,52 @@
                         ]
                     }
                 ]
+            },
+            {
+                "id": "CaviaSyndicate",
+                "syndicate": "Cavia",
+                "jobs": [
+                    {
+                        "rewards": "1Fyj",
+                        "minEnemyLevel": 55,
+                        "maxEnemyLevel": 60,
+                        "xpAmounts": [
+                            1000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyk",
+                        "minEnemyLevel": 65,
+                        "maxEnemyLevel": 70,
+                        "xpAmounts": [
+                            2000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyl",
+                        "minEnemyLevel": 75,
+                        "maxEnemyLevel": 80,
+                        "xpAmounts": [
+                            3000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fym",
+                        "minEnemyLevel": 95,
+                        "maxEnemyLevel": 100,
+                        "xpAmounts": [
+                            4000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyn",
+                        "minEnemyLevel": 115,
+                        "maxEnemyLevel": 120,
+                        "xpAmounts": [
+                            5000
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -177,6 +223,52 @@
                         "maxEnemyLevel": 115,
                         "xpAmounts": [
                             5
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "CaviaSyndicate",
+                "syndicate": "Cavia",
+                "jobs": [
+                    {
+                        "rewards": "1Fyj",
+                        "minEnemyLevel": 55,
+                        "maxEnemyLevel": 60,
+                        "xpAmounts": [
+                            1000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyk",
+                        "minEnemyLevel": 65,
+                        "maxEnemyLevel": 70,
+                        "xpAmounts": [
+                            2000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyl",
+                        "minEnemyLevel": 75,
+                        "maxEnemyLevel": 80,
+                        "xpAmounts": [
+                            3000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fym",
+                        "minEnemyLevel": 95,
+                        "maxEnemyLevel": 100,
+                        "xpAmounts": [
+                            4000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyn",
+                        "minEnemyLevel": 115,
+                        "maxEnemyLevel": 120,
+                        "xpAmounts": [
+                            5000
                         ]
                     }
                 ]
@@ -272,6 +364,52 @@
                         ]
                     }
                 ]
+            },
+            {
+                "id": "CaviaSyndicate",
+                "syndicate": "Cavia",
+                "jobs": [
+                    {
+                        "rewards": "1Fyj",
+                        "minEnemyLevel": 55,
+                        "maxEnemyLevel": 60,
+                        "xpAmounts": [
+                            1000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyk",
+                        "minEnemyLevel": 65,
+                        "maxEnemyLevel": 70,
+                        "xpAmounts": [
+                            2000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyl",
+                        "minEnemyLevel": 75,
+                        "maxEnemyLevel": 80,
+                        "xpAmounts": [
+                            3000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fym",
+                        "minEnemyLevel": 95,
+                        "maxEnemyLevel": 100,
+                        "xpAmounts": [
+                            4000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyn",
+                        "minEnemyLevel": 115,
+                        "maxEnemyLevel": 120,
+                        "xpAmounts": [
+                            5000
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -361,6 +499,52 @@
                         "maxEnemyLevel": 115,
                         "xpAmounts": [
                             5
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "CaviaSyndicate",
+                "syndicate": "Cavia",
+                "jobs": [
+                    {
+                        "rewards": "1Fyj",
+                        "minEnemyLevel": 55,
+                        "maxEnemyLevel": 60,
+                        "xpAmounts": [
+                            1000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyk",
+                        "minEnemyLevel": 65,
+                        "maxEnemyLevel": 70,
+                        "xpAmounts": [
+                            2000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyl",
+                        "minEnemyLevel": 75,
+                        "maxEnemyLevel": 80,
+                        "xpAmounts": [
+                            3000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fym",
+                        "minEnemyLevel": 95,
+                        "maxEnemyLevel": 100,
+                        "xpAmounts": [
+                            4000
+                        ]
+                    },
+                    {
+                        "rewards": "1Fyn",
+                        "minEnemyLevel": 115,
+                        "maxEnemyLevel": 120,
+                        "xpAmounts": [
+                            5000
                         ]
                     }
                 ]

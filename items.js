@@ -44,6 +44,9 @@ const itemTypeTree = {
 			"eidolon": {
 				"resources": "Resource"
 			},
+			"entratilab": {
+				"resources": "Resource"
+			},
 			"venus": {
 				"resources": "Resource"
 			},

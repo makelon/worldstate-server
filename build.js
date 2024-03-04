@@ -16,6 +16,7 @@ const itemNames = 'itemnames.json',
 		concat: [
 			{
 				input: [
+					'rewardtables-cavia.json',
 					'rewardtables-cetus.json',
 					'rewardtables-deimos.json',
 					'rewardtables-solaris.json',

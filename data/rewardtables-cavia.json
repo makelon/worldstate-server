@@ -1,0 +1,227 @@
+{
+    "1Fyj": [
+        [
+            {
+                "name": "Credits",
+                "count": 15000,
+                "chance": 0.1739
+            },
+            {
+                "name": "Endo",
+                "count": 500,
+                "chance": 0.1739
+            },
+            {
+                "name": "Shrill Voca",
+                "count": 1,
+                "chance": 0.1304
+            },
+            {
+                "name": "Credits",
+                "count": 30000,
+                "chance": 0.1304
+            },
+            {
+                "name": "Endo",
+                "count": 750,
+                "chance": 0.1304
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.087
+            },
+            {
+                "name": "Qorvex Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.1304
+            },
+            {
+                "name": "Mandonel Blueprint",
+                "count": 1,
+                "chance": 0.0435
+            }
+        ]
+    ],
+    "1Fyk": [
+        [
+            {
+                "name": "Endo",
+                "count": 1000,
+                "chance": 0.2034
+            },
+            {
+                "name": "Ayatan Amber Star",
+                "count": 1,
+                "chance": 0.2034
+            },
+            {
+                "name": "Shrill Voca",
+                "count": 1,
+                "chance": 0.1356
+            },
+            {
+                "name": "Endo",
+                "count": 1500,
+                "chance": 0.1356
+            },
+            {
+                "name": "Entrati Obols",
+                "count": 150,
+                "chance": 0.0678
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.08470000000000001
+            },
+            {
+                "name": "Qorvex Chassis Blueprint",
+                "count": 1,
+                "chance": 0.1356
+            },
+            {
+                "name": "Mandonel Blueprint",
+                "count": 1,
+                "chance": 0.0339
+            }
+        ]
+    ],
+    "1Fyl": [
+        [
+            {
+                "name": "Endo",
+                "count": 2000,
+                "chance": 0.1446
+            },
+            {
+                "name": "Greater Zenurik Lens",
+                "count": 1,
+                "chance": 0.1446
+            },
+            {
+                "name": "Greater Madurai Lens",
+                "count": 1,
+                "chance": 0.124
+            },
+            {
+                "name": "Bellow Voca",
+                "count": 1,
+                "chance": 0.124
+            },
+            {
+                "name": "Endo",
+                "count": 3000,
+                "chance": 0.124
+            },
+            {
+                "name": "Necracoil",
+                "count": 15,
+                "chance": 0.08259999999999999
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.0909
+            },
+            {
+                "name": "Qorvex Systems Blueprint",
+                "count": 1,
+                "chance": 0.124
+            },
+            {
+                "name": "Mandonel Blueprint",
+                "count": 1,
+                "chance": 0.041299999999999996
+            }
+        ]
+    ],
+    "1Fym": [
+        [
+            {
+                "name": "Endo",
+                "count": 3000,
+                "chance": 0.1535
+            },
+            {
+                "name": "Greater Unairu Lens",
+                "count": 1,
+                "chance": 0.1535
+            },
+            {
+                "name": "Greater Vazarin Lens",
+                "count": 1,
+                "chance": 0.1316
+            },
+            {
+                "name": "Bellow Voca",
+                "count": 1,
+                "chance": 0.1316
+            },
+            {
+                "name": "Endo",
+                "count": 4000,
+                "chance": 0.1316
+            },
+            {
+                "name": "Stela",
+                "count": 15,
+                "chance": 0.0877
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Mandonel Blueprint",
+                "count": 1,
+                "chance": 0.043899999999999995
+            }
+        ]
+    ],
+    "1Fyn": [
+        [
+            {
+                "name": "Endo",
+                "count": 3000,
+                "chance": 0.1471
+            },
+            {
+                "name": "Greater Unairu Lens",
+                "count": 1,
+                "chance": 0.1471
+            },
+            {
+                "name": "Greater Naramon Lens",
+                "count": 1,
+                "chance": 0.1471
+            },
+            {
+                "name": "Echo Voca",
+                "count": 1,
+                "chance": 0.1471
+            },
+            {
+                "name": "Endo",
+                "count": 4000,
+                "chance": 0.1261
+            },
+            {
+                "name": "Stela",
+                "count": 15,
+                "chance": 0.084
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.1597
+            },
+            {
+                "name": "Mandonel Blueprint",
+                "count": 1,
+                "chance": 0.042
+            }
+        ]
+    ]
+}

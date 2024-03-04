@@ -4,7 +4,7 @@
             {
                 "name": "Rifle Riven Mod",
                 "count": 1,
-                "chance": 0.0679
+                "chance": 0.07
             },
             {
                 "name": "Ayatan Anasa Sculpture",
@@ -14,7 +14,7 @@
             {
                 "name": "Endo",
                 "count": 4000,
-                "chance": 0.121
+                "chance": 0.12
             },
             {
                 "name": "Forma",
@@ -39,7 +39,7 @@
             {
                 "name": "Legendary Core",
                 "count": 1,
-                "chance": 0.0018
+                "chance": 0.0019
             },
             {
                 "name": "Kuva",
@@ -64,27 +64,27 @@
             {
                 "name": "Pistol Riven Mod",
                 "count": 1,
-                "chance": 0.0761
+                "chance": 0.07
             },
             {
                 "name": "Shotgun Riven Mod",
                 "count": 1,
-                "chance": 0.013600000000000001
+                "chance": 0.022000000000000002
             },
             {
                 "name": "Melee Riven Mod",
                 "count": 1,
-                "chance": 0.0814
+                "chance": 0.098
             },
             {
                 "name": "Zaw Riven Mod",
                 "count": 1,
-                "chance": 0.02
+                "chance": 0.01
             },
             {
                 "name": "Kitgun Riven Mod",
                 "count": 1,
-                "chance": 0.02
+                "chance": 0.01
             }
         ]
     ]

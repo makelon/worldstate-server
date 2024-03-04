@@ -123,6 +123,9 @@ export function getRewards(rewards: RewardsStruct, entityRewards: EntityRewards)
  */
 export function getRandomRewards(tableId: string, entityRewards: EntityRewards): WfRandomRewardTable {
 	const ret: WfRandomRewardTable = []
+	if (!tableId) {
+		return ret
+	}
 	tableId = tableId.substr(tableId.lastIndexOf('/') + 1)
 	if (!(tableId in rewardTables)) {
 		return ret

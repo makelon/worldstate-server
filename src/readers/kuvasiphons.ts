@@ -20,7 +20,7 @@ export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
 			return
 		}
 		log.notice('Reading %s kuva siphons', this.platform)
-		kuvamissionsInput.sort((a, b) => Number(a.missiontype.substr(missionPrefixLength)) - Number(b.missiontype.substr(missionPrefixLength)))
+		kuvamissionsInput.sort((a, b) => Number(a.missiontype.substring(missionPrefixLength)) - Number(b.missiontype.substring(missionPrefixLength)))
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		let missionIdx = 0

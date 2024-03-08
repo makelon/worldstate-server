@@ -48,7 +48,7 @@ function getItemType(itemName: string): string {
 export function getItem(itemId: string, entityRewards: EntityRewards): WfItem {
 	// Id prefixes are stripped to reduce memory consumption of the <itemNames> map
 	itemId = itemId.replace(/^\/Lotus(?:(?:\/Types)?\/StoreItems)?\//, '')
-	const itemName = itemNames[lcItemIds ? itemId.toLowerCase() : itemId] || itemId.substr(itemId.lastIndexOf('/') + 1)
+	const itemName = itemNames[lcItemIds ? itemId.toLowerCase() : itemId] || itemId.substring(itemId.lastIndexOf('/') + 1)
 	entityRewards.add(itemName)
 	return {
 		name: itemName,
@@ -126,7 +126,7 @@ export function getRandomRewards(tableId: string, entityRewards: EntityRewards):
 	if (!tableId) {
 		return ret
 	}
-	tableId = tableId.substr(tableId.lastIndexOf('/') + 1)
+	tableId = tableId.substring(tableId.lastIndexOf('/') + 1)
 	if (!(tableId in rewardTables)) {
 		return ret
 	}

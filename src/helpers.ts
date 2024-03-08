@@ -174,7 +174,7 @@ export function getVoidTraderName(voidTraderId: string): string {
  * @returns Acolyte name
  */
 export function getAcolyteName(acolyteTag: string): string {
-	const acolyteId = acolyteTag.substr(acolyteTag.lastIndexOf('/') + 1)
+	const acolyteId = acolyteTag.substring(acolyteTag.lastIndexOf('/') + 1)
 	return tags.acolyteNames[acolyteId] || acolyteId
 }
 
@@ -183,7 +183,7 @@ export function getAcolyteName(acolyteTag: string): string {
  * @returns Challenge info
  */
 export function getChallenge(challengeTag: string): WfChallengeInfo {
-	let challengeId = challengeTag.substr(challengeTag.lastIndexOf('/') + 1)
+	let challengeId = challengeTag.substring(challengeTag.lastIndexOf('/') + 1)
 	if (challengeId.startsWith('SeasonWeeklyPermanent')) {
 		challengeId = challengeId.replace(/\d+$/, '')
 	}
@@ -203,5 +203,5 @@ export function getChallenge(challengeTag: string): WfChallengeInfo {
  * @param tableId
  */
 export function getBountyRewardTableId(syndicateTag: string, tableId: string): string {
-	return syndicateTag + 'Bounty' + tableId.substr(tableId.lastIndexOf('/') + 1)
+	return syndicateTag + 'Bounty' + tableId.substring(tableId.lastIndexOf('/') + 1)
 }

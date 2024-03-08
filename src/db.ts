@@ -171,10 +171,10 @@ class Table<T extends WfRecordType> implements WfDbTableI<T> {
 				createInterface(readStream)
 					.on('line', line => {
 						const dataStart = line.indexOf('\t'),
-							id = line.substr(0, dataStart)
+							id = line.substring(0, dataStart)
 						let patch: WfRecordPatch<T>
 						try {
-							patch = this.parsePatch(line.substr(dataStart + 1))
+							patch = this.parsePatch(line.substring(dataStart + 1))
 						}
 						catch (err) {
 							log.error('Failed to read record %s/%s: %s', this.dbName, this.tableName, err.message)

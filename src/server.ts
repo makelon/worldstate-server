@@ -104,8 +104,8 @@ export default class Server {
 				listenOpts.path = config.listen
 			}
 			else {
-				const address = config.listen.substr(0, addrLen),
-					port = Number(config.listen.substr(addrLen + 1))
+				const address = config.listen.substring(0, addrLen),
+					port = Number(config.listen.substring(addrLen + 1))
 				let address6: string | undefined
 				if (address[0] === '[' && address[address.length - 1] === ']' ) {
 					address6 = address.slice(1, -1)
@@ -190,7 +190,7 @@ export default class Server {
 	private handleGetRequest(req: IncomingMessage, res: ServerResponse): string {
 		const reqUrl = req.url || '/'
 		log.notice('Received GET request: %s', reqUrl)
-		const urlParts = reqUrl.substr(1).split('/'),
+		const urlParts = reqUrl.substring(1).split('/'),
 			platform = (urlParts[0] || 'pc') as WfPlatform,
 			instance = this.instances[platform]
 		let responseText: string,

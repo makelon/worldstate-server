@@ -148,7 +148,7 @@ function build() {
 						continue
 					}
 					if (reBuildTimestamp.test(line)) {
-						line = line.substr(11)
+						line = line.substring(11)
 					}
 					printBuild(line)
 					if (opt.run && opt.watch && reBuildComplete.test(line)) {

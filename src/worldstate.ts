@@ -273,7 +273,7 @@ export default class Worldstate {
 					throw new Error(`Failed to parse response: ${err.message}`)
 				}
 				if (!looksLikeWorldstate(resParsed)) {
-					const resHead = resData.length > 210 ? resData.slice(0, 200) + '...' : resData
+					const resHead = resData.length > 210 ? resData.substring(0, 200) + '...' : resData
 					throw new Error(`Response does not look like worldstate data: '${resHead}'`)
 				}
 				const timestamp = getDate(resParsed)

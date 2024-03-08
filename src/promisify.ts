@@ -69,7 +69,7 @@ export function createDirectory(dir: string): Promise<void> {
 		return mkdirCache[dir]
 	}
 	const createThen = (dirInner: string) => () => promiseMkdir(dirInner),
-		dirs = dir.substr(pathInfo.root.length).split(pathSeparator)
+		dirs = dir.substring(pathInfo.root.length).split(pathSeparator)
 	let curPath = pathInfo.root || `.${pathSeparator}`,
 		promise = Promise.resolve()
 	for (const subDir of dirs) {

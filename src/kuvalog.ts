@@ -145,7 +145,7 @@ export default class Kuvalog {
 					throw new Error(`Failed to parse response: ${err.message}`)
 				}
 				if (!looksLikeKuvalog(resParsed)) {
-					const resHead = resData.length > 210 ? resData.slice(0, 200) + '...' : resData
+					const resHead = resData.length > 210 ? resData.substring(0, 200) + '...' : resData
 					throw new Error(`Response does not look like kuvalog data: '${resHead}'`)
 				}
 				let lastArbitrationStart = 0,

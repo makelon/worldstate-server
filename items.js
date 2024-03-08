@@ -151,7 +151,7 @@ function getItemType(itemId) {
 				const wildcards = branch['*']
 				for (const search in wildcards) {
 					const type = wildcards[search]
-					if (dir.slice(0, search.length) === search) {
+					if (dir.substring(0, search.length) === search) {
 						return type
 					}
 				}
@@ -168,7 +168,7 @@ function getItemType(itemId) {
 }
 
 for (let itemId in lang) {
-	const itemName = lang[itemId].value.replace(/\b[A-Z]{2,}\b/g, (word) => word[0] + word.slice(1).toLowerCase())
+	const itemName = lang[itemId].value.replace(/\b[A-Z]{2,}\b/g, (word) => word[0] + word.substring(1).toLowerCase())
 	if (itemId[0] === '/') {
 		itemId = itemId.toLowerCase().replace(/^\/lotus(?:(?:\/types)?\/storeitems)?\//, '')
 	}

@@ -35,6 +35,7 @@ export const
 		1: 'FC_CORPUS',
 	},
 	missionTypes: WfMap = {
+		MT_ALCHEMY: 'Alchemy',
 		MT_ARMAGEDDON: 'Void Armageddon',
 		MT_ARTIFACT: 'Disruption',
 		MT_ASSASSINATION: 'Assassination',
@@ -143,6 +144,7 @@ export const
 		VoidT3: 'Neo',
 		VoidT4: 'Axi',
 		VoidT5: 'Requiem',
+		VoidT6: 'Omnia',
 	},
 	voidTraderNames: WfMap = {
 		'Baro\'Ki Teel': 'Baro Ki\'Teer',

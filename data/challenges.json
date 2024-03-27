@@ -483,6 +483,10 @@
         "description": "Open one of each era/tier of relic (Lith, Meso, Neo, Axi)",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardCeremonialEvolution": {
+        "description": "Activate the Incarnon form of any Incarnon weapon in-mission 5 times",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardCollectUniqueResources": {
         "description": "Collect 20 different type of resources",
         "xpAmount": 7000
@@ -584,7 +588,7 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardKuvaSurvivalNoCapsules": {
-        "description": "Stay 30 minutes in the Kuva survival mission",
+        "description": "Survive for over 20 minutes in Kuva survival",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardLuaPuzzles": {

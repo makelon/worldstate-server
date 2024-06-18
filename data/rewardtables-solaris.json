@@ -4,91 +4,81 @@
             {
                 "name": "Oxium",
                 "count": 100,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Credits Cache",
                 "count": 1500,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Endo",
                 "count": 50,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Mytocardia Spore",
                 "count": 5,
-                "chance": 0.2
-            },
-            {
-                "name": "Training Debt-Bond",
-                "count": 2,
-                "chance": 0.2
+                "chance": 0.25
             }
         ],
         [
             {
                 "name": "Oxium",
                 "count": 100,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Credits Cache",
                 "count": 1500,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Endo",
                 "count": 50,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Mytocardia Spore",
                 "count": 5,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Training Debt-Bond",
                 "count": 2,
-                "chance": 0.1549
+                "chance": 0.2
             },
             {
                 "name": "Garuda Chassis Blueprint",
                 "count": 1,
-                "chance": 0.07519999999999999
+                "chance": 0.12
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.07519999999999999
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.07519999999999999
+                "chance": 0.08
             }
         ],
         [
             {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.46
+            },
+            {
                 "name": "Garuda Chassis Blueprint",
                 "count": 1,
-                "chance": 0.3056
+                "chance": 0.276
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.3056
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.3056
+                "chance": 0.184
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08
             }
         ]
     ],
@@ -97,91 +87,81 @@
             {
                 "name": "Cryotic",
                 "count": 100,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Credits Cache",
                 "count": 1500,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Endo",
                 "count": 50,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Thermal Sludge",
                 "count": 5,
-                "chance": 0.2
-            },
-            {
-                "name": "Training Debt-Bond",
-                "count": 2,
-                "chance": 0.2
+                "chance": 0.25
             }
         ],
         [
             {
                 "name": "Cryotic",
                 "count": 100,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Credits Cache",
                 "count": 1500,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Endo",
                 "count": 50,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Thermal Sludge",
                 "count": 5,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Training Debt-Bond",
                 "count": 2,
-                "chance": 0.1549
+                "chance": 0.2
             },
             {
                 "name": "Garuda Chassis Blueprint",
                 "count": 1,
-                "chance": 0.07519999999999999
+                "chance": 0.12
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.07519999999999999
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.07519999999999999
+                "chance": 0.08
             }
         ],
         [
             {
+                "name": "Training Debt-Bond",
+                "count": 2,
+                "chance": 0.46
+            },
+            {
                 "name": "Garuda Chassis Blueprint",
                 "count": 1,
-                "chance": 0.3056
+                "chance": 0.276
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.3056
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.3056
+                "chance": 0.184
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08
             }
         ]
     ],
@@ -190,91 +170,81 @@
             {
                 "name": "Plastids",
                 "count": 100,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Credits Cache",
                 "count": 1500,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Endo",
                 "count": 50,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Gorgaricus Spore",
                 "count": 5,
-                "chance": 0.2
-            },
-            {
-                "name": "Training Debt-Bond",
-                "count": 2,
-                "chance": 0.2
+                "chance": 0.25
             }
         ],
         [
             {
                 "name": "Plastids",
                 "count": 100,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Credits Cache",
                 "count": 1500,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Endo",
                 "count": 50,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Gorgaricus Spore",
                 "count": 5,
-                "chance": 0.1549
+                "chance": 0.15
             },
             {
                 "name": "Training Debt-Bond",
-                "count": 2,
-                "chance": 0.1549
+                "count": 1,
+                "chance": 0.2
             },
             {
                 "name": "Garuda Chassis Blueprint",
                 "count": 1,
-                "chance": 0.07519999999999999
+                "chance": 0.12
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.07519999999999999
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.07519999999999999
+                "chance": 0.08
             }
         ],
         [
             {
+                "name": "Training Debt-Bond",
+                "count": 1,
+                "chance": 0.46
+            },
+            {
                 "name": "Garuda Chassis Blueprint",
                 "count": 1,
-                "chance": 0.3056
+                "chance": 0.276
             },
             {
                 "name": "Tepa Nodule",
                 "count": 5,
-                "chance": 0.3056
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.3056
+                "chance": 0.184
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.08
             }
         ]
     ],
@@ -283,91 +253,81 @@
             {
                 "name": "Mytocardia Spore",
                 "count": 15,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Oxium",
                 "count": 200,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.2
-            },
-            {
-                "name": "Shelter Debt-Bond",
-                "count": 2,
-                "chance": 0.2
+                "chance": 0.25
             }
         ],
         [
             {
                 "name": "Mytocardia Spore",
                 "count": 15,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Oxium",
                 "count": 200,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Shelter Debt-Bond",
                 "count": 2,
-                "chance": 0.15689999999999998
+                "chance": 0.2
             },
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.0784
-            },
-            {
-                "name": "Tepa Nodule",
-                "count": 5,
-                "chance": 0.0784
+                "chance": 0.12
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.0588
+                "chance": 0.08
             }
         ],
         [
             {
-                "name": "Garuda Systems Blueprint",
-                "count": 1,
-                "chance": 0.2667
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.375
             },
             {
-                "name": "Tepa Nodule",
-                "count": 5,
-                "chance": 0.2667
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.225
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.15
             },
             {
                 "name": "Synth Charge",
                 "count": 1,
-                "chance": 0.2667
+                "chance": 0.25
             }
         ]
     ],
@@ -376,91 +336,81 @@
             {
                 "name": "Thermal Sludge",
                 "count": 15,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Cryotic",
                 "count": 200,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.2
-            },
-            {
-                "name": "Shelter Debt-Bond",
-                "count": 2,
-                "chance": 0.2
+                "chance": 0.25
             }
         ],
         [
             {
                 "name": "Thermal Sludge",
                 "count": 15,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Cryotic",
                 "count": 200,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Shelter Debt-Bond",
                 "count": 2,
-                "chance": 0.15689999999999998
+                "chance": 0.2
             },
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.0784
-            },
-            {
-                "name": "Tepa Nodule",
-                "count": 5,
-                "chance": 0.0784
+                "chance": 0.12
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.0588
+                "chance": 0.08
             }
         ],
         [
             {
-                "name": "Garuda Systems Blueprint",
-                "count": 1,
-                "chance": 0.2667
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.375
             },
             {
-                "name": "Tepa Nodule",
-                "count": 5,
-                "chance": 0.2667
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.225
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.15
             },
             {
                 "name": "Mecha Overdrive",
                 "count": 1,
-                "chance": 0.2667
+                "chance": 0.25
             }
         ]
     ],
@@ -469,169 +419,149 @@
             {
                 "name": "Gorgaricus Spore",
                 "count": 15,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Nano Spores",
                 "count": 200,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.2
+                "chance": 0.25
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.2
-            },
-            {
-                "name": "Shelter Debt-Bond",
-                "count": 2,
-                "chance": 0.2
+                "chance": 0.25
             }
         ],
         [
             {
                 "name": "Gorgaricus Spore",
                 "count": 15,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Nano Spores",
                 "count": 200,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Credits Cache",
                 "count": 2500,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Endo",
                 "count": 100,
-                "chance": 0.15689999999999998
+                "chance": 0.15
             },
             {
                 "name": "Shelter Debt-Bond",
                 "count": 2,
-                "chance": 0.15689999999999998
+                "chance": 0.2
             },
             {
                 "name": "Garuda Systems Blueprint",
                 "count": 1,
-                "chance": 0.0784
-            },
-            {
-                "name": "Tepa Nodule",
-                "count": 5,
-                "chance": 0.0784
+                "chance": 0.12
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.0588
+                "chance": 0.08
             }
         ],
         [
             {
-                "name": "Garuda Systems Blueprint",
-                "count": 1,
-                "chance": 0.2667
+                "name": "Shelter Debt-Bond",
+                "count": 2,
+                "chance": 0.375
             },
             {
-                "name": "Tepa Nodule",
-                "count": 5,
-                "chance": 0.2667
+                "name": "Garuda Systems Blueprint",
+                "count": 1,
+                "chance": 0.225
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.2
+                "chance": 0.15
             },
             {
                 "name": "Tek Assault",
                 "count": 1,
-                "chance": 0.2667
+                "chance": 0.25
             }
         ]
     ],
     "SolarisSyndicateBountyVenusTierCTableARewards": [
         [
             {
-                "name": "Madurai Lens",
-                "count": 1,
-                "chance": 0.2
-            },
-            {
                 "name": "Endo",
                 "count": 200,
-                "chance": 0.4
+                "chance": 0.5
             },
-            {
-                "name": "Circuits",
-                "count": 300,
-                "chance": 0.2
-            },
-            {
-                "name": "Medical Debt-Bond",
-                "count": 2,
-                "chance": 0.2
-            }
-        ],
-        [
             {
                 "name": "Madurai Lens",
                 "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Endo",
-                "count": 200,
                 "chance": 0.25
             },
             {
                 "name": "Circuits",
                 "count": 300,
-                "chance": 0.125
-            },
-            {
-                "name": "Medical Debt-Bond",
-                "count": 2,
-                "chance": 0.125
-            },
-            {
-                "name": "Garuda Neuroptics Blueprint",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.125
-            },
-            {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.125
+                "chance": 0.25
             }
         ],
         [
             {
-                "name": "Garuda Neuroptics Blueprint",
-                "count": 1,
-                "chance": 0.25
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.3
             },
             {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.25
+                "name": "Madurai Lens",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Circuits",
+                "count": 300,
+                "chance": 0.15
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.12
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.08
+            }
+        ],
+        [
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.375
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.225
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.15
             },
             {
                 "name": "Synth Deconstruct",
@@ -643,78 +573,68 @@
     "SolarisSyndicateBountyVenusTierCTableBRewards": [
         [
             {
-                "name": "Unairu Lens",
-                "count": 1,
-                "chance": 0.2
-            },
-            {
                 "name": "Endo",
                 "count": 200,
-                "chance": 0.4
+                "chance": 0.5
             },
-            {
-                "name": "Plastids",
-                "count": 300,
-                "chance": 0.2
-            },
-            {
-                "name": "Medical Debt-Bond",
-                "count": 2,
-                "chance": 0.2
-            }
-        ],
-        [
             {
                 "name": "Unairu Lens",
                 "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Endo",
-                "count": 200,
                 "chance": 0.25
             },
             {
                 "name": "Plastids",
                 "count": 300,
-                "chance": 0.125
-            },
-            {
-                "name": "Medical Debt-Bond",
-                "count": 2,
-                "chance": 0.125
-            },
-            {
-                "name": "Garuda Neuroptics Blueprint",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.125
-            },
-            {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.125
+                "chance": 0.25
             }
         ],
         [
             {
-                "name": "Garuda Neuroptics Blueprint",
-                "count": 1,
-                "chance": 0.25
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.3
             },
             {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.25
+                "name": "Unairu Lens",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Plastids",
+                "count": 300,
+                "chance": 0.15
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.12
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.08
+            }
+        ],
+        [
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.375
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.225
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.15
             },
             {
                 "name": "Mecha Recharge",
@@ -726,78 +646,68 @@
     "SolarisSyndicateBountyVenusTierCTableCRewards": [
         [
             {
-                "name": "Naramon Lens",
-                "count": 1,
-                "chance": 0.2
-            },
-            {
                 "name": "Endo",
                 "count": 200,
-                "chance": 0.4
+                "chance": 0.5
             },
-            {
-                "name": "Rubedo",
-                "count": 300,
-                "chance": 0.2
-            },
-            {
-                "name": "Medical Debt-Bond",
-                "count": 2,
-                "chance": 0.2
-            }
-        ],
-        [
             {
                 "name": "Naramon Lens",
                 "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Endo",
-                "count": 200,
                 "chance": 0.25
             },
             {
                 "name": "Rubedo",
                 "count": 300,
-                "chance": 0.125
-            },
-            {
-                "name": "Medical Debt-Bond",
-                "count": 2,
-                "chance": 0.125
-            },
-            {
-                "name": "Garuda Neuroptics Blueprint",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.125
-            },
-            {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.125
+                "chance": 0.25
             }
         ],
         [
             {
-                "name": "Garuda Neuroptics Blueprint",
-                "count": 1,
-                "chance": 0.25
+                "name": "Endo",
+                "count": 200,
+                "chance": 0.3
             },
             {
-                "name": "Credits Cache",
-                "count": 3000,
-                "chance": 0.25
+                "name": "Naramon Lens",
+                "count": 1,
+                "chance": 0.15
+            },
+            {
+                "name": "Rubedo",
+                "count": 300,
+                "chance": 0.15
+            },
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.2
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.12
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.08
+            }
+        ],
+        [
+            {
+                "name": "Medical Debt-Bond",
+                "count": 2,
+                "chance": 0.375
+            },
+            {
+                "name": "Garuda Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.225
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.15
             },
             {
                 "name": "Tek Enhance",
@@ -811,108 +721,93 @@
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.2581
+                "chance": 0.3333
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.2581
+                "chance": 0.3333
             },
             {
                 "name": "Fieldron",
                 "count": 2,
-                "chance": 0.2903
-            },
-            {
-                "name": "Advances Debt-Bond",
-                "count": 2,
-                "chance": 0.1935
+                "chance": 0.3333
             }
         ],
         [
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.20670000000000002
+                "chance": 0.2
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.20670000000000002
+                "chance": 0.2
             },
             {
                 "name": "Fieldron",
                 "count": 2,
-                "chance": 0.23260000000000003
+                "chance": 0.2
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.155
+                "chance": 0.2
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.14730000000000001
-            },
-            {
-                "name": "Tellurium",
-                "count": 1,
-                "chance": 0.051699999999999996
+                "chance": 0.2
             }
         ],
         [
             {
                 "name": "Vazarin Lens",
                 "count": 1,
-                "chance": 0.18309999999999998
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.18309999999999998
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Fieldron",
                 "count": 2,
-                "chance": 0.20600000000000002
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1373
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.1304
-            },
-            {
-                "name": "Tellurium",
-                "count": 1,
-                "chance": 0.0458
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Synth Fiber",
                 "count": 1,
-                "chance": 0.1144
+                "chance": 0.16670000000000001
             }
         ],
         [
             {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.44880000000000003
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.3333
             },
             {
-                "name": "Tellurium",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1575
+                "chance": 0.3333
             },
             {
                 "name": "Synth Fiber",
                 "count": 1,
-                "chance": 0.3937
+                "chance": 0.3333
             }
         ]
     ],
@@ -921,108 +816,93 @@
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.2581
+                "chance": 0.3333
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.2581
+                "chance": 0.3333
             },
             {
                 "name": "Detonite Injector",
                 "count": 2,
-                "chance": 0.2903
-            },
-            {
-                "name": "Advances Debt-Bond",
-                "count": 2,
-                "chance": 0.1935
+                "chance": 0.3333
             }
         ],
         [
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.20670000000000002
+                "chance": 0.2
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.20670000000000002
+                "chance": 0.2
             },
             {
                 "name": "Detonite Injector",
                 "count": 2,
-                "chance": 0.23260000000000003
+                "chance": 0.2
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.155
+                "chance": 0.2
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.14730000000000001
-            },
-            {
-                "name": "Tellurium",
-                "count": 1,
-                "chance": 0.051699999999999996
+                "chance": 0.2
             }
         ],
         [
             {
                 "name": "Zenurik Lens",
                 "count": 1,
-                "chance": 0.18309999999999998
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.18309999999999998
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Detonite Injector",
                 "count": 2,
-                "chance": 0.20600000000000002
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1373
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.1304
-            },
-            {
-                "name": "Tellurium",
-                "count": 1,
-                "chance": 0.0458
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Mecha Empowered",
                 "count": 1,
-                "chance": 0.1144
+                "chance": 0.16670000000000001
             }
         ],
         [
             {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.44880000000000003
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.3333
             },
             {
-                "name": "Tellurium",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1575
+                "chance": 0.3333
             },
             {
                 "name": "Mecha Empowered",
                 "count": 1,
-                "chance": 0.3937
+                "chance": 0.3333
             }
         ]
     ],
@@ -1031,108 +911,93 @@
             {
                 "name": "Kuva",
                 "count": 200,
-                "chance": 0.2581
+                "chance": 0.3333
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.2581
+                "chance": 0.3333
             },
             {
                 "name": "Mutagen Mass",
                 "count": 2,
-                "chance": 0.2903
-            },
-            {
-                "name": "Advances Debt-Bond",
-                "count": 2,
-                "chance": 0.1935
+                "chance": 0.3333
             }
         ],
         [
             {
                 "name": "Kuva",
                 "count": 200,
-                "chance": 0.20670000000000002
+                "chance": 0.2
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.20670000000000002
+                "chance": 0.2
             },
             {
                 "name": "Mutagen Mass",
                 "count": 2,
-                "chance": 0.23260000000000003
+                "chance": 0.2
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.155
+                "chance": 0.2
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.14730000000000001
-            },
-            {
-                "name": "Tellurium",
-                "count": 1,
-                "chance": 0.051699999999999996
+                "chance": 0.2
             }
         ],
         [
             {
                 "name": "Kuva",
                 "count": 200,
-                "chance": 0.18309999999999998
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Endo",
                 "count": 300,
-                "chance": 0.18309999999999998
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Mutagen Mass",
                 "count": 2,
-                "chance": 0.20600000000000002
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Advances Debt-Bond",
                 "count": 2,
-                "chance": 0.1373
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.1304
-            },
-            {
-                "name": "Tellurium",
-                "count": 1,
-                "chance": 0.0458
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Tek Gravity",
                 "count": 1,
-                "chance": 0.1144
+                "chance": 0.16670000000000001
             }
         ],
         [
             {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.44880000000000003
+                "name": "Advances Debt-Bond",
+                "count": 2,
+                "chance": 0.3333
             },
             {
-                "name": "Tellurium",
+                "name": "Aya",
                 "count": 1,
-                "chance": 0.1575
+                "chance": 0.3333
             },
             {
                 "name": "Tek Gravity",
                 "count": 1,
-                "chance": 0.3937
+                "chance": 0.3333
             }
         ]
     ],
@@ -1141,88 +1006,88 @@
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.5
-            },
-            {
-                "name": "Familial Debt-Bond",
-                "count": 2,
-                "chance": 0.25
-            },
-            {
-                "name": "Credits Cache",
-                "count": 10000,
-                "chance": 0.25
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 400,
                 "chance": 0.3333
             },
             {
-                "name": "Familial Debt-Bond",
-                "count": 2,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Credits Cache",
-                "count": 10000,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Aya",
+                "name": "Neurodes",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.3333
             },
             {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.0833
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.3333
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.2857
+                "chance": 0.2
+            },
+            {
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.2
             },
             {
                 "name": "Familial Debt-Bond",
                 "count": 2,
-                "chance": 0.1429
-            },
-            {
-                "name": "Credits Cache",
-                "count": 10000,
-                "chance": 0.1429
+                "chance": 0.2
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.2143
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.16670000000000001
             },
             {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.07139999999999999
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Synth Reflex",
                 "count": 1,
-                "chance": 0.1429
+                "chance": 0.16670000000000001
             }
         ],
         [
             {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.5
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.3333
             },
             {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.16670000000000001
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.3333
             },
             {
                 "name": "Synth Reflex",
@@ -1236,88 +1101,88 @@
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.5
-            },
-            {
-                "name": "Familial Debt-Bond",
-                "count": 2,
-                "chance": 0.25
-            },
-            {
-                "name": "Credits Cache",
-                "count": 10000,
-                "chance": 0.25
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 400,
                 "chance": 0.3333
             },
             {
-                "name": "Familial Debt-Bond",
-                "count": 2,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Credits Cache",
-                "count": 10000,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Aya",
+                "name": "Neurodes",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.3333
             },
             {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.0833
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.3333
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.2857
+                "chance": 0.2
+            },
+            {
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.2
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.2
             },
             {
                 "name": "Familial Debt-Bond",
                 "count": 2,
-                "chance": 0.1429
-            },
-            {
-                "name": "Credits Cache",
-                "count": 10000,
-                "chance": 0.1429
+                "chance": 0.2
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.2143
+                "chance": 0.2
+            }
+        ],
+        [
+            {
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.16670000000000001
             },
             {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.07139999999999999
+                "name": "Neurodes",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.16670000000000001
             },
             {
                 "name": "Mecha Pulse",
                 "count": 1,
-                "chance": 0.1429
+                "chance": 0.16670000000000001
             }
         ],
         [
             {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.5
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.3333
             },
             {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.16670000000000001
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.3333
             },
             {
                 "name": "Mecha Pulse",
@@ -1331,103 +1196,88 @@
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.5
-            },
-            {
-                "name": "Neurodes",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Orokin Cell",
-                "count": 1,
-                "chance": 0.125
-            },
-            {
-                "name": "Familial Debt-Bond",
-                "count": 2,
-                "chance": 0.25
-            }
-        ],
-        [
-            {
-                "name": "Endo",
-                "count": 400,
                 "chance": 0.3333
             },
             {
                 "name": "Neurodes",
                 "count": 1,
-                "chance": 0.0833
+                "chance": 0.3333
             },
             {
                 "name": "Orokin Cell",
                 "count": 1,
-                "chance": 0.0833
-            },
-            {
-                "name": "Familial Debt-Bond",
-                "count": 2,
-                "chance": 0.16670000000000001
-            },
-            {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.25
-            },
-            {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.0833
+                "chance": 0.3333
             }
         ],
         [
             {
                 "name": "Endo",
                 "count": 400,
-                "chance": 0.2857
+                "chance": 0.2
             },
             {
                 "name": "Neurodes",
                 "count": 1,
-                "chance": 0.07139999999999999
+                "chance": 0.2
             },
             {
                 "name": "Orokin Cell",
                 "count": 1,
-                "chance": 0.07139999999999999
+                "chance": 0.2
             },
             {
                 "name": "Familial Debt-Bond",
                 "count": 2,
-                "chance": 0.1429
+                "chance": 0.2
             },
             {
                 "name": "Aya",
                 "count": 1,
-                "chance": 0.2143
-            },
-            {
-                "name": "Kuva",
-                "count": 500,
-                "chance": 0.07139999999999999
-            },
-            {
-                "name": "Tek Collateral",
-                "count": 1,
-                "chance": 0.1429
+                "chance": 0.2
             }
         ],
         [
             {
-                "name": "Aya",
-                "count": 1,
-                "chance": 0.5
+                "name": "Endo",
+                "count": 400,
+                "chance": 0.16670000000000001
             },
             {
-                "name": "Kuva",
-                "count": 500,
+                "name": "Neurodes",
+                "count": 1,
                 "chance": 0.16670000000000001
+            },
+            {
+                "name": "Orokin Cell",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.16670000000000001
+            },
+            {
+                "name": "Tek Collateral",
+                "count": 1,
+                "chance": 0.16670000000000001
+            }
+        ],
+        [
+            {
+                "name": "Familial Debt-Bond",
+                "count": 2,
+                "chance": 0.3333
+            },
+            {
+                "name": "Aya",
+                "count": 1,
+                "chance": 0.3333
             },
             {
                 "name": "Tek Collateral",

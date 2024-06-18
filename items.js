@@ -47,14 +47,17 @@ const itemTypeTree = {
 			"entratilab": {
 				"resources": "Resource"
 			},
-			"venus": {
-				"resources": "Resource"
-			},
 			"infestedmicroplanet": {
 				"resources": {
 					"": "Resource",
 					"mechs": ""
 				}
+			},
+			"jadeshadows": {
+				"Resources": "Resource"
+			},
+			"venus": {
+				"resources": "Resource"
 			},
 			"zariman": {
 				"resources": "Resource"

@@ -267,6 +267,10 @@
         "description": "Complete a game of Komi in Duviri",
         "xpAmount": 1000
     },
+    "SeasonWeeklyBeastSlayer": {
+        "description": "Defeat the Orowyrm",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyBloodthirsty": {
         "description": "Kill 20 enemies in 5 seconds",
         "xpAmount": 4500
@@ -289,6 +293,14 @@
     },
     "SeasonWeeklyCatchRareVenusFish": {
         "description": "Catch 3 rare servofish in Orb Vallis",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyCollectHundredResources": {
+        "description": "Collect 100 resources from Duviri",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyCollector": {
+        "description": "Collect 4000 resources",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteAssassination": {
@@ -359,6 +371,10 @@
         "description": "Feed the Helminth any resource",
         "xpAmount": 4500
     },
+    "SeasonWeeklyFinelyTuned": {
+        "description": "Play 3 different Shawzin songs in Duviri",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyGildModular": {
         "description": "Gild a modular item",
         "xpAmount": 4500
@@ -369,6 +385,10 @@
     },
     "SeasonWeeklyHijackCrewship": {
         "description": "Hijack a crewship from the enemy",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyHorsingAround": {
+        "description": "Fly your Kaithe for 1500 meters",
         "xpAmount": 4500
     },
     "SeasonWeeklyIsolationBounties": {
@@ -419,6 +439,10 @@
         "description": "Collect 10 Vome or Fass residue in the Cambion Drift",
         "xpAmount": 4500
     },
+    "SeasonWeeklyOpenLockers": {
+        "description": "Open 30 lockers",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyPerfectAnimalCapture": {
         "description": "Complete 3 perfect animal captures",
         "xpAmount": 4500
@@ -453,6 +477,10 @@
     },
     "SeasonWeeklySimarisScan": {
         "description": "Complete 3 scans for Cephalon Simaris",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklySolveCiphers": {
+        "description": "Hack 10 consoles",
         "xpAmount": 4500
     },
     "SeasonWeeklyTheOldWays": {

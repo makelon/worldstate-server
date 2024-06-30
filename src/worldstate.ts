@@ -280,6 +280,9 @@ export default class Worldstate {
 				if (!timestamp) {
 					throw new Error('Response does not have a timestamp')
 				}
+				if (timestamp < this.now) {
+					throw new Error('Response is older than current worldstate')
+				}
 				this.ws = resParsed
 				this.now = timestamp
 				this.readWorldstate()

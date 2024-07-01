@@ -3,8 +3,9 @@ import Database from '../out/db.js'
 import extraData from '../out/extradata.js'
 import Worldstate from '../out/worldstate.js'
 import fixtures from './fixtures/data.js'
+import MockGame from './fixtures/mockgame.js'
 
-describe('Worldstate', () => {
+describe('Worldstate readers', () => {
 	const db = new Database('pc')
 	const ws = new Worldstate(db, 'pc')
 
@@ -160,4 +161,58 @@ describe('Worldstate', () => {
 		extraData.data = {}
 		delete config.wsUrls.pc
 	})
+})
+
+describe('Worldstate fetcher', () => {
+	const mockGame = new MockGame()
+
+	beforeAll(done => {
+		config.wsUrls.pc = `http://${mockGame.host}:${mockGame.port}`
+		mockGame.start(done)
+	})
+
+	afterAll(done => {
+		delete config.wsUrls.pc
+		mockGame.shutdown(done)
+	})
+
+	it('should request worldstate data', async () => {
+		const ws = new Worldstate(new Database('pc'), 'pc')
+		const waitForFlush = new Promise(resolve => {
+			ws.flushDb = () => resolve()
+		})
+		const timestamp = fixtures.timeNowShort
+		const [[testData, expected]] = fixtures.getAlerts()
+		mockGame.setData(testData, timestamp)
+		ws.start()
+		await waitForFlush
+		const result = JSON.parse(ws.get(['alerts']))
+		expect(result.time).toEqual(timestamp)
+		expect(result.alerts.time).toBeGreaterThanOrEqual(timestamp)
+		expect(result.alerts.data).toEqual([expected])
+	}, 1000)
+
+	it('should ignore old worldstate data', async () => {
+		const ws = new Worldstate(new Database('pc'), 'pc')
+		const waitForFlush = new Promise(resolve => {
+			ws.flushDb = () => resolve()
+		})
+		const dataGenerator = fixtures.getAlerts()
+		const readWorldstateSpy = spyOn(ws, 'readWorldstate').and.callThrough()
+
+		const [dataFirst] = dataGenerator.next().value
+		mockGame.setData(dataFirst, fixtures.timeNowShort)
+		ws.start()
+		await waitForFlush
+		expect(readWorldstateSpy).toHaveBeenCalledTimes(1)
+		readWorldstateSpy.calls.reset()
+
+		const [dataSecond] = dataGenerator.next().value
+		mockGame.setData(dataSecond, fixtures.timeNowShort - fixtures.timeStep)
+		ws.requestWorldstate()
+		await new Promise(resolve => {
+			setTimeout(resolve, 100)
+		})
+		expect(readWorldstateSpy).not.toHaveBeenCalled()
+	}, 1000)
 })

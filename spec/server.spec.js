@@ -16,28 +16,24 @@ describe('Server', () => {
 		timestamp = fixtures.timeNowShort,
 		[[testData, expected]] = fixtures.getAlerts()
 
-	beforeAll(() => {
+	beforeAll(async () => {
 		config.wsUrls.pc = `http://${mockGameHost}:${mockGamePort}`
-	})
-
-	afterAll(done => {
-		config.wsUrls = {}
-		Promise.all([
-			new Promise(resolve => server.shutdown(resolve)),
-			new Promise(resolve => mockGame.shutdown(resolve)),
-		]).then(() => done())
-	}, 1000)
-
-	it('should request worldstate data', done => {
-		ws.flushDb = function() { // Makeshift trigger for read completion
-			delete ws.flushDb
-			Worldstate.prototype.flushDb.call(ws)
-			done()
-		}
+		const waitForFlush = new Promise(resolve => {
+			ws.flushDb = () => resolve()
+		})
 		mockGame.setData(testData, timestamp)
 		mockGame.start(() => {
 			server.start()
 		})
+		await waitForFlush
+	}, 1000)
+
+	afterAll(async () => {
+		config.wsUrls = {}
+		await Promise.all([
+			new Promise(resolve => server.shutdown(resolve)),
+			new Promise(resolve => mockGame.shutdown(resolve)),
+		])
 	}, 1000)
 
 	it('should respond to HTTP requests', done => {

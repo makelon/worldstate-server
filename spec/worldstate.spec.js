@@ -97,6 +97,7 @@ describe('Worldstate', () => {
 		ws.readers[dataKey].read([10, 20, 30])
 		const result = JSON.parse(ws.get([dataKey]))[dataKey]
 		expect(result.data.length).toBe(2)
+		ws.readers[dataKey].read([])
 	})
 
 	it('should read fomorians', () => {

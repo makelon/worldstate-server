@@ -9,7 +9,7 @@ import { load as loadTags } from '../out/tags.js'
 process.chdir(dirname(fileURLToPath(import.meta.url)))
 
 config.load('data/config.tests.json')
-log.setLevel('error')
+log.setLevel('none')
 log.setTimestamps(false)
 loadItems('data/rewardtables.json', 'data/rewardtables-rotations.json', 'data/itemnames.json', 'data/itemtypes.json')
 loadTags('data/starchart.json', 'data/challenges.json', 'data/translations.json')

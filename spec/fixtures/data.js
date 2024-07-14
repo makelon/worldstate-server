@@ -118,6 +118,13 @@ const items = [
 	timeEndShort = Math.floor(timeEndLong / 1000),
 	timeStep = 40
 
+function clone(obj) {
+	if (global.structuredClone) {
+		return structuredClone(obj)
+	}
+	return JSON.parse(JSON.stringify(obj))
+}
+
 function* getAcolytes() {
 	let timeLocalShort = timeNowShort
 	const acolyte = {
@@ -208,8 +215,8 @@ function* getAlerts() {
 	expected.faction = factions[1].name
 	yield [data, expected]
 
-	alert.MissionInfo.missionReward = itemRewards.input
-	expected.rewards = itemRewards.output
+	alert.MissionInfo.missionReward = clone(itemRewards.input)
+	expected.rewards = clone(itemRewards.output)
 	yield [data, expected]
 
 	delete alert.MissionInfo.missionReward.items
@@ -242,7 +249,7 @@ function* getBounties() {
 			syndicate: 'Ostron',
 			jobs: [
 				{
-					rewards: rewardTables[1].output,
+					rewards: clone(rewardTables[1].output),
 					rotation: 'B',
 					minLevel: 5,
 					maxLevel: 15,
@@ -271,7 +278,7 @@ function* getBounties() {
 			syndicate: 'Plague Star',
 			jobs: [
 				{
-					rewards: rewardTables[1].output,
+					rewards: clone(rewardTables[1].output),
 					minLevel: 10,
 					maxLevel: 20,
 					xpAmounts: [200, 400],
@@ -304,7 +311,7 @@ function* getBounties() {
 			location: nodes[1].name,
 			jobs: [
 				{
-					rewards: rewardTables[2].output,
+					rewards: clone(rewardTables[2].output),
 					rotation: 'C',
 					minLevel: 15,
 					maxLevel: 25,
@@ -457,7 +464,7 @@ function* getExtraBounties() {
 		syndicate: 'Extra Bounty Syndicate',
 		jobs: [
 			{
-				rewards: rewardTables[0].output,
+				rewards: clone(rewardTables[0].output),
 				minLevel: 3,
 				maxLevel: 8,
 				xpAmounts: [1234],
@@ -552,8 +559,8 @@ function* getGoals() {
 			victimLocation: nodes[0].name,
 			missionLocation: nodes[1].name,
 			requiredItems: [ { name: items[0].name, type: items[0].type } ],
-			goalRewards: itemRewards.output,
-			randomRewards: rewardTables[0].output,
+			goalRewards: clone(itemRewards.output),
+			randomRewards: clone(rewardTables[0].output),
 		},
 		data = { Goals: [fomorian] }
 	yield [data, expected]
@@ -587,9 +594,9 @@ function* getInvasions() {
 			Node: nodes[0].id,
 			Count: 0,
 			Goal: 1000,
-			AttackerReward: { countedItems: countedItemRewards.input },
+			AttackerReward: { countedItems: clone(countedItemRewards.input) },
 			AttackerMissionInfo: { faction: factions[0].id },
-			DefenderReward: { countedItems: countedItemRewards.input },
+			DefenderReward: { countedItems: clone(countedItemRewards.input) },
 			DefenderMissionInfo: { faction: factions[1].id },
 			Activation: { $date: { $numberLong: timeStartLong } },
 		},
@@ -602,8 +609,8 @@ function* getInvasions() {
 			scoreHistory: [[timeStartShort, 0]],
 			factionAttacker: factions[1].name,
 			factionDefender: factions[0].name,
-			rewardsAttacker: countedItemRewards.output,
-			rewardsDefender: countedItemRewards.output,
+			rewardsAttacker: clone(countedItemRewards.output),
+			rewardsDefender: clone(countedItemRewards.output),
 		},
 		data = { Invasions: [invasion] }
 	yield [data, expected]
@@ -678,7 +685,7 @@ function* getKuvalog() {
 			faction: factions[1].name,
 			location: nodes[1].name,
 			missionType: missionTypes[1].name,
-			rewards: rewardTables[0].output,
+			rewards: clone(rewardTables[0].output),
 		},
 		expectedKuvamission = {
 			id: 'KuvaMission6' + timeStartShort.toString(),
@@ -688,7 +695,7 @@ function* getKuvalog() {
 			location: nodes[0].name,
 			missionType: missionTypes[0].name,
 			flood: false,
-			rewards: rewardTables[1].output,
+			rewards: clone(rewardTables[1].output),
 		}
 	yield [data, [expectedArbitration], [expectedKuvamission]]
 
@@ -783,7 +790,7 @@ function* getSorties() {
 			end: timeEndShort,
 			faction: factions[0].name,
 			bossName: 'Vor',
-			rewards: rewardTables[0].output,
+			rewards: clone(rewardTables[0].output),
 			missions: [ { missionType: missionTypes[0].name, modifier: 'Eximus stronghold', location: nodes[0].name } ],
 		},
 		data = { Sorties: [sortie] }

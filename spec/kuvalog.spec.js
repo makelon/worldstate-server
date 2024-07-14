@@ -5,31 +5,39 @@ import fixtures from './fixtures/data.js'
 import MockGame from './fixtures/mockgame.js'
 
 describe('Kuvalog', () => {
-	const mockKuvalogHost = '127.0.0.1',
-		mockKuvalogPort = 20354,
-		ws = new Worldstate(new Database('pc'), 'pc', 0),
-		mockGame = new MockGame(mockKuvalogHost, mockKuvalogPort)
+	const ws = new Worldstate(new Database('pc'), 'pc', 0),
+		mockGame = new MockGame()
 
-	beforeAll(done => {
-		config.kuvalogUrls.pc = `http://${mockKuvalogHost}:${mockKuvalogPort}`
-		const [[testData]] = fixtures.getKuvalog()
-		mockGame.setData(testData)
-		mockGame.start(() => done())
+	beforeAll(async () => {
+		const waitForDb = new Promise(resolve => {
+			ws.db.ee.once('load', resolve)
+		})
+		mockGame.start(() => {
+			ws.start()
+		})
+		await waitForDb
 	}, 1000)
 
 	afterAll(done => {
-		config.kuvalogUrls = {}
-		mockGame.shutdown(() => done())
+		mockGame.shutdown(done)
 	}, 1000)
 
-	it('should request kuvalog data', done => {
-		ws.readKuvalog = function() { // Makeshift trigger for read completion
-			delete ws.readKuvalog
-			Worldstate.prototype.readKuvalog.call(ws)
-			done()
-		}
-		ws.start()
-	}, 1000)
+	it('should request kuvalog data', async () => {
+		config.kuvalogUrls.pc = `http://${mockGame.host}:${mockGame.port}`
+		const [[testData]] = fixtures.getKuvalog()
+		mockGame.setData(testData)
+		const waitForRead = new Promise(resolve => {
+			ws.readKuvalog = function() {
+				delete ws.readKuvalog
+				Worldstate.prototype.readKuvalog.call(ws)
+				resolve()
+			}
+		})
+		ws.kuvalog.reload()
+		await waitForRead
+		config.kuvalogUrls = {}
+
+	})
 
 	it('should read arbitrations and kuva siphons', () => {
 		const dataKeyArbitrations = 'arbitrations',

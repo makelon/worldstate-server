@@ -8,16 +8,14 @@ import fixtures from './fixtures/data.js'
 import MockGame from './fixtures/mockgame.js'
 
 describe('Server', () => {
-	const mockGameHost = '127.0.0.1',
-		mockGamePort = 20354,
-		ws = new Worldstate(new Database('pc'), 'pc', 0),
+	const ws = new Worldstate(new Database('pc'), 'pc', 0),
 		server = new Server({pc: ws}),
-		mockGame = new MockGame(mockGameHost, mockGamePort),
+		mockGame = new MockGame(),
 		timestamp = fixtures.timeNowShort,
 		[[testData, expected]] = fixtures.getAlerts()
 
 	beforeAll(async () => {
-		config.wsUrls.pc = `http://${mockGameHost}:${mockGamePort}`
+		config.wsUrls.pc = `http://${mockGame.host}:${mockGame.port}`
 		const waitForFlush = new Promise(resolve => {
 			ws.flushDb = () => resolve()
 		})
@@ -37,7 +35,7 @@ describe('Server', () => {
 	}, 1000)
 
 	it('should respond to HTTP requests', done => {
-		http.get('http://127.0.0.1:20355/pc/alerts', res => {
+		http.get(`http://${config.listen}/pc/alerts`, res => {
 			let resData = ''
 			res.on('data', s => { resData += s })
 			res.on('end', () => {

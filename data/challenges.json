@@ -391,6 +391,10 @@
         "description": "Fly your Kaithe for 1500 meters",
         "xpAmount": 4500
     },
+    "SeasonWeeklyIDecree": {
+        "description": "Collect 15 decrees in a single Duviri session, or run of the Circuit",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyIsolationBounties": {
         "description": "Do an Isolation Bounty",
         "xpAmount": 4500

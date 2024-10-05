@@ -16,12 +16,17 @@ const itemTypeTree = {
 		"archwing": "Archwing"
 	},
 	"packages": {
-		"vteosarmourbundle": "Cosmetic"
+		"vteosarmourbundle": "Cosmetic",
+		"resourcebundles": "Resource"
 	},
 	"types": {
 		"friendly": {
 			"pets": {
 				"": "Companion",
+				"beastweapons": {
+					"": "Companion",
+					"stances": "Mod"
+				},
 				"catbrowpetprecepts": "Mod",
 				"kubrowpetprecepts": "Mod"
 			}
@@ -54,7 +59,7 @@ const itemTypeTree = {
 				}
 			},
 			"jadeshadows": {
-				"Resources": "Resource"
+				"resources": "Resource"
 			},
 			"venus": {
 				"resources": "Resource"
@@ -70,12 +75,13 @@ const itemTypeTree = {
 			"miscitems": {
 				"": "Resource",
 				"*": {
-					"photobooth": ""
+					"forma": "",
+					"photobooth": "",
+					"weapon": ""
 				},
 				"orokincatalyst": "",
 				"orokinreactor": "",
-				"utilityunlocker": "",
-				"forma": ""
+				"utilityunlocker": ""
 			},
 			"plants": "Resource",
 			"railjackmiscitems": "Resource",
@@ -115,7 +121,10 @@ const itemTypeTree = {
 		"storeitems": {
 			"avatarimages": "Cosmetic",
 			"creditbundles": "Credits",
-			"suitcustomizations": "Cosmetic"
+			"suitcustomizations": "Cosmetic",
+			"packages": {
+				"resourcebundles": "Resource"
+			}
 		}
 	},
 	"upgrades": {

@@ -51,6 +51,7 @@ export const
 		MT_INTEL: 'Spy',
 		MT_LANDSCAPE: 'Free Roam',
 		MT_MOBILE_DEFENSE: 'Mobile Defense',
+		MT_OFFERING: 'Shrine Defense',
 		MT_ORPHIX: 'Orphix',
 		MT_PURIFY: 'Infested Salvage',
 		MT_PURSUIT: 'Pursuit',

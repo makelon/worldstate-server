@@ -25,6 +25,7 @@ export const
 		FC_STALKER: 'Stalker',
 		FC_TENNO: 'Tenno',
 		FC_MITW: 'Murmur',
+		FC_NARMER: 'Narmer',
 	},
 	fomorianTypes: WfMap = {
 		FC_CORPUS: 'Razorback',

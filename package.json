@@ -2,12 +2,12 @@
 	"name": "tennotools-worldstate-server",
 	"version": "1.0.0",
 	"devDependencies": {
-		"@types/node": "^20.10.4",
+		"@types/node": "^20.16.11",
 		"@typescript-eslint/eslint-plugin": "^6.14.0",
 		"@typescript-eslint/parser": "^6.14.0",
 		"eslint": "^8.14.0",
-		"jasmine": "^5.1.0",
-		"typescript": "~5.3"
+		"jasmine": "^5.3.1",
+		"typescript": "~5.5"
 	},
 	"private": true,
 	"scripts": {

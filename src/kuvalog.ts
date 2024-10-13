@@ -22,16 +22,13 @@ export default class Kuvalog {
 	private ee = new EventEmitter()
 	private static instance?: Kuvalog
 
-	private constructor(
-		private platform: WfPlatform,
-		private instanceDelay: number,
-	) {
-		log.notice('Creating kuvalog instance %s', platform)
+	private constructor() {
+		log.notice('Creating kuvalog instance')
 	}
 
 	static getInstance(): Kuvalog {
 		if (!Kuvalog.instance) {
-			Kuvalog.instance = new Kuvalog('pc', 0)
+			Kuvalog.instance = new Kuvalog()
 		}
 		return Kuvalog.instance
 	}
@@ -41,7 +38,7 @@ export default class Kuvalog {
 	 */
 	start(): void {
 		this.setRequestOptions()
-		this.scheduleKuvalogRequest(this.instanceDelay)
+		this.scheduleKuvalogRequest(0)
 	}
 
 	reload(): void {
@@ -63,9 +60,8 @@ export default class Kuvalog {
 	 */
 	private setRequestOptions(): void {
 		try {
-			const url = config.kuvalogUrls[this.platform]
-			this.requestOptions = url
-				? prepareRequest(url)
+			this.requestOptions = config.kuvalogUrl
+				? prepareRequest(config.kuvalogUrl)
 				: null
 		}
 		catch(err) {
@@ -125,7 +121,7 @@ export default class Kuvalog {
 		if (code) {
 			message = `${code}: ${message}`
 		}
-		log.error('%s kuvalog request failed (%s)', this.platform, message)
+		log.error('kuvalog request failed (%s)', message)
 		this.scheduleKuvalogRequest(this.retryTimeout)
 		this.retryTimeout = Math.min(this.retryTimeout * 2, config.maxRetryTimeout)
 	}

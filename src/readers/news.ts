@@ -11,7 +11,7 @@ export default class NewsReader extends WfReader<WfNews> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s news', this.platform)
+		log.notice('Reading news')
 		const oldIds = this.dbTable.getIdMap()
 		for (const articleInput of articlesInput) {
 			const id = getId(articleInput),
@@ -44,20 +44,20 @@ export default class NewsReader extends WfReader<WfNews> {
 			if (articleDb) {
 				if (text === '') {
 					this.dbTable.remove(id)
-					log.debug('Removing news article %s for %s', id, this.platform)
+					log.debug('Removing news article %s', id)
 				}
 				else {
 					const diff = this.getDifference(articleDb, articleCurrent)
 					if (Object.keys(diff).length) {
 						patch(articleDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating news article %s for %s', id, this.platform)
+						log.debug('Updating news article %s', id)
 					}
 				}
 			}
 			else if (text !== '') {
 				this.dbTable.add(id, articleCurrent, true)
-				log.debug('Found news article %s for %s', id, this.platform)
+				log.debug('Found news article %s', id)
 			}
 			delete oldIds[id]
 		}

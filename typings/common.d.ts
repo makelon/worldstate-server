@@ -31,8 +31,6 @@ type WfRewardTableMap = {
 	[tableId: string]: WfRandomRewardTable
 }
 
-type WfPlatform = 'pc' | 'ps4' | 'xb1' | 'ns'
-
 type WfProgressHistory = [number, number][]
 
 interface WfChallengeInfo {

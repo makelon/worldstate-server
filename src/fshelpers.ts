@@ -2,7 +2,7 @@ import { readFileSync } from 'fs'
 
 import * as log from './log.js'
 
-export function parseJsonFile<T extends Record<string, unknown>>(path: string): T | null {
+export function parseJsonFile<T>(path: string): T | null {
 	let parsedContent: T | null = null
 	if (path) {
 		try {

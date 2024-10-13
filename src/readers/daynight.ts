@@ -9,8 +9,7 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 
 	start(db: WfDb): void {
 		this.dbTable = db.getTable(this.dbTableId)
-		const dayNightInput = parseJsonFile<WfMap<WfPlatform, WfDayNight[]>>(config.dayNightPath),
-			dayNightCycles = dayNightInput?.[this.platform] || []
+		const dayNightCycles = parseJsonFile<WfDayNight[]>(config.dayNightPath) || []
 		this.read(dayNightCycles)
 	}
 
@@ -18,7 +17,7 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s day cycles', this.platform)
+		log.notice('Reading day cycles')
 		const oldIds = this.dbTable.getIdMap()
 		for (const dayNightCycle of dayNightCycles) {
 			const id = dayNightCycle.id,
@@ -35,12 +34,12 @@ export default class DayNightReader extends WfReader<WfDayNight> {
 				if (Object.keys(diff).length) {
 					this.dbTable.moveTmp(id)
 					this.dbTable.add(id, dayNightProcessed, true)
-					log.debug('Updating day cycle %s for %s', id, this.platform)
+					log.debug('Updating day cycle %s', id)
 				}
 			}
 			else {
 				this.dbTable.add(id, dayNightProcessed, true)
-				log.debug('Found day cycle %s for %s', id, this.platform)
+				log.debug('Found day cycle %s', id)
 			}
 			delete oldIds[id]
 		}

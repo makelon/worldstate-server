@@ -14,7 +14,7 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s void fissures', this.platform)
+		log.notice('Reading void fissures')
 		const oldIds = this.dbTable.getIdMap()
 		for (const fissureInput of fissuresInput) {
 			const id = getId(fissureInput),
@@ -39,12 +39,12 @@ export default class VoidFissureReader extends WfReader<WfVoidFissure> {
 					if (Object.keys(diff).length) {
 						patch(fissureDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating void fissure %s for %s', id, this.platform)
+						log.debug('Updating void fissure %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, fissureProcessed, true)
-					log.debug('Found void fissure %s for %s', id, this.platform)
+					log.debug('Found void fissure %s', id)
 				}
 			}
 			delete oldIds[id]

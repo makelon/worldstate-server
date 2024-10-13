@@ -14,7 +14,7 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s challenges', this.platform)
+		log.notice('Reading challenges')
 		const oldIds = this.dbTable.getIdMap(),
 			end = getDate(challengeSeasonInput.Expiry),
 			id = challengeSeasonInput.AffiliationTag + end
@@ -47,12 +47,12 @@ export default class ChallengeReader extends WfReader<WfChallengeSeason> {
 				if (Object.keys(diff).length) {
 					patch(challengeDb, diff)
 					this.dbTable.updateTmp(id, diff)
-					log.debug('Updating challenge %s for %s', id, this.platform)
+					log.debug('Updating challenge %s', id)
 				}
 			}
 			else {
 				this.dbTable.add(id, challengeCurrent, true)
-				log.debug('Found challenge %s for %s', id, this.platform)
+				log.debug('Found challenge %s', id)
 			}
 		}
 		delete oldIds[id]

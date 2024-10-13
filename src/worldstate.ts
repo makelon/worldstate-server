@@ -80,31 +80,27 @@ export default class Worldstate {
 	private kuvalog = Kuvalog.getInstance()
 	private readers: Readonly<{ [T in WfRecordKey]: WfReader<WfRecordTypes[T]> }>
 
-	constructor(
-		private db: WfDb,
-		private platform: WfPlatform,
-		private instanceDelay: number,
-	) {
-		log.notice('Creating worldstate instance %s', platform)
+	constructor(private db: WfDb) {
+		log.notice('Creating worldstate instance')
 		this.kuvalog.onUpdate(() => { this.readKuvalog() })
 		this.readers = {
-			'acolytes': new AcolyteReader(this.platform),
-			'alerts': new AlertReader(this.platform),
-			'arbitrations': new ArbitrationReader(this.platform),
-			'bounties': new BountieReader(this.platform),
-			'challenges': new ChallengeReader(this.platform),
-			'dailydeals': new DailyDealReader(this.platform),
-			'daynight': new DayNightReader(this.platform),
-			'fissures': new VoidFissureReader(this.platform),
-			'fomorians': new FomorianReader(this.platform),
-			'factionprojects': new FactionProjectReader(this.platform),
-			'invasions': new InvasionReader(this.platform),
-			'kuvasiphons': new KuvaSiphonReader(this.platform),
-			'news': new NewsReader(this.platform),
-			'sorties': new SortieReader(this.platform),
-			'upgrades': new UpgradeReader(this.platform),
-			'voidstorms': new VoidStormReader(this.platform),
-			'voidtraders': new VoidTraderReader(this.platform),
+			'acolytes': new AcolyteReader(),
+			'alerts': new AlertReader(),
+			'arbitrations': new ArbitrationReader(),
+			'bounties': new BountieReader(),
+			'challenges': new ChallengeReader(),
+			'dailydeals': new DailyDealReader(),
+			'daynight': new DayNightReader(),
+			'fissures': new VoidFissureReader(),
+			'fomorians': new FomorianReader(),
+			'factionprojects': new FactionProjectReader(),
+			'invasions': new InvasionReader(),
+			'kuvasiphons': new KuvaSiphonReader(),
+			'news': new NewsReader(),
+			'sorties': new SortieReader(),
+			'upgrades': new UpgradeReader(),
+			'voidstorms': new VoidStormReader(),
+			'voidtraders': new VoidTraderReader(),
 		}
 	}
 
@@ -115,7 +111,7 @@ export default class Worldstate {
 		this.db.setupTables(() => {
 			this.initReaders()
 			this.ready = true
-			this.scheduleWorldstateRequest(this.instanceDelay)
+			this.scheduleWorldstateRequest(0)
 			this.kuvalog.start()
 		})
 		this.setRequestOptions()
@@ -129,7 +125,7 @@ export default class Worldstate {
 		this.db.setupTables(() => {
 			this.kuvalog.reload()
 			if (this.ws) {
-				log.info('Reloading %s worldstate', this.platform)
+				log.info('Reloading worldstate')
 				this.initReaders()
 				this.readWorldstate()
 			}
@@ -150,9 +146,8 @@ export default class Worldstate {
 	 */
 	private setRequestOptions(): void {
 		try {
-			const url = config.wsUrls[this.platform]
-			this.requestOptions = url
-				? prepareRequest(url)
+			this.requestOptions = config.wsUrl
+				? prepareRequest(config.wsUrl)
 				: null
 		}
 		catch(err) {
@@ -161,17 +156,17 @@ export default class Worldstate {
 	}
 
 	/**
-	 * Return requested content from this instance
+	 * Return the current data for the selected categories
 	 *
-	 * @param types Instances to fetch data from
-	 * @returns JSON encoded instance data
+	 * @param types Categories to fetch
+	 * @returns JSON encoded worldstate data
 	 */
 	get(types?: string[]): string {
 		if (!this.ready) {
 			return JSON.stringify('Inactive worldstate instance')
 		}
 		types = types || config.wsFields.slice()
-		log.debug('Fetching %s for %s', types.join(', '), this.platform)
+		log.debug('Fetching %s', types.join(', '))
 		if (types[0] === 'worldstate') {
 			// Raw worldstate dump
 			return JSON.stringify(this.ws || {})
@@ -196,7 +191,7 @@ export default class Worldstate {
 				}
 			}
 			else {
-				log.debug('Database %s/%s is not ready', this.platform, type)
+				log.debug('Database table %s is not ready', type)
 				ret[type] = {}
 			}
 		}
@@ -253,7 +248,7 @@ export default class Worldstate {
 		if (code) {
 			message = `${code}: ${message}`
 		}
-		log.error('%s worldstate request failed (%s)', this.platform, message)
+		log.error('worldstate request failed (%s)', message)
 		this.scheduleWorldstateRequest(this.retryTimeout)
 		this.retryTimeout = Math.min(this.retryTimeout * 2, config.maxRetryTimeout)
 	}
@@ -324,7 +319,7 @@ export default class Worldstate {
 			this.readers[readerName].read(entries, this.now)
 		}
 		catch (err) {
-			log.error('Error reading %s for %s: %s', readerName, this.platform, err.message)
+			log.error('Error reading %s: %s', readerName, err.message)
 		}
 	}
 
@@ -345,7 +340,7 @@ export default class Worldstate {
 			this.readers['challenges'].read(challengeSeasons, this.now)
 		}
 		catch (err) {
-			log.error('Error reading challenges for %s: %s', this.platform, err.message)
+			log.error('Error reading challenges: %s', err.message)
 		}
 	}
 
@@ -363,7 +358,7 @@ export default class Worldstate {
 	 * Both the Razorback and Balor Fomorian are found in this section
 	 */
 	private readGoals(): void {
-		log.notice('Reading %s goals', this.platform)
+		log.notice('Reading goals')
 		let goals = this.ws?.Goals
 		if (!Array.isArray(goals)) {
 			goals = []
@@ -381,7 +376,7 @@ export default class Worldstate {
 			this.readers.fomorians.read(fomorians, this.now)
 		}
 		catch (err) {
-			log.error('Error reading fomorians for %s: %s', this.platform, err.message)
+			log.error('Error reading fomorians: %s', err.message)
 		}
 	}
 
@@ -397,13 +392,13 @@ export default class Worldstate {
 			this.readers.arbitrations.read(this.kuvalog.arbitrations, this.kuvalog.getLastUpdate())
 		}
 		catch (err) {
-			log.error('Error reading arbitrations for %s: %s', this.platform, err.message)
+			log.error('Error reading arbitrations: %s', err.message)
 		}
 		try {
 			this.readers.kuvasiphons.read(this.kuvalog.kuvamissions, this.kuvalog.getLastUpdate())
 		}
 		catch (err) {
-			log.error('Error reading kuvasiphons for %s: %s', this.platform, err.message)
+			log.error('Error reading kuvasiphons: %s', err.message)
 		}
 	}
 
@@ -422,7 +417,7 @@ export default class Worldstate {
 	 * Syndicate missions and Bounties are found under the same key
 	 */
 	private readSyndicateMissions(): void {
-		log.notice('Reading %s syndicate missions', this.platform)
+		log.notice('Reading syndicate missions')
 		const bounties = this.defer.bounties.splice(0) // Clear deferred bounties
 		if (this.ws?.SyndicateMissions && this.ws.SyndicateMissions[0]) {
 			for (const missions of this.ws.SyndicateMissions) {
@@ -435,7 +430,7 @@ export default class Worldstate {
 			this.readers.bounties.read(bounties, this.now)
 		}
 		catch (err) {
-			log.error('Error reading bounties for %s: %s', this.platform, err.message)
+			log.error('Error reading bounties: %s', err.message)
 		}
 	}
 

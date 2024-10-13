@@ -4,15 +4,7 @@ info:
   description: Warframe Worldstate API used by Tenno Tools
   version: 1.0.0
 servers:
-- url: 'https://api.tenno.tools/worldstate/{platform}'
-  variables:
-    platform:
-      default: pc
-      enum:
-      - 'pc'
-      - 'ps4'
-      - 'xb1'
-      - 'ns'
+- url: 'https://api.tenno.tools/worldstate'
 tags:
 - name: worldstate
   description: >-

@@ -18,7 +18,7 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s fomorians', this.platform)
+		log.notice('Reading fomorians')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const fomorianInput of fomoriansInput) {
@@ -72,13 +72,13 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 					if (Object.keys(diff).length) {
 						patch(fomorianDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating fomorian %s for %s', id, this.platform)
+						log.debug('Updating fomorian %s', id)
 					}
 				}
 				else {
 					fomorianDb = fomorianCurrent
 					this.dbTable.add(id, fomorianDb, true)
-					log.debug('Found fomorian %s for %s', id, this.platform)
+					log.debug('Found fomorian %s', id)
 				}
 
 				if (fomorianDb.health !== health) {
@@ -90,7 +90,7 @@ export default class FomorianReader extends WfReader<WfFomorian> {
 							healthHistory: healthHistory,
 						})
 					}
-					log.debug('Updating fomorian %s for %s (%d -> %d)', id, this.platform, fomorianDb.health, health)
+					log.debug('Updating fomorian %s (%d -> %d)', id, fomorianDb.health, health)
 					fomorianDb.health = health
 				}
 			}

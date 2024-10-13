@@ -17,7 +17,7 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s void traders', this.platform)
+		log.notice('Reading void traders')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const voidTraderInput of voidTradersInput) {
@@ -58,12 +58,12 @@ export default class VoidTraderReader extends WfReader<WfVoidTrader> {
 					if (Object.keys(diff).length) {
 						patch(voidTraderDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating void trader %s for %s', id, this.platform)
+						log.debug('Updating void trader %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, voidTraderCurrent, true)
-					log.debug('Found void trader %s for %s', id, this.platform)
+					log.debug('Found void trader %s', id)
 				}
 			}
 			delete oldIds[id]

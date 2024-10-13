@@ -5,7 +5,7 @@ import fixtures from './fixtures/data.js'
 import MockGame from './fixtures/mockgame.js'
 
 describe('Kuvalog', () => {
-	const ws = new Worldstate(new Database('pc'), 'pc', 0),
+	const ws = new Worldstate(new Database('test')),
 		mockGame = new MockGame()
 
 	beforeAll(async () => {
@@ -23,7 +23,7 @@ describe('Kuvalog', () => {
 	}, 1000)
 
 	it('should request kuvalog data', async () => {
-		config.kuvalogUrls.pc = `http://${mockGame.host}:${mockGame.port}`
+		config.kuvalogUrl = `http://${mockGame.host}:${mockGame.port}`
 		const [[testData]] = fixtures.getKuvalog()
 		mockGame.setData(testData)
 		const waitForRead = new Promise(resolve => {
@@ -35,8 +35,7 @@ describe('Kuvalog', () => {
 		})
 		ws.kuvalog.reload()
 		await waitForRead
-		config.kuvalogUrls = {}
-
+		config.kuvalogUrl = ''
 	})
 
 	it('should read arbitrations and kuva siphons', () => {

@@ -11,7 +11,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s faction projects', this.platform)
+		log.notice('Reading faction projects')
 		const oldIds = this.dbTable.getIdMap()
 		for (const projectIdx in projectsInput) {
 			const projectInput = projectsInput[projectIdx],
@@ -34,13 +34,13 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 				if (Object.keys(diff).length) {
 					patch(projectDb, diff)
 					this.dbTable.updateTmp(id, diff)
-					log.debug('Updating faction project %s for %s', id, this.platform)
+					log.debug('Updating faction project %s', id)
 				}
 			}
 			else {
 				projectDb = projectCurrent
 				this.dbTable.add(id, projectDb, true)
-				log.debug('Found faction project %s for %s', id, this.platform)
+				log.debug('Found faction project %s', id)
 			}
 
 			if (progress > projectDb.progress) {
@@ -52,12 +52,12 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 						progressHistory: progressHistory,
 					})
 				}
-				log.debug('Updating faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
+				log.debug('Updating faction project %s (%d -> %d)', id, projectDb.progress, progress)
 				projectDb.progress = progress
 			}
 			else if (progress < projectDb.progress * 0.9) {
 				// Faction project was probably reset
-				log.debug('Resetting faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
+				log.debug('Resetting faction project %s (%d -> %d)', id, projectDb.progress, progress)
 				const prevProgress = projectDb.progressHistory[projectDb.progressHistory.length - 1]
 				prevProgress[0] = Math.abs(prevProgress[0])
 				this.dbTable.moveTmp(id)
@@ -69,7 +69,7 @@ export default class FactionProjectReader extends WfReader<WfFomorianProgress> {
 				}, true)
 			}
 			else if (progress < projectDb.progress) {
-				log.notice('Ignoring reverse progress in faction project %s for %s (%d -> %d)', id, this.platform, projectDb.progress, progress)
+				log.notice('Ignoring reverse progress in faction project %s (%d -> %d)', id, projectDb.progress, progress)
 			}
 			delete oldIds[id]
 		}

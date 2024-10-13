@@ -17,7 +17,7 @@ export default class AlertReader extends WfReader<WfAlert> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s alerts', this.platform)
+		log.notice('Reading alerts')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const alertInput of alertsInput) {
@@ -51,12 +51,12 @@ export default class AlertReader extends WfReader<WfAlert> {
 					if (Object.keys(diff).length) {
 						patch(alertDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating alert %s for %s', id, this.platform)
+						log.debug('Updating alert %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, alertCurrent, true)
-					log.debug('Found alert %s for %s', id, this.platform)
+					log.debug('Found alert %s', id)
 				}
 			}
 			delete oldIds[id]

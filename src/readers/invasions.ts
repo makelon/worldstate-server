@@ -18,7 +18,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s invasions', this.platform)
+		log.notice('Reading invasions')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const invasion of invasions) {
@@ -60,13 +60,13 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 				if (Object.keys(diff).length) {
 					patch(invasionDb, diff)
 					this.dbTable.updateTmp(id, diff)
-					log.debug('Updating invasion %s for %s', id, this.platform)
+					log.debug('Updating invasion %s', id)
 				}
 			}
 			else {
 				invasionDb = invasionCurrent
 				this.dbTable.add(id, invasionDb, true)
-				log.debug('Found invasion %s for %s', id, this.platform)
+				log.debug('Found invasion %s', id)
 			}
 
 			if (invasionDb.score !== score) {
@@ -109,7 +109,7 @@ export default class InvasionReader extends WfReader<WfInvasion> {
 						scoreHistory: scoreHistory,
 					})
 				}
-				log.debug('Updating invasion %s for %s (%d -> %d)', id, this.platform, invasionDb.score, score)
+				log.debug('Updating invasion %s (%d -> %d)', id, invasionDb.score, score)
 				invasionDb.score = score
 			}
 			delete oldIds[id]

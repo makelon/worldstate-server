@@ -19,7 +19,7 @@ export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s kuva siphons', this.platform)
+		log.notice('Reading kuva siphons')
 		kuvamissionsInput.sort((a, b) => Number(a.missiontype.substring(missionPrefixLength)) - Number(b.missiontype.substring(missionPrefixLength)))
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
@@ -51,12 +51,12 @@ export default class KuvaSiphonReader extends WfReader<WfKuvaSiphon> {
 					if (Object.keys(diff).length) {
 						patch(kuvamissionDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating kuva siphon %s for %s', id, this.platform)
+						log.debug('Updating kuva siphon %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, kuvamissionCurrent, true)
-					log.debug('Found kuva siphon %s for %s', id, this.platform)
+					log.debug('Found kuva siphon %s', id)
 				}
 			}
 			delete oldIds[id]

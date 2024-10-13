@@ -5,8 +5,6 @@ export default abstract class WfReader<T extends WfRecordType> {
 	protected abstract readonly dbTableId: WfRecordKey
 	protected isActive?(record: T, timestamp: number): boolean
 
-	constructor(protected platform: WfPlatform) {}
-
 	start(db: WfDb): void {
 		this.dbTable = db.getTable<T>(this.dbTableId)
 	}

@@ -51,11 +51,5 @@ process.on('SIGTERM', exit)
 process.on('SIGUSR2', reload)
 
 load()
-const wsInstances: {[platform: string]: Worldstate} = {}
-let numInstances = 0
-for (const platform in config.wsUrls) {
-	wsInstances[platform] = new Worldstate(new Database(platform), platform as WfPlatform, config.instanceDelay * numInstances)
-	++numInstances
-}
-const server = new Server(wsInstances)
+const server = new Server(new Worldstate(new Database('pc'))) // Leave database name as 'pc' for backward compatibility
 server.start()

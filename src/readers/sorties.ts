@@ -18,7 +18,7 @@ export default class SortieReader extends WfReader<WfSortie> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s sorties', this.platform)
+		log.notice('Reading sorties')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const sortieInput of sortiesInput) {
@@ -53,12 +53,12 @@ export default class SortieReader extends WfReader<WfSortie> {
 					if (Object.keys(diff).length) {
 						patch(sortieDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating sortie %s for %s', id, this.platform)
+						log.debug('Updating sortie %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, sortieCurrent, true)
-					log.debug('Found sortie %s for %s', id, this.platform)
+					log.debug('Found sortie %s', id)
 				}
 			}
 			delete oldIds[id]

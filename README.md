@@ -36,7 +36,7 @@ It serves as the back end of the [Tenno Tools](https://tenno.tools) world tracke
 
 API documentation is hosted at [https://docs.tenno.tools/api/](https://docs.tenno.tools/api/), but more detailed descriptions are available in this readme.
 
-`GET /<platform>` or `GET /<platform>/<components>` returns a response with the following format:
+`GET /` or `GET /<components>` returns a response with the following format:
 
 ```
 {
@@ -56,13 +56,6 @@ API documentation is hosted at [https://docs.tenno.tools/api/](https://docs.tenn
 ```
 
 ### Parameters
-
-`platform` - **Required**. Selected platform.
-
-* `pc` - PC  
-* `ps4` - PlayStation 4  
-* `xb1` - Xbox One  
-* `ns` - Nintendo Switch
 
 `components` - Comma-separated list of components. If omitted, all components are returned.
 

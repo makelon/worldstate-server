@@ -14,7 +14,7 @@ export default class VoidStormReader extends WfReader<WfVoidStorm> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s void storms', this.platform)
+		log.notice('Reading void storms')
 		const oldIds = this.dbTable.getIdMap()
 		for (const voidstormInput of voidstormsInput) {
 			const id = getId(voidstormInput),
@@ -38,12 +38,12 @@ export default class VoidStormReader extends WfReader<WfVoidStorm> {
 					if (Object.keys(diff).length) {
 						patch(voidstormDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating void storm %s for %s', id, this.platform)
+						log.debug('Updating void storm %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, voidstormProcessed, true)
-					log.debug('Found void storm %s for %s', id, this.platform)
+					log.debug('Found void storm %s', id)
 				}
 			}
 			delete oldIds[id]

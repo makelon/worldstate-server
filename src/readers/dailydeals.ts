@@ -17,7 +17,7 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s daily deals', this.platform)
+		log.notice('Reading daily deals')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const dealInput of dealsInput) {
@@ -42,19 +42,19 @@ export default class DailyDealReader extends WfReader<WfDailyDeal> {
 					if (Object.keys(diff).length) {
 						patch(dealDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating daily deal %s for %s', id, this.platform)
+						log.debug('Updating daily deal %s', id)
 					}
 				}
 				else {
 					dealDb = dealCurrent
 					this.dbTable.add(id, dealDb, true)
-					log.debug('Found daily deal %s for %s', id, this.platform)
+					log.debug('Found daily deal %s', id)
 				}
 				if (dealDb.sold !== sold) {
 					this.dbTable.updateTmp(id, {
 						sold: sold,
 					})
-					log.debug('Updating daily deal %s for %s (%d -> %d sold)', id, this.platform, dealDb.sold, sold)
+					log.debug('Updating daily deal %s (%d -> %d sold)', id, dealDb.sold, sold)
 					dealDb.sold = sold
 				}
 			}

@@ -1,21 +1,19 @@
 {
-    "pc": {
-        "bounties": [
-            {
-                "id": "ExtraBounty",
-                "syndicate": "Extra Bounty Syndicate",
-                "jobs": [
-                    {
-                        "rewards": "MockRewardTable",
-                        "minEnemyLevel": 3,
-                        "maxEnemyLevel": 8,
-                        "xpAmounts": [
-                            1234
-                        ],
-                        "title": "Extra Bounty Title"
-                    }
-                ]
-            }
-        ]
-    }
+    "bounties": [
+        {
+            "id": "ExtraBounty",
+            "syndicate": "Extra Bounty Syndicate",
+            "jobs": [
+                {
+                    "rewards": "MockRewardTable",
+                    "minEnemyLevel": 3,
+                    "maxEnemyLevel": 8,
+                    "xpAmounts": [
+                        1234
+                    ],
+                    "title": "Extra Bounty Title"
+                }
+            ]
+        }
+    ]
 }

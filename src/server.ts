@@ -1,7 +1,7 @@
 import { chmodSync } from 'fs'
 import { createServer, IncomingMessage, Server as HttpServer, ServerResponse } from 'http'
 import { isIP, isIPv6 } from 'net'
-import { platform as osPlatform } from 'os'
+import { platform } from 'os'
 
 import config from './config.js'
 import * as log from './log.js'
@@ -14,9 +14,9 @@ export default class Server {
 	/**
 	 * Create a server and set up its HTTP event listeners
 	 *
-	 * @param instances Worldstate instances to keep track of and update
+	 * @param ws Worldstate instance to keep track of and update
 	 */
-	constructor(private instances: {[platform in WfPlatform]?: Worldstate}) {
+	constructor(private readonly ws: Worldstate) {
 		this.httpServer = createServer()
 			.on('request', (req, res) => { this.handleRequest(req, res) })
 			.on('error', (err: NodeJS.ErrnoException) => {
@@ -31,7 +31,7 @@ export default class Server {
 	}
 
 	/**
-	 * Start the server and initialize the Worldstate instances
+	 * Start the server and initialize the Worldstate instance
 	 */
 	start(): void {
 		if (this.running) {
@@ -40,19 +40,15 @@ export default class Server {
 		}
 		this.running = true
 		this.startServer()
-		for (const platform in this.instances) {
-			this.instances[platform as WfPlatform]!.start()
-		}
+		this.ws.start()
 	}
 
 	/**
-	 * Reload the server and Worldstate instances and restart the listener as required by config changes
+	 * Reload the server and Worldstate instance and restart the listener as required by config changes
 	 */
 	reload(): void {
 		const oldListen = config.listen
-		for (const platform in this.instances) {
-			this.instances[platform as WfPlatform]!.reload()
-		}
+		this.ws.reload()
 		if (config.listen !== oldListen) {
 			this.startServer()
 		}
@@ -139,7 +135,7 @@ export default class Server {
 					process.exit(1)
 				}
 				else if (typeof address === 'string') {
-					if (osPlatform() !== 'win32') {
+					if (platform() !== 'win32') {
 						chmodSync(address, 0o660)
 					}
 					listenStr = address
@@ -190,30 +186,22 @@ export default class Server {
 	private handleGetRequest(req: IncomingMessage, res: ServerResponse): string {
 		const reqUrl = req.url || '/'
 		log.notice('Received GET request: %s', reqUrl)
-		const urlParts = reqUrl.substring(1).split('/'),
-			platform = (urlParts[0] || 'pc') as WfPlatform,
-			instance = this.instances[platform]
-		let responseText: string,
-			cacheTtl: number,
-			cacheTtlBrowser: number
+		const urlParts = reqUrl.substring(1).split('/')
 
-		if (instance) {
-			let types
-			if (urlParts[1]) {
-				types = urlParts[1].split(',')
-			}
-			responseText = instance.get(types)
-			// Set s-maxage to tell caches when the next update happens
-			cacheTtl = Math.ceil((instance.getNextUpdate() - Date.now()) / 1000)
-			// Set max-age to tell browsers to update every <updateInterval> seconds. Subtract 1 to prevent accidental cache hits
-			cacheTtlBrowser = config.updateInterval < 1000 ? 0 : Math.floor(config.updateInterval / 1000) - 1
-			res.setHeader('Last-Modified', new Date().toUTCString())
+		let types
+		if (['pc', 'ps4', 'xb1', 'ns'].includes(urlParts[0])) {
+			types = urlParts[1]?.split(',')
 		}
-		else {
-			res.statusCode = 404
-			responseText = JSON.stringify(`Unknown platform ${platform}`)
-			cacheTtl = cacheTtlBrowser = 86400
+		else if (urlParts[0] !== '') {
+			types = urlParts[0].split(',')
 		}
+
+		const responseText = this.ws.get(types)
+		// Set s-maxage to tell caches when the next update happens
+		const cacheTtl = Math.ceil((this.ws.getNextUpdate() - Date.now()) / 1000)
+		// Set max-age to tell browsers to update every <updateInterval> seconds. Subtract 1 to prevent accidental cache hits
+		const cacheTtlBrowser = config.updateInterval < 1000 ? 0 : Math.floor(config.updateInterval / 1000) - 1
+		res.setHeader('Last-Modified', new Date().toUTCString())
 		res.setHeader('Cache-Control', `max-age=${cacheTtlBrowser},s-maxage=${cacheTtl}`)
 		res.setHeader('Content-Type', 'application/json; charset=utf-8')
 		return responseText

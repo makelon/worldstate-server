@@ -17,7 +17,7 @@ export default class ArbitrationReader extends WfReader<WfArbitration> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s arbitrations', this.platform)
+		log.notice('Reading arbitrations')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const arbitrationInput of arbitrationsInput) {
@@ -43,12 +43,12 @@ export default class ArbitrationReader extends WfReader<WfArbitration> {
 					if (Object.keys(diff).length) {
 						patch(arbitrationDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating arbitration %s for %s', id, this.platform)
+						log.debug('Updating arbitration %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, arbitrationCurrent, true)
-					log.debug('Found arbitration %s for %s', id, this.platform)
+					log.debug('Found arbitration %s', id)
 				}
 			}
 			delete oldIds[id]

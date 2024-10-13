@@ -20,7 +20,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s bounties', this.platform)
+		log.notice('Reading bounties')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const bounty of bountiesInput) {
@@ -69,13 +69,13 @@ export default class BountyReader extends WfReader<WfBounty> {
 					if (Object.keys(diff).length) {
 						patch(bountyDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating bounty %s for %s', id, this.platform)
+						log.debug('Updating bounty %s', id)
 					}
 				}
 				else {
 					bountyDb = bountyCurrent
 					this.dbTable.add(id, bountyDb, true)
-					log.debug('Found bounty %s for %s', id, this.platform)
+					log.debug('Found bounty %s', id)
 				}
 				if (bountyDb.healthHistory && bountyDb.health !== health) {
 					const healthHistory = bountyDb.healthHistory
@@ -85,7 +85,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 							health: health,
 							healthHistory: healthHistory,
 						})
-						log.debug('Updating bounty %s for %s (%d -> %d)', id, this.platform, bountyDb.health, health)
+						log.debug('Updating bounty %s (%d -> %d)', id, bountyDb.health, health)
 					}
 					bountyDb.health = health
 				}
@@ -93,7 +93,7 @@ export default class BountyReader extends WfReader<WfBounty> {
 			delete oldIds[id]
 		}
 
-		for (const bounty of extraData.getData(this.platform, 'bounties')) {
+		for (const bounty of extraData.getData('bounties')) {
 			const id = bounty.id
 			let bountyDb = this.dbTable.get(id)
 			const jobs: WfBountyJob[] = [],
@@ -118,13 +118,13 @@ export default class BountyReader extends WfReader<WfBounty> {
 				if (Object.keys(diff).length) {
 					this.dbTable.moveTmp(id)
 					this.dbTable.add(id, bountyCurrent, true)
-					log.debug('Updating bounty %s for %s', id, this.platform)
+					log.debug('Updating bounty %s', id)
 				}
 			}
 			else {
 				bountyDb = bountyCurrent
 				this.dbTable.add(id, bountyDb, true)
-				log.debug('Found bounty %s for %s', id, this.platform)
+				log.debug('Found bounty %s', id)
 			}
 			delete oldIds[id]
 		}

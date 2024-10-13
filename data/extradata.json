@@ -1,554 +1,138 @@
 {
-    "pc": {
-        "bounties": [
-            {
-                "id": "VoxSolarisSyndicate",
-                "syndicate": "Vox Solaris",
-                "jobs": [
-                    {
-                        "rewards": "PTN",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 1"
-                    },
-                    {
-                        "rewards": "PTO",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 2"
-                    },
-                    {
-                        "rewards": "PTP",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 3"
-                    },
-                    {
-                        "rewards": "PTQ",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 4"
-                    }
-                ]
-            },
-            {
-                "id": "ZarimanSyndicate",
-                "syndicate": "The Holdfasts",
-                "jobs": [
-                    {
-                        "rewards": "1hZE",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 55,
-                        "xpAmounts": [
-                            1
-                        ]
-                    },
-                    {
-                        "rewards": "1hZF",
-                        "minEnemyLevel": 60,
-                        "maxEnemyLevel": 65,
-                        "xpAmounts": [
-                            2
-                        ]
-                    },
-                    {
-                        "rewards": "1hZG",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
-                        "xpAmounts": [
-                            3
-                        ]
-                    },
-                    {
-                        "rewards": "1hZH",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
-                        "xpAmounts": [
-                            4
-                        ]
-                    },
-                    {
-                        "rewards": "1hZI",
-                        "minEnemyLevel": 110,
-                        "maxEnemyLevel": 115,
-                        "xpAmounts": [
-                            5
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "CaviaSyndicate",
-                "syndicate": "Cavia",
-                "jobs": [
-                    {
-                        "rewards": "1Fyj",
-                        "minEnemyLevel": 55,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyk",
-                        "minEnemyLevel": 65,
-                        "maxEnemyLevel": 70,
-                        "xpAmounts": [
-                            2000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyl",
-                        "minEnemyLevel": 75,
-                        "maxEnemyLevel": 80,
-                        "xpAmounts": [
-                            3000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fym",
-                        "minEnemyLevel": 95,
-                        "maxEnemyLevel": 100,
-                        "xpAmounts": [
-                            4000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyn",
-                        "minEnemyLevel": 115,
-                        "maxEnemyLevel": 120,
-                        "xpAmounts": [
-                            5000
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    "ps4": {
-        "bounties": [
-            {
-                "id": "VoxSolarisSyndicate",
-                "syndicate": "Vox Solaris",
-                "jobs": [
-                    {
-                        "rewards": "PTN",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 1"
-                    },
-                    {
-                        "rewards": "PTO",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 2"
-                    },
-                    {
-                        "rewards": "PTP",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 3"
-                    },
-                    {
-                        "rewards": "PTQ",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 4"
-                    }
-                ]
-            },
-            {
-                "id": "ZarimanSyndicate",
-                "syndicate": "The Holdfasts",
-                "jobs": [
-                    {
-                        "rewards": "1hZE",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 55,
-                        "xpAmounts": [
-                            1
-                        ]
-                    },
-                    {
-                        "rewards": "1hZF",
-                        "minEnemyLevel": 60,
-                        "maxEnemyLevel": 65,
-                        "xpAmounts": [
-                            2
-                        ]
-                    },
-                    {
-                        "rewards": "1hZG",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
-                        "xpAmounts": [
-                            3
-                        ]
-                    },
-                    {
-                        "rewards": "1hZH",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
-                        "xpAmounts": [
-                            4
-                        ]
-                    },
-                    {
-                        "rewards": "1hZI",
-                        "minEnemyLevel": 110,
-                        "maxEnemyLevel": 115,
-                        "xpAmounts": [
-                            5
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "CaviaSyndicate",
-                "syndicate": "Cavia",
-                "jobs": [
-                    {
-                        "rewards": "1Fyj",
-                        "minEnemyLevel": 55,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyk",
-                        "minEnemyLevel": 65,
-                        "maxEnemyLevel": 70,
-                        "xpAmounts": [
-                            2000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyl",
-                        "minEnemyLevel": 75,
-                        "maxEnemyLevel": 80,
-                        "xpAmounts": [
-                            3000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fym",
-                        "minEnemyLevel": 95,
-                        "maxEnemyLevel": 100,
-                        "xpAmounts": [
-                            4000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyn",
-                        "minEnemyLevel": 115,
-                        "maxEnemyLevel": 120,
-                        "xpAmounts": [
-                            5000
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    "xb1": {
-        "bounties": [
-            {
-                "id": "VoxSolarisSyndicate",
-                "syndicate": "Vox Solaris",
-                "jobs": [
-                    {
-                        "rewards": "PTN",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 1"
-                    },
-                    {
-                        "rewards": "PTO",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 2"
-                    },
-                    {
-                        "rewards": "PTP",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 3"
-                    },
-                    {
-                        "rewards": "PTQ",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 4"
-                    }
-                ]
-            },
-            {
-                "id": "ZarimanSyndicate",
-                "syndicate": "The Holdfasts",
-                "jobs": [
-                    {
-                        "rewards": "1hZE",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 55,
-                        "xpAmounts": [
-                            1
-                        ]
-                    },
-                    {
-                        "rewards": "1hZF",
-                        "minEnemyLevel": 60,
-                        "maxEnemyLevel": 65,
-                        "xpAmounts": [
-                            2
-                        ]
-                    },
-                    {
-                        "rewards": "1hZG",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
-                        "xpAmounts": [
-                            3
-                        ]
-                    },
-                    {
-                        "rewards": "1hZH",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
-                        "xpAmounts": [
-                            4
-                        ]
-                    },
-                    {
-                        "rewards": "1hZI",
-                        "minEnemyLevel": 110,
-                        "maxEnemyLevel": 115,
-                        "xpAmounts": [
-                            5
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "CaviaSyndicate",
-                "syndicate": "Cavia",
-                "jobs": [
-                    {
-                        "rewards": "1Fyj",
-                        "minEnemyLevel": 55,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyk",
-                        "minEnemyLevel": 65,
-                        "maxEnemyLevel": 70,
-                        "xpAmounts": [
-                            2000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyl",
-                        "minEnemyLevel": 75,
-                        "maxEnemyLevel": 80,
-                        "xpAmounts": [
-                            3000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fym",
-                        "minEnemyLevel": 95,
-                        "maxEnemyLevel": 100,
-                        "xpAmounts": [
-                            4000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyn",
-                        "minEnemyLevel": 115,
-                        "maxEnemyLevel": 120,
-                        "xpAmounts": [
-                            5000
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    "ns": {
-        "bounties": [
-            {
-                "id": "VoxSolarisSyndicate",
-                "syndicate": "Vox Solaris",
-                "jobs": [
-                    {
-                        "rewards": "PTN",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 1"
-                    },
-                    {
-                        "rewards": "PTO",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 2"
-                    },
-                    {
-                        "rewards": "PTP",
-                        "minEnemyLevel": 40,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 3"
-                    },
-                    {
-                        "rewards": "PTQ",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ],
-                        "title": "Profit-Taker - Phase 4"
-                    }
-                ]
-            },
-            {
-                "id": "ZarimanSyndicate",
-                "syndicate": "The Holdfasts",
-                "jobs": [
-                    {
-                        "rewards": "1hZE",
-                        "minEnemyLevel": 50,
-                        "maxEnemyLevel": 55,
-                        "xpAmounts": [
-                            1
-                        ]
-                    },
-                    {
-                        "rewards": "1hZF",
-                        "minEnemyLevel": 60,
-                        "maxEnemyLevel": 65,
-                        "xpAmounts": [
-                            2
-                        ]
-                    },
-                    {
-                        "rewards": "1hZG",
-                        "minEnemyLevel": 70,
-                        "maxEnemyLevel": 75,
-                        "xpAmounts": [
-                            3
-                        ]
-                    },
-                    {
-                        "rewards": "1hZH",
-                        "minEnemyLevel": 90,
-                        "maxEnemyLevel": 95,
-                        "xpAmounts": [
-                            4
-                        ]
-                    },
-                    {
-                        "rewards": "1hZI",
-                        "minEnemyLevel": 110,
-                        "maxEnemyLevel": 115,
-                        "xpAmounts": [
-                            5
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "CaviaSyndicate",
-                "syndicate": "Cavia",
-                "jobs": [
-                    {
-                        "rewards": "1Fyj",
-                        "minEnemyLevel": 55,
-                        "maxEnemyLevel": 60,
-                        "xpAmounts": [
-                            1000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyk",
-                        "minEnemyLevel": 65,
-                        "maxEnemyLevel": 70,
-                        "xpAmounts": [
-                            2000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyl",
-                        "minEnemyLevel": 75,
-                        "maxEnemyLevel": 80,
-                        "xpAmounts": [
-                            3000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fym",
-                        "minEnemyLevel": 95,
-                        "maxEnemyLevel": 100,
-                        "xpAmounts": [
-                            4000
-                        ]
-                    },
-                    {
-                        "rewards": "1Fyn",
-                        "minEnemyLevel": 115,
-                        "maxEnemyLevel": 120,
-                        "xpAmounts": [
-                            5000
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
+    "bounties": [
+        {
+            "id": "VoxSolarisSyndicate",
+            "syndicate": "Vox Solaris",
+            "jobs": [
+                {
+                    "rewards": "PTN",
+                    "minEnemyLevel": 40,
+                    "maxEnemyLevel": 60,
+                    "xpAmounts": [
+                        1000
+                    ],
+                    "title": "Profit-Taker - Phase 1"
+                },
+                {
+                    "rewards": "PTO",
+                    "minEnemyLevel": 40,
+                    "maxEnemyLevel": 60,
+                    "xpAmounts": [
+                        1000
+                    ],
+                    "title": "Profit-Taker - Phase 2"
+                },
+                {
+                    "rewards": "PTP",
+                    "minEnemyLevel": 40,
+                    "maxEnemyLevel": 60,
+                    "xpAmounts": [
+                        1000
+                    ],
+                    "title": "Profit-Taker - Phase 3"
+                },
+                {
+                    "rewards": "PTQ",
+                    "minEnemyLevel": 50,
+                    "maxEnemyLevel": 60,
+                    "xpAmounts": [
+                        1000
+                    ],
+                    "title": "Profit-Taker - Phase 4"
+                }
+            ]
+        },
+        {
+            "id": "ZarimanSyndicate",
+            "syndicate": "The Holdfasts",
+            "jobs": [
+                {
+                    "rewards": "1hZE",
+                    "minEnemyLevel": 50,
+                    "maxEnemyLevel": 55,
+                    "xpAmounts": [
+                        1
+                    ]
+                },
+                {
+                    "rewards": "1hZF",
+                    "minEnemyLevel": 60,
+                    "maxEnemyLevel": 65,
+                    "xpAmounts": [
+                        2
+                    ]
+                },
+                {
+                    "rewards": "1hZG",
+                    "minEnemyLevel": 70,
+                    "maxEnemyLevel": 75,
+                    "xpAmounts": [
+                        3
+                    ]
+                },
+                {
+                    "rewards": "1hZH",
+                    "minEnemyLevel": 90,
+                    "maxEnemyLevel": 95,
+                    "xpAmounts": [
+                        4
+                    ]
+                },
+                {
+                    "rewards": "1hZI",
+                    "minEnemyLevel": 110,
+                    "maxEnemyLevel": 115,
+                    "xpAmounts": [
+                        5
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "CaviaSyndicate",
+            "syndicate": "Cavia",
+            "jobs": [
+                {
+                    "rewards": "1Fyj",
+                    "minEnemyLevel": 55,
+                    "maxEnemyLevel": 60,
+                    "xpAmounts": [
+                        1000
+                    ]
+                },
+                {
+                    "rewards": "1Fyk",
+                    "minEnemyLevel": 65,
+                    "maxEnemyLevel": 70,
+                    "xpAmounts": [
+                        2000
+                    ]
+                },
+                {
+                    "rewards": "1Fyl",
+                    "minEnemyLevel": 75,
+                    "maxEnemyLevel": 80,
+                    "xpAmounts": [
+                        3000
+                    ]
+                },
+                {
+                    "rewards": "1Fym",
+                    "minEnemyLevel": 95,
+                    "maxEnemyLevel": 100,
+                    "xpAmounts": [
+                        4000
+                    ]
+                },
+                {
+                    "rewards": "1Fyn",
+                    "minEnemyLevel": 115,
+                    "maxEnemyLevel": 120,
+                    "xpAmounts": [
+                        5000
+                    ]
+                }
+            ]
+        }
+    ]
 }

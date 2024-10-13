@@ -18,7 +18,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s acolytes', this.platform)
+		log.notice('Reading acolytes')
 		this._entityRewards.clear()
 		const oldIds = this.dbTable.getIdMap()
 		for (const acolyteInput of acolytesInput) {
@@ -48,13 +48,13 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 				if (Object.keys(diff).length) {
 					patch(acolyteDb, diff)
 					this.dbTable.updateTmp(id, diff)
-					log.debug('Updating acolyte %s for %s', id, this.platform)
+					log.debug('Updating acolyte %s', id)
 				}
 			}
 			else {
 				acolyteDb = acolyteCurrent
 				this.dbTable.add(id, acolyteDb, true)
-				log.debug('Found acolyte %s for %s', id, this.platform)
+				log.debug('Found acolyte %s', id)
 			}
 			if (acolyteDb.discovered !== discovered) {
 				acolyteDb.discovered = discovered
@@ -63,7 +63,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 					discovered: discovered,
 					location: location,
 				})
-				log.debug('Updating acolyte %s for %s (discovered -> %s)', id, this.platform, discovered ? 'true' : 'false')
+				log.debug('Updating acolyte %s (discovered -> %s)', id, discovered ? 'true' : 'false')
 			}
 			if (acolyteDb.health !== health) {
 				const healthHistory = acolyteDb.healthHistory
@@ -74,7 +74,7 @@ export default class AcolyteReader extends WfReader<WfAcolyte> {
 						healthHistory: healthHistory,
 					})
 				}
-				log.debug('Updating acolyte %s for %s (%d -> %d)', id, this.platform, acolyteDb.health, health)
+				log.debug('Updating acolyte %s (%d -> %d)', id, acolyteDb.health, health)
 				acolyteDb.health = health
 			}
 			delete oldIds[id]

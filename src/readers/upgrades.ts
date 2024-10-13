@@ -15,7 +15,7 @@ export default class UpgradeReader extends WfReader<WfUpgrade> {
 		if (!this.dbTable) {
 			return
 		}
-		log.notice('Reading %s upgrades', this.platform)
+		log.notice('Reading upgrades')
 		const oldIds = this.dbTable.getIdMap()
 		for (const upgradeInput of upgradeInputs) {
 			const id = getId(upgradeInput),
@@ -38,12 +38,12 @@ export default class UpgradeReader extends WfReader<WfUpgrade> {
 					if (Object.keys(diff).length) {
 						patch(upgradeDb, diff)
 						this.dbTable.updateTmp(id, diff)
-						log.debug('Updating upgrade %s for %s', id, this.platform)
+						log.debug('Updating upgrade %s', id)
 					}
 				}
 				else {
 					this.dbTable.add(id, upgradeProcessed, true)
-					log.debug('Found upgrade %s for %s', id, this.platform)
+					log.debug('Found upgrade %s', id)
 				}
 			}
 			delete oldIds[id]

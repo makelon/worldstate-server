@@ -6,8 +6,8 @@ import fixtures from './fixtures/data.js'
 import MockGame from './fixtures/mockgame.js'
 
 describe('Worldstate readers', () => {
-	const db = new Database('pc')
-	const ws = new Worldstate(db, 'pc')
+	const db = new Database('test')
+	const ws = new Worldstate(db)
 
 	function runStandardTests(dataKey, testCaseGenerator, worldstateReader, includeExpireTest) {
 		let timestamp = fixtures.timeNowShort
@@ -134,19 +134,15 @@ describe('Worldstate readers', () => {
 	})
 
 	it('should load extra data', () => {
-		config.wsUrls.pc = ''
 		extraData.data = {}
 		extraData.load('data/extradata.json')
-		expect(extraData.data.pc.bounties.length).toBe(1)
-		expect(extraData.getData('pc', 'bounties')).toEqual(extraData.data.pc.bounties)
-		expect(extraData.getData('pc', 'x')).toEqual([])
-		expect(extraData.getData('x', 'bounties')).toEqual([])
+		expect(extraData.data.bounties.length).toBe(1)
+		expect(extraData.getData('bounties')).toEqual(extraData.data.bounties)
+		expect(extraData.getData('x')).toEqual([])
 		extraData.data = {}
-		delete config.wsUrls.pc
 	})
 
 	it('should load extra bounties and clear them if data file is removed', () => {
-		config.wsUrls.pc = ''
 		extraData.data = {}
 		const dataKey = 'bounties'
 		let timestamp = fixtures.timeNowShort
@@ -159,7 +155,6 @@ describe('Worldstate readers', () => {
 			timestamp += fixtures.timeStep
 		}
 		extraData.data = {}
-		delete config.wsUrls.pc
 	})
 })
 
@@ -167,17 +162,17 @@ describe('Worldstate fetcher', () => {
 	const mockGame = new MockGame()
 
 	beforeAll(done => {
-		config.wsUrls.pc = `http://${mockGame.host}:${mockGame.port}`
+		config.wsUrl = `http://${mockGame.host}:${mockGame.port}`
 		mockGame.start(done)
 	})
 
 	afterAll(done => {
-		delete config.wsUrls.pc
+		config.wsUrl = ''
 		mockGame.shutdown(done)
 	})
 
 	it('should request worldstate data', async () => {
-		const ws = new Worldstate(new Database('pc'), 'pc')
+		const ws = new Worldstate(new Database('test'))
 		const waitForFlush = new Promise(resolve => {
 			ws.flushDb = () => resolve()
 		})
@@ -193,7 +188,7 @@ describe('Worldstate fetcher', () => {
 	}, 1000)
 
 	it('should ignore old worldstate data', async () => {
-		const ws = new Worldstate(new Database('pc'), 'pc')
+		const ws = new Worldstate(new Database('test'))
 		const waitForFlush = new Promise(resolve => {
 			ws.flushDb = () => resolve()
 		})

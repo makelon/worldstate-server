@@ -1,4 +1,3 @@
-import config from './config.js'
 import { parseJsonFile } from './fshelpers.js'
 
 interface ExtraPlatformDataBountyJob {
@@ -20,7 +19,7 @@ interface ExtraPlatformData {
 }
 
 class ExtraData {
-	private data: WfMap<WfPlatform, ExtraPlatformData> = {}
+	private data: ExtraPlatformData = { bounties: [] }
 
 	/**
 	 * Load extra data that isn't available in the worldstate dump
@@ -28,18 +27,16 @@ class ExtraData {
 	 * @param dataPath
 	 */
 	load(dataPath: string): void {
-		this.data = parseJsonFile(dataPath) || {}
+		const data = parseJsonFile<ExtraPlatformData>(dataPath)
+		this.data.bounties = data && ('bounties' in data) ? data.bounties : []
 	}
 
 	/**
-	 * @param platform
 	 * @param dataType
-	 * @returns Extra data of the selected type for the chosen platform
+	 * @returns Extra data of the selected type
 	 */
-	getData<T extends keyof ExtraPlatformData>(platform: WfPlatform, dataType: T): ExtraPlatformData[T] {
-		return platform in config.wsUrls
-			? this.data[platform]?.[dataType] || []
-			: []
+	getData<T extends keyof ExtraPlatformData>(dataType: T): ExtraPlatformData[T] {
+		return this.data[dataType] || []
 	}
 }
 

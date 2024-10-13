@@ -6,14 +6,13 @@ interface WfConfigI {
 	logLevel: string
 	dbRoot: string
 	wsFields: ReadonlyArray<WfRecordKey>
-	wsUrls: WfMap<WfPlatform, string>
-	kuvalogUrls: WfMap<WfPlatform, string>
+	wsUrl: string
+	kuvalogUrl: string
 	dayNightPath: string
 	minRetryTimeout: number
 	maxRetryTimeout: number
 	requestTimeout: number
 	updateInterval: number
-	instanceDelay: number
 	enableConsoleTime: boolean
 	enableDbWrites: boolean
 	listen: number | string
@@ -45,24 +44,13 @@ const defaults: WfConfigI = {
 		'voidstorms',
 		'voidtraders',
 	],
-	wsUrls: { // Worldstate endpoints
-		pc: 'https://content.warframe.com/dynamic/worldState.php',
-		ps4: 'https://content.warframe.com/dynamic/worldState.php',
-		xb1: 'https://content.warframe.com/dynamic/worldState.php',
-		ns: 'https://content.warframe.com/dynamic/worldState.php',
-	},
-	kuvalogUrls: {
-		pc: '',
-		ps4: '',
-		xb1: '',
-		ns: '',
-	},
+	wsUrl: 'https://content.warframe.com/dynamic/worldState.php', // Worldstate endpoint
+	kuvalogUrl: '',
 	dayNightPath: './daynight.json',
 	minRetryTimeout: 10000,
 	maxRetryTimeout: 120000,
 	requestTimeout: 30000,
 	updateInterval: 180000,
-	instanceDelay: 10000, // Time to wait between platform requests on startup
 	enableConsoleTime: true, // Enable timestamps in console output
 	enableDbWrites: true, // Enable persistent storage
 	listen: 0, // <port number> | <interface address>:<port number> | socket path
@@ -78,14 +66,13 @@ class WfConfig implements WfConfigI {
 	logLevel!: string
 	dbRoot!: string
 	wsFields!: ReadonlyArray<WfRecordKey>
-	wsUrls!: WfMap<WfPlatform, string>
-	kuvalogUrls!: WfMap<WfPlatform, string>
+	wsUrl!: string
+	kuvalogUrl!: string
 	dayNightPath!: string
 	minRetryTimeout!: number
 	maxRetryTimeout!: number
 	requestTimeout!: number
 	updateInterval!: number
-	instanceDelay!: number
 	enableConsoleTime!: boolean
 	enableDbWrites!: boolean
 	listen!: number | string
@@ -96,12 +83,6 @@ class WfConfig implements WfConfigI {
 
 	load(configPath: string): void {
 		let overrides: Partial<WfConfigI>
-
-		function getValue<T extends keyof WfConfigI>(name: T): WfConfigI[T] {
-			return typeof overrides[name] === 'undefined'
-				? defaults[name]
-				: overrides[name] as WfConfigI[T]
-		}
 
 		try {
 			const tmp: unknown = JSON.parse(readFileSync(configPath, 'utf8'))
@@ -120,35 +101,28 @@ class WfConfig implements WfConfigI {
 				process.exit(1)
 			}
 		}
-		for (const urlType of ['wsUrls', 'kuvalogUrls'] as const) {
-			if (overrides[urlType]) {
-				const urls = overrides[urlType] || {}
-				this[urlType] = {}
-				for (const platform in defaults[urlType]) {
-					if (platform in urls) {
-						this[urlType][platform as WfPlatform] = urls[platform as WfPlatform]
-					}
-				}
-			}
-			else {
-				this[urlType] = defaults[urlType]
-			}
-		}
 
-		this.dayNightPath = getValue('dayNightPath')
-		this.logLevel = getValue('logLevel')
-		this.dbRoot = getValue('dbRoot')
-		this.wsFields = getValue('wsFields')
-		this.minRetryTimeout = getValue('minRetryTimeout')
-		this.maxRetryTimeout = getValue('maxRetryTimeout')
-		this.requestTimeout = getValue('requestTimeout')
-		this.updateInterval = getValue('updateInterval')
-		this.instanceDelay = getValue('instanceDelay')
-		this.enableConsoleTime = getValue('enableConsoleTime')
-		this.enableDbWrites = getValue('enableDbWrites')
-		this.listen = getValue('listen')
-		this.userAgent = getValue('userAgent')
-		this.cors = getValue('cors')
+		const configure = function<T extends keyof WfConfigI>(this: WfConfigI, name: T): void {
+			this[name] = typeof overrides[name] === 'undefined'
+				? defaults[name]
+				: overrides[name] as WfConfigI[T]
+		}.bind(this)
+
+		configure('dayNightPath')
+		configure('logLevel')
+		configure('dbRoot')
+		configure('wsFields')
+		configure('wsUrl')
+		configure('kuvalogUrl')
+		configure('minRetryTimeout')
+		configure('maxRetryTimeout')
+		configure('requestTimeout')
+		configure('updateInterval')
+		configure('enableConsoleTime')
+		configure('enableDbWrites')
+		configure('listen')
+		configure('userAgent')
+		configure('cors')
 		this.tlsCa = ''
 		if (overrides.tlsCa) {
 			for (const ca of overrides.tlsCa) {
@@ -160,7 +134,7 @@ class WfConfig implements WfConfigI {
 				}
 			}
 		}
-		this.tlsVerify = getValue('tlsVerify')
+		configure('tlsVerify')
 		if (!this.dbRoot) {
 			this.enableDbWrites = false
 		}

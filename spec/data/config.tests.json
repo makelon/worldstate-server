@@ -1,6 +1,6 @@
 {
-	"wsUrls": {},
-	"kuvalogUrls": {},
+	"wsUrl": "",
+	"kuvalogUrl": "",
 	"listen": "127.0.0.1:20355",
 	"dayNightPath": null,
 	"enableDbWrites": false

@@ -1,5 +1,6 @@
 import { spawn } from 'child_process'
-import { mkdirSync, watch, readFile, writeFile, existsSync, writeFileSync } from 'fs'
+import { mkdirSync, watch, existsSync, writeFileSync } from 'fs'
+import { readFile, writeFile } from 'fs/promises'
 import { EOL } from 'os'
 import { join, basename, dirname, resolve as resolvePath } from 'path'
 import { createInterface } from 'readline'
@@ -178,21 +179,23 @@ function build() {
 	}
 }
 
-function buildData() {
+async function buildData() {
 	printBuild('Building data files')
-	return Promise.all([
-		...dataFiles.concat.map(x => concatFiles(x)),
-		...dataFiles.copy.map(x => copyFile(x)),
-	]).then(() => {
-		if (watcher) {
-			watcher.ee.emit('done')
-			watcher.timer = 0
-		}
-		printBuild('Data files built')
-	}).catch(err => {
+	try {
+		await Promise.all([
+			...dataFiles.concat.map(x => concatFiles(x)),
+			...dataFiles.copy.map(x => copyFile(x)),
+		])
+	}
+	catch (err) {
 		printErrors(err.message)
 		process.exit(1)
-	})
+	}
+	if (watcher) {
+		watcher.ee.emit('done')
+		watcher.timer = 0
+	}
+	printBuild('Data files built')
 }
 
 function watchData() {
@@ -214,69 +217,30 @@ function watchData() {
 			})
 		}
 		catch (err) {
-			printBuild(`Failed to watch ${file}`)
+			printBuild(`Failed to watch ${file}: ${err.message}`)
 		}
 	}
 }
 
-function concatFiles(fileGroup) {
-	const promises = []
-	for (const filePath of fileGroup.input) {
-		promises.push(new Promise((resolve, reject) => {
-			readFile(join(dataDir, filePath), 'utf8', (err, content) => {
-				if (err) {
-					reject(err)
-					return
-				}
-				try {
-					resolve(JSON.parse(content))
-				}
-				catch (e) {
-					reject(e)
-				}
-			})
-		}))
-	}
-	return Promise.all(promises)
-		.then(inputs => new Promise((resolve, reject) => {
-			const result = {}
-			for (const input of inputs) {
-				for (const key in input) {
-					result[key] = input[key]
-				}
-			}
-			writeFile(join(outDir, fileGroup.output), JSON.stringify(result), 'utf8', (err) => {
-				if (err) {
-					reject(err)
-					return
-				}
-				resolve()
-			})
-		}))
+async function concatFiles(fileGroup) {
+	const promises = fileGroup.input.map(
+		filePath => readFile(join(dataDir, filePath), 'utf8')
+			.then(content => JSON.parse(content)),
+	)
+	const inputs = await Promise.all(promises)
+	const result = inputs.reduce((acc, cur) => Object.assign(acc, cur), {})
+	return writeFile(join(outDir, fileGroup.output), JSON.stringify(result), 'utf8')
 }
 
-function copyFile(filePath) {
-	return new Promise((resolve, reject) => {
-		readFile(join(dataDir, filePath), 'utf8', (err, content) => {
-			if (err) {
-				reject(err)
-				return
-			}
-			try {
-				JSON.parse(content)
-				resolve(content)
-			}
-			catch (e) {
-				reject(new Error(`Failed to copy file ${filePath}: ${e.message}`))
-			}
-		})
-	}).then((content) => {
-		writeFile(join(outDir, basename(filePath)), content, 'utf8', (err) => {
-			if (err) {
-				throw err
-			}
-		})
-	})
+async function copyFile(filePath) {
+	const content = await readFile(join(dataDir, filePath), 'utf8')
+	try {
+		JSON.parse(content) // Validate content
+		await writeFile(join(outDir, basename(filePath)), content, 'utf8')
+	}
+	catch (err) {
+		throw new Error(`Failed to copy file ${filePath}: ${err.message}`)
+	}
 }
 
 function postBuild() {

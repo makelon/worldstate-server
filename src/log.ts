@@ -14,7 +14,6 @@ export let debug = _log,
 	warning = _log,
 	error = _error
 
-//eslint-disable-next-line @typescript-eslint/no-empty-function
 function _noop(): void {}
 
 /**

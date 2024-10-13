@@ -8,7 +8,7 @@ let lang,
 	itemNames = {},
 	itemTypes = {}
 
-/* eslint-disable comma-dangle -- This needs to be valid JSON for better maintainability */
+/* eslint-disable style/comma-dangle -- This needs to be valid JSON for better maintainability */
 const itemTypeTree = {
 	"boosters": "Booster",
 	"powersuits": {
@@ -145,7 +145,7 @@ const itemTypeTree = {
 		}
 	}
 }
-/* eslint-enable comma-dangle */
+/* eslint-enable style/comma-dangle */
 
 try {
 	lang = JSON.parse(readFileSync('./data/languages.json', 'utf8'))

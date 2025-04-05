@@ -92,7 +92,7 @@
         "xpAmount": 1000
     },
     "SeasonDailyKillEnemiesWhileOnKDrive": {
-        "description": "Kill 20 Enemies while riding a K-Drive, Kaithe, Velocipod or Merulina",
+        "description": "Kill 20 Enemies while riding a K-Drive, Kaithe, Velocipod or Atomicycle",
         "xpAmount": 1000
     },
     "SeasonDailyKillEnemiesWithAbilities": {

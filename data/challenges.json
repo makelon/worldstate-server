@@ -536,7 +536,7 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardCompleteSteelPathMissions": {
-        "description": "Complete 5 Steel Path Missions",
+        "description": "Complete 5 different Steel Path missions",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardEliteBeastSlayer": {
@@ -564,7 +564,7 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardFriendsDefense": {
-        "description": "Complete 20 waves in a defense mission",
+        "description": "Complete 12 waves in a defense mission",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardFriendsMirrorDefense": {

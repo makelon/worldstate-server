@@ -42,17 +42,17 @@
                 "chance": 0.12
             },
             {
-                "name": "Mod Drop Chance Booster",
-                "count": 1,
-                "chance": 0.0327
-            },
-            {
                 "name": "Affinity Booster",
                 "count": 1,
                 "chance": 0.0327
             },
             {
                 "name": "Resource Drop Chance Booster",
+                "count": 1,
+                "chance": 0.0327
+            },
+            {
+                "name": "Mod Drop Chance Booster",
                 "count": 1,
                 "chance": 0.0327
             },

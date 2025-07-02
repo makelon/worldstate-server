@@ -1324,7 +1324,7 @@
                 "chance": 0.0625
             },
             {
-                "name": "Meso T7 Relic",
+                "name": "Meso T8 Relic",
                 "count": 1,
                 "chance": 0.0625
             },
@@ -1947,7 +1947,7 @@
                 "chance": 0.015
             },
             {
-                "name": "Meso T7 Relic",
+                "name": "Meso T8 Relic",
                 "count": 1,
                 "chance": 0.015
             }
@@ -2099,7 +2099,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso T7 Relic",
+                "name": "Meso T8 Relic",
                 "count": 1,
                 "chance": 0.125
             }
@@ -2121,7 +2121,7 @@
                 "chance": 0.0781
             },
             {
-                "name": "Meso T7 Relic",
+                "name": "Meso T8 Relic",
                 "count": 1,
                 "chance": 0.0781
             },
@@ -3144,7 +3144,7 @@
                 "chance": 0.03
             },
             {
-                "name": "Meso T7 Relic",
+                "name": "Meso T8 Relic",
                 "count": 1,
                 "chance": 0.03
             }

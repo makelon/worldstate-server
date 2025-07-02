@@ -3407,7 +3407,7 @@
                 "chance": 0.02
             },
             {
-                "name": "Kompressa Prime Reciever",
+                "name": "Kompressa Prime Receiver",
                 "count": 1,
                 "chance": 0.11
             },
@@ -16853,6 +16853,40 @@
             },
             {
                 "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Meso T8 Relic": [
+        [
+            {
+                "name": "Trumna Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Protea Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Akarius Prime Link",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Burston Prime Stock",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Xaku Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Lex Prime Receiver",
                 "count": 1,
                 "chance": 0.25329999999999997
             }

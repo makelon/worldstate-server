@@ -300,7 +300,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyCollector": {
-        "description": "Collect 4000 resources",
+        "description": "Collect 100 resources from Duviri",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteAssassination": {

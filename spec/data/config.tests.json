@@ -2,6 +2,7 @@
 	"wsUrl": "",
 	"kuvalogUrl": "",
 	"listen": "127.0.0.1:20355",
+	"userAgent": "worldstate-node (jasmine)",
 	"dayNightPath": null,
 	"enableDbWrites": false
 }

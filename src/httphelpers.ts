@@ -1,6 +1,5 @@
-import { ClientRequest, IncomingMessage, request as httpRequest } from 'http'
+import { type ClientRequest, type IncomingMessage, request as httpRequest } from 'http'
 import { type RequestOptions, request as httpsRequest } from 'https'
-import { parse as parseUrl } from 'url'
 import { createGunzip, createInflate } from 'zlib'
 
 import config from './config.js'
@@ -13,20 +12,22 @@ import config from './config.js'
  * @returns Request options object
  */
 export function prepareRequest(url: string, method = 'GET'): RequestOptions {
-	const urlParsed = parseUrl(url),
+	const urlParsed = new URL(url),
 		requestOptions: RequestOptions = {
 			protocol: urlParsed.protocol,
 			hostname: urlParsed.hostname,
 			port: urlParsed.port,
 			method: method,
-			path: urlParsed.path,
-			auth: urlParsed.auth,
+			path: urlParsed.pathname,
 			headers: {
 				'Accept-Encoding': 'gzip, deflate',
 				'User-Agent': config.userAgent,
 			},
 			timeout: config.requestTimeout,
 		}
+	if (urlParsed.username) {
+		requestOptions.auth = urlParsed.username + (urlParsed.password ? ':' + urlParsed.password : '')
+	}
 	if (urlParsed.protocol === 'https:') {
 		if (!config.tlsVerify) {
 			requestOptions.rejectUnauthorized = false

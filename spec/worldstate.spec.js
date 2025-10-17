@@ -162,7 +162,7 @@ describe('Worldstate fetcher', () => {
 	const mockGame = new MockGame()
 
 	beforeAll(done => {
-		config.wsUrl = `http://${mockGame.host}:${mockGame.port}`
+		config.wsUrl = `http://mockUsername:mockPassword@${mockGame.host}:${mockGame.port}`
 		mockGame.start(done)
 	})
 
@@ -179,8 +179,13 @@ describe('Worldstate fetcher', () => {
 		const timestamp = fixtures.timeNowShort
 		const [[testData, expected]] = fixtures.getAlerts()
 		mockGame.setData(testData, timestamp)
+		const requestHeadersPromise = mockGame.getRequestHeaders()
 		ws.start()
 		await waitForFlush
+		const requestHeaders = await requestHeadersPromise
+		expect(requestHeaders['authorization']).toBe(`Basic ${btoa('mockUsername:mockPassword')}`)
+		expect(requestHeaders['accept-encoding']).toBe('gzip, deflate')
+		expect(requestHeaders['user-agent']).toBe(config.userAgent)
 		const result = JSON.parse(ws.get(['alerts']))
 		expect(result.time).toEqual(timestamp)
 		expect(result.alerts.time).toBeGreaterThanOrEqual(timestamp)

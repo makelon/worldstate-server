@@ -150,6 +150,7 @@ export const
 	},
 	voidTraderNames: WfMap = {
 		'Baro\'Ki Teel': 'Baro Ki\'Teer',
+		'EvilBaro': 'Scare-o Ki\'Teer',
 	}
 
 /**

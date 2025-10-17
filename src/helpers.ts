@@ -166,6 +166,13 @@ export function getSyndicateName(syndicateId: string): string {
  * @returns Void trader name
  */
 export function getVoidTraderName(voidTraderId: string): string {
+	const weeklyVoidTrader = voidTraderId.match(/^(\w+)Week(\d+)$/)
+	if (weeklyVoidTrader) {
+		const weeklyVoidTraderName = tags.voidTraderNames[weeklyVoidTrader[1]]
+		if (weeklyVoidTraderName) {
+			return `${weeklyVoidTraderName} Week ${weeklyVoidTrader[2]}`
+		}
+	}
 	return tags.voidTraderNames[voidTraderId] || voidTraderId
 }
 

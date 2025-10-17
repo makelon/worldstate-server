@@ -917,6 +917,14 @@ function* getVoidTraders() {
 	expected.items[0].ducats = 5
 	yield [data, expected]
 
+	voidTrader.Character = 'EvilBaroWeek1'
+	expected.name = "Scare-o Ki'Teer Week 1"
+	yield [data, expected]
+
+	voidTrader.Character = 'EvilBaroWeek2'
+	expected.name = "Scare-o Ki'Teer Week 2"
+	yield [data, expected]
+
 	voidTrader.Activation.$date.$numberLong = timeEndLong
 	expected.id = entryId + timeEndShort.toString()
 	expected.start = timeEndShort

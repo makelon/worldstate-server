@@ -619,6 +619,10 @@
         "description": "Kill a Silver Grove specter",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardKillTank": {
+        "description": "Defeat an H-09 Efervon Tank",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardKillThumper": {
         "description": "Kill a Tusk Thumper Doma in Plains of Eidolon",
         "xpAmount": 7000

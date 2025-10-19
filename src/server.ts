@@ -198,7 +198,7 @@ export default class Server {
 
 		const responseText = this.ws.get(types)
 		// Set s-maxage to tell caches when the next update happens
-		const cacheTtl = Math.ceil((this.ws.getNextUpdate() - Date.now()) / 1000)
+		const cacheTtl = Math.max(0, Math.ceil((this.ws.getNextUpdate() - Date.now()) / 1000))
 		// Set max-age to tell browsers to update every <updateInterval> seconds. Subtract 1 to prevent accidental cache hits
 		const cacheTtlBrowser = config.updateInterval < 1000 ? 0 : Math.floor(config.updateInterval / 1000) - 1
 		res.setHeader('Last-Modified', new Date().toUTCString())

@@ -1,9 +1,10 @@
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import globals from 'globals'
-import stylisticJs from '@stylistic/eslint-plugin-js'
+import stylistic from '@stylistic/eslint-plugin'
+import { defineConfig } from 'eslint/config'
 
-export default tseslint.config(
+export default defineConfig(
 	{
 		ignores: ["out/**"],
 	},
@@ -16,7 +17,7 @@ export default tseslint.config(
 			},
 		},
 		plugins: {
-			'style': stylisticJs,
+			'style': stylistic,
 		},
 		rules: {
 			"curly": "error",

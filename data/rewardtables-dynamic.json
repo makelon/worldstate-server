@@ -128,7 +128,7 @@
             {
                 "name": "Vitus Essence",
                 "count": 3,
-                "chance": 0.07
+                "chance": 0.1
             },
             {
                 "name": "Arcane Pistoleer",
@@ -166,11 +166,6 @@
                 "chance": 0.035
             },
             {
-                "name": "Seeding Step Ephemera Blueprint",
-                "count": 1,
-                "chance": 0.05
-            },
-            {
                 "name": "Omni Forma Blueprint",
                 "count": 1,
                 "chance": 0.045
@@ -178,7 +173,7 @@
             {
                 "name": "Endo",
                 "count": 1500,
-                "chance": 0.33
+                "chance": 0.35
             }
         ]
     ],
@@ -1072,7 +1067,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith L6 Relic (Radiant)",
+                "name": "Lith L7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1141,7 +1136,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith L6 Relic (Radiant)",
+                "name": "Lith L7 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },

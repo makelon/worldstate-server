@@ -9216,6 +9216,40 @@
     "Lith L6 Relic": [
         [
             {
+                "name": "Larkspur Prime Barrel",
+                "count": 1,
+                "chance": 0.02
+            },
+            {
+                "name": "Wisp Prime Neuroptics Blueprint",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Shade Prime Systems",
+                "count": 1,
+                "chance": 0.11
+            },
+            {
+                "name": "Gunsen Prime Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Burston Prime Receiver",
+                "count": 1,
+                "chance": 0.25329999999999997
+            },
+            {
+                "name": "Forma Blueprint",
+                "count": 1,
+                "chance": 0.25329999999999997
+            }
+        ]
+    ],
+    "Lith L7 Relic": [
+        [
+            {
                 "name": "Lavos Prime Systems Blueprint",
                 "count": 1,
                 "chance": 0.02

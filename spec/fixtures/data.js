@@ -120,7 +120,7 @@ const items = [
 
 function clone(obj) {
 	if (global.structuredClone) {
-		return structuredClone(obj)
+		return global.structuredClone(obj)
 	}
 	return JSON.parse(JSON.stringify(obj))
 }

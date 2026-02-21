@@ -1,8 +1,7 @@
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import globals from 'globals'
-import stylistic from '@stylistic/eslint-plugin'
 import { defineConfig } from 'eslint/config'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig(
 	{
@@ -13,7 +12,17 @@ export default defineConfig(
 		name: 'style',
 		languageOptions: {
 			globals: {
-				...globals.node,
+				console: "readable",
+				global: "readable",
+				process: "readable",
+
+				setTimeout: "readable",
+				clearTimeout: "readable",
+				setInterval: "readable",
+				clearInterval: "readable",
+
+				atob: "readable",
+				btoa: "readable",
 			},
 		},
 		plugins: {
@@ -25,6 +34,7 @@ export default defineConfig(
 			"no-sequences": "error",
 			"no-shadow": "error",
 			"no-throw-literal": "error",
+			"preserve-caught-error": "off",
 			"require-await": "error",
 			"style/array-bracket-newline": "error",
 			"style/brace-style": [
@@ -59,7 +69,23 @@ export default defineConfig(
 		name: ".spec",
 		languageOptions: {
 			globals: {
-				...globals.jasmine,
+				afterAll: "readable",
+				afterEach: "readable",
+				beforeAll: "readable",
+				beforeEach: "readable",
+				describe: "readable",
+				expect: "readable",
+				expectAsync: "readable",
+				fail: "readable",
+				it: "readable",
+				jasmine: "readable",
+				spyOn: "readable",
+				spyOnAllFunctions: "readable",
+				spyOnProperty: "readable",
+				throwUnless: "readable",
+				throwUnlessAsync: "readable",
+				waits: "readable",
+				waitsFor: "readable",
 			},
 		},
 	},

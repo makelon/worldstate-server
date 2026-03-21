@@ -12,18 +12,18 @@ jobs:
 
     strategy:
       matrix:
-        node: [ 20, 24 ]
+        node: [ 22, 25 ]
         include:
-          - node: 22
+          - node: 24
             lint: true
 
     name: Build and test (node-${{ matrix.node }})
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: npm
           node-version: ${{ matrix.node }}

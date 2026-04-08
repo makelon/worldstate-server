@@ -1245,7 +1245,7 @@
                 "chance": 0.0625
             },
             {
-                "name": "Meso V11 Relic",
+                "name": "Meso D8 Relic",
                 "count": 1,
                 "chance": 0.0625
             },
@@ -1270,7 +1270,7 @@
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
@@ -1300,7 +1300,7 @@
                 "chance": 0.005
             },
             {
-                "name": "Axi S18 Relic",
+                "name": "Axi S20 Relic",
                 "count": 1,
                 "chance": 0.005
             }
@@ -1344,7 +1344,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo C6 Relic",
+                "name": "Neo N24 Relic",
                 "count": 1,
                 "chance": 0.0375
             },
@@ -1374,7 +1374,7 @@
                 "chance": 0.005
             },
             {
-                "name": "Neo O3 Relic",
+                "name": "Neo V11 Relic",
                 "count": 1,
                 "chance": 0.005
             }
@@ -1418,7 +1418,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo D9 Relic",
+                "name": "Neo P10 Relic",
                 "count": 1,
                 "chance": 0.0375
             },
@@ -1502,12 +1502,12 @@
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.009399999999999999
             },
             {
-                "name": "Neo C6 Relic",
+                "name": "Neo N24 Relic",
                 "count": 1,
                 "chance": 0.009399999999999999
             },
@@ -1537,7 +1537,7 @@
                 "chance": 0.005
             },
             {
-                "name": "Neo O3 Relic",
+                "name": "Neo V11 Relic",
                 "count": 1,
                 "chance": 0.005
             }
@@ -1566,7 +1566,7 @@
                 "chance": 0.0313
             },
             {
-                "name": "Meso V11 Relic",
+                "name": "Meso D8 Relic",
                 "count": 1,
                 "chance": 0.0313
             },
@@ -1591,7 +1591,7 @@
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo D9 Relic",
+                "name": "Neo P10 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
@@ -1705,7 +1705,7 @@
                 "chance": 0.005
             },
             {
-                "name": "Axi C10 Relic",
+                "name": "Axi V14 Relic",
                 "count": 1,
                 "chance": 0.005
             }
@@ -1734,7 +1734,7 @@
                 "chance": 0.0313
             },
             {
-                "name": "Meso V14 Relic",
+                "name": "Meso E7 Relic",
                 "count": 1,
                 "chance": 0.0313
             },
@@ -1764,7 +1764,7 @@
                 "chance": 0.009399999999999999
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.009399999999999999
             },
@@ -1818,7 +1818,7 @@
                 "chance": 0.0313
             },
             {
-                "name": "Meso V14 Relic",
+                "name": "Meso E7 Relic",
                 "count": 1,
                 "chance": 0.0313
             },
@@ -1843,7 +1843,7 @@
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
@@ -1897,7 +1897,7 @@
                 "chance": 0.0313
             },
             {
-                "name": "Meso Y1 Relic",
+                "name": "Meso A10 Relic",
                 "count": 1,
                 "chance": 0.0313
             },
@@ -1922,7 +1922,7 @@
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
@@ -1971,7 +1971,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso V11 Relic",
+                "name": "Meso D8 Relic",
                 "count": 1,
                 "chance": 0.125
             }
@@ -1993,7 +1993,7 @@
                 "chance": 0.0781
             },
             {
-                "name": "Meso V11 Relic",
+                "name": "Meso D8 Relic",
                 "count": 1,
                 "chance": 0.0781
             },
@@ -2018,7 +2018,7 @@
                 "chance": 0.023399999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.023399999999999997
             }
@@ -2045,7 +2045,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.0375
             },
@@ -2075,7 +2075,7 @@
                 "chance": 0.01
             },
             {
-                "name": "Axi S18 Relic",
+                "name": "Axi S20 Relic",
                 "count": 1,
                 "chance": 0.01
             }
@@ -2141,7 +2141,7 @@
                 "chance": 0.046900000000000004
             },
             {
-                "name": "Neo C6 Relic",
+                "name": "Neo N24 Relic",
                 "count": 1,
                 "chance": 0.046900000000000004
             }
@@ -2163,7 +2163,7 @@
                 "chance": 0.075
             },
             {
-                "name": "Neo C6 Relic",
+                "name": "Neo N24 Relic",
                 "count": 1,
                 "chance": 0.075
             },
@@ -2193,7 +2193,7 @@
                 "chance": 0.01
             },
             {
-                "name": "Neo O3 Relic",
+                "name": "Neo V11 Relic",
                 "count": 1,
                 "chance": 0.01
             }
@@ -2259,7 +2259,7 @@
                 "chance": 0.046900000000000004
             },
             {
-                "name": "Neo D9 Relic",
+                "name": "Neo P10 Relic",
                 "count": 1,
                 "chance": 0.046900000000000004
             }
@@ -2281,7 +2281,7 @@
                 "chance": 0.075
             },
             {
-                "name": "Neo D9 Relic",
+                "name": "Neo P10 Relic",
                 "count": 1,
                 "chance": 0.075
             },
@@ -2392,12 +2392,12 @@
                 "chance": 0.023399999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.011699999999999999
             },
             {
-                "name": "Neo C6 Relic",
+                "name": "Neo N24 Relic",
                 "count": 1,
                 "chance": 0.011699999999999999
             }
@@ -2424,12 +2424,12 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo C6 Relic",
+                "name": "Neo N24 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
@@ -2459,7 +2459,7 @@
                 "chance": 0.01
             },
             {
-                "name": "Neo O3 Relic",
+                "name": "Neo V11 Relic",
                 "count": 1,
                 "chance": 0.01
             }
@@ -2488,7 +2488,7 @@
                 "chance": 0.0625
             },
             {
-                "name": "Meso V11 Relic",
+                "name": "Meso D8 Relic",
                 "count": 1,
                 "chance": 0.0625
             }
@@ -2515,7 +2515,7 @@
                 "chance": 0.0391
             },
             {
-                "name": "Meso V11 Relic",
+                "name": "Meso D8 Relic",
                 "count": 1,
                 "chance": 0.0391
             },
@@ -2540,7 +2540,7 @@
                 "chance": 0.023399999999999997
             },
             {
-                "name": "Neo D9 Relic",
+                "name": "Neo P10 Relic",
                 "count": 1,
                 "chance": 0.023399999999999997
             }
@@ -2567,7 +2567,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo D9 Relic",
+                "name": "Neo P10 Relic",
                 "count": 1,
                 "chance": 0.0375
             },
@@ -2735,7 +2735,7 @@
                 "chance": 0.01
             },
             {
-                "name": "Axi C10 Relic",
+                "name": "Axi V14 Relic",
                 "count": 1,
                 "chance": 0.01
             }
@@ -2764,7 +2764,7 @@
                 "chance": 0.0625
             },
             {
-                "name": "Meso V14 Relic",
+                "name": "Meso E7 Relic",
                 "count": 1,
                 "chance": 0.0625
             }
@@ -2791,7 +2791,7 @@
                 "chance": 0.0391
             },
             {
-                "name": "Meso V14 Relic",
+                "name": "Meso E7 Relic",
                 "count": 1,
                 "chance": 0.0391
             },
@@ -2821,7 +2821,7 @@
                 "chance": 0.011699999999999999
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.011699999999999999
             }
@@ -2853,7 +2853,7 @@
                 "chance": 0.018799999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.018799999999999997
             },
@@ -2907,7 +2907,7 @@
                 "chance": 0.0625
             },
             {
-                "name": "Meso V14 Relic",
+                "name": "Meso E7 Relic",
                 "count": 1,
                 "chance": 0.0625
             }
@@ -2934,7 +2934,7 @@
                 "chance": 0.0391
             },
             {
-                "name": "Meso V14 Relic",
+                "name": "Meso E7 Relic",
                 "count": 1,
                 "chance": 0.0391
             },
@@ -2959,7 +2959,7 @@
                 "chance": 0.023399999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.023399999999999997
             }
@@ -2986,7 +2986,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.0375
             },
@@ -3040,7 +3040,7 @@
                 "chance": 0.0625
             },
             {
-                "name": "Meso Y1 Relic",
+                "name": "Meso A10 Relic",
                 "count": 1,
                 "chance": 0.0625
             }
@@ -3067,7 +3067,7 @@
                 "chance": 0.0391
             },
             {
-                "name": "Meso Y1 Relic",
+                "name": "Meso A10 Relic",
                 "count": 1,
                 "chance": 0.0391
             },
@@ -3092,7 +3092,7 @@
                 "chance": 0.023399999999999997
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.023399999999999997
             }
@@ -3119,7 +3119,7 @@
                 "chance": 0.0375
             },
             {
-                "name": "Neo P9 Relic",
+                "name": "Neo S20 Relic",
                 "count": 1,
                 "chance": 0.0375
             },

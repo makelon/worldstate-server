@@ -1759,7 +1759,7 @@
                 "chance": 0.25
             },
             {
-                "name": "Lith C14 Relic (Radiant)",
+                "name": "Lith Q3 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.15
             },
@@ -1779,7 +1779,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Lith E2 Relic (Radiant)",
+                "name": "Lith A12 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1828,7 +1828,7 @@
                 "chance": 0.125
             },
             {
-                "name": "Meso L4 Relic (Radiant)",
+                "name": "Meso Y2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.125
             },
@@ -1906,7 +1906,7 @@
                 "chance": 0.2857
             },
             {
-                "name": "Neo S20 Relic (Radiant)",
+                "name": "Neo A16 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.1714
             },

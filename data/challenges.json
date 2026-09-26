@@ -7,6 +7,10 @@
         "description": "Kill 15 enemies while aim gliding",
         "xpAmount": 1000
     },
+    "SeasonDailyArtist": {
+        "description": "Customize a piece of equipment's colours",
+        "xpAmount": 1000
+    },
     "SeasonDailyAugmentation": {
         "description": "Install an augment mod on your Warframe",
         "xpAmount": 1000
@@ -263,6 +267,10 @@
         "description": "Visit a featured dojo",
         "xpAmount": 1000
     },
+    "SeasonDailyWholeArsenal": {
+        "description": "Get a kill with your Primary, Secondary and Melee weapons within 10 seconds",
+        "xpAmount": 1000
+    },
     "SeasonDailyYourMove": {
         "description": "Complete a game of Komi in Duviri",
         "xpAmount": 1000
@@ -277,6 +285,10 @@
     },
     "SeasonWeeklyBoardingPartyNoDamage": {
         "description": "Clear a Railjack boarding party without your Warframe taking damage",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyBowOffense": {
+        "description": "Kill 150 enemies with a Primary Bow",
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteDisruptionConduits": {
@@ -356,7 +368,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyCompleteVenusRace": {
-        "description": "Complete 3 different K-Drive races in Orb Vallis on Venus or in Cambion Drift on Deimos",
+        "description": "Complete a K-Drive race in Orb Vallis on Venus or in Cambion Drift on Deimos",
         "xpAmount": 4500
     },
     "SeasonWeeklyDestroyCrewshipArtillery": {
@@ -372,7 +384,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyFinelyTuned": {
-        "description": "Play 3 different Shawzin songs in Duviri",
+        "description": "Play a Shawzin song in Duviri",
         "xpAmount": 4500
     },
     "SeasonWeeklyGildModular": {
@@ -396,7 +408,7 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyIsolationBounties": {
-        "description": "Do an Isolation Bounty",
+        "description": "Complete an Isolation Vault Bounty mission",
         "xpAmount": 4500
     },
     "SeasonWeeklyKillArchgunEnemies": {
@@ -451,12 +463,20 @@
         "description": "Complete 3 perfect animal captures",
         "xpAmount": 4500
     },
+    "SeasonWeeklyPerplexed": {
+        "description": "Complete a puzzle in Duviri",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyPickUpMedallion": {
+        "description": "Find 10 syndicate medallions",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyPickUpRareMods": {
         "description": "Pick up 8 rare modules",
         "xpAmount": 4500
     },
     "SeasonWeeklyPlainsBounties": {
-        "description": "Complete 3 different bounties in the Plains of Eidolon",
+        "description": "Complete 3 bounties in the Plains of Eidolon",
         "xpAmount": 4500
     },
     "SeasonWeeklyRailjackMissions": {
@@ -471,16 +491,28 @@
         "description": "Activate 3 Requiem Obelisks on Deimos",
         "xpAmount": 4500
     },
+    "SeasonWeeklyRifleOffense": {
+        "description": "Kill 150 enemies with a Primary Rifle",
+        "xpAmount": 4500
+    },
     "SeasonWeeklySabotageCaches": {
-        "description": "Find 6 caches across any sabotage missions",
+        "description": "Find 6 caches across any missions",
         "xpAmount": 4500
     },
     "SeasonWeeklySanctuaryOnslaught": {
         "description": "Complete 8 zones in Sanctuary Onslaught",
         "xpAmount": 4500
     },
+    "SeasonWeeklyShotgunOffense": {
+        "description": "Kill 150 enemies with a Primary Shotgun",
+        "xpAmount": 4500
+    },
     "SeasonWeeklySimarisScan": {
         "description": "Complete 3 scans for Cephalon Simaris",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklySniperOffense": {
+        "description": "Kill 150 enemies with a Primary Sniper Rifle",
         "xpAmount": 4500
     },
     "SeasonWeeklySolveCiphers": {
@@ -488,7 +520,11 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyTheOldWays": {
-        "description": "Complete 1 mission with only a single pistol and a glaive equipped",
+        "description": "Complete a mission with only a single pistol and a glaive equipped",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyToAshes": {
+        "description": "Dissolve an Arcane for Vosfor",
         "xpAmount": 4500
     },
     "SeasonWeeklyUnlockDragonVaults": {
@@ -504,15 +540,23 @@
         "xpAmount": 4500
     },
     "SeasonWeeklyVenusBounties": {
-        "description": "Complete 3 different bounties in Orb Vallis",
+        "description": "Complete 3 bounties in Orb Vallis",
+        "xpAmount": 4500
+    },
+    "SeasonWeeklyVoidNet": {
+        "description": "Collect 30 Void Traces",
         "xpAmount": 4500
     },
     "SeasonWeeklyZarimanBountyHunter": {
-        "description": "Complete 4 different bounties in the Zariman",
+        "description": "Complete 4 bounties in the Zariman",
         "xpAmount": 4500
     },
     "SeasonWeeklyHardAntiquarian": {
         "description": "Open one of each era/tier of relic (Lith, Meso, Neo, Axi)",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardBattleHardened": {
+        "description": "Complete the Perita Rebellion with 6 or more orders completed",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardCeremonialEvolution": {
@@ -543,6 +587,10 @@
         "description": "Complete 5 different Steel Path missions",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardElementaryMyDear": {
+        "description": "Complete 3 successful Conversions in the Alchemy game mode",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardEliteBeastSlayer": {
         "description": "Defeat the Orowyrm in Steel Path",
         "xpAmount": 7000
@@ -551,12 +599,16 @@
         "description": "Complete 8 zones in Elite Sanctuary Onslaught",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardEternalGuardian": {
+        "description": "Complete 2 Void Armageddon rounds",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardExterminateNoAlarm": {
         "description": "Complete an exterminate mission with level 30 or higher enemies without raising alarms",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardFallenAngel": {
-        "description": "Defeat 5 Void Angels in the Zariman",
+        "description": "Defeat 3 Void Angels in the Zariman",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardFastCapture": {
@@ -587,8 +639,20 @@
         "description": "Complete a survival mission reaching at least 20 minutes",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardGoingDown": {
+        "description": "Defeat Roathe in Descendia",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardHighGround": {
+        "description": "Seal 12 Ruptures in the Void Flood mission",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardHoldTheMushrooms": {
+        "description": "Collect 6 mushrooms from the Deepmines",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardIndexWinStreak": {
-        "description": "Win 3 wagers in a row without letting the enemy score in one match of the Index",
+        "description": "Win 3 wagers in a row in one match of The Index",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardKillEnemies": {
@@ -640,11 +704,15 @@
         "xpAmount": 7000
     },
     "SeasonWeeklyHardRailjackMissions": {
-        "description": "Complete 8 Railjack missions",
+        "description": "Complete 6 Railjack missions",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardRiseOfTheMachine": {
         "description": "Kill 300 enemies using a Necramech without getting destroyed",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardSpiderHunt": {
+        "description": "Complete an Isleweaver Duviri mission",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardSpyManualNoAlarms": {
@@ -663,12 +731,20 @@
         "description": "Free one captured Solaris using a Granum crown",
         "xpAmount": 7000
     },
+    "SeasonWeeklyHardTreasureFromThePast": {
+        "description": "Complete a Netracell",
+        "xpAmount": 7000
+    },
     "SeasonWeeklyHardUnlockRelics": {
         "description": "Open 10 relics",
         "xpAmount": 7000
     },
     "SeasonWeeklyHardVitalArbiter": {
         "description": "Complete an Arbitration mission",
+        "xpAmount": 7000
+    },
+    "SeasonWeeklyHardZarimanBountyHunter": {
+        "description": "Complete 4 bounties in the Zariman",
         "xpAmount": 7000
     },
     "SeasonWeeklyPermanentCompleteMissions": {

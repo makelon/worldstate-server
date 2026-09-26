@@ -1012,22 +1012,22 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith Q3 Relic (Radiant)",
+                "name": "Lith L8 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith A12 Relic (Radiant)",
+                "name": "Lith A13 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith K12 Relic (Radiant)",
+                "name": "Lith C15 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith T14 Relic (Radiant)",
+                "name": "Lith S19 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1081,22 +1081,22 @@
                 "chance": 0.025
             },
             {
-                "name": "Lith Q3 Relic (Radiant)",
+                "name": "Lith L8 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith A12 Relic (Radiant)",
+                "name": "Lith A13 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith K12 Relic (Radiant)",
+                "name": "Lith C15 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Lith T14 Relic (Radiant)",
+                "name": "Lith S19 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1155,12 +1155,12 @@
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso V15 Relic (Radiant)",
+                "name": "Meso K9 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso X1 Relic (Radiant)",
+                "name": "Meso V17 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             },
@@ -1180,12 +1180,12 @@
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso L5 Relic (Radiant)",
+                "name": "Meso D9 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso K8 Relic (Radiant)",
+                "name": "Meso C11 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             }
@@ -1229,12 +1229,12 @@
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso V15 Relic (Radiant)",
+                "name": "Meso K9 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso X1 Relic (Radiant)",
+                "name": "Meso V17 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             },
@@ -1254,12 +1254,12 @@
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso L5 Relic (Radiant)",
+                "name": "Meso D9 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             },
             {
-                "name": "Meso K8 Relic (Radiant)",
+                "name": "Meso C11 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.023799999999999998
             }
@@ -1308,27 +1308,27 @@
                 "chance": 0.025
             },
             {
-                "name": "Neo Y1 Relic (Radiant)",
+                "name": "Neo Y2 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Neo T11 Relic (Radiant)",
+                "name": "Neo C11 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Neo V12 Relic (Radiant)",
+                "name": "Neo K10 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Neo C8 Relic (Radiant)",
+                "name": "Neo V13 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
             {
-                "name": "Neo C9 Relic (Radiant)",
+                "name": "Neo C10 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             }
@@ -1367,7 +1367,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Axi S20 Relic (Radiant)",
+                "name": "Axi S21 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },
@@ -1382,7 +1382,7 @@
                 "chance": 0.025
             },
             {
-                "name": "Axi T13 Relic (Radiant)",
+                "name": "Axi C12 Relic (Radiant)",
                 "count": 1,
                 "chance": 0.025
             },

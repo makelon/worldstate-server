@@ -343,6 +343,10 @@
         "description": "Complete 3 nightmare missions",
         "xpAmount": 4500
     },
+    "SeasonWeeklyCompleteRace": {
+        "description": "Play Ollie's Crash Course and complete a race",
+        "xpAmount": 4500
+    },
     "SeasonWeeklyCompleteRescue": {
         "description": "Complete 3 rescue missions",
         "xpAmount": 4500
